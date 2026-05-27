@@ -1,0 +1,142 @@
+﻿{
+    "metadatos":  {
+                      "Organización":  "Observatorio Venezolano de Economía",
+                      "Dataset":  "Banco Mundial - Venezuela",
+                      "Fecha generación":  "2026-05-21 21:28:55",
+                      "Número de áreas":  12
+                  },
+    "catalogo":  [
+                     {
+                         "Área temática":  "Demografía",
+                         "ID área":  "demografia",
+                         "Registros":  528,
+                         "Indicadores":  8,
+                         "Primer año":  1960,
+                         "Último año":  2025,
+                         "Archivo CSV":  "assets/data/world-bank/csv/ove_banco_mundial_venezuela_demografia.csv",
+                         "Archivo JSON":  "assets/data/world-bank/json/ove_banco_mundial_venezuela_demografia.json",
+                         "Archivo Excel":  "assets/data/world-bank/excel/ove_banco_mundial_venezuela_demografia.xlsx"
+                     },
+                     {
+                         "Área temática":  "Educación",
+                         "ID área":  "educacion",
+                         "Registros":  330,
+                         "Indicadores":  5,
+                         "Primer año":  1960,
+                         "Último año":  2025,
+                         "Archivo CSV":  "assets/data/world-bank/csv/ove_banco_mundial_venezuela_educacion.csv",
+                         "Archivo JSON":  "assets/data/world-bank/json/ove_banco_mundial_venezuela_educacion.json",
+                         "Archivo Excel":  "assets/data/world-bank/excel/ove_banco_mundial_venezuela_educacion.xlsx"
+                     },
+                     {
+                         "Área temática":  "Energía y ambiente",
+                         "ID área":  "energia_y_ambiente",
+                         "Registros":  330,
+                         "Indicadores":  5,
+                         "Primer año":  1960,
+                         "Último año":  2025,
+                         "Archivo CSV":  "assets/data/world-bank/csv/ove_banco_mundial_venezuela_energia_y_ambiente.csv",
+                         "Archivo JSON":  "assets/data/world-bank/json/ove_banco_mundial_venezuela_energia_y_ambiente.json",
+                         "Archivo Excel":  "assets/data/world-bank/excel/ove_banco_mundial_venezuela_energia_y_ambiente.xlsx"
+                     },
+                     {
+                         "Área temática":  "Género",
+                         "ID área":  "genero",
+                         "Registros":  330,
+                         "Indicadores":  5,
+                         "Primer año":  1960,
+                         "Último año":  2025,
+                         "Archivo CSV":  "assets/data/world-bank/csv/ove_banco_mundial_venezuela_genero.csv",
+                         "Archivo JSON":  "assets/data/world-bank/json/ove_banco_mundial_venezuela_genero.json",
+                         "Archivo Excel":  "assets/data/world-bank/excel/ove_banco_mundial_venezuela_genero.xlsx"
+                     },
+                     {
+                         "Área temática":  "Infraestructura y digitalización",
+                         "ID área":  "infraestructura_y_digitalizacion",
+                         "Registros":  264,
+                         "Indicadores":  4,
+                         "Primer año":  1960,
+                         "Último año":  2025,
+                         "Archivo CSV":  "assets/data/world-bank/csv/ove_banco_mundial_venezuela_infraestructura_y_digitalizacion.csv",
+                         "Archivo JSON":  "assets/data/world-bank/json/ove_banco_mundial_venezuela_infraestructura_y_digitalizacion.json",
+                         "Archivo Excel":  "assets/data/world-bank/excel/ove_banco_mundial_venezuela_infraestructura_y_digitalizacion.xlsx"
+                     },
+                     {
+                         "Área temática":  "Macroeconomía",
+                         "ID área":  "macroeconomia",
+                         "Registros":  660,
+                         "Indicadores":  10,
+                         "Primer año":  1960,
+                         "Último año":  2025,
+                         "Archivo CSV":  "assets/data/world-bank/csv/ove_banco_mundial_venezuela_macroeconomia.csv",
+                         "Archivo JSON":  "assets/data/world-bank/json/ove_banco_mundial_venezuela_macroeconomia.json",
+                         "Archivo Excel":  "assets/data/world-bank/excel/ove_banco_mundial_venezuela_macroeconomia.xlsx"
+                     },
+                     {
+                         "Área temática":  "Mercado laboral",
+                         "ID área":  "mercado_laboral",
+                         "Registros":  792,
+                         "Indicadores":  12,
+                         "Primer año":  1960,
+                         "Último año":  2025,
+                         "Archivo CSV":  "assets/data/world-bank/csv/ove_banco_mundial_venezuela_mercado_laboral.csv",
+                         "Archivo JSON":  "assets/data/world-bank/json/ove_banco_mundial_venezuela_mercado_laboral.json",
+                         "Archivo Excel":  "assets/data/world-bank/excel/ove_banco_mundial_venezuela_mercado_laboral.xlsx"
+                     },
+                     {
+                         "Área temática":  "Pobreza y desigualdad",
+                         "ID área":  "pobreza_y_desigualdad",
+                         "Registros":  330,
+                         "Indicadores":  5,
+                         "Primer año":  1960,
+                         "Último año":  2025,
+                         "Archivo CSV":  "assets/data/world-bank/csv/ove_banco_mundial_venezuela_pobreza_y_desigualdad.csv",
+                         "Archivo JSON":  "assets/data/world-bank/json/ove_banco_mundial_venezuela_pobreza_y_desigualdad.json",
+                         "Archivo Excel":  "assets/data/world-bank/excel/ove_banco_mundial_venezuela_pobreza_y_desigualdad.xlsx"
+                     },
+                     {
+                         "Área temática":  "Precios e inflación",
+                         "ID área":  "precios_e_inflacion",
+                         "Registros":  462,
+                         "Indicadores":  7,
+                         "Primer año":  1960,
+                         "Último año":  2025,
+                         "Archivo CSV":  "assets/data/world-bank/csv/ove_banco_mundial_venezuela_precios_e_inflacion.csv",
+                         "Archivo JSON":  "assets/data/world-bank/json/ove_banco_mundial_venezuela_precios_e_inflacion.json",
+                         "Archivo Excel":  "assets/data/world-bank/excel/ove_banco_mundial_venezuela_precios_e_inflacion.xlsx"
+                     },
+                     {
+                         "Área temática":  "Salud",
+                         "ID área":  "salud",
+                         "Registros":  462,
+                         "Indicadores":  7,
+                         "Primer año":  1960,
+                         "Último año":  2025,
+                         "Archivo CSV":  "assets/data/world-bank/csv/ove_banco_mundial_venezuela_salud.csv",
+                         "Archivo JSON":  "assets/data/world-bank/json/ove_banco_mundial_venezuela_salud.json",
+                         "Archivo Excel":  "assets/data/world-bank/excel/ove_banco_mundial_venezuela_salud.xlsx"
+                     },
+                     {
+                         "Área temática":  "Sector externo",
+                         "ID área":  "sector_externo",
+                         "Registros":  594,
+                         "Indicadores":  9,
+                         "Primer año":  1960,
+                         "Último año":  2025,
+                         "Archivo CSV":  "assets/data/world-bank/csv/ove_banco_mundial_venezuela_sector_externo.csv",
+                         "Archivo JSON":  "assets/data/world-bank/json/ove_banco_mundial_venezuela_sector_externo.json",
+                         "Archivo Excel":  "assets/data/world-bank/excel/ove_banco_mundial_venezuela_sector_externo.xlsx"
+                     },
+                     {
+                         "Área temática":  "Sector público e instituciones",
+                         "ID área":  "sector_publico_e_instituciones",
+                         "Registros":  264,
+                         "Indicadores":  4,
+                         "Primer año":  1960,
+                         "Último año":  2025,
+                         "Archivo CSV":  "assets/data/world-bank/csv/ove_banco_mundial_venezuela_sector_publico_e_instituciones.csv",
+                         "Archivo JSON":  "assets/data/world-bank/json/ove_banco_mundial_venezuela_sector_publico_e_instituciones.json",
+                         "Archivo Excel":  "assets/data/world-bank/excel/ove_banco_mundial_venezuela_sector_publico_e_instituciones.xlsx"
+                     }
+                 ]
+}
