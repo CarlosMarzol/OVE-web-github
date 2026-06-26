@@ -9,8 +9,20 @@ Sitio web estatico del Observatorio Venezolano de Economia.
 - `app.js`: rutas, contenido dinamico y comportamiento de la interfaz.
 - `assets/`: imagenes y recursos usados directamente por la web.
 - `assets/data/world-bank/`: datasets del Banco Mundial para Venezuela en CSV, JSON y Excel.
+- `assets/data/bcv/`: datasets oficiales del Banco Central de Venezuela generados por `scripts/bcv_ingest.py`.
+- `.github/workflows/update-bcv-data.yml`: automatizacion de GitHub Actions para actualizar datos BCV.
 - `manual_corporativo_ove_max_calidad.pdf`: archivo enlazado desde la web.
 - `source-assets/`: materiales de apoyo, logos originales e imagenes fuente.
+
+## Actualizar datos BCV
+
+```bash
+python3 scripts/bcv_ingest.py --group daily
+python3 scripts/bcv_ingest.py --group monthly
+python3 scripts/bcv_ingest.py --group all
+```
+
+La ingesta diaria actualiza el tipo de cambio de referencia SMC. La ingesta mensual refresca el catalogo de archivos oficiales de PIB e INPC para su normalizacion posterior.
 
 ## Ejecutar localmente
 

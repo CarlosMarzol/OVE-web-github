@@ -1,0 +1,50 @@
+{
+  "source": "Banco Central de Venezuela",
+  "source_url": "https://www.bcv.org.ve",
+  "last_fetched_at": "2026-06-26T09:35:29Z",
+  "datasets": [
+    {
+      "dataset_id": "bcv_indice_nacional_precios_consumidor",
+      "title": "Indice Nacional de Precios al Consumidor",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/estadisticas/consumidor",
+      "frequency": "monthly",
+      "status": "catalogued_official_workbooks",
+      "last_fetched_at": "2026-06-26T09:35:29Z",
+      "files": 7,
+      "notes": "Catalogo de archivos oficiales BCV. La normalizacion de hojas se agregara por indicador."
+    },
+    {
+      "dataset_id": "bcv_producto_interno_bruto",
+      "title": "Producto Interno Bruto",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/estadisticas/producto-interno-bruto",
+      "frequency": "monthly",
+      "status": "catalogued_official_workbooks",
+      "last_fetched_at": "2026-06-26T09:35:29Z",
+      "files": 10,
+      "notes": "Catalogo de archivos oficiales BCV. La normalizacion de hojas se agregara por indicador."
+    },
+    {
+      "dataset_id": "bcv_tipo_cambio_referencia_smc",
+      "title": "Tipo de Cambio de Referencia SMC",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
+      "frequency": "daily",
+      "unit": "VES por unidad de moneda extranjera",
+      "status": "official_source",
+      "last_fetched_at": "2026-06-26T09:35:29Z",
+      "first_date": "2026-06-26",
+      "last_date": "2026-06-26",
+      "currencies": [
+        "CNY",
+        "EUR",
+        "RUB",
+        "TRY",
+        "USD"
+      ],
+      "records": 5,
+      "notes": "Datos extraidos de la pagina oficial del BCV. La serie se actualiza por fecha y moneda."
+    }
+  ]
+}

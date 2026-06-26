@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "dataset_id": "bcv_indice_nacional_precios_consumidor",
+    "title": "Indice Nacional de Precios al Consumidor",
+    "source": "Banco Central de Venezuela",
+    "source_url": "https://www.bcv.org.ve/estadisticas/consumidor",
+    "frequency": "monthly",
+    "status": "catalogued_official_workbooks",
+    "last_fetched_at": "2026-06-26T09:35:29Z",
+    "files": 7,
+    "notes": "Catalogo de archivos oficiales BCV. La normalizacion de hojas se agregara por indicador."
+  },
+  "files": [
+    {
+      "file_name": "4_5_7.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_7_2.xls",
+      "format": "xls"
+    },
+    {
+      "file_name": "4_5_3.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_3.xls",
+      "format": "xls"
+    },
+    {
+      "file_name": "4_5_1.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_1.xls",
+      "format": "xls"
+    },
+    {
+      "file_name": "4_5_3_indice_y_variaciones_promedio_por_agrupaciones_2025_pub.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_3_indice_y_variaciones_promedio_por_agrupaciones_2025_pub.xls",
+      "format": "xls"
+    },
+    {
+      "file_name": "4_5_1_variaciones_acumuladas_por_agrupaciones_2025.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_1_variaciones_acumuladas_por_agrupaciones_2025.xls",
+      "format": "xls"
+    },
+    {
+      "file_name": "4_5_7.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_7.xls",
+      "format": "xls"
+    },
+    {
+      "file_name": "4_1_7.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_1_7.xls",
+      "format": "xls"
+    }
+  ]
+}

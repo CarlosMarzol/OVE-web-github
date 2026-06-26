@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "dataset_id": "bcv_producto_interno_bruto",
+    "title": "Producto Interno Bruto",
+    "source": "Banco Central de Venezuela",
+    "source_url": "https://www.bcv.org.ve/estadisticas/producto-interno-bruto",
+    "frequency": "monthly",
+    "status": "catalogued_official_workbooks",
+    "last_fetched_at": "2026-06-26T09:35:29Z",
+    "files": 10,
+    "notes": "Catalogo de archivos oficiales BCV. La normalizacion de hojas se agregara por indicador."
+  },
+  "files": [
+    {
+      "file_name": "5_2_4_ae_trim.xlsx",
+      "url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_4_ae_trim.xlsx",
+      "format": "xlsx"
+    },
+    {
+      "file_name": "5_2_4_ae_anual.xlsx",
+      "url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_4_ae_anual.xlsx",
+      "format": "xlsx"
+    },
+    {
+      "file_name": "5_2_1_si_trim.xlsx",
+      "url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_trim.xlsx",
+      "format": "xlsx"
+    },
+    {
+      "file_name": "5_2_1_si_anual.xlsx",
+      "url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
+      "format": "xlsx"
+    },
+    {
+      "file_name": "7_1_14_anual.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/7_1_14_anual.xls",
+      "format": "xls"
+    },
+    {
+      "file_name": "7_1_7_anual.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/7_1_7_anual.xls",
+      "format": "xls"
+    },
+    {
+      "file_name": "5_2_4_trim.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_4_trim.xls",
+      "format": "xls"
+    },
+    {
+      "file_name": "5_2_4_anual.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_4_anual.xls",
+      "format": "xls"
+    },
+    {
+      "file_name": "5_2_1_trim.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_trim.xls",
+      "format": "xls"
+    },
+    {
+      "file_name": "5_2_1_anual.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_anual.xls",
+      "format": "xls"
+    }
+  ]
+}

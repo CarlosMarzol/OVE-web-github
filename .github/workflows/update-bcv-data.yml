@@ -1,0 +1,53 @@
+name: Update BCV data
+
+on:
+  workflow_dispatch:
+    inputs:
+      group:
+        description: "Dataset group to update: daily, monthly, all, or dataset id"
+        required: true
+        default: "daily"
+  schedule:
+    # Daily exchange-rate checks, Monday-Friday.
+    - cron: "30 20 * * 1-5"
+    # Monthly workbook catalogue refresh for PIB/INPC.
+    - cron: "15 13 2 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-bcv-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Select update group
+        id: group
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "value=${{ github.event.inputs.group }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "15 13 2 * *" ]; then
+            echo "value=monthly" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=daily" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Ingest BCV data
+        run: python scripts/bcv_ingest.py --group "${{ steps.group.outputs.value }}"
+
+      - name: Commit data changes
+        run: |
+          if git diff --quiet -- assets/data/bcv; then
+            echo "No BCV data changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/bcv
+          git commit -m "Update BCV data"
+          git push

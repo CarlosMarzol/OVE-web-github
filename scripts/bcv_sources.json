@@ -1,0 +1,36 @@
+{
+  "source": {
+    "id": "bcv",
+    "name": "Banco Central de Venezuela",
+    "base_url": "https://www.bcv.org.ve"
+  },
+  "datasets": [
+    {
+      "id": "bcv_tipo_cambio_referencia_smc",
+      "title": "Tipo de Cambio de Referencia SMC",
+      "frequency": "daily",
+      "page_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
+      "output_slug": "ove_bcv_tipo_cambio_referencia_smc",
+      "status": "active",
+      "parser": "exchange_rate_current"
+    },
+    {
+      "id": "bcv_producto_interno_bruto",
+      "title": "Producto Interno Bruto",
+      "frequency": "monthly",
+      "page_url": "https://www.bcv.org.ve/estadisticas/producto-interno-bruto",
+      "output_slug": "ove_bcv_producto_interno_bruto",
+      "status": "catalogued",
+      "parser": "excel_catalog"
+    },
+    {
+      "id": "bcv_indice_nacional_precios_consumidor",
+      "title": "Indice Nacional de Precios al Consumidor",
+      "frequency": "monthly",
+      "page_url": "https://www.bcv.org.ve/estadisticas/consumidor",
+      "output_slug": "ove_bcv_indice_nacional_precios_consumidor",
+      "status": "catalogued",
+      "parser": "excel_catalog"
+    }
+  ]
+}

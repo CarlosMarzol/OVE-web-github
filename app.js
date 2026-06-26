@@ -5,6 +5,7 @@ const routes = {
   "/informe-trimestral": reportDetailPage,
   "/datos": dataPage,
   "/datos/banco-mundial": worldBankPage,
+  "/datos/bcv": bcvPage,
   "/datos/agricultura-medio-ambiente": () => topicDetailPage("agriculture"),
   "/datos/ciencia-tecnologia": () => topicDetailPage("science"),
   "/datos/demografia-poblacion": () => topicDetailPage("demography"),
@@ -43,6 +44,10 @@ const routeMeta = {
   "/datos/banco-mundial": {
     title: "Banco Mundial Venezuela | OVE",
     description: "Series del Banco Mundial organizadas para el análisis económico de Venezuela."
+  },
+  "/datos/bcv": {
+    title: "Banco Central de Venezuela | OVE",
+    description: "Datos oficiales del Banco Central de Venezuela integrados al Observatorio."
   },
   "/nosotros": {
     title: "Nosotros | OVE",
@@ -893,16 +898,16 @@ function pageHero({ title, lead, image = "assets/venezuela-hero.png", breadcrumb
 
 function dataBand() {
   const tools = [
-    ["Banco Mundial - Venezuela", "Fuente real disponible para empezar el Observatorio con datos verificables.", "Explorar fuente", "database", "#/datos/banco-mundial"],
+    ["BCV - Tipo de cambio", "Primera ingesta automatizada desde el Banco Central de Venezuela.", "Explorar BCV", "database", "#/datos/bcv"],
+    ["Banco Mundial - Venezuela", "Fuente real disponible para empezar el Observatorio con datos verificables.", "Explorar fuente", "globe", "#/datos/banco-mundial"],
     ["API OVE", "Maqueta técnica en preparación para integrar datos propios cuando sean publicados.", "Ver ejemplo", "chartbar", "#/datos"],
-    ["Calculadoras", "Ejemplo de herramienta futura; todavía no usa datos oficiales del OVE.", "Ver ejemplo", "calculator", "#/datos"],
     ["Mapas economicos", "Ejemplo de visualización futura para datos regionales validados.", "Ver ejemplo", "map", "#/datos"]
   ];
   return `<section class="dark-band">
     <div class="container">
       <h2>Datos y herramientas</h2>
       <span class="accent-line"></span>
-      ${exampleNotice("Solo Banco Mundial - Venezuela contiene datos reales disponibles. Las demás herramientas son ejemplos de estructura para el Observatorio.")}
+      ${exampleNotice("Fuentes reales disponibles: Banco Mundial - Venezuela y la primera ingesta BCV para tipo de cambio. Las demás herramientas son ejemplos de estructura.")}
       <div class="tools-grid">
         ${tools.map(([title, text, link, ico, href]) => `
           <article class="tool-card">
@@ -984,6 +989,30 @@ function worldBankSourceSection() {
         <div class="world-source-actions">
           <a class="button button-primary" href="#/datos/banco-mundial">Explorar fuente ${arrow()}</a>
           <a class="button" href="assets/data/world-bank/catalog/world-bank-catalog.json" download>Catalogo JSON ${icon("download")}</a>
+        </div>
+      </article>
+    </div>
+  </section>`;
+}
+
+function bcvSourceSection() {
+  return `<section class="section-tight">
+    <div class="container">
+      <article class="world-source-panel">
+        <div>
+          <span class="eyebrow">Fuente oficial nacional</span>
+          <h2>Banco Central de Venezuela</h2>
+          <p>Primera ingesta automatizada del BCV: tipo de cambio de referencia SMC, con salida en JSON, CSV y Excel OVE.</p>
+          <div class="source-stats">
+            <span><strong>Diaria</strong> frecuencia</span>
+            <span><strong>5</strong> monedas</span>
+            <span><strong>JSON</strong> serie histórica</span>
+            <span><strong>XLSX</strong> formato OVE</span>
+          </div>
+        </div>
+        <div class="world-source-actions">
+          <a class="button button-primary" href="#/datos/bcv">Explorar BCV ${arrow()}</a>
+          <a class="button" href="assets/data/bcv/json/ove_bcv_tipo_cambio_referencia_smc.json" download>JSON ${icon("download")}</a>
         </div>
       </article>
     </div>
@@ -1420,6 +1449,7 @@ function dataPage() {
       actions: `<a class="button button-primary" href="#/datos/banco-mundial">Explorar Banco Mundial ${arrow()}</a><a class="button" href="#/datos">Ver ejemplos de estructura ${icon("code")}</a>`
     })}
     ${topicsSection()}
+    ${bcvSourceSection()}
     ${worldBankSourceSection()}
     <section id="datasets" class="section">
       <div class="container">
@@ -1500,6 +1530,71 @@ function dataPage() {
             ["API Playground", "Maqueta para probar endpoints cuando existan datos propios.", "code"]
           ].map(([title, text, ico]) => `<article class="value-card"><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p>${text}</p><a class="text-link" href="#/datos">Explorar ${arrow()}</a></article>`).join("")}
         </div>
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
+}
+
+function bcvPage() {
+  return `<div class="page">
+    ${pageHero({
+      title: "Banco Central de Venezuela",
+      lead: "Datos oficiales del BCV integrados al Observatorio. La primera serie activa es el tipo de cambio de referencia SMC, automatizada para descarga diaria y exportada en JSON, CSV y Excel OVE.",
+      image: "assets/topics/topic-economy.png",
+      breadcrumb: ["Inicio", "Datos", "Banco Central de Venezuela"],
+      actions: `<a class="button button-primary" href="assets/data/bcv/excel/ove_bcv_tipo_cambio_referencia_smc.xlsx" download>Descargar Excel OVE ${icon("download")}</a>
+        <a class="button" href="assets/data/bcv/json/ove_bcv_tipo_cambio_referencia_smc.json" download>Descargar JSON ${icon("code")}</a>`
+    })}
+    <section class="section">
+      <div class="container">
+        <div class="world-bank-summary">
+          <div>
+            <span class="eyebrow">Ingesta automatizada</span>
+            <h2>Tipo de Cambio de Referencia SMC</h2>
+            <p>El script scripts/bcv_ingest.py consulta la página oficial del BCV, extrae la fecha valor y las tasas publicadas para USD, EUR, CNY, TRY y RUB, y actualiza la serie histórica dentro de assets/data/bcv/.</p>
+          </div>
+          <div class="source-stats">
+            <span><strong>Diaria</strong> frecuencia</span>
+            <span><strong>BCV</strong> fuente</span>
+            <span><strong>JSON</strong> web</span>
+            <span><strong>XLSX</strong> OVE</span>
+          </div>
+        </div>
+        <div class="world-bank-catalog-grid">
+          ${[
+            ["Serie histórica JSON", "Serie normalizada para consumo web y automatizaciones.", "assets/data/bcv/json/ove_bcv_tipo_cambio_referencia_smc.json", "JSON"],
+            ["Excel formato OVE", "Archivo tabular con columnas de indicador, fecha, valor, unidad y fuente.", "assets/data/bcv/excel/ove_bcv_tipo_cambio_referencia_smc.xlsx", "Excel"],
+            ["Catálogo BCV", "Inventario de datasets BCV activos y fuentes catalogadas para próximas ingestas.", "assets/data/bcv/catalog/bcv-catalog.json", "JSON"]
+          ].map(([title, text, href, format]) => `<article class="world-bank-card">
+            <div>
+              <span class="source-tag">BCV oficial</span>
+              <h3>${title}</h3>
+              <p>${text}</p>
+            </div>
+            <dl class="source-meta">
+              <div><dt>Formato</dt><dd>${format}</dd></div>
+              <div><dt>Estado</dt><dd>Activo</dd></div>
+            </dl>
+            <div class="download-row">
+              <a href="${href}" download>Descargar</a>
+              <a href="#/datos/bcv">Ver</a>
+              <a href="https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc" target="_blank" rel="noopener">Fuente</a>
+            </div>
+          </article>`).join("")}
+        </div>
+      </div>
+    </section>
+    <section class="section-tight">
+      <div class="container dashboard-grid">
+        <article class="panel span-6">
+          <h2>Automatización</h2>
+          <p>El workflow Update BCV data queda programado en GitHub Actions: diario para tipo de cambio y mensual para refrescar el catálogo de archivos oficiales de PIB e INPC.</p>
+        </article>
+        <article class="panel span-6">
+          <h2>Próximas series BCV</h2>
+          <p>PIB e INPC ya quedan catalogados desde las páginas oficiales del BCV. El siguiente paso es normalizar hoja por hoja esos Excel para evitar mezclar estructuras oficiales distintas.</p>
+        </article>
       </div>
     </section>
     ${footer()}
