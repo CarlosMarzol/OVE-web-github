@@ -19,6 +19,41 @@ const routes = {
   "/contacto": contactPage
 };
 
+const routeMeta = {
+  "/": {
+    title: "Observatorio Venezolano de Economía | Indicadores, informes y datos abiertos",
+    description: "Indicadores, informes y datos abiertos para comprender la economía venezolana."
+  },
+  "/indicadores": {
+    title: "Indicadores económicos | OVE",
+    description: "Panel de indicadores económicos de Venezuela con series históricas y fuentes verificables."
+  },
+  "/publicaciones": {
+    title: "Informes y publicaciones | OVE",
+    description: "Análisis, informes y estudios del Observatorio Venezolano de Economía."
+  },
+  "/informe-trimestral": {
+    title: "Informe económico trimestral | OVE",
+    description: "Informe trimestral con análisis macroeconómico y sectorial de Venezuela."
+  },
+  "/datos": {
+    title: "Banco de datos | OVE",
+    description: "Datos abiertos, catálogos y herramientas para análisis económico."
+  },
+  "/datos/banco-mundial": {
+    title: "Banco Mundial Venezuela | OVE",
+    description: "Series del Banco Mundial organizadas para el análisis económico de Venezuela."
+  },
+  "/nosotros": {
+    title: "Nosotros | OVE",
+    description: "Conoce la misión, visión, valores y metodología del Observatorio Venezolano de Economía."
+  },
+  "/contacto": {
+    title: "Contacto y boletín | OVE",
+    description: "Escríbenos, suscríbete al boletín o plantea una colaboración institucional."
+  }
+};
+
 const appRoot = document.getElementById("app");
 const siteHeader = document.querySelector(".site-header");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -37,7 +72,7 @@ const metricData = [
     icon: "trend"
   },
   {
-    title: "Inflacion Interanual",
+    title: "Inflación Interanual",
     subtitle: "(Var. %)",
     value: "58,7%",
     period: "Abr 2024",
@@ -77,14 +112,14 @@ const metricData = [
 ];
 
 const reports = [
-  ["Informe", "Panorama Economico de Venezuela", "Mayo 2024", "Analisis integral de la evolucion reciente de los principales indicadores del pais.", "dark"],
-  ["Informe especial", "Inflacion y poder adquisitivo en Venezuela", "Abril 2024", "Evolucion reciente de la inflacion y su impacto en el poder de compra de los hogares.", "light"],
-  ["Analisis", "Finanzas publicas y sostenibilidad fiscal en Venezuela", "Mayo 2024", "Situacion fiscal del gobierno central y perspectivas de sostenibilidad.", "dark"],
+  ["Informe", "Panorama Económico de Venezuela", "Mayo 2024", "Análisis integral de la evolución reciente de los principales indicadores del país.", "dark"],
+  ["Informe especial", "Inflación y poder adquisitivo en Venezuela", "Abril 2024", "Evolución reciente de la inflación y su impacto en el poder de compra de los hogares.", "light"],
+  ["Análisis", "Finanzas públicas y sostenibilidad fiscal en Venezuela", "Mayo 2024", "Situación fiscal del gobierno central y perspectivas de sostenibilidad.", "dark"],
   ["Indicadores", "Mercado laboral venezolano", "T1 2024", "Indicadores clave del mercado laboral: empleo, desempleo e informalidad.", "light"],
   ["Coyuntura", "Coyuntura cambiaria y reservas internacionales", "Mayo 2024", "Evolucion del tipo de cambio y nivel de reservas internacionales.", "dark"],
   ["Analisis", "Panorama petrolero Venezuela 2023", "Abril 2024", "Produccion, exportaciones y entorno sectorial.", "light"],
-  ["Notas metodologicas", "Como medimos la actividad economica", "Marzo 2024", "Criterios, fuentes y procesos de validacion estadistica.", "dark"],
-  ["Informe", "Informe economico anual 2023", "Marzo 2024", "Balance macroeconomico anual y perspectivas.", "light"]
+  ["Notas metodológicas", "Cómo medimos la actividad económica", "Marzo 2024", "Criterios, fuentes y procesos de validación estadística.", "dark"],
+  ["Informe", "Informe económico anual 2023", "Marzo 2024", "Balance macroeconómico anual y perspectivas.", "light"]
 ];
 
 const publicationCovers = [
@@ -95,10 +130,10 @@ const publicationCovers = [
 ];
 
 const datasets = [
-  ["Cuentas nacionales", "120 datasets", "PIB, VAB, Demanda, Ingreso", "trend"],
-  ["Precios e inflacion", "85 datasets", "IPC, inflacion subyacente, canastas", "tag"],
+  ["Cuentas nacionales", "120 datasets", "PIB, VAB, demanda, ingreso", "trend"],
+  ["Precios e inflación", "85 datasets", "IPC, inflación subyacente, canastas", "tag"],
   ["Comercio exterior", "68 datasets", "Exportaciones, importaciones, balanza", "globe"],
-  ["Finanzas publicas", "92 datasets", "Ingresos, gastos, deuda publica", "bank"],
+  ["Finanzas públicas", "92 datasets", "Ingresos, gastos, deuda pública", "bank"],
   ["Mercado laboral", "54 datasets", "Empleo, desempleo, salarios", "users"],
   ["Sector real", "77 datasets", "Industria, construccion, agropecuario", "factory"]
 ];
@@ -120,15 +155,15 @@ const worldBankCatalog = [
 
 const topicData = [
   ["agriculture", "Agricultura y medio ambiente", "assets/topics/topic-agriculture.png", "#/datos/agricultura-medio-ambiente"],
-  ["science", "Ciencia y tecnologia", "assets/topics/topic-science.png", "#/datos/ciencia-tecnologia"],
-  ["demography", "Demografia y poblacion", "assets/topics/topic-demography.png", "#/datos/demografia-poblacion"],
-  ["economy", "Economia", "assets/topics/topic-economy.png", "#/datos/economia"],
-  ["industry", "Industria, energia y construccion", "assets/topics/topic-industry.png", "#/datos/industria-energia-construccion"],
+  ["science", "Ciencia y tecnología", "assets/topics/topic-science.png", "#/datos/ciencia-tecnologia"],
+  ["demography", "Demografía y población", "assets/topics/topic-demography.png", "#/datos/demografia-poblacion"],
+  ["economy", "Economía", "assets/topics/topic-economy.png", "#/datos/economia"],
+  ["industry", "Industria, energía y construcción", "assets/topics/topic-industry.png", "#/datos/industria-energia-construccion"],
   ["labor", "Mercado laboral", "assets/topics/topic-labor.png", "#/datos/mercado-laboral"],
   ["services", "Servicios", "assets/topics/topic-services.png", "#/datos/servicios"],
   ["living", "Nivel y condiciones de vida (IPC)", "assets/topics/topic-living.png", "#/datos/nivel-condiciones-vida"],
   ["society", "Sociedad", "assets/topics/topic-society.png", "#/datos/sociedad"],
-  ["experiments", "Estadisticas Experimentales", "assets/topics/topic-experiments.png", "#/datos/estadisticas-experimentales"]
+  ["experiments", "Estadísticas experimentales", "assets/topics/topic-experiments.png", "#/datos/estadisticas-experimentales"]
 ];
 
 const agricultureEnvironmentGroups = [
@@ -713,7 +748,7 @@ function lineChart(kind = "blue") {
     blue: {
       line: "chart-line-blue",
       tag: "tag-value",
-      color: "#004aad",
+      color: "#0052B4",
       label: "2,4%",
       points: "16,70 56,112 88,87 120,72 158,25 196,48 236,60 282,52",
       circles: [[16, 70], [56, 112], [88, 87], [120, 72], [158, 25], [196, 48], [236, 60], [282, 52]]
@@ -721,7 +756,7 @@ function lineChart(kind = "blue") {
     yellow: {
       line: "chart-line-yellow",
       tag: "tag-yellow",
-      color: "#f7a900",
+      color: "#FFC20E",
       label: "58,7%",
       points: "18,112 58,105 96,92 128,72 160,38 188,18 220,45 266,48",
       area: "18,112 58,105 96,92 128,72 160,38 188,18 220,45 266,48 266,124 18,124",
@@ -730,7 +765,7 @@ function lineChart(kind = "blue") {
     red: {
       line: "chart-line-red",
       tag: "tag-red",
-      color: "#ec1d25",
+      color: "#D62828",
       label: "36,25",
       points: "18,112 56,106 90,88 126,74 162,62 196,52 228,58 266,50",
       circles: [[18, 112], [56, 106], [90, 88], [126, 74], [162, 62], [196, 52], [228, 58], [266, 50]]
@@ -738,7 +773,7 @@ function lineChart(kind = "blue") {
   };
   const cfg = configs[kind];
   return `
-    <svg viewBox="0 0 320 150" role="img" aria-label="Grafico de linea">
+    <svg viewBox="0 0 320 150" role="img" aria-label="Gráfico de línea">
       <line x1="15" y1="24" x2="292" y2="24" class="chart-grid"></line>
       <line x1="15" y1="56" x2="292" y2="56" class="chart-grid"></line>
       <line x1="15" y1="88" x2="292" y2="88" class="chart-grid"></line>
@@ -766,11 +801,11 @@ function chartCard(title, small, kind) {
 
 function barChart() {
   const rows = [
-    ["Mineria e hidrocarburos", 88],
-    ["Comercio y reparacion", 62],
+    ["Minería e hidrocarburos", 88],
+    ["Comercio y reparación", 62],
     ["Manufactura", 42],
     ["Transporte", 34],
-    ["Construccion", 24],
+    ["Construcción", 24],
     ["Agricultura", 19],
     ["Electricidad", 15]
   ];
@@ -786,23 +821,23 @@ function barChart() {
 }
 
 function donutChart() {
-  return `<svg viewBox="0 0 250 170" role="img" aria-label="Grafico de sectores">
-    <circle cx="82" cy="82" r="54" fill="none" stroke="#004aad" stroke-width="32" stroke-dasharray="120 220" transform="rotate(-90 82 82)"></circle>
-    <circle cx="82" cy="82" r="54" fill="none" stroke="#2f79df" stroke-width="32" stroke-dasharray="58 282" stroke-dashoffset="-120" transform="rotate(-90 82 82)"></circle>
-    <circle cx="82" cy="82" r="54" fill="none" stroke="#ffbf18" stroke-width="32" stroke-dasharray="45 295" stroke-dashoffset="-178" transform="rotate(-90 82 82)"></circle>
-    <circle cx="82" cy="82" r="54" fill="none" stroke="#ec1d25" stroke-width="32" stroke-dasharray="34 306" stroke-dashoffset="-223" transform="rotate(-90 82 82)"></circle>
+  return `<svg viewBox="0 0 250 170" role="img" aria-label="Gráfico de sectores">
+    <circle cx="82" cy="82" r="54" fill="none" stroke="#0052B4" stroke-width="32" stroke-dasharray="120 220" transform="rotate(-90 82 82)"></circle>
+    <circle cx="82" cy="82" r="54" fill="none" stroke="#0B1D3D" stroke-width="32" stroke-dasharray="58 282" stroke-dashoffset="-120" transform="rotate(-90 82 82)"></circle>
+    <circle cx="82" cy="82" r="54" fill="none" stroke="#FFC20E" stroke-width="32" stroke-dasharray="45 295" stroke-dashoffset="-178" transform="rotate(-90 82 82)"></circle>
+    <circle cx="82" cy="82" r="54" fill="none" stroke="#D62828" stroke-width="32" stroke-dasharray="34 306" stroke-dashoffset="-223" transform="rotate(-90 82 82)"></circle>
     <circle cx="82" cy="82" r="36" fill="#fff"></circle>
     <g font-size="12" fill="#092454" font-weight="700">
-      <rect x="160" y="35" width="10" height="10" fill="#004aad"></rect><text x="178" y="44">Servicios 45,0%</text>
-      <rect x="160" y="60" width="10" height="10" fill="#2f79df"></rect><text x="178" y="69">Comercio 20,3%</text>
-      <rect x="160" y="85" width="10" height="10" fill="#ffbf18"></rect><text x="178" y="94">Industria 16,1%</text>
-      <rect x="160" y="110" width="10" height="10" fill="#ec1d25"></rect><text x="178" y="119">Mineria 12,7%</text>
+      <rect x="160" y="35" width="10" height="10" fill="#0052B4"></rect><text x="178" y="44">Servicios 45,0%</text>
+      <rect x="160" y="60" width="10" height="10" fill="#0B1D3D"></rect><text x="178" y="69">Comercio 20,3%</text>
+      <rect x="160" y="85" width="10" height="10" fill="#FFC20E"></rect><text x="178" y="94">Industria 16,1%</text>
+      <rect x="160" y="110" width="10" height="10" fill="#D62828"></rect><text x="178" y="119">Minería 12,7%</text>
     </g>
   </svg>`;
 }
 
 function mapWidget() {
-  return `<svg viewBox="0 0 330 190" role="img" aria-label="Mapa economico por regiones">
+  return `<svg viewBox="0 0 330 190" role="img" aria-label="Mapa económico por regiones">
     <path d="M45 105 72 62l52-14 44 18 50-8 58 31-18 46-55 8-50 30-57-18-38 10Z" fill="#d9e8fb"></path>
     <path d="M74 65 125 50l12 44-42 18-52-7Z" fill="#8eb8eb"></path>
     <path d="M137 94 169 66l49-7 4 54-38 26-48-4Z" fill="#6ea2df"></path>
@@ -933,9 +968,9 @@ function worldBankSourceSection() {
         <div>
           <span class="eyebrow">Fuente internacional</span>
           <h2>Banco Mundial - Venezuela</h2>
-          <p>Series de World Development Indicators organizadas por area tematica del OVE, listas para descarga en CSV, JSON y Excel.</p>
+          <p>Series de World Development Indicators organizadas por área temática del OVE, listas para descarga en CSV, JSON y Excel.</p>
           <div class="source-stats">
-            <span><strong>${worldBankCatalog.length}</strong> areas</span>
+            <span><strong>${worldBankCatalog.length}</strong> áreas</span>
             <span><strong>${formatInteger(totals.records)}</strong> registros</span>
             <span><strong>${totals.indicators}</strong> indicadores</span>
             <span><strong>${totals.firstYear}-${totals.lastYear}</strong></span>
@@ -957,11 +992,11 @@ function newsletter() {
         ${icon("mail")}
         <div>
           <h2>Mantente informado</h2>
-          <p>Recibe analisis, indicadores y publicaciones directamente en tu correo.</p>
+          <p>Recibe análisis, indicadores y publicaciones directamente en tu correo.</p>
         </div>
       </div>
       <form class="subscribe-form js-form">
-        <input class="field" type="email" placeholder="tu@email.com" aria-label="Correo electronico" required>
+        <input class="field" type="email" placeholder="tu@email.com" aria-label="Correo electrónico" required>
         <button class="button button-yellow" type="submit">Suscribirme</button>
       </form>
     </div>
@@ -973,8 +1008,8 @@ function footer() {
   <footer class="site-footer">
     <div class="container footer-main">
       <div class="footer-brand">
-        <img src="assets/ove-logo-white.png" alt="Observatorio Venezolano de Economia">
-        <p>Promovemos la comprension de la economia para impulsar el desarrollo sostenible de Venezuela.</p>
+        <img src="assets/ove-logo-white.png" alt="Observatorio Venezolano de Economía">
+        <p>Promovemos la comprensión de la economía para impulsar el desarrollo sostenible de Venezuela.</p>
         <div class="social" aria-label="Redes sociales">
           <a href="#/contacto">in</a>
           <a href="#/contacto">X</a>
@@ -988,12 +1023,12 @@ function footer() {
         <a href="#/publicaciones">Informes</a>
         <a href="#/publicaciones">Publicaciones</a>
         <a href="#/datos">Datos y herramientas</a>
-        <a href="#/datos">Calendario economico</a>
+        <a href="#/datos">Calendario económico</a>
       </div>
       <div class="footer-col">
         <h3>Institucional</h3>
-        <a href="#/nosotros">Quienes somos</a>
-        <a href="#/nosotros">Metodologia</a>
+        <a href="#/nosotros">Quiénes somos</a>
+        <a href="#/nosotros">Metodología</a>
         <a href="#/nosotros">Equipo</a>
         <a href="#/nosotros">Aliados</a>
         <a href="#/nosotros">Transparencia</a>
@@ -1014,8 +1049,8 @@ function footer() {
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© 2024 Observatorio Venezolano de Economia. Todos los derechos reservados.</span>
-      <span>Terminos de uso &nbsp; | &nbsp; Politica de privacidad</span>
+      <span>© 2024 Observatorio Venezolano de Economía. Todos los derechos reservados.</span>
+      <span>Términos de uso &nbsp; | &nbsp; Política de privacidad</span>
     </div>
   </footer>`;
 }
@@ -1023,15 +1058,15 @@ function footer() {
 function homePage() {
   return `<div class="page">
     ${pageHero({
-      title: "Datos economicos para mejores decisiones",
-      lead: "Analizamos y difundimos informacion economica rigurosa, independiente y accesible para comprender la realidad venezolana.",
+      title: "Datos económicos para mejores decisiones",
+      lead: "Analizamos y difundimos información económica rigurosa, independiente y accesible para comprender la realidad venezolana.",
       actions: `<a class="button button-primary" href="#/indicadores">Explorar indicadores ${arrow()}</a>
-        <a class="button" href="#/informe-trimestral">Ver ultimo informe ${icon("file")}</a>`
+        <a class="button" href="#/informe-trimestral">Ver último informe ${icon("file")}</a>`
     })}
     <section class="section-tight">
       <div class="container">
         ${metricCards()}
-        <p class="source-note">Fuente: OVE con datos del BCV, FMI e INE. Ultima actualizacion: 28 de mayo de 2024</p>
+        <p class="source-note">Fuente: OVE con datos del BCV, FMI e INE. Última actualización: 28 de mayo de 2024</p>
       </div>
     </section>
     <section class="section">
@@ -1042,12 +1077,12 @@ function homePage() {
         </div>
         <div class="home-indicators">
           ${chartCard("PIB real", "(Var. % interanual)", "blue")}
-          ${chartCard("Inflacion interanual", "(Var. %)", "yellow")}
+          ${chartCard("Inflación interanual", "(Var. %)", "yellow")}
           ${chartCard("Tipo de cambio promedio", "(USD/VEF)", "red")}
           <aside class="support-panel">
-            <div class="support-item">${icon("monitor")}<div><h3>Panel interactivo</h3><p class="tiny">Explora y personaliza datos y graficos.</p></div></div>
-            <div class="support-item">${icon("download")}<div><h3>Descarga de datos</h3><p class="tiny">Series historicas en formatos abiertos.</p></div></div>
-            <div class="support-item">${icon("clipboard")}<div><h3>Metodologias</h3><p class="tiny">Conoce como medimos e integramos.</p></div></div>
+            <div class="support-item">${icon("monitor")}<div><h3>Panel interactivo</h3><p class="tiny">Explora y personaliza datos y gráficos.</p></div></div>
+            <div class="support-item">${icon("download")}<div><h3>Descarga de datos</h3><p class="tiny">Series históricas en formatos abiertos.</p></div></div>
+            <div class="support-item">${icon("clipboard")}<div><h3>Metodologías</h3><p class="tiny">Conoce cómo medimos e integramos.</p></div></div>
           </aside>
         </div>
       </div>
@@ -1055,7 +1090,7 @@ function homePage() {
     <section class="section section-tight">
       <div class="container">
         <div class="section-title">
-          <h2>Ultimos informes y publicaciones</h2>
+          <h2>Últimos informes y publicaciones</h2>
           <a class="text-link" href="#/publicaciones">Ver todas las publicaciones ${arrow()}</a>
         </div>
         <div class="reports-row">${reports.slice(0, 5).map(reportCard).join("")}</div>
@@ -1069,9 +1104,9 @@ function homePage() {
           <span class="accent-line"></span>
           <div class="values-grid">
             ${[
-              ["Independencia", "Somos una organizacion independiente, sin afiliacion politica ni fines de lucro.", "shield"],
-              ["Rigor metodologico", "Aplicamos estandares tecnicos internacionales y mejores practicas de analisis.", "target"],
-              ["Transparencia", "Publicamos nuestras fuentes, metodologias y supuestos de forma abierta.", "eye"],
+              ["Independencia", "Somos una organización independiente, sin afiliación política ni fines de lucro.", "shield"],
+              ["Rigor metodológico", "Aplicamos estándares técnicos internacionales y mejores prácticas de análisis.", "target"],
+              ["Transparencia", "Publicamos nuestras fuentes, metodologías y supuestos de forma abierta.", "eye"],
               ["Impacto", "Buscamos generar valor real para la sociedad y mejores decisiones.", "users"]
             ].map(([title, text, ico]) => `<article class="value-card"><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}
           </div>
@@ -1194,9 +1229,9 @@ function publicationsPage() {
           <div class="breadcrumb"><span>Inicio</span><span>Publicaciones</span><span>Informes y publicaciones</span></div>
           <h1>Informes y publicaciones</h1>
           <span class="accent-line"></span>
-          <p class="lead">Explora nuestros informes, analisis y estudios sobre la economia venezolana. Informacion rigurosa, actualizada y confiable para comprender y transformar el pais.</p>
+          <p class="lead">Explora nuestros informes, análisis y estudios sobre la economía venezolana. Información rigurosa, actualizada y confiable para comprender y transformar el país.</p>
           <form class="search-line js-form">
-            <input class="field" type="search" placeholder="Buscar publicaciones por titulo, tema o palabra clave..." aria-label="Buscar publicaciones">
+            <input class="field" type="search" placeholder="Buscar publicaciones por título, tema o palabra clave..." aria-label="Buscar publicaciones">
             <button class="icon-button" type="submit">${icon("search")}</button>
           </form>
           <div class="stat-row">
@@ -1205,12 +1240,12 @@ function publicationsPage() {
           </div>
         </div>
         <div class="featured-panel">
-          <img src="assets/publication-cover-1.png" alt="Portada Panorama Economico de Venezuela">
+          <img src="assets/publication-cover-1.png" alt="Portada Panorama Económico de Venezuela">
           <div class="featured-content">
             <span class="pill">Informe destacado</span>
-            <h2>Panorama Economico de Venezuela</h2>
+            <h2>Panorama Económico de Venezuela</h2>
             <p>Mayo 2024</p>
-            <p>Analisis integral de la evolucion reciente de los principales indicadores macroeconomicos y sectoriales del pais.</p>
+            <p>Análisis integral de la evolución reciente de los principales indicadores macroeconómicos y sectoriales del país.</p>
             <a class="button button-ghost" href="#/informe-trimestral">Ver informe completo ${arrow()}</a>
           </div>
         </div>
@@ -1219,47 +1254,47 @@ function publicationsPage() {
     <section class="section">
       <div class="container">
         <div class="tabs">
-          ${["Todos", "Informes", "Analisis", "Coyuntura", "Indicadores", "Notas metodologicas"].map((tab, i) => `<a class="${i === 0 ? "is-selected" : ""}" href="#/publicaciones">${tab}</a>`).join("")}
+          ${["Todos", "Informes", "Análisis", "Coyuntura", "Indicadores", "Notas metodológicas"].map((tab, i) => `<a class="${i === 0 ? "is-selected" : ""}" href="#/publicaciones">${tab}</a>`).join("")}
         </div>
         <div class="filter-row pub-controls">
           <p class="tiny">Mostrando 1-12 de 128 publicaciones</p>
-          <select aria-label="Ano"><option>Año: Todos</option></select>
+          <select aria-label="Año"><option>Año: Todos</option></select>
           <select aria-label="Tema"><option>Tema: Todos</option></select>
           <select aria-label="Formato"><option>Formato: Todos</option></select>
-          <select aria-label="Orden"><option>Mas recientes</option></select>
+          <select aria-label="Orden"><option>Más recientes</option></select>
         </div>
         <div class="pub-layout">
           <div class="publications-grid">${reports.map(reportCard).join("")}</div>
           <aside class="filter-sidebar">
             <div class="filter-panel">
-              <h3>Refina tu busqueda</h3>
-              <strong>Año de publicacion</strong>
+              <h3>Refina tu búsqueda</h3>
+              <strong>Año de publicación</strong>
               <a href="#/publicaciones">2024 (28)</a>
               <a href="#/publicaciones">2023 (32)</a>
               <a href="#/publicaciones">2022 (24)</a>
               <a href="#/publicaciones">2021 (18)</a>
-              <a href="#/publicaciones">Ver mas</a>
+              <a href="#/publicaciones">Ver más</a>
               <hr>
               <strong>Tema</strong>
-              <a href="#/publicaciones">Macro economia (42)</a>
-              <a href="#/publicaciones">Finanzas publicas (23)</a>
+              <a href="#/publicaciones">Macroeconomía (42)</a>
+              <a href="#/publicaciones">Finanzas públicas (23)</a>
               <a href="#/publicaciones">Sector externo (18)</a>
               <a href="#/publicaciones">Mercado laboral (15)</a>
               <hr>
               <strong>Formato</strong>
               <a href="#/publicaciones">PDF (98)</a>
               <a href="#/publicaciones">Excel (14)</a>
-              <a href="#/publicaciones">Presentacion (9)</a>
+              <a href="#/publicaciones">Presentación (9)</a>
             </div>
             <div class="filter-panel">
               <h3>¿No encuentras lo que buscas?</h3>
-              <p>Explora nuestras colecciones tematicas o usa la busqueda avanzada.</p>
-              <a class="text-link" href="#/datos">Busqueda avanzada ${arrow()}</a>
+              <p>Explora nuestras colecciones temáticas o usa la búsqueda avanzada.</p>
+              <a class="text-link" href="#/datos">Búsqueda avanzada ${arrow()}</a>
             </div>
           </aside>
         </div>
         <div style="text-align:center;margin-top:30px">
-          <a class="button" href="#/publicaciones">Cargar mas publicaciones ${icon("download")}</a>
+          <a class="button" href="#/publicaciones">Cargar más publicaciones ${icon("download")}</a>
         </div>
       </div>
     </section>
@@ -1610,17 +1645,17 @@ function aboutPage() {
   return `<div class="page">
     ${pageHero({
       title: "Nosotros",
-      lead: "En el Observatorio Venezolano de Economia generamos informacion confiable, independiente y accesible para comprender la economia y contribuir a mejores decisiones para el pais.",
+      lead: "En el Observatorio Venezolano de Economía generamos información confiable, independiente y accesible para comprender la economía y contribuir a mejores decisiones para el país.",
       image: "assets/venezuela-city-wide.jpg",
-      breadcrumb: ["Inicio", "Nosotros", "Metodologia / Transparencia"],
+      breadcrumb: ["Inicio", "Nosotros", "Metodología / Transparencia"],
       dark: true
     })}
     <section class="section">
       <div class="container about-grid">
         ${[
-          ["Mision", "Generar, analizar y difundir informacion economica rigurosa, independiente y accesible para impulsar mejores decisiones y contribuir al desarrollo sostenible del pais.", "target"],
-          ["Vision", "Ser el referente nacional en informacion economica confiable y analisis aplicado, reconocido por su impacto, independencia y compromiso con Venezuela.", "eye"],
-          ["Valores", "Independencia, rigor tecnico, transparencia, servicio publico, innovacion y colaboracion.", "users"]
+          ["Misión", "Generar, analizar y difundir información económica rigurosa, independiente y accesible para impulsar mejores decisiones y contribuir al desarrollo sostenible del país.", "target"],
+          ["Visión", "Ser el referente nacional en información económica confiable y análisis aplicado, reconocido por su impacto, independencia y compromiso con Venezuela.", "eye"],
+          ["Valores", "Independencia, rigor técnico, transparencia, servicio público, innovación y colaboración.", "users"]
         ].map(([title, text, ico]) => `<article class="value-card"><span class="line-icon">${icon(ico)}</span><h2>${title}</h2><span class="accent-line"></span><p>${text}</p></article>`).join("")}
       </div>
     </section>
@@ -1629,7 +1664,7 @@ function aboutPage() {
         <article class="panel span-5">
           <h2>Nuestro equipo</h2>
           <span class="accent-line"></span>
-          <p>Actualmente el Observatorio esta en una etapa inicial de desarrollo, con Carlos Marzol liderando la construccion de la plataforma, la identidad digital y la organizacion del contenido.</p>
+          <p>Actualmente el Observatorio está en una etapa inicial de desarrollo, con Carlos Marzol liderando la construcción de la plataforma, la identidad digital y la organización del contenido.</p>
           <div class="profile-row">
             <div class="profile profile-featured">
               <span class="avatar">CM</span>
@@ -1640,16 +1675,16 @@ function aboutPage() {
           <a class="button" href="#/contacto">Contactar con Carlos ${arrow()}</a>
         </article>
         <article class="panel span-7">
-          <h2>Nuestra metodologia</h2>
+          <h2>Nuestra metodología</h2>
           <span class="accent-line"></span>
-          <p>Aplicamos principios metodologicos que garantizan la calidad y consistencia de nuestra informacion.</p>
+          <p>Aplicamos principios metodológicos que garantizan la calidad y consistencia de nuestra información.</p>
           <div class="cards-4 mini-grid-5">
             ${[
-              ["Rigor tecnico", "Metodos estadisticos y econometricos estandarizados.", "trend"],
+              ["Rigor técnico", "Métodos estadísticos y econométricos estandarizados.", "trend"],
               ["Fuentes verificadas", "Usamos fuentes oficiales y alternativas de alta calidad.", "shield"],
               ["Transparencia", "Documentamos procesos, supuestos y limitaciones.", "eye"],
-              ["Reproducibilidad", "Nuestros calculos pueden ser replicados y auditados.", "code"],
-              ["Actualizacion", "Revisamos y actualizamos la informacion periodicamente.", "plus"]
+              ["Reproducibilidad", "Nuestros cálculos pueden ser replicados y auditados.", "code"],
+              ["Actualización", "Revisamos y actualizamos la información periódicamente.", "plus"]
             ].map(([title, text, ico]) => `<div><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p class="tiny">${text}</p></div>`).join("")}
           </div>
         </article>
@@ -1658,26 +1693,26 @@ function aboutPage() {
     <section class="section">
       <div class="container dashboard-grid">
         <article class="panel span-5">
-          <h2>Fuentes de informacion</h2>
+          <h2>Fuentes de información</h2>
           <span class="accent-line"></span>
-          <p>Combinamos fuentes oficiales y alternativas para ofrecer una vision integral y actualizada.</p>
+          <p>Combinamos fuentes oficiales y alternativas para ofrecer una visión integral y actualizada.</p>
           <div class="cards-4 mini-grid-3">
             ${[
               ["Fuentes oficiales", "BCV, INE, MPPEF, Cantv, Sudeban, PDVSA, entre otras.", "bank"],
-              ["Fuentes alternativas", "Organismos internacionales, investigaciones academicas y reportes especializados.", "globe"],
-              ["Datos propios", "Indices y encuestas diseñadas por el OVE para necesidades especificas.", "users"]
+              ["Fuentes alternativas", "Organismos internacionales, investigaciones académicas y reportes especializados.", "globe"],
+              ["Datos propios", "Índices y encuestas diseñadas por el OVE para necesidades específicas.", "users"]
             ].map(([title, text, ico]) => `<div><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p class="tiny">${text}</p></div>`).join("")}
           </div>
         </article>
         <article class="panel span-7">
           <h2>Transparencia y gobernanza</h2>
           <span class="accent-line"></span>
-          <p>Operamos con independencia y rendicion de cuentas.</p>
+          <p>Operamos con independencia y rendición de cuentas.</p>
           <div class="cards-4 mini-grid-3">
             ${[
-              ["Independencia institucional", "No respondemos a intereses partidistas ni economicos.", "shield"],
+              ["Independencia institucional", "No respondemos a intereses partidistas ni económicos.", "shield"],
               ["Financiamiento transparente", "Promovemos el acceso libre y responsable a los datos.", "bank"],
-              ["Etica y buenas practicas", "Seguimos estandares internacionales de investigacion y publicacion.", "target"]
+              ["Ética y buenas prácticas", "Seguimos estándares internacionales de investigación y publicación.", "target"]
             ].map(([title, text, ico]) => `<div class="support-item">${icon(ico)}<div><h3>${title}</h3><p class="tiny">${text}</p></div></div>`).join("")}
           </div>
         </article>
@@ -1686,15 +1721,15 @@ function aboutPage() {
     <section class="section-tight">
       <div class="container">
         <h2>Nuestra trayectoria</h2>
-        <p>Mas de una decada generando informacion que impulsa el debate publico y mejores decisiones.</p>
+        <p>Más de una década generando información que impulsa el debate público y mejores decisiones.</p>
         <div class="timeline">
           ${[
-            ["2014", "Nace el OVE con la mision de promover economia basada en evidencia."],
-            ["2016", "Lanzamos nuestro portal web con indicadores economicos clave."],
-            ["2018", "Iniciamos la publicacion de informes y reportes especializados."],
+            ["2014", "Nace el OVE con la misión de promover economía basada en evidencia."],
+            ["2016", "Lanzamos nuestro portal web con indicadores económicos clave."],
+            ["2018", "Iniciamos la publicación de informes y reportes especializados."],
             ["2020", "Ampliamos fuentes y desarrollamos indicadores propios."],
             ["2022", "Alcanzamos 10 millones de visualizaciones en nuestras plataformas."],
-            ["2024", "Reafirmamos nuestro compromiso con transparencia y pais."]
+            ["2024", "Reafirmamos nuestro compromiso con transparencia y país."]
           ].map(([year, text]) => `<div class="timeline-item"><h3>${year}</h3><p class="tiny">${text}</p></div>`).join("")}
         </div>
       </div>
@@ -1702,17 +1737,17 @@ function aboutPage() {
     <section class="section">
       <div class="container dashboard-grid">
         <article class="panel span-4">
-          <h2>Aliados estrategicos</h2>
+          <h2>Aliados estratégicos</h2>
           <span class="accent-line"></span>
-          <p>Colaboramos con instituciones nacionales e internacionales que comparten nuestra vision.</p>
+          <p>Colaboramos con instituciones nacionales e internacionales que comparten nuestra visión.</p>
           <div class="logos-row"><span>CAF</span><span>BID</span><span>ONU</span><span>UCAB</span></div>
         </article>
         <article class="panel span-4">
           <h2>Preguntas frecuentes</h2>
-          ${faqList(["¿El OVE recibe financiamiento del gobierno?", "¿Como se financia el Observatorio?", "¿Como se seleccionan y validan los datos?", "¿Puedo utilizar la informacion del OVE?"])}
+          ${faqList(["¿El OVE recibe financiamiento del gobierno?", "¿Cómo se financia el Observatorio?", "¿Cómo se seleccionan y validan los datos?", "¿Puedo utilizar la información del OVE?"])}
         </article>
         <article class="panel span-4 about-cta-card">
-          <h2>Con informacion confiable construimos un mejor pais.</h2>
+          <h2>Con información confiable construimos un mejor país.</h2>
           <p>Tu confianza nos impulsa a seguir trabajando con rigor, independencia y transparencia.</p>
           <a class="button button-primary" href="#/indicadores">Explorar indicadores ${arrow()}</a>
         </article>
@@ -1723,29 +1758,29 @@ function aboutPage() {
 }
 
 function faqList(items) {
-  return `<div class="faq-list">${items.map(item => `<details class="faq-item"><summary>${item}</summary><p class="tiny">Nuestro equipo responde con criterios tecnicos, fuentes verificables y procesos documentados.</p></details>`).join("")}</div>`;
+  return `<div class="faq-list">${items.map(item => `<details class="faq-item"><summary>${item}</summary><p class="tiny">Nuestro equipo responde con criterios técnicos, fuentes verificables y procesos documentados.</p></details>`).join("")}</div>`;
 }
 
 function contactPage() {
   return `<div class="page">
     ${pageHero({
-      title: "Contacto y boletin",
-      lead: "Estamos para escucharte. Escribenos, visitanos o suscribete para recibir informacion economica confiable y oportuna.",
+      title: "Contacto y boletín",
+      lead: "Estamos para escucharte. Escríbenos, visítanos o suscríbete para recibir información económica confiable y oportuna.",
       image: "assets/venezuela-avila.jpg",
-      actions: `<a class="text-link" href="#/contacto">${icon("mail")} Envianos un mensaje</a><a class="text-link" href="#/contacto">${icon("phone")} Llamanos</a><a class="text-link" href="#/contacto">${icon("pin")} Visitanos</a>`,
+      actions: `<a class="text-link" href="#/contacto">${icon("mail")} Envíanos un mensaje</a><a class="text-link" href="#/contacto">${icon("phone")} Llámanos</a><a class="text-link" href="#/contacto">${icon("pin")} Visítanos</a>`,
       breadcrumb: []
     })}
     <section class="section">
       <div class="container contact-grid">
         <article id="mensaje" class="panel">
-          <h2>${icon("mail")} Envianos un mensaje</h2>
+          <h2>${icon("mail")} Envíanos un mensaje</h2>
           <form class="form-grid js-form">
             <input class="field full" type="text" placeholder="Nombre completo *" required>
-            <input class="field full" type="email" placeholder="Correo electronico *" required>
-            <input class="field" type="tel" placeholder="Telefono">
+            <input class="field full" type="email" placeholder="Correo electrónico *" required>
+            <input class="field" type="tel" placeholder="Teléfono">
             <select class="field" required><option>Consulta general</option><option>Datos</option><option>Prensa</option></select>
-            <textarea class="field full" placeholder="Cuentanos en que podemos ayudarte..." required></textarea>
-            <label class="check-line full"><input type="checkbox" required> Acepto la politica de privacidad y el tratamiento de mis datos personales.</label>
+            <textarea class="field full" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+            <label class="check-line full"><input type="checkbox" required> Acepto la política de privacidad y el tratamiento de mis datos personales.</label>
             <button class="button button-primary full" type="submit">Enviar mensaje ${arrow()}</button>
           </form>
           <p class="tiny">Te responderemos a la brevedad posible.</p>
@@ -1769,7 +1804,7 @@ function contactPage() {
         <aside class="stack-gap">
           <article class="panel">
             <h2>${icon("megaphone")} Contacto para medios</h2>
-            <p>Para entrevistas, declaraciones o solicitudes de informacion para prensa.</p>
+            <p>Para entrevistas, declaraciones o solicitudes de información para prensa.</p>
             <div class="filter-panel">
               <h3>Maria Fernanda Lopez</h3>
               <p>Coordinadora de Comunicaciones</p>
@@ -1780,7 +1815,7 @@ function contactPage() {
           </article>
           <article class="panel">
             <span class="line-icon">${icon("quote")}</span>
-            <p><strong>Promovemos el analisis riguroso y la difusion de informacion economica confiable para contribuir a mejores decisiones para el pais.</strong></p>
+            <p><strong>Promovemos el análisis riguroso y la difusión de información económica confiable para contribuir a mejores decisiones para el país.</strong></p>
             <span class="accent-line"></span>
           </article>
         </aside>
@@ -1788,19 +1823,19 @@ function contactPage() {
     </section>
     <section class="section-tight">
       <div class="container dashboard-grid">
-        <article class="panel span-4" style="color:#fff;background:linear-gradient(135deg,var(--navy-950),#004aad)">
-          <h2 style="color:#fff">${icon("mail")} Suscribete a nuestro boletin</h2>
-          <p>Recibe analisis, indicadores y publicaciones directamente en tu correo.</p>
+        <article class="panel span-4" style="color:#fff;background:linear-gradient(135deg,var(--navy-950),var(--blue-700))">
+          <h2 style="color:#fff">${icon("mail")} Suscríbete a nuestro boletín</h2>
+          <p>Recibe análisis, indicadores y publicaciones directamente en tu correo.</p>
           <form class="subscribe-form js-form"><input class="field" type="email" placeholder="tu@email.com" required><button class="button button-yellow">Suscribirme ${arrow()}</button></form>
-          <p class="tiny" style="color:#dce8ff">Al suscribirte, aceptas nuestra politica de privacidad.</p>
+          <p class="tiny" style="color:#dce8ff">Al suscribirte, aceptas nuestra política de privacidad.</p>
         </article>
         <article class="panel span-3">
-          <h2>Siguenos en redes sociales</h2>
+          <h2>Síguenos en redes sociales</h2>
           <p class="social"><a href="#/contacto">f</a><a href="#/contacto">X</a><a href="#/contacto">ig</a><a href="#/contacto">in</a><a href="#/contacto">yt</a></p>
         </article>
         <article id="mapa" class="panel span-5 map-card">
-          <h2>Donde estamos</h2>
-          <img src="assets/map-preview.png" alt="Mapa de ubicacion del OVE">
+          <h2>Dónde estamos</h2>
+          <img src="assets/map-preview.png" alt="Mapa de ubicación del OVE">
           <a class="text-link" href="#/contacto">Ver en Google Maps ${arrow()}</a>
         </article>
       </div>
@@ -1810,10 +1845,10 @@ function contactPage() {
         <h2>Preguntas frecuentes</h2>
         <div class="cards-4">
           ${[
-            ["¿Que tipo de consultas atienden?", "Respondemos consultas sobre indicadores, informes, publicaciones, datos y colaboracion institucional."],
-            ["¿En cuanto tiempo responden?", "Nuestro tiempo de respuesta habitual es de 24 a 48 horas habiles."],
-            ["¿Puedo solicitar datos especificos?", "Si. Escribenos tu requerimiento y te orientaremos sobre la informacion disponible."],
-            ["¿Como puedo colaborar con el OVE?", "Completa el formulario de colaboracion y nuestro equipo se pondra en contacto contigo."]
+            ["¿Qué tipo de consultas atienden?", "Respondemos consultas sobre indicadores, informes, publicaciones, datos y colaboración institucional."],
+            ["¿En cuánto tiempo responden?", "Nuestro tiempo de respuesta habitual es de 24 a 48 horas hábiles."],
+            ["¿Puedo solicitar datos específicos?", "Sí. Escríbenos tu requerimiento y te orientaremos sobre la información disponible."],
+            ["¿Cómo puedo colaborar con el OVE?", "Completa el formulario de colaboración y nuestro equipo se pondrá en contacto contigo."]
           ].map(([q, a]) => `<details class="faq-item"><summary>${q}</summary><p>${a}</p></details>`).join("")}
         </div>
       </div>
@@ -1823,13 +1858,13 @@ function contactPage() {
         <div class="contact-grid collab-grid">
           <div>
             <h2>${icon("users")} Colabora con nosotros</h2>
-            <p>Si eres investigador, estudiante, institucion o profesional independiente y deseas contribuir con analisis, estudios o proyectos, completa el siguiente formulario.</p>
-            <a class="button" href="#/nosotros">Conoce nuestras lineas de trabajo ${arrow()}</a>
+            <p>Si eres investigador, estudiante, institución o profesional independiente y deseas contribuir con análisis, estudios o proyectos, completa el siguiente formulario.</p>
+            <a class="button" href="#/nosotros">Conoce nuestras líneas de trabajo ${arrow()}</a>
           </div>
           <form class="form-grid js-form">
             <input class="field" type="text" placeholder="Nombre completo *" required>
-            <input class="field" type="email" placeholder="Correo electronico *" required>
-            <select class="field"><option>Investigacion</option><option>Datos</option><option>Alianzas</option></select>
+            <input class="field" type="email" placeholder="Correo electrónico *" required>
+            <select class="field"><option>Investigación</option><option>Datos</option><option>Alianzas</option></select>
             <textarea class="field full" placeholder="Describe brevemente tu propuesta..." required></textarea>
             <button class="button button-primary full" type="submit">Enviar propuesta ${arrow()}</button>
           </form>
@@ -1839,10 +1874,10 @@ function contactPage() {
     <section class="dark-band">
       <div class="container cta-panel">
         <div>
-          <h2>Conectemos para transformar informacion en mejores decisiones.</h2>
-          <p>Tu opinion y participacion son fundamentales para seguir construyendo un pais con datos, analisis y futuro.</p>
+          <h2>Conectemos para transformar información en mejores decisiones.</h2>
+          <p>Tu opinión y participación son fundamentales para seguir construyendo un país con datos, análisis y futuro.</p>
         </div>
-        <a class="button button-ghost" href="#/contacto">Escribenos ahora ${arrow()}</a>
+        <a class="button button-ghost" href="#/contacto">Escríbenos ahora ${arrow()}</a>
       </div>
     </section>
     ${footer()}
@@ -1852,6 +1887,7 @@ function contactPage() {
 function render() {
   const route = normalizeRoute(location.hash.replace("#", "") || "/");
   const view = routes[route] || routes["/"];
+  const meta = routeMeta[route] || routeMeta["/"];
   const currentRender = ++routeRenderId;
   const firstRender = lastRoute === null;
 
@@ -1859,6 +1895,10 @@ function render() {
     if (currentRender !== routeRenderId) return;
 
     appRoot.innerHTML = view();
+    document.title = meta.title;
+    document.querySelector('meta[name="description"]')?.setAttribute("content", meta.description);
+    document.querySelector('meta[property="og:title"]')?.setAttribute("content", meta.title);
+    document.querySelector('meta[property="og:description"]')?.setAttribute("content", meta.description);
     appRoot.focus({ preventScroll: true });
     updateActiveNav(route);
     wireForms();
@@ -1925,7 +1965,7 @@ function wireForms() {
   const copy = document.querySelector(".js-copy");
   if (copy) {
     copy.addEventListener("click", async () => {
-      const text = "Observatorio Venezolano de Economia. (2024). Informe economico trimestral T1 2024.";
+      const text = "Observatorio Venezolano de Economía. (2024). Informe económico trimestral T1 2024.";
       try {
         await navigator.clipboard.writeText(text);
         copy.textContent = "Cita copiada";

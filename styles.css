@@ -1,18 +1,18 @@
 :root {
-  --navy-950: #001a3d;
-  --navy-900: #002653;
-  --navy-800: #00316d;
-  --blue-700: #004aad;
-  --blue-600: #0757c8;
+  --navy-950: #0b1d3d;
+  --navy-900: #0b1d3d;
+  --navy-800: #123769;
+  --blue-700: #0052b4;
+  --blue-600: #0a62d0;
   --blue-100: #eaf2ff;
-  --yellow: #ffbf18;
-  --yellow-100: #fff4c8;
-  --red: #ec1d25;
-  --green: #15915b;
+  --yellow: #ffc20e;
+  --yellow-100: #fff3cd;
+  --red: #d62828;
+  --green: #2e7d32;
   --topic-primary: var(--blue-700);
   --topic-accent: var(--yellow);
   --topic-highlight: var(--red);
-  --ink: #092454;
+  --ink: #0b1d3d;
   --muted: #61708e;
   --line: #dfe6f2;
   --soft: #f5f8fc;
@@ -35,7 +35,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: #fff;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0;
@@ -377,6 +377,8 @@ h1 {
   font-size: clamp(2.3rem, 3.8vw, 3.85rem);
   line-height: 1;
   font-weight: 850;
+  font-family: Montserrat, Inter, "Segoe UI", Arial, Helvetica, sans-serif;
+  text-transform: none;
 }
 
 h2 {
@@ -384,6 +386,7 @@ h2 {
   color: var(--ink);
   font-size: clamp(1.5rem, 2.6vw, 2rem);
   line-height: 1.12;
+  font-family: Montserrat, Inter, "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
 h3 {
@@ -391,6 +394,7 @@ h3 {
   color: var(--ink);
   font-size: 1.05rem;
   line-height: 1.2;
+  font-family: Montserrat, Inter, "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
 .lead {
@@ -1312,7 +1316,7 @@ h3 {
   color: #fff;
   background:
     radial-gradient(circle at 92% 60%, rgba(255, 255, 255, 0.22) 0 1px, transparent 1px) 0 0 / 13px 13px,
-    linear-gradient(120deg, var(--navy-950), #003b7b);
+    linear-gradient(120deg, var(--navy-950), var(--blue-700));
   overflow: hidden;
 }
 
@@ -1413,7 +1417,7 @@ h3 {
 .newsletter {
   padding: 26px 0;
   color: #fff;
-  background: linear-gradient(120deg, #01214d, #003b7b);
+  background: linear-gradient(120deg, var(--navy-950), var(--blue-700));
 }
 
 .newsletter-inner {
