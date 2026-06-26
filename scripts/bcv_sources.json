@@ -15,6 +15,17 @@
       "parser": "exchange_rate_current"
     },
     {
+      "id": "bcv_tipo_cambio_usd",
+      "title": "Tipo de Cambio BCV Bs/USD",
+      "frequency": "daily",
+      "page_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
+      "historical_page_url": "https://www.bcv.org.ve/estadisticas/otras-monedas",
+      "historical_workbook_url": "https://www.bcv.org.ve/sites/default/files/indicadores_sector_externo/2_1_1_tdc.xlsx",
+      "output_slug": "ove_bcv_tipo_cambio_usd",
+      "status": "active",
+      "parser": "exchange_rate_usd_historical"
+    },
+    {
       "id": "bcv_producto_interno_bruto",
       "title": "Producto Interno Bruto",
       "frequency": "monthly",

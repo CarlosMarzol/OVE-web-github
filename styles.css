@@ -847,6 +847,67 @@ h3 {
   text-transform: uppercase;
 }
 
+.bcv-live-section {
+  margin-top: -22px;
+}
+
+.bcv-live-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  background:
+    linear-gradient(135deg, #ffffff 0%, #f5f8fc 58%, rgba(255, 194, 14, 0.16) 100%);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--yellow);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.bcv-live-card h2 {
+  margin: 10px 0 8px;
+}
+
+.bcv-live-card p {
+  max-width: 720px;
+  color: var(--muted);
+}
+
+.bcv-live-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.bcv-live-value {
+  display: grid;
+  min-height: 186px;
+  padding: 20px;
+  align-content: center;
+  justify-items: start;
+  gap: 8px;
+  background: var(--navy-950);
+  color: #fff;
+  border-radius: var(--radius);
+}
+
+.bcv-live-value strong {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.bcv-live-value span:not(.source-tag),
+.bcv-live-value small {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.bcv-live-card-compact {
+  margin-top: 22px;
+}
+
 .world-bank-card h3 {
   margin-top: 12px;
 }
@@ -2395,7 +2456,8 @@ th {
   .api-panel,
   .values-layout,
   .world-source-panel,
-  .world-bank-summary {
+  .world-bank-summary,
+  .bcv-live-card {
     grid-template-columns: 1fr;
   }
 

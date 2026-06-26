@@ -7,7 +7,7 @@
     "frequency": "daily",
     "unit": "VES por unidad de moneda extranjera",
     "status": "official_source",
-    "last_fetched_at": "2026-06-26T09:35:29Z",
+    "last_fetched_at": "2026-06-26T17:47:00Z",
     "first_date": "2026-06-26",
     "last_date": "2026-06-26",
     "currencies": [
@@ -18,6 +18,18 @@
       "USD"
     ],
     "records": 5,
+    "latest_usd": {
+      "date": "2026-06-26",
+      "currency": "USD",
+      "value": 622.2135,
+      "unit": "VES por unidad de moneda extranjera",
+      "frequency": "daily",
+      "indicator_id": "bcv_tipo_cambio_referencia_smc_usd",
+      "indicator_name": "Tipo de Cambio de Referencia SMC - USD",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
+      "fetched_at": "2026-06-26T17:47:00Z"
+    },
     "notes": "Datos extraidos de la pagina oficial del BCV. La serie se actualiza por fecha y moneda."
   },
   "observations": [
@@ -31,7 +43,7 @@
       "indicator_name": "Tipo de Cambio de Referencia SMC - CNY",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
-      "fetched_at": "2026-06-26T09:35:29Z"
+      "fetched_at": "2026-06-26T17:47:00Z"
     },
     {
       "date": "2026-06-26",
@@ -43,7 +55,7 @@
       "indicator_name": "Tipo de Cambio de Referencia SMC - EUR",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
-      "fetched_at": "2026-06-26T09:35:29Z"
+      "fetched_at": "2026-06-26T17:47:00Z"
     },
     {
       "date": "2026-06-26",
@@ -55,7 +67,7 @@
       "indicator_name": "Tipo de Cambio de Referencia SMC - RUB",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
-      "fetched_at": "2026-06-26T09:35:29Z"
+      "fetched_at": "2026-06-26T17:47:00Z"
     },
     {
       "date": "2026-06-26",
@@ -67,7 +79,7 @@
       "indicator_name": "Tipo de Cambio de Referencia SMC - TRY",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
-      "fetched_at": "2026-06-26T09:35:29Z"
+      "fetched_at": "2026-06-26T17:47:00Z"
     },
     {
       "date": "2026-06-26",
@@ -79,7 +91,7 @@
       "indicator_name": "Tipo de Cambio de Referencia SMC - USD",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
-      "fetched_at": "2026-06-26T09:35:29Z"
+      "fetched_at": "2026-06-26T17:47:00Z"
     }
   ]
 }

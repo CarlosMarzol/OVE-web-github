@@ -22,7 +22,12 @@ python3 scripts/bcv_ingest.py --group monthly
 python3 scripts/bcv_ingest.py --group all
 ```
 
-La ingesta diaria actualiza el tipo de cambio de referencia SMC. La ingesta mensual refresca el catalogo de archivos oficiales de PIB e INPC para su normalizacion posterior.
+La ingesta diaria actualiza dos salidas BCV:
+
+- `ove_bcv_tipo_cambio_usd`: serie historica diaria Bs/USD desde el Excel oficial `2_1_1_tdc.xlsx` y el dato diario publicado por el BCV.
+- `ove_bcv_tipo_cambio_referencia_smc`: referencia diaria multimoneda publicada en la pagina SMC.
+
+La ingesta mensual refresca el catalogo de archivos oficiales de PIB e INPC para su normalizacion posterior.
 
 ## Ejecutar localmente
 

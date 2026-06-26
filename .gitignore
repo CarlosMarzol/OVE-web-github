@@ -15,6 +15,8 @@ node_modules/
 dist/
 build/
 .cache/
+__pycache__/
+*.py[cod]
 
 # Generated source snapshots from BCV ingestion
-assets/data/bcv/raw/*.html
+assets/data/bcv/raw/
