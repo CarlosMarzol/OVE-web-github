@@ -1071,6 +1071,36 @@ h3 {
   color: var(--red);
 }
 
+.trend.neutral {
+  color: var(--muted);
+}
+
+.example-note {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  color: var(--navy-900);
+  background: #fff8db;
+  border: 1px solid rgba(255, 194, 14, 0.55);
+  border-left: 4px solid var(--yellow);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.example-tag {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 22px;
+  padding: 0 8px;
+  color: var(--navy-950);
+  background: var(--yellow);
+  border-radius: 4px;
+  font-size: 0.66rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
 .source-note {
   margin: 14px 0 0;
   color: var(--muted);

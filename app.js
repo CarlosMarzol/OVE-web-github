@@ -26,15 +26,15 @@ const routeMeta = {
   },
   "/indicadores": {
     title: "Indicadores económicos | OVE",
-    description: "Panel de indicadores económicos de Venezuela con series históricas y fuentes verificables."
+    description: "Estructura inicial de indicadores del OVE. Los ejemplos se muestran como maqueta hasta la publicación de datos propios."
   },
   "/publicaciones": {
     title: "Informes y publicaciones | OVE",
-    description: "Análisis, informes y estudios del Observatorio Venezolano de Economía."
+    description: "Repositorio de informes del OVE en construcción. Aún no hay informes publicados."
   },
   "/informe-trimestral": {
-    title: "Informe económico trimestral | OVE",
-    description: "Informe trimestral con análisis macroeconómico y sectorial de Venezuela."
+    title: "Ejemplo de informe económico | OVE",
+    description: "Plantilla de informe del OVE mostrada como ejemplo, sin datos publicados."
   },
   "/datos": {
     title: "Banco de datos | OVE",
@@ -63,63 +63,58 @@ let revealObserver = null;
 
 const metricData = [
   {
-    title: "PIB Trimestral",
-    subtitle: "(Var. % interanual)",
-    value: "2,4%",
-    period: "T1 2024",
-    trend: "0,6 p.p. vs T4 2023",
+    title: "PIB trimestral",
+    subtitle: "(ejemplo de indicador)",
+    value: "Ejemplo",
+    period: "Sin publicar",
+    trend: "Maqueta sin dato real OVE",
     direction: "up",
     icon: "trend"
   },
   {
-    title: "Inflación Interanual",
-    subtitle: "(Var. %)",
-    value: "58,7%",
-    period: "Abr 2024",
-    trend: "2,1 p.p. vs Abr 2024",
+    title: "Inflación interanual",
+    subtitle: "(ejemplo de indicador)",
+    value: "Ejemplo",
+    period: "Sin publicar",
+    trend: "Maqueta sin dato real OVE",
     direction: "down",
     color: "yellow",
     icon: "coin"
   },
   {
     title: "Tipo de cambio prom.",
-    subtitle: "(USD/VEF)",
-    value: "36,25",
-    period: "May 2024",
-    trend: "1,8% vs Abr 2024",
+    subtitle: "(ejemplo de indicador)",
+    value: "Ejemplo",
+    period: "Sin publicar",
+    trend: "Maqueta sin dato real OVE",
     direction: "down",
     color: "red",
     icon: "dollar"
   },
   {
-    title: "Empleo Informal",
-    subtitle: "(%)",
-    value: "43,8%",
-    period: "T1 2024",
-    trend: "1,2 p.p. vs T4 2023",
+    title: "Empleo informal",
+    subtitle: "(ejemplo de indicador)",
+    value: "Ejemplo",
+    period: "Sin publicar",
+    trend: "Maqueta sin dato real OVE",
     direction: "up",
     icon: "users"
   },
   {
-    title: "Reservas Internacionales",
-    subtitle: "(USD millones)",
-    value: "8.925",
-    period: "May 2024",
-    trend: "3,4% vs Abr 2024",
+    title: "Reservas internacionales",
+    subtitle: "(ejemplo de indicador)",
+    value: "Ejemplo",
+    period: "Sin publicar",
+    trend: "Maqueta sin dato real OVE",
     direction: "down",
     icon: "bank"
   }
 ];
 
 const reports = [
-  ["Informe", "Panorama Económico de Venezuela", "Mayo 2024", "Análisis integral de la evolución reciente de los principales indicadores del país.", "dark"],
-  ["Informe especial", "Inflación y poder adquisitivo en Venezuela", "Abril 2024", "Evolución reciente de la inflación y su impacto en el poder de compra de los hogares.", "light"],
-  ["Análisis", "Finanzas públicas y sostenibilidad fiscal en Venezuela", "Mayo 2024", "Situación fiscal del gobierno central y perspectivas de sostenibilidad.", "dark"],
-  ["Indicadores", "Mercado laboral venezolano", "T1 2024", "Indicadores clave del mercado laboral: empleo, desempleo e informalidad.", "light"],
-  ["Coyuntura", "Coyuntura cambiaria y reservas internacionales", "Mayo 2024", "Evolucion del tipo de cambio y nivel de reservas internacionales.", "dark"],
-  ["Analisis", "Panorama petrolero Venezuela 2023", "Abril 2024", "Produccion, exportaciones y entorno sectorial.", "light"],
-  ["Notas metodológicas", "Cómo medimos la actividad económica", "Marzo 2024", "Criterios, fuentes y procesos de validación estadística.", "dark"],
-  ["Informe", "Informe económico anual 2023", "Marzo 2024", "Balance macroeconómico anual y perspectivas.", "light"]
+  ["Ejemplo", "Plantilla de informe macroeconómico", "Sin publicar", "Ejemplo visual de cómo se verá un informe cuando el OVE emita su primera publicación.", "dark"],
+  ["Ejemplo", "Plantilla de nota metodológica", "Sin publicar", "Estructura demostrativa para futuras notas técnicas. No contiene datos reales.", "light"],
+  ["Ejemplo", "Plantilla de análisis sectorial", "Sin publicar", "Modelo de tarjeta para ordenar análisis sectoriales cuando existan fuentes validadas.", "dark"]
 ];
 
 const publicationCovers = [
@@ -130,12 +125,12 @@ const publicationCovers = [
 ];
 
 const datasets = [
-  ["Cuentas nacionales", "120 datasets", "PIB, VAB, demanda, ingreso", "trend"],
-  ["Precios e inflación", "85 datasets", "IPC, inflación subyacente, canastas", "tag"],
-  ["Comercio exterior", "68 datasets", "Exportaciones, importaciones, balanza", "globe"],
-  ["Finanzas públicas", "92 datasets", "Ingresos, gastos, deuda pública", "bank"],
-  ["Mercado laboral", "54 datasets", "Empleo, desempleo, salarios", "users"],
-  ["Sector real", "77 datasets", "Industria, construccion, agropecuario", "factory"]
+  ["Cuentas nacionales", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "trend"],
+  ["Precios e inflación", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "tag"],
+  ["Comercio exterior", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "globe"],
+  ["Finanzas públicas", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "bank"],
+  ["Mercado laboral", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "users"],
+  ["Sector real", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "factory"]
 ];
 
 const worldBankCatalog = [
@@ -724,6 +719,14 @@ function arrow() {
   return icon("arrow");
 }
 
+function exampleTag(text = "Ejemplo") {
+  return `<span class="example-tag">${text}</span>`;
+}
+
+function exampleNotice(text = "Contenido de ejemplo. El OVE aún no ha publicado datos propios para esta sección.") {
+  return `<p class="example-note">${text}</p>`;
+}
+
 function metricCards(extraClass = "") {
   return `<div class="metrics-grid ${extraClass}">
     ${metricData.map(metric => `
@@ -737,7 +740,7 @@ function metricCards(extraClass = "") {
         </div>
         <div class="metric-value">${metric.value}</div>
         <div class="tiny">${metric.period}</div>
-        <div class="trend ${metric.direction === "down" ? "down" : ""}">${metric.direction === "down" ? "↓" : "↑"} ${metric.trend}</div>
+        <div class="trend neutral">Ejemplo: ${metric.trend}</div>
       </article>
     `).join("")}
   </div>`;
@@ -749,7 +752,7 @@ function lineChart(kind = "blue") {
       line: "chart-line-blue",
       tag: "tag-value",
       color: "#0052B4",
-      label: "2,4%",
+      label: "EJ.",
       points: "16,70 56,112 88,87 120,72 158,25 196,48 236,60 282,52",
       circles: [[16, 70], [56, 112], [88, 87], [120, 72], [158, 25], [196, 48], [236, 60], [282, 52]]
     },
@@ -757,7 +760,7 @@ function lineChart(kind = "blue") {
       line: "chart-line-yellow",
       tag: "tag-yellow",
       color: "#FFC20E",
-      label: "58,7%",
+      label: "EJ.",
       points: "18,112 58,105 96,92 128,72 160,38 188,18 220,45 266,48",
       area: "18,112 58,105 96,92 128,72 160,38 188,18 220,45 266,48 266,124 18,124",
       circles: [[18, 112], [58, 105], [96, 92], [128, 72], [160, 38], [188, 18], [220, 45], [266, 48]]
@@ -766,7 +769,7 @@ function lineChart(kind = "blue") {
       line: "chart-line-red",
       tag: "tag-red",
       color: "#D62828",
-      label: "36,25",
+      label: "EJ.",
       points: "18,112 56,106 90,88 126,74 162,62 196,52 228,58 266,50",
       circles: [[18, 112], [56, 106], [90, 88], [126, 74], [162, 62], [196, 52], [228, 58], [266, 50]]
     }
@@ -783,11 +786,11 @@ function lineChart(kind = "blue") {
       ${cfg.circles.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="4" fill="#fff" stroke="${cfg.color}" stroke-width="3"></circle>`).join("")}
       <rect x="252" y="${kind === "yellow" ? 21 : kind === "red" ? 34 : 34}" width="52" height="24" rx="4" class="${cfg.tag}"></rect>
       <text x="278" y="${kind === "yellow" ? 37 : kind === "red" ? 50 : 50}" text-anchor="middle" class="tag-text">${cfg.label}</text>
-      <text x="15" y="143" class="chart-label">2019</text>
-      <text x="82" y="143" class="chart-label">2020</text>
-      <text x="149" y="143" class="chart-label">2021</text>
-      <text x="216" y="143" class="chart-label">2023</text>
-      <text x="257" y="143" class="chart-label">T1 2024</text>
+      <text x="15" y="143" class="chart-label">Año 1</text>
+      <text x="82" y="143" class="chart-label">Año 2</text>
+      <text x="149" y="143" class="chart-label">Año 3</text>
+      <text x="216" y="143" class="chart-label">Año 4</text>
+      <text x="257" y="143" class="chart-label">Año 5</text>
     </svg>
   `;
 }
@@ -801,20 +804,20 @@ function chartCard(title, small, kind) {
 
 function barChart() {
   const rows = [
-    ["Minería e hidrocarburos", 88],
-    ["Comercio y reparación", 62],
-    ["Manufactura", 42],
-    ["Transporte", 34],
-    ["Construcción", 24],
-    ["Agricultura", 19],
-    ["Electricidad", 15]
+    ["Sector ejemplo A", 88],
+    ["Sector ejemplo B", 62],
+    ["Sector ejemplo C", 42],
+    ["Sector ejemplo D", 34],
+    ["Sector ejemplo E", 24],
+    ["Sector ejemplo F", 19],
+    ["Sector ejemplo G", 15]
   ];
   return `<div style="display:grid;gap:9px">
     ${rows.map(([label, value]) => `
       <div style="display:grid;grid-template-columns:160px 1fr 42px;align-items:center;gap:10px;font-size:.78rem">
         <span>${label}</span>
         <span style="height:12px;background:#e9eff7;border-radius:999px;overflow:hidden"><span style="display:block;height:100%;width:${value}%;background:var(--blue-700)"></span></span>
-        <strong>${(value / 5.4).toFixed(1).replace(".", ",")}%</strong>
+        <strong>Ej.</strong>
       </div>
     `).join("")}
   </div>`;
@@ -828,10 +831,10 @@ function donutChart() {
     <circle cx="82" cy="82" r="54" fill="none" stroke="#D62828" stroke-width="32" stroke-dasharray="34 306" stroke-dashoffset="-223" transform="rotate(-90 82 82)"></circle>
     <circle cx="82" cy="82" r="36" fill="#fff"></circle>
     <g font-size="12" fill="#092454" font-weight="700">
-      <rect x="160" y="35" width="10" height="10" fill="#0052B4"></rect><text x="178" y="44">Servicios 45,0%</text>
-      <rect x="160" y="60" width="10" height="10" fill="#0B1D3D"></rect><text x="178" y="69">Comercio 20,3%</text>
-      <rect x="160" y="85" width="10" height="10" fill="#FFC20E"></rect><text x="178" y="94">Industria 16,1%</text>
-      <rect x="160" y="110" width="10" height="10" fill="#D62828"></rect><text x="178" y="119">Minería 12,7%</text>
+      <rect x="160" y="35" width="10" height="10" fill="#0052B4"></rect><text x="178" y="44">Sector A ejemplo</text>
+      <rect x="160" y="60" width="10" height="10" fill="#0B1D3D"></rect><text x="178" y="69">Sector B ejemplo</text>
+      <rect x="160" y="85" width="10" height="10" fill="#FFC20E"></rect><text x="178" y="94">Sector C ejemplo</text>
+      <rect x="160" y="110" width="10" height="10" fill="#D62828"></rect><text x="178" y="119">Sector D ejemplo</text>
     </g>
   </svg>`;
 }
@@ -844,10 +847,10 @@ function mapWidget() {
     <path d="M95 114 137 94l-1 42 33 26-58 3-52-24Z" fill="#b9d4f5"></path>
     <path d="M223 113 277 90l-18 45-56 8Z" fill="#9fc4ef"></path>
     <g fill="#092454" font-size="12" font-weight="700">
-      <text x="260" y="58">Zulia 4,1%</text>
-      <text x="260" y="84">Capital 2,3%</text>
-      <text x="260" y="110">Llanos 1,6%</text>
-      <text x="260" y="136">Insular -3,1%</text>
+      <text x="260" y="58">Región A ejemplo</text>
+      <text x="260" y="84">Región B ejemplo</text>
+      <text x="260" y="110">Región C ejemplo</text>
+      <text x="260" y="136">Región D ejemplo</text>
     </g>
   </svg>`;
 }
@@ -866,8 +869,8 @@ function reportCard(report, index = 0) {
       <h3>${title}</h3>
       <p>${description}</p>
       <div class="report-actions">
-        <a href="${href}">${type === "Indicadores" ? "Ver indicadores" : "Ver informe"} ${arrow()}</a>
-        <a href="manual_corporativo_ove_max_calidad.pdf">${icon("download")} PDF</a>
+        <a href="${href}">Ver ejemplo ${arrow()}</a>
+        <a href="#/publicaciones">${icon("file")} Sin PDF real</a>
       </div>
     </div>
   </article>`;
@@ -890,23 +893,24 @@ function pageHero({ title, lead, image = "assets/venezuela-hero.png", breadcrumb
 
 function dataBand() {
   const tools = [
-    ["Descarga de datos", "Accede a series historicas en formatos abiertos para tus analisis.", "Ir a datos", "database"],
-    ["API OVE", "Integra nuestros datos en tus sistemas y aplicaciones.", "Documentacion", "chartbar"],
-    ["Calculadoras", "Herramientas interactivas para calculos economicos rapidos y confiables.", "Explorar", "calculator"],
-    ["Mapas economicos", "Explora indicadores por regiones y entidades federales.", "Ver mapas", "map"]
+    ["Banco Mundial - Venezuela", "Fuente real disponible para empezar el Observatorio con datos verificables.", "Explorar fuente", "database", "#/datos/banco-mundial"],
+    ["API OVE", "Maqueta técnica en preparación para integrar datos propios cuando sean publicados.", "Ver ejemplo", "chartbar", "#/datos"],
+    ["Calculadoras", "Ejemplo de herramienta futura; todavía no usa datos oficiales del OVE.", "Ver ejemplo", "calculator", "#/datos"],
+    ["Mapas economicos", "Ejemplo de visualización futura para datos regionales validados.", "Ver ejemplo", "map", "#/datos"]
   ];
   return `<section class="dark-band">
     <div class="container">
       <h2>Datos y herramientas</h2>
       <span class="accent-line"></span>
+      ${exampleNotice("Solo Banco Mundial - Venezuela contiene datos reales disponibles. Las demás herramientas son ejemplos de estructura para el Observatorio.")}
       <div class="tools-grid">
-        ${tools.map(([title, text, link, ico]) => `
+        ${tools.map(([title, text, link, ico, href]) => `
           <article class="tool-card">
             <span class="line-icon">${icon(ico)}</span>
             <div>
               <h3>${title}</h3>
               <p>${text}</p>
-              <a class="text-link" href="#/datos">${link} ${arrow()}</a>
+              <a class="text-link" href="${href}">${link} ${arrow()}</a>
             </div>
           </article>
         `).join("")}
@@ -922,6 +926,7 @@ function topicsSection() {
     <div class="container">
       <div class="topic-panel">
         <h2 id="topic-title">Datos por temas</h2>
+        ${exampleNotice("Temas y operaciones propios en elaboración. No equivalen a datos publicados; sirven como mapa de construcción del Observatorio.")}
         <div class="topic-stats" aria-label="Estadisticas de datos por temas">
           <span><strong>${stats.topics}</strong> temas</span>
           <span><strong>${formatInteger(stats.operations)}</strong> operaciones en elaboración</span>
@@ -1060,25 +1065,26 @@ function homePage() {
     ${pageHero({
       title: "Datos económicos para mejores decisiones",
       lead: "Analizamos y difundimos información económica rigurosa, independiente y accesible para comprender la realidad venezolana.",
-      actions: `<a class="button button-primary" href="#/indicadores">Explorar indicadores ${arrow()}</a>
-        <a class="button" href="#/informe-trimestral">Ver último informe ${icon("file")}</a>`
+      actions: `<a class="button button-primary" href="#/datos/banco-mundial">Ver datos reales Banco Mundial ${arrow()}</a>
+        <a class="button" href="#/indicadores">Ver maqueta de indicadores ${icon("file")}</a>`
     })}
     <section class="section-tight">
       <div class="container">
+        ${exampleNotice("Indicadores de ejemplo. El Observatorio aún no ha publicado indicadores propios; se muestran solo para construir la estructura visual.")}
         ${metricCards()}
-        <p class="source-note">Fuente: OVE con datos del BCV, FMI e INE. Última actualización: 28 de mayo de 2024</p>
+        <p class="source-note">Estado: maqueta sin datos reales OVE. Fuente real disponible actualmente: Banco Mundial - Venezuela.</p>
       </div>
     </section>
     <section class="section">
       <div class="container">
         <div class="section-title">
-          <h2>Indicadores destacados</h2>
-          <a class="text-link" href="#/indicadores">Ver todos los indicadores ${arrow()}</a>
+          <h2>Ejemplos de indicadores</h2>
+          <a class="text-link" href="#/indicadores">Ver maqueta de indicadores ${arrow()}</a>
         </div>
         <div class="home-indicators">
-          ${chartCard("PIB real", "(Var. % interanual)", "blue")}
-          ${chartCard("Inflación interanual", "(Var. %)", "yellow")}
-          ${chartCard("Tipo de cambio promedio", "(USD/VEF)", "red")}
+          ${chartCard("Serie ejemplo A", "(sin datos reales)", "blue")}
+          ${chartCard("Serie ejemplo B", "(sin datos reales)", "yellow")}
+          ${chartCard("Serie ejemplo C", "(sin datos reales)", "red")}
           <aside class="support-panel">
             <div class="support-item">${icon("monitor")}<div><h3>Panel interactivo</h3><p class="tiny">Explora y personaliza datos y gráficos.</p></div></div>
             <div class="support-item">${icon("download")}<div><h3>Descarga de datos</h3><p class="tiny">Series históricas en formatos abiertos.</p></div></div>
@@ -1090,9 +1096,10 @@ function homePage() {
     <section class="section section-tight">
       <div class="container">
         <div class="section-title">
-          <h2>Últimos informes y publicaciones</h2>
-          <a class="text-link" href="#/publicaciones">Ver todas las publicaciones ${arrow()}</a>
+          <h2>Informes en preparación</h2>
+          <a class="text-link" href="#/publicaciones">Ver plantillas de ejemplo ${arrow()}</a>
         </div>
+        ${exampleNotice("El OVE aún no ha emitido informes. Estas tarjetas son ejemplos de presentación.")}
         <div class="reports-row">${reports.slice(0, 5).map(reportCard).join("")}</div>
       </div>
     </section>
@@ -1131,8 +1138,8 @@ function indicatorsPage() {
   ];
   return `<div class="page">
     ${pageHero({
-      title: "Indicadores",
-      lead: "Datos confiables para entender la economia y tomar mejores decisiones. Explora, analiza y descarga indicadores economicos de Venezuela con series historicas actualizadas.",
+      title: "Indicadores en construcción",
+      lead: "Esta sección muestra ejemplos de navegación, gráficos y tablas. El OVE aún no ha publicado indicadores propios; los datos reales disponibles hoy están en Banco Mundial - Venezuela.",
       breadcrumb: ["Inicio", "Indicadores"]
     })}
     <section class="section">
@@ -1141,44 +1148,45 @@ function indicatorsPage() {
           <h3>Categorias</h3>
           ${categories.map((item, index) => `<a class="${index === 0 ? "is-selected" : ""}" href="#/indicadores">${icon(item[1])}<span>${item[0]}</span><span>›</span></a>`).join("")}
           <div class="filter-panel">
-            <h3>¿No encuentras lo que buscas?</h3>
-            <p class="tiny">Explora todos los datos disponibles en nuestro Banco de Datos.</p>
-            <a class="button button-small" href="#/datos">Ir al Banco de Datos</a>
+            <h3>Fuente real disponible</h3>
+            <p class="tiny">El catálogo Banco Mundial - Venezuela sí contiene datos reales descargables.</p>
+            <a class="button button-small" href="#/datos/banco-mundial">Ir a Banco Mundial</a>
           </div>
         </aside>
         <div>
           <div class="filter-row">
             ${[
-              ["Periodo", "Ene 2019 - Abr 2024", "calendar"],
-              ["Tema", "PIB Trimestral", "clipboard"],
+              ["Periodo", "Ejemplo", "calendar"],
+              ["Tema", "Indicador ejemplo", "clipboard"],
               ["Region", "Nacional", "pin"],
-              ["Fuente", "Todas las fuentes", "database"]
+              ["Fuente", "Sin fuente OVE publicada", "database"]
             ].map(([label, value, ico]) => `<div class="filter-box">${icon(ico)}<div><label>${label}</label><strong>${value}</strong></div></div>`).join("")}
             <a class="text-link" href="#/indicadores">Limpiar filtros</a>
           </div>
+          ${exampleNotice("Tablero de ejemplo. Las cifras, filtros, mapas y gráficos de esta página no deben interpretarse como datos reales.")}
           ${metricCards("inline-metrics")}
-          <p class="source-note">Fuente: OVE con datos del BCV, INE, MPPEF, OIT, CEPAL y fuentes oficiales. Ultima actualizacion: 28 de mayo de 2024</p>
+          <p class="source-note">Estado: maqueta de indicadores OVE. Sin actualización oficial publicada.</p>
           <div class="dashboard-grid">
             <article class="panel span-7">
-              <div class="panel-title"><h3>Evolucion del PIB Trimestral <span class="tiny">(Var. % interanual)</span></h3><span class="pill">5A</span></div>
+              <div class="panel-title"><h3>Serie ejemplo <span class="tiny">(sin datos reales)</span></h3><span class="pill">Ejemplo</span></div>
               <div class="chart">${lineChart("blue")}</div>
             </article>
             <article class="panel span-5">
-              <div class="panel-title"><h3>PIB por regiones <span class="tiny">(T1 2024)</span></h3></div>
+              <div class="panel-title"><h3>Mapa ejemplo <span class="tiny">(sin datos reales)</span></h3></div>
               ${mapWidget()}
-              <a class="text-link" href="#/indicadores">Ver detalle por entidad federativa ${arrow()}</a>
+              <a class="text-link" href="#/indicadores">Ver estructura de ejemplo ${arrow()}</a>
             </article>
-            <article class="panel span-4"><h3>PIB por actividad economica</h3>${barChart()}</article>
-            <article class="panel span-4">${chartCard("Inflacion interanual", "(Var. %)", "yellow")}</article>
-            <article class="panel span-4"><h3>PIB por sector</h3>${donutChart()}</article>
+            <article class="panel span-4"><h3>Distribución ejemplo</h3>${barChart()}</article>
+            <article class="panel span-4">${chartCard("Serie ejemplo", "(sin datos reales)", "yellow")}</article>
+            <article class="panel span-4"><h3>Participación ejemplo</h3>${donutChart()}</article>
             <article class="panel span-8">
-              <h3>Ultimos valores disponibles</h3>
+              <h3>Valores de ejemplo</h3>
               <div class="table-wrap">${indicatorTable()}</div>
             </article>
             <aside class="span-4" style="display:grid;gap:14px">
-              ${infoPanel("Metodologia", "Conoce las definiciones, fuentes, cobertura y metodologias utilizadas para cada indicador.", "clipboard", "Ver metodologia general")}
-              ${infoPanel("Descargas y exportaciones", "Descarga los datos en el formato que necesites para tu analisis.", "download", "Exportar datos")}
-              ${infoPanel("Notas y consideraciones", "Algunas series pueden estar sujetas a revisiones por nuevas fuentes de informacion.", "file", "Ver notas metodologicas")}
+              ${infoPanel("Metodologia", "Espacio reservado para publicar definiciones, fuentes, cobertura y metodología cuando existan indicadores reales.", "clipboard", "Ver estructura")}
+              ${infoPanel("Descargas y exportaciones", "Las descargas de indicadores propios estarán disponibles después de la primera publicación OVE.", "download", "Ver Banco Mundial")}
+              ${infoPanel("Notas y consideraciones", "Los gráficos actuales son demostrativos y no representan mediciones oficiales.", "file", "Ver nota")}
             </aside>
           </div>
         </div>
@@ -1188,10 +1196,10 @@ function indicatorsPage() {
       <div class="container">
         <div class="cards-4">
           ${[
-            ["Actualizacion periodica", "Datos actualizados de acuerdo con el calendario oficial de publicaciones.", "calendar"],
-            ["Cobertura nacional y regional", "Series desagregadas por entidad federativa y sectores economicos.", "pin"],
-            ["Fuentes oficiales y confiables", "Informacion proveniente de instituciones nacionales e internacionales.", "shield"],
-            ["Datos abiertos", "Promovemos el acceso libre y uso responsable de la informacion.", "lock"]
+            ["Publicación pendiente", "El OVE aún no ha emitido su primer set de indicadores propios.", "calendar"],
+            ["Estructura preparada", "La web queda lista para incorporar series reales cuando estén validadas.", "pin"],
+            ["Fuente real activa", "Banco Mundial - Venezuela permanece disponible como base verificable.", "shield"],
+            ["Datos abiertos", "Los datasets reales se integrarán con descargas y metadatos claros.", "lock"]
           ].map(([title, text, ico]) => `<article class="value-card"><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}
         </div>
       </div>
@@ -1208,12 +1216,12 @@ function infoPanel(title, text, ico, link) {
 
 function indicatorTable() {
   const rows = [
-    ["PIB Trimestral", "T1 2024", "2,4", "%", "↑ 0,6 p.p.", "BCV"],
-    ["Inflacion Interanual", "Abr 2024", "58,7", "%", "↓ 2,1 p.p.", "BCV"],
-    ["Tipo de cambio promedio", "May 2024", "36,25", "USD/VEF", "↑ 1,8%", "BCV"],
-    ["Reservas internacionales", "May 2024", "8.925", "USD millones", "↓ 3,4%", "BCV"],
-    ["Empleo informal", "T1 2024", "43,8", "%", "↓ 1,2 p.p.", "INE - OIT"],
-    ["Liquidez monetaria (M2)", "Abr 2024", "67,9", "%", "↑ 4,5 p.p.", "BCV"]
+    ["Indicador ejemplo A", "Sin publicar", "Ejemplo", "-", "No aplica", "Maqueta OVE"],
+    ["Indicador ejemplo B", "Sin publicar", "Ejemplo", "-", "No aplica", "Maqueta OVE"],
+    ["Indicador ejemplo C", "Sin publicar", "Ejemplo", "-", "No aplica", "Maqueta OVE"],
+    ["Indicador ejemplo D", "Sin publicar", "Ejemplo", "-", "No aplica", "Maqueta OVE"],
+    ["Indicador ejemplo E", "Sin publicar", "Ejemplo", "-", "No aplica", "Maqueta OVE"],
+    ["Indicador ejemplo F", "Sin publicar", "Ejemplo", "-", "No aplica", "Maqueta OVE"]
   ];
   return `<table>
     <thead><tr><th>Indicador</th><th>Periodo</th><th>Valor</th><th>Unidad</th><th>Variacion</th><th>Fuente</th></tr></thead>
@@ -1227,26 +1235,26 @@ function publicationsPage() {
       <div class="container hero-grid">
         <div class="hero-copy">
           <div class="breadcrumb"><span>Inicio</span><span>Publicaciones</span><span>Informes y publicaciones</span></div>
-          <h1>Informes y publicaciones</h1>
+          <h1>Informes y publicaciones en construcción</h1>
           <span class="accent-line"></span>
-          <p class="lead">Explora nuestros informes, análisis y estudios sobre la economía venezolana. Información rigurosa, actualizada y confiable para comprender y transformar el país.</p>
+          <p class="lead">El OVE aún no ha emitido informes. Esta página conserva ejemplos claramente marcados para construir el repositorio antes de publicar documentos reales.</p>
           <form class="search-line js-form">
             <input class="field" type="search" placeholder="Buscar publicaciones por título, tema o palabra clave..." aria-label="Buscar publicaciones">
             <button class="icon-button" type="submit">${icon("search")}</button>
           </form>
           <div class="stat-row">
-            <div class="stat-item">${icon("file")}<div><strong>128</strong><span class="tiny">Publicaciones disponibles</span></div></div>
-            <div class="stat-item">${icon("download")}<div><strong>245k+</strong><span class="tiny">Descargas acumuladas</span></div></div>
+            <div class="stat-item">${icon("file")}<div><strong>0</strong><span class="tiny">Informes OVE publicados</span></div></div>
+            <div class="stat-item">${icon("download")}<div><strong>0</strong><span class="tiny">Descargas de informes reales</span></div></div>
           </div>
         </div>
         <div class="featured-panel">
           <img src="assets/publication-cover-1.png" alt="Portada Panorama Económico de Venezuela">
           <div class="featured-content">
-            <span class="pill">Informe destacado</span>
-            <h2>Panorama Económico de Venezuela</h2>
-            <p>Mayo 2024</p>
-            <p>Análisis integral de la evolución reciente de los principales indicadores macroeconómicos y sectoriales del país.</p>
-            <a class="button button-ghost" href="#/informe-trimestral">Ver informe completo ${arrow()}</a>
+            <span class="pill">Ejemplo visual</span>
+            <h2>Plantilla de informe OVE</h2>
+            <p>Sin publicar</p>
+            <p>Ejemplo de portada y estructura. No corresponde a un informe emitido por el Observatorio.</p>
+            <a class="button button-ghost" href="#/informe-trimestral">Ver plantilla ${arrow()}</a>
           </div>
         </div>
       </div>
@@ -1256,8 +1264,9 @@ function publicationsPage() {
         <div class="tabs">
           ${["Todos", "Informes", "Análisis", "Coyuntura", "Indicadores", "Notas metodológicas"].map((tab, i) => `<a class="${i === 0 ? "is-selected" : ""}" href="#/publicaciones">${tab}</a>`).join("")}
         </div>
+        ${exampleNotice("No hay publicaciones reales del OVE todavía. Las tarjetas siguientes son ejemplos para dejar lista la arquitectura del repositorio.")}
         <div class="filter-row pub-controls">
-          <p class="tiny">Mostrando 1-12 de 128 publicaciones</p>
+          <p class="tiny">Mostrando ejemplos de plantilla. Publicaciones reales: 0</p>
           <select aria-label="Año"><option>Año: Todos</option></select>
           <select aria-label="Tema"><option>Tema: Todos</option></select>
           <select aria-label="Formato"><option>Formato: Todos</option></select>
@@ -1269,27 +1278,23 @@ function publicationsPage() {
             <div class="filter-panel">
               <h3>Refina tu búsqueda</h3>
               <strong>Año de publicación</strong>
-              <a href="#/publicaciones">2024 (28)</a>
-              <a href="#/publicaciones">2023 (32)</a>
-              <a href="#/publicaciones">2022 (24)</a>
-              <a href="#/publicaciones">2021 (18)</a>
-              <a href="#/publicaciones">Ver más</a>
+              <a href="#/publicaciones">Sin informes publicados (0)</a>
+              <a href="#/publicaciones">Ejemplos de plantilla (3)</a>
               <hr>
               <strong>Tema</strong>
-              <a href="#/publicaciones">Macroeconomía (42)</a>
-              <a href="#/publicaciones">Finanzas públicas (23)</a>
-              <a href="#/publicaciones">Sector externo (18)</a>
-              <a href="#/publicaciones">Mercado laboral (15)</a>
+              <a href="#/publicaciones">Macroeconomía (ejemplo)</a>
+              <a href="#/publicaciones">Metodología (ejemplo)</a>
+              <a href="#/publicaciones">Sectorial (ejemplo)</a>
               <hr>
               <strong>Formato</strong>
-              <a href="#/publicaciones">PDF (98)</a>
-              <a href="#/publicaciones">Excel (14)</a>
-              <a href="#/publicaciones">Presentación (9)</a>
+              <a href="#/publicaciones">PDF (0 reales)</a>
+              <a href="#/publicaciones">Excel (0 reales)</a>
+              <a href="#/publicaciones">Presentación (0 reales)</a>
             </div>
             <div class="filter-panel">
-              <h3>¿No encuentras lo que buscas?</h3>
-              <p>Explora nuestras colecciones temáticas o usa la búsqueda avanzada.</p>
-              <a class="text-link" href="#/datos">Búsqueda avanzada ${arrow()}</a>
+              <h3>Datos reales disponibles</h3>
+              <p>El primer insumo real del Observatorio es el catálogo Banco Mundial - Venezuela.</p>
+              <a class="text-link" href="#/datos/banco-mundial">Ir a Banco Mundial ${arrow()}</a>
             </div>
           </aside>
         </div>
@@ -1306,33 +1311,33 @@ function reportDetailPage() {
   return `<div class="page">
     <section class="detail-hero">
       <div class="container">
-        <div class="breadcrumb"><span>Inicio</span><span>Publicaciones</span><span>Informes economicos</span><span>T1 2024</span></div>
+        <div class="breadcrumb"><span>Inicio</span><span>Publicaciones</span><span>Ejemplo de informe</span></div>
         <div class="detail-grid">
           <div>
             <div class="cover-img"><img src="assets/publication-cover-1.png" alt="Portada del informe economico trimestral"></div>
             <div class="button-row" style="margin-top:24px">
-              <a class="button button-primary" href="manual_corporativo_ove_max_calidad.pdf">Descargar informe completo ${icon("download")}</a>
+              <a class="button button-primary" href="#/publicaciones">Volver a publicaciones ${arrow()}</a>
             </div>
           </div>
           <article>
-            <span class="eyebrow">Informe economico trimestral</span>
-            <h1>Informe economico trimestral T1 2024</h1>
-            <p class="lead">Crecimiento resiliente en un entorno desafiante</p>
+            <span class="eyebrow">Ejemplo visual</span>
+            <h1>Plantilla de informe económico</h1>
+            <p class="lead">Estructura de ejemplo para futuros informes del OVE</p>
             <div class="detail-meta">
-              <span>${icon("calendar")} Mayo 2024</span>
+              <span>${icon("calendar")} Sin publicar</span>
               <span>${icon("users")} Observatorio Venezolano de Economia</span>
-              <span>${icon("file")} 52 paginas</span>
+              <span>${icon("file")} Maqueta</span>
             </div>
             <h3 style="margin-top:28px">Resumen ejecutivo</h3>
-            <p>Durante el primer trimestre de 2024, la economia venezolana mostro señales de resiliencia en medio de un contexto desafiante. El PIB real registro un crecimiento de 2,4% interanual, impulsado principalmente por el dinamismo del sector servicios y la recuperacion de la actividad petrolera.</p>
+            <p>Este contenido es una plantilla. El Observatorio aún no ha emitido informes, por lo que no se muestran conclusiones, cifras ni hallazgos reales.</p>
             <div class="button-row" style="margin-top:24px">
-              <a class="button" href="manual_corporativo_ove_max_calidad.pdf">Resumen ejecutivo ${icon("download")}</a>
-              <a class="button button-ghost" href="#/informe-trimestral">Ver version accesible</a>
+              <a class="button" href="#/datos/banco-mundial">Ver datos reales Banco Mundial ${icon("download")}</a>
+              <a class="button button-ghost" href="#/informe-trimestral">Ver plantilla</a>
             </div>
           </article>
           <aside class="key-data">
-            <h3>Datos clave del informe</h3>
-            ${metricData.slice(0, 4).map(metric => `<div class="key-item"><span class="tiny">${metric.title} ${metric.subtitle}</span><strong>${metric.value}</strong><span class="trend ${metric.direction === "down" ? "down" : ""}">${metric.direction === "down" ? "↓" : "↑"} ${metric.trend}</span></div>`).join("")}
+            <h3>Datos clave</h3>
+            ${metricData.slice(0, 4).map(metric => `<div class="key-item"><span class="tiny">${metric.title} ${metric.subtitle}</span><strong>${metric.value}</strong><span class="trend neutral">No publicado</span></div>`).join("")}
           </aside>
         </div>
       </div>
@@ -1349,12 +1354,13 @@ function reportDetailPage() {
       <div class="container">
         <h2>Hallazgos principales</h2>
         <span class="accent-line"></span>
+        ${exampleNotice("Bloque de ejemplo. Los hallazgos reales aparecerán aquí cuando exista un informe emitido por el OVE.")}
         <div class="findings-grid">
           ${[
-            ["Crecimiento moderado", "El PIB real crecio 2,4% interanual, impulsado por servicios e industria.", "trend"],
-            ["Inflacion en moderacion", "La inflacion interanual se ubico en 58,7%, con una desaceleracion reciente.", "coin"],
-            ["Tipo de cambio estable", "El tipo de cambio promedio se aprecio 1,8% respecto al mes anterior.", "dollar"],
-            ["Reservas en recuperacion", "Las reservas internacionales aumentaron 3,4% respecto al mes anterior.", "bank"]
+            ["Hallazgo ejemplo A", "Texto reservado para un hallazgo futuro con fuente validada.", "trend"],
+            ["Hallazgo ejemplo B", "Texto reservado para análisis de precios cuando se publiquen datos.", "coin"],
+            ["Hallazgo ejemplo C", "Texto reservado para sector externo o monetario.", "dollar"],
+            ["Hallazgo ejemplo D", "Texto reservado para indicadores financieros o fiscales.", "bank"]
           ].map(([title, text, ico]) => `<article class="finding-card"><span class="line-icon">${icon(ico)}</span><div><h3>${title}</h3><p class="tiny">${text}</p></div></article>`).join("")}
         </div>
       </div>
@@ -1366,17 +1372,17 @@ function reportDetailPage() {
           <span class="accent-line"></span>
           <div class="tabs" style="margin-bottom:18px"><a class="is-selected" href="#/informe-trimestral">Vista previa</a><a href="#/informe-trimestral">Tabla de contenidos</a></div>
           <div class="home-indicators three-charts">
-            ${chartCard("Crecimiento del PIB real", "(Var. % interanual)", "blue")}
-            ${chartCard("Inflacion interanual", "(Var. %)", "yellow")}
-            ${chartCard("Tipo de cambio promedio", "(USD/VEF)", "red")}
+            ${chartCard("Serie ejemplo A", "(sin datos reales)", "blue")}
+            ${chartCard("Serie ejemplo B", "(sin datos reales)", "yellow")}
+            ${chartCard("Serie ejemplo C", "(sin datos reales)", "red")}
           </div>
           <article class="panel" style="margin-top:18px">
             <h3>Sobre este informe</h3>
             <div class="cards-4 mini-grid-3">
               ${[
                 ["Autores", "Equipo de investigacion del OVE", "file"],
-                ["Fuente de datos", "BCV, INE, MPPEF, OPEP, FMI y fuentes nacionales.", "database"],
-                ["Fecha de publicacion", "30 de mayo de 2024", "calendar"]
+                ["Fuente de datos", "Pendiente de validación para informes propios.", "database"],
+                ["Fecha de publicacion", "Sin publicar", "calendar"]
               ].map(([title, text, ico]) => `<div class="support-item">${icon(ico)}<div><h3>${title}</h3><p class="tiny">${text}</p></div></div>`).join("")}
             </div>
           </article>
@@ -1384,7 +1390,7 @@ function reportDetailPage() {
         <aside>
           <h2>Publicaciones relacionadas</h2>
           <div class="related-list">
-            ${["Informe economico trimestral T4 2023", "Informe economico anual 2023", "Informe sectorial Panorama Petrolero Venezuela 2023"].map((title, index) => `<a class="related-item" href="#/publicaciones"><img src="${publicationCovers[(index + 1) % publicationCovers.length]}" alt="Portada relacionada"><div><h3>${title}</h3><p class="tiny">PDF ${icon("download")}</p></div></a>`).join("")}
+            ${["Plantilla macroeconómica", "Plantilla metodológica", "Plantilla sectorial"].map((title, index) => `<a class="related-item" href="#/publicaciones"><img src="${publicationCovers[(index + 1) % publicationCovers.length]}" alt="Portada relacionada"><div><h3>${title}</h3><p class="tiny">Ejemplo</p></div></a>`).join("")}
           </div>
           <a class="text-link" style="margin-top:16px" href="#/publicaciones">Ver todas las publicaciones ${arrow()}</a>
         </aside>
@@ -1392,10 +1398,10 @@ function reportDetailPage() {
     </section>
     <section class="section-tight">
       <div class="container dashboard-grid">
-        <article class="panel span-5">${infoPanel("Metodologia", "Este informe utiliza una metodologia rigurosa y transparente. Conoce los enfoques, definiciones y fuentes utilizadas en el analisis.", "clipboard", "Ver metodologia completa")}</article>
+        <article class="panel span-5">${infoPanel("Metodologia", "Espacio reservado para explicar enfoques, definiciones y fuentes cuando exista un informe real.", "clipboard", "Ver estructura")}</article>
         <article class="panel span-7">
           <h3>Como citar este informe</h3>
-          <p>Observatorio Venezolano de Economia. (2024). Informe economico trimestral T1 2024: Crecimiento resiliente en un entorno desafiante. OVE.</p>
+          <p>Esta plantilla no debe citarse como informe. Aún no hay una publicación oficial del OVE asociada a esta página.</p>
           <button class="button button-small js-copy" type="button">Copiar cita ${icon("copy")}</button>
         </article>
       </div>
@@ -1408,40 +1414,40 @@ function reportDetailPage() {
 function dataPage() {
   return `<div class="page">
     ${pageHero({
-      title: "Datos abiertos y API",
-      lead: "Accede, descarga e integra informacion economica confiable para analizar, innovar y construir soluciones basadas en evidencia.",
+      title: "Datos reales y estructura en construcción",
+      lead: "El Observatorio comienza con una fuente real: Banco Mundial - Venezuela. Las demás categorías y herramientas quedan como ejemplos claramente identificados hasta incorporar datos propios validados.",
       breadcrumb: ["Inicio", "Datos", "Datos abiertos y API"],
-      actions: `<a class="button button-primary" href="#/datos">Explorar datasets ${arrow()}</a><a class="button" href="#/datos">Ver documentacion API ${icon("code")}</a>`
+      actions: `<a class="button button-primary" href="#/datos/banco-mundial">Explorar Banco Mundial ${arrow()}</a><a class="button" href="#/datos">Ver ejemplos de estructura ${icon("code")}</a>`
     })}
     ${topicsSection()}
     ${worldBankSourceSection()}
     <section id="datasets" class="section">
       <div class="container">
-        <div class="section-title"><h2>Descarga datasets</h2><a class="text-link" href="#/datos">Ver todos los datasets ${arrow()}</a></div>
+        <div class="section-title"><h2>Ejemplos de categorías futuras</h2><a class="text-link" href="#/datos/banco-mundial">Ver datos reales ${arrow()}</a></div>
+        ${exampleNotice("Estas tarjetas no son datasets publicados. Son categorías de trabajo para ordenar futuras fuentes reales del OVE.")}
         <div class="dataset-grid">${datasets.map(datasetCard).join("")}</div>
       </div>
     </section>
     <section id="api" class="section-tight">
       <div class="container">
-        <div class="section-title"><h2>Documentacion de la API</h2><a class="text-link" href="#/datos">Ver documentacion completa ${arrow()}</a></div>
+        <div class="section-title"><h2>Ejemplo de API futura</h2><a class="text-link" href="#/datos/banco-mundial">Ver fuente real ${arrow()}</a></div>
         <article class="panel api-panel">
           <div>
             <h3>${icon("code")} Acceso programatico</h3>
-            <p>Nuestra API REST permite consultar datos economicos de forma facil, segura y eficiente.</p>
-            <p class="trend">✓ Autenticacion con API Key</p>
-            <p class="trend">✓ Respuestas en JSON</p>
-            <p class="trend">✓ Paginacion y filtros avanzados</p>
-            <a class="button" href="#/contacto">Obtener API Key</a>
+            <p>Maqueta de documentación. La API OVE se activará cuando existan datasets propios publicados.</p>
+            <p class="trend neutral">Ejemplo: Autenticacion con API Key</p>
+            <p class="trend neutral">Ejemplo: Respuestas en JSON</p>
+            <p class="trend neutral">Ejemplo: Paginacion y filtros avanzados</p>
+            <a class="button" href="#/datos/banco-mundial">Explorar Banco Mundial</a>
           </div>
           <div>
-            <h3>Ejemplo de endpoint</h3>
-            <p><span class="method">GET</span> /api/v1/indicadores/pib</p>
+            <h3>Endpoint de ejemplo</h3>
+            <p><span class="method">GET</span> /api/v1/ejemplo/indicadores</p>
             <pre class="code-box">{
   "data": {
-    "fecha": "2024-05-31",
-    "valor": 128.4,
-    "unidad": "indice (2010=100)",
-    "variacion_interanual": 2.4
+    "estado": "ejemplo",
+    "mensaje": "sin datos OVE publicados",
+    "valor": null
   },
   "meta": { "total": 1, "pagina": 1 }
 }</pre>
@@ -1475,12 +1481,12 @@ function dataPage() {
           <div class="support-item">${icon("monitor")}<div><h3>¿Eres desarrollador?</h3><p>Integra nuestros datos en tus aplicaciones, dashboards o investigaciones.</p><a class="button button-primary" href="#/datos">Explorar API ${arrow()}</a></div></div>
         </article>
         <article class="panel span-5">
-          <h2>Datasets recientes</h2>
+          <h2>Datasets OVE recientes</h2>
           <div class="table-wrap">${recentDatasetTable()}</div>
         </article>
         <div class="span-7">
-          <div class="section-title"><h2>Categorias tematicas</h2><a class="text-link" href="#/datos">Ver todas ${arrow()}</a></div>
-          <div class="category-grid">${datasets.concat([["Dinero y banca", "36 datasets", "", "database"], ["Social y demografia", "41 datasets", "", "users"]]).map(datasetCard).join("")}</div>
+          <div class="section-title"><h2>Categorias tematicas de ejemplo</h2><a class="text-link" href="#/datos/banco-mundial">Ver Banco Mundial ${arrow()}</a></div>
+          <div class="category-grid">${datasets.concat([["Dinero y banca", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "database"], ["Social y demografia", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "users"]]).map(datasetCard).join("")}</div>
         </div>
       </div>
     </section>
@@ -1489,9 +1495,9 @@ function dataPage() {
         <div class="section-title"><h2>Herramientas para explorar datos</h2></div>
         <div class="format-grid">
           ${[
-            ["Calculadoras interactivas", "Herramientas para calculos economicos rapidos y confiables.", "calculator"],
-            ["Mapas economicos", "Visualiza indicadores economicos por regiones y entidades federales.", "map"],
-            ["API Playground", "Prueba consultas, explora endpoints y genera codigo de ejemplo.", "code"]
+            ["Calculadoras interactivas", "Ejemplo de herramienta futura. Aún no calcula con datos oficiales del OVE.", "calculator"],
+            ["Mapas economicos", "Ejemplo de visualización futura para fuentes regionales validadas.", "map"],
+            ["API Playground", "Maqueta para probar endpoints cuando existan datos propios.", "code"]
           ].map(([title, text, ico]) => `<article class="value-card"><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p>${text}</p><a class="text-link" href="#/datos">Explorar ${arrow()}</a></article>`).join("")}
         </div>
       </div>
@@ -1623,6 +1629,7 @@ function topicGroup(group, open = false) {
 function datasetCard([title, count, text, ico]) {
   return `<article class="dataset-card">
     <span class="line-icon">${icon(ico)}</span>
+    ${exampleTag("Ejemplo")}
     <h3>${title}</h3>
     <p class="tiny">${count}</p>
     ${text ? `<p>${text}</p>` : ""}
@@ -1632,11 +1639,8 @@ function datasetCard([title, count, text, ico]) {
 
 function recentDatasetTable() {
   const rows = [
-    ["PIB Trimestral", "CSV", "11.2 KB", "28 May 2024"],
-    ["Indice de Precios al Consumidor", "XLSX", "34.7 KB", "27 May 2024"],
-    ["Exportaciones Totales", "CSV", "22.1 KB", "27 May 2024"],
-    ["Ingresos del Sector Publico", "XLSX", "18.9 KB", "24 May 2024"],
-    ["Encuesta de Coyuntura Laboral", "JSON", "12.3 KB", "23 May 2024"]
+    ["No hay datasets OVE publicados", "-", "-", "Pendiente"],
+    ["Banco Mundial - Venezuela", "CSV/JSON/XLSX", "Disponible", "Fuente real"]
   ];
   return `<table><tbody>${rows.map(row => `<tr>${row.map(cell => `<td>${cell}</td>`).join("")}<td>${icon("download")}</td></tr>`).join("")}</tbody></table>`;
 }
@@ -1677,14 +1681,14 @@ function aboutPage() {
         <article class="panel span-7">
           <h2>Nuestra metodología</h2>
           <span class="accent-line"></span>
-          <p>Aplicamos principios metodológicos que garantizan la calidad y consistencia de nuestra información.</p>
+          <p>Estamos definiendo principios metodológicos para que cada dato real se publique con fuente, cobertura y limitaciones claras.</p>
           <div class="cards-4 mini-grid-5">
             ${[
-              ["Rigor técnico", "Métodos estadísticos y econométricos estandarizados.", "trend"],
-              ["Fuentes verificadas", "Usamos fuentes oficiales y alternativas de alta calidad.", "shield"],
-              ["Transparencia", "Documentamos procesos, supuestos y limitaciones.", "eye"],
-              ["Reproducibilidad", "Nuestros cálculos pueden ser replicados y auditados.", "code"],
-              ["Actualización", "Revisamos y actualizamos la información periódicamente.", "plus"]
+              ["Rigor técnico", "Criterios estadísticos y económicos antes de publicar series.", "trend"],
+              ["Fuentes verificadas", "Banco Mundial - Venezuela es la fuente real integrada actualmente.", "shield"],
+              ["Transparencia", "Cada dataset deberá documentar procesos, supuestos y limitaciones.", "eye"],
+              ["Reproducibilidad", "Los cálculos propios se publicarán con trazabilidad cuando existan.", "code"],
+              ["Actualización", "La periodicidad se definirá por fuente y capacidad de verificación.", "plus"]
             ].map(([title, text, ico]) => `<div><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p class="tiny">${text}</p></div>`).join("")}
           </div>
         </article>
@@ -1695,12 +1699,12 @@ function aboutPage() {
         <article class="panel span-5">
           <h2>Fuentes de información</h2>
           <span class="accent-line"></span>
-          <p>Combinamos fuentes oficiales y alternativas para ofrecer una visión integral y actualizada.</p>
+          <p>El Observatorio se construirá gradualmente con fuentes reales y verificables. Por ahora, la fuente real integrada es Banco Mundial - Venezuela.</p>
           <div class="cards-4 mini-grid-3">
             ${[
-              ["Fuentes oficiales", "BCV, INE, MPPEF, Cantv, Sudeban, PDVSA, entre otras.", "bank"],
-              ["Fuentes alternativas", "Organismos internacionales, investigaciones académicas y reportes especializados.", "globe"],
-              ["Datos propios", "Índices y encuestas diseñadas por el OVE para necesidades específicas.", "users"]
+              ["Fuente real activa", "Banco Mundial - Venezuela, disponible en CSV, JSON y Excel.", "bank"],
+              ["Fuentes por evaluar", "Instituciones nacionales, organismos internacionales y literatura técnica.", "globe"],
+              ["Datos propios", "Pendientes de diseño, validación y publicación por parte del OVE.", "users"]
             ].map(([title, text, ico]) => `<div><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p class="tiny">${text}</p></div>`).join("")}
           </div>
         </article>
@@ -1721,15 +1725,13 @@ function aboutPage() {
     <section class="section-tight">
       <div class="container">
         <h2>Nuestra trayectoria</h2>
-        <p>Más de una década generando información que impulsa el debate público y mejores decisiones.</p>
+        <p>La trayectoria pública del Observatorio está en construcción. Esta línea resume hitos de desarrollo, no publicaciones emitidas.</p>
         <div class="timeline">
           ${[
-            ["2014", "Nace el OVE con la misión de promover economía basada en evidencia."],
-            ["2016", "Lanzamos nuestro portal web con indicadores económicos clave."],
-            ["2018", "Iniciamos la publicación de informes y reportes especializados."],
-            ["2020", "Ampliamos fuentes y desarrollamos indicadores propios."],
-            ["2022", "Alcanzamos 10 millones de visualizaciones en nuestras plataformas."],
-            ["2024", "Reafirmamos nuestro compromiso con transparencia y país."]
+            ["Etapa 1", "Definición de identidad institucional y estructura del sitio."],
+            ["Etapa 2", "Archivo de logos oficiales y criterios de manual corporativo."],
+            ["Etapa 3", "Integración inicial de Banco Mundial - Venezuela como fuente real."],
+            ["Etapa 4", "Construcción futura de indicadores, metodología e informes propios."]
           ].map(([year, text]) => `<div class="timeline-item"><h3>${year}</h3><p class="tiny">${text}</p></div>`).join("")}
         </div>
       </div>
@@ -1739,8 +1741,8 @@ function aboutPage() {
         <article class="panel span-4">
           <h2>Aliados estratégicos</h2>
           <span class="accent-line"></span>
-          <p>Colaboramos con instituciones nacionales e internacionales que comparten nuestra visión.</p>
-          <div class="logos-row"><span>CAF</span><span>BID</span><span>ONU</span><span>UCAB</span></div>
+          <p>Espacio reservado para alianzas futuras. No se muestran aliados reales hasta confirmarlos.</p>
+          <div class="logos-row"><span>Ejemplo</span><span>Ejemplo</span><span>Ejemplo</span></div>
         </article>
         <article class="panel span-4">
           <h2>Preguntas frecuentes</h2>
@@ -1965,7 +1967,7 @@ function wireForms() {
   const copy = document.querySelector(".js-copy");
   if (copy) {
     copy.addEventListener("click", async () => {
-      const text = "Observatorio Venezolano de Economía. (2024). Informe económico trimestral T1 2024.";
+      const text = "Plantilla de ejemplo OVE. No corresponde a un informe publicado.";
       try {
         await navigator.clipboard.writeText(text);
         copy.textContent = "Cita copiada";
