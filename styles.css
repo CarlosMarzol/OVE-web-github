@@ -1320,6 +1320,29 @@ h3 {
   overflow: hidden;
 }
 
+.dark-band .container {
+  position: relative;
+  z-index: 1;
+}
+
+.dark-band::after {
+  position: absolute;
+  top: 22px;
+  right: max(24px, calc((100vw - 1180px) / 2));
+  width: min(260px, 24vw);
+  aspect-ratio: 215 / 42;
+  background: url("assets/ove-logo-white.png") center / contain no-repeat;
+  content: "";
+  opacity: 0.14;
+  pointer-events: none;
+}
+
+@media (max-width: 760px) {
+  .dark-band::after {
+    display: none;
+  }
+}
+
 .dark-band h2,
 .dark-band h3,
 .dark-band p {
