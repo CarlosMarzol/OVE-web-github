@@ -1,7 +1,7 @@
 {
   "source": "Banco Central de Venezuela",
   "source_url": "https://www.bcv.org.ve",
-  "last_fetched_at": "2026-06-26T17:47:00Z",
+  "last_fetched_at": "2026-07-02T15:31:05Z",
   "datasets": [
     {
       "dataset_id": "bcv_indice_nacional_precios_consumidor",
@@ -10,7 +10,7 @@
       "source_url": "https://www.bcv.org.ve/estadisticas/consumidor",
       "frequency": "monthly",
       "status": "catalogued_official_workbooks",
-      "last_fetched_at": "2026-06-26T09:35:29Z",
+      "last_fetched_at": "2026-07-02T15:31:05Z",
       "files": 7,
       "notes": "Catalogo de archivos oficiales BCV. La normalizacion de hojas se agregara por indicador."
     },
@@ -21,7 +21,7 @@
       "source_url": "https://www.bcv.org.ve/estadisticas/producto-interno-bruto",
       "frequency": "monthly",
       "status": "catalogued_official_workbooks",
-      "last_fetched_at": "2026-06-26T09:35:29Z",
+      "last_fetched_at": "2026-07-02T15:31:05Z",
       "files": 10,
       "notes": "Catalogo de archivos oficiales BCV. La normalizacion de hojas se agregara por indicador."
     },
