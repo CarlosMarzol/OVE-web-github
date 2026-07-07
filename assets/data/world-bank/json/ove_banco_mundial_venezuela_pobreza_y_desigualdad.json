@@ -6,10 +6,10 @@
     "País": "Venezuela",
     "Fuente": "Banco Mundial - World Development Indicators",
     "Archivo origen": "OVE_Banco_Mundial_Venezuela_pobreza_y_desigualdad.csv",
-    "Fecha generación": "2026-05-21 21:28:47",
+    "Fecha generación": "2026-07-07T22:59:05Z",
     "Número de registros": "330",
-    "Primer año": "1960",
-    "Último año": "2025",
+    "Primer año": "1981",
+    "Último año": "2015",
     "Número de indicadores": "5"
   },
   "datos": [
@@ -29,7 +29,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -48,7 +48,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -67,7 +67,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -86,7 +86,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -105,7 +105,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -124,7 +124,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -143,7 +143,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -162,7 +162,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -181,7 +181,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -200,7 +200,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -219,7 +219,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -238,7 +238,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -257,7 +257,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -276,7 +276,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -295,7 +295,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -314,7 +314,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -333,7 +333,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -352,7 +352,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -371,7 +371,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -390,7 +390,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -409,7 +409,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -428,7 +428,7 @@
       "Indicador": "Índice de Gini",
       "Valor": 55.6,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -447,7 +447,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -466,7 +466,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -485,7 +485,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -504,7 +504,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -523,7 +523,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -542,7 +542,7 @@
       "Indicador": "Índice de Gini",
       "Valor": 53.4,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -561,7 +561,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -580,7 +580,7 @@
       "Indicador": "Índice de Gini",
       "Valor": 43.8,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -599,7 +599,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -618,7 +618,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -637,7 +637,7 @@
       "Indicador": "Índice de Gini",
       "Valor": 42.1,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -656,7 +656,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -675,7 +675,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -694,7 +694,7 @@
       "Indicador": "Índice de Gini",
       "Valor": 47.2,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -713,7 +713,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -732,7 +732,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -749,9 +749,9 @@
       "ID subárea": "desigualdad",
       "Código indicador": "SI.POV.GINI",
       "Indicador": "Índice de Gini",
-      "Valor": 48,
+      "Valor": 48.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -770,7 +770,7 @@
       "Indicador": "Índice de Gini",
       "Valor": 47.7,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -789,7 +789,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -808,7 +808,7 @@
       "Indicador": "Índice de Gini",
       "Valor": 47.2,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -827,7 +827,7 @@
       "Indicador": "Índice de Gini",
       "Valor": 48.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -846,7 +846,7 @@
       "Indicador": "Índice de Gini",
       "Valor": 47.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -865,7 +865,7 @@
       "Indicador": "Índice de Gini",
       "Valor": 47.3,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -884,7 +884,7 @@
       "Indicador": "Índice de Gini",
       "Valor": 49.3,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -903,7 +903,7 @@
       "Indicador": "Índice de Gini",
       "Valor": 44.7,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -922,7 +922,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -941,7 +941,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -960,7 +960,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -979,7 +979,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -998,7 +998,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1017,7 +1017,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1036,7 +1036,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1055,7 +1055,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1074,7 +1074,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1093,7 +1093,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1112,7 +1112,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1131,7 +1131,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1150,7 +1150,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1169,7 +1169,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1188,7 +1188,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1207,7 +1207,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1226,7 +1226,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1245,7 +1245,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1264,7 +1264,7 @@
       "Indicador": "Índice de Gini",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1283,7 +1283,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1302,7 +1302,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1321,7 +1321,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1340,7 +1340,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1359,7 +1359,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1378,7 +1378,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1397,7 +1397,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1416,7 +1416,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1435,7 +1435,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1454,7 +1454,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1473,7 +1473,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1492,7 +1492,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1511,7 +1511,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1530,7 +1530,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1549,7 +1549,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1568,7 +1568,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1587,7 +1587,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1606,7 +1606,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1625,7 +1625,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1644,7 +1644,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1663,7 +1663,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1682,7 +1682,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": 59.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1701,7 +1701,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1720,7 +1720,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1739,7 +1739,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1758,7 +1758,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1777,7 +1777,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1794,9 +1794,9 @@
       "ID subárea": "distribucion_del_ingreso",
       "Código indicador": "SI.DST.05TH.20",
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
-      "Valor": 58,
+      "Valor": 58.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1815,7 +1815,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1834,7 +1834,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": 48.7,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1853,7 +1853,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1872,7 +1872,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1891,7 +1891,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": 47.7,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1910,7 +1910,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1929,7 +1929,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1948,7 +1948,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": 51.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1967,7 +1967,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -1986,7 +1986,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2005,7 +2005,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": 52.5,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2024,7 +2024,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": 52.3,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2043,7 +2043,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2062,7 +2062,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": 51.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2081,7 +2081,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": 53.1,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2098,9 +2098,9 @@
       "ID subárea": "distribucion_del_ingreso",
       "Código indicador": "SI.DST.05TH.20",
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
-      "Valor": 52,
+      "Valor": 52.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2119,7 +2119,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": 51.5,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2138,7 +2138,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": 52.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2157,7 +2157,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": 49.5,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2176,7 +2176,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2195,7 +2195,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2214,7 +2214,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2233,7 +2233,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2252,7 +2252,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2271,7 +2271,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2290,7 +2290,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2309,7 +2309,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2328,7 +2328,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2347,7 +2347,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2366,7 +2366,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2385,7 +2385,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2404,7 +2404,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2423,7 +2423,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2442,7 +2442,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2461,7 +2461,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2480,7 +2480,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2499,7 +2499,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2518,7 +2518,7 @@
       "Indicador": "Participación del 20 por ciento más rico en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2537,7 +2537,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2556,7 +2556,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2575,7 +2575,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2594,7 +2594,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2613,7 +2613,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2632,7 +2632,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2651,7 +2651,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2670,7 +2670,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2689,7 +2689,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2708,7 +2708,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2727,7 +2727,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2746,7 +2746,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2765,7 +2765,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2784,7 +2784,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2803,7 +2803,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2822,7 +2822,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2841,7 +2841,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2860,7 +2860,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2879,7 +2879,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2898,7 +2898,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2917,7 +2917,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2936,7 +2936,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": 3.1,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2955,7 +2955,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2974,7 +2974,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -2993,7 +2993,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3012,7 +3012,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3031,7 +3031,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3050,7 +3050,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": 3.4,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3069,7 +3069,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3088,7 +3088,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": 4.5,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3107,7 +3107,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3126,7 +3126,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3145,7 +3145,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": 5.1,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3164,7 +3164,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3183,7 +3183,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3202,7 +3202,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": 4.1,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3221,7 +3221,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3240,7 +3240,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3259,7 +3259,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": 3.7,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3278,7 +3278,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": 3.8,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3297,7 +3297,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3314,9 +3314,9 @@
       "ID subárea": "distribucion_del_ingreso",
       "Código indicador": "SI.DST.FRST.20",
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
-      "Valor": 4,
+      "Valor": 4.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3335,7 +3335,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": 3.4,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3354,7 +3354,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": 3.4,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3373,7 +3373,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": 3.5,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3392,7 +3392,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": 2.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3411,7 +3411,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": 4.3,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3430,7 +3430,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3449,7 +3449,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3468,7 +3468,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3487,7 +3487,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3506,7 +3506,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3525,7 +3525,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3544,7 +3544,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3563,7 +3563,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3582,7 +3582,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3601,7 +3601,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3620,7 +3620,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3639,7 +3639,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3658,7 +3658,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3677,7 +3677,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3696,7 +3696,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3715,7 +3715,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3734,7 +3734,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3753,7 +3753,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3772,7 +3772,7 @@
       "Indicador": "Participación del 20 por ciento más pobre en el ingreso",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -3791,8 +3791,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3810,8 +3810,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3829,8 +3829,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3848,8 +3848,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3867,8 +3867,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3886,8 +3886,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3905,8 +3905,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3924,8 +3924,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3943,8 +3943,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3962,8 +3962,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3981,8 +3981,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4000,8 +4000,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4019,8 +4019,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4038,8 +4038,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4057,8 +4057,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4076,8 +4076,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4095,8 +4095,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4114,8 +4114,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4133,8 +4133,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4152,8 +4152,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4171,8 +4171,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4188,10 +4188,10 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.DDAY",
       "Indicador": "Pobreza extrema internacional",
-      "Valor": 11.3,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4209,8 +4209,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4228,8 +4228,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4247,8 +4247,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4266,8 +4266,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4285,8 +4285,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4302,10 +4302,10 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.DDAY",
       "Indicador": "Pobreza extrema internacional",
-      "Valor": 12.3,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4323,8 +4323,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4340,10 +4340,10 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.DDAY",
       "Indicador": "Pobreza extrema internacional",
-      "Valor": 7.3,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4361,8 +4361,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4380,8 +4380,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4397,10 +4397,10 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.DDAY",
       "Indicador": "Pobreza extrema internacional",
-      "Valor": 6.9,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4418,8 +4418,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4437,8 +4437,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4454,10 +4454,10 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.DDAY",
       "Indicador": "Pobreza extrema internacional",
-      "Valor": 15.1,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4475,8 +4475,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4494,8 +4494,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4511,10 +4511,10 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.DDAY",
       "Indicador": "Pobreza extrema internacional",
-      "Valor": 14.9,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4530,10 +4530,10 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.DDAY",
       "Indicador": "Pobreza extrema internacional",
-      "Valor": 16.7,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4551,8 +4551,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4568,10 +4568,10 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.DDAY",
       "Indicador": "Pobreza extrema internacional",
-      "Valor": 14.7,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4587,10 +4587,10 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.DDAY",
       "Indicador": "Pobreza extrema internacional",
-      "Valor": 22.1,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4606,10 +4606,10 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.DDAY",
       "Indicador": "Pobreza extrema internacional",
-      "Valor": 27.1,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4625,10 +4625,10 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.DDAY",
       "Indicador": "Pobreza extrema internacional",
-      "Valor": 22.8,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4644,10 +4644,10 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.DDAY",
       "Indicador": "Pobreza extrema internacional",
-      "Valor": 18.1,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4663,10 +4663,10 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.DDAY",
       "Indicador": "Pobreza extrema internacional",
-      "Valor": 9.7,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4684,8 +4684,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4703,8 +4703,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4722,8 +4722,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4741,8 +4741,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4760,8 +4760,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4779,8 +4779,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4798,8 +4798,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4817,8 +4817,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4836,8 +4836,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4855,8 +4855,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4874,8 +4874,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4893,8 +4893,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4912,8 +4912,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4931,8 +4931,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4950,8 +4950,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4969,8 +4969,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4988,8 +4988,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -5007,8 +5007,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -5026,8 +5026,8 @@
       "Indicador": "Pobreza extrema internacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-07",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -5045,7 +5045,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5064,7 +5064,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5083,7 +5083,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5102,7 +5102,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5121,7 +5121,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5140,7 +5140,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5159,7 +5159,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5178,7 +5178,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5197,7 +5197,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5216,7 +5216,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5235,7 +5235,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5254,7 +5254,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5273,7 +5273,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5292,7 +5292,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5311,7 +5311,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5330,7 +5330,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5349,7 +5349,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5368,7 +5368,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5387,7 +5387,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5406,7 +5406,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5425,7 +5425,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5444,7 +5444,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5463,7 +5463,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5482,7 +5482,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5501,7 +5501,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5520,7 +5520,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5539,7 +5539,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5558,7 +5558,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5577,7 +5577,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5596,7 +5596,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5615,7 +5615,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5634,7 +5634,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5653,7 +5653,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5672,7 +5672,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5691,7 +5691,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5710,7 +5710,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5729,7 +5729,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5748,7 +5748,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 55.6,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5765,9 +5765,9 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.NAHC",
       "Indicador": "Pobreza según línea nacional",
-      "Valor": 49,
+      "Valor": 49.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5786,7 +5786,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 42.8,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5805,7 +5805,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 41.6,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5824,7 +5824,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 31.1,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5843,7 +5843,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 41.1,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5860,9 +5860,9 @@
       "ID subárea": "pobreza",
       "Código indicador": "SI.POV.NAHC",
       "Indicador": "Pobreza según línea nacional",
-      "Valor": 54,
+      "Valor": 54.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5881,7 +5881,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 53.1,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5900,7 +5900,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 42.4,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5919,7 +5919,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 33.1,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5938,7 +5938,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 27.5,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5957,7 +5957,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 27.7,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5976,7 +5976,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 26.4,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -5995,7 +5995,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 26.8,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6014,7 +6014,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 27.4,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6033,7 +6033,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 27.2,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6052,7 +6052,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 29.4,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6071,7 +6071,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 29.5,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6090,7 +6090,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": 33.1,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6109,7 +6109,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6128,7 +6128,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6147,7 +6147,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6166,7 +6166,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6185,7 +6185,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6204,7 +6204,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6223,7 +6223,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6242,7 +6242,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6261,7 +6261,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     },
     {
@@ -6280,7 +6280,7 @@
       "Indicador": "Pobreza según línea nacional",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-07",
       "Error descarga": null
     }
   ]

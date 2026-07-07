@@ -140,17 +140,17 @@ const datasets = [
 
 const worldBankCatalog = [
   ["Demografía", "demografia", 528, 8, 1960, 2025],
-  ["Educación", "educacion", 330, 5, 1960, 2025],
-  ["Energía y ambiente", "energia_y_ambiente", 330, 5, 1960, 2025],
-  ["Género", "genero", 330, 5, 1960, 2025],
-  ["Infraestructura y digitalización", "infraestructura_y_digitalizacion", 264, 4, 1960, 2025],
+  ["Educación", "educacion", 330, 5, 1970, 2024],
+  ["Energía y ambiente", "energia_y_ambiente", 330, 5, 1970, 2023],
+  ["Género", "genero", 330, 5, 1971, 2025],
+  ["Infraestructura y digitalización", "infraestructura_y_digitalizacion", 264, 4, 1960, 2024],
   ["Macroeconomía", "macroeconomia", 660, 10, 1960, 2025],
-  ["Mercado laboral", "mercado_laboral", 792, 12, 1960, 2025],
-  ["Pobreza y desigualdad", "pobreza_y_desigualdad", 330, 5, 1960, 2025],
+  ["Mercado laboral", "mercado_laboral", 792, 12, 1990, 2025],
+  ["Pobreza y desigualdad", "pobreza_y_desigualdad", 330, 5, 1981, 2015],
   ["Precios e inflación", "precios_e_inflacion", 462, 7, 1960, 2025],
-  ["Salud", "salud", 462, 7, 1960, 2025],
+  ["Salud", "salud", 462, 7, 1960, 2024],
   ["Sector externo", "sector_externo", 594, 9, 1960, 2025],
-  ["Sector público e instituciones", "sector_publico_e_instituciones", 264, 4, 1960, 2025]
+  ["Sector público e instituciones", "sector_publico_e_instituciones", 264, 4, null, null]
 ];
 
 const topicData = [
@@ -972,6 +972,7 @@ function topicOperationCount(topicKey) {
 
 function worldBankSourceSection() {
   const totals = worldBankTotals();
+  const period = formatPeriod(totals.firstYear, totals.lastYear);
   return `<section class="section-tight">
     <div class="container">
       <article class="world-source-panel">
@@ -983,7 +984,7 @@ function worldBankSourceSection() {
             <span><strong>${worldBankCatalog.length}</strong> áreas</span>
             <span><strong>${formatInteger(totals.records)}</strong> registros</span>
             <span><strong>${totals.indicators}</strong> indicadores</span>
-            <span><strong>${totals.firstYear}-${totals.lastYear}</strong></span>
+            <span><strong>${period}</strong></span>
           </div>
         </div>
         <div class="world-source-actions">
@@ -1673,6 +1674,7 @@ function topicDetailPage(topicKey) {
 
 function worldBankPage() {
   const totals = worldBankTotals();
+  const period = formatPeriod(totals.firstYear, totals.lastYear);
   return `<div class="page">
     ${pageHero({
       title: "Banco Mundial - Venezuela",
@@ -1694,7 +1696,7 @@ function worldBankPage() {
             <span><strong>${worldBankCatalog.length}</strong> areas</span>
             <span><strong>${formatInteger(totals.records)}</strong> registros</span>
             <span><strong>${totals.indicators}</strong> indicadores</span>
-            <span><strong>${totals.firstYear}-${totals.lastYear}</strong></span>
+            <span><strong>${period}</strong></span>
           </div>
         </div>
         <div class="world-bank-catalog-grid">
@@ -1708,6 +1710,7 @@ function worldBankPage() {
 
 function worldBankDatasetCard([area, id, records, indicators, firstYear, lastYear]) {
   const base = `assets/data/world-bank`;
+  const period = formatPeriod(firstYear, lastYear);
   return `<article class="world-bank-card">
     <div>
       <span class="source-tag">Banco Mundial</span>
@@ -1715,7 +1718,7 @@ function worldBankDatasetCard([area, id, records, indicators, firstYear, lastYea
       <p>${indicators} indicadores, ${formatInteger(records)} registros disponibles para Venezuela.</p>
     </div>
     <dl class="source-meta">
-      <div><dt>Periodo</dt><dd>${firstYear}-${lastYear}</dd></div>
+      <div><dt>Periodo</dt><dd>${period}</dd></div>
       <div><dt>ID</dt><dd>${id}</dd></div>
     </dl>
     <div class="download-row">
@@ -1727,12 +1730,20 @@ function worldBankDatasetCard([area, id, records, indicators, firstYear, lastYea
 }
 
 function worldBankTotals() {
-  return worldBankCatalog.reduce((totals, [, , records, indicators, firstYear, lastYear]) => ({
-    records: totals.records + records,
-    indicators: totals.indicators + indicators,
-    firstYear: Math.min(totals.firstYear, firstYear),
-    lastYear: Math.max(totals.lastYear, lastYear)
-  }), { records: 0, indicators: 0, firstYear: Infinity, lastYear: 0 });
+  return worldBankCatalog.reduce((totals, [, , records, indicators, firstYear, lastYear]) => {
+    const hasPeriod = Number.isFinite(firstYear) && Number.isFinite(lastYear);
+    return {
+      records: totals.records + records,
+      indicators: totals.indicators + indicators,
+      firstYear: hasPeriod ? Math.min(totals.firstYear, firstYear) : totals.firstYear,
+      lastYear: hasPeriod ? Math.max(totals.lastYear, lastYear) : totals.lastYear
+    };
+  }, { records: 0, indicators: 0, firstYear: Infinity, lastYear: -Infinity });
+}
+
+function formatPeriod(firstYear, lastYear) {
+  if (!Number.isFinite(firstYear) || !Number.isFinite(lastYear)) return "Sin dato disponible";
+  return `${firstYear}-${lastYear}`;
 }
 
 function formatInteger(value) {

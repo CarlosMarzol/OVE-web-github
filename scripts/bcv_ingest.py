@@ -164,7 +164,10 @@ def parse_exchange_rates(document: str, dataset: dict, fetched_at: str) -> list[
 def load_existing_observations(path: Path) -> list[dict]:
   if not path.exists():
     return []
-  data = json.loads(path.read_text(encoding="utf-8"))
+  try:
+    data = json.loads(path.read_text(encoding="utf-8"))
+  except json.JSONDecodeError:
+    return []
   return data.get("observations", [])
 
 

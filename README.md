@@ -29,6 +29,14 @@ La ingesta diaria actualiza dos salidas BCV:
 
 La ingesta mensual refresca el catalogo de archivos oficiales de PIB e INPC para su normalizacion posterior.
 
+## Actualizar datos Banco Mundial
+
+```bash
+python3 scripts/world_bank_ingest.py
+```
+
+La ingesta Banco Mundial conserva las areas tematicas del catalogo OVE y refresca los archivos de Venezuela en CSV, JSON, Excel y catalogos descargables dentro de `assets/data/world-bank/`.
+
 ## Ejecutar localmente
 
 Puedes abrir `index.html` directamente en el navegador o iniciar un servidor local:
