@@ -2,8 +2,8 @@
   "metadata": {
     "title": "Indicadores clave de Venezuela",
     "description": "Series históricas descargables para el dashboard OVE de indicadores clave.",
-    "generated_at": "2026-07-08T11:00:59Z",
-    "records": 2941,
+    "generated_at": "2026-07-08T21:39:40Z",
+    "records": 2943,
     "indicators": [
       "desempleo_total_wdi",
       "inpc_nacional_bcv",
@@ -38243,12 +38243,38 @@
       "indicator": "Tipo de cambio BCV",
       "area": "Economía",
       "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/sites/default/files/indicadores_sector_externo/2_1_1_tdc.xlsx",
+      "frequency": "Diaria",
+      "period": "2026-07-07",
+      "date": "2026-07-07",
+      "year": 2026,
+      "value": 674.9305,
+      "unit": "Bs/USD"
+    },
+    {
+      "indicator_id": "tipo_cambio_bcv_usd",
+      "indicator": "Tipo de cambio BCV",
+      "area": "Economía",
+      "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
       "frequency": "Diaria",
       "period": "2026-07-08",
       "date": "2026-07-08",
       "year": 2026,
       "value": 685.9427,
+      "unit": "Bs/USD"
+    },
+    {
+      "indicator_id": "tipo_cambio_bcv_usd",
+      "indicator": "Tipo de cambio BCV",
+      "area": "Economía",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
+      "frequency": "Diaria",
+      "period": "2026-07-09",
+      "date": "2026-07-09",
+      "year": 2026,
+      "value": 700.2249,
       "unit": "Bs/USD"
     }
   ]
