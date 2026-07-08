@@ -86,28 +86,36 @@ def extract_inpc(fetched_at: str) -> dict:
   current_year = None
   for _, row in df.iterrows():
     first = row.iloc[0]
-    if isinstance(first, str) and first.strip():
-      text = first.strip().replace("(*)", "").strip()
-      if text.isdigit():
-        current_year = int(text)
+    if pd.isna(first):
+      continue
+    text = str(first).strip().replace("(*)", "").strip()
+    numeric_year = None
+    try:
+      numeric = float(text)
+      if numeric.is_integer():
+        numeric_year = int(numeric)
+    except ValueError:
+      numeric_year = None
+    if numeric_year and 1900 <= numeric_year <= 2100:
+      current_year = numeric_year
+      continue
+    if current_year and text in MONTHS and pd.notna(row.iloc[1]):
+      date_value = dt.date(current_year, MONTHS[text], 1)
+      if date_value > dt.date.today().replace(day=1):
         continue
-      if current_year and text in MONTHS and pd.notna(row.iloc[1]):
-        date_value = dt.date(current_year, MONTHS[text], 1)
-        if date_value > dt.date.today().replace(day=1):
-          continue
-        rows.append({
-          "date": date_value.isoformat(),
-          "year": current_year,
-          "month": MONTHS[text],
-          "month_name": text,
-          "index_value": float(row.iloc[1]),
-          "monthly_variation_pct": None if pd.isna(row.iloc[2]) else float(row.iloc[2]),
-          "unit": "Índice base diciembre 2007=100 y variación mensual %",
-          "frequency": "monthly",
-          "source": "Banco Central de Venezuela",
-          "source_url": url,
-          "fetched_at": fetched_at,
-        })
+      rows.append({
+        "date": date_value.isoformat(),
+        "year": current_year,
+        "month": MONTHS[text],
+        "month_name": text,
+        "index_value": float(row.iloc[1]),
+        "monthly_variation_pct": None if pd.isna(row.iloc[2]) else float(row.iloc[2]),
+        "unit": "Índice base diciembre 2007=100 y variación mensual %",
+        "frequency": "monthly",
+        "source": "Banco Central de Venezuela",
+        "source_url": url,
+        "fetched_at": fetched_at,
+      })
   rows.sort(key=lambda item: item["date"])
   latest = rows[-1] if rows else None
   metadata = {

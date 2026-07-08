@@ -10,6 +10,7 @@ Sitio web estatico del Observatorio Venezolano de Economia.
 - `assets/`: imagenes y recursos usados directamente por la web.
 - `assets/data/world-bank/`: datasets del Banco Mundial para Venezuela en CSV, JSON y Excel.
 - `assets/data/bcv/`: datasets oficiales del Banco Central de Venezuela generados por `scripts/bcv_ingest.py`.
+- `assets/data/indicadores-clave/`: paquete curado CSV, JSON y Excel para el dashboard de indicadores clave.
 - `.github/workflows/update-bcv-data.yml`: automatizacion de GitHub Actions para actualizar datos BCV y Banco Mundial.
 - `manual_corporativo_ove_max_calidad.pdf`: archivo enlazado desde la web.
 - `source-assets/`: materiales de apoyo, logos originales e imagenes fuente.
@@ -39,6 +40,20 @@ Salidas principales:
 
 - `ove_bcv_pib_real_anual`: crecimiento anual del PIB real total desde workbook oficial BCV.
 - `ove_bcv_inpc_nacional_mensual`: INPC nacional y variacion mensual desde workbook oficial BCV.
+
+## Actualizar indicadores clave
+
+Despues de refrescar BCV y Banco Mundial, regenera el paquete descargable usado por el dashboard:
+
+```bash
+python3 scripts/build_key_indicators_dataset.py
+```
+
+Salidas:
+
+- `assets/data/indicadores-clave/ove_indicadores_clave_venezuela.csv`
+- `assets/data/indicadores-clave/ove_indicadores_clave_venezuela.json`
+- `assets/data/indicadores-clave/ove_indicadores_clave_venezuela.xlsx`
 
 ## Actualizar datos Banco Mundial
 

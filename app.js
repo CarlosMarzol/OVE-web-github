@@ -79,7 +79,7 @@ const metricData = [
   {
     title: "PIB corriente",
     subtitle: "Dólares corrientes",
-    value: "US$ 99,7 millardos",
+    value: "US$ 99,7 mil millones",
     period: "2025",
     trend: "Banco Mundial - WDI",
     direction: "down",
@@ -99,8 +99,8 @@ const metricData = [
   {
     title: "INPC mensual",
     subtitle: "Variación mensual",
-    value: "0,7%",
-    period: "julio 2026",
+    value: "6,3%",
+    period: "mayo 2026",
     trend: "BCV oficial",
     direction: "up",
     icon: "coin"
@@ -115,6 +115,121 @@ const metricData = [
     icon: "users"
   }
 ];
+
+const keyIndicatorDownloads = {
+  csv: "assets/data/indicadores-clave/ove_indicadores_clave_venezuela.csv",
+  json: "assets/data/indicadores-clave/ove_indicadores_clave_venezuela.json",
+  excel: "assets/data/indicadores-clave/ove_indicadores_clave_venezuela.xlsx"
+};
+
+const keyIndicatorSeries = [
+  {
+    id: "pib_real_bcv",
+    title: "PIB real",
+    area: "Economía",
+    source: "BCV",
+    latest: "8,94%",
+    period: "2025",
+    unit: "% anual",
+    frequency: "Anual",
+    href: "assets/data/bcv/excel/ove_bcv_pib_real_anual.xlsx"
+  },
+  {
+    id: "pib_corriente_wdi",
+    title: "PIB corriente",
+    area: "Economía",
+    source: "Banco Mundial - WDI",
+    latest: "99,7",
+    period: "2025",
+    unit: "US$ mil millones",
+    frequency: "Anual",
+    href: "assets/data/world-bank/excel/ove_banco_mundial_venezuela_macroeconomia.xlsx"
+  },
+  {
+    id: "pib_per_capita_wdi",
+    title: "PIB per cápita",
+    area: "Economía",
+    source: "Banco Mundial - WDI",
+    latest: "3.494,8",
+    period: "2025",
+    unit: "US$",
+    frequency: "Anual",
+    href: "assets/data/world-bank/excel/ove_banco_mundial_venezuela_macroeconomia.xlsx"
+  },
+  {
+    id: "inpc_nacional_bcv",
+    title: "INPC nacional",
+    area: "Nivel y condiciones de vida",
+    source: "BCV",
+    latest: "6,3",
+    period: "05/2026",
+    unit: "% mensual",
+    frequency: "Mensual",
+    href: "assets/data/bcv/excel/ove_bcv_inpc_nacional_mensual.xlsx"
+  },
+  {
+    id: "desempleo_total_wdi",
+    title: "Desempleo total",
+    area: "Mercado laboral",
+    source: "Banco Mundial - WDI",
+    latest: "5,31",
+    period: "2025",
+    unit: "% fuerza laboral",
+    frequency: "Anual",
+    href: "assets/data/world-bank/excel/ove_banco_mundial_venezuela_mercado_laboral.xlsx"
+  },
+  {
+    id: "tipo_cambio_bcv_usd",
+    title: "Tipo de cambio BCV",
+    area: "Economía",
+    source: "BCV",
+    latest: "685,9427",
+    period: "08/07/2026",
+    unit: "Bs/USD",
+    frequency: "Diaria",
+    href: "assets/data/bcv/excel/ove_bcv_tipo_cambio_usd.xlsx"
+  }
+];
+
+const dashboardSeries = {
+  pib_real_bcv: {
+    title: "PIB real",
+    unit: "% anual",
+    source: "Banco Central de Venezuela",
+    points: [[2018, -21.3959], [2019, -28.9915], [2020, -33.2038], [2021, 1.111], [2022, 14.9177], [2023, 5.1436], [2024, 9.0255], [2025, 8.9445]]
+  },
+  pib_corriente_wdi: {
+    title: "PIB corriente",
+    unit: "US$ mil millones",
+    source: "Banco Mundial - WDI",
+    scale: 1000000000,
+    points: [[2018, 101987075928.918], [2019, 73014157107.594], [2020, 42837965906.8675], [2021, 56615026262.6535], [2022, 89013251020.9831], [2023, 102377501185.925], [2024, 120566112397.063], [2025, 99661244155.6306]]
+  },
+  pib_per_capita_wdi: {
+    title: "PIB per cápita",
+    unit: "US$",
+    source: "Banco Mundial - WDI",
+    points: [[2018, 3421.5134], [2019, 2523.1153], [2020, 1506.0417], [2021, 2004.9357], [2022, 3155.0419], [2023, 3617.4704], [2024, 4244.4572], [2025, 3494.8139]]
+  },
+  inpc_nacional_bcv: {
+    title: "INPC nacional",
+    unit: "% mensual",
+    source: "Banco Central de Venezuela",
+    points: [["2025-10", 25.9313], ["2025-11", 21.6], ["2025-12", 13.6], ["2026-01", 32.6], ["2026-02", 14.6], ["2026-03", 13.1], ["2026-04", 10.6], ["2026-05", 6.3]]
+  },
+  desempleo_total_wdi: {
+    title: "Desempleo total",
+    unit: "% fuerza laboral",
+    source: "Banco Mundial - WDI",
+    points: [[2018, 5.468], [2019, 5.89], [2020, 7.53], [2021, 7.027], [2022, 5.646], [2023, 5.407], [2024, 5.321], [2025, 5.307]]
+  },
+  tipo_cambio_bcv_usd: {
+    title: "Tipo de cambio BCV",
+    unit: "Bs/USD",
+    source: "Banco Central de Venezuela",
+    points: [["2026-06-25", 621.5299], ["2026-06-26", 622.2135], ["2026-06-30", 623.0223], ["2026-07-01", 633.3644], ["2026-07-02", 639.7029], ["2026-07-03", 652.9726], ["2026-07-06", 667.05], ["2026-07-08", 685.9427]]
+  }
+};
 
 const reports = [
   ["Ejemplo", "Plantilla de informe macroeconómico", "Sin publicar", "Ejemplo visual de cómo se verá un informe cuando el OVE emita su primera publicación.", "dark"],
@@ -360,6 +475,7 @@ const topicDetails = {
     title: "Economia",
     image: "assets/topics/topic-economy.png",
     lead: "Series macroeconomicas y de precios para seguir actividad, inflacion, comercio, finanzas publicas y condiciones monetarias.",
+    keyIndicators: ["pib_real_bcv", "pib_corriente_wdi", "pib_per_capita_wdi", "tipo_cambio_bcv_usd", "inpc_nacional_bcv"],
     groups: [
       {
         title: "Actividad economica",
@@ -454,6 +570,7 @@ const topicDetails = {
     title: "Mercado laboral",
     image: "assets/topics/topic-labor.png",
     lead: "Indicadores de empleo, salarios, informalidad, ocupaciones y condiciones de trabajo en Venezuela.",
+    keyIndicators: ["desempleo_total_wdi"],
     groups: [
       {
         title: "Empleo y desempleo",
@@ -546,6 +663,7 @@ const topicDetails = {
     title: "Nivel y condiciones de vida (IPC)",
     image: "assets/topics/topic-living.png",
     lead: "Indicadores sociales y de costo de vida para monitorear bienestar, pobreza, acceso a servicios y consumo de hogares.",
+    keyIndicators: ["inpc_nacional_bcv"],
     groups: [
       {
         title: "Condiciones de vida",
@@ -798,6 +916,47 @@ function lineChart(kind = "blue") {
       <text x="257" y="143" class="chart-label">2025</text>
     </svg>
   `;
+}
+
+function formatDashboardValue(value, scale = 1) {
+  const scaled = value / scale;
+  return new Intl.NumberFormat("es-VE", {
+    maximumFractionDigits: Math.abs(scaled) >= 100 ? 1 : 2
+  }).format(scaled);
+}
+
+function sparklineSvg(series) {
+  if (!series?.points?.length) return "";
+  const values = series.points.map(([, value]) => value / (series.scale || 1));
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min || 1;
+  const width = 620;
+  const height = 260;
+  const padX = 38;
+  const padY = 34;
+  const step = (width - padX * 2) / Math.max(series.points.length - 1, 1);
+  const coords = values.map((value, index) => {
+    const x = padX + index * step;
+    const y = height - padY - ((value - min) / range) * (height - padY * 2);
+    return [x, y];
+  });
+  const line = coords.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
+  const area = `${line} ${coords[coords.length - 1][0].toFixed(1)},${height - padY} ${coords[0][0].toFixed(1)},${height - padY}`;
+  const firstLabel = series.points[0][0];
+  const lastLabel = series.points[series.points.length - 1][0];
+  return `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${series.title}">
+    <line x1="${padX}" y1="${padY}" x2="${width - padX}" y2="${padY}" class="chart-grid"></line>
+    <line x1="${padX}" y1="${height / 2}" x2="${width - padX}" y2="${height / 2}" class="chart-grid"></line>
+    <line x1="${padX}" y1="${height - padY}" x2="${width - padX}" y2="${height - padY}" class="chart-axis"></line>
+    <polygon points="${area}" class="key-chart-area"></polygon>
+    <polyline points="${line}" class="chart-line-blue"></polyline>
+    ${coords.map(([x, y], index) => `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${index === coords.length - 1 ? 5 : 4}" class="key-chart-dot"></circle>`).join("")}
+    <text x="${padX}" y="${height - 8}" class="chart-label">${firstLabel}</text>
+    <text x="${width - padX}" y="${height - 8}" class="chart-label" text-anchor="end">${lastLabel}</text>
+    <text x="${width - padX}" y="${padY - 10}" class="chart-label" text-anchor="end">${formatDashboardValue(max, 1)} ${series.unit}</text>
+    <text x="${width - padX}" y="${height - padY - 8}" class="chart-label" text-anchor="end">${formatDashboardValue(min, 1)} ${series.unit}</text>
+  </svg>`;
 }
 
 function chartCard(title, small, kind) {
@@ -1219,6 +1378,7 @@ function indicatorsPage() {
           </div>
           ${metricCards("inline-metrics")}
           <p class="source-note">Fuentes: Banco Mundial - World Development Indicators y Banco Central de Venezuela. Algunas series multilaterales tienen rezagos propios de publicación; se muestra el último año con dato no nulo.</p>
+          ${keyIndicatorDashboard()}
           <div class="dashboard-grid">
             <article class="panel span-7">
               <div class="panel-title"><h3>PIB real <span class="tiny">Banco Mundial</span></h3><span class="pill">2025</span></div>
@@ -1270,9 +1430,9 @@ function infoPanel(title, text, ico, link) {
 function indicatorTable() {
   const rows = [
     ["PIB real", "2025", "8,94", "% anual", "Último BCV", "BCV"],
-    ["PIB corriente", "2025", "99,7", "US$ millardos", "Último WDI", "Banco Mundial"],
+    ["PIB corriente", "2025", "99,7", "US$ mil millones", "Último WDI", "Banco Mundial"],
     ["PIB per cápita", "2025", "3.494,8", "US$", "Último WDI", "Banco Mundial"],
-    ["INPC nacional", "07/2026", "0,7", "% mensual", "Último BCV", "BCV"],
+    ["INPC nacional", "05/2026", "6,3", "% mensual", "Último BCV", "BCV"],
     ["Desempleo total", "2025", "5,31", "% fuerza laboral", "Último WDI", "Banco Mundial"],
     ["Tipo de cambio BCV", "08/07/2026", "685,9427", "Bs/USD", "Último BCV", "BCV"]
   ];
@@ -1280,6 +1440,43 @@ function indicatorTable() {
     <thead><tr><th>Indicador</th><th>Periodo</th><th>Valor</th><th>Unidad</th><th>Variacion</th><th>Fuente</th></tr></thead>
     <tbody>${rows.map(row => `<tr>${row.map(cell => `<td>${cell}</td>`).join("")}</tr>`).join("")}</tbody>
   </table>`;
+}
+
+function keyIndicatorDashboard() {
+  return `<section class="key-dashboard panel" data-key-dashboard>
+    <div class="key-dashboard-head">
+      <div>
+        <span class="eyebrow">Dashboard interactivo</span>
+        <h2>Indicadores clave verificables</h2>
+        <p>Selecciona un indicador para ver su evolución reciente y descarga la base completa con las seis series históricas.</p>
+      </div>
+      <div class="download-row key-downloads">
+        <a href="${keyIndicatorDownloads.csv}" download>CSV</a>
+        <a href="${keyIndicatorDownloads.json}" download>JSON</a>
+        <a href="${keyIndicatorDownloads.excel}" download>Excel</a>
+      </div>
+    </div>
+    <div class="key-dashboard-layout">
+      <div class="key-selector" role="tablist" aria-label="Indicadores clave">
+        ${keyIndicatorSeries.map((series, index) => `<button class="${index === 0 ? "is-active" : ""}" type="button" data-series-id="${series.id}">
+          <span>${series.title}</span>
+          <strong>${series.latest}</strong>
+          <small>${series.period} · ${series.unit}</small>
+        </button>`).join("")}
+      </div>
+      <div class="key-chart-panel">
+        <div class="panel-title">
+          <h3 data-key-title>${keyIndicatorSeries[0].title}</h3>
+          <span class="pill" data-key-source>${keyIndicatorSeries[0].source}</span>
+        </div>
+        <div class="key-chart" data-key-chart>${sparklineSvg(dashboardSeries[keyIndicatorSeries[0].id])}</div>
+        <div class="key-dashboard-foot">
+          <span data-key-unit>${keyIndicatorSeries[0].unit}</span>
+          <a class="text-link" href="${keyIndicatorDownloads.excel}" download>Descargar serie completa ${icon("download")}</a>
+        </div>
+      </div>
+    </div>
+  </section>`;
 }
 
 function publicationsPage() {
@@ -1475,6 +1672,7 @@ function dataPage() {
     ${topicsSection()}
     ${bcvSourceSection()}
     ${worldBankSourceSection()}
+    ${keyIndicatorDownloadSection()}
     <section id="datasets" class="section">
       <div class="container">
         <div class="section-title"><h2>Categorías temáticas</h2><a class="text-link" href="#/datos/banco-mundial">Ver datos reales ${arrow()}</a></div>
@@ -1641,8 +1839,51 @@ function bcvPage() {
   </div>`;
 }
 
+function keyIndicatorDownloadSection() {
+  return `<section class="section-tight">
+    <div class="container">
+      <div class="section-title">
+        <h2>Series históricas destacadas</h2>
+        <a class="text-link" href="#/indicadores">Abrir dashboard ${arrow()}</a>
+      </div>
+      <p class="source-note">Paquete curado con los indicadores usados en la portada y en el dashboard. Mantiene fuente, periodo, unidad, área temática y URL oficial para verificación.</p>
+      <div class="world-bank-summary key-download-summary">
+        <div>
+          <span class="eyebrow">Datos verificables</span>
+          <h3>Indicadores clave de Venezuela</h3>
+          <p>Incluye PIB real BCV, PIB corriente WDI, PIB per cápita WDI, INPC nacional BCV, desempleo WDI y tipo de cambio BCV.</p>
+        </div>
+        <div class="download-row key-downloads">
+          <a href="${keyIndicatorDownloads.csv}" download>CSV</a>
+          <a href="${keyIndicatorDownloads.json}" download>JSON</a>
+          <a href="${keyIndicatorDownloads.excel}" download>Excel</a>
+        </div>
+      </div>
+      <div class="world-bank-catalog-grid">
+        ${keyIndicatorSeries.map(series => `<article class="world-bank-card">
+          <div>
+            <span class="source-tag">${series.source}</span>
+            <h3>${series.title}</h3>
+            <p>${series.area}. Último dato: ${series.period}, ${series.latest} ${series.unit}.</p>
+          </div>
+          <dl class="source-meta">
+            <div><dt>Frecuencia</dt><dd>${series.frequency}</dd></div>
+            <div><dt>Área</dt><dd>${series.area}</dd></div>
+          </dl>
+          <div class="download-row">
+            <a href="${keyIndicatorDownloads.csv}" download>CSV</a>
+            <a href="${keyIndicatorDownloads.json}" download>JSON</a>
+            <a href="${series.href}" download>Fuente OVE</a>
+          </div>
+        </article>`).join("")}
+      </div>
+    </div>
+  </section>`;
+}
+
 function topicDetailPage(topicKey) {
   const topic = topicDetails[topicKey] || topicDetails.agriculture;
+  const downloads = keyIndicatorSeries.filter(series => (topic.keyIndicators || []).includes(series.id));
 
   return `<div class="page">
     ${pageHero({
@@ -1665,9 +1906,31 @@ function topicDetailPage(topicKey) {
         <div class="topic-accordion">
           ${topic.groups.map((group, index) => topicGroup(group, index === 0)).join("")}
         </div>
+        ${downloads.length ? topicDownloads(topic, downloads) : ""}
       </div>
     </section>
     ${footer()}
+  </div>`;
+}
+
+function topicDownloads(topic, downloads) {
+  return `<div class="topic-downloads">
+    <div class="section-title">
+      <h2>Series descargables en esta área</h2>
+      <a class="text-link" href="${keyIndicatorDownloads.excel}" download>Descargar paquete completo ${icon("download")}</a>
+    </div>
+    <div class="world-bank-catalog-grid">
+      ${downloads.map(series => `<article class="world-bank-card">
+        <span class="source-tag">${series.source}</span>
+        <h3>${series.title}</h3>
+        <p>${topic.title}. Último dato: ${series.period}, ${series.latest} ${series.unit}.</p>
+        <div class="download-row">
+          <a href="${keyIndicatorDownloads.csv}" download>CSV</a>
+          <a href="${keyIndicatorDownloads.json}" download>JSON</a>
+          <a href="${series.href}" download>Serie</a>
+        </div>
+      </article>`).join("")}
+    </div>
   </div>`;
 }
 
@@ -1775,9 +2038,10 @@ function datasetCard([title, count, text, ico]) {
 function recentDatasetTable() {
   const rows = [
     ["BCV tipo de cambio USD", "CSV/JSON/XLSX", "Actualizado 08/07/2026", "Fuente oficial"],
+    ["Indicadores clave de Venezuela", "CSV/JSON/XLSX", "Series históricas verificables", "Dashboard"],
     ["BCV referencia SMC", "CSV/JSON/XLSX", "Actualizado 08/07/2026", "Fuente oficial"],
     ["Banco Mundial - Venezuela", "CSV/JSON/XLSX", "Actualizado 08/07/2026", "Fuente real"],
-    ["Catálogos PIB/INPC BCV", "JSON", "Actualizado 08/07/2026", "Catalogado"]
+    ["BCV PIB real e INPC", "CSV/JSON/XLSX", "Actualizado 08/07/2026", "Fuente oficial"]
   ];
   return `<table><tbody>${rows.map(row => `<tr>${row.map(cell => `<td>${cell}</td>`).join("")}<td>${icon("download")}</td></tr>`).join("")}</tbody></table>`;
 }
@@ -2042,6 +2306,7 @@ function render() {
     updateActiveNav(route);
     wireForms();
     hydrateBcvWidgets();
+    hydrateKeyDashboard();
     prepareRevealAnimations(appRoot);
 
     if (!firstRender) {
@@ -2155,6 +2420,30 @@ async function hydrateBcvWidgets() {
       widget.querySelector("[data-bcv-usd-records]").textContent = "Revisar actualización automática";
     });
   }
+}
+
+function hydrateKeyDashboard() {
+  const dashboard = document.querySelector("[data-key-dashboard]");
+  if (!dashboard) return;
+  const title = dashboard.querySelector("[data-key-title]");
+  const source = dashboard.querySelector("[data-key-source]");
+  const unit = dashboard.querySelector("[data-key-unit]");
+  const chart = dashboard.querySelector("[data-key-chart]");
+  const buttons = dashboard.querySelectorAll("[data-series-id]");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const id = button.getAttribute("data-series-id");
+      const meta = keyIndicatorSeries.find(item => item.id === id);
+      const series = dashboardSeries[id];
+      if (!meta || !series) return;
+      buttons.forEach(item => item.classList.toggle("is-active", item === button));
+      title.textContent = meta.title;
+      source.textContent = meta.source;
+      unit.textContent = `${meta.frequency} · ${meta.unit}`;
+      chart.innerHTML = sparklineSvg(series);
+    });
+  });
 }
 
 function prepareRevealAnimations(root) {

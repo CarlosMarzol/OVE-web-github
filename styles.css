@@ -1751,6 +1751,118 @@ textarea.field {
   gap: 16px;
 }
 
+.key-dashboard {
+  margin: 22px 0 20px;
+}
+
+.key-dashboard-head,
+.key-dashboard-layout,
+.key-download-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: start;
+}
+
+.key-dashboard-head h2,
+.key-download-summary h3 {
+  margin: 4px 0 8px;
+}
+
+.key-dashboard-layout {
+  grid-template-columns: 300px minmax(0, 1fr);
+  margin-top: 18px;
+}
+
+.key-selector {
+  display: grid;
+  gap: 8px;
+}
+
+.key-selector button {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4px 12px;
+  align-items: center;
+  min-height: 62px;
+  padding: 10px 12px;
+  color: var(--ink);
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.key-selector button:hover,
+.key-selector button.is-active {
+  color: var(--blue-700);
+  background: #fff;
+  border-color: var(--blue-700);
+  transform: translateY(-1px);
+}
+
+.key-selector button span {
+  font-weight: 850;
+}
+
+.key-selector button strong {
+  font-size: 1.05rem;
+  text-align: right;
+}
+
+.key-selector button small {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.key-chart-panel {
+  min-width: 0;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.key-chart {
+  width: 100%;
+  min-height: 240px;
+}
+
+.key-chart svg {
+  width: 100%;
+  height: auto;
+}
+
+.key-chart-area {
+  fill: rgba(0, 82, 180, 0.12);
+}
+
+.key-chart-dot {
+  fill: #fff;
+  stroke: var(--blue-700);
+  stroke-width: 3;
+}
+
+.key-dashboard-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.key-downloads {
+  min-width: 260px;
+}
+
+.topic-downloads {
+  margin-top: 30px;
+}
+
 .span-4 {
   grid-column: span 4;
 }
@@ -2457,6 +2569,9 @@ th {
   .values-layout,
   .world-source-panel,
   .world-bank-summary,
+  .key-dashboard-head,
+  .key-dashboard-layout,
+  .key-download-summary,
   .bcv-live-card {
     grid-template-columns: 1fr;
   }
@@ -2620,6 +2735,16 @@ th {
 
   .report-cover {
     max-height: 360px;
+  }
+
+  .key-downloads {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .key-dashboard-foot {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .contact-grid {
