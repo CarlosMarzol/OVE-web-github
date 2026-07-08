@@ -1831,6 +1831,45 @@ textarea.field {
   min-height: 240px;
 }
 
+.exchange-latest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.exchange-latest-grid div {
+  min-width: 0;
+  padding: 12px;
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.exchange-latest-grid span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.exchange-latest-grid strong {
+  display: block;
+  margin-top: 6px;
+  color: var(--blue-700);
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.exchange-download-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
 .key-chart svg {
   width: 100%;
   height: auto;
@@ -2755,7 +2794,9 @@ th {
   .three-charts,
   .mini-grid-3,
   .mini-grid-5,
-  .collab-grid {
+  .collab-grid,
+  .exchange-latest-grid,
+  .exchange-download-grid {
     grid-template-columns: 1fr !important;
   }
 

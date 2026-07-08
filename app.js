@@ -6,6 +6,7 @@ const routes = {
   "/datos": dataPage,
   "/datos/banco-mundial": worldBankPage,
   "/datos/bcv": bcvPage,
+  "/datos/tipo-cambio": exchangeRatePage,
   "/datos/agricultura-medio-ambiente": () => topicDetailPage("agriculture"),
   "/datos/ciencia-tecnologia": () => topicDetailPage("science"),
   "/datos/demografia-poblacion": () => topicDetailPage("demography"),
@@ -48,6 +49,10 @@ const routeMeta = {
   "/datos/bcv": {
     title: "Banco Central de Venezuela | OVE",
     description: "Datos oficiales del Banco Central de Venezuela integrados al Observatorio."
+  },
+  "/datos/tipo-cambio": {
+    title: "Tipo de cambio BCV | OVE",
+    description: "Cuadro de mando del tipo de cambio oficial BCV con descargas diarias en CSV, JSON y Excel OVE."
   },
   "/nosotros": {
     title: "Nosotros | OVE",
@@ -121,6 +126,24 @@ const keyIndicatorDownloads = {
   json: "assets/data/indicadores-clave/ove_indicadores_clave_venezuela.json",
   excel: "assets/data/indicadores-clave/ove_indicadores_clave_venezuela.xlsx"
 };
+
+const exchangeDownloads = {
+  usdCsv: "assets/data/bcv/csv/ove_bcv_tipo_cambio_usd.csv",
+  usdJson: "assets/data/bcv/json/ove_bcv_tipo_cambio_usd.json",
+  usdExcel: "assets/data/bcv/excel/ove_bcv_tipo_cambio_usd.xlsx",
+  smcCsv: "assets/data/bcv/csv/ove_bcv_tipo_cambio_referencia_smc.csv",
+  smcJson: "assets/data/bcv/json/ove_bcv_tipo_cambio_referencia_smc.json",
+  smcExcel: "assets/data/bcv/excel/ove_bcv_tipo_cambio_referencia_smc.xlsx",
+  source: "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc"
+};
+
+const exchangeCurrencies = [
+  ["USD", "Dólar estadounidense"],
+  ["EUR", "Euro"],
+  ["CNY", "Yuan chino"],
+  ["TRY", "Lira turca"],
+  ["RUB", "Rublo ruso"]
+];
 
 const keyIndicatorSeries = [
   {
@@ -512,7 +535,8 @@ const topicDetails = {
               ["Comercio exterior de bienes por rubro y destino (en elaboración)", "Mensual"],
               ["Reservas internacionales y balanza de pagos (en elaboración)", "Trimestral"],
               ["Ingresos, gastos y deuda del sector publico (en elaboración)", "Trimestral"],
-              ["Credito, liquidez y tasas de interes (en elaboración)", "Mensual"]
+              ["Credito, liquidez y tasas de interes (en elaboración)", "Mensual"],
+              ["Tipo de cambio BCV diario y referencia SMC multimoneda", "Diaria"]
             ]
           }
         ]
@@ -852,8 +876,12 @@ function exampleNotice(text = "Contenido de ejemplo. El OVE aún no ha publicado
 
 function metricCards(extraClass = "") {
   return `<div class="metrics-grid ${extraClass}">
-    ${metricData.map(metric => `
-      <article class="metric-card">
+    ${metricData.map(metric => {
+      const exchangeAttrs = metric.title === "Tipo de cambio BCV" ? ' data-bcv-usd-latest data-bcv-compact="true"' : "";
+      const valueAttrs = metric.title === "Tipo de cambio BCV" ? " data-bcv-usd-value" : "";
+      const periodAttrs = metric.title === "Tipo de cambio BCV" ? " data-bcv-usd-date" : "";
+      return `
+      <article class="metric-card"${exchangeAttrs}>
         <div class="metric-head">
           <span class="metric-icon ${metric.color || ""}">${icon(metric.icon)}</span>
           <div>
@@ -861,11 +889,12 @@ function metricCards(extraClass = "") {
             <div class="metric-subtitle">${metric.subtitle}</div>
           </div>
         </div>
-        <div class="metric-value">${metric.value}</div>
-        <div class="tiny">${metric.period}</div>
+        <div class="metric-value"${valueAttrs}>${metric.value}</div>
+        <div class="tiny"${periodAttrs}>${metric.period}</div>
         <div class="trend neutral">${metric.trend}</div>
       </article>
-    `).join("")}
+    `;
+    }).join("")}
   </div>`;
 }
 
@@ -1057,7 +1086,7 @@ function pageHero({ title, lead, image = "assets/venezuela-hero.png", breadcrumb
 
 function dataBand() {
   const tools = [
-    ["BCV - Tipo de cambio", "Serie diaria oficial actualizada al 8 de julio de 2026.", "Explorar BCV", "database", "#/datos/bcv"],
+    ["BCV - Tipo de cambio", "Serie diaria oficial, multimoneda SMC y Excel OVE actualizados por cron.", "Abrir cuadro", "database", "#/datos/tipo-cambio"],
     ["Banco Mundial - Venezuela", "79 indicadores WDI regenerados para Venezuela.", "Explorar fuente", "globe", "#/datos/banco-mundial"],
     ["API OVE", "Maqueta técnica en preparación para integrar datos propios cuando sean publicados.", "Ver ejemplo", "chartbar", "#/datos"],
     ["Mapas economicos", "Ejemplo de visualización futura para datos regionales validados.", "Ver ejemplo", "map", "#/datos"]
@@ -1170,8 +1199,8 @@ function bcvSourceSection() {
           </div>
         </div>
         <div class="world-source-actions">
-          <a class="button button-primary" href="#/datos/bcv">Explorar BCV ${arrow()}</a>
-          <a class="button" href="assets/data/bcv/json/ove_bcv_tipo_cambio_referencia_smc.json" download>JSON ${icon("download")}</a>
+          <a class="button button-primary" href="#/datos/tipo-cambio">Cuadro tipo de cambio ${arrow()}</a>
+          <a class="button" href="${exchangeDownloads.smcExcel}" download>Excel OVE ${icon("download")}</a>
         </div>
       </article>
     </div>
@@ -1253,7 +1282,7 @@ function homePage() {
     ${pageHero({
       title: "Datos económicos para mejores decisiones",
       lead: "Analizamos y difundimos información económica rigurosa, independiente y accesible para comprender la realidad venezolana.",
-      actions: `<a class="button button-primary" href="#/datos/bcv">Ver dólar BCV ${arrow()}</a>
+      actions: `<a class="button button-primary" href="#/datos/tipo-cambio">Ver tipo de cambio BCV ${arrow()}</a>
         <a class="button" href="#/datos/banco-mundial">Ver datos Banco Mundial ${icon("database")}</a>
         <a class="button" href="#/indicadores">Ver indicadores actualizados ${icon("file")}</a>`
     })}
@@ -1323,8 +1352,8 @@ function bcvUsdHomePanel() {
           <h2>Tipo de cambio BCV Bs/USD</h2>
           <p>Serie histórica diaria construida desde el Excel oficial del BCV y actualizada con la publicación diaria del Banco Central de Venezuela.</p>
           <div class="bcv-live-actions">
-            <a class="button button-primary" href="#/datos/bcv">Ver serie ${arrow()}</a>
-            <a class="button" href="assets/data/bcv/excel/ove_bcv_tipo_cambio_usd.xlsx" download>Excel OVE ${icon("download")}</a>
+            <a class="button button-primary" href="#/datos/tipo-cambio">Ver cuadro ${arrow()}</a>
+            <a class="button" href="${exchangeDownloads.usdExcel}" download>Excel OVE ${icon("download")}</a>
           </div>
         </div>
         <div class="bcv-live-value">
@@ -1434,7 +1463,7 @@ function indicatorTable() {
     ["PIB per cápita", "2025", "3.494,8", "US$", "Último WDI", "Banco Mundial"],
     ["INPC nacional", "05/2026", "6,3", "% mensual", "Último BCV", "BCV"],
     ["Desempleo total", "2025", "5,31", "% fuerza laboral", "Último WDI", "Banco Mundial"],
-    ["Tipo de cambio BCV", "08/07/2026", "685,9427", "Bs/USD", "Último BCV", "BCV"]
+    ["Tipo de cambio BCV", '<span data-bcv-table-date>08/07/2026</span>', '<span data-bcv-table-value>685,9427</span>', "Bs/USD", "Último BCV", "BCV"]
   ];
   return `<table>
     <thead><tr><th>Indicador</th><th>Periodo</th><th>Valor</th><th>Unidad</th><th>Variacion</th><th>Fuente</th></tr></thead>
@@ -1477,6 +1506,100 @@ function keyIndicatorDashboard() {
       </div>
     </div>
   </section>`;
+}
+
+function exchangeRatePage() {
+  const currencyButtons = exchangeCurrencies.map(([code, label], index) => `<button class="${index === 0 ? "is-active" : ""}" type="button" data-exchange-currency="${code}">
+    <span>${code}</span>
+    <strong data-exchange-button-value="${code}">Cargando</strong>
+    <small>${label}</small>
+  </button>`).join("");
+
+  return `<div class="page">
+    ${pageHero({
+      title: "Tipo de cambio BCV",
+      lead: "Cuadro de mando único para verificar el tipo de cambio oficial publicado por el Banco Central de Venezuela, con serie diaria USD y referencia SMC multimoneda descargable.",
+      image: "assets/topics/topic-economy.png",
+      breadcrumb: ["Inicio", "Datos", "Tipo de cambio"],
+      actions: `<a class="button button-primary" href="${exchangeDownloads.usdExcel}" download>Excel OVE USD ${icon("download")}</a>
+        <a class="button" href="${exchangeDownloads.smcExcel}" download>Excel OVE multimoneda ${icon("download")}</a>`
+    })}
+    <section class="section">
+      <div class="container">
+        <article class="key-dashboard panel exchange-dashboard" data-exchange-dashboard>
+          <div class="key-dashboard-head">
+            <div>
+              <span class="eyebrow">Dashboard interactivo</span>
+              <h2>Verificador diario de tipo de cambio</h2>
+              <p>Selecciona una moneda para consultar el último valor BCV y la evolución disponible. USD usa la serie histórica diaria completa; EUR, CNY, TRY y RUB usan la referencia SMC multimoneda publicada por el BCV.</p>
+            </div>
+            <div class="download-row key-downloads">
+              <a href="${exchangeDownloads.usdCsv}" download>USD CSV</a>
+              <a href="${exchangeDownloads.usdJson}" download>USD JSON</a>
+              <a href="${exchangeDownloads.usdExcel}" download>USD Excel</a>
+            </div>
+          </div>
+          <div class="key-dashboard-layout">
+            <div class="key-selector" role="tablist" aria-label="Monedas disponibles">
+              ${currencyButtons}
+            </div>
+            <div class="key-chart-panel">
+              <div class="panel-title">
+                <h3 data-exchange-title>USD/BCV</h3>
+                <span class="pill" data-exchange-source>BCV oficial</span>
+              </div>
+              <div class="exchange-latest-grid" aria-label="Último dato del tipo de cambio">
+                <div><span>Último valor</span><strong data-exchange-latest>Cargando</strong></div>
+                <div><span>Fecha valor</span><strong data-exchange-date>Cargando</strong></div>
+                <div><span>Observaciones</span><strong data-exchange-records>Cargando</strong></div>
+              </div>
+              <div class="key-chart" data-exchange-chart></div>
+              <div class="key-dashboard-foot">
+                <span data-exchange-unit>VES por USD</span>
+                <a class="text-link" href="${exchangeDownloads.source}" target="_blank" rel="noopener">Ver fuente BCV ${arrow()}</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="exchange-download-grid">
+          ${[
+            ["Serie diaria USD", "Histórico diario Bs/USD normalizado desde el Excel oficial BCV y la publicación diaria SMC.", exchangeDownloads.usdCsv, exchangeDownloads.usdJson, exchangeDownloads.usdExcel],
+            ["Referencia SMC multimoneda", "Base diaria con las monedas publicadas por BCV: USD, EUR, CNY, TRY y RUB.", exchangeDownloads.smcCsv, exchangeDownloads.smcJson, exchangeDownloads.smcExcel],
+            ["Fuente oficial BCV", "Página de tipo de cambio de referencia SMC usada por el cron diario del Observatorio.", exchangeDownloads.source, exchangeDownloads.source, exchangeDownloads.source]
+          ].map(([title, text, csv, json, excel]) => `<article class="world-bank-card">
+            <div>
+              <span class="source-tag">BCV oficial</span>
+              <h3>${title}</h3>
+              <p>${text}</p>
+            </div>
+            <dl class="source-meta">
+              <div><dt>Frecuencia</dt><dd>Diaria</dd></div>
+              <div><dt>Estado</dt><dd>Automático</dd></div>
+            </dl>
+            <div class="download-row">
+              <a href="${csv}" ${csv.startsWith("http") ? 'target="_blank" rel="noopener"' : "download"}>${csv.startsWith("http") ? "Fuente" : "CSV"}</a>
+              <a href="${json}" ${json.startsWith("http") ? 'target="_blank" rel="noopener"' : "download"}>${json.startsWith("http") ? "BCV" : "JSON"}</a>
+              <a href="${excel}" ${excel.startsWith("http") ? 'target="_blank" rel="noopener"' : "download"}>${excel.startsWith("http") ? "Sitio" : "Excel OVE"}</a>
+            </div>
+          </article>`).join("")}
+        </div>
+      </div>
+    </section>
+    <section class="section-tight">
+      <div class="container dashboard-grid">
+        <article class="panel span-6">
+          <h2>Actualización automática</h2>
+          <p>El cron de GitHub Actions ejecuta la ingesta diaria de BCV, actualiza las bases CSV/JSON/Excel en assets/data/bcv y vuelve a generar indicadores-clave para que la portada, Indicadores y Datos usen el último valor disponible.</p>
+        </article>
+        <article class="panel span-6">
+          <h2>Monedas disponibles</h2>
+          <p>El cuadro muestra todas las monedas disponibles en la referencia SMC del BCV dentro del Observatorio: USD, EUR, CNY, TRY y RUB.</p>
+        </article>
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
 }
 
 function publicationsPage() {
@@ -1667,7 +1790,7 @@ function dataPage() {
       title: "Datos de Venezuela",
       lead: "Repositorio de datos actualizados del Observatorio: Banco Mundial - Venezuela y Banco Central de Venezuela, con archivos descargables en CSV, JSON y Excel.",
       breadcrumb: ["Inicio", "Datos", "Datos abiertos y API"],
-      actions: `<a class="button button-primary" href="#/datos/banco-mundial">Explorar Banco Mundial ${arrow()}</a><a class="button" href="#/datos/bcv">Ver BCV ${icon("database")}</a>`
+      actions: `<a class="button button-primary" href="#/datos/tipo-cambio">Tipo de cambio BCV ${arrow()}</a><a class="button" href="#/datos/bcv">Ver BCV ${icon("database")}</a>`
     })}
     ${topicsSection()}
     ${bcvSourceSection()}
@@ -1762,11 +1885,11 @@ function bcvPage() {
   return `<div class="page">
     ${pageHero({
       title: "Banco Central de Venezuela",
-      lead: "Datos oficiales del BCV integrados al Observatorio. La primera serie activa es el tipo de cambio diario Bs/USD, automatizada para descarga diaria y exportada en JSON, CSV y Excel OVE.",
+      lead: "Datos oficiales del BCV integrados al Observatorio. El tipo de cambio diario queda automatizado para descarga diaria, verificación multimoneda y exportación en JSON, CSV y Excel OVE.",
       image: "assets/topics/topic-economy.png",
       breadcrumb: ["Inicio", "Datos", "Banco Central de Venezuela"],
-      actions: `<a class="button button-primary" href="assets/data/bcv/excel/ove_bcv_tipo_cambio_usd.xlsx" download>Descargar Excel OVE ${icon("download")}</a>
-        <a class="button" href="assets/data/bcv/json/ove_bcv_tipo_cambio_usd.json" download>Descargar JSON ${icon("code")}</a>`
+      actions: `<a class="button button-primary" href="#/datos/tipo-cambio">Cuadro tipo de cambio ${arrow()}</a>
+        <a class="button" href="${exchangeDownloads.usdExcel}" download>Descargar Excel OVE ${icon("download")}</a>`
     })}
     <section class="section">
       <div class="container">
@@ -1798,13 +1921,13 @@ function bcvPage() {
         </article>
         <div class="world-bank-catalog-grid">
           ${[
-            ["Serie histórica USD JSON", "Serie diaria normalizada para consumo web y automatizaciones.", "assets/data/bcv/json/ove_bcv_tipo_cambio_usd.json", "JSON"],
-            ["Excel formato OVE", "Archivo tabular con compra, venta, fecha, unidad y fuente con cabecera corporativa.", "assets/data/bcv/excel/ove_bcv_tipo_cambio_usd.xlsx", "Excel"],
+            ["Serie histórica USD JSON", "Serie diaria normalizada para consumo web y automatizaciones.", exchangeDownloads.usdJson, "JSON", "#/datos/tipo-cambio"],
+            ["Excel formato OVE", "Archivo tabular con compra, venta, fecha, unidad y fuente con cabecera corporativa.", exchangeDownloads.usdExcel, "Excel", "#/datos/tipo-cambio"],
             ["PIB real anual", "Crecimiento anual del PIB real total normalizado desde workbook oficial BCV.", "assets/data/bcv/json/ove_bcv_pib_real_anual.json", "JSON"],
             ["INPC nacional mensual", "Índice nacional de precios al consumidor y variación mensual desde workbook oficial BCV.", "assets/data/bcv/json/ove_bcv_inpc_nacional_mensual.json", "JSON"],
-            ["Referencia SMC multimoneda", "Dato diario publicado por el BCV para USD, EUR, CNY, TRY y RUB.", "assets/data/bcv/json/ove_bcv_tipo_cambio_referencia_smc.json", "JSON"],
+            ["Referencia SMC multimoneda", "Dato diario publicado por el BCV para USD, EUR, CNY, TRY y RUB.", exchangeDownloads.smcJson, "JSON", "#/datos/tipo-cambio"],
             ["Catálogo BCV", "Inventario de datasets BCV activos y fuentes catalogadas para próximas ingestas.", "assets/data/bcv/catalog/bcv-catalog.json", "JSON"]
-          ].map(([title, text, href, format]) => `<article class="world-bank-card">
+          ].map(([title, text, href, format, viewHref = "#/datos/bcv"]) => `<article class="world-bank-card">
             <div>
               <span class="source-tag">BCV oficial</span>
               <h3>${title}</h3>
@@ -1816,8 +1939,8 @@ function bcvPage() {
             </dl>
             <div class="download-row">
               <a href="${href}" download>Descargar</a>
-              <a href="#/datos/bcv">Ver</a>
-              <a href="https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc" target="_blank" rel="noopener">Fuente</a>
+              <a href="${viewHref}">Ver</a>
+              <a href="${exchangeDownloads.source}" target="_blank" rel="noopener">Fuente</a>
             </div>
           </article>`).join("")}
         </div>
@@ -1920,16 +2043,20 @@ function topicDownloads(topic, downloads) {
       <a class="text-link" href="${keyIndicatorDownloads.excel}" download>Descargar paquete completo ${icon("download")}</a>
     </div>
     <div class="world-bank-catalog-grid">
-      ${downloads.map(series => `<article class="world-bank-card">
+      ${downloads.map(series => {
+        const isExchange = series.id === "tipo_cambio_bcv_usd";
+        return `<article class="world-bank-card">
         <span class="source-tag">${series.source}</span>
         <h3>${series.title}</h3>
         <p>${topic.title}. Último dato: ${series.period}, ${series.latest} ${series.unit}.</p>
         <div class="download-row">
-          <a href="${keyIndicatorDownloads.csv}" download>CSV</a>
-          <a href="${keyIndicatorDownloads.json}" download>JSON</a>
+          <a href="${isExchange ? exchangeDownloads.usdCsv : keyIndicatorDownloads.csv}" download>CSV</a>
+          <a href="${isExchange ? exchangeDownloads.usdJson : keyIndicatorDownloads.json}" download>JSON</a>
           <a href="${series.href}" download>Serie</a>
+          ${isExchange ? `<a href="#/datos/tipo-cambio">Cuadro</a>` : ""}
         </div>
-      </article>`).join("")}
+      </article>`;
+      }).join("")}
     </div>
   </div>`;
 }
@@ -2307,6 +2434,7 @@ function render() {
     wireForms();
     hydrateBcvWidgets();
     hydrateKeyDashboard();
+    hydrateExchangeDashboard();
     prepareRevealAnimations(appRoot);
 
     if (!firstRender) {
@@ -2409,15 +2537,47 @@ async function hydrateBcvWidgets() {
     const observations = data.observations || [];
     const latest = data.metadata?.latest || observations[observations.length - 1];
     widgets.forEach(widget => {
-      widget.querySelector("[data-bcv-usd-value]").textContent = `${formatBcvNumber(latest?.value)} Bs/USD`;
-      widget.querySelector("[data-bcv-usd-date]").textContent = `Fecha valor: ${formatBcvDate(latest?.date)}`;
-      widget.querySelector("[data-bcv-usd-records]").textContent = `${data.metadata?.records || 0} observaciones desde ${data.metadata?.first_date || "2016"}`;
+      const compact = widget.hasAttribute("data-bcv-compact");
+      const valueNode = widget.querySelector("[data-bcv-usd-value]");
+      const dateNode = widget.querySelector("[data-bcv-usd-date]");
+      const recordsNode = widget.querySelector("[data-bcv-usd-records]");
+      if (valueNode) valueNode.textContent = compact ? formatBcvNumber(latest?.value) : `${formatBcvNumber(latest?.value)} Bs/USD`;
+      if (dateNode) dateNode.textContent = compact ? formatBcvDate(latest?.date) : `Fecha valor: ${formatBcvDate(latest?.date)}`;
+      if (recordsNode) recordsNode.textContent = `${data.metadata?.records || 0} observaciones desde ${data.metadata?.first_date || "2016"}`;
     });
+    document.querySelectorAll("[data-bcv-table-value]").forEach(node => {
+      node.textContent = formatBcvNumber(latest?.value);
+    });
+    document.querySelectorAll("[data-bcv-table-date]").forEach(node => {
+      node.textContent = latest?.date ? latest.date.split("-").reverse().join("/") : "Fecha no disponible";
+    });
+    if (latest) {
+      const exchangeMeta = keyIndicatorSeries.find(series => series.id === "tipo_cambio_bcv_usd");
+      if (exchangeMeta) {
+        exchangeMeta.latest = formatBcvNumber(latest.value);
+        exchangeMeta.period = latest.date ? latest.date.split("-").reverse().join("/") : exchangeMeta.period;
+      }
+      dashboardSeries.tipo_cambio_bcv_usd.points = observations
+        .filter(row => typeof row.value === "number")
+        .slice(-45)
+        .map(row => [row.date, row.value]);
+      document.querySelectorAll('[data-series-id="tipo_cambio_bcv_usd"]').forEach(button => {
+        button.querySelector("strong").textContent = exchangeMeta?.latest || formatBcvNumber(latest.value);
+        button.querySelector("small").textContent = `${exchangeMeta?.period || latest.date} · Bs/USD`;
+      });
+      const activeExchangeChart = document.querySelector('[data-key-dashboard] [data-series-id="tipo_cambio_bcv_usd"].is-active');
+      if (activeExchangeChart) {
+        document.querySelector("[data-key-chart]").innerHTML = sparklineSvg(dashboardSeries.tipo_cambio_bcv_usd);
+      }
+    }
   } catch {
     widgets.forEach(widget => {
-      widget.querySelector("[data-bcv-usd-value]").textContent = "No disponible";
-      widget.querySelector("[data-bcv-usd-date]").textContent = "No se pudo leer el JSON BCV";
-      widget.querySelector("[data-bcv-usd-records]").textContent = "Revisar actualización automática";
+      const valueNode = widget.querySelector("[data-bcv-usd-value]");
+      const dateNode = widget.querySelector("[data-bcv-usd-date]");
+      const recordsNode = widget.querySelector("[data-bcv-usd-records]");
+      if (valueNode) valueNode.textContent = "No disponible";
+      if (dateNode) dateNode.textContent = "No se pudo leer el JSON BCV";
+      if (recordsNode) recordsNode.textContent = "Revisar actualización automática";
     });
   }
 }
@@ -2444,6 +2604,80 @@ function hydrateKeyDashboard() {
       chart.innerHTML = sparklineSvg(series);
     });
   });
+}
+
+async function hydrateExchangeDashboard() {
+  const dashboard = document.querySelector("[data-exchange-dashboard]");
+  if (!dashboard) return;
+
+  const title = dashboard.querySelector("[data-exchange-title]");
+  const source = dashboard.querySelector("[data-exchange-source]");
+  const latestValue = dashboard.querySelector("[data-exchange-latest]");
+  const latestDate = dashboard.querySelector("[data-exchange-date]");
+  const records = dashboard.querySelector("[data-exchange-records]");
+  const unit = dashboard.querySelector("[data-exchange-unit]");
+  const chart = dashboard.querySelector("[data-exchange-chart]");
+  const buttons = dashboard.querySelectorAll("[data-exchange-currency]");
+
+  try {
+    const [usdResponse, smcResponse] = await Promise.all([
+      fetch(exchangeDownloads.usdJson, { cache: "no-store" }),
+      fetch(exchangeDownloads.smcJson, { cache: "no-store" })
+    ]);
+    if (!usdResponse.ok || !smcResponse.ok) throw new Error("Exchange JSON unavailable");
+    const [usdData, smcData] = await Promise.all([usdResponse.json(), smcResponse.json()]);
+    const usdRows = (usdData.observations || []).filter(row => typeof row.value === "number");
+    const smcRows = (smcData.observations || []).filter(row => typeof row.value === "number");
+    const rowsByCurrency = new Map();
+
+    exchangeCurrencies.forEach(([code]) => rowsByCurrency.set(code, []));
+    rowsByCurrency.set("USD", usdRows);
+    smcRows.forEach(row => {
+      const code = row.currency;
+      if (!rowsByCurrency.has(code)) rowsByCurrency.set(code, []);
+      if (code !== "USD") rowsByCurrency.get(code).push(row);
+    });
+
+    rowsByCurrency.forEach((rows, code) => {
+      rows.sort((left, right) => String(left.date).localeCompare(String(right.date)));
+      const latest = rows[rows.length - 1];
+      const buttonValue = dashboard.querySelector(`[data-exchange-button-value="${code}"]`);
+      if (buttonValue) {
+        buttonValue.textContent = latest ? formatBcvNumber(latest.value) : "Sin dato";
+      }
+    });
+
+    const renderCurrency = code => {
+      const rows = rowsByCurrency.get(code) || [];
+      const meta = exchangeCurrencies.find(([currency]) => currency === code);
+      const latest = rows[rows.length - 1];
+      const points = rows.slice(-45).map(row => [row.date, row.value]);
+      buttons.forEach(button => button.classList.toggle("is-active", button.getAttribute("data-exchange-currency") === code));
+      title.textContent = `${code}/BCV`;
+      source.textContent = meta?.[1] || "BCV oficial";
+      latestValue.textContent = latest ? `${formatBcvNumber(latest.value)} Bs/${code}` : "No disponible";
+      latestDate.textContent = latest ? formatBcvDate(latest.date) : "Sin fecha";
+      records.textContent = rows.length ? formatInteger(rows.length) : "0";
+      unit.textContent = code === "USD" ? "Serie histórica diaria Bs/USD" : "Referencia SMC diaria: VES por unidad de moneda";
+      chart.innerHTML = sparklineSvg({
+        title: `Tipo de cambio ${code}/BCV`,
+        unit: `Bs/${code}`,
+        points
+      });
+    };
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => renderCurrency(button.getAttribute("data-exchange-currency")));
+    });
+
+    renderCurrency("USD");
+  } catch {
+    latestValue.textContent = "No disponible";
+    latestDate.textContent = "No se pudo leer el JSON BCV";
+    records.textContent = "Revisar cron";
+    unit.textContent = "Actualización automática pendiente";
+    chart.innerHTML = `<p class="source-note">No fue posible cargar las bases de tipo de cambio en este momento.</p>`;
+  }
 }
 
 function prepareRevealAnimations(root) {
