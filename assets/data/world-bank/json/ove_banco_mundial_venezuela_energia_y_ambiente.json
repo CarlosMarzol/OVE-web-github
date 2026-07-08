@@ -1,16 +1,10 @@
 {
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
-    "Dataset": "Banco Mundial - Venezuela",
-    "Área temática": "Energía y ambiente",
-    "País": "Venezuela",
-    "Fuente": "Banco Mundial - World Development Indicators",
-    "Archivo origen": "OVE_Banco_Mundial_Venezuela_energia_y_ambiente.csv",
-    "Fecha generación": "2026-05-21 21:28:40",
-    "Número de registros": "330",
-    "Primer año": "1960",
-    "Último año": "2025",
-    "Número de indicadores": "5"
+    "Dataset": "Banco Mundial - Venezuela - Energía y ambiente",
+    "Fecha generación": "2026-07-08",
+    "Número de indicadores": 5,
+    "Número de registros": 330
   },
   "datos": [
     {
@@ -29,7 +23,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -48,7 +42,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -67,7 +61,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -86,7 +80,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -105,7 +99,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -124,7 +118,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -143,7 +137,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -162,7 +156,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -181,7 +175,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -200,7 +194,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -219,7 +213,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -238,7 +232,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -257,7 +251,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -276,7 +270,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -295,7 +289,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -314,7 +308,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -333,7 +327,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -352,7 +346,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -371,7 +365,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -390,7 +384,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -409,7 +403,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -428,7 +422,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -447,7 +441,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -466,7 +460,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -485,7 +479,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -504,7 +498,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -523,7 +517,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -542,7 +536,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -561,7 +555,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -580,7 +574,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -597,9 +591,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 58.9831,
+      "Valor": 58.9830508474576,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -616,9 +610,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 58.6571,
+      "Valor": 58.6571056062582,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -635,9 +629,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 58.3312,
+      "Valor": 58.3311603650587,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -654,9 +648,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 58.0052,
+      "Valor": 58.0052151238592,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -673,9 +667,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 57.6793,
+      "Valor": 57.6792698826597,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -692,9 +686,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 57.3533,
+      "Valor": 57.3533246414602,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -711,9 +705,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 57.0274,
+      "Valor": 57.0273794002608,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -730,9 +724,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 56.7014,
+      "Valor": 56.7014341590613,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -749,9 +743,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 56.3755,
+      "Valor": 56.3754889178618,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -768,9 +762,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 56.0495,
+      "Valor": 56.0495436766623,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -787,9 +781,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 55.7236,
+      "Valor": 55.7235984354628,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -806,9 +800,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 55.537,
+      "Valor": 55.53698769911,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -825,9 +819,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 55.3504,
+      "Valor": 55.3503769627572,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -844,9 +838,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 55.1638,
+      "Valor": 55.1637662264044,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -863,9 +857,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 54.9772,
+      "Valor": 54.9771554900516,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -882,9 +876,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 54.7905,
+      "Valor": 54.7905447536988,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -901,9 +895,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 54.6039,
+      "Valor": 54.603934017346,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -920,9 +914,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 54.4173,
+      "Valor": 54.4173232809931,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -939,9 +933,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 54.2307,
+      "Valor": 54.2307125446403,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -958,9 +952,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 54.0441,
+      "Valor": 54.0441018082875,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -977,9 +971,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 53.8575,
+      "Valor": 53.8574910719347,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -996,9 +990,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 53.6711,
+      "Valor": 53.6711070800975,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1015,9 +1009,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 53.4847,
+      "Valor": 53.4847230882603,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1034,9 +1028,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 53.2983,
+      "Valor": 53.2983390964231,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1053,9 +1047,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 53.112,
+      "Valor": 53.1119551045859,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1072,9 +1066,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 52.9256,
+      "Valor": 52.9255711127487,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1091,9 +1085,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 52.7671,
+      "Valor": 52.7671447196871,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1110,9 +1104,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 52.6367,
+      "Valor": 52.6366759254011,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1129,9 +1123,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 52.5342,
+      "Valor": 52.5341647298906,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1148,9 +1142,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 52.4596,
+      "Valor": 52.4596111331557,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1167,9 +1161,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 52.413,
+      "Valor": 52.4130151351964,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1186,9 +1180,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 52.3478,
+      "Valor": 52.3477807380534,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1205,9 +1199,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 52.295,
+      "Valor": 52.2949719403662,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1224,9 +1218,9 @@
       "ID subárea": "bosques",
       "Código indicador": "AG.LND.FRST.ZS",
       "Indicador": "Superficie forestal como porcentaje del territorio",
-      "Valor": 52.2339,
+      "Valor": 52.2338793719177,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1245,7 +1239,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1264,7 +1258,7 @@
       "Indicador": "Superficie forestal como porcentaje del territorio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1283,7 +1277,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1302,7 +1296,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1321,7 +1315,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1340,7 +1334,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1359,7 +1353,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1378,7 +1372,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1397,7 +1391,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1416,7 +1410,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1435,7 +1429,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1454,7 +1448,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1473,7 +1467,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1492,7 +1486,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1511,7 +1505,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1530,7 +1524,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1549,7 +1543,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1568,7 +1562,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1587,7 +1581,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1606,7 +1600,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1625,7 +1619,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1644,7 +1638,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1663,7 +1657,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1682,7 +1676,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1701,7 +1695,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1720,7 +1714,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1739,7 +1733,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1758,7 +1752,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1777,7 +1771,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1796,7 +1790,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1815,7 +1809,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1834,7 +1828,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1853,7 +1847,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1872,7 +1866,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1889,9 +1883,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.ACCS.ZS",
       "Indicador": "Acceso a electricidad",
-      "Valor": 97.8202,
+      "Valor": 97.820203,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1908,9 +1902,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.ACCS.ZS",
       "Indicador": "Acceso a electricidad",
-      "Valor": 98.2395,
+      "Valor": 98.2395324707031,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1927,9 +1921,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.ACCS.ZS",
       "Indicador": "Acceso a electricidad",
-      "Valor": 98.3233,
+      "Valor": 98.3233337402344,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1946,9 +1940,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.ACCS.ZS",
       "Indicador": "Acceso a electricidad",
-      "Valor": 99,
+      "Valor": 99.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1965,9 +1959,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.ACCS.ZS",
       "Indicador": "Acceso a electricidad",
-      "Valor": 98.4841,
+      "Valor": 98.484130859375,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1986,7 +1980,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 98.7,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2005,7 +1999,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 98.4,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2024,7 +2018,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 98.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2043,7 +2037,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 98.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2062,7 +2056,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 99.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2081,7 +2075,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 99.8,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2100,7 +2094,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 95.7,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2119,7 +2113,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 99.1,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2138,7 +2132,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 98.8,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2157,7 +2151,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 99.3,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2176,7 +2170,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 98.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2195,7 +2189,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 98.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2212,9 +2206,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.ACCS.ZS",
       "Indicador": "Acceso a electricidad",
-      "Valor": 99,
+      "Valor": 99.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2233,7 +2227,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 99.1,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2252,7 +2246,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 98.8,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2271,7 +2265,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 99.3,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2290,7 +2284,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 99.4,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2307,9 +2301,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.ACCS.ZS",
       "Indicador": "Acceso a electricidad",
-      "Valor": 100,
+      "Valor": 100.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2326,9 +2320,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.ACCS.ZS",
       "Indicador": "Acceso a electricidad",
-      "Valor": 100,
+      "Valor": 100.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2347,7 +2341,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 99.4,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2366,7 +2360,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 99.2,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2385,7 +2379,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 99.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2404,7 +2398,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 99.8,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2423,7 +2417,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": 99.9,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2440,9 +2434,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.ACCS.ZS",
       "Indicador": "Acceso a electricidad",
-      "Valor": 100,
+      "Valor": 100.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2459,9 +2453,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.ACCS.ZS",
       "Indicador": "Acceso a electricidad",
-      "Valor": 100,
+      "Valor": 100.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2478,9 +2472,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.ACCS.ZS",
       "Indicador": "Acceso a electricidad",
-      "Valor": 100,
+      "Valor": 100.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2499,7 +2493,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2518,7 +2512,7 @@
       "Indicador": "Acceso a electricidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2537,7 +2531,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2556,7 +2550,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2575,7 +2569,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2594,7 +2588,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2613,7 +2607,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2632,7 +2626,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2651,7 +2645,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2670,7 +2664,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2689,7 +2683,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2708,7 +2702,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2727,7 +2721,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2746,7 +2740,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2765,7 +2759,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2784,7 +2778,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2803,7 +2797,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2822,7 +2816,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2841,7 +2835,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2860,7 +2854,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2879,7 +2873,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2898,7 +2892,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2917,7 +2911,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2936,7 +2930,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2955,7 +2949,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2974,7 +2968,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2993,7 +2987,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3012,7 +3006,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3031,7 +3025,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3050,7 +3044,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3069,7 +3063,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3088,7 +3082,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3105,9 +3099,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 62.3439,
+      "Valor": 62.3438579929536,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3124,9 +3118,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 70.3254,
+      "Valor": 70.3254022135561,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3143,9 +3137,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 70.0934,
+      "Valor": 70.0934163701068,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3162,9 +3156,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 68.4299,
+      "Valor": 68.429852123029,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3181,9 +3175,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 72.0069,
+      "Valor": 72.0068519116553,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3200,9 +3194,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 70.0515,
+      "Valor": 70.0514663834654,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3219,9 +3213,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 71.2375,
+      "Valor": 71.237498015558,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3238,9 +3232,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 73.3594,
+      "Valor": 73.359380003843,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3257,9 +3251,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 71.5965,
+      "Valor": 71.5964994684928,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3276,9 +3270,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 75.1647,
+      "Valor": 75.1646552472619,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3295,9 +3289,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 73.7484,
+      "Valor": 73.7484021531353,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3314,9 +3308,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 67.068,
+      "Valor": 67.0679878826884,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3333,9 +3327,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 64.8151,
+      "Valor": 64.8151373949397,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3352,9 +3346,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 65.8357,
+      "Valor": 65.8357260941443,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3371,9 +3365,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 70.9412,
+      "Valor": 70.9411919537554,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3390,9 +3384,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 73.2861,
+      "Valor": 73.2860680938283,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3409,9 +3403,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 73.9009,
+      "Valor": 73.9008893155349,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3428,9 +3422,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 72.7246,
+      "Valor": 72.7246397114189,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3447,9 +3441,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 72.7965,
+      "Valor": 72.7965497875051,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3466,9 +3460,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 71.6609,
+      "Valor": 71.6609231333517,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3485,9 +3479,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 67.2426,
+      "Valor": 67.242625937084,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3504,9 +3498,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 70.7005,
+      "Valor": 70.7004672541846,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3523,9 +3517,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 67.0601,
+      "Valor": 67.0600784236679,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3542,9 +3536,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 65.9644,
+      "Valor": 65.9644055327852,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3561,9 +3555,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 77.5369,
+      "Valor": 77.5369122989602,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3580,9 +3574,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 65.5397,
+      "Valor": 65.5396647849415,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3599,9 +3593,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 62.324,
+      "Valor": 62.32403609516,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3618,9 +3612,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 51.4747,
+      "Valor": 51.4746640846626,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3637,9 +3631,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 63.2933,
+      "Valor": 63.2932794208759,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3656,9 +3650,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 65.9218,
+      "Valor": 65.9218035546249,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3675,9 +3669,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 84.4512,
+      "Valor": 84.4512152356289,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3694,9 +3688,9 @@
       "ID subárea": "electricidad",
       "Código indicador": "EG.ELC.RNEW.ZS",
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
-      "Valor": 81.7221,
+      "Valor": 81.7220757524342,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3715,7 +3709,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3734,7 +3728,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3753,7 +3747,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3772,7 +3766,7 @@
       "Indicador": "Electricidad renovable como porcentaje de la producción eléctrica",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3791,7 +3785,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3810,7 +3804,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3829,7 +3823,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3848,7 +3842,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3867,7 +3861,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3886,7 +3880,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3905,7 +3899,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3924,7 +3918,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3943,7 +3937,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3962,7 +3956,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3981,7 +3975,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4000,7 +3994,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4019,7 +4013,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4038,7 +4032,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4057,7 +4051,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4076,7 +4070,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4095,7 +4089,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4114,7 +4108,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4133,7 +4127,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4152,7 +4146,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4171,7 +4165,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4190,7 +4184,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4209,7 +4203,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4228,7 +4222,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4247,7 +4241,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4266,7 +4260,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4285,7 +4279,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4304,7 +4298,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4323,7 +4317,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4342,7 +4336,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4359,9 +4353,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 1997.5648,
+      "Valor": 1997.56479057799,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4378,9 +4372,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2037.3018,
+      "Valor": 2037.30182520885,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4397,9 +4391,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2226.5548,
+      "Valor": 2226.55481105961,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4416,9 +4410,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2027.5997,
+      "Valor": 2027.59967205093,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4435,9 +4429,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2299.1179,
+      "Valor": 2299.11785137022,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4454,9 +4448,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2111.3377,
+      "Valor": 2111.33770063193,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4473,9 +4467,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2203.6264,
+      "Valor": 2203.62644762536,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4492,9 +4486,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2149.9077,
+      "Valor": 2149.90770739915,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4511,9 +4505,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2218.4319,
+      "Valor": 2218.43187719732,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4530,9 +4524,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2399.1621,
+      "Valor": 2399.16210710328,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4549,9 +4543,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2391.368,
+      "Valor": 2391.36796026802,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4568,9 +4562,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2188.4061,
+      "Valor": 2188.40606705914,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4587,9 +4581,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2648.8865,
+      "Valor": 2648.88652521803,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4606,9 +4600,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2432.1263,
+      "Valor": 2432.12630470112,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4625,9 +4619,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2305.0281,
+      "Valor": 2305.02805179379,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4644,9 +4638,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2371.5834,
+      "Valor": 2371.58340737061,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4663,9 +4657,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2377.6403,
+      "Valor": 2377.64028480756,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4682,9 +4676,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2391.3379,
+      "Valor": 2391.33788149518,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4701,9 +4695,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2346.0116,
+      "Valor": 2346.01163837283,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4720,9 +4714,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2231.7546,
+      "Valor": 2231.75458660546,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4739,9 +4733,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2621.207,
+      "Valor": 2621.20702328211,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4758,9 +4752,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2309.9066,
+      "Valor": 2309.9066118944,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4777,9 +4771,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2310.7527,
+      "Valor": 2310.75269478151,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4796,9 +4790,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2529.2097,
+      "Valor": 2529.2097489945,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4815,9 +4809,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2173.5709,
+      "Valor": 2173.57093050952,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4834,9 +4828,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2098.4694,
+      "Valor": 2098.46944015591,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4853,9 +4847,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 2009.0681,
+      "Valor": 2009.0681450604,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4872,9 +4866,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 1933.1911,
+      "Valor": 1933.19114696252,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4891,9 +4885,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 1451.3949,
+      "Valor": 1451.3949056587,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4910,9 +4904,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 1379.7344,
+      "Valor": 1379.73439965,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4929,9 +4923,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 1093.4316,
+      "Valor": 1093.43160664363,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4948,9 +4942,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 1409.8262,
+      "Valor": 1409.82623845927,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4967,9 +4961,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 1364.6835,
+      "Valor": 1364.68351163595,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4986,9 +4980,9 @@
       "ID subárea": "energia",
       "Código indicador": "EG.USE.PCAP.KG.OE",
       "Indicador": "Uso de energía per cápita",
-      "Valor": 1331.2328,
+      "Valor": 1331.23284099658,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5007,7 +5001,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5026,7 +5020,7 @@
       "Indicador": "Uso de energía per cápita",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5045,7 +5039,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5064,7 +5058,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5083,7 +5077,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5102,7 +5096,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5121,7 +5115,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5140,7 +5134,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5159,7 +5153,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5178,7 +5172,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5197,7 +5191,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5216,7 +5210,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5233,9 +5227,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 5.4877,
+      "Valor": 5.48772130601331,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5252,9 +5246,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 7.3879,
+      "Valor": 7.38794104909662,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5271,9 +5265,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 7.1927,
+      "Valor": 7.19271915747182,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5290,9 +5284,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 10.7554,
+      "Valor": 10.7554427076038,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5309,9 +5303,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 33.9479,
+      "Valor": 33.9478841729493,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5328,9 +5322,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 24.8915,
+      "Valor": 24.8915014056924,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5347,9 +5341,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 22.9932,
+      "Valor": 22.9931513860828,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5366,9 +5360,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 16.1985,
+      "Valor": 16.1985343555775,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5385,9 +5379,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 15.8264,
+      "Valor": 15.8263995123574,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5404,9 +5398,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 36.4814,
+      "Valor": 36.481380981255,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5423,9 +5417,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 34.4313,
+      "Valor": 34.4312946645093,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5442,9 +5436,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 24.7509,
+      "Valor": 24.750858904318,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5461,9 +5455,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 13.1087,
+      "Valor": 13.1086608763643,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5480,9 +5474,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 17.0995,
+      "Valor": 17.0995109701258,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5499,9 +5493,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 19.026,
+      "Valor": 19.0260300794035,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5518,9 +5512,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 16.3107,
+      "Valor": 16.3107385078032,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5537,9 +5531,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 8.001,
+      "Valor": 8.00102414924425,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5556,9 +5550,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 15.9166,
+      "Valor": 15.9166311155573,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5575,9 +5569,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 10.0131,
+      "Valor": 10.0130859589153,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5594,9 +5588,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 20.9627,
+      "Valor": 20.9626504331607,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5613,9 +5607,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 29.2549,
+      "Valor": 29.2548511239111,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5632,9 +5626,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 16.664,
+      "Valor": 16.6639894189064,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5651,9 +5645,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 15.7572,
+      "Valor": 15.7571776112482,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5670,9 +5664,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 15.7932,
+      "Valor": 15.7932181812518,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5689,9 +5683,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 16.2198,
+      "Valor": 16.2198265911409,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5708,9 +5702,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 15.1363,
+      "Valor": 15.1363210095652,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5727,9 +5721,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 23.8368,
+      "Valor": 23.8367720643582,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5746,9 +5740,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 18.0964,
+      "Valor": 18.0963540802062,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5765,9 +5759,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 9.0635,
+      "Valor": 9.06347009522954,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5784,9 +5778,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 13.2695,
+      "Valor": 13.269532614572,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5803,9 +5797,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 20.5761,
+      "Valor": 20.5761295010598,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5822,9 +5816,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 15.3443,
+      "Valor": 15.3442903568827,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5841,9 +5835,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 19.4546,
+      "Valor": 19.4545884689745,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5860,9 +5854,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 21.8956,
+      "Valor": 21.8955843439596,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5879,9 +5873,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 23.8297,
+      "Valor": 23.8297115705399,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5898,9 +5892,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 29.223,
+      "Valor": 29.2230041014033,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5917,9 +5911,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 28.0775,
+      "Valor": 28.0774680117788,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5936,9 +5930,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 23.1187,
+      "Valor": 23.1186941835454,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5955,9 +5949,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 23.9223,
+      "Valor": 23.9223070628002,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5974,9 +5968,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 10.5417,
+      "Valor": 10.5416668243022,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5993,9 +5987,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 12.3809,
+      "Valor": 12.380878328857,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6012,9 +6006,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 24.4753,
+      "Valor": 24.4753357613612,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6031,9 +6025,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 18.7812,
+      "Valor": 18.7812359044725,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6050,9 +6044,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 17.6253,
+      "Valor": 17.6253449138361,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6069,9 +6063,9 @@
       "ID subárea": "recursos_naturales",
       "Código indicador": "NY.GDP.TOTL.RT.ZS",
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
-      "Valor": 11.8465,
+      "Valor": 11.8465082797294,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6090,7 +6084,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6109,7 +6103,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6128,7 +6122,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6147,7 +6141,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6166,7 +6160,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6185,7 +6179,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6204,7 +6198,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6223,7 +6217,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6242,7 +6236,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6261,7 +6255,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -6280,7 +6274,7 @@
       "Indicador": "Rentas totales de recursos naturales como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     }
   ]

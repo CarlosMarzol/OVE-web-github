@@ -1,16 +1,10 @@
 {
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
-    "Dataset": "Banco Mundial - Venezuela",
-    "Área temática": "Género",
-    "País": "Venezuela",
-    "Fuente": "Banco Mundial - World Development Indicators",
-    "Archivo origen": "OVE_Banco_Mundial_Venezuela_genero.csv",
-    "Fecha generación": "2026-05-21 21:28:42",
-    "Número de registros": "330",
-    "Primer año": "1960",
-    "Último año": "2025",
-    "Número de indicadores": "5"
+    "Dataset": "Banco Mundial - Venezuela - Género",
+    "Fecha generación": "2026-07-08",
+    "Número de indicadores": 5,
+    "Número de registros": 330
   },
   "datos": [
     {
@@ -29,7 +23,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -48,7 +42,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -67,7 +61,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -86,7 +80,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -105,7 +99,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -124,7 +118,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -143,7 +137,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -162,7 +156,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -181,7 +175,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -200,7 +194,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -219,7 +213,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -236,9 +230,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 1.0235,
+      "Valor": 1.02354001998901,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -255,9 +249,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 1.0211,
+      "Valor": 1.02113997936249,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -274,9 +268,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 1.02,
+      "Valor": 1.01996004581451,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -293,9 +287,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 1.0188,
+      "Valor": 1.01884996891022,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -312,9 +306,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 1.0164,
+      "Valor": 1.01637005805969,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -331,9 +325,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 1.0128,
+      "Valor": 1.01276004314423,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -350,9 +344,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 1.0094,
+      "Valor": 1.00941002368927,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -369,9 +363,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 1.0114,
+      "Valor": 1.01135003566742,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -388,9 +382,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 1.0127,
+      "Valor": 1.01270997524261,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -407,9 +401,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 1.0117,
+      "Valor": 1.0116800069809,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -428,7 +422,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -447,7 +441,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -464,9 +458,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 1.0332,
+      "Valor": 1.0331699848175,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -483,9 +477,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9997,
+      "Valor": 0.99974000453949,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -502,9 +496,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9934,
+      "Valor": 0.993390023708344,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -521,9 +515,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9948,
+      "Valor": 0.994780004024506,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -540,9 +534,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9955,
+      "Valor": 0.995450019836426,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -559,9 +553,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9977,
+      "Valor": 0.997699975967407,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -578,9 +572,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 1.0005,
+      "Valor": 1.00051999092102,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -599,7 +593,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -616,9 +610,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9894,
+      "Valor": 0.989409983158112,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -635,9 +629,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9818,
+      "Valor": 0.98183000087738,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -654,9 +648,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9785,
+      "Valor": 0.978500008583069,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -675,7 +669,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -694,7 +688,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -711,9 +705,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9867,
+      "Valor": 0.986720025539398,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -730,9 +724,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9797,
+      "Valor": 0.97969001531601,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -751,7 +745,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -768,9 +762,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9831,
+      "Valor": 0.983089983463287,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -787,9 +781,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9834,
+      "Valor": 0.983439981937408,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -806,9 +800,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9827,
+      "Valor": 0.982729971408844,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -825,9 +819,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9813,
+      "Valor": 0.98131000995636,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -844,9 +838,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9804,
+      "Valor": 0.980359971523285,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -863,9 +857,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9797,
+      "Valor": 0.979730010032654,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -882,9 +876,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9812,
+      "Valor": 0.981199979782104,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -901,9 +895,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9776,
+      "Valor": 0.977609992027283,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -920,9 +914,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9746,
+      "Valor": 0.974629998207092,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -939,9 +933,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9745,
+      "Valor": 0.974510014057159,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -958,9 +952,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.974,
+      "Valor": 0.974039971828461,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -977,9 +971,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9724,
+      "Valor": 0.972440004348755,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -996,9 +990,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9754,
+      "Valor": 0.975350022315979,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1015,9 +1009,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9806,
+      "Valor": 0.98063999414444,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1034,9 +1028,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9869,
+      "Valor": 0.986890017986298,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1053,9 +1047,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9825,
+      "Valor": 0.9825199842453,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1072,9 +1066,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9777,
+      "Valor": 0.977729976177216,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1091,9 +1085,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.977,
+      "Valor": 0.976989984512329,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1110,9 +1104,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.PRIM.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación primaria",
-      "Valor": 0.9771,
+      "Valor": 0.97707998752594,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1131,7 +1125,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1150,7 +1144,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1169,7 +1163,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1188,7 +1182,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1207,7 +1201,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1226,7 +1220,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1245,7 +1239,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1264,7 +1258,7 @@
       "Indicador": "Ratio niñas-niños en educación primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1283,7 +1277,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1302,7 +1296,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1321,7 +1315,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1340,7 +1334,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1359,7 +1353,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1378,7 +1372,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1397,7 +1391,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1416,7 +1410,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1435,7 +1429,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1454,7 +1448,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1473,7 +1467,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1490,9 +1484,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.0659,
+      "Valor": 1.06591999530792,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1509,9 +1503,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.0717,
+      "Valor": 1.07165002822876,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1528,9 +1522,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.0959,
+      "Valor": 1.09589004516602,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1547,9 +1541,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.1326,
+      "Valor": 1.13256001472473,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1566,9 +1560,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.1368,
+      "Valor": 1.13680994510651,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1587,7 +1581,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1606,7 +1600,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1625,7 +1619,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1644,7 +1638,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1663,7 +1657,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1682,7 +1676,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1701,7 +1695,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1720,7 +1714,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1737,9 +1731,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.2441,
+      "Valor": 1.24408996105194,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1756,9 +1750,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.2562,
+      "Valor": 1.25617003440857,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1775,9 +1769,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.2323,
+      "Valor": 1.23227000236511,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1794,9 +1788,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.2352,
+      "Valor": 1.23520004749298,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1813,9 +1807,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.2306,
+      "Valor": 1.23055994510651,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1832,9 +1826,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.2371,
+      "Valor": 1.23713004589081,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1853,7 +1847,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1870,9 +1864,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.2402,
+      "Valor": 1.24015998840332,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1889,9 +1883,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.2406,
+      "Valor": 1.2406200170517,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1908,9 +1902,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.2488,
+      "Valor": 1.24875998497009,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1929,7 +1923,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1948,7 +1942,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1967,7 +1961,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -1986,7 +1980,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2005,7 +1999,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2022,9 +2016,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.2262,
+      "Valor": 1.22622001171112,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2041,9 +2035,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.1996,
+      "Valor": 1.19964003562927,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2060,9 +2054,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.1751,
+      "Valor": 1.17510998249054,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2079,9 +2073,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.1619,
+      "Valor": 1.16194999217987,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2098,9 +2092,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.1509,
+      "Valor": 1.15086996555328,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2117,9 +2111,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.14,
+      "Valor": 1.13995003700256,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2136,9 +2130,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.1303,
+      "Valor": 1.13028001785278,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2155,9 +2149,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.1256,
+      "Valor": 1.12556004524231,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2174,9 +2168,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.1165,
+      "Valor": 1.11647999286652,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2193,9 +2187,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.1014,
+      "Valor": 1.10140001773834,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2212,9 +2206,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.0931,
+      "Valor": 1.09311997890472,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2231,9 +2225,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.0962,
+      "Valor": 1.09621000289917,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2250,9 +2244,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.0937,
+      "Valor": 1.09371995925903,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2269,9 +2263,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.0933,
+      "Valor": 1.09325003623962,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2288,9 +2282,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.0905,
+      "Valor": 1.09049999713898,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2307,9 +2301,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.0773,
+      "Valor": 1.07729995250702,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2326,9 +2320,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.0773,
+      "Valor": 1.07729005813599,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2345,9 +2339,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.0792,
+      "Valor": 1.07924997806549,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2364,9 +2358,9 @@
       "ID subárea": "educacion",
       "Código indicador": "SE.ENR.SECO.FM.ZS",
       "Indicador": "Ratio niñas-niños en educación secundaria",
-      "Valor": 1.0806,
+      "Valor": 1.0806200504303,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2385,7 +2379,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2404,7 +2398,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2423,7 +2417,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2442,7 +2436,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2461,7 +2455,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2480,7 +2474,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2499,7 +2493,7 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2518,7 +2512,1261 @@
       "Indicador": "Ratio niñas-niños en educación secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1960,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1961,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1962,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1963,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1964,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1965,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1966,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1967,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1968,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1969,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1970,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1971,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1972,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1973,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1974,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1975,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1976,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1977,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1978,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1979,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1980,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1981,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1982,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1983,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1984,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1985,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1986,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1987,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1988,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1989,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1990,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1991,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1992,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1993,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1994,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1995,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1996,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1997,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 5.91133004926108,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1998,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 5.91133004926108,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 1999,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 12.1359223300971,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2000,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2001,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 9.6969696969697,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2002,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 9.6969696969697,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2003,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 9.6969696969697,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2004,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 9.6969696969697,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2005,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 17.3652694610778,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2006,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 17.9640718562874,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2007,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 18.562874251497,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2008,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 18.562874251497,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2009,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 17.4698795180723,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2010,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 16.969696969697,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2011,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 16.969696969697,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2012,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 16.969696969697,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2013,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 16.969696969697,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2014,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 16.969696969697,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2015,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 16.969696969697,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2016,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 14.3712574850299,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2017,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 22.1556886227545,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2018,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 22.1556886227545,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2019,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 22.1556886227545,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2020,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 22.1556886227545,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2021,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 22.1556886227545,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2022,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2023,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2024,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
+      "Error descarga": null
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2025,
+      "Área temática": "Género",
+      "ID área": "genero",
+      "Subárea": "Participación política",
+      "ID subárea": "participacion_politica",
+      "Código indicador": "SG.GEN.PARL.ZS",
+      "Indicador": "Mujeres en parlamentos nacionales",
+      "Valor": 32.129963898917,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2537,7 +3785,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2556,7 +3804,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2575,7 +3823,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2594,7 +3842,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2613,7 +3861,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2632,7 +3880,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2651,7 +3899,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2670,7 +3918,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2689,7 +3937,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2708,7 +3956,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2727,7 +3975,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2746,7 +3994,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2765,7 +4013,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2784,7 +4032,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2803,7 +4051,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2822,7 +4070,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2841,7 +4089,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2860,7 +4108,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2879,7 +4127,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2898,7 +4146,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2917,7 +4165,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2936,7 +4184,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2955,7 +4203,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2974,7 +4222,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -2993,7 +4241,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3012,7 +4260,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3031,7 +4279,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3050,7 +4298,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3069,7 +4317,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3088,7 +4336,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3107,7 +4355,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 48.56,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3126,7 +4374,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 49.027,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3145,7 +4393,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 49.439,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3164,7 +4412,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 49.121,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3183,7 +4431,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 48.519,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3202,7 +4450,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 48.502,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3221,7 +4469,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 48.683,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3240,7 +4488,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 48.743,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3259,7 +4507,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 48.976,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3278,7 +4526,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 48.119,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3297,7 +4545,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 47.914,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3316,7 +4564,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 48.527,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3335,7 +4583,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 47.765,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3354,7 +4602,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 46.462,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3373,7 +4621,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 47.558,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3392,7 +4640,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 49.457,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3411,7 +4659,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 50.019,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3430,7 +4678,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 49.726,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3449,7 +4697,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 49.734,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3468,7 +4716,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 50.004,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3487,7 +4735,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 49.601,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3506,7 +4754,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 49.643,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3525,7 +4773,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 49.493,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3544,7 +4792,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 49.084,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3563,7 +4811,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 48.676,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3582,7 +4830,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 48.27,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3601,7 +4849,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 47.867,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3620,7 +4868,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 46.185,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3639,7 +4887,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 44.85,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3658,7 +4906,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 42.344,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3677,7 +4925,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 36.887,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3696,7 +4944,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 37.368,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3715,7 +4963,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 35.32,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3734,7 +4982,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 36.158,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3753,7 +5001,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 37.332,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3772,7 +5020,7 @@
       "Indicador": "Participación laboral femenina",
       "Valor": 37.098,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3791,7 +5039,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3810,7 +5058,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3829,7 +5077,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3848,7 +5096,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3867,7 +5115,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3886,7 +5134,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3905,7 +5153,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3924,7 +5172,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3943,7 +5191,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3962,7 +5210,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -3981,7 +5229,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4000,7 +5248,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4019,7 +5267,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4038,7 +5286,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4057,7 +5305,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4076,7 +5324,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4095,7 +5343,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4114,7 +5362,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4133,7 +5381,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4152,7 +5400,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4171,7 +5419,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4190,7 +5438,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4209,7 +5457,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4228,7 +5476,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4247,7 +5495,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4266,7 +5514,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4285,7 +5533,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4304,7 +5552,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4323,7 +5571,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4342,7 +5590,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4361,7 +5609,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4380,7 +5628,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 9.32,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4399,7 +5647,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 6.925,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4418,7 +5666,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 5.679,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4437,7 +5685,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 9.557,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4456,7 +5704,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 12.604,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4475,7 +5723,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 14.345,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4494,7 +5742,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 13.627,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4513,7 +5761,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 13.306,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4532,7 +5780,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 16.482,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4551,7 +5799,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 14.605,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4570,7 +5818,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 14.109,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4589,7 +5837,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 18.895,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4608,7 +5856,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 20.483,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4627,7 +5875,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 17.974,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4646,7 +5894,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 11.64,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4665,7 +5913,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 9.38,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4684,7 +5932,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 7.643,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4703,7 +5951,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 6.218,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4722,7 +5970,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 5.965,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4741,7 +5989,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 6.952,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4760,7 +6008,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 7.206,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4779,7 +6027,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 7.109,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4798,7 +6046,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 8.605,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4817,7 +6065,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 7.578,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4836,7 +6084,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 6.572,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4855,7 +6103,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 5.413,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4874,7 +6122,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 5.858,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4893,7 +6141,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 6.178,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4912,7 +6160,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 6.497,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4931,7 +6179,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 7.907,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4950,7 +6198,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 7.541,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4969,7 +6217,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 6.179,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -4988,7 +6236,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 5.937,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5007,7 +6255,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 5.845,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     },
     {
@@ -5026,1261 +6274,7 @@
       "Indicador": "Desempleo femenino",
       "Valor": 5.835,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1960,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1961,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1962,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1963,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1964,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1965,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1966,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1967,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1968,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1969,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1970,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1971,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1972,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1973,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1974,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1975,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1976,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1977,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1978,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1979,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1980,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1981,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1982,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1983,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1984,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1985,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1986,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1987,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1988,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1989,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1990,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1991,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1992,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1993,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1994,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1995,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1996,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1997,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 5.9113,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1998,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 5.9113,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 1999,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 12.1359,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2000,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2001,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 9.697,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2002,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 9.697,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2003,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 9.697,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2004,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 9.697,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2005,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 17.3653,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2006,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 17.9641,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2007,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 18.5629,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2008,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 18.5629,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2009,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 17.4699,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2010,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 16.9697,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2011,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 16.9697,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2012,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 16.9697,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2013,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 16.9697,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2014,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 16.9697,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2015,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 16.9697,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2016,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 14.3713,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2017,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 22.1557,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2018,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 22.1557,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2019,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 22.1557,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2020,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 22.1557,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2021,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 22.1557,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2022,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2023,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2024,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
-      "Error descarga": null
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2025,
-      "Área temática": "Género",
-      "ID área": "genero",
-      "Subárea": "Participación política",
-      "ID subárea": "participacion_politica",
-      "Código indicador": "SG.GEN.PARL.ZS",
-      "Indicador": "Mujeres en parlamentos nacionales",
-      "Valor": 32.13,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-05-21",
+      "Fecha descarga": "2026-07-08",
       "Error descarga": null
     }
   ]

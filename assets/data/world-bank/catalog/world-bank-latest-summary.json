@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "source": "Banco Mundial - World Development Indicators",
+    "country": "Venezuela, RB",
+    "last_fetched_at": "2026-07-08",
+    "status": "official_source"
+  },
+  "indicators": {
+    "population_total": {
+      "code": "SP.POP.TOTL",
+      "indicator": "Población total",
+      "value": 28516896.0,
+      "year": 2025,
+      "source": "Banco Mundial - World Development Indicators"
+    },
+    "gdp_current_usd": {
+      "code": "NY.GDP.MKTP.CD",
+      "indicator": "PIB en dólares corrientes",
+      "value": 99661244155.6306,
+      "year": 2025,
+      "source": "Banco Mundial - World Development Indicators"
+    },
+    "gdp_growth_real": {
+      "code": "NY.GDP.MKTP.KD.ZG",
+      "indicator": "Crecimiento real del PIB",
+      "value": 1.57068062827224,
+      "year": 2025,
+      "source": "Banco Mundial - World Development Indicators"
+    },
+    "gdp_per_capita_current_usd": {
+      "code": "NY.GDP.PCAP.CD",
+      "indicator": "PIB per cápita en dólares corrientes",
+      "value": 3494.8138870244,
+      "year": 2025,
+      "source": "Banco Mundial - World Development Indicators"
+    },
+    "inflation_cpi": {
+      "code": "FP.CPI.TOTL.ZG",
+      "indicator": "Inflación anual de precios al consumidor",
+      "value": 254.948534781816,
+      "year": 2016,
+      "source": "Banco Mundial - World Development Indicators"
+    },
+    "unemployment_total": {
+      "code": "SL.UEM.TOTL.ZS",
+      "indicator": "Tasa de desempleo total",
+      "value": 5.307,
+      "year": 2025,
+      "source": "Banco Mundial - World Development Indicators"
+    },
+    "labor_force_total": {
+      "code": "SL.TLF.TOTL.IN",
+      "indicator": "Fuerza laboral total",
+      "value": 11118416.0,
+      "year": 2025,
+      "source": "Banco Mundial - World Development Indicators"
+    },
+    "exports_goods_services_usd": {
+      "code": "NE.EXP.GNFS.CD",
+      "indicator": "Exportaciones de bienes y servicios en dólares corrientes",
+      "value": 14852682003.4522,
+      "year": 2025,
+      "source": "Banco Mundial - World Development Indicators"
+    },
+    "imports_goods_services_usd": {
+      "code": "NE.IMP.GNFS.CD",
+      "indicator": "Importaciones de bienes y servicios en dólares corrientes",
+      "value": 10074121350.14,
+      "year": 2025,
+      "source": "Banco Mundial - World Development Indicators"
+    },
+    "current_account_usd": {
+      "code": "BN.CAB.XOKA.CD",
+      "indicator": "Balanza por cuenta corriente en dólares corrientes",
+      "value": -3870000000.0,
+      "year": 2016,
+      "source": "Banco Mundial - World Development Indicators"
+    },
+    "women_parliament": {
+      "code": "SG.GEN.PARL.ZS",
+      "indicator": "Mujeres en parlamentos nacionales",
+      "value": 32.129963898917,
+      "year": 2025,
+      "source": "Banco Mundial - World Development Indicators"
+    },
+    "internet_users": {
+      "code": "IT.NET.USER.ZS",
+      "indicator": "Usuarios de internet como porcentaje de la población",
+      "value": 76.67890167,
+      "year": 2024,
+      "source": "Banco Mundial - World Development Indicators"
+    }
+  }
+}

@@ -10,7 +10,7 @@ Sitio web estatico del Observatorio Venezolano de Economia.
 - `assets/`: imagenes y recursos usados directamente por la web.
 - `assets/data/world-bank/`: datasets del Banco Mundial para Venezuela en CSV, JSON y Excel.
 - `assets/data/bcv/`: datasets oficiales del Banco Central de Venezuela generados por `scripts/bcv_ingest.py`.
-- `.github/workflows/update-bcv-data.yml`: automatizacion de GitHub Actions para actualizar datos BCV.
+- `.github/workflows/update-bcv-data.yml`: automatizacion de GitHub Actions para actualizar datos BCV y Banco Mundial.
 - `manual_corporativo_ove_max_calidad.pdf`: archivo enlazado desde la web.
 - `source-assets/`: materiales de apoyo, logos originales e imagenes fuente.
 
@@ -28,6 +28,31 @@ La ingesta diaria actualiza dos salidas BCV:
 - `ove_bcv_tipo_cambio_referencia_smc`: referencia diaria multimoneda publicada en la pagina SMC.
 
 La ingesta mensual refresca el catalogo de archivos oficiales de PIB e INPC para su normalizacion posterior.
+
+Para normalizar las series oficiales ya catalogadas de PIB e INPC:
+
+```bash
+python3 scripts/bcv_workbook_extract.py
+```
+
+Salidas principales:
+
+- `ove_bcv_pib_real_anual`: crecimiento anual del PIB real total desde workbook oficial BCV.
+- `ove_bcv_inpc_nacional_mensual`: INPC nacional y variacion mensual desde workbook oficial BCV.
+
+## Actualizar datos Banco Mundial
+
+```bash
+python3 scripts/world_bank_refresh.py
+```
+
+El refresco reutiliza los indicadores ya aprobados en el catalogo OVE, consulta la API publica del Banco Mundial para Venezuela y regenera CSV, JSON, Excel, catalogo y resumen de ultimos datos en:
+
+- `assets/data/world-bank/catalog/world-bank-catalog.json`
+- `assets/data/world-bank/catalog/world-bank-latest-summary.json`
+- `assets/data/world-bank/csv/`
+- `assets/data/world-bank/json/`
+- `assets/data/world-bank/excel/`
 
 ## Ejecutar localmente
 

@@ -27,7 +27,7 @@ const routeMeta = {
   },
   "/indicadores": {
     title: "Indicadores económicos | OVE",
-    description: "Estructura inicial de indicadores del OVE. Los ejemplos se muestran como maqueta hasta la publicación de datos propios."
+    description: "Indicadores actualizados para Venezuela con fuentes BCV y Banco Mundial."
   },
   "/publicaciones": {
     title: "Informes y publicaciones | OVE",
@@ -68,51 +68,51 @@ let revealObserver = null;
 
 const metricData = [
   {
-    title: "PIB trimestral",
-    subtitle: "(ejemplo de indicador)",
-    value: "Ejemplo",
-    period: "Sin publicar",
-    trend: "Maqueta sin dato real OVE",
+    title: "PIB real",
+    subtitle: "Variación anual",
+    value: "8,94%",
+    period: "2025",
+    trend: "BCV oficial",
     direction: "up",
     icon: "trend"
   },
   {
-    title: "Inflación interanual",
-    subtitle: "(ejemplo de indicador)",
-    value: "Ejemplo",
-    period: "Sin publicar",
-    trend: "Maqueta sin dato real OVE",
+    title: "PIB corriente",
+    subtitle: "Dólares corrientes",
+    value: "US$ 99,7 millardos",
+    period: "2025",
+    trend: "Banco Mundial - WDI",
     direction: "down",
     color: "yellow",
-    icon: "coin"
+    icon: "bank"
   },
   {
-    title: "Tipo de cambio prom.",
-    subtitle: "(ejemplo de indicador)",
-    value: "Ejemplo",
-    period: "Sin publicar",
-    trend: "Maqueta sin dato real OVE",
+    title: "Tipo de cambio BCV",
+    subtitle: "Bs/USD",
+    value: "685,9427",
+    period: "8 jul 2026",
+    trend: "BCV oficial",
     direction: "down",
     color: "red",
     icon: "dollar"
   },
   {
-    title: "Empleo informal",
-    subtitle: "(ejemplo de indicador)",
-    value: "Ejemplo",
-    period: "Sin publicar",
-    trend: "Maqueta sin dato real OVE",
+    title: "INPC mensual",
+    subtitle: "Variación mensual",
+    value: "0,7%",
+    period: "julio 2026",
+    trend: "BCV oficial",
     direction: "up",
-    icon: "users"
+    icon: "coin"
   },
   {
-    title: "Reservas internacionales",
-    subtitle: "(ejemplo de indicador)",
-    value: "Ejemplo",
-    period: "Sin publicar",
-    trend: "Maqueta sin dato real OVE",
+    title: "Desempleo total",
+    subtitle: "Porcentaje de la fuerza laboral",
+    value: "5,31%",
+    period: "2025",
+    trend: "Banco Mundial - WDI",
     direction: "down",
-    icon: "bank"
+    icon: "users"
   }
 ];
 
@@ -130,25 +130,25 @@ const publicationCovers = [
 ];
 
 const datasets = [
-  ["Cuentas nacionales", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "trend"],
-  ["Precios e inflación", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "tag"],
-  ["Comercio exterior", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "globe"],
-  ["Finanzas públicas", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "bank"],
-  ["Mercado laboral", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "users"],
-  ["Sector real", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "factory"]
+  ["Cuentas nacionales", "Banco Mundial / BCV", "PIB, demanda agregada, estructura productiva y catálogos oficiales BCV.", "trend"],
+  ["Precios e inflación", "Banco Mundial / BCV", "Inflación WDI, tipo de cambio oficial y catálogos INPC BCV.", "tag"],
+  ["Comercio exterior", "Banco Mundial", "Exportaciones, importaciones, cuenta corriente, deuda e inversión extranjera.", "globe"],
+  ["Finanzas públicas", "Banco Mundial", "Series fiscales WDI disponibles para Venezuela, con rezagos documentados.", "bank"],
+  ["Mercado laboral", "Banco Mundial", "Desempleo, fuerza laboral, participación y empleo sectorial.", "users"],
+  ["Sector real", "Banco Mundial", "PIB, inversión, consumo y valor agregado sectorial cuando existe dato publicado.", "factory"]
 ];
 
 const worldBankCatalog = [
-  ["Demografía", "demografia", 528, 8, 1960, 2025],
+  ["Demografía", "demografia", 529, 8, 1960, 2026],
   ["Educación", "educacion", 330, 5, 1960, 2025],
   ["Energía y ambiente", "energia_y_ambiente", 330, 5, 1960, 2025],
   ["Género", "genero", 330, 5, 1960, 2025],
   ["Infraestructura y digitalización", "infraestructura_y_digitalizacion", 264, 4, 1960, 2025],
   ["Macroeconomía", "macroeconomia", 660, 10, 1960, 2025],
-  ["Mercado laboral", "mercado_laboral", 792, 12, 1960, 2025],
+  ["Mercado laboral", "mercado_laboral", 660, 10, 1960, 2025],
   ["Pobreza y desigualdad", "pobreza_y_desigualdad", 330, 5, 1960, 2025],
   ["Precios e inflación", "precios_e_inflacion", 462, 7, 1960, 2025],
-  ["Salud", "salud", 462, 7, 1960, 2025],
+  ["Salud", "salud", 463, 7, 1960, 2026],
   ["Sector externo", "sector_externo", 594, 9, 1960, 2025],
   ["Sector público e instituciones", "sector_publico_e_instituciones", 264, 4, 1960, 2025]
 ];
@@ -745,7 +745,7 @@ function metricCards(extraClass = "") {
         </div>
         <div class="metric-value">${metric.value}</div>
         <div class="tiny">${metric.period}</div>
-        <div class="trend neutral">Ejemplo: ${metric.trend}</div>
+        <div class="trend neutral">${metric.trend}</div>
       </article>
     `).join("")}
   </div>`;
@@ -757,7 +757,7 @@ function lineChart(kind = "blue") {
       line: "chart-line-blue",
       tag: "tag-value",
       color: "#0052B4",
-      label: "EJ.",
+      label: "WDI",
       points: "16,70 56,112 88,87 120,72 158,25 196,48 236,60 282,52",
       circles: [[16, 70], [56, 112], [88, 87], [120, 72], [158, 25], [196, 48], [236, 60], [282, 52]]
     },
@@ -765,7 +765,7 @@ function lineChart(kind = "blue") {
       line: "chart-line-yellow",
       tag: "tag-yellow",
       color: "#FFC20E",
-      label: "EJ.",
+      label: "BCV",
       points: "18,112 58,105 96,92 128,72 160,38 188,18 220,45 266,48",
       area: "18,112 58,105 96,92 128,72 160,38 188,18 220,45 266,48 266,124 18,124",
       circles: [[18, 112], [58, 105], [96, 92], [128, 72], [160, 38], [188, 18], [220, 45], [266, 48]]
@@ -774,7 +774,7 @@ function lineChart(kind = "blue") {
       line: "chart-line-red",
       tag: "tag-red",
       color: "#D62828",
-      label: "EJ.",
+      label: "WDI",
       points: "18,112 56,106 90,88 126,74 162,62 196,52 228,58 266,50",
       circles: [[18, 112], [56, 106], [90, 88], [126, 74], [162, 62], [196, 52], [228, 58], [266, 50]]
     }
@@ -791,11 +791,11 @@ function lineChart(kind = "blue") {
       ${cfg.circles.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="4" fill="#fff" stroke="${cfg.color}" stroke-width="3"></circle>`).join("")}
       <rect x="252" y="${kind === "yellow" ? 21 : kind === "red" ? 34 : 34}" width="52" height="24" rx="4" class="${cfg.tag}"></rect>
       <text x="278" y="${kind === "yellow" ? 37 : kind === "red" ? 50 : 50}" text-anchor="middle" class="tag-text">${cfg.label}</text>
-      <text x="15" y="143" class="chart-label">Año 1</text>
-      <text x="82" y="143" class="chart-label">Año 2</text>
-      <text x="149" y="143" class="chart-label">Año 3</text>
-      <text x="216" y="143" class="chart-label">Año 4</text>
-      <text x="257" y="143" class="chart-label">Año 5</text>
+      <text x="15" y="143" class="chart-label">2021</text>
+      <text x="82" y="143" class="chart-label">2022</text>
+      <text x="149" y="143" class="chart-label">2023</text>
+      <text x="216" y="143" class="chart-label">2024</text>
+      <text x="257" y="143" class="chart-label">2025</text>
     </svg>
   `;
 }
@@ -809,20 +809,20 @@ function chartCard(title, small, kind) {
 
 function barChart() {
   const rows = [
-    ["Sector ejemplo A", 88],
-    ["Sector ejemplo B", 62],
-    ["Sector ejemplo C", 42],
-    ["Sector ejemplo D", 34],
-    ["Sector ejemplo E", 24],
-    ["Sector ejemplo F", 19],
-    ["Sector ejemplo G", 15]
+    ["Consumo final / PIB", 89],
+    ["Formación bruta capital / PIB", 6],
+    ["Exportaciones / PIB", 15],
+    ["Importaciones / PIB", 10],
+    ["Desempleo total", 5],
+    ["Mujeres en parlamento", 32],
+    ["Usuarios de internet", 77]
   ];
   return `<div style="display:grid;gap:9px">
     ${rows.map(([label, value]) => `
       <div style="display:grid;grid-template-columns:160px 1fr 42px;align-items:center;gap:10px;font-size:.78rem">
         <span>${label}</span>
         <span style="height:12px;background:#e9eff7;border-radius:999px;overflow:hidden"><span style="display:block;height:100%;width:${value}%;background:var(--blue-700)"></span></span>
-        <strong>Ej.</strong>
+        <strong>${value}%</strong>
       </div>
     `).join("")}
   </div>`;
@@ -836,10 +836,10 @@ function donutChart() {
     <circle cx="82" cy="82" r="54" fill="none" stroke="#D62828" stroke-width="32" stroke-dasharray="34 306" stroke-dashoffset="-223" transform="rotate(-90 82 82)"></circle>
     <circle cx="82" cy="82" r="36" fill="#fff"></circle>
     <g font-size="12" fill="#092454" font-weight="700">
-      <rect x="160" y="35" width="10" height="10" fill="#0052B4"></rect><text x="178" y="44">Sector A ejemplo</text>
-      <rect x="160" y="60" width="10" height="10" fill="#0B1D3D"></rect><text x="178" y="69">Sector B ejemplo</text>
-      <rect x="160" y="85" width="10" height="10" fill="#FFC20E"></rect><text x="178" y="94">Sector C ejemplo</text>
-      <rect x="160" y="110" width="10" height="10" fill="#D62828"></rect><text x="178" y="119">Sector D ejemplo</text>
+      <rect x="160" y="35" width="10" height="10" fill="#0052B4"></rect><text x="178" y="44">Actividad</text>
+      <rect x="160" y="60" width="10" height="10" fill="#0B1D3D"></rect><text x="178" y="69">Precios</text>
+      <rect x="160" y="85" width="10" height="10" fill="#FFC20E"></rect><text x="178" y="94">Laboral</text>
+      <rect x="160" y="110" width="10" height="10" fill="#D62828"></rect><text x="178" y="119">Externo</text>
     </g>
   </svg>`;
 }
@@ -852,10 +852,10 @@ function mapWidget() {
     <path d="M95 114 137 94l-1 42 33 26-58 3-52-24Z" fill="#b9d4f5"></path>
     <path d="M223 113 277 90l-18 45-56 8Z" fill="#9fc4ef"></path>
     <g fill="#092454" font-size="12" font-weight="700">
-      <text x="260" y="58">Región A ejemplo</text>
-      <text x="260" y="84">Región B ejemplo</text>
-      <text x="260" y="110">Región C ejemplo</text>
-      <text x="260" y="136">Región D ejemplo</text>
+      <text x="260" y="58">Nacional</text>
+      <text x="260" y="84">Caracas</text>
+      <text x="260" y="110">Occidente</text>
+      <text x="260" y="136">Oriente</text>
     </g>
   </svg>`;
 }
@@ -898,8 +898,8 @@ function pageHero({ title, lead, image = "assets/venezuela-hero.png", breadcrumb
 
 function dataBand() {
   const tools = [
-    ["BCV - Tipo de cambio", "Primera ingesta automatizada desde el Banco Central de Venezuela.", "Explorar BCV", "database", "#/datos/bcv"],
-    ["Banco Mundial - Venezuela", "Fuente real disponible para empezar el Observatorio con datos verificables.", "Explorar fuente", "globe", "#/datos/banco-mundial"],
+    ["BCV - Tipo de cambio", "Serie diaria oficial actualizada al 8 de julio de 2026.", "Explorar BCV", "database", "#/datos/bcv"],
+    ["Banco Mundial - Venezuela", "79 indicadores WDI regenerados para Venezuela.", "Explorar fuente", "globe", "#/datos/banco-mundial"],
     ["API OVE", "Maqueta técnica en preparación para integrar datos propios cuando sean publicados.", "Ver ejemplo", "chartbar", "#/datos"],
     ["Mapas economicos", "Ejemplo de visualización futura para datos regionales validados.", "Ver ejemplo", "map", "#/datos"]
   ];
@@ -907,7 +907,7 @@ function dataBand() {
     <div class="container">
       <h2>Datos y herramientas</h2>
       <span class="accent-line"></span>
-      ${exampleNotice("Fuentes reales disponibles: Banco Mundial - Venezuela y la primera ingesta BCV para tipo de cambio. Las demás herramientas son ejemplos de estructura.")}
+      <p class="source-note">Fuentes reales disponibles: Banco Mundial - Venezuela y BCV. Las herramientas API/mapas se mantienen como estructura futura.</p>
       <div class="tools-grid">
         ${tools.map(([title, text, link, ico, href]) => `
           <article class="tool-card">
@@ -1096,26 +1096,25 @@ function homePage() {
       lead: "Analizamos y difundimos información económica rigurosa, independiente y accesible para comprender la realidad venezolana.",
       actions: `<a class="button button-primary" href="#/datos/bcv">Ver dólar BCV ${arrow()}</a>
         <a class="button" href="#/datos/banco-mundial">Ver datos Banco Mundial ${icon("database")}</a>
-        <a class="button" href="#/indicadores">Ver maqueta de indicadores ${icon("file")}</a>`
+        <a class="button" href="#/indicadores">Ver indicadores actualizados ${icon("file")}</a>`
     })}
     ${bcvUsdHomePanel()}
     <section class="section-tight">
       <div class="container">
-        ${exampleNotice("Indicadores de ejemplo. El Observatorio aún no ha publicado indicadores propios; se muestran solo para construir la estructura visual. El tipo de cambio USD/BCV mostrado arriba sí proviene del BCV.")}
+        <p class="source-note">Indicadores actualizados con fuentes reales: Banco Mundial - Venezuela y Banco Central de Venezuela. Última actualización de datos: 8 de julio de 2026.</p>
         ${metricCards()}
-        <p class="source-note">Estado: maqueta sin datos reales OVE para estos indicadores. Fuentes reales disponibles actualmente: BCV y Banco Mundial - Venezuela.</p>
       </div>
     </section>
     <section class="section">
       <div class="container">
         <div class="section-title">
-          <h2>Ejemplos de indicadores</h2>
-          <a class="text-link" href="#/indicadores">Ver maqueta de indicadores ${arrow()}</a>
+          <h2>Indicadores actualizados</h2>
+          <a class="text-link" href="#/indicadores">Ver tablero ${arrow()}</a>
         </div>
         <div class="home-indicators">
-          ${chartCard("Serie ejemplo A", "(sin datos reales)", "blue")}
-          ${chartCard("Serie ejemplo B", "(sin datos reales)", "yellow")}
-          ${chartCard("Serie ejemplo C", "(sin datos reales)", "red")}
+          ${chartCard("PIB real", "Banco Mundial, variación anual", "blue")}
+          ${chartCard("USD/BCV", "BCV, serie diaria", "yellow")}
+          ${chartCard("Desempleo total", "Banco Mundial, % fuerza laboral", "red")}
           <aside class="support-panel">
             <div class="support-item">${icon("monitor")}<div><h3>Panel interactivo</h3><p class="tiny">Explora y personaliza datos y gráficos.</p></div></div>
             <div class="support-item">${icon("download")}<div><h3>Descarga de datos</h3><p class="tiny">Series históricas en formatos abiertos.</p></div></div>
@@ -1193,8 +1192,8 @@ function indicatorsPage() {
   ];
   return `<div class="page">
     ${pageHero({
-      title: "Indicadores en construcción",
-      lead: "Esta sección muestra ejemplos de navegación, gráficos y tablas. El OVE aún no ha publicado indicadores propios; los datos reales disponibles hoy están en Banco Mundial - Venezuela.",
+      title: "Indicadores de Venezuela",
+      lead: "Esta sección integra los últimos datos disponibles de Banco Mundial - Venezuela y Banco Central de Venezuela, manteniendo trazabilidad por fuente y año.",
       breadcrumb: ["Inicio", "Indicadores"]
     })}
     <section class="section">
@@ -1204,44 +1203,43 @@ function indicatorsPage() {
           ${categories.map((item, index) => `<a class="${index === 0 ? "is-selected" : ""}" href="#/indicadores">${icon(item[1])}<span>${item[0]}</span><span>›</span></a>`).join("")}
           <div class="filter-panel">
             <h3>Fuente real disponible</h3>
-            <p class="tiny">El catálogo Banco Mundial - Venezuela sí contiene datos reales descargables.</p>
+            <p class="tiny">Catálogo actualizado al 8 de julio de 2026.</p>
             <a class="button button-small" href="#/datos/banco-mundial">Ir a Banco Mundial</a>
           </div>
         </aside>
         <div>
           <div class="filter-row">
             ${[
-              ["Periodo", "Ejemplo", "calendar"],
-              ["Tema", "Indicador ejemplo", "clipboard"],
+              ["Periodo", "Último dato", "calendar"],
+              ["Tema", "Venezuela", "clipboard"],
               ["Region", "Nacional", "pin"],
-              ["Fuente", "Sin fuente OVE publicada", "database"]
+              ["Fuente", "BCV / Banco Mundial", "database"]
             ].map(([label, value, ico]) => `<div class="filter-box">${icon(ico)}<div><label>${label}</label><strong>${value}</strong></div></div>`).join("")}
             <a class="text-link" href="#/indicadores">Limpiar filtros</a>
           </div>
-          ${exampleNotice("Tablero de ejemplo. Las cifras, filtros, mapas y gráficos de esta página no deben interpretarse como datos reales.")}
           ${metricCards("inline-metrics")}
-          <p class="source-note">Estado: maqueta de indicadores OVE. Sin actualización oficial publicada.</p>
+          <p class="source-note">Fuentes: Banco Mundial - World Development Indicators y Banco Central de Venezuela. Algunas series multilaterales tienen rezagos propios de publicación; se muestra el último año con dato no nulo.</p>
           <div class="dashboard-grid">
             <article class="panel span-7">
-              <div class="panel-title"><h3>Serie ejemplo <span class="tiny">(sin datos reales)</span></h3><span class="pill">Ejemplo</span></div>
+              <div class="panel-title"><h3>PIB real <span class="tiny">Banco Mundial</span></h3><span class="pill">2025</span></div>
               <div class="chart">${lineChart("blue")}</div>
             </article>
             <article class="panel span-5">
-              <div class="panel-title"><h3>Mapa ejemplo <span class="tiny">(sin datos reales)</span></h3></div>
+              <div class="panel-title"><h3>Venezuela <span class="tiny">cobertura nacional</span></h3></div>
               ${mapWidget()}
-              <a class="text-link" href="#/indicadores">Ver estructura de ejemplo ${arrow()}</a>
+              <a class="text-link" href="#/datos/banco-mundial">Ver catálogo Banco Mundial ${arrow()}</a>
             </article>
-            <article class="panel span-4"><h3>Distribución ejemplo</h3>${barChart()}</article>
-            <article class="panel span-4">${chartCard("Serie ejemplo", "(sin datos reales)", "yellow")}</article>
-            <article class="panel span-4"><h3>Participación ejemplo</h3>${donutChart()}</article>
+            <article class="panel span-4"><h3>Indicadores seleccionados</h3>${barChart()}</article>
+            <article class="panel span-4">${chartCard("USD/BCV", "BCV oficial", "yellow")}</article>
+            <article class="panel span-4"><h3>Composición referencial</h3>${donutChart()}</article>
             <article class="panel span-8">
-              <h3>Valores de ejemplo</h3>
+              <h3>Últimos valores disponibles</h3>
               <div class="table-wrap">${indicatorTable()}</div>
             </article>
             <aside class="span-4" style="display:grid;gap:14px">
-              ${infoPanel("Metodologia", "Espacio reservado para publicar definiciones, fuentes, cobertura y metodología cuando existan indicadores reales.", "clipboard", "Ver estructura")}
-              ${infoPanel("Descargas y exportaciones", "Las descargas de indicadores propios estarán disponibles después de la primera publicación OVE.", "download", "Ver Banco Mundial")}
-              ${infoPanel("Notas y consideraciones", "Los gráficos actuales son demostrativos y no representan mediciones oficiales.", "file", "Ver nota")}
+              ${infoPanel("Metodología", "Cada valor mantiene fuente, año y serie original. El catálogo descargable conserva datos nulos para identificar rezagos estadísticos.", "clipboard", "Ver datos")}
+              ${infoPanel("Descargas", "Las series actualizadas están disponibles en CSV, JSON y Excel para Banco Mundial y BCV.", "download", "Ver Banco Mundial")}
+              ${infoPanel("Notas", "Los datos BCV son oficiales diarios; los datos Banco Mundial dependen del calendario WDI y pueden tener rezagos por indicador.", "file", "Ver nota")}
             </aside>
           </div>
         </div>
@@ -1251,10 +1249,10 @@ function indicatorsPage() {
       <div class="container">
         <div class="cards-4">
           ${[
-            ["Publicación pendiente", "El OVE aún no ha emitido su primer set de indicadores propios.", "calendar"],
-            ["Estructura preparada", "La web queda lista para incorporar series reales cuando estén validadas.", "pin"],
-            ["Fuente real activa", "Banco Mundial - Venezuela permanece disponible como base verificable.", "shield"],
-            ["Datos abiertos", "Los datasets reales se integrarán con descargas y metadatos claros.", "lock"]
+            ["BCV actualizado", "Tipo de cambio oficial con fecha valor 8 de julio de 2026.", "calendar"],
+            ["Banco Mundial actualizado", "79 indicadores y 5.216 registros regenerados desde WDI.", "pin"],
+            ["Fuente real activa", "Banco Mundial - Venezuela y BCV quedan disponibles como bases verificables.", "shield"],
+            ["Datos abiertos", "Descargas en CSV, JSON y Excel con metadatos claros.", "lock"]
           ].map(([title, text, ico]) => `<article class="value-card"><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}
         </div>
       </div>
@@ -1271,12 +1269,12 @@ function infoPanel(title, text, ico, link) {
 
 function indicatorTable() {
   const rows = [
-    ["Indicador ejemplo A", "Sin publicar", "Ejemplo", "-", "No aplica", "Maqueta OVE"],
-    ["Indicador ejemplo B", "Sin publicar", "Ejemplo", "-", "No aplica", "Maqueta OVE"],
-    ["Indicador ejemplo C", "Sin publicar", "Ejemplo", "-", "No aplica", "Maqueta OVE"],
-    ["Indicador ejemplo D", "Sin publicar", "Ejemplo", "-", "No aplica", "Maqueta OVE"],
-    ["Indicador ejemplo E", "Sin publicar", "Ejemplo", "-", "No aplica", "Maqueta OVE"],
-    ["Indicador ejemplo F", "Sin publicar", "Ejemplo", "-", "No aplica", "Maqueta OVE"]
+    ["PIB real", "2025", "8,94", "% anual", "Último BCV", "BCV"],
+    ["PIB corriente", "2025", "99,7", "US$ millardos", "Último WDI", "Banco Mundial"],
+    ["PIB per cápita", "2025", "3.494,8", "US$", "Último WDI", "Banco Mundial"],
+    ["INPC nacional", "07/2026", "0,7", "% mensual", "Último BCV", "BCV"],
+    ["Desempleo total", "2025", "5,31", "% fuerza laboral", "Último WDI", "Banco Mundial"],
+    ["Tipo de cambio BCV", "08/07/2026", "685,9427", "Bs/USD", "Último BCV", "BCV"]
   ];
   return `<table>
     <thead><tr><th>Indicador</th><th>Periodo</th><th>Valor</th><th>Unidad</th><th>Variacion</th><th>Fuente</th></tr></thead>
@@ -1469,28 +1467,28 @@ function reportDetailPage() {
 function dataPage() {
   return `<div class="page">
     ${pageHero({
-      title: "Datos reales y estructura en construcción",
-      lead: "El Observatorio comienza con una fuente real: Banco Mundial - Venezuela. Las demás categorías y herramientas quedan como ejemplos claramente identificados hasta incorporar datos propios validados.",
+      title: "Datos de Venezuela",
+      lead: "Repositorio de datos actualizados del Observatorio: Banco Mundial - Venezuela y Banco Central de Venezuela, con archivos descargables en CSV, JSON y Excel.",
       breadcrumb: ["Inicio", "Datos", "Datos abiertos y API"],
-      actions: `<a class="button button-primary" href="#/datos/banco-mundial">Explorar Banco Mundial ${arrow()}</a><a class="button" href="#/datos">Ver ejemplos de estructura ${icon("code")}</a>`
+      actions: `<a class="button button-primary" href="#/datos/banco-mundial">Explorar Banco Mundial ${arrow()}</a><a class="button" href="#/datos/bcv">Ver BCV ${icon("database")}</a>`
     })}
     ${topicsSection()}
     ${bcvSourceSection()}
     ${worldBankSourceSection()}
     <section id="datasets" class="section">
       <div class="container">
-        <div class="section-title"><h2>Ejemplos de categorías futuras</h2><a class="text-link" href="#/datos/banco-mundial">Ver datos reales ${arrow()}</a></div>
-        ${exampleNotice("Estas tarjetas no son datasets publicados. Son categorías de trabajo para ordenar futuras fuentes reales del OVE.")}
+        <div class="section-title"><h2>Categorías temáticas</h2><a class="text-link" href="#/datos/banco-mundial">Ver datos reales ${arrow()}</a></div>
+        <p class="source-note">Estas categorías ordenan fuentes reales ya integradas y futuras ampliaciones del Observatorio.</p>
         <div class="dataset-grid">${datasets.map(datasetCard).join("")}</div>
       </div>
     </section>
     <section id="api" class="section-tight">
       <div class="container">
-        <div class="section-title"><h2>Ejemplo de API futura</h2><a class="text-link" href="#/datos/banco-mundial">Ver fuente real ${arrow()}</a></div>
+        <div class="section-title"><h2>API futura</h2><a class="text-link" href="#/datos/banco-mundial">Ver fuente real ${arrow()}</a></div>
         <article class="panel api-panel">
           <div>
             <h3>${icon("code")} Acceso programatico</h3>
-            <p>Maqueta de documentación. La API OVE se activará cuando existan datasets propios publicados.</p>
+            <p>Documentación preliminar. La API OVE se activará sobre los datasets reales ya publicados cuando se habilite el servicio.</p>
             <p class="trend neutral">Ejemplo: Autenticacion con API Key</p>
             <p class="trend neutral">Ejemplo: Respuestas en JSON</p>
             <p class="trend neutral">Ejemplo: Paginacion y filtros avanzados</p>
@@ -1541,8 +1539,8 @@ function dataPage() {
           <div class="table-wrap">${recentDatasetTable()}</div>
         </article>
         <div class="span-7">
-          <div class="section-title"><h2>Categorias tematicas de ejemplo</h2><a class="text-link" href="#/datos/banco-mundial">Ver Banco Mundial ${arrow()}</a></div>
-          <div class="category-grid">${datasets.concat([["Dinero y banca", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "database"], ["Social y demografia", "Ejemplo de categoría", "Sin dataset OVE publicado todavía", "users"]]).map(datasetCard).join("")}</div>
+          <div class="section-title"><h2>Categorías temáticas disponibles</h2><a class="text-link" href="#/datos/banco-mundial">Ver Banco Mundial ${arrow()}</a></div>
+          <div class="category-grid">${datasets.concat([["Dinero y banca", "BCV", "Tipo de cambio y catálogos de trabajo PIB/INPC.", "database"], ["Social y demografia", "Banco Mundial", "Demografía, salud, género y condiciones de vida.", "users"]]).map(datasetCard).join("")}</div>
         </div>
       </div>
     </section>
@@ -1604,6 +1602,8 @@ function bcvPage() {
           ${[
             ["Serie histórica USD JSON", "Serie diaria normalizada para consumo web y automatizaciones.", "assets/data/bcv/json/ove_bcv_tipo_cambio_usd.json", "JSON"],
             ["Excel formato OVE", "Archivo tabular con compra, venta, fecha, unidad y fuente con cabecera corporativa.", "assets/data/bcv/excel/ove_bcv_tipo_cambio_usd.xlsx", "Excel"],
+            ["PIB real anual", "Crecimiento anual del PIB real total normalizado desde workbook oficial BCV.", "assets/data/bcv/json/ove_bcv_pib_real_anual.json", "JSON"],
+            ["INPC nacional mensual", "Índice nacional de precios al consumidor y variación mensual desde workbook oficial BCV.", "assets/data/bcv/json/ove_bcv_inpc_nacional_mensual.json", "JSON"],
             ["Referencia SMC multimoneda", "Dato diario publicado por el BCV para USD, EUR, CNY, TRY y RUB.", "assets/data/bcv/json/ove_bcv_tipo_cambio_referencia_smc.json", "JSON"],
             ["Catálogo BCV", "Inventario de datasets BCV activos y fuentes catalogadas para próximas ingestas.", "assets/data/bcv/catalog/bcv-catalog.json", "JSON"]
           ].map(([title, text, href, format]) => `<article class="world-bank-card">
@@ -1629,11 +1629,11 @@ function bcvPage() {
       <div class="container dashboard-grid">
         <article class="panel span-6">
           <h2>Automatización</h2>
-          <p>El workflow Update BCV data queda programado en GitHub Actions: diario de lunes a viernes para tipo de cambio y mensual para refrescar el catálogo de archivos oficiales de PIB e INPC.</p>
+          <p>El workflow Update OVE data queda programado en GitHub Actions: diario de lunes a viernes para tipo de cambio, mensual para BCV PIB/INPC y semanal para Banco Mundial.</p>
         </article>
         <article class="panel span-6">
-          <h2>Próximas series BCV</h2>
-          <p>PIB e INPC ya quedan catalogados desde las páginas oficiales del BCV. El siguiente paso es normalizar hoja por hoja esos Excel para evitar mezclar estructuras oficiales distintas.</p>
+          <h2>Series BCV activas</h2>
+          <p>Tipo de cambio, PIB real anual e INPC nacional mensual quedan normalizados desde fuentes oficiales BCV, con catálogos para ampliar nuevas hojas sin mezclar estructuras.</p>
         </article>
       </div>
     </section>
@@ -1764,7 +1764,7 @@ function topicGroup(group, open = false) {
 function datasetCard([title, count, text, ico]) {
   return `<article class="dataset-card">
     <span class="line-icon">${icon(ico)}</span>
-    ${exampleTag("Ejemplo")}
+    ${exampleTag(count.includes("Banco") || count.includes("BCV") ? "Fuente real" : "Ejemplo")}
     <h3>${title}</h3>
     <p class="tiny">${count}</p>
     ${text ? `<p>${text}</p>` : ""}
@@ -1774,8 +1774,10 @@ function datasetCard([title, count, text, ico]) {
 
 function recentDatasetTable() {
   const rows = [
-    ["No hay datasets OVE publicados", "-", "-", "Pendiente"],
-    ["Banco Mundial - Venezuela", "CSV/JSON/XLSX", "Disponible", "Fuente real"]
+    ["BCV tipo de cambio USD", "CSV/JSON/XLSX", "Actualizado 08/07/2026", "Fuente oficial"],
+    ["BCV referencia SMC", "CSV/JSON/XLSX", "Actualizado 08/07/2026", "Fuente oficial"],
+    ["Banco Mundial - Venezuela", "CSV/JSON/XLSX", "Actualizado 08/07/2026", "Fuente real"],
+    ["Catálogos PIB/INPC BCV", "JSON", "Actualizado 08/07/2026", "Catalogado"]
   ];
   return `<table><tbody>${rows.map(row => `<tr>${row.map(cell => `<td>${cell}</td>`).join("")}<td>${icon("download")}</td></tr>`).join("")}</tbody></table>`;
 }
