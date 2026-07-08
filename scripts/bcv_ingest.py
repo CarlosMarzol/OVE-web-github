@@ -182,6 +182,13 @@ def merge_usd_observations(existing: Iterable[dict], incoming: Iterable[dict]) -
   merged = {item["date"]: item for item in existing if item.get("currency") == "USD"}
   for item in incoming:
     if item.get("currency") == "USD":
+      current = merged.get(item["date"])
+      if current:
+        same_value = current.get("value") == item.get("value")
+        same_buy = current.get("value_buy") == item.get("value_buy")
+        same_sell = current.get("value_sell") == item.get("value_sell")
+        if same_value and same_buy and same_sell:
+          continue
       merged[item["date"]] = item
   return [merged[key] for key in sorted(merged)]
 

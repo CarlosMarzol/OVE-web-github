@@ -1827,7 +1827,7 @@ function bcvPage() {
       <div class="container dashboard-grid">
         <article class="panel span-6">
           <h2>Automatización</h2>
-          <p>El workflow Update OVE data queda programado en GitHub Actions: diario de lunes a viernes para tipo de cambio, mensual para BCV PIB/INPC y semanal para Banco Mundial.</p>
+          <p>El workflow Update OVE data queda programado en GitHub Actions: diario para tipo de cambio, mensual para BCV PIB/INPC, semanal para Banco Mundial y regeneración automática del paquete de indicadores clave.</p>
         </article>
         <article class="panel span-6">
           <h2>Series BCV activas</h2>

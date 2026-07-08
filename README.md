@@ -15,6 +15,8 @@ Sitio web estatico del Observatorio Venezolano de Economia.
 - `manual_corporativo_ove_max_calidad.pdf`: archivo enlazado desde la web.
 - `source-assets/`: materiales de apoyo, logos originales e imagenes fuente.
 
+El workflow `Update OVE data` ejecuta el tipo de cambio BCV todos los dias a las 20:30 UTC, refresca PIB/INPC mensualmente, Banco Mundial semanalmente y regenera el paquete `indicadores-clave` antes de commitear cambios.
+
 ## Actualizar datos BCV
 
 ```bash

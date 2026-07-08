@@ -8,8 +8,8 @@ on:
         required: true
         default: "daily"
   schedule:
-    # Daily exchange-rate checks, Monday-Friday.
-    - cron: "30 20 * * 1-5"
+    # Daily exchange-rate checks. GitHub Actions schedules run in UTC.
+    - cron: "30 20 * * *"
     # Monthly workbook catalogue refresh for PIB/INPC.
     - cron: "15 13 2 * *"
     # Weekly World Bank refresh.
@@ -54,15 +54,16 @@ jobs:
               python scripts/bcv_workbook_extract.py
             fi
           fi
+          python scripts/build_key_indicators_dataset.py
 
       - name: Commit data changes
         run: |
-          if git diff --quiet -- assets/data/bcv assets/data/world-bank; then
+          if git diff --quiet -- assets/data/bcv assets/data/world-bank assets/data/indicadores-clave; then
             echo "No data changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/data/bcv assets/data/world-bank
+          git add assets/data/bcv assets/data/world-bank assets/data/indicadores-clave
           git commit -m "Update OVE data"
           git push
