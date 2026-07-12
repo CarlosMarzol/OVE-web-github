@@ -57,6 +57,23 @@ Salidas:
 - `assets/data/indicadores-clave/ove_indicadores_clave_venezuela.json`
 - `assets/data/indicadores-clave/ove_indicadores_clave_venezuela.xlsx`
 
+## Exportar dashboard desde PostgreSQL privado
+
+Para produccion, la web publica no se conecta directamente a PostgreSQL. El servidor exporta la vista aprobada `mart_ove.indicadores_clave_public` a la capa estatica que lee el dashboard:
+
+```bash
+PGHOST=127.0.0.1 PGPORT=5433 PGDATABASE=ove_venezuela_data PGUSER=ove_dashboard_exporter PGPASSWORD=... \
+  python3 scripts/export_dashboard_from_postgres.py
+```
+
+Si el servidor debe publicar automaticamente los cambios en GitHub Pages:
+
+```bash
+scripts/sync_dashboard_data_from_postgres.sh
+```
+
+Este flujo mantiene PostgreSQL privado, evita credenciales en el navegador y permite que el dashboard se actualice al regenerarse los JSON/CSV/XLSX.
+
 ## Actualizar datos Banco Mundial
 
 ```bash
