@@ -1,6 +1,7 @@
 const routes = {
   "/": homePage,
   "/indicadores": indicatorsPage,
+  "/indicadores/dashboard": interactiveDashboardPage,
   "/publicaciones": publicationsPage,
   "/informe-trimestral": reportDetailPage,
   "/datos": dataPage,
@@ -29,6 +30,10 @@ const routeMeta = {
   "/indicadores": {
     title: "Indicadores económicos | OVE",
     description: "Indicadores actualizados para Venezuela con fuentes BCV y Banco Mundial."
+  },
+  "/indicadores/dashboard": {
+    title: "Dashboard interactivo | OVE",
+    description: "Cruce interactivo de variables económicas de Venezuela con fuentes BCV y Banco Mundial."
   },
   "/publicaciones": {
     title: "Informes y publicaciones | OVE",
@@ -857,6 +862,7 @@ function icon(name) {
     quote: '<path d="M9 7H5v4h4v6H3v-6c0-2.2 1.8-4 4-4h2Z"></path><path d="M21 7h-4v4h4v6h-6v-6c0-2.2 1.8-4 4-4h2Z"></path>',
     rocket: '<path d="M4.5 16.5c-1.2 1.2-1.5 3-1.5 4.5 1.5 0 3.3-.3 4.5-1.5"></path><path d="M9 15 4 10l5-1 6-6c2.5-.4 4.4.1 6 1.5.4 1.9-.1 3.8-1.5 6l-6 6-1 5-5-5Z"></path><circle cx="15" cy="9" r="2"></circle>',
     copy: '<rect x="9" y="9" width="11" height="11" rx="2"></rect><rect x="4" y="4" width="11" height="11" rx="2"></rect>',
+    refresh: '<path d="M21 12a9 9 0 0 1-15.4 6.4L3 16"></path><path d="M3 21v-5h5"></path><path d="M3 12A9 9 0 0 1 18.4 5.6L21 8"></path><path d="M21 3v5h-5"></path>',
     plus: '<path d="M12 5v14"></path><path d="M5 12h14"></path>'
   };
   return `<svg viewBox="0 0 24 24" aria-hidden="true">${paths[name] || paths.file}</svg>`;
@@ -1406,6 +1412,14 @@ function indicatorsPage() {
             <a class="text-link" href="#/indicadores">Limpiar filtros</a>
           </div>
           ${metricCards("inline-metrics")}
+          <div class="dashboard-entry">
+            <div>
+              <span class="eyebrow">Explorador OVE</span>
+              <h2>Comparador de variables</h2>
+              <p>Selecciona dos series, cambia la ventana temporal y alterna entre niveles e índice base 100.</p>
+            </div>
+            <a class="button button-primary" href="#/indicadores/dashboard">Abrir dashboard ${arrow()}</a>
+          </div>
           <p class="source-note">Fuentes: Banco Mundial - World Development Indicators y Banco Central de Venezuela. Algunas series multilaterales tienen rezagos propios de publicación; se muestra el último año con dato no nulo.</p>
           ${keyIndicatorDashboard()}
           <div class="dashboard-grid">
@@ -1506,6 +1520,174 @@ function keyIndicatorDashboard() {
       </div>
     </div>
   </section>`;
+}
+
+function interactiveDashboardPage() {
+  const optionList = keyIndicatorSeries.map(series => `<option value="${series.id}">${series.title}</option>`).join("");
+  return `<div class="page">
+    ${pageHero({
+      title: "Dashboard OVE",
+      lead: "Explorador nativo de indicadores venezolanos con datos BCV y Banco Mundial. Cruza variables, alterna escala y revisa las observaciones sin salir de la página.",
+      breadcrumb: ["Inicio", "Indicadores", "Dashboard"],
+      actions: `<a class="button button-primary" href="${keyIndicatorDownloads.excel}" download>Descargar Excel ${icon("download")}</a>
+        <a class="button" href="#/datos/bcv">Ver fuentes BCV ${arrow()}</a>`
+    })}
+    <section class="section">
+      <div class="container">
+        <article class="native-dashboard" data-native-dashboard>
+          <div class="native-dashboard-head">
+            <div>
+              <span class="eyebrow">Comparador de variables</span>
+              <h2>Series OVE verificables</h2>
+              <p>Datos cargados desde archivos locales del repositorio OVE. Cada serie mantiene fuente, unidad, periodo y descarga trazable.</p>
+            </div>
+            <div class="download-row key-downloads">
+              <a href="${keyIndicatorDownloads.csv}" download>CSV</a>
+              <a href="${keyIndicatorDownloads.json}" download>JSON</a>
+              <a href="${keyIndicatorDownloads.excel}" download>Excel</a>
+            </div>
+          </div>
+          <div class="native-controls">
+            <label>
+              <span>Variable A</span>
+              <select data-dashboard-primary>${optionList}</select>
+            </label>
+            <button class="icon-button swap-button" type="button" data-dashboard-swap aria-label="Intercambiar variables" title="Intercambiar variables">${icon("refresh")}</button>
+            <label>
+              <span>Variable B</span>
+              <select data-dashboard-secondary>${optionList}</select>
+            </label>
+            <label>
+              <span>Escala</span>
+              <select data-dashboard-mode>
+                <option value="level">Nivel original</option>
+                <option value="base100">Índice base 100</option>
+              </select>
+            </label>
+            <label>
+              <span>Ventana</span>
+              <select data-dashboard-window>
+                <option value="5">5 años</option>
+                <option value="10">10 años</option>
+                <option value="all">Todo</option>
+              </select>
+            </label>
+          </div>
+          <div class="native-stats" data-dashboard-stats></div>
+          <div class="native-chart-panel">
+            <div class="panel-title">
+              <h3 data-dashboard-title>Comparación de series</h3>
+              <span class="pill" data-dashboard-scale>Nivel original</span>
+            </div>
+            <div class="native-chart" data-dashboard-chart></div>
+          </div>
+          <div class="native-table-wrap" data-dashboard-table></div>
+        </article>
+      </div>
+    </section>
+    ${keyIndicatorDownloadSection()}
+    ${footer()}
+  </div>`;
+}
+
+function dashboardNumber(value) {
+  if (typeof value !== "number" || Number.isNaN(value)) return "No disponible";
+  return new Intl.NumberFormat("es-VE", {
+    maximumFractionDigits: Math.abs(value) >= 100 ? 2 : 4
+  }).format(value);
+}
+
+function dateLabel(value) {
+  if (!value) return "Sin fecha";
+  const date = new Date(`${value}T00:00:00`);
+  if (Number.isNaN(date.getTime())) return String(value);
+  return new Intl.DateTimeFormat("es-VE", { month: "short", year: "numeric" }).format(date);
+}
+
+function buildDashboardSeries(observations) {
+  const grouped = new Map();
+  observations
+    .filter(row => row.indicator_id && typeof row.value === "number" && row.date)
+    .forEach(row => {
+      if (!grouped.has(row.indicator_id)) {
+        grouped.set(row.indicator_id, {
+          id: row.indicator_id,
+          title: row.indicator,
+          area: row.area,
+          source: row.source,
+          frequency: row.frequency,
+          unit: row.unit,
+          points: []
+        });
+      }
+      grouped.get(row.indicator_id).points.push({
+        date: row.date,
+        period: row.period,
+        year: row.year,
+        value: row.value
+      });
+    });
+
+  grouped.forEach(series => {
+    series.points.sort((left, right) => String(left.date).localeCompare(String(right.date)));
+  });
+
+  return grouped;
+}
+
+function filterDashboardWindow(points, windowValue) {
+  if (windowValue === "all" || !points.length) return points;
+  const last = new Date(`${points[points.length - 1].date}T00:00:00`);
+  const start = new Date(last);
+  start.setFullYear(start.getFullYear() - Number(windowValue));
+  return points.filter(point => new Date(`${point.date}T00:00:00`) >= start);
+}
+
+function transformDashboardPoints(points, mode) {
+  if (mode !== "base100") return points;
+  const base = points.find(point => typeof point.value === "number" && point.value !== 0)?.value;
+  if (!base) return points;
+  return points.map(point => ({ ...point, value: (point.value / base) * 100 }));
+}
+
+function comparisonSvg(primary, secondary, mode) {
+  const width = 860;
+  const height = 340;
+  const padX = 58;
+  const padY = 42;
+  const allPoints = [...primary.points, ...secondary.points];
+  if (!allPoints.length) return `<p class="source-note">No hay observaciones para la selección actual.</p>`;
+
+  const values = allPoints.map(point => point.value);
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min || 1;
+  const dates = allPoints.map(point => new Date(`${point.date}T00:00:00`).getTime());
+  const minDate = Math.min(...dates);
+  const maxDate = Math.max(...dates);
+  const dateRange = maxDate - minDate || 1;
+  const toX = point => padX + ((new Date(`${point.date}T00:00:00`).getTime() - minDate) / dateRange) * (width - padX * 2);
+  const toY = point => height - padY - ((point.value - min) / range) * (height - padY * 2);
+  const pathFor = points => points.map((point, index) => `${index ? "L" : "M"}${toX(point).toFixed(1)} ${toY(point).toFixed(1)}`).join(" ");
+  const dot = (point, klass) => `<circle cx="${toX(point).toFixed(1)}" cy="${toY(point).toFixed(1)}" r="5" class="${klass}"></circle>`;
+  const firstDate = allPoints.reduce((a, b) => String(a.date) < String(b.date) ? a : b).date;
+  const lastDate = allPoints.reduce((a, b) => String(a.date) > String(b.date) ? a : b).date;
+  const primaryLast = primary.points[primary.points.length - 1];
+  const secondaryLast = secondary.points[secondary.points.length - 1];
+
+  return `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Comparación ${primary.title} y ${secondary.title}">
+    <line x1="${padX}" y1="${padY}" x2="${width - padX}" y2="${padY}" class="chart-grid"></line>
+    <line x1="${padX}" y1="${height / 2}" x2="${width - padX}" y2="${height / 2}" class="chart-grid"></line>
+    <line x1="${padX}" y1="${height - padY}" x2="${width - padX}" y2="${height - padY}" class="chart-axis"></line>
+    <path d="${pathFor(primary.points)}" class="native-line primary"></path>
+    <path d="${pathFor(secondary.points)}" class="native-line secondary"></path>
+    ${primaryLast ? dot(primaryLast, "native-dot primary") : ""}
+    ${secondaryLast ? dot(secondaryLast, "native-dot secondary") : ""}
+    <text x="${padX}" y="${height - 12}" class="chart-label">${dateLabel(firstDate)}</text>
+    <text x="${width - padX}" y="${height - 12}" class="chart-label" text-anchor="end">${dateLabel(lastDate)}</text>
+    <text x="${width - padX}" y="${padY - 12}" class="chart-label" text-anchor="end">${dashboardNumber(max)}${mode === "base100" ? "" : ""}</text>
+    <text x="${width - padX}" y="${height - padY - 8}" class="chart-label" text-anchor="end">${dashboardNumber(min)}</text>
+  </svg>`;
 }
 
 function exchangeRatePage() {
@@ -1790,7 +1972,7 @@ function dataPage() {
       title: "Datos de Venezuela",
       lead: "Repositorio de datos actualizados del Observatorio: Banco Mundial - Venezuela y Banco Central de Venezuela, con archivos descargables en CSV, JSON y Excel.",
       breadcrumb: ["Inicio", "Datos", "Datos abiertos y API"],
-      actions: `<a class="button button-primary" href="#/datos/tipo-cambio">Tipo de cambio BCV ${arrow()}</a><a class="button" href="#/datos/bcv">Ver BCV ${icon("database")}</a>`
+      actions: `<a class="button button-primary" href="#/indicadores/dashboard">Abrir dashboard ${arrow()}</a><a class="button" href="#/datos/tipo-cambio">Tipo de cambio BCV ${arrow()}</a><a class="button" href="#/datos/bcv">Ver BCV ${icon("database")}</a>`
     })}
     ${topicsSection()}
     ${bcvSourceSection()}
@@ -2434,6 +2616,7 @@ function render() {
     wireForms();
     hydrateBcvWidgets();
     hydrateKeyDashboard();
+    hydrateNativeDashboard();
     hydrateExchangeDashboard();
     prepareRevealAnimations(appRoot);
 
@@ -2604,6 +2787,85 @@ function hydrateKeyDashboard() {
       chart.innerHTML = sparklineSvg(series);
     });
   });
+}
+
+async function hydrateNativeDashboard() {
+  const dashboard = document.querySelector("[data-native-dashboard]");
+  if (!dashboard) return;
+
+  const primary = dashboard.querySelector("[data-dashboard-primary]");
+  const secondary = dashboard.querySelector("[data-dashboard-secondary]");
+  const mode = dashboard.querySelector("[data-dashboard-mode]");
+  const windowSelect = dashboard.querySelector("[data-dashboard-window]");
+  const swap = dashboard.querySelector("[data-dashboard-swap]");
+  const chart = dashboard.querySelector("[data-dashboard-chart]");
+  const stats = dashboard.querySelector("[data-dashboard-stats]");
+  const table = dashboard.querySelector("[data-dashboard-table]");
+  const title = dashboard.querySelector("[data-dashboard-title]");
+  const scale = dashboard.querySelector("[data-dashboard-scale]");
+
+  try {
+    const response = await fetch(keyIndicatorDownloads.json, { cache: "no-store" });
+    if (!response.ok) throw new Error("Key indicators JSON unavailable");
+    const data = await response.json();
+    const seriesMap = buildDashboardSeries(data.observations || []);
+    const available = [...seriesMap.values()].filter(series => series.points.length);
+    if (!available.length) throw new Error("No usable series");
+
+    const optionHtml = available.map(series => `<option value="${series.id}">${series.title}</option>`).join("");
+    primary.innerHTML = optionHtml;
+    secondary.innerHTML = optionHtml;
+    primary.value = available.find(series => series.id === "tipo_cambio_bcv_usd")?.id || available[0].id;
+    secondary.value = available.find(series => series.id === "inpc_nacional_bcv")?.id || available[1]?.id || available[0].id;
+
+    const renderDashboard = () => {
+      const modeValue = mode.value;
+      const windowValue = windowSelect.value;
+      const primaryRaw = seriesMap.get(primary.value) || available[0];
+      const secondaryRaw = seriesMap.get(secondary.value) || available[1] || available[0];
+      const primaryPoints = transformDashboardPoints(filterDashboardWindow(primaryRaw.points, windowValue), modeValue);
+      const secondaryPoints = transformDashboardPoints(filterDashboardWindow(secondaryRaw.points, windowValue), modeValue);
+      const primarySeries = { ...primaryRaw, points: primaryPoints };
+      const secondarySeries = { ...secondaryRaw, points: secondaryPoints };
+      const primaryLatest = primaryRaw.points[primaryRaw.points.length - 1];
+      const secondaryLatest = secondaryRaw.points[secondaryRaw.points.length - 1];
+
+      title.textContent = `${primaryRaw.title} / ${secondaryRaw.title}`;
+      scale.textContent = modeValue === "base100" ? "Índice base 100" : "Nivel original";
+      chart.innerHTML = comparisonSvg(primarySeries, secondarySeries, modeValue);
+      stats.innerHTML = [
+        [primaryRaw.title, primaryLatest, primaryRaw.unit, "primary"],
+        [secondaryRaw.title, secondaryLatest, secondaryRaw.unit, "secondary"],
+        ["Observaciones", { value: primaryPoints.length + secondaryPoints.length, date: `${primaryPoints.length} + ${secondaryPoints.length}` }, "puntos visibles", "neutral"]
+      ].map(([label, point, unit, tone]) => `<div class="native-stat ${tone}">
+        <span>${label}</span>
+        <strong>${dashboardNumber(point?.value)}</strong>
+        <small>${point?.date ? dateLabel(point.date) : point?.date || ""} · ${unit}</small>
+      </div>`).join("");
+
+      const rows = [
+        ...primaryRaw.points.slice(-6).map(point => [primaryRaw.title, point.date, point.value, primaryRaw.unit, primaryRaw.source]),
+        ...secondaryRaw.points.slice(-6).map(point => [secondaryRaw.title, point.date, point.value, secondaryRaw.unit, secondaryRaw.source])
+      ].sort((left, right) => String(right[1]).localeCompare(String(left[1])));
+      table.innerHTML = `<div class="table-wrap"><table>
+        <thead><tr><th>Variable</th><th>Fecha</th><th>Valor</th><th>Unidad</th><th>Fuente</th></tr></thead>
+        <tbody>${rows.map(row => `<tr><td>${row[0]}</td><td>${row[1]}</td><td>${dashboardNumber(row[2])}</td><td>${row[3]}</td><td>${row[4]}</td></tr>`).join("")}</tbody>
+      </table></div>`;
+    };
+
+    [primary, secondary, mode, windowSelect].forEach(control => control.addEventListener("change", renderDashboard));
+    swap.addEventListener("click", () => {
+      const currentPrimary = primary.value;
+      primary.value = secondary.value;
+      secondary.value = currentPrimary;
+      renderDashboard();
+    });
+    renderDashboard();
+  } catch {
+    chart.innerHTML = `<p class="source-note">No fue posible cargar el dataset de indicadores clave en este momento.</p>`;
+    stats.innerHTML = "";
+    table.innerHTML = "";
+  }
 }
 
 async function hydrateExchangeDashboard() {

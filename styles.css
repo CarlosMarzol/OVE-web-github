@@ -1898,6 +1898,179 @@ textarea.field {
   min-width: 260px;
 }
 
+.dashboard-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  margin: 22px 0 12px;
+  padding: 18px;
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.dashboard-entry h2 {
+  margin: 2px 0 6px;
+  font-size: 1.22rem;
+}
+
+.dashboard-entry p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.native-dashboard {
+  padding: 22px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.native-dashboard-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: start;
+}
+
+.native-dashboard-head h2 {
+  margin: 4px 0 8px;
+}
+
+.native-dashboard-head p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.native-controls {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 44px minmax(180px, 1fr) minmax(150px, 0.7fr) minmax(130px, 0.6fr);
+  gap: 12px;
+  align-items: end;
+  margin: 22px 0;
+}
+
+.native-controls label {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.native-controls label span {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.native-controls select {
+  width: 100%;
+  min-height: 42px;
+  padding: 9px 12px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.swap-button {
+  color: var(--blue-700);
+  background: var(--blue-100);
+  border-radius: 50%;
+}
+
+.native-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.native-stat {
+  min-width: 0;
+  padding: 14px;
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--blue-700);
+  border-radius: 6px;
+}
+
+.native-stat.secondary {
+  border-left-color: var(--yellow);
+}
+
+.native-stat.neutral {
+  border-left-color: var(--red);
+}
+
+.native-stat span,
+.native-stat small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 750;
+}
+
+.native-stat strong {
+  display: block;
+  margin: 6px 0;
+  color: var(--ink);
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+.native-chart-panel {
+  min-width: 0;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.native-chart {
+  min-height: 300px;
+}
+
+.native-chart svg {
+  width: 100%;
+  height: auto;
+}
+
+.native-line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+
+.native-line.primary {
+  stroke: var(--blue-700);
+}
+
+.native-line.secondary {
+  stroke: var(--yellow);
+}
+
+.native-dot {
+  fill: #fff;
+  stroke-width: 4;
+}
+
+.native-dot.primary {
+  stroke: var(--blue-700);
+}
+
+.native-dot.secondary {
+  stroke: var(--yellow);
+}
+
+.native-table-wrap {
+  margin-top: 16px;
+}
+
 .topic-downloads {
   margin-top: 30px;
 }
@@ -2611,6 +2784,9 @@ th {
   .key-dashboard-head,
   .key-dashboard-layout,
   .key-download-summary,
+  .dashboard-entry,
+  .native-dashboard-head,
+  .native-controls,
   .bcv-live-card {
     grid-template-columns: 1fr;
   }
@@ -2795,6 +2971,7 @@ th {
   .mini-grid-3,
   .mini-grid-5,
   .collab-grid,
+  .native-stats,
   .exchange-latest-grid,
   .exchange-download-grid {
     grid-template-columns: 1fr !important;
