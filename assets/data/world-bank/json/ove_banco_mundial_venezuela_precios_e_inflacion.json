@@ -2,9 +2,9 @@
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
     "Dataset": "Banco Mundial - Venezuela - Precios e inflación",
-    "Fecha generación": "2026-07-08",
+    "Fecha generación": "2026-07-13",
     "Número de indicadores": 7,
-    "Número de registros": 462
+    "Número de registros": 467
   },
   "datos": [
     {
@@ -21,10 +21,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 20.5095243660161,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -40,10 +40,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 19.7121077560687,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -59,10 +59,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 18.3234546994073,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -78,10 +78,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 19.5392406636426,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -97,10 +97,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 20.5123888093835,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -116,10 +116,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 20.8458800263678,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -135,10 +135,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 20.0,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -154,10 +154,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 21.5586786786787,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -173,10 +173,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 21.7674676115602,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -192,10 +192,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 23.5449301039259,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -211,10 +211,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 22.5695338779433,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -230,10 +230,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 23.9862795540855,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -249,10 +249,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 26.6739293031121,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -268,10 +268,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 26.8017692108173,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -287,10 +287,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 23.7244507012135,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -306,10 +306,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 34.5612118748836,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -325,10 +325,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 37.258556371388,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -344,10 +344,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 40.6160970033268,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -363,10 +363,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 43.1457470720454,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -382,10 +382,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 37.744311316713,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -401,10 +401,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 36.1814076262485,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -420,10 +420,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 36.5848784045328,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -439,10 +439,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 38.8851504456377,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -458,10 +458,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 48.1906902771849,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -477,10 +477,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 39.4091251023634,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -496,10 +496,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 39.0619936695923,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -515,10 +515,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 41.9076725568921,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -534,10 +534,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 34.9056246149958,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -553,10 +553,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 33.5094007326376,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -572,10 +572,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 27.4990548617185,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -591,10 +591,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 30.0450891758337,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -610,10 +610,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 33.2661287667589,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -629,10 +629,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 28.796778299705,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -648,10 +648,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 27.3873957787661,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -667,10 +667,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 29.0794810754184,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -686,10 +686,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 25.1725050538205,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -705,10 +705,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 19.7551807397977,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -724,10 +724,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 21.5669921436993,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -743,10 +743,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 19.4213659535428,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -762,10 +762,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 19.9148660715027,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -781,10 +781,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 19.841929205797,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -800,10 +800,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 19.6770805068849,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -819,10 +819,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 18.6054450474647,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -838,10 +838,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 24.276027745205,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -857,10 +857,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 22.9740751086322,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -876,10 +876,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 23.6912663876934,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -895,10 +895,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 31.5903329449224,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -914,10 +914,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 33.6885323434814,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -933,10 +933,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 31.6722097636557,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -952,10 +952,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 37.423228482187,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -971,10 +971,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 32.1588748715106,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -990,10 +990,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 35.9416209632808,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1009,10 +1009,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 43.1450051289048,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1028,10 +1028,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.GD.ZS",
       "Indicador": "Dinero amplio como porcentaje del PIB",
-      "Valor": 48.6096787197016,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1049,8 +1049,8 @@
       "Indicador": "Dinero amplio como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1068,8 +1068,8 @@
       "Indicador": "Dinero amplio como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1087,8 +1087,8 @@
       "Indicador": "Dinero amplio como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1106,8 +1106,8 @@
       "Indicador": "Dinero amplio como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1125,8 +1125,8 @@
       "Indicador": "Dinero amplio como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1144,8 +1144,8 @@
       "Indicador": "Dinero amplio como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1163,8 +1163,8 @@
       "Indicador": "Dinero amplio como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1182,8 +1182,8 @@
       "Indicador": "Dinero amplio como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1201,8 +1201,8 @@
       "Indicador": "Dinero amplio como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1220,8 +1220,8 @@
       "Indicador": "Dinero amplio como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1239,8 +1239,8 @@
       "Indicador": "Dinero amplio como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1258,8 +1258,27 @@
       "Indicador": "Dinero amplio como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2026,
+      "Área temática": "Precios e inflación",
+      "ID área": "precios_e_inflacion",
+      "Subárea": "Sistema monetario",
+      "ID subárea": "sistema_monetario",
+      "Código indicador": "FM.LBL.BMNY.GD.ZS",
+      "Indicador": "Dinero amplio como porcentaje del PIB",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1277,8 +1296,8 @@
       "Indicador": "Crecimiento anual del dinero amplio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1294,10 +1313,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 1.17758784425452,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1313,10 +1332,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 1.55810024403979,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1332,10 +1351,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 16.2458410351201,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1351,10 +1370,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 16.2365437516895,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1370,10 +1389,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 8.15047879616963,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1389,10 +1408,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": -0.0328872473374014,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1408,10 +1427,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 13.5464115801195,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1427,10 +1446,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 9.53107936437183,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1446,10 +1465,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 10.8677294971055,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1465,10 +1484,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 7.74962605416021,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1484,10 +1503,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 16.7282699415762,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1503,10 +1522,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 19.6921056471618,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1522,10 +1541,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 19.677537336178,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1541,10 +1560,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 35.6224946646225,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1560,10 +1579,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 53.2889671722957,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1579,10 +1598,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 23.3282944720343,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1598,10 +1617,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 25.6346125575611,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1617,10 +1636,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 15.3387717281477,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1636,10 +1655,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 7.49456418917993,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1655,10 +1674,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 17.2998218314503,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1674,10 +1693,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 13.4489825873757,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1693,10 +1712,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 8.54585357906138,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1712,10 +1731,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 23.6006533639414,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1731,10 +1750,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 18.2560052460853,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1750,10 +1769,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 9.65914753963685,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1769,10 +1788,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 12.9249062588308,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1788,10 +1807,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 18.5801895213965,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1807,10 +1826,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 20.3800154757434,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1826,10 +1845,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 41.9308694643339,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1845,10 +1864,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 64.8803977512129,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1864,10 +1883,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 47.5536137241788,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1883,10 +1902,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 17.7422866507794,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1902,10 +1921,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 25.5475593704139,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1921,10 +1940,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 68.8910357090733,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1940,10 +1959,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 36.5614947506536,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1959,10 +1978,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 68.8074497089111,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1978,10 +1997,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 55.5485679504748,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -1997,10 +2016,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 7.37712144550657,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2016,10 +2035,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 21.6735573631883,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2035,10 +2054,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 33.734085920071,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2054,10 +2073,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 10.7348703245856,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2073,10 +2092,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 14.6398208174466,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2092,10 +2111,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 62.4050738989221,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2111,10 +2130,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 49.9514872516717,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2130,10 +2149,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 47.4398513078883,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2149,10 +2168,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 72.7361549262953,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2168,10 +2187,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 33.8935499673661,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2187,10 +2206,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 28.8009048093836,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2206,10 +2225,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 23.3315611539432,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2225,10 +2244,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 23.5461771314654,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2244,10 +2263,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 49.2045729344607,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2263,10 +2282,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 53.2897238079186,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2282,10 +2301,10 @@
       "ID subárea": "sistema_monetario",
       "Código indicador": "FM.LBL.BMNY.ZG",
       "Indicador": "Crecimiento anual del dinero amplio",
-      "Valor": 58.8430706651518,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2303,8 +2322,8 @@
       "Indicador": "Crecimiento anual del dinero amplio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2322,8 +2341,8 @@
       "Indicador": "Crecimiento anual del dinero amplio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2341,8 +2360,8 @@
       "Indicador": "Crecimiento anual del dinero amplio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2360,8 +2379,8 @@
       "Indicador": "Crecimiento anual del dinero amplio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2379,8 +2398,8 @@
       "Indicador": "Crecimiento anual del dinero amplio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2398,8 +2417,8 @@
       "Indicador": "Crecimiento anual del dinero amplio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2417,8 +2436,8 @@
       "Indicador": "Crecimiento anual del dinero amplio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2436,8 +2455,8 @@
       "Indicador": "Crecimiento anual del dinero amplio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2455,8 +2474,8 @@
       "Indicador": "Crecimiento anual del dinero amplio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2474,8 +2493,8 @@
       "Indicador": "Crecimiento anual del dinero amplio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2493,8 +2512,8 @@
       "Indicador": "Crecimiento anual del dinero amplio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2512,8 +2531,27 @@
       "Indicador": "Crecimiento anual del dinero amplio",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2026,
+      "Área temática": "Precios e inflación",
+      "ID área": "precios_e_inflacion",
+      "Subárea": "Sistema monetario",
+      "ID subárea": "sistema_monetario",
+      "Código indicador": "FM.LBL.BMNY.ZG",
+      "Indicador": "Crecimiento anual del dinero amplio",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2531,8 +2569,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2550,8 +2588,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2569,8 +2607,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2588,8 +2626,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2607,8 +2645,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2626,8 +2664,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2645,8 +2683,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2664,8 +2702,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2683,8 +2721,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2702,8 +2740,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2721,8 +2759,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2740,8 +2778,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2759,8 +2797,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2778,8 +2816,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2797,8 +2835,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2816,8 +2854,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2835,8 +2873,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2854,8 +2892,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2873,8 +2911,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2892,8 +2930,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2911,8 +2949,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2930,8 +2968,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2949,8 +2987,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2968,8 +3006,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -2987,8 +3025,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3006,8 +3044,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3025,8 +3063,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3044,8 +3082,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3063,8 +3101,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3082,8 +3120,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3101,8 +3139,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3120,8 +3158,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3139,8 +3177,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3158,8 +3196,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3177,8 +3215,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3196,8 +3234,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3215,8 +3253,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3234,8 +3272,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3253,8 +3291,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3272,8 +3310,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3291,8 +3329,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3310,8 +3348,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3329,8 +3367,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3348,8 +3386,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3367,8 +3405,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3386,8 +3424,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3405,8 +3443,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3424,8 +3462,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3441,10 +3479,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL",
       "Indicador": "Índice de precios al consumidor",
-      "Valor": 61.3866619681085,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3460,10 +3498,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL",
       "Indicador": "Índice de precios al consumidor",
-      "Valor": 78.0107479517223,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3479,10 +3517,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL",
       "Indicador": "Índice de precios al consumidor",
-      "Valor": 100.0,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3498,10 +3536,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL",
       "Indicador": "Índice de precios al consumidor",
-      "Valor": 126.090212316096,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3517,10 +3555,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL",
       "Indicador": "Índice de precios al consumidor",
-      "Valor": 152.656153642851,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3536,10 +3574,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL",
       "Indicador": "Índice de precios al consumidor",
-      "Valor": 214.694740551494,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3555,10 +3593,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL",
       "Indicador": "Índice de precios al consumidor",
-      "Valor": 348.167562329311,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3574,10 +3612,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL",
       "Indicador": "Índice de precios al consumidor",
-      "Valor": 772.020086336005,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3593,10 +3631,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL",
       "Indicador": "Índice de precios al consumidor",
-      "Valor": 2740.27398467096,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3614,8 +3652,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3633,8 +3671,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3652,8 +3690,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3671,8 +3709,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3690,8 +3728,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3709,8 +3747,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3728,8 +3766,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3747,8 +3785,8 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3766,8 +3804,27 @@
       "Indicador": "Índice de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2026,
+      "Área temática": "Precios e inflación",
+      "ID área": "precios_e_inflacion",
+      "Subárea": "Inflación",
+      "ID subárea": "inflacion",
+      "Código indicador": "FP.CPI.TOTL",
+      "Indicador": "Índice de precios al consumidor",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3785,8 +3842,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3804,8 +3861,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3823,8 +3880,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3842,8 +3899,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3861,8 +3918,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3880,8 +3937,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3899,8 +3956,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3918,8 +3975,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3937,8 +3994,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3956,8 +4013,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3975,8 +4032,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -3994,8 +4051,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4013,8 +4070,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4032,8 +4089,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4051,8 +4108,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4070,8 +4127,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4089,8 +4146,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4108,8 +4165,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4127,8 +4184,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4146,8 +4203,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4165,8 +4222,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4184,8 +4241,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4203,8 +4260,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4222,8 +4279,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4241,8 +4298,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4260,8 +4317,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4279,8 +4336,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4298,8 +4355,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4317,8 +4374,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4336,8 +4393,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4355,8 +4412,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4374,8 +4431,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4393,8 +4450,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4412,8 +4469,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4431,8 +4488,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4450,8 +4507,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4469,8 +4526,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4488,8 +4545,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4507,8 +4564,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4526,8 +4583,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4545,8 +4602,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4564,8 +4621,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4583,8 +4640,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4602,8 +4659,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4621,8 +4678,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4640,8 +4697,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4659,8 +4716,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4678,8 +4735,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4697,8 +4754,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4714,10 +4771,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL.ZG",
       "Indicador": "Inflación anual de precios al consumidor",
-      "Valor": 27.080941446613,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4733,10 +4790,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL.ZG",
       "Indicador": "Inflación anual de precios al consumidor",
-      "Valor": 28.1874647092039,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4752,10 +4809,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL.ZG",
       "Indicador": "Inflación anual de precios al consumidor",
-      "Valor": 26.0902123160959,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4771,10 +4828,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL.ZG",
       "Indicador": "Inflación anual de precios al consumidor",
-      "Valor": 21.0689956331876,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4790,10 +4847,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL.ZG",
       "Indicador": "Inflación anual de precios al consumidor",
-      "Valor": 40.6394275161589,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4809,10 +4866,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL.ZG",
       "Indicador": "Inflación anual de precios al consumidor",
-      "Valor": 62.1686499794829,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4828,10 +4885,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL.ZG",
       "Indicador": "Inflación anual de precios al consumidor",
-      "Valor": 121.738085297503,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4847,10 +4904,10 @@
       "ID subárea": "inflacion",
       "Código indicador": "FP.CPI.TOTL.ZG",
       "Indicador": "Inflación anual de precios al consumidor",
-      "Valor": 254.948534781816,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4868,8 +4925,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4887,8 +4944,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4906,8 +4963,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4925,8 +4982,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4944,8 +5001,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4963,8 +5020,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -4982,8 +5039,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -5001,8 +5058,8 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -5020,8 +5077,27 @@
       "Indicador": "Inflación anual de precios al consumidor",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2026,
+      "Área temática": "Precios e inflación",
+      "ID área": "precios_e_inflacion",
+      "Subárea": "Inflación",
+      "ID subárea": "inflacion",
+      "Código indicador": "FP.CPI.TOTL.ZG",
+      "Indicador": "Inflación anual de precios al consumidor",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "The read operation timed out"
     },
     {
       "País OVE": "Venezuela",
@@ -5039,8 +5115,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5058,8 +5134,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5077,8 +5153,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5096,8 +5172,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5115,8 +5191,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5134,8 +5210,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5153,8 +5229,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5172,8 +5248,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5191,8 +5267,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5210,8 +5286,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5229,8 +5305,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5248,8 +5324,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5267,8 +5343,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5286,8 +5362,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5305,8 +5381,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5324,8 +5400,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5343,8 +5419,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5362,8 +5438,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5381,8 +5457,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5400,8 +5476,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5419,8 +5495,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5438,8 +5514,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5457,8 +5533,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5476,8 +5552,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5493,10 +5569,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -20.3105843528903,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5512,10 +5588,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -0.53261518686187,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5531,10 +5607,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": 9.44728377673056,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5550,10 +5626,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -20.0691279931751,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5569,10 +5645,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -7.91012968421851,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5588,10 +5664,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -39.0961955461174,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5607,10 +5683,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -4.16379414395032,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5626,10 +5702,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": 12.7850576834027,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5645,10 +5721,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": 10.1505042234342,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5664,10 +5740,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": 21.4421442344337,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5683,10 +5759,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -5.02106927052955,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5702,10 +5778,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -7.92139948209389,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5721,10 +5797,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -35.3503170614123,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5740,10 +5816,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -7.68391249860852,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5759,10 +5835,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": 23.3237302468182,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5778,10 +5854,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": 4.73750937705693,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5797,10 +5873,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -3.427271677593,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5816,10 +5892,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": 13.4067920775441,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5835,10 +5911,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": 2.81776735888189,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5854,10 +5930,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -7.21528827246595,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5873,10 +5949,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -11.5984250472679,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5892,10 +5968,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -9.9771448599891,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5911,10 +5987,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -2.04088217205993,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5930,10 +6006,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": 1.48399647333513,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5949,10 +6025,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -6.01980277978769,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5968,10 +6044,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": 11.3296605279432,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -5987,10 +6063,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -18.9896494698648,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6006,10 +6082,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -8.63099270105034,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6025,10 +6101,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -3.49269516009221,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6044,10 +6120,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -16.7579072328723,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6063,10 +6139,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -42.8355024477854,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6082,10 +6158,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -49.1738717186218,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6101,10 +6177,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -70.4417611308894,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6120,10 +6196,10 @@
       "ID subárea": "sistema_financiero",
       "Código indicador": "FR.INR.RINR",
       "Indicador": "Tipo de interés real",
-      "Valor": -89.4719970296214,
+      "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6141,8 +6217,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6160,8 +6236,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6179,8 +6255,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6198,8 +6274,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6217,8 +6293,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6236,8 +6312,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6255,8 +6331,8 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6274,8 +6350,27 @@
       "Indicador": "Tipo de interés real",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
-      "Error descarga": null
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
+    },
+    {
+      "País OVE": "Venezuela",
+      "País Banco Mundial": "Venezuela, RB",
+      "Código ISO 2": "VE",
+      "Código ISO 3": "VEN",
+      "Región": "Latin America & Caribbean",
+      "Nivel de ingreso": "Not classified",
+      "Año": 2026,
+      "Área temática": "Precios e inflación",
+      "ID área": "precios_e_inflacion",
+      "Subárea": "Sistema financiero",
+      "ID subárea": "sistema_financiero",
+      "Código indicador": "FR.INR.RINR",
+      "Indicador": "Tipo de interés real",
+      "Valor": null,
+      "Fuente": "Banco Mundial - World Development Indicators",
+      "Fecha descarga": "2026-07-13",
+      "Error descarga": "HTTP Error 400: Bad Request"
     },
     {
       "País OVE": "Venezuela",
@@ -6293,7 +6388,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6312,7 +6407,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 2.01373056168983,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6331,7 +6426,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 0.665054138462224,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6350,7 +6445,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 4.91982977988773,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6369,7 +6464,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": -0.366502858122402,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6388,7 +6483,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 2.16720883620505,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6407,7 +6502,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 2.64492682981677,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6426,7 +6521,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 2.43422682068099,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6445,7 +6540,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 1.06509902850236,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6464,7 +6559,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 1.77946177900719,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6483,7 +6578,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 4.35826317842816,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6502,7 +6597,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 8.23265759174268,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6521,7 +6616,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 6.26877681900034,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6540,7 +6635,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 11.2003944899522,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6559,7 +6654,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 50.107968794629,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6578,7 +6673,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 2.26299814945894,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6597,7 +6692,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 6.19354432405103,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6616,7 +6711,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 8.44842727068664,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6635,7 +6730,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 6.08667532833461,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6654,7 +6749,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 21.9455792548796,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6673,7 +6768,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 28.0272395381622,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6692,7 +6787,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 13.6316657569901,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6711,7 +6806,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": -0.42040040122437,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6730,7 +6825,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 10.3947543511296,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6749,7 +6844,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 37.4952567752211,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6768,7 +6863,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 9.91291286624789,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6787,7 +6882,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": -0.87769844706564,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6806,7 +6901,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 35.7068476087747,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6825,7 +6920,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 17.8169755565469,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6844,7 +6939,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 101.132755331824,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6863,7 +6958,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 41.4201088785186,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6882,7 +6977,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 21.6148097546419,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6901,7 +6996,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 28.3039973319823,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6920,7 +7015,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 31.6690080487957,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6939,7 +7034,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 62.8308497602543,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6958,7 +7053,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 51.7661713803863,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6977,7 +7072,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 115.644264591004,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -6996,7 +7091,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 33.9798981387027,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7015,7 +7110,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 18.6734294422431,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7034,7 +7129,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 26.1494894419132,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7053,7 +7148,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 29.6423626437172,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7072,7 +7167,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 7.97560218698187,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7091,7 +7186,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 32.8345319182831,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7110,7 +7205,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 34.9288379544342,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7129,7 +7224,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 34.0436148677513,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7148,7 +7243,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 29.75501219662,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7167,7 +7262,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 17.882509793009,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7186,7 +7281,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 15.3925782088896,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7205,7 +7300,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 30.2091684768406,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7224,7 +7319,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 7.69217544074034,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7243,7 +7338,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 46.0893567618569,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7262,7 +7357,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 28.2163432253321,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7281,7 +7376,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 20.5919077245585,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7300,7 +7395,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 39.2264371875174,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7319,7 +7414,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 105.042765502495,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7338,7 +7433,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 134.908705496941,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7357,7 +7452,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 308.600121728545,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7376,7 +7471,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 1049.87777840941,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7395,7 +7490,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 225652.234993614,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7414,7 +7509,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 21909.3426680117,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7433,7 +7528,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 1885.46577647144,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7452,7 +7547,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 1212.84660038412,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7471,7 +7566,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 210.806068385812,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7490,7 +7585,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 367.798078256365,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7509,7 +7604,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 55.4481074808972,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7528,7 +7623,7 @@
       "Indicador": "Inflación medida por el deflactor del PIB",
       "Valor": 227.093064600296,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7547,7 +7642,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.00334958333233334,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7566,7 +7661,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.00334983333233333,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7585,7 +7680,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.00334966666566667,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7604,7 +7699,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.00334966666566666,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7623,7 +7718,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.00435,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7642,7 +7737,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0044,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7661,7 +7756,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0044,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7680,7 +7775,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0044,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7699,7 +7794,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0044,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7718,7 +7813,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0044,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7737,7 +7832,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0044,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7756,7 +7851,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0044,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7775,7 +7870,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0043,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7794,7 +7889,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0043,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7813,7 +7908,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0043,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7832,7 +7927,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0043,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7851,7 +7946,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0043,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7870,7 +7965,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0043,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7889,7 +7984,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0043,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7908,7 +8003,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0043,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7927,7 +8022,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0043,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7946,7 +8041,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0043,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7965,7 +8060,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0043,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -7984,7 +8079,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0043,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8003,7 +8098,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.00701666666666667,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8022,7 +8117,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0075,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8041,7 +8136,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.00808333333333333,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8060,7 +8155,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0145,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8079,7 +8174,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0145,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8098,7 +8193,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0346916666666667,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8117,7 +8212,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0468916666666667,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8136,7 +8231,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.056825,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8155,7 +8250,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0683833333333333,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8174,7 +8269,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.0908416666666667,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8193,7 +8288,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.146858333333333,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8212,7 +8307,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.176841666666667,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8231,7 +8326,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.41735,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8250,7 +8345,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.488633333333333,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8269,7 +8364,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.547566666666667,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8288,7 +8383,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.605725,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8307,7 +8402,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.679966666666667,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8326,7 +8421,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 0.723658333333334,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8345,7 +8440,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 1.16095,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8364,7 +8459,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 1.60695833333333,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8383,7 +8478,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 1.89133333333333,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8402,7 +8497,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 2.08975,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8421,7 +8516,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 2.147,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8440,7 +8535,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 2.147,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8459,7 +8554,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 2.147,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8478,7 +8573,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 2.147,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8497,7 +8592,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 2.58206031746032,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8516,7 +8611,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 4.2893,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8535,7 +8630,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 4.2893,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8554,7 +8649,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 6.04796184166667,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8573,7 +8668,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 6.2842,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8592,7 +8687,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 6.2842,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8611,7 +8706,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 9.25734444444167,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8630,7 +8725,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": 9.975,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8649,7 +8744,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8668,7 +8763,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8687,7 +8782,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8706,7 +8801,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8725,7 +8820,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8744,7 +8839,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8763,7 +8858,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     },
     {
@@ -8782,7 +8877,7 @@
       "Indicador": "Tipo de cambio oficial moneda local por dólar",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-08",
+      "Fecha descarga": "2026-07-13",
       "Error descarga": null
     }
   ]
