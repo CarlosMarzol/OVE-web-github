@@ -1,0 +1,15 @@
+{
+  "enabled": false,
+  "mode": "pending",
+  "recipientEmail": "",
+  "endpoints": {
+    "contacto": "",
+    "boletin": "",
+    "colaboracion": ""
+  },
+  "subjects": {
+    "contacto": "Nueva consulta desde la web OVE",
+    "boletin": "Nueva suscripcion al boletin OVE",
+    "colaboracion": "Nueva propuesta de colaboracion OVE"
+  }
+}

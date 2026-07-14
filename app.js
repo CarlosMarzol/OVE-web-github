@@ -3,6 +3,7 @@ const routes = {
   "/indicadores": indicatorsPage,
   "/indicadores/dashboard": interactiveDashboardPage,
   "/publicaciones": publicationsPage,
+  "/nota-lanzamiento": launchNotePage,
   "/informe-trimestral": reportDetailPage,
   "/datos": dataPage,
   "/datos/banco-mundial": worldBankPage,
@@ -18,6 +19,12 @@ const routes = {
   "/datos/nivel-condiciones-vida": () => topicDetailPage("living"),
   "/datos/sociedad": () => topicDetailPage("society"),
   "/datos/estadisticas-experimentales": () => topicDetailPage("experiments"),
+  "/metodologia": methodologyPage,
+  "/legal": () => legalPage("legal"),
+  "/privacidad": () => legalPage("privacidad"),
+  "/cookies": () => legalPage("cookies"),
+  "/terminos": () => legalPage("terminos"),
+  "/licencia-datos": () => legalPage("licencia"),
   "/nosotros": aboutPage,
   "/contacto": contactPage
 };
@@ -37,11 +44,15 @@ const routeMeta = {
   },
   "/publicaciones": {
     title: "Informes y publicaciones | OVE",
-    description: "Repositorio de informes del OVE en construcción. Aún no hay informes publicados."
+    description: "Repositorio de informes del OVE en preparación para el lanzamiento público."
+  },
+  "/nota-lanzamiento": {
+    title: "Nota de lanzamiento | OVE",
+    description: "Primera nota institucional del OVE: alcance inicial, fuentes disponibles, metodología y hoja de ruta."
   },
   "/informe-trimestral": {
-    title: "Ejemplo de informe económico | OVE",
-    description: "Plantilla de informe del OVE mostrada como ejemplo, sin datos publicados."
+    title: "Publicaciones en preparación | OVE",
+    description: "Estado de preparación de las primeras publicaciones del OVE."
   },
   "/datos": {
     title: "Banco de datos | OVE",
@@ -58,6 +69,30 @@ const routeMeta = {
   "/datos/tipo-cambio": {
     title: "Tipo de cambio BCV | OVE",
     description: "Cuadro de mando del tipo de cambio oficial BCV con descargas diarias en CSV, JSON y Excel OVE."
+  },
+  "/metodologia": {
+    title: "Metodología, fuentes y citación | OVE",
+    description: "Criterios metodológicos del OVE: fuentes, tratamiento de datos, actualización, limitaciones y forma de cita."
+  },
+  "/legal": {
+    title: "Aviso legal | OVE",
+    description: "Aviso legal provisional del Observatorio Venezolano de Economía, pendiente de revisión legal."
+  },
+  "/privacidad": {
+    title: "Política de privacidad | OVE",
+    description: "Política de privacidad provisional del OVE para formularios, boletín y tratamiento de datos personales."
+  },
+  "/cookies": {
+    title: "Política de cookies | OVE",
+    description: "Información provisional sobre cookies y tecnologías similares en el sitio del OVE."
+  },
+  "/terminos": {
+    title: "Términos de uso | OVE",
+    description: "Términos de uso provisionales del sitio web y recursos del OVE."
+  },
+  "/licencia-datos": {
+    title: "Licencia de datos | OVE",
+    description: "Condiciones provisionales para reutilizar datos y descargas del OVE."
   },
   "/nosotros": {
     title: "Nosotros | OVE",
@@ -99,8 +134,8 @@ const metricData = [
   {
     title: "Tipo de cambio BCV",
     subtitle: "Bs/USD",
-    value: "685,9427",
-    period: "8 jul 2026",
+    value: "721,3456",
+    period: "13 jul 2026",
     trend: "BCV oficial",
     direction: "down",
     color: "red",
@@ -131,6 +166,29 @@ const keyIndicatorDownloads = {
   json: "assets/data/indicadores-clave/ove_indicadores_clave_venezuela.json",
   excel: "assets/data/indicadores-clave/ove_indicadores_clave_venezuela.xlsx"
 };
+
+const sourceMetadata = {
+  bcv: {
+    source: "Banco Central de Venezuela",
+    lastFetched: "11 jul 2026",
+    latestData: "13 jul 2026",
+    records: "2.538 observaciones USD/BCV"
+  },
+  worldBank: {
+    source: "Banco Mundial - World Development Indicators",
+    lastFetched: "8 jul 2026",
+    latestData: "2025/2026 según indicador",
+    records: "5.216 registros"
+  },
+  keyIndicators: {
+    source: "BCV / Banco Mundial",
+    lastFetched: "11 jul 2026",
+    latestData: "según serie",
+    records: "2.945 observaciones"
+  }
+};
+
+const formConfigUrl = "assets/forms/forms-config.json";
 
 const exchangeDownloads = {
   usdCsv: "assets/data/bcv/csv/ove_bcv_tipo_cambio_usd.csv",
@@ -211,8 +269,8 @@ const keyIndicatorSeries = [
     title: "Tipo de cambio BCV",
     area: "Economía",
     source: "BCV",
-    latest: "685,9427",
-    period: "08/07/2026",
+    latest: "721,3456",
+    period: "13/07/2026",
     unit: "Bs/USD",
     frequency: "Diaria",
     href: "assets/data/bcv/excel/ove_bcv_tipo_cambio_usd.xlsx"
@@ -255,15 +313,9 @@ const dashboardSeries = {
     title: "Tipo de cambio BCV",
     unit: "Bs/USD",
     source: "Banco Central de Venezuela",
-    points: [["2026-06-25", 621.5299], ["2026-06-26", 622.2135], ["2026-06-30", 623.0223], ["2026-07-01", 633.3644], ["2026-07-02", 639.7029], ["2026-07-03", 652.9726], ["2026-07-06", 667.05], ["2026-07-08", 685.9427]]
+    points: [["2026-06-30", 623.0223], ["2026-07-01", 633.3644], ["2026-07-02", 639.7029], ["2026-07-03", 652.9726], ["2026-07-06", 667.05], ["2026-07-07", 674.9305], ["2026-07-08", 685.9427], ["2026-07-09", 700.2249], ["2026-07-10", 709.6935], ["2026-07-13", 721.3456]]
   }
 };
-
-const reports = [
-  ["Ejemplo", "Plantilla de informe macroeconómico", "Sin publicar", "Ejemplo visual de cómo se verá un informe cuando el OVE emita su primera publicación.", "dark"],
-  ["Ejemplo", "Plantilla de nota metodológica", "Sin publicar", "Estructura demostrativa para futuras notas técnicas. No contiene datos reales.", "light"],
-  ["Ejemplo", "Plantilla de análisis sectorial", "Sin publicar", "Modelo de tarjeta para ordenar análisis sectoriales cuando existan fuentes validadas.", "dark"]
-];
 
 const publicationCovers = [
   "assets/publication-cover-1.png",
@@ -1055,8 +1107,8 @@ function mapWidget() {
 }
 
 function reportCard(report, index = 0) {
-  const [type, title, date, description] = report;
-  const href = index === 0 ? "#/informe-trimestral" : "#/publicaciones";
+  const [type, title, date, description, , customHref] = report;
+  const href = customHref || (index === 0 ? "#/informe-trimestral" : "#/publicaciones");
   const cover = publicationCovers[index % publicationCovers.length];
   return `<article class="report-card">
     <a href="${href}" class="report-cover">
@@ -1068,8 +1120,8 @@ function reportCard(report, index = 0) {
       <h3>${title}</h3>
       <p>${description}</p>
       <div class="report-actions">
-        <a href="${href}">Ver ejemplo ${arrow()}</a>
-        <a href="#/publicaciones">${icon("file")} Sin PDF real</a>
+        <a href="${href}">${customHref ? "Leer nota" : "Ver estado"} ${arrow()}</a>
+        <a href="#/publicaciones">${icon("file")} PDF pendiente</a>
       </div>
     </div>
   </article>`;
@@ -1094,14 +1146,14 @@ function dataBand() {
   const tools = [
     ["BCV - Tipo de cambio", "Serie diaria oficial, multimoneda SMC y Excel OVE actualizados por cron.", "Abrir cuadro", "database", "#/datos/tipo-cambio"],
     ["Banco Mundial - Venezuela", "79 indicadores WDI regenerados para Venezuela.", "Explorar fuente", "globe", "#/datos/banco-mundial"],
-    ["API OVE", "Maqueta técnica en preparación para integrar datos propios cuando sean publicados.", "Ver ejemplo", "chartbar", "#/datos"],
-    ["Mapas economicos", "Ejemplo de visualización futura para datos regionales validados.", "Ver ejemplo", "map", "#/datos"]
+    ["Indicadores clave", "Panel consolidado con series de referencia y archivos descargables.", "Abrir dashboard", "chartbar", "#/indicadores/dashboard"],
+    ["Descargas abiertas", "Paquetes CSV, JSON y Excel disponibles para análisis externo.", "Ver formatos", "download", "#/datos"]
   ];
   return `<section class="dark-band">
     <div class="container">
       <h2>Datos y herramientas</h2>
       <span class="accent-line"></span>
-      <p class="source-note">Fuentes reales disponibles: Banco Mundial - Venezuela y BCV. Las herramientas API/mapas se mantienen como estructura futura.</p>
+      <p class="source-note">Fuentes reales disponibles: Banco Mundial - Venezuela y BCV. La API pública se mantiene como hoja de ruta técnica, no como servicio activo.</p>
       <div class="tools-grid">
         ${tools.map(([title, text, link, ico, href]) => `
           <article class="tool-card">
@@ -1213,6 +1265,19 @@ function bcvSourceSection() {
   </section>`;
 }
 
+function dataMetaGrid(items) {
+  return `<div class="data-meta-grid">
+    ${items.map(([label, value, note, ico]) => `<article class="data-meta-item">
+      <span class="line-icon">${icon(ico)}</span>
+      <div>
+        <span class="tiny">${label}</span>
+        <strong>${value}</strong>
+        <p>${note}</p>
+      </div>
+    </article>`).join("")}
+  </div>`;
+}
+
 function newsletter() {
   return `<section class="newsletter">
     <div class="container newsletter-inner">
@@ -1223,9 +1288,10 @@ function newsletter() {
           <p>Recibe análisis, indicadores y publicaciones directamente en tu correo.</p>
         </div>
       </div>
-      <form class="subscribe-form js-form">
-        <input class="field" type="email" placeholder="tu@email.com" aria-label="Correo electrónico" required>
+      <form class="subscribe-form js-form" data-form-id="boletin">
+        <input class="field" name="email" type="email" placeholder="tu@email.com" aria-label="Correo electrónico" required>
         <button class="button button-yellow" type="submit">Suscribirme</button>
+        <p class="form-status tiny" data-form-status aria-live="polite"></p>
       </form>
     </div>
   </section>`;
@@ -1239,10 +1305,10 @@ function footer() {
         <img src="assets/ove-logo-white.png" alt="Observatorio Venezolano de Economía">
         <p>Promovemos la comprensión de la economía para impulsar el desarrollo sostenible de Venezuela.</p>
         <div class="social" aria-label="Redes sociales">
-          <a href="#/contacto">in</a>
-          <a href="#/contacto">X</a>
-          <a href="#/contacto">yt</a>
-          <a href="#/contacto">ig</a>
+          <a href="#/contacto" aria-label="Redes OVE pendientes de confirmación">in</a>
+          <a href="#/contacto" aria-label="Redes OVE pendientes de confirmación">X</a>
+          <a href="#/contacto" aria-label="Redes OVE pendientes de confirmación">yt</a>
+          <a href="#/contacto" aria-label="Redes OVE pendientes de confirmación">ig</a>
         </div>
       </div>
       <div class="footer-col">
@@ -1251,12 +1317,12 @@ function footer() {
         <a href="#/publicaciones">Informes</a>
         <a href="#/publicaciones">Publicaciones</a>
         <a href="#/datos">Datos y herramientas</a>
-        <a href="#/datos">Calendario económico</a>
+        <a href="#/indicadores/dashboard">Dashboard</a>
       </div>
       <div class="footer-col">
         <h3>Institucional</h3>
         <a href="#/nosotros">Quiénes somos</a>
-        <a href="#/nosotros">Metodología</a>
+        <a href="#/metodologia">Metodología</a>
         <a href="#/nosotros">Equipo</a>
         <a href="#/nosotros">Aliados</a>
         <a href="#/nosotros">Transparencia</a>
@@ -1264,21 +1330,21 @@ function footer() {
       <div class="footer-col">
         <h3>Recursos</h3>
         <a href="#/contacto">Preguntas frecuentes</a>
-        <a href="#/datos">Glosario</a>
-        <a href="#/publicaciones">Noticias</a>
-        <a href="#/datos">API OVE</a>
-        <a href="#/">Mapa del sitio</a>
+        <a href="#/datos/banco-mundial">Banco Mundial</a>
+        <a href="#/datos/bcv">Banco Central de Venezuela</a>
+        <a href="#/datos/tipo-cambio">Tipo de cambio</a>
+        <a href="#/licencia-datos">Licencia de datos</a>
       </div>
       <div class="footer-col">
         <h3>Contacto</h3>
-        <p>Av. Francisco de Miranda, Edif. Torre Europa, Piso 11, Caracas, Venezuela.</p>
-        <p>+58 412 123 4567</p>
-        <p>info@observatoriodeeconomia.org.ve</p>
+        <p>Canal institucional pendiente de confirmación.</p>
+        <p>Los formularios están preparados, pero no envían información hasta activar el canal definitivo.</p>
+        <a class="text-link" href="#/contacto">Ver formulario ${arrow()}</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© 2024 Observatorio Venezolano de Economía. Todos los derechos reservados.</span>
-      <span>Términos de uso &nbsp; | &nbsp; Política de privacidad</span>
+      <span>© 2026 Observatorio Venezolano de Economía. Todos los derechos reservados.</span>
+      <span><a href="#/legal">Aviso legal</a> &nbsp; | &nbsp; <a href="#/privacidad">Privacidad</a> &nbsp; | &nbsp; <a href="#/cookies">Cookies</a> &nbsp; | &nbsp; <a href="#/terminos">Términos</a></span>
     </div>
   </footer>`;
 }
@@ -1295,7 +1361,7 @@ function homePage() {
     ${bcvUsdHomePanel()}
     <section class="section-tight">
       <div class="container">
-        <p class="source-note">Indicadores actualizados con fuentes reales: Banco Mundial - Venezuela y Banco Central de Venezuela. Última actualización de datos: 8 de julio de 2026.</p>
+        <p class="source-note">Indicadores con fuentes reales: Banco Mundial - Venezuela y Banco Central de Venezuela. Última captura del paquete OVE: ${sourceMetadata.keyIndicators.lastFetched}; último dato USD/BCV: ${sourceMetadata.bcv.latestData}.</p>
         ${metricCards()}
       </div>
     </section>
@@ -1320,11 +1386,16 @@ function homePage() {
     <section class="section section-tight">
       <div class="container">
         <div class="section-title">
-          <h2>Informes en preparación</h2>
-          <a class="text-link" href="#/publicaciones">Ver plantillas de ejemplo ${arrow()}</a>
+          <h2>Publicaciones en preparación</h2>
+          <a class="text-link" href="#/publicaciones">Ver estado del repositorio ${arrow()}</a>
         </div>
-        ${exampleNotice("El OVE aún no ha emitido informes. Estas tarjetas son ejemplos de presentación.")}
-        <div class="reports-row">${reports.slice(0, 5).map(reportCard).join("")}</div>
+        <div class="cards-3">
+          ${[
+            ["Nota de lanzamiento", "Presentación institucional del Observatorio, alcance inicial, fuentes disponibles y próximos hitos.", "file", "#/nota-lanzamiento", "Leer nota"],
+            ["Metodología de datos", "Documento breve sobre fuentes, actualización, ausencia de transformaciones sustantivas, limitaciones y criterios de publicación.", "clipboard", "#/metodologia", "Ver metodología"],
+            ["Primer informe económico", "Publicación inaugural en preparación, con datos validados y anexos descargables.", "trend", "#/publicaciones", "Ver avance"]
+          ].map(([title, text, ico, href, label]) => `<article class="value-card"><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p>${text}</p><a class="text-link" href="${href}">${label} ${arrow()}</a></article>`).join("")}
+        </div>
       </div>
     </section>
     ${dataBand()}
@@ -1397,7 +1468,7 @@ function indicatorsPage() {
           ${categories.map((item, index) => `<a class="${index === 0 ? "is-selected" : ""}" href="#/indicadores">${icon(item[1])}<span>${item[0]}</span><span>›</span></a>`).join("")}
           <div class="filter-panel">
             <h3>Fuente real disponible</h3>
-            <p class="tiny">Catálogo actualizado al 8 de julio de 2026.</p>
+            <p class="tiny">Paquete OVE generado el ${sourceMetadata.keyIndicators.lastFetched}.</p>
             <a class="button button-small" href="#/datos/banco-mundial">Ir a Banco Mundial</a>
           </div>
         </aside>
@@ -1411,6 +1482,11 @@ function indicatorsPage() {
             ].map(([label, value, ico]) => `<div class="filter-box">${icon(ico)}<div><label>${label}</label><strong>${value}</strong></div></div>`).join("")}
             <a class="text-link" href="#/indicadores">Limpiar filtros</a>
           </div>
+          ${dataMetaGrid([
+            ["Paquete de indicadores", sourceMetadata.keyIndicators.lastFetched, `${sourceMetadata.keyIndicators.records}. Fuentes: ${sourceMetadata.keyIndicators.source}.`, "database"],
+            ["Último BCV", sourceMetadata.bcv.latestData, `${sourceMetadata.bcv.records}. Captura: ${sourceMetadata.bcv.lastFetched}.`, "calendar"],
+            ["Banco Mundial", sourceMetadata.worldBank.lastFetched, `${sourceMetadata.worldBank.records}. Último año disponible: ${sourceMetadata.worldBank.latestData}.`, "globe"]
+          ])}
           ${metricCards("inline-metrics")}
           <div class="dashboard-entry">
             <div>
@@ -1452,8 +1528,8 @@ function indicatorsPage() {
       <div class="container">
         <div class="cards-4">
           ${[
-            ["BCV actualizado", "Tipo de cambio oficial con fecha valor 8 de julio de 2026.", "calendar"],
-            ["Banco Mundial actualizado", "79 indicadores y 5.216 registros regenerados desde WDI.", "pin"],
+            ["BCV actualizado", `Tipo de cambio oficial con fecha valor ${sourceMetadata.bcv.latestData}.`, "calendar"],
+            ["Banco Mundial actualizado", `${sourceMetadata.worldBank.records} regenerados desde WDI.`, "pin"],
             ["Fuente real activa", "Banco Mundial - Venezuela y BCV quedan disponibles como bases verificables.", "shield"],
             ["Datos abiertos", "Descargas en CSV, JSON y Excel con metadatos claros.", "lock"]
           ].map(([title, text, ico]) => `<article class="value-card"><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}
@@ -1477,7 +1553,7 @@ function indicatorTable() {
     ["PIB per cápita", "2025", "3.494,8", "US$", "Último WDI", "Banco Mundial"],
     ["INPC nacional", "05/2026", "6,3", "% mensual", "Último BCV", "BCV"],
     ["Desempleo total", "2025", "5,31", "% fuerza laboral", "Último WDI", "Banco Mundial"],
-    ["Tipo de cambio BCV", '<span data-bcv-table-date>08/07/2026</span>', '<span data-bcv-table-value>685,9427</span>', "Bs/USD", "Último BCV", "BCV"]
+    ["Tipo de cambio BCV", '<span data-bcv-table-date>13/07/2026</span>', '<span data-bcv-table-value>721,3456</span>', "Bs/USD", "Último BCV", "BCV"]
   ];
   return `<table>
     <thead><tr><th>Indicador</th><th>Periodo</th><th>Valor</th><th>Unidad</th><th>Variacion</th><th>Fuente</th></tr></thead>
@@ -1534,6 +1610,11 @@ function interactiveDashboardPage() {
     })}
     <section class="section">
       <div class="container">
+        ${dataMetaGrid([
+          ["Dataset", "Indicadores clave", `${sourceMetadata.keyIndicators.records}. Generado: ${sourceMetadata.keyIndicators.lastFetched}.`, "database"],
+          ["Fuentes", sourceMetadata.keyIndicators.source, "BCV para series oficiales nacionales; WDI para indicadores multilaterales.", "shield"],
+          ["Descarga", "CSV / JSON / Excel", "El panel usa los mismos archivos descargables publicados en el repositorio.", "download"]
+        ])}
         <article class="native-dashboard" data-native-dashboard>
           <div class="native-dashboard-head">
             <div>
@@ -1708,6 +1789,11 @@ function exchangeRatePage() {
     })}
     <section class="section">
       <div class="container">
+        ${dataMetaGrid([
+          ["Fuente", sourceMetadata.bcv.source, "Tipo de cambio de referencia SMC publicado por el BCV.", "bank"],
+          ["Último USD/BCV", sourceMetadata.bcv.latestData, `${sourceMetadata.bcv.records}. Captura OVE: ${sourceMetadata.bcv.lastFetched}.`, "calendar"],
+          ["Descargas", "USD y multimoneda", "CSV, JSON y Excel disponibles para análisis y verificación.", "download"]
+        ])}
         <article class="key-dashboard panel exchange-dashboard" data-exchange-dashboard>
           <div class="key-dashboard-head">
             <div>
@@ -1746,7 +1832,7 @@ function exchangeRatePage() {
 
         <div class="exchange-download-grid">
           ${[
-            ["Serie diaria USD", "Histórico diario Bs/USD normalizado desde el Excel oficial BCV y la publicación diaria SMC.", exchangeDownloads.usdCsv, exchangeDownloads.usdJson, exchangeDownloads.usdExcel],
+            ["Serie diaria USD", "Histórico diario Bs/USD organizado desde el Excel oficial BCV y la publicación diaria SMC.", exchangeDownloads.usdCsv, exchangeDownloads.usdJson, exchangeDownloads.usdExcel],
             ["Referencia SMC multimoneda", "Base diaria con las monedas publicadas por BCV: USD, EUR, CNY, TRY y RUB.", exchangeDownloads.smcCsv, exchangeDownloads.smcJson, exchangeDownloads.smcExcel],
             ["Fuente oficial BCV", "Página de tipo de cambio de referencia SMC usada por el cron diario del Observatorio.", exchangeDownloads.source, exchangeDownloads.source, exchangeDownloads.source]
           ].map(([title, text, csv, json, excel]) => `<article class="world-bank-card">
@@ -1790,12 +1876,12 @@ function publicationsPage() {
       <div class="container hero-grid">
         <div class="hero-copy">
           <div class="breadcrumb"><span>Inicio</span><span>Publicaciones</span><span>Informes y publicaciones</span></div>
-          <h1>Informes y publicaciones en construcción</h1>
+          <h1>Publicaciones en preparación</h1>
           <span class="accent-line"></span>
-          <p class="lead">El OVE aún no ha emitido informes. Esta página conserva ejemplos claramente marcados para construir el repositorio antes de publicar documentos reales.</p>
-          <form class="search-line js-form">
+          <p class="lead">El repositorio público del OVE se abrirá con documentos validados, metodología clara y descargas asociadas. Esta sección muestra el estado de preparación antes del lanzamiento.</p>
+          <form class="search-line">
             <input class="field" type="search" placeholder="Buscar publicaciones por título, tema o palabra clave..." aria-label="Buscar publicaciones">
-            <button class="icon-button" type="submit">${icon("search")}</button>
+            <button class="icon-button" type="button">${icon("search")}</button>
           </form>
           <div class="stat-row">
             <div class="stat-item">${icon("file")}<div><strong>0</strong><span class="tiny">Informes OVE publicados</span></div></div>
@@ -1803,13 +1889,13 @@ function publicationsPage() {
           </div>
         </div>
         <div class="featured-panel">
-          <img src="assets/publication-cover-1.png" alt="Portada Panorama Económico de Venezuela">
+          <img src="assets/report-cover.png" alt="Preparación de publicaciones OVE">
           <div class="featured-content">
-            <span class="pill">Ejemplo visual</span>
-            <h2>Plantilla de informe OVE</h2>
-            <p>Sin publicar</p>
-            <p>Ejemplo de portada y estructura. No corresponde a un informe emitido por el Observatorio.</p>
-            <a class="button button-ghost" href="#/informe-trimestral">Ver plantilla ${arrow()}</a>
+            <span class="pill">Próximo hito</span>
+            <h2>Primera publicación OVE</h2>
+            <p>Versión inicial</p>
+            <p>La nota de lanzamiento presenta alcance, fuentes disponibles, metodología, datos abiertos y próximos hitos antes del lanzamiento público.</p>
+            <a class="button button-ghost" href="#/nota-lanzamiento">Leer nota ${arrow()}</a>
           </div>
         </div>
       </div>
@@ -1817,45 +1903,154 @@ function publicationsPage() {
     <section class="section">
       <div class="container">
         <div class="tabs">
-          ${["Todos", "Informes", "Análisis", "Coyuntura", "Indicadores", "Notas metodológicas"].map((tab, i) => `<a class="${i === 0 ? "is-selected" : ""}" href="#/publicaciones">${tab}</a>`).join("")}
+          ${["Lanzamiento", "Metodología", "Informes", "Datos", "Notas técnicas"].map((tab, i) => `<a class="${i === 0 ? "is-selected" : ""}" href="#/publicaciones">${tab}</a>`).join("")}
         </div>
-        ${exampleNotice("No hay publicaciones reales del OVE todavía. Las tarjetas siguientes son ejemplos para dejar lista la arquitectura del repositorio.")}
         <div class="filter-row pub-controls">
-          <p class="tiny">Mostrando ejemplos de plantilla. Publicaciones reales: 0</p>
+          <p class="tiny">Primera nota institucional disponible en versión de pre-lanzamiento. Informes económicos: pendientes de aprobación.</p>
           <select aria-label="Año"><option>Año: Todos</option></select>
           <select aria-label="Tema"><option>Tema: Todos</option></select>
           <select aria-label="Formato"><option>Formato: Todos</option></select>
           <select aria-label="Orden"><option>Más recientes</option></select>
         </div>
         <div class="pub-layout">
-          <div class="publications-grid">${reports.map(reportCard).join("")}</div>
+          <div class="publications-grid">
+            ${[
+              ["Pre-lanzamiento", "Nota de lanzamiento del OVE", "Versión inicial", "Presenta misión, alcance inicial, fuentes disponibles, metodología y hoja de ruta.", "dark", "#/nota-lanzamiento"],
+              ["En preparación", "Metodología de datos abiertos", "Pendiente de aprobación", "Debe documentar fuentes, transformaciones, frecuencia, limitaciones y licencias.", "light"],
+              ["En preparación", "Primer informe económico", "Pendiente de contenido", "Debe publicarse solo cuando existan conclusiones, anexos y revisión técnica final.", "dark"]
+            ].map(reportCard).join("")}
+          </div>
           <aside class="filter-sidebar">
             <div class="filter-panel">
-              <h3>Refina tu búsqueda</h3>
-              <strong>Año de publicación</strong>
-              <a href="#/publicaciones">Sin informes publicados (0)</a>
-              <a href="#/publicaciones">Ejemplos de plantilla (3)</a>
+              <h3>Checklist editorial</h3>
+              <strong>Antes de publicar</strong>
+              <a href="#/publicaciones">Documento aprobado</a>
+              <a href="#/publicaciones">Fuentes verificadas</a>
+              <a href="#/publicaciones">Anexos descargables</a>
               <hr>
-              <strong>Tema</strong>
-              <a href="#/publicaciones">Macroeconomía (ejemplo)</a>
-              <a href="#/publicaciones">Metodología (ejemplo)</a>
-              <a href="#/publicaciones">Sectorial (ejemplo)</a>
+              <strong>Formatos previstos</strong>
+              <a href="#/publicaciones">PDF</a>
+              <a href="#/publicaciones">Excel / CSV</a>
+              <a href="#/publicaciones">Nota metodológica</a>
               <hr>
-              <strong>Formato</strong>
-              <a href="#/publicaciones">PDF (0 reales)</a>
-              <a href="#/publicaciones">Excel (0 reales)</a>
-              <a href="#/publicaciones">Presentación (0 reales)</a>
+              <strong>Estado</strong>
+              <a href="#/publicaciones">En preparación</a>
+              <a href="#/publicaciones">No publicado todavía</a>
             </div>
             <div class="filter-panel">
               <h3>Datos reales disponibles</h3>
-              <p>El primer insumo real del Observatorio es el catálogo Banco Mundial - Venezuela.</p>
+              <p>Ya existen bases descargables de Banco Mundial y BCV. Las publicaciones deben apoyarse en esos datos validados.</p>
               <a class="text-link" href="#/datos/banco-mundial">Ir a Banco Mundial ${arrow()}</a>
             </div>
           </aside>
         </div>
         <div style="text-align:center;margin-top:30px">
-          <a class="button" href="#/publicaciones">Cargar más publicaciones ${icon("download")}</a>
+          <a class="button" href="#/datos">Explorar datos disponibles ${icon("download")}</a>
         </div>
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
+}
+
+function launchNotePage() {
+  return `<div class="page">
+    <section class="detail-hero">
+      <div class="container">
+        <div class="breadcrumb"><span>Inicio</span><span>Publicaciones</span><span>Nota de lanzamiento</span></div>
+        <div class="detail-grid">
+          <div>
+            <div class="cover-img"><img src="assets/report-cover.png" alt="Nota de lanzamiento OVE"></div>
+            <div class="button-row" style="margin-top:24px">
+              <a class="button button-primary" href="#/publicaciones">Volver a publicaciones ${arrow()}</a>
+            </div>
+          </div>
+          <article>
+            <span class="eyebrow">Pre-lanzamiento</span>
+            <h1>Nota de lanzamiento del OVE</h1>
+            <p class="lead">Primera pieza institucional del Observatorio Venezolano de Economía</p>
+            <div class="detail-meta">
+              <span>${icon("calendar")} Fecha de publicación por definir</span>
+              <span>${icon("users")} Observatorio Venezolano de Economía</span>
+              <span>${icon("file")} Versión inicial</span>
+            </div>
+            <h3 style="margin-top:28px">Resumen</h3>
+            <p>El Observatorio Venezolano de Economía nace como una plataforma para organizar, documentar y difundir información económica verificable sobre Venezuela, con datos procedentes de organismos multilaterales y fuentes oficiales venezolanas.</p>
+            <p>Esta nota presenta el alcance inicial del sitio, las fuentes ya integradas, los criterios metodológicos básicos y los próximos pasos antes del lanzamiento público definitivo.</p>
+            <div class="button-row" style="margin-top:24px">
+              <a class="button" href="#/datos">Explorar datos ${icon("download")}</a>
+              <a class="button button-ghost" href="#/metodologia">Ver metodología</a>
+            </div>
+          </article>
+          <aside class="key-data">
+            <h3>Alcance inicial</h3>
+            ${[
+              ["Fuentes", "BCV / Banco Mundial"],
+              ["Datos", "CSV / JSON / Excel"],
+              ["Metodología", "Publicada"],
+              ["Legal", "Provisional"]
+            ].map(([label, value]) => `<div class="key-item"><span class="tiny">${label}</span><strong>${value}</strong><span class="trend neutral">Lanzamiento</span></div>`).join("")}
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container content-sidebar">
+        <article>
+          <h2>Qué es el OVE</h2>
+          <span class="accent-line"></span>
+          <p>El OVE es un observatorio económico orientado a facilitar el acceso a datos, indicadores y recursos de análisis sobre Venezuela. Su primera fase prioriza trazabilidad, fuentes verificables, descarga abierta y documentación metodológica.</p>
+          <p>El proyecto no sustituye a las fuentes originales. Su función es ordenar, contextualizar y hacer más accesible la información para usuarios técnicos, instituciones, investigadores, periodistas y público interesado.</p>
+          <div class="cards-4 mini-grid-3" style="margin-top:22px">
+            ${[
+              ["Datos verificables", "Cada valor visible debe conservar fuente, periodo, unidad y referencia.", "shield"],
+              ["Acceso abierto", "Los paquetes iniciales están disponibles en CSV, JSON y Excel.", "download"],
+              ["Metodología pública", "La web explica fuentes, tratamiento, limitaciones, citación y actualización pendiente.", "clipboard"]
+            ].map(([title, text, ico]) => `<div class="support-item">${icon(ico)}<div><h3>${title}</h3><p class="tiny">${text}</p></div></div>`).join("")}
+          </div>
+        </article>
+        <aside class="filter-panel">
+          <h3>Lecturas relacionadas</h3>
+          <a href="#/metodologia">Metodología, fuentes y citación</a>
+          <a href="#/datos">Banco de datos</a>
+          <a href="#/indicadores/dashboard">Dashboard OVE</a>
+          <a href="#/licencia-datos">Licencia de datos</a>
+        </aside>
+      </div>
+    </section>
+    <section class="section-tight">
+      <div class="container dashboard-grid">
+        <article class="panel span-6">
+          <h2>Fuentes disponibles</h2>
+          <span class="accent-line"></span>
+          <p>La fase inicial integra datos del Banco Central de Venezuela y Banco Mundial - World Development Indicators. Podrán incorporarse otras fuentes oficiales y multilaterales cuando exista trazabilidad suficiente.</p>
+          ${dataMetaGrid([
+            ["BCV", sourceMetadata.bcv.latestData, `${sourceMetadata.bcv.records}.`, "bank"],
+            ["Banco Mundial", sourceMetadata.worldBank.lastFetched, `${sourceMetadata.worldBank.records}.`, "globe"],
+            ["Indicadores clave", sourceMetadata.keyIndicators.lastFetched, `${sourceMetadata.keyIndicators.records}.`, "database"]
+          ])}
+        </article>
+        <article class="panel span-6">
+          <h2>Qué falta cerrar</h2>
+          <span class="accent-line"></span>
+          <div class="method-list">
+            ${[
+              ["Calendario de actualización", "Definir frecuencia pública por fuente y protocolo de revisión."],
+              ["Revisión legal", "Validar aviso legal, privacidad, cookies, términos y licencia de datos."],
+              ["Contacto oficial", "Activar canal institucional y formularios cuando exista correo, endpoint o CRM."],
+              ["Primer informe económico", "Preparar una publicación analítica con conclusiones, anexos y revisión técnica."]
+            ].map(([title, text]) => `<div class="support-item">${icon("check")}<div><h3>${title}</h3><p class="tiny">${text}</p></div></div>`).join("")}
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <article class="panel">
+          <h2>Cita sugerida de esta nota</h2>
+          <pre class="code-box">Observatorio Venezolano de Economía (OVE). Nota de lanzamiento del OVE.
+Versión inicial de pre-lanzamiento. Disponible en: [URL de la nota].</pre>
+        </article>
       </div>
     </section>
     ${footer()}
@@ -1866,33 +2061,38 @@ function reportDetailPage() {
   return `<div class="page">
     <section class="detail-hero">
       <div class="container">
-        <div class="breadcrumb"><span>Inicio</span><span>Publicaciones</span><span>Ejemplo de informe</span></div>
+        <div class="breadcrumb"><span>Inicio</span><span>Publicaciones</span><span>En preparación</span></div>
         <div class="detail-grid">
           <div>
-            <div class="cover-img"><img src="assets/publication-cover-1.png" alt="Portada del informe economico trimestral"></div>
+            <div class="cover-img"><img src="assets/report-cover.png" alt="Publicación OVE en preparación"></div>
             <div class="button-row" style="margin-top:24px">
               <a class="button button-primary" href="#/publicaciones">Volver a publicaciones ${arrow()}</a>
             </div>
           </div>
           <article>
-            <span class="eyebrow">Ejemplo visual</span>
-            <h1>Plantilla de informe económico</h1>
-            <p class="lead">Estructura de ejemplo para futuros informes del OVE</p>
+            <span class="eyebrow">En preparación</span>
+            <h1>Primera publicación OVE</h1>
+            <p class="lead">Documento pendiente de aprobación editorial y validación metodológica</p>
             <div class="detail-meta">
-              <span>${icon("calendar")} Sin publicar</span>
+              <span>${icon("calendar")} Fecha por definir</span>
               <span>${icon("users")} Observatorio Venezolano de Economia</span>
-              <span>${icon("file")} Maqueta</span>
+              <span>${icon("file")} En preparación</span>
             </div>
             <h3 style="margin-top:28px">Resumen ejecutivo</h3>
-            <p>Este contenido es una plantilla. El Observatorio aún no ha emitido informes, por lo que no se muestran conclusiones, cifras ni hallazgos reales.</p>
+            <p>El Observatorio está preparando sus primeras publicaciones públicas. Antes de emitir conclusiones, cada documento deberá contar con fuentes verificadas, metodología, revisión técnica y anexos descargables.</p>
             <div class="button-row" style="margin-top:24px">
               <a class="button" href="#/datos/banco-mundial">Ver datos reales Banco Mundial ${icon("download")}</a>
-              <a class="button button-ghost" href="#/informe-trimestral">Ver plantilla</a>
+              <a class="button button-ghost" href="#/datos/bcv">Ver datos BCV</a>
             </div>
           </article>
           <aside class="key-data">
-            <h3>Datos clave</h3>
-            ${metricData.slice(0, 4).map(metric => `<div class="key-item"><span class="tiny">${metric.title} ${metric.subtitle}</span><strong>${metric.value}</strong><span class="trend neutral">No publicado</span></div>`).join("")}
+            <h3>Requisitos mínimos</h3>
+            ${[
+              ["Fuentes", "Verificadas"],
+              ["Metodología", "Documentada"],
+              ["Anexos", "Descargables"],
+              ["Estado", "Pendiente"]
+            ].map(([label, value]) => `<div class="key-item"><span class="tiny">${label}</span><strong>${value}</strong><span class="trend neutral">Pre-lanzamiento</span></div>`).join("")}
           </aside>
         </div>
       </div>
@@ -1901,51 +2101,30 @@ function reportDetailPage() {
       <div class="container">
         <div style="display:flex;justify-content:space-between;gap:18px;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0">
           <div class="social"><a href="#/contacto">in</a><a href="#/contacto">X</a><a href="#/contacto">f</a></div>
-          <a class="text-link" href="#/informe-trimestral">Guardar para despues ${icon("file")}</a>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <h2>Hallazgos principales</h2>
-        <span class="accent-line"></span>
-        ${exampleNotice("Bloque de ejemplo. Los hallazgos reales aparecerán aquí cuando exista un informe emitido por el OVE.")}
-        <div class="findings-grid">
-          ${[
-            ["Hallazgo ejemplo A", "Texto reservado para un hallazgo futuro con fuente validada.", "trend"],
-            ["Hallazgo ejemplo B", "Texto reservado para análisis de precios cuando se publiquen datos.", "coin"],
-            ["Hallazgo ejemplo C", "Texto reservado para sector externo o monetario.", "dollar"],
-            ["Hallazgo ejemplo D", "Texto reservado para indicadores financieros o fiscales.", "bank"]
-          ].map(([title, text, ico]) => `<article class="finding-card"><span class="line-icon">${icon(ico)}</span><div><h3>${title}</h3><p class="tiny">${text}</p></div></article>`).join("")}
+          <a class="text-link" href="#/publicaciones">Ver repositorio ${icon("file")}</a>
         </div>
       </div>
     </section>
     <section class="section">
       <div class="container content-sidebar">
         <div>
-          <h2>Contenido del informe</h2>
+          <h2>Contenido requerido antes de publicar</h2>
           <span class="accent-line"></span>
-          <div class="tabs" style="margin-bottom:18px"><a class="is-selected" href="#/informe-trimestral">Vista previa</a><a href="#/informe-trimestral">Tabla de contenidos</a></div>
-          <div class="home-indicators three-charts">
-            ${chartCard("Serie ejemplo A", "(sin datos reales)", "blue")}
-            ${chartCard("Serie ejemplo B", "(sin datos reales)", "yellow")}
-            ${chartCard("Serie ejemplo C", "(sin datos reales)", "red")}
-          </div>
           <article class="panel" style="margin-top:18px">
-            <h3>Sobre este informe</h3>
+            <h3>Checklist editorial</h3>
             <div class="cards-4 mini-grid-3">
               ${[
-                ["Autores", "Equipo de investigacion del OVE", "file"],
-                ["Fuente de datos", "Pendiente de validación para informes propios.", "database"],
-                ["Fecha de publicacion", "Sin publicar", "calendar"]
+                ["Autores", "Responsables definidos y aprobados.", "file"],
+                ["Fuentes de datos", "Datos BCV/Banco Mundial validados y citados.", "database"],
+                ["Fecha de publicacion", "Pendiente de calendario de lanzamiento.", "calendar"]
               ].map(([title, text, ico]) => `<div class="support-item">${icon(ico)}<div><h3>${title}</h3><p class="tiny">${text}</p></div></div>`).join("")}
             </div>
           </article>
         </div>
         <aside>
-          <h2>Publicaciones relacionadas</h2>
+          <h2>Próximos documentos</h2>
           <div class="related-list">
-            ${["Plantilla macroeconómica", "Plantilla metodológica", "Plantilla sectorial"].map((title, index) => `<a class="related-item" href="#/publicaciones"><img src="${publicationCovers[(index + 1) % publicationCovers.length]}" alt="Portada relacionada"><div><h3>${title}</h3><p class="tiny">Ejemplo</p></div></a>`).join("")}
+            ${["Nota de lanzamiento", "Metodología de datos", "Primer informe económico"].map((title, index) => `<a class="related-item" href="#/publicaciones"><img src="${publicationCovers[(index + 1) % publicationCovers.length]}" alt="Documento en preparación"><div><h3>${title}</h3><p class="tiny">En preparación</p></div></a>`).join("")}
           </div>
           <a class="text-link" style="margin-top:16px" href="#/publicaciones">Ver todas las publicaciones ${arrow()}</a>
         </aside>
@@ -1953,11 +2132,11 @@ function reportDetailPage() {
     </section>
     <section class="section-tight">
       <div class="container dashboard-grid">
-        <article class="panel span-5">${infoPanel("Metodologia", "Espacio reservado para explicar enfoques, definiciones y fuentes cuando exista un informe real.", "clipboard", "Ver estructura")}</article>
+        <article class="panel span-5">${infoPanel("Metodologia", "La metodología debe quedar publicada antes de emitir conclusiones o recomendaciones.", "clipboard", "Ver estructura")}</article>
         <article class="panel span-7">
-          <h3>Como citar este informe</h3>
-          <p>Esta plantilla no debe citarse como informe. Aún no hay una publicación oficial del OVE asociada a esta página.</p>
-          <button class="button button-small js-copy" type="button">Copiar cita ${icon("copy")}</button>
+          <h3>Cómo citar</h3>
+          <p>La cita oficial se habilitará cuando exista una publicación aprobada, con fecha, autores, título y enlace permanente.</p>
+          <button class="button button-small js-copy" type="button">Cita pendiente ${icon("copy")}</button>
         </article>
       </div>
     </section>
@@ -1974,6 +2153,15 @@ function dataPage() {
       breadcrumb: ["Inicio", "Datos", "Datos abiertos y API"],
       actions: `<a class="button button-primary" href="#/indicadores/dashboard">Abrir dashboard ${arrow()}</a><a class="button" href="#/datos/tipo-cambio">Tipo de cambio BCV ${arrow()}</a><a class="button" href="#/datos/bcv">Ver BCV ${icon("database")}</a>`
     })}
+    <section class="section-tight">
+      <div class="container">
+        ${dataMetaGrid([
+          ["Fuentes integradas", "BCV / Banco Mundial", "Organismos oficiales y multilaterales con archivos descargables.", "shield"],
+          ["Última captura OVE", sourceMetadata.keyIndicators.lastFetched, `${sourceMetadata.keyIndicators.records} en el paquete de indicadores clave.`, "calendar"],
+          ["Calendario", "En desarrollo", "La frecuencia formal por fuente se definirá en el protocolo metodológico.", "clipboard"]
+        ])}
+      </div>
+    </section>
     ${topicsSection()}
     ${bcvSourceSection()}
     ${worldBankSourceSection()}
@@ -1987,37 +2175,37 @@ function dataPage() {
     </section>
     <section id="api" class="section-tight">
       <div class="container">
-        <div class="section-title"><h2>API futura</h2><a class="text-link" href="#/datos/banco-mundial">Ver fuente real ${arrow()}</a></div>
+        <div class="section-title"><h2>Acceso técnico a los datos</h2><a class="text-link" href="#/datos/banco-mundial">Ver fuente real ${arrow()}</a></div>
         <article class="panel api-panel">
           <div>
-            <h3>${icon("code")} Acceso programatico</h3>
-            <p>Documentación preliminar. La API OVE se activará sobre los datasets reales ya publicados cuando se habilite el servicio.</p>
-            <p class="trend neutral">Ejemplo: Autenticacion con API Key</p>
-            <p class="trend neutral">Ejemplo: Respuestas en JSON</p>
-            <p class="trend neutral">Ejemplo: Paginacion y filtros avanzados</p>
+            <h3>${icon("code")} Descargas reutilizables</h3>
+            <p>Antes de activar una API pública, el OVE ofrece paquetes estáticos en CSV, JSON y Excel para que los datos puedan revisarse, citarse y reutilizarse con trazabilidad.</p>
+            <p class="trend neutral">Disponible: archivos CSV</p>
+            <p class="trend neutral">Disponible: archivos JSON</p>
+            <p class="trend neutral">Disponible: libros Excel OVE</p>
             <a class="button" href="#/datos/banco-mundial">Explorar Banco Mundial</a>
           </div>
           <div>
-            <h3>Endpoint de ejemplo</h3>
-            <p><span class="method">GET</span> /api/v1/ejemplo/indicadores</p>
+            <h3>API pública</h3>
+            <p><span class="method">Estado</span> Pendiente de activación</p>
             <pre class="code-box">{
   "data": {
-    "estado": "ejemplo",
-    "mensaje": "sin datos OVE publicados",
-    "valor": null
+    "estado": "pendiente",
+    "mensaje": "descargas estaticas disponibles",
+    "formatos": ["csv", "json", "xlsx"]
   },
-  "meta": { "total": 1, "pagina": 1 }
+  "meta": { "api_publica": false }
 }</pre>
           </div>
           <div>
-            <h3>Parametros comunes</h3>
+            <h3>Criterios antes de activar API</h3>
             <div style="display:grid;gap:10px">
-              <input class="field" value="fecha_desde   YYYY-MM-DD" readonly>
-              <input class="field" value="fecha_hasta   YYYY-MM-DD" readonly>
-              <input class="field" value="frecuencia   mensual" readonly>
-              <input class="field" value="formato   json" readonly>
+              <input class="field" value="Gobernanza de datos documentada" readonly>
+              <input class="field" value="Versionado y metadatos publicos" readonly>
+              <input class="field" value="Limites de uso definidos" readonly>
+              <input class="field" value="Monitorizacion tecnica activa" readonly>
             </div>
-            <a class="button" style="margin-top:18px" href="#/datos">Probar en Swagger</a>
+            <a class="button" style="margin-top:18px" href="#/datos">Ver descargas</a>
           </div>
         </article>
       </div>
@@ -2035,7 +2223,7 @@ function dataPage() {
           </div>
         </div>
         <article class="panel span-4" style="align-self:end">
-          <div class="support-item">${icon("monitor")}<div><h3>¿Eres desarrollador?</h3><p>Integra nuestros datos en tus aplicaciones, dashboards o investigaciones.</p><a class="button button-primary" href="#/datos">Explorar API ${arrow()}</a></div></div>
+          <div class="support-item">${icon("monitor")}<div><h3>¿Eres desarrollador?</h3><p>Usa los archivos CSV, JSON y Excel disponibles para aplicaciones, dashboards o investigaciones.</p><a class="button button-primary" href="#/datos/banco-mundial">Ver datos ${arrow()}</a></div></div>
         </article>
         <article class="panel span-5">
           <h2>Datasets OVE recientes</h2>
@@ -2052,9 +2240,9 @@ function dataPage() {
         <div class="section-title"><h2>Herramientas para explorar datos</h2></div>
         <div class="format-grid">
           ${[
-            ["Calculadoras interactivas", "Ejemplo de herramienta futura. Aún no calcula con datos oficiales del OVE.", "calculator"],
-            ["Mapas economicos", "Ejemplo de visualización futura para fuentes regionales validadas.", "map"],
-            ["API Playground", "Maqueta para probar endpoints cuando existan datos propios.", "code"]
+            ["Dashboard de indicadores", "Panel operativo con series clave y visualizaciones listas para consulta.", "calculator"],
+            ["Catalogo Banco Mundial", "Exploración por categorías temáticas con series descargables para Venezuela.", "globe"],
+            ["Cuadro BCV", "Consulta de tipo de cambio y series oficiales organizadas para análisis.", "database"]
           ].map(([title, text, ico]) => `<article class="value-card"><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p>${text}</p><a class="text-link" href="#/datos">Explorar ${arrow()}</a></article>`).join("")}
         </div>
       </div>
@@ -2075,11 +2263,16 @@ function bcvPage() {
     })}
     <section class="section">
       <div class="container">
+        ${dataMetaGrid([
+          ["Fuente", sourceMetadata.bcv.source, "Fuente oficial venezolana. El OVE conserva la referencia original.", "bank"],
+          ["Último dato USD/BCV", sourceMetadata.bcv.latestData, `${sourceMetadata.bcv.records}. Captura OVE: ${sourceMetadata.bcv.lastFetched}.`, "calendar"],
+          ["Formatos", "JSON / CSV / Excel", "Archivos de consulta sin cambio sustantivo del valor publicado.", "download"]
+        ])}
         <div class="world-bank-summary">
           <div>
             <span class="eyebrow">Ingesta automatizada</span>
             <h2>Tipo de cambio diario Bs/USD</h2>
-            <p>El script scripts/bcv_ingest.py descarga el Excel histórico oficial 2_1_1_tdc.xlsx, normaliza compra y venta diaria del dólar, consulta la página diaria del BCV y actualiza la serie histórica dentro de assets/data/bcv/.</p>
+            <p>El proceso interno consulta el Excel histórico oficial 2_1_1_tdc.xlsx y la página diaria del BCV, organiza la serie para descarga y conserva la fuente original de cada dato.</p>
           </div>
           <div class="source-stats">
             <span><strong>Diaria</strong> frecuencia</span>
@@ -2092,7 +2285,7 @@ function bcvPage() {
           <div>
             <span class="eyebrow">Último dato</span>
             <h2>USD/BCV</h2>
-            <p>Este bloque lee directamente el JSON normalizado publicado en el repositorio.</p>
+            <p>Este bloque lee directamente el JSON organizado publicado en el repositorio.</p>
           </div>
           <div class="bcv-live-value">
             <span class="source-tag">BCV oficial</span>
@@ -2103,9 +2296,9 @@ function bcvPage() {
         </article>
         <div class="world-bank-catalog-grid">
           ${[
-            ["Serie histórica USD JSON", "Serie diaria normalizada para consumo web y automatizaciones.", exchangeDownloads.usdJson, "JSON", "#/datos/tipo-cambio"],
+            ["Serie histórica USD JSON", "Serie diaria organizada para consumo web y automatizaciones.", exchangeDownloads.usdJson, "JSON", "#/datos/tipo-cambio"],
             ["Excel formato OVE", "Archivo tabular con compra, venta, fecha, unidad y fuente con cabecera corporativa.", exchangeDownloads.usdExcel, "Excel", "#/datos/tipo-cambio"],
-            ["PIB real anual", "Crecimiento anual del PIB real total normalizado desde workbook oficial BCV.", "assets/data/bcv/json/ove_bcv_pib_real_anual.json", "JSON"],
+            ["PIB real anual", "Crecimiento anual del PIB real total organizado desde workbook oficial BCV.", "assets/data/bcv/json/ove_bcv_pib_real_anual.json", "JSON"],
             ["INPC nacional mensual", "Índice nacional de precios al consumidor y variación mensual desde workbook oficial BCV.", "assets/data/bcv/json/ove_bcv_inpc_nacional_mensual.json", "JSON"],
             ["Referencia SMC multimoneda", "Dato diario publicado por el BCV para USD, EUR, CNY, TRY y RUB.", exchangeDownloads.smcJson, "JSON", "#/datos/tipo-cambio"],
             ["Catálogo BCV", "Inventario de datasets BCV activos y fuentes catalogadas para próximas ingestas.", "assets/data/bcv/catalog/bcv-catalog.json", "JSON"]
@@ -2132,11 +2325,11 @@ function bcvPage() {
       <div class="container dashboard-grid">
         <article class="panel span-6">
           <h2>Automatización</h2>
-          <p>El workflow Update OVE data queda programado en GitHub Actions: diario para tipo de cambio, mensual para BCV PIB/INPC, semanal para Banco Mundial y regeneración automática del paquete de indicadores clave.</p>
+          <p>Existe automatización técnica para actualizar archivos, pero el calendario público de actualización todavía debe aprobarse y documentarse en la metodología.</p>
         </article>
         <article class="panel span-6">
           <h2>Series BCV activas</h2>
-          <p>Tipo de cambio, PIB real anual e INPC nacional mensual quedan normalizados desde fuentes oficiales BCV, con catálogos para ampliar nuevas hojas sin mezclar estructuras.</p>
+          <p>Tipo de cambio, PIB real anual e INPC nacional mensual quedan organizados desde fuentes oficiales BCV, con catálogos para ampliar nuevas hojas sin mezclar estructuras.</p>
         </article>
       </div>
     </section>
@@ -2152,6 +2345,11 @@ function keyIndicatorDownloadSection() {
         <a class="text-link" href="#/indicadores">Abrir dashboard ${arrow()}</a>
       </div>
       <p class="source-note">Paquete curado con los indicadores usados en la portada y en el dashboard. Mantiene fuente, periodo, unidad, área temática y URL oficial para verificación.</p>
+      ${dataMetaGrid([
+        ["Generado", sourceMetadata.keyIndicators.lastFetched, `${sourceMetadata.keyIndicators.records} con fuente, periodo, unidad y URL de verificación.`, "calendar"],
+        ["Fuentes", sourceMetadata.keyIndicators.source, "No se modifican los valores originales publicados por las fuentes.", "shield"],
+        ["Citación", "Formato OVE definido", "La página de metodología incluye la cita recomendada para datasets.", "file"]
+      ])}
       <div class="world-bank-summary key-download-summary">
         <div>
           <span class="eyebrow">Datos verificables</span>
@@ -2256,6 +2454,11 @@ function worldBankPage() {
     })}
     <section class="section">
       <div class="container">
+        ${dataMetaGrid([
+          ["Fuente", sourceMetadata.worldBank.source, "Organismo multilateral. Consulta WDI para Venezuela.", "globe"],
+          ["Última captura OVE", sourceMetadata.worldBank.lastFetched, `${sourceMetadata.worldBank.records}. Último dato: ${sourceMetadata.worldBank.latestData}.`, "calendar"],
+          ["Formatos", "CSV / JSON / Excel", "Catálogo organizado por áreas temáticas para análisis.", "download"]
+        ])}
         <div class="world-bank-summary">
           <div>
             <span class="eyebrow">World Development Indicators</span>
@@ -2334,9 +2537,10 @@ function topicGroup(group, open = false) {
 }
 
 function datasetCard([title, count, text, ico]) {
+  const sourceLabel = count.includes("Banco") || count.includes("BCV") ? "Fuente real" : "Catalogo";
   return `<article class="dataset-card">
     <span class="line-icon">${icon(ico)}</span>
-    ${exampleTag(count.includes("Banco") || count.includes("BCV") ? "Fuente real" : "Ejemplo")}
+    ${exampleTag(sourceLabel)}
     <h3>${title}</h3>
     <p class="tiny">${count}</p>
     ${text ? `<p>${text}</p>` : ""}
@@ -2346,13 +2550,221 @@ function datasetCard([title, count, text, ico]) {
 
 function recentDatasetTable() {
   const rows = [
-    ["BCV tipo de cambio USD", "CSV/JSON/XLSX", "Actualizado 08/07/2026", "Fuente oficial"],
+    ["BCV tipo de cambio USD", "CSV/JSON/XLSX", `Último dato ${sourceMetadata.bcv.latestData}`, "Fuente oficial"],
     ["Indicadores clave de Venezuela", "CSV/JSON/XLSX", "Series históricas verificables", "Dashboard"],
-    ["BCV referencia SMC", "CSV/JSON/XLSX", "Actualizado 08/07/2026", "Fuente oficial"],
-    ["Banco Mundial - Venezuela", "CSV/JSON/XLSX", "Actualizado 08/07/2026", "Fuente real"],
-    ["BCV PIB real e INPC", "CSV/JSON/XLSX", "Actualizado 08/07/2026", "Fuente oficial"]
+    ["BCV referencia SMC", "CSV/JSON/XLSX", `Captura ${sourceMetadata.bcv.lastFetched}`, "Fuente oficial"],
+    ["Banco Mundial - Venezuela", "CSV/JSON/XLSX", `Captura ${sourceMetadata.worldBank.lastFetched}`, "Fuente real"],
+    ["BCV PIB real e INPC", "CSV/JSON/XLSX", `Captura ${sourceMetadata.bcv.lastFetched}`, "Fuente oficial"]
   ];
   return `<table><tbody>${rows.map(row => `<tr>${row.map(cell => `<td>${cell}</td>`).join("")}<td>${icon("download")}</td></tr>`).join("")}</tbody></table>`;
+}
+
+function methodologyPage() {
+  return `<div class="page">
+    ${pageHero({
+      title: "Metodología, fuentes y citación",
+      lead: "El OVE organiza información económica procedente de organismos multilaterales y fuentes oficiales de Venezuela. Los datos se publican con trazabilidad, sin modificar los valores originales difundidos por cada fuente.",
+      image: "assets/topics/topic-economy.png",
+      breadcrumb: ["Inicio", "Metodología", "Fuentes y gobernanza"],
+      actions: `<a class="button button-primary" href="#/datos">Ver datos ${arrow()}</a><a class="button" href="#/datos/banco-mundial">Banco Mundial ${icon("database")}</a><a class="button" href="#/datos/bcv">BCV ${icon("bank")}</a>`
+    })}
+    <section class="section">
+      <div class="container about-grid">
+        ${[
+          ["Principio central", "El Observatorio no altera los valores estadísticos publicados por las fuentes originales.", "shield"],
+          ["Trazabilidad", "Cada serie debe conservar fuente, periodo, unidad, cobertura y enlace o referencia de verificación.", "database"],
+          ["Uso público", "Los datos se presentan para consulta, análisis, descarga y citación responsable.", "file"]
+        ].map(([title, text, ico]) => `<article class="value-card"><span class="line-icon">${icon(ico)}</span><h2>${title}</h2><span class="accent-line"></span><p>${text}</p></article>`).join("")}
+      </div>
+    </section>
+    <section class="section-tight">
+      <div class="container dashboard-grid">
+        <article class="panel span-6">
+          <h2>Fuentes actuales</h2>
+          <span class="accent-line"></span>
+          <p>La primera fase pública trabaja con fuentes externas verificables. El OVE no sustituye a la fuente original: ordena, documenta y facilita el acceso analítico.</p>
+          <div class="cards-4 mini-grid-3">
+            ${[
+              ["Banco Central de Venezuela", "Fuente oficial venezolana para tipo de cambio, PIB, INPC y otras series publicadas por el BCV.", "bank"],
+              ["Banco Mundial", "Organismo multilateral. Se usa World Development Indicators para series históricas comparables de Venezuela.", "globe"],
+              ["Otras fuentes futuras", "Podrán incorporarse organismos multilaterales y fuentes oficiales de Venezuela cuando exista trazabilidad suficiente.", "plus"]
+            ].map(([title, text, ico]) => `<div><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p class="tiny">${text}</p></div>`).join("")}
+          </div>
+        </article>
+        <article class="panel span-6">
+          <h2>Tratamiento de datos</h2>
+          <span class="accent-line"></span>
+          <p>No se realizan transformaciones analíticas sobre los valores publicados por las fuentes. Cuando la web ofrece CSV, JSON o Excel, el tratamiento es de presentación y empaquetado para facilitar la consulta.</p>
+          <div class="method-list">
+            ${[
+              ["Se conserva", "Valor original, periodo, unidad, fuente y serie cuando están disponibles."],
+              ["Se organiza", "Nombres de columnas, áreas temáticas, formatos descargables y metadatos de consulta."],
+              ["No se altera", "El OVE no recalcula ni corrige valores oficiales o multilaterales sin explicarlo expresamente."]
+            ].map(([label, text]) => `<div class="support-item">${icon("check")}<div><h3>${label}</h3><p class="tiny">${text}</p></div></div>`).join("")}
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container dashboard-grid">
+        <article class="panel span-4">
+          <h2>Actualización</h2>
+          <span class="accent-line"></span>
+          <p>El calendario formal de actualización todavía está en desarrollo. Mientras no exista un calendario aprobado, la actualización dependerá de la disponibilidad de cada fuente y de los procesos internos de revisión del OVE.</p>
+          <p class="source-note">Pendiente: definir frecuencia por fuente, responsable de revisión, fecha de corte y protocolo de publicación.</p>
+        </article>
+        <article class="panel span-4">
+          <h2>Limitaciones</h2>
+          <span class="accent-line"></span>
+          <p>Las series pueden tener rezagos, revisiones metodológicas, cambios de cobertura o interrupciones según la fuente original. El OVE debe informar esas limitaciones cuando afecten la interpretación.</p>
+          <p class="source-note">Los datos publicados no deben leerse como una certificación adicional del OVE sobre la fuente original.</p>
+        </article>
+        <article class="panel span-4">
+          <h2>Revisiones</h2>
+          <span class="accent-line"></span>
+          <p>Si una fuente revisa una serie, el OVE deberá actualizar el paquete correspondiente y, cuando sea relevante, documentar el cambio para mantener trazabilidad histórica.</p>
+          <p class="source-note">Pendiente: crear registro público de revisiones por dataset.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section-tight">
+      <div class="container content-sidebar">
+        <article>
+          <h2>Cómo citar el OVE</h2>
+          <span class="accent-line"></span>
+          <p>La cita debe reconocer al OVE como organizador del recurso y mantener visible la fuente original del dato.</p>
+          <div class="panel">
+            <h3>Cita recomendada para datasets</h3>
+            <pre class="code-box">Observatorio Venezolano de Economía (OVE). [Nombre del dataset o indicador].
+Fuente original: [organismo fuente]. Consulta/descarga: [fecha].
+Disponible en: [URL del OVE].</pre>
+          </div>
+          <div class="panel" style="margin-top:18px">
+            <h3>Cita recomendada para publicaciones</h3>
+            <pre class="code-box">Observatorio Venezolano de Economía (OVE). (Año). [Título de la publicación].
+OVE. Disponible en: [URL de la publicación].</pre>
+          </div>
+        </article>
+        <aside class="key-data">
+          <h3>Estado metodológico</h3>
+          ${[
+            ["Fuentes", "BCV / Banco Mundial"],
+            ["Transformación", "Sin cambio de valores"],
+            ["Calendario", "Pendiente"],
+            ["Citación", "Definida"]
+          ].map(([label, value]) => `<div class="key-item"><span class="tiny">${label}</span><strong>${value}</strong><span class="trend neutral">Metodología</span></div>`).join("")}
+        </aside>
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
+}
+
+const legalContent = {
+  legal: {
+    title: "Aviso legal",
+    eyebrow: "Versión inicial",
+    lead: "Información legal provisional del sitio web del Observatorio Venezolano de Economía. Esta página debe revisarse cuando queden definidos entidad responsable, domicilio, correo oficial y jurisdicción aplicable.",
+    sections: [
+      ["Responsable del sitio", "El responsable institucional definitivo del sitio OVE está pendiente de formalización. Hasta entonces, esta página funciona como aviso provisional y no sustituye la revisión jurídica final."],
+      ["Naturaleza del Observatorio", "El OVE es una plataforma de información económica, datos abiertos y análisis. Su contenido tiene finalidad informativa, académica y divulgativa."],
+      ["Responsabilidad sobre la información", "El OVE organiza datos procedentes de organismos multilaterales y fuentes oficiales de Venezuela. La fuente original conserva la responsabilidad primaria sobre los datos publicados."],
+      ["Uso del sitio", "El acceso al sitio implica un uso diligente de la información. El usuario no debe manipular, descontextualizar o atribuir al OVE conclusiones que no hayan sido publicadas expresamente."],
+      ["Estado legal", "Texto pendiente de revisión legal. Antes del lanzamiento público deberán completarse entidad responsable, datos de contacto, domicilio, jurisdicción y mecanismo de reclamación."]
+    ]
+  },
+  privacidad: {
+    title: "Política de privacidad",
+    eyebrow: "Datos personales",
+    lead: "Política provisional sobre datos personales. Actualmente los formularios están preparados técnicamente, pero el envío y almacenamiento están desactivados hasta definir el canal oficial.",
+    sections: [
+      ["Datos que podrían solicitarse", "Nombre, correo electrónico, teléfono opcional, tipo de consulta, mensaje, propuesta de colaboración y suscripción al boletín."],
+      ["Estado actual de los formularios", "Mientras `assets/forms/forms-config.json` mantenga `enabled: false`, los formularios no envían ni almacenan información. La validación ocurre en el navegador del usuario."],
+      ["Finalidades futuras", "Responder consultas, gestionar colaboraciones, atender solicitudes de prensa, enviar boletines si el usuario se suscribe y mantener trazabilidad administrativa."],
+      ["Base y consentimiento", "La activación de formularios deberá apoyarse en consentimiento informado, aceptación de privacidad y un canal de tratamiento definido."],
+      ["Conservación y derechos", "Antes del lanzamiento público se debe definir plazo de conservación, responsable, correo de ejercicio de derechos y procedimiento para acceso, rectificación o supresión."],
+      ["Servicios de terceros", "Si se utiliza Formspree, HubSpot, Airtable, Google Sheets u otro proveedor, esta política deberá identificarlo y explicar su papel en el tratamiento."]
+    ]
+  },
+  cookies: {
+    title: "Política de cookies",
+    eyebrow: "Cookies y analítica",
+    lead: "Información provisional sobre cookies. En la versión actual no se ha integrado analítica, publicidad ni seguimiento de terceros.",
+    sections: [
+      ["Estado actual", "El sitio no usa cookies de analítica, publicidad o perfilado. Tampoco se ha detectado uso de `localStorage`, `sessionStorage` o `document.cookie` en el código actual."],
+      ["Cookies técnicas", "Si el alojamiento o futuras funciones requieren cookies técnicas estrictamente necesarias, deberán identificarse en esta página."],
+      ["Analítica futura", "Si se añade Google Analytics, Search Console, píxeles u otras herramientas, se deberá actualizar esta política y, cuando proceda, ofrecer mecanismos de aceptación o rechazo."],
+      ["Gestión de preferencias", "Pendiente de implementar solo si se incorporan cookies no técnicas o tecnologías equivalentes que requieran consentimiento."],
+      ["Revisión", "Página pendiente de revisión legal antes de activar analítica o cookies no técnicas."]
+    ]
+  },
+  terminos: {
+    title: "Términos de uso",
+    eyebrow: "Uso del sitio",
+    lead: "Condiciones provisionales para consultar el sitio, acceder a datos y utilizar materiales del Observatorio.",
+    sections: [
+      ["Uso permitido", "Se permite consultar la web, descargar datos y citar materiales respetando fuente original, OVE como organizador y fecha de consulta."],
+      ["Uso no permitido", "No se permite presentar datos del OVE como propios, eliminar atribuciones, manipular información de forma engañosa o usar la marca OVE sin autorización."],
+      ["No asesoramiento", "La información publicada no constituye asesoramiento financiero, legal, fiscal, contable o de inversión."],
+      ["Disponibilidad", "El OVE puede actualizar, corregir, retirar o reorganizar datos y contenidos cuando sea necesario para mantener trazabilidad o calidad."],
+      ["Enlaces externos", "Los enlaces a fuentes externas se ofrecen para verificación. El OVE no controla la disponibilidad, cambios o políticas de sitios de terceros."]
+    ]
+  },
+  licencia: {
+    title: "Licencia de datos",
+    eyebrow: "Reutilización",
+    lead: "Condiciones iniciales para reutilizar CSV, JSON, Excel y metadatos publicados por el OVE.",
+    sections: [
+      ["Principio de reutilización", "El OVE promueve la reutilización responsable de datos con fines académicos, periodísticos, institucionales y analíticos."],
+      ["Atribución obligatoria", "Toda reutilización debe citar al organismo fuente original y al OVE como organizador del recurso, incluyendo fecha de consulta o descarga."],
+      ["Cita recomendada", "Observatorio Venezolano de Economía (OVE). [Nombre del dataset o indicador]. Fuente original: [organismo fuente]. Consulta/descarga: [fecha]. Disponible en: [URL del OVE]."],
+      ["Sin alteración de fuente", "El usuario debe distinguir entre datos originales, organización realizada por el OVE y cualquier análisis propio posterior."],
+      ["Limitaciones", "Los datos pueden contener rezagos, revisiones, cambios metodológicos o interrupciones de la fuente original. El usuario debe revisar notas metodológicas antes de interpretar resultados."],
+      ["Licencia definitiva", "La licencia final deberá aprobarse antes del lanzamiento público, idealmente con una fórmula clara de atribución y reutilización."]
+    ]
+  }
+};
+
+function legalPage(kind) {
+  const page = legalContent[kind] || legalContent.legal;
+  return `<div class="page">
+    ${pageHero({
+      title: page.title,
+      lead: page.lead,
+      image: "assets/topics/topic-economy.png",
+      breadcrumb: ["Inicio", "Legal", page.title],
+      actions: `<a class="button button-primary" href="#/metodologia">Ver metodología ${arrow()}</a><a class="button" href="#/licencia-datos">Licencia de datos ${icon("file")}</a>`
+    })}
+    <section class="section">
+      <div class="container content-sidebar">
+        <article>
+          <span class="eyebrow">${page.eyebrow}</span>
+          <h2>${page.title}</h2>
+          <span class="accent-line"></span>
+          <p class="source-note">Versión inicial pendiente de revisión legal. No sustituye asesoramiento jurídico ni aprobación institucional definitiva.</p>
+          <div class="legal-stack">
+            ${page.sections.map(([title, text]) => `<section class="panel"><h3>${title}</h3><p>${text}</p></section>`).join("")}
+          </div>
+        </article>
+        <aside class="key-data">
+          <h3>Estado</h3>
+          ${[
+            ["Versión", "Inicial"],
+            ["Revisión legal", "Pendiente"],
+            ["Contacto oficial", "Pendiente"],
+            ["Lanzamiento", "No definitivo"]
+          ].map(([label, value]) => `<div class="key-item"><span class="tiny">${label}</span><strong>${value}</strong><span class="trend neutral">Legal</span></div>`).join("")}
+          <div class="button-row" style="margin-top:18px">
+            <a class="button button-small" href="#/legal">Aviso legal</a>
+            <a class="button button-small" href="#/privacidad">Privacidad</a>
+            <a class="button button-small" href="#/cookies">Cookies</a>
+            <a class="button button-small" href="#/terminos">Términos</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
 }
 
 function aboutPage() {
@@ -2376,17 +2788,17 @@ function aboutPage() {
     <section class="section-tight">
       <div class="container dashboard-grid">
         <article class="panel span-5">
-          <h2>Nuestro equipo</h2>
+          <h2>Estructura institucional</h2>
           <span class="accent-line"></span>
-          <p>Actualmente el Observatorio está en una etapa inicial de desarrollo, con Carlos Marzol liderando la construcción de la plataforma, la identidad digital y la organización del contenido.</p>
+          <p>El Observatorio se encuentra en fase de preparación pública. Su estructura operativa se organiza alrededor de datos, análisis, publicaciones y transparencia metodológica.</p>
           <div class="profile-row">
             <div class="profile profile-featured">
-              <span class="avatar">CM</span>
-              <strong>Carlos Marzol</strong>
-              <p class="tiny">Fundador y responsable del proyecto</p>
+              <span class="avatar">OVE</span>
+              <strong>Equipo promotor OVE</strong>
+              <p class="tiny">Coordinación institucional, datos y publicaciones</p>
             </div>
           </div>
-          <a class="button" href="#/contacto">Contactar con Carlos ${arrow()}</a>
+          <a class="button" href="#/contacto">Contactar con el OVE ${arrow()}</a>
         </article>
         <article class="panel span-7">
           <h2>Nuestra metodología</h2>
@@ -2395,7 +2807,7 @@ function aboutPage() {
           <div class="cards-4 mini-grid-5">
             ${[
               ["Rigor técnico", "Criterios estadísticos y económicos antes de publicar series.", "trend"],
-              ["Fuentes verificadas", "Banco Mundial - Venezuela es la fuente real integrada actualmente.", "shield"],
+              ["Fuentes verificadas", "BCV y Banco Mundial - Venezuela son fuentes reales integradas actualmente.", "shield"],
               ["Transparencia", "Cada dataset deberá documentar procesos, supuestos y limitaciones.", "eye"],
               ["Reproducibilidad", "Los cálculos propios se publicarán con trazabilidad cuando existan.", "code"],
               ["Actualización", "La periodicidad se definirá por fuente y capacidad de verificación.", "plus"]
@@ -2409,11 +2821,11 @@ function aboutPage() {
         <article class="panel span-5">
           <h2>Fuentes de información</h2>
           <span class="accent-line"></span>
-          <p>El Observatorio se construirá gradualmente con fuentes reales y verificables. Por ahora, la fuente real integrada es Banco Mundial - Venezuela.</p>
+          <p>El Observatorio se construirá gradualmente con fuentes reales y verificables. Actualmente integra datos del Banco Central de Venezuela y Banco Mundial - Venezuela.</p>
           <div class="cards-4 mini-grid-3">
             ${[
-              ["Fuente real activa", "Banco Mundial - Venezuela, disponible en CSV, JSON y Excel.", "bank"],
-              ["Fuentes por evaluar", "Instituciones nacionales, organismos internacionales y literatura técnica.", "globe"],
+              ["Fuente real activa", "Banco Central de Venezuela: tipo de cambio, PIB e INPC preparados para análisis.", "bank"],
+              ["Fuente internacional", "Banco Mundial - Venezuela, disponible en CSV, JSON y Excel.", "globe"],
               ["Datos propios", "Pendientes de diseño, validación y publicación por parte del OVE.", "users"]
             ].map(([title, text, ico]) => `<div><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p class="tiny">${text}</p></div>`).join("")}
           </div>
@@ -2421,12 +2833,12 @@ function aboutPage() {
         <article class="panel span-7">
           <h2>Transparencia y gobernanza</h2>
           <span class="accent-line"></span>
-          <p>Operamos con independencia y rendición de cuentas.</p>
+          <p>La gobernanza pública del OVE debe quedar documentada antes del lanzamiento definitivo. La web ya explicita criterios mínimos de independencia, transparencia y buenas prácticas.</p>
           <div class="cards-4 mini-grid-3">
             ${[
-              ["Independencia institucional", "No respondemos a intereses partidistas ni económicos.", "shield"],
-              ["Financiamiento transparente", "Promovemos el acceso libre y responsable a los datos.", "bank"],
-              ["Ética y buenas prácticas", "Seguimos estándares internacionales de investigación y publicación.", "target"]
+              ["Independencia institucional", "Los análisis deberán separarse de intereses partidistas, comerciales o personales.", "shield"],
+              ["Financiamiento transparente", "El modelo de sostenibilidad y apoyo institucional deberá publicarse cuando esté definido.", "bank"],
+              ["Ética y buenas prácticas", "Las publicaciones deberán incluir fuentes, limitaciones y trazabilidad de cálculos.", "target"]
             ].map(([title, text, ico]) => `<div class="support-item">${icon(ico)}<div><h3>${title}</h3><p class="tiny">${text}</p></div></div>`).join("")}
           </div>
         </article>
@@ -2440,8 +2852,8 @@ function aboutPage() {
           ${[
             ["Etapa 1", "Definición de identidad institucional y estructura del sitio."],
             ["Etapa 2", "Archivo de logos oficiales y criterios de manual corporativo."],
-            ["Etapa 3", "Integración inicial de Banco Mundial - Venezuela como fuente real."],
-            ["Etapa 4", "Construcción futura de indicadores, metodología e informes propios."]
+            ["Etapa 3", "Integración de Banco Mundial - Venezuela y Banco Central de Venezuela como fuentes reales."],
+            ["Etapa 4", "Preparación de metodología pública, primera publicación y gobernanza del dato."]
           ].map(([year, text]) => `<div class="timeline-item"><h3>${year}</h3><p class="tiny">${text}</p></div>`).join("")}
         </div>
       </div>
@@ -2452,11 +2864,16 @@ function aboutPage() {
           <h2>Aliados estratégicos</h2>
           <span class="accent-line"></span>
           <p>Espacio reservado para alianzas futuras. No se muestran aliados reales hasta confirmarlos.</p>
-          <div class="logos-row"><span>Ejemplo</span><span>Ejemplo</span><span>Ejemplo</span></div>
+          <div class="logos-row"><span>Por confirmar</span><span>Por confirmar</span><span>Por confirmar</span></div>
         </article>
         <article class="panel span-4">
           <h2>Preguntas frecuentes</h2>
-          ${faqList(["¿El OVE recibe financiamiento del gobierno?", "¿Cómo se financia el Observatorio?", "¿Cómo se seleccionan y validan los datos?", "¿Puedo utilizar la información del OVE?"])}
+          ${faqList([
+            ["¿El OVE recibe financiamiento del gobierno?", "La información sobre financiación y apoyos institucionales deberá publicarse de forma clara cuando esté formalmente definida."],
+            ["¿Cómo se seleccionan y validan los datos?", "Se priorizan fuentes oficiales o internacionales verificables, con trazabilidad, metadatos y limitaciones visibles para el usuario."],
+            ["¿Puedo utilizar la información del OVE?", "Los datos descargables podrán reutilizarse respetando la fuente, la licencia y las condiciones que se publiquen en la página legal."],
+            ["¿Cuándo habrá informes propios?", "La primera publicación saldrá cuando estén cerradas la metodología, revisión técnica, anexos y criterios editoriales."]
+          ])}
         </article>
         <article class="panel span-4 about-cta-card">
           <h2>Con información confiable construimos un mejor país.</h2>
@@ -2470,59 +2887,64 @@ function aboutPage() {
 }
 
 function faqList(items) {
-  return `<div class="faq-list">${items.map(item => `<details class="faq-item"><summary>${item}</summary><p class="tiny">Nuestro equipo responde con criterios técnicos, fuentes verificables y procesos documentados.</p></details>`).join("")}</div>`;
+  return `<div class="faq-list">${items.map(item => {
+    const question = Array.isArray(item) ? item[0] : item;
+    const answer = Array.isArray(item) ? item[1] : "Nuestro equipo responde con criterios técnicos, fuentes verificables y procesos documentados.";
+    return `<details class="faq-item"><summary>${question}</summary><p class="tiny">${answer}</p></details>`;
+  }).join("")}</div>`;
 }
 
 function contactPage() {
   return `<div class="page">
     ${pageHero({
       title: "Contacto y boletín",
-      lead: "Estamos para escucharte. Escríbenos, visítanos o suscríbete para recibir información económica confiable y oportuna.",
+      lead: "Estamos preparando los canales oficiales del OVE. Los formularios están listos técnicamente, pero el envío se activará cuando exista un canal institucional definitivo.",
       image: "assets/venezuela-avila.jpg",
-      actions: `<a class="text-link" href="#/contacto">${icon("mail")} Envíanos un mensaje</a><a class="text-link" href="#/contacto">${icon("phone")} Llámanos</a><a class="text-link" href="#/contacto">${icon("pin")} Visítanos</a>`,
+      actions: `<a class="text-link" href="#/contacto">${icon("mail")} Formulario preparado</a><a class="text-link" href="#/contacto">${icon("shield")} Canal pendiente</a>`,
       breadcrumb: []
     })}
     <section class="section">
       <div class="container contact-grid">
         <article id="mensaje" class="panel">
           <h2>${icon("mail")} Envíanos un mensaje</h2>
-          <form class="form-grid js-form">
-            <input class="field full" type="text" placeholder="Nombre completo *" required>
-            <input class="field full" type="email" placeholder="Correo electrónico *" required>
-            <input class="field" type="tel" placeholder="Teléfono">
-            <select class="field" required><option>Consulta general</option><option>Datos</option><option>Prensa</option></select>
-            <textarea class="field full" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
-            <label class="check-line full"><input type="checkbox" required> Acepto la política de privacidad y el tratamiento de mis datos personales.</label>
+          <form class="form-grid js-form" data-form-id="contacto">
+            <input class="field full" name="nombre" type="text" placeholder="Nombre completo *" required>
+            <input class="field full" name="email" type="email" placeholder="Correo electrónico *" required>
+            <input class="field" name="telefono" type="tel" placeholder="Teléfono">
+            <select class="field" name="tipo_consulta" required><option>Consulta general</option><option>Datos</option><option>Prensa</option></select>
+            <textarea class="field full" name="mensaje" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+            <label class="check-line full"><input name="acepta_privacidad" type="checkbox" required> Acepto la <a href="#/privacidad">política de privacidad</a> y el tratamiento de mis datos personales.</label>
             <button class="button button-primary full" type="submit">Enviar mensaje ${arrow()}</button>
+            <p class="form-status tiny full" data-form-status aria-live="polite"></p>
           </form>
-          <p class="tiny">Te responderemos a la brevedad posible.</p>
+          <p class="tiny">El envío quedará activo cuando se confirme el correo, endpoint o servicio definitivo.</p>
         </article>
         <article id="sedes" class="panel">
-          <h2>${icon("bank")} Nuestras sedes</h2>
+          <h2>${icon("bank")} Canal institucional</h2>
           <div class="office">
-            <h3>Sede principal - Caracas</h3>
-            <p>${icon("pin")} Av. Francisco de Miranda, Torre Europa, Piso 11, Caracas, Venezuela.</p>
-            <p>${icon("phone")} +58 412 123 4567</p>
-            <p>${icon("mail")} info@observatoriodeeconomia.org.ve</p>
-            <p>${icon("calendar")} Lun - Vie: 8:30 a. m. - 5:30 p. m.</p>
+            <h3>Contacto oficial</h3>
+            <p>${icon("pin")} Ubicación institucional pendiente de confirmación.</p>
+            <p>${icon("phone")} Teléfono pendiente de confirmación.</p>
+            <p>${icon("mail")} Correo institucional pendiente de confirmación.</p>
+            <p>${icon("calendar")} Horario de atención por definir.</p>
           </div>
           <div class="office">
-            <h3>Sede centro - Valencia</h3>
-            <p>${icon("pin")} C.C. Concepto La Viña, Torre A, Piso 6, Oficina 6-A, Valencia.</p>
-            <p>${icon("phone")} +58 241 123 4567</p>
-            <p>${icon("mail")} info.valencia@observatoriodeeconomia.org.ve</p>
+            <h3>Estado del canal</h3>
+            <p>${icon("shield")} Formularios preparados con validación y configuración central.</p>
+            <p>${icon("mail")} Envío desactivado hasta aprobar el canal definitivo.</p>
+            <p>${icon("file")} Política de privacidad inicial creada; revisión legal pendiente.</p>
           </div>
         </article>
         <aside class="stack-gap">
           <article class="panel">
             <h2>${icon("megaphone")} Contacto para medios</h2>
-            <p>Para entrevistas, declaraciones o solicitudes de información para prensa.</p>
+            <p>Canal de prensa pendiente de confirmación antes del lanzamiento público.</p>
             <div class="filter-panel">
-              <h3>Maria Fernanda Lopez</h3>
-              <p>Coordinadora de Comunicaciones</p>
-              <p>${icon("phone")} +58 412 123 4567</p>
-              <p>${icon("mail")} prensa@observatoriodeeconomia.org.ve</p>
-              <p>${icon("pin")} Caracas, Venezuela</p>
+              <h3>Prensa OVE</h3>
+              <p>Responsable y canal por definir.</p>
+              <p>${icon("phone")} Teléfono pendiente.</p>
+              <p>${icon("mail")} Correo pendiente.</p>
+              <p>${icon("pin")} Ubicación pendiente.</p>
             </div>
           </article>
           <article class="panel">
@@ -2538,8 +2960,8 @@ function contactPage() {
         <article class="panel span-4" style="color:#fff;background:linear-gradient(135deg,var(--navy-950),var(--blue-700))">
           <h2 style="color:#fff">${icon("mail")} Suscríbete a nuestro boletín</h2>
           <p>Recibe análisis, indicadores y publicaciones directamente en tu correo.</p>
-          <form class="subscribe-form js-form"><input class="field" type="email" placeholder="tu@email.com" required><button class="button button-yellow">Suscribirme ${arrow()}</button></form>
-          <p class="tiny" style="color:#dce8ff">Al suscribirte, aceptas nuestra política de privacidad.</p>
+          <form class="subscribe-form js-form" data-form-id="boletin"><input class="field" name="email" type="email" placeholder="tu@email.com" required><button class="button button-yellow">Suscribirme ${arrow()}</button><p class="form-status tiny" data-form-status aria-live="polite"></p></form>
+          <p class="tiny" style="color:#dce8ff">La suscripción se activará cuando esté aprobada la política de privacidad y el canal de almacenamiento.</p>
         </article>
         <article class="panel span-3">
           <h2>Síguenos en redes sociales</h2>
@@ -2573,12 +2995,13 @@ function contactPage() {
             <p>Si eres investigador, estudiante, institución o profesional independiente y deseas contribuir con análisis, estudios o proyectos, completa el siguiente formulario.</p>
             <a class="button" href="#/nosotros">Conoce nuestras líneas de trabajo ${arrow()}</a>
           </div>
-          <form class="form-grid js-form">
-            <input class="field" type="text" placeholder="Nombre completo *" required>
-            <input class="field" type="email" placeholder="Correo electrónico *" required>
-            <select class="field"><option>Investigación</option><option>Datos</option><option>Alianzas</option></select>
-            <textarea class="field full" placeholder="Describe brevemente tu propuesta..." required></textarea>
+          <form class="form-grid js-form" data-form-id="colaboracion">
+            <input class="field" name="nombre" type="text" placeholder="Nombre completo *" required>
+            <input class="field" name="email" type="email" placeholder="Correo electrónico *" required>
+            <select class="field" name="tipo_colaboracion"><option>Investigación</option><option>Datos</option><option>Alianzas</option></select>
+            <textarea class="field full" name="propuesta" placeholder="Describe brevemente tu propuesta..." required></textarea>
             <button class="button button-primary full" type="submit">Enviar propuesta ${arrow()}</button>
+            <p class="form-status tiny full" data-form-status aria-live="polite"></p>
           </form>
         </div>
       </div>
@@ -2663,25 +3086,86 @@ function updateActiveNav(route) {
 }
 
 function wireForms() {
-  document.querySelectorAll(".js-form").forEach(form => {
-    form.addEventListener("submit", event => {
+  let formConfigPromise = null;
+  const getFormConfig = () => {
+    if (!formConfigPromise) {
+      formConfigPromise = fetch(formConfigUrl, { cache: "no-store" })
+        .then(response => response.ok ? response.json() : {})
+        .catch(() => ({}));
+    }
+    return formConfigPromise;
+  };
+
+  const serializeForm = form => {
+    const payload = {};
+    new FormData(form).forEach((value, key) => {
+      if (payload[key]) {
+        payload[key] = Array.isArray(payload[key]) ? payload[key].concat(value) : [payload[key], value];
+      } else {
+        payload[key] = value;
+      }
+    });
+    payload.form_id = form.dataset.formId;
+    payload.submitted_at = new Date().toISOString();
+    return payload;
+  };
+
+  const setFormStatus = (form, message, state = "neutral") => {
+    const status = form.querySelector("[data-form-status]");
+    if (!status) return;
+    status.textContent = message;
+    status.dataset.state = state;
+  };
+
+  document.querySelectorAll("[data-form-id]").forEach(form => {
+    form.addEventListener("submit", async event => {
       event.preventDefault();
       const button = form.querySelector("button");
       if (!button) return;
       const original = button.innerHTML;
-      button.innerHTML = "Enviado";
+      button.innerHTML = "Enviando";
       button.disabled = true;
-      window.setTimeout(() => {
+      setFormStatus(form, "Preparando envio...", "neutral");
+
+      try {
+        const config = await getFormConfig();
+        const formId = form.dataset.formId;
+        const payload = serializeForm(form);
+        const endpoint = config.endpoints?.[formId];
+        const recipient = config.recipientEmail;
+        const subject = config.subjects?.[formId] || "Mensaje desde la web OVE";
+
+        if (config.enabled !== true) {
+          setFormStatus(form, "Formulario preparado. Falta activar el endpoint o correo definitivo.", "pending");
+        } else if (endpoint) {
+          const response = await fetch(endpoint, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+          });
+          if (!response.ok) throw new Error("FORM_ENDPOINT_ERROR");
+          setFormStatus(form, "Recibido. Gracias por escribir al OVE.", "success");
+          form.reset();
+        } else if (recipient) {
+          const body = Object.entries(payload).map(([key, value]) => `${key}: ${value}`).join("\n");
+          window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          setFormStatus(form, "Se abrió tu cliente de correo para completar el envío.", "success");
+          form.reset();
+        } else {
+          setFormStatus(form, "Formulario preparado. Falta configurar el endpoint o correo definitivo.", "pending");
+        }
+      } catch {
+        setFormStatus(form, "No se pudo enviar. Inténtalo de nuevo o usa el canal de contacto alternativo.", "error");
+      } finally {
         button.innerHTML = original;
         button.disabled = false;
-        form.reset();
-      }, 1800);
+      }
     });
   });
   const copy = document.querySelector(".js-copy");
   if (copy) {
     copy.addEventListener("click", async () => {
-      const text = "Plantilla de ejemplo OVE. No corresponde a un informe publicado.";
+      const text = "Cita pendiente de publicación oficial OVE.";
       try {
         await navigator.clipboard.writeText(text);
         copy.textContent = "Cita copiada";

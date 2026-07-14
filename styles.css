@@ -1307,6 +1307,52 @@ h3 {
   box-shadow: none;
 }
 
+.method-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.legal-stack {
+  display: grid;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.data-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 24px;
+}
+
+.data-meta-item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 14px;
+  min-height: 100%;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-soft);
+}
+
+.data-meta-item strong {
+  display: block;
+  margin: 3px 0 4px;
+  color: var(--navy-950);
+  font-family: var(--font-display);
+  font-size: 1rem;
+}
+
+.data-meta-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
 .support-item {
   display: grid;
   grid-template-columns: 34px 1fr;
@@ -1560,6 +1606,24 @@ h3 {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 12px;
+}
+
+.form-status {
+  grid-column: 1 / -1;
+  min-height: 18px;
+  margin: 0;
+}
+
+.form-status[data-state="success"] {
+  color: #0f7a3f;
+}
+
+.form-status[data-state="pending"] {
+  color: #8a6100;
+}
+
+.form-status[data-state="error"] {
+  color: var(--red);
 }
 
 .field,
@@ -2698,6 +2762,10 @@ th {
 }
 
 @media (max-width: 1080px) {
+  .data-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
   .header-inner {
     grid-template-columns: auto auto 1fr;
   }
