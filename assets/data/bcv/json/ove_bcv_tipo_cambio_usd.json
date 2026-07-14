@@ -8,23 +8,23 @@
     "frequency": "daily",
     "unit": "VES por USD",
     "status": "official_source",
-    "last_fetched_at": "2026-07-13T21:27:58Z",
+    "last_fetched_at": "2026-07-14T21:30:48Z",
     "first_date": "2016-01-04",
-    "last_date": "2026-07-13",
-    "records": 2538,
+    "last_date": "2026-07-14",
+    "records": 2539,
     "latest": {
-      "date": "2026-07-13",
+      "date": "2026-07-14",
       "currency": "USD",
-      "value": 721.3456,
+      "value": 723.999,
       "unit": "VES por USD",
       "frequency": "daily",
       "indicator_id": "bcv_tipo_cambio_usd_usd",
       "indicator_name": "Tipo de Cambio BCV Bs/USD - USD",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
-      "fetched_at": "2026-07-11T21:13:42Z",
+      "fetched_at": "2026-07-14T21:30:48Z",
       "value_buy": null,
-      "value_sell": 721.3456
+      "value_sell": 723.999
     },
     "notes": "Serie diaria USD/BCV normalizada desde el Excel historico oficial 2_1_1_tdc.xlsx y la pagina diaria del BCV."
   },
@@ -35551,15 +35551,29 @@
       "date": "2026-07-13",
       "currency": "USD",
       "value": 721.3456,
+      "value_buy": 719.542236,
+      "value_sell": 721.3456,
+      "unit": "VES por USD",
+      "frequency": "daily",
+      "indicator_id": "bcv_tipo_cambio_usd_usd",
+      "indicator_name": "Tipo de Cambio BCV Bs/USD - USD",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/sites/default/files/indicadores_sector_externo/2_1_1_tdc.xlsx",
+      "fetched_at": "2026-07-14T21:30:48Z"
+    },
+    {
+      "date": "2026-07-14",
+      "currency": "USD",
+      "value": 723.999,
       "unit": "VES por USD",
       "frequency": "daily",
       "indicator_id": "bcv_tipo_cambio_usd_usd",
       "indicator_name": "Tipo de Cambio BCV Bs/USD - USD",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
-      "fetched_at": "2026-07-11T21:13:42Z",
+      "fetched_at": "2026-07-14T21:30:48Z",
       "value_buy": null,
-      "value_sell": 721.3456
+      "value_sell": 723.999
     }
   ]
 }
