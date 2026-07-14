@@ -76,7 +76,7 @@ Current recommendation: do not launch as a public observatory until data governa
 - [ ] Configure analytics and Search Console.
 - [ ] Configure uptime/error monitoring if possible.
 - [ ] Prepare rollback plan.
-- [ ] Publish latest launch-preparation changes to the deployed environment. Started 2026-07-14: Vercel responds, but deployed `app.js` is older than local work and still contains removed public copy such as `API Playground` and `Contactar con Carlos`; local methodology, legal, launch note, forms config, and updated BCV value are not deployed yet.
+- [x] Publish latest launch-preparation changes to the deployed environment. Completed 2026-07-14: local launch-preparation work was committed, pushed to `main`, and Vercel redeployed. The deployed app now contains methodology, legal, launch note, forms config, and updated BCV value, and no longer contains removed public copy such as `API Playground` or `Contactar con Carlos`.
 
 ## Workstream 9 - Repository Hygiene
 
@@ -112,3 +112,4 @@ Current recommendation: do not launch as a public observatory until data governa
 - 2026-07-14: Added first institutional launch note at `#/nota-lanzamiento`. Home and publications page now link to this note. The note explains OVE scope, current BCV/World Bank sources, methodology, available downloads, pending launch tasks, and suggested citation.
 - 2026-07-14: Started basic technical QA. `node --check app.js` passes. Local audits found 28 routes / 106 internal hash links / 0 missing internal routes, 66 quoted asset references / 0 missing assets, and 4 configured form instances with `forms-config.json` still disabled as intended. Reviewed screenshots for desktop/mobile pages without obvious first-viewport breakage. Deployed URL, tablet, dashboard resilience, performance, browser compatibility, and deeper accessibility QA remain pending.
 - 2026-07-14: Checked deployed Vercel URL `https://ove-web-github.vercel.app/`. The site, CSS, JS, logo, and key JSON assets respond with 200, but the deployment is behind local work: it has 21 routes instead of 28, lacks methodology/legal/launch-note/forms-config changes, still shows older public copy, and therefore is not ready for public launch until the current local changes are committed, pushed, and redeployed.
+- 2026-07-14: Published corrected pre-launch version to GitHub/Vercel. Commit `1564464` is on `origin/main`. Post-push deployed QA confirmed 28 routes, 106 internal hash links, 0 missing internal routes, required metadata/legal/methodology/launch-note/form markers present, and removed public placeholder copy absent.

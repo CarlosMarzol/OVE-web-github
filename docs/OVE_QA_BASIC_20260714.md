@@ -42,7 +42,7 @@ Scope: local basic quality review before public launch. This is not a full produ
 
 Checked URL: `https://ove-web-github.vercel.app/`
 
-Result: the deployed site responds, but it is serving an older version than the current local launch-preparation work.
+Initial result before publishing local work: the deployed site responded, but it was serving an older version than the current local launch-preparation work.
 
 - Root page status: 200.
 - `styles.css` status: 200.
@@ -67,4 +67,19 @@ Visual deployed screenshots reviewed:
 - Home desktop loads without blank page or first-viewport overlap.
 - Contact mobile loads without blank page or first-viewport overlap, but it still shows older contact actions such as "Envíanos un mensaje", "Llámanos" and "Visítanos".
 
-Conclusion: deployment infrastructure is responding, but the deployed version is not launch-ready because the current local fixes have not been published to the hosting branch/provider.
+Resolution: local launch-preparation work was committed and pushed to `main`; Vercel redeployed successfully.
+
+Post-push deployed verification:
+
+- Deployed `app.js` contains `#/metodologia`.
+- Deployed `app.js` contains `#/nota-lanzamiento`.
+- Deployed `app.js` contains `#/legal`, `#/privacidad`, and `#/licencia-datos`.
+- Deployed `app.js` contains `assets/forms/forms-config.json` handling.
+- Deployed `app.js` contains the updated visible USD/BCV value `721,3456`.
+- Deployed `app.js` no longer contains `API Playground`.
+- Deployed `app.js` no longer contains `Contactar con Carlos`.
+- Deployed route audit after push: 28 registered routes, 106 internal hash links, 0 missing internal routes.
+- Home, CSS, app JS, OVE logo, forms config JSON, BCV JSON, and key indicators JSON respond with status 200.
+- Post-push screenshots reviewed for methodology desktop and contact mobile; both load the corrected version without blank page or first-viewport overlap.
+
+Conclusion: the deployed Vercel site is now serving the corrected pre-launch version. Remaining work is deeper QA, final contact/legal details, domain/analytics, and final public-launch review.
