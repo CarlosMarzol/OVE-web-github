@@ -1360,7 +1360,6 @@ function homePage() {
     ${bcvUsdHomePanel()}
     <section class="section-tight">
       <div class="container">
-        <p class="source-note">Indicadores con fuentes reales: Banco Mundial - Venezuela y Banco Central de Venezuela. Última captura del paquete OVE: ${sourceMetadata.keyIndicators.lastFetched}; último dato USD/BCV: ${sourceMetadata.bcv.latestData}.</p>
         ${metricCards()}
       </div>
     </section>

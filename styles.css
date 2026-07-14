@@ -1006,7 +1006,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
-  margin-top: -18px;
+  margin-top: 18px;
 }
 
 .metrics-grid.inline-metrics {
