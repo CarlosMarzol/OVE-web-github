@@ -134,7 +134,7 @@ const metricData = [
   {
     title: "Tipo de cambio BCV",
     subtitle: "Bs/USD",
-    value: "721,3456",
+    value: "721,35",
     period: "13 jul 2026",
     trend: "BCV oficial",
     direction: "down",
@@ -269,7 +269,7 @@ const keyIndicatorSeries = [
     title: "Tipo de cambio BCV",
     area: "Economía",
     source: "BCV",
-    latest: "721,3456",
+    latest: "721,35",
     period: "13/07/2026",
     unit: "Bs/USD",
     frequency: "Diaria",
@@ -1552,7 +1552,7 @@ function indicatorTable() {
     ["PIB per cápita", "2025", "3.494,8", "US$", "Último WDI", "Banco Mundial"],
     ["INPC nacional", "05/2026", "6,3", "% mensual", "Último BCV", "BCV"],
     ["Desempleo total", "2025", "5,31", "% fuerza laboral", "Último WDI", "Banco Mundial"],
-    ["Tipo de cambio BCV", '<span data-bcv-table-date>13/07/2026</span>', '<span data-bcv-table-value>721,3456</span>', "Bs/USD", "Último BCV", "BCV"]
+    ["Tipo de cambio BCV", '<span data-bcv-table-date>13/07/2026</span>', '<span data-bcv-table-value>721,35</span>', "Bs/USD", "Último BCV", "BCV"]
   ];
   return `<table>
     <thead><tr><th>Indicador</th><th>Periodo</th><th>Valor</th><th>Unidad</th><th>Variacion</th><th>Fuente</th></tr></thead>
@@ -3179,7 +3179,7 @@ function formatBcvNumber(value) {
   if (typeof value !== "number" || Number.isNaN(value)) return "No disponible";
   return new Intl.NumberFormat("es-VE", {
     minimumFractionDigits: 2,
-    maximumFractionDigits: 4
+    maximumFractionDigits: 2
   }).format(value);
 }
 
