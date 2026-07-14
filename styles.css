@@ -1516,6 +1516,23 @@ h3 {
   font-size: 0.88rem;
 }
 
+.tool-card .text-link {
+  min-height: 34px;
+  padding: 0 12px;
+  color: var(--navy-950);
+  background: var(--yellow);
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+  font-size: 0.78rem;
+  line-height: 1;
+}
+
+.tool-card .text-link:hover {
+  color: var(--navy-950);
+  background: #ffd95a;
+}
+
 @media (hover: hover) {
   .tool-card:hover .line-icon {
     background: rgba(255, 255, 255, 0.12);

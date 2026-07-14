@@ -1153,7 +1153,6 @@ function dataBand() {
     <div class="container">
       <h2>Datos y herramientas</h2>
       <span class="accent-line"></span>
-      <p class="source-note">Fuentes reales disponibles: Banco Mundial - Venezuela y BCV. La API pública se mantiene como hoja de ruta técnica, no como servicio activo.</p>
       <div class="tools-grid">
         ${tools.map(([title, text, link, ico, href]) => `
           <article class="tool-card">
