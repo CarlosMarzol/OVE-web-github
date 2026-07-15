@@ -26,6 +26,30 @@ SPANISH_INTEGER_FORMAT = '[$-es-ES]#,##0'
 SPANISH_DECIMAL_FORMAT = '[$-es-ES]#,##0.00'
 SPANISH_DATE_FORMAT = '[$-es-ES]dd/mm/yyyy'
 SPANISH_DATETIME_FORMAT = '[$-es-ES]dd/mm/yyyy hh:mm'
+SPANISH_HEADER_LABELS = {
+  "indicator_id": "ID indicador",
+  "indicator_name": "Indicador",
+  "indicator": "Indicador",
+  "area": "Área",
+  "category": "Categoría",
+  "date": "Fecha",
+  "year": "Año",
+  "month": "Mes",
+  "month_name": "Nombre del mes",
+  "period": "Periodo",
+  "value": "Valor",
+  "value_buy": "Valor compra",
+  "value_sell": "Valor venta",
+  "index_value": "Valor del índice",
+  "monthly_variation_pct": "Variación mensual (%)",
+  "annual_real_gdp_growth_pct": "Crecimiento anual PIB real (%)",
+  "currency": "Moneda",
+  "unit": "Unidad",
+  "frequency": "Frecuencia",
+  "source": "Fuente",
+  "source_url": "URL fuente",
+  "fetched_at": "Fecha de captura",
+}
 
 
 def add_ove_header(ws, title: str | None = None, subtitle: str | None = None) -> None:
@@ -58,7 +82,7 @@ def add_ove_header(ws, title: str | None = None, subtitle: str | None = None) ->
 
 def write_table(ws, fields: Sequence[str], rows: Iterable[dict], start_row: int = TABLE_START_ROW) -> None:
   for col_idx, field in enumerate(fields, start=1):
-    cell = ws.cell(row=start_row, column=col_idx, value=field)
+    cell = ws.cell(row=start_row, column=col_idx, value=SPANISH_HEADER_LABELS.get(field, field))
     cell.font = Font(bold=True, color=WHITE)
     cell.fill = PatternFill("solid", fgColor=NAVY)
     cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
