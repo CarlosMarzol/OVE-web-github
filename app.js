@@ -1242,7 +1242,7 @@ function dataBand() {
     ["FMI - WEO Venezuela", "36 indicadores macroeconómicos con datos históricos y proyecciones.", "Explorar FMI", "bank", "#/datos/fmi"],
     ["FRED - Venezuela", "Series etiquetadas por FRED para Venezuela con catálogo OVE y descargas trazables.", "Explorar FRED", "globe", "#/datos/fred"],
     ["INE Venezuela", "Catálogo de recursos oficiales con libros tabulares y documentos del portal INE.", "Explorar INE", "database", "#/datos/ine"],
-    ["UNCTADstat - Venezuela", "Reportes de comercio, inversión, transporte y desarrollo con valores filtrados para Venezuela.", "Explorar UNCTAD", "globe", "#/datos/unctad"],
+    ["UNCTADstat - Venezuela", "Comercio exterior, inversión, transporte marítimo, economía digital, materias primas e industrias creativas.", "Explorar UNCTAD", "globe", "#/datos/unctad"],
     ["Indicadores clave", "Panel consolidado con series de referencia y archivos descargables.", "Abrir dashboard", "chartbar", "#/indicadores/dashboard"],
     ["Descargas abiertas", "Paquetes CSV, JSON y Excel disponibles para análisis externo.", "Ver formatos", "download", "#/datos"]
   ];
@@ -1472,7 +1472,7 @@ function unctadSourceSection() {
         <div>
           <span class="eyebrow">Fuente internacional de comercio y desarrollo</span>
           <h2>UNCTADstat - Venezuela</h2>
-          <p>Reportes abiertos de UNCTADstat catalogados para Venezuela, con valores extraídos desde bulk files públicos y catálogo de archivos oficiales trazables.</p>
+          <p>Base abierta de UNCTAD para seguir la inserción internacional de Venezuela: exportaciones e importaciones, balanza comercial, servicios, inversión extranjera directa, transporte marítimo, puertos, economía digital, materias primas, plásticos, biocomercio, minerales críticos e industrias creativas.</p>
           <div class="source-stats">
             <span><strong>${formatInteger(totals.records)}</strong> valores</span>
             <span><strong>${formatInteger(totals.cataloged)}</strong> reportes</span>
@@ -3068,7 +3068,7 @@ function unctadPage() {
   return `<div class="page">
     ${pageHero({
       title: "UNCTADstat - Venezuela",
-      lead: "Reportes abiertos de UNCTADstat filtrados para Venezuela. Incluye valores extraídos de descargas bulk públicas, catálogo de reportes, inventario de archivos oficiales y Excel OVE en español.",
+      lead: "Datos de UNCTAD para analizar cómo Venezuela se conecta con el comercio y la economía internacional: mercancías, servicios, inversión extranjera, transporte marítimo, puertos, tecnología, materias primas, biocomercio, minerales críticos e industrias creativas.",
       image: "assets/topics/topic-economy.png",
       breadcrumb: ["Inicio", "Datos", "UNCTAD"],
       actions: `<a class="button button-primary" href="#/datos">Volver a Datos ${arrow()}</a>
@@ -3078,15 +3078,15 @@ function unctadPage() {
     <section class="section">
       <div class="container">
         ${dataMetaGrid([
-          ["Fuente", sourceMetadata.unctad.source, "UNCTADstat Data Centre, descargas bulk públicas.", "globe"],
+          ["Fuente", sourceMetadata.unctad.source, "UNCTADstat Data Centre: comercio, inversión, transporte y desarrollo.", "globe"],
           ["Última captura OVE", sourceMetadata.unctad.lastFetched, `${sourceMetadata.unctad.records}. Cobertura: ${sourceMetadata.unctad.latestData}.`, "calendar"],
-          ["Formatos", "CSV.GZ / CSV / JSON / Excel", "Valores normalizados, bulk files y catálogo OVE corporativo.", "download"]
+          ["Formatos", "CSV.GZ / CSV / JSON / Excel", "Valores para análisis, catálogo de reportes y Excel corporativo OVE.", "download"]
         ])}
         <div class="world-bank-summary">
           <div>
             <span class="eyebrow">Comercio, inversión y desarrollo</span>
             <h2>Fuente: UNCTADstat</h2>
-            <p>La ingesta recorre el catálogo público de UNCTADstat, descarga los bulk files manejables en 7z, extrae los CSV y conserva los valores relacionados con Venezuela. Los archivos oficiales demasiado grandes quedan catalogados con URL y estado de descarga para mantener trazabilidad sin publicar datos incompletos.</p>
+            <p>En esta base se pueden encontrar indicadores para Venezuela sobre exportaciones, importaciones, crecimiento del comercio, balanza comercial, comercio de servicios, inversión extranjera directa, remesas, tipo de cambio, población, transporte marítimo, movimiento portuario, comercio de bienes TIC, industrias creativas, productos básicos, biocomercio, plásticos, minerales críticos e índices de preparación tecnológica. El OVE publica los valores descargables y mantiene el inventario de reportes oficiales de UNCTAD para que cada dato sea trazable.</p>
           </div>
           <div class="source-stats">
             <span><strong>${formatInteger(totals.records)}</strong> valores</span>
