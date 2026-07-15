@@ -4,23 +4,30 @@ on:
   workflow_dispatch:
     inputs:
       group:
-        description: "Dataset group to update: daily, monthly, all, world-bank, or dataset id"
+        description: "Dataset group to update: daily, monthly, all, world-bank, ilo, or dataset id"
         required: true
         default: "daily"
   schedule:
-    # Daily exchange-rate checks. GitHub Actions schedules run in UTC.
+    # Daily BCV exchange-rate refresh. GitHub Actions schedules run in UTC.
     - cron: "30 20 * * *"
-    # Monthly workbook catalogue refresh for PIB/INPC.
+    # Monthly BCV workbook refresh for INPC/PIB.
     - cron: "15 13 2 * *"
     # Weekly World Bank refresh.
     - cron: "20 12 * * 1"
+    # Monthly OIT/ILOSTAT refresh for Venezuela labor indicators.
+    - cron: "40 13 3 * *"
 
 permissions:
   contents: write
 
+concurrency:
+  group: ove-data-refresh
+  cancel-in-progress: false
+
 jobs:
   update-bcv-data:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -33,6 +40,8 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "value=${{ github.event.inputs.group }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "40 13 3 * *" ]; then
+            echo "value=ilo" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event.schedule }}" = "20 12 * * 1" ]; then
             echo "value=world-bank" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event.schedule }}" = "15 13 2 * *" ]; then
@@ -48,9 +57,16 @@ jobs:
         run: |
           if [ "${{ steps.group.outputs.value }}" = "world-bank" ]; then
             python scripts/world_bank_refresh.py
+          elif [ "${{ steps.group.outputs.value }}" = "ilo" ]; then
+            python scripts/ilo_refresh.py
+          elif [ "${{ steps.group.outputs.value }}" = "all" ]; then
+            python scripts/bcv_ingest.py --group all
+            python scripts/bcv_workbook_extract.py
+            python scripts/world_bank_refresh.py
+            python scripts/ilo_refresh.py
           else
             python scripts/bcv_ingest.py --group "${{ steps.group.outputs.value }}"
-            if [ "${{ steps.group.outputs.value }}" = "monthly" ] || [ "${{ steps.group.outputs.value }}" = "all" ]; then
+            if [ "${{ steps.group.outputs.value }}" = "monthly" ]; then
               python scripts/bcv_workbook_extract.py
             fi
           fi
@@ -58,12 +74,12 @@ jobs:
 
       - name: Commit data changes
         run: |
-          if git diff --quiet -- assets/data/bcv assets/data/world-bank assets/data/indicadores-clave; then
+          if git diff --quiet -- assets/data/bcv assets/data/world-bank assets/data/ilo assets/data/indicadores-clave; then
             echo "No data changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/data/bcv assets/data/world-bank assets/data/indicadores-clave
+          git add assets/data/bcv assets/data/world-bank assets/data/ilo assets/data/indicadores-clave
           git commit -m "Update OVE data"
           git push

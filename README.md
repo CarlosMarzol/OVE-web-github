@@ -10,12 +10,13 @@ Sitio web estatico del Observatorio Venezolano de Economia.
 - `assets/`: imagenes y recursos usados directamente por la web.
 - `assets/data/world-bank/`: datasets del Banco Mundial para Venezuela en CSV, JSON y Excel.
 - `assets/data/bcv/`: datasets oficiales del Banco Central de Venezuela generados por `scripts/bcv_ingest.py`.
+- `assets/data/ilo/`: datos OIT/ILOSTAT para Venezuela, con series completas comprimidas por frecuencia y catalogo CSV, JSON y Excel.
 - `assets/data/indicadores-clave/`: paquete curado CSV, JSON y Excel para el dashboard de indicadores clave.
-- `.github/workflows/update-bcv-data.yml`: automatizacion de GitHub Actions para actualizar datos BCV y Banco Mundial.
+- `.github/workflows/update-bcv-data.yml`: automatizacion de GitHub Actions para actualizar datos BCV, Banco Mundial y OIT/ILOSTAT.
 - `manual_corporativo_ove_max_calidad.pdf`: archivo enlazado desde la web.
 - `source-assets/`: materiales de apoyo, logos originales e imagenes fuente.
 
-El workflow `Update OVE data` ejecuta el tipo de cambio BCV todos los dias a las 20:30 UTC, refresca PIB/INPC mensualmente, Banco Mundial semanalmente y regenera el paquete `indicadores-clave` antes de commitear cambios.
+El workflow `Update OVE data` ejecuta el tipo de cambio BCV todos los dias a las 20:30 UTC, refresca PIB/INPC mensualmente, Banco Mundial semanalmente, OIT/ILOSTAT mensualmente y regenera el paquete `indicadores-clave` antes de commitear cambios.
 
 ## Actualizar datos BCV
 
@@ -87,6 +88,21 @@ El refresco reutiliza los indicadores ya aprobados en el catalogo OVE, consulta 
 - `assets/data/world-bank/csv/`
 - `assets/data/world-bank/json/`
 - `assets/data/world-bank/excel/`
+
+## Actualizar datos OIT/ILOSTAT
+
+```bash
+python3 scripts/ilo_refresh.py
+```
+
+El refresco descarga los datos bulk de ILOSTAT para Venezuela en frecuencia anual, trimestral y mensual, conserva las series completas como CSV comprimido y regenera el catalogo estructurado en:
+
+- `assets/data/ilo/catalog/ilo-catalog.json`
+- `assets/data/ilo/catalog/catalogo_dataset_web_ove_oit_ilostat.csv`
+- `assets/data/ilo/catalog/catalogo_dataset_web_ove_oit_ilostat.xlsx`
+- `assets/data/ilo/csv/ove_oit_ilostat_venezuela_anual.csv.gz`
+- `assets/data/ilo/csv/ove_oit_ilostat_venezuela_trimestral.csv.gz`
+- `assets/data/ilo/csv/ove_oit_ilostat_venezuela_mensual.csv.gz`
 
 ## Ejecutar localmente
 

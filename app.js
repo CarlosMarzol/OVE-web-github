@@ -7,6 +7,7 @@ const routes = {
   "/informe-trimestral": reportDetailPage,
   "/datos": dataPage,
   "/datos/banco-mundial": worldBankPage,
+  "/datos/oit": iloPage,
   "/datos/bcv": bcvPage,
   "/datos/tipo-cambio": exchangeRatePage,
   "/datos/agricultura-medio-ambiente": () => topicDetailPage("agriculture"),
@@ -61,6 +62,10 @@ const routeMeta = {
   "/datos/banco-mundial": {
     title: "Banco Mundial Venezuela | OVE",
     description: "Series del Banco Mundial organizadas para el análisis económico de Venezuela."
+  },
+  "/datos/oit": {
+    title: "OIT ILOSTAT Venezuela | OVE",
+    description: "Indicadores laborales de OIT/ILOSTAT para Venezuela catalogados por frecuencia."
   },
   "/datos/bcv": {
     title: "Banco Central de Venezuela | OVE",
@@ -180,11 +185,17 @@ const sourceMetadata = {
     latestData: "2025/2026 según indicador",
     records: "5.216 registros"
   },
+  ilo: {
+    source: "OIT - ILOSTAT",
+    lastFetched: "15 jul 2026",
+    latestData: "1961-2030 según frecuencia e indicador",
+    records: "1.088.839 registros"
+  },
   keyIndicators: {
-    source: "BCV / Banco Mundial",
-    lastFetched: "11 jul 2026",
+    source: "BCV / Banco Mundial / OIT",
+    lastFetched: "15 jul 2026",
     latestData: "según serie",
-    records: "2.945 observaciones"
+    records: "2.946 observaciones"
   }
 };
 
@@ -346,6 +357,12 @@ const worldBankCatalog = [
   ["Salud", "salud", 463, 7, 1960, 2026],
   ["Sector externo", "sector_externo", 594, 9, 1960, 2025],
   ["Sector público e instituciones", "sector_publico_e_instituciones", 264, 4, 1960, 2025]
+];
+
+const iloCatalog = [
+  ["Anual", "A", 685545, 554, "1961", "2030", "ove_oit_ilostat_venezuela_anual.csv.gz"],
+  ["Trimestral", "Q", 395813, 186, "1990Q2", "2016Q4", "ove_oit_ilostat_venezuela_trimestral.csv.gz"],
+  ["Mensual", "M", 7481, 15, "1999M01", "2016M12", "ove_oit_ilostat_venezuela_mensual.csv.gz"]
 ];
 
 const topicData = [
@@ -1146,6 +1163,7 @@ function dataBand() {
   const tools = [
     ["BCV - Tipo de cambio", "Serie diaria oficial, multimoneda SMC y Excel OVE actualizados por cron.", "Abrir cuadro", "database", "#/datos/tipo-cambio"],
     ["Banco Mundial - Venezuela", "79 indicadores WDI regenerados para Venezuela.", "Explorar fuente", "globe", "#/datos/banco-mundial"],
+    ["OIT - ILOSTAT Venezuela", "561 indicadores laborales catalogados con datos anuales, trimestrales y mensuales.", "Explorar OIT", "users", "#/datos/oit"],
     ["Indicadores clave", "Panel consolidado con series de referencia y archivos descargables.", "Abrir dashboard", "chartbar", "#/indicadores/dashboard"],
     ["Descargas abiertas", "Paquetes CSV, JSON y Excel disponibles para análisis externo.", "Ver formatos", "download", "#/datos"]
   ];
@@ -1234,6 +1252,31 @@ function worldBankSourceSection() {
         <div class="world-source-actions">
           <a class="button button-primary" href="#/datos/banco-mundial">Explorar fuente ${arrow()}</a>
           <a class="button" href="assets/data/world-bank/catalog/world-bank-catalog.json" download>Catalogo JSON ${icon("download")}</a>
+        </div>
+      </article>
+    </div>
+  </section>`;
+}
+
+function iloSourceSection() {
+  const totals = iloTotals();
+  return `<section class="section-tight">
+    <div class="container">
+      <article class="world-source-panel">
+        <div>
+          <span class="eyebrow">Fuente internacional laboral</span>
+          <h2>OIT - ILOSTAT Venezuela</h2>
+          <p>Indicadores laborales de la OIT catalogados para Venezuela, con datos completos comprimidos por frecuencia y catálogo descargable en CSV, JSON y Excel.</p>
+          <div class="source-stats">
+            <span><strong>${iloCatalog.length}</strong> frecuencias</span>
+            <span><strong>${formatInteger(totals.records)}</strong> registros</span>
+            <span><strong>${totals.indicators}</strong> indicadores</span>
+            <span><strong>${totals.firstPeriod}-${totals.lastPeriod}</strong></span>
+          </div>
+        </div>
+        <div class="world-source-actions">
+          <a class="button button-primary" href="#/datos/oit">Explorar OIT ${arrow()}</a>
+          <a class="button" href="assets/data/ilo/catalog/catalogo_dataset_web_ove_oit_ilostat.xlsx" download>Catálogo Excel ${icon("download")}</a>
         </div>
       </article>
     </div>
@@ -1330,6 +1373,7 @@ function footer() {
         <h3>Recursos</h3>
         <a href="#/contacto">Preguntas frecuentes</a>
         <a href="#/datos/banco-mundial">Banco Mundial</a>
+        <a href="#/datos/oit">OIT - ILOSTAT</a>
         <a href="#/datos/bcv">Banco Central de Venezuela</a>
         <a href="#/datos/tipo-cambio">Tipo de cambio</a>
         <a href="#/licencia-datos">Licencia de datos</a>
@@ -2147,26 +2191,27 @@ function dataPage() {
   return `<div class="page">
     ${pageHero({
       title: "Datos de Venezuela",
-      lead: "Repositorio de datos actualizados del Observatorio: Banco Mundial - Venezuela y Banco Central de Venezuela, con archivos descargables en CSV, JSON y Excel.",
+      lead: "Repositorio de datos actualizados del Observatorio: Banco Mundial, Banco Central de Venezuela y OIT/ILOSTAT, con archivos descargables en CSV, JSON y Excel.",
       breadcrumb: ["Inicio", "Datos", "Datos abiertos y API"],
-      actions: `<a class="button button-primary" href="#/indicadores/dashboard">Abrir dashboard ${arrow()}</a><a class="button" href="#/datos/tipo-cambio">Tipo de cambio BCV ${arrow()}</a><a class="button" href="#/datos/bcv">Ver BCV ${icon("database")}</a>`
+      actions: `<a class="button button-primary" href="#/indicadores/dashboard">Abrir dashboard ${arrow()}</a><a class="button" href="#/datos/oit">Ver OIT ${arrow()}</a><a class="button" href="#/datos/bcv">Ver BCV ${icon("database")}</a>`
     })}
     <section class="section-tight">
       <div class="container">
         ${dataMetaGrid([
-          ["Fuentes integradas", "BCV / Banco Mundial", "Organismos oficiales y multilaterales con archivos descargables.", "shield"],
+          ["Fuentes integradas", "BCV / Banco Mundial / OIT", "Organismos oficiales y multilaterales con archivos descargables.", "shield"],
           ["Última captura OVE", sourceMetadata.keyIndicators.lastFetched, `${sourceMetadata.keyIndicators.records} en el paquete de indicadores clave.`, "calendar"],
-          ["Calendario", "En desarrollo", "La frecuencia formal por fuente se definirá en el protocolo metodológico.", "clipboard"]
+          ["Calendario", "Automatizado", "BCV diario/mensual, Banco Mundial semanal y OIT mensual.", "clipboard"]
         ])}
       </div>
     </section>
     ${topicsSection()}
     ${bcvSourceSection()}
     ${worldBankSourceSection()}
+    ${iloSourceSection()}
     ${keyIndicatorDownloadSection()}
     <section id="datasets" class="section">
       <div class="container">
-        <div class="section-title"><h2>Categorías temáticas</h2><a class="text-link" href="#/datos/banco-mundial">Ver datos reales ${arrow()}</a></div>
+        <div class="section-title"><h2>Categorías temáticas</h2><a class="text-link" href="#/datos/oit">Ver OIT ${arrow()}</a></div>
         <p class="source-note">Estas categorías ordenan fuentes reales ya integradas y futuras ampliaciones del Observatorio.</p>
         <div class="dataset-grid">${datasets.map(datasetCard).join("")}</div>
       </div>
@@ -2182,6 +2227,7 @@ function dataPage() {
             <p class="trend neutral">Disponible: archivos JSON</p>
             <p class="trend neutral">Disponible: libros Excel OVE</p>
             <a class="button" href="#/datos/banco-mundial">Explorar Banco Mundial</a>
+            <a class="button" href="#/datos/oit">Explorar OIT</a>
           </div>
           <div>
             <h3>API pública</h3>
@@ -2228,8 +2274,8 @@ function dataPage() {
           <div class="table-wrap">${recentDatasetTable()}</div>
         </article>
         <div class="span-7">
-          <div class="section-title"><h2>Categorías temáticas disponibles</h2><a class="text-link" href="#/datos/banco-mundial">Ver Banco Mundial ${arrow()}</a></div>
-          <div class="category-grid">${datasets.concat([["Dinero y banca", "BCV", "Tipo de cambio y catálogos de trabajo PIB/INPC.", "database"], ["Social y demografia", "Banco Mundial", "Demografía, salud, género y condiciones de vida.", "users"]]).map(datasetCard).join("")}</div>
+          <div class="section-title"><h2>Categorías temáticas disponibles</h2><a class="text-link" href="#/datos/oit">Ver OIT ${arrow()}</a></div>
+          <div class="category-grid">${datasets.concat([["Dinero y banca", "BCV", "Tipo de cambio y catálogos de trabajo PIB/INPC.", "database"], ["Social y demografia", "Banco Mundial", "Demografía, salud, género y condiciones de vida.", "users"], ["Trabajo y empleo", "OIT", "ILOSTAT: ocupación, desempleo, informalidad, horas, ingresos y protección social.", "users"]]).map(datasetCard).join("")}</div>
         </div>
       </div>
     </section>
@@ -2240,7 +2286,7 @@ function dataPage() {
           ${[
             ["Dashboard de indicadores", "Panel operativo con series clave y visualizaciones listas para consulta.", "calculator"],
             ["Catalogo Banco Mundial", "Exploración por categorías temáticas con series descargables para Venezuela.", "globe"],
-            ["Cuadro BCV", "Consulta de tipo de cambio y series oficiales organizadas para análisis.", "database"]
+            ["Catálogo OIT", "Inventario ILOSTAT de indicadores laborales por frecuencia y dimensión.", "users"]
           ].map(([title, text, ico]) => `<article class="value-card"><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p>${text}</p><a class="text-link" href="#/datos">Explorar ${arrow()}</a></article>`).join("")}
         </div>
       </div>
@@ -2499,6 +2545,65 @@ function worldBankDatasetCard([area, id, records, indicators, firstYear, lastYea
   </article>`;
 }
 
+function iloPage() {
+  const totals = iloTotals();
+  return `<div class="page">
+    ${pageHero({
+      title: "OIT - ILOSTAT Venezuela",
+      lead: "Catálogo descargable de indicadores laborales de la OIT para Venezuela. Incluye series anuales, trimestrales y mensuales en archivos comprimidos, más inventario estructurado en CSV, JSON y Excel.",
+      image: "assets/topics/topic-labor.png",
+      breadcrumb: ["Inicio", "Datos", "OIT"],
+      actions: `<a class="button button-primary" href="#/datos">Volver a Datos ${arrow()}</a>
+        <a class="button" href="assets/data/ilo/catalog/catalogo_dataset_web_ove_oit_ilostat.xlsx" download>Descargar catálogo Excel ${icon("download")}</a>`
+    })}
+    <section class="section">
+      <div class="container">
+        ${dataMetaGrid([
+          ["Fuente", sourceMetadata.ilo.source, "Organización Internacional del Trabajo, base ILOSTAT.", "users"],
+          ["Última captura OVE", sourceMetadata.ilo.lastFetched, `${sourceMetadata.ilo.records}. Cobertura: ${sourceMetadata.ilo.latestData}.`, "calendar"],
+          ["Formatos", "CSV.GZ / JSON / Excel", "Datos completos comprimidos por frecuencia y catálogo reutilizable.", "download"]
+        ])}
+        <div class="world-bank-summary">
+          <div>
+            <span class="eyebrow">Mercado laboral internacional</span>
+            <h2>Fuente: OIT - ILOSTAT</h2>
+            <p>La ingesta conserva los campos originales de ILOSTAT y añade un catálogo web con indicador, tema, base de datos, dimensiones, número de series, registros y último dato disponible.</p>
+          </div>
+          <div class="source-stats">
+            <span><strong>${iloCatalog.length}</strong> frecuencias</span>
+            <span><strong>${formatInteger(totals.records)}</strong> registros</span>
+            <span><strong>${totals.indicators}</strong> indicadores</span>
+            <span><strong>${totals.firstPeriod}-${totals.lastPeriod}</strong></span>
+          </div>
+        </div>
+        <div class="world-bank-catalog-grid">
+          ${iloCatalog.map(iloDatasetCard).join("")}
+        </div>
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
+}
+
+function iloDatasetCard([frequency, code, records, indicators, firstPeriod, lastPeriod, file]) {
+  return `<article class="world-bank-card">
+    <div>
+      <span class="source-tag">OIT - ILOSTAT</span>
+      <h3>${frequency}</h3>
+      <p>${indicators} indicadores laborales, ${formatInteger(records)} registros disponibles para Venezuela.</p>
+    </div>
+    <dl class="source-meta">
+      <div><dt>Periodo</dt><dd>${firstPeriod}-${lastPeriod}</dd></div>
+      <div><dt>ID</dt><dd>${code}</dd></div>
+    </dl>
+    <div class="download-row">
+      <a href="assets/data/ilo/csv/${file}" download>CSV.GZ</a>
+      <a href="assets/data/ilo/json/ove_oit_ilostat_venezuela_catalogo_series.json" download>JSON</a>
+      <a href="assets/data/ilo/excel/ove_oit_ilostat_venezuela_catalogo_series.xlsx" download>Excel</a>
+    </div>
+  </article>`;
+}
+
 function worldBankTotals() {
   return worldBankCatalog.reduce((totals, [, , records, indicators, firstYear, lastYear]) => ({
     records: totals.records + records,
@@ -2507,6 +2612,16 @@ function worldBankTotals() {
     lastYear: Math.max(totals.lastYear, lastYear)
   }), { records: 0, indicators: 0, firstYear: Infinity, lastYear: 0 });
 }
+
+function iloTotals() {
+  return iloCatalog.reduce((totals, [frequency, , records, indicators, firstPeriod, lastPeriod]) => ({
+    records: totals.records + records,
+    indicators: totals.indicators + indicators,
+    firstPeriod: totals.firstPeriod || firstPeriod,
+    lastPeriod: frequency === "Anual" ? lastPeriod : totals.lastPeriod
+  }), { records: 0, indicators: 0, firstPeriod: "", lastPeriod: "" });
+}
+
 
 function formatInteger(value) {
   return new Intl.NumberFormat("es-VE").format(value);
@@ -2549,6 +2664,7 @@ function datasetCard([title, count, text, ico]) {
 function recentDatasetTable() {
   const rows = [
     ["BCV tipo de cambio USD", "CSV/JSON/XLSX", `Último dato ${sourceMetadata.bcv.latestData}`, "Fuente oficial"],
+    ["OIT - ILOSTAT Venezuela", "CSV.GZ/JSON/XLSX", `${sourceMetadata.ilo.records}`, "Fuente laboral"],
     ["Indicadores clave de Venezuela", "CSV/JSON/XLSX", "Series históricas verificables", "Dashboard"],
     ["BCV referencia SMC", "CSV/JSON/XLSX", `Captura ${sourceMetadata.bcv.lastFetched}`, "Fuente oficial"],
     ["Banco Mundial - Venezuela", "CSV/JSON/XLSX", `Captura ${sourceMetadata.worldBank.lastFetched}`, "Fuente real"],

@@ -6,6 +6,8 @@ from __future__ import annotations
 import csv
 import datetime as dt
 import json
+import urllib.parse
+import urllib.request
 from pathlib import Path
 
 from openpyxl import Workbook
@@ -95,10 +97,41 @@ def add_bcv_usd(rows: list[dict]) -> None:
 
 def wdi_rows(area_file: str, code: str) -> list[dict]:
   data = read_json(WDI_DIR / area_file)
-  return [
+  rows = [
     item for item in data["datos"]
     if item.get("Código indicador") == code and item.get("Valor") is not None
   ]
+  if rows:
+    return rows
+  return fetch_wdi_rows(code)
+
+
+def fetch_wdi_rows(code: str) -> list[dict]:
+  params = urllib.parse.urlencode({
+    "format": "json",
+    "per_page": 20000,
+    "date": f"1960:{dt.date.today().year + 1}",
+  })
+  url = f"https://api.worldbank.org/v2/country/VEN/indicator/{code}?{params}"
+  request = urllib.request.Request(url, headers={"User-Agent": "OVE key indicators/1.0"})
+  with urllib.request.urlopen(request, timeout=45) as response:
+    payload = json.loads(response.read().decode("utf-8"))
+  if not isinstance(payload, list) or len(payload) < 2:
+    return []
+  rows = []
+  for item in payload[1] or []:
+    value = item.get("value")
+    year = item.get("date")
+    if value is None or not str(year).isdigit():
+      continue
+    indicator = item.get("indicator") or {}
+    rows.append({
+      "Año": int(year),
+      "Código indicador": code,
+      "Indicador": indicator.get("value") or code,
+      "Valor": value,
+    })
+  return rows
 
 
 def add_wdi(rows: list[dict], code: str, indicator_id: str, indicator: str, area: str, unit: str, scale: float = 1) -> None:
