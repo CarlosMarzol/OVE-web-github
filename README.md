@@ -11,12 +11,13 @@ Sitio web estatico del Observatorio Venezolano de Economia.
 - `assets/data/world-bank/`: datasets del Banco Mundial para Venezuela en CSV, JSON y Excel.
 - `assets/data/bcv/`: datasets oficiales del Banco Central de Venezuela generados por `scripts/bcv_ingest.py`.
 - `assets/data/ilo/`: datos OIT/ILOSTAT para Venezuela, con series completas comprimidas por frecuencia y catalogo CSV, JSON y Excel.
+- `assets/data/imf/`: indicadores macroeconomicos del FMI World Economic Outlook para Venezuela en CSV, JSON y Excel.
 - `assets/data/indicadores-clave/`: paquete curado CSV, JSON y Excel para el dashboard de indicadores clave.
 - `.github/workflows/update-bcv-data.yml`: automatizacion de GitHub Actions para actualizar datos BCV, Banco Mundial y OIT/ILOSTAT.
 - `manual_corporativo_ove_max_calidad.pdf`: archivo enlazado desde la web.
 - `source-assets/`: materiales de apoyo, logos originales e imagenes fuente.
 
-El workflow `Update OVE data` ejecuta el tipo de cambio BCV todos los dias a las 20:30 UTC, refresca PIB/INPC mensualmente, Banco Mundial semanalmente, OIT/ILOSTAT mensualmente y regenera el paquete `indicadores-clave` antes de commitear cambios.
+El workflow `Update OVE data` ejecuta el tipo de cambio BCV todos los dias a las 20:30 UTC, refresca PIB/INPC varias veces al mes, Banco Mundial semanalmente, OIT/ILOSTAT varias veces al mes, FMI/WEO varias veces al mes y regenera el paquete `indicadores-clave` antes de commitear cambios.
 
 ## Actualizar datos BCV
 
@@ -107,6 +108,21 @@ El refresco descarga los datos bulk de ILOSTAT para Venezuela en frecuencia anua
 - `assets/data/ilo/csv/ove_oit_ilostat_venezuela_anual.csv.gz`
 - `assets/data/ilo/csv/ove_oit_ilostat_venezuela_trimestral.csv.gz`
 - `assets/data/ilo/csv/ove_oit_ilostat_venezuela_mensual.csv.gz`
+
+## Actualizar datos FMI/WEO
+
+```bash
+python3 scripts/imf_refresh.py
+```
+
+El refresco consulta el API publico SDMX 3.0 del FMI para `IMF.RES/WEO`, filtra Venezuela y regenera datos, catalogo y Excel con formato corporativo OVE en:
+
+- `assets/data/imf/catalog/imf-catalog.json`
+- `assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.csv`
+- `assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.xlsx`
+- `assets/data/imf/csv/ove_fmi_weo_venezuela.csv`
+- `assets/data/imf/json/ove_fmi_weo_venezuela.json`
+- `assets/data/imf/excel/ove_fmi_weo_venezuela.xlsx`
 
 ## Ejecutar localmente
 

@@ -8,6 +8,7 @@ const routes = {
   "/datos": dataPage,
   "/datos/banco-mundial": worldBankPage,
   "/datos/oit": iloPage,
+  "/datos/fmi": imfPage,
   "/datos/bcv": bcvPage,
   "/datos/tipo-cambio": exchangeRatePage,
   "/datos/agricultura-medio-ambiente": () => topicDetailPage("agriculture"),
@@ -66,6 +67,10 @@ const routeMeta = {
   "/datos/oit": {
     title: "OIT ILOSTAT Venezuela | OVE",
     description: "Indicadores laborales de OIT/ILOSTAT para Venezuela catalogados por frecuencia."
+  },
+  "/datos/fmi": {
+    title: "FMI WEO Venezuela | OVE",
+    description: "Indicadores macroeconómicos del FMI World Economic Outlook para Venezuela."
   },
   "/datos/bcv": {
     title: "Banco Central de Venezuela | OVE",
@@ -191,8 +196,14 @@ const sourceMetadata = {
     latestData: "1961-2030 según frecuencia e indicador",
     records: "1.088.839 registros"
   },
+  imf: {
+    source: "FMI - World Economic Outlook",
+    lastFetched: "15 jul 2026",
+    latestData: "1980-2027 según indicador",
+    records: "1.253 registros"
+  },
   keyIndicators: {
-    source: "BCV / Banco Mundial / OIT",
+    source: "BCV / Banco Mundial / OIT / FMI",
     lastFetched: "15 jul 2026",
     latestData: "según serie",
     records: "2.946 observaciones"
@@ -363,6 +374,10 @@ const iloCatalog = [
   ["Anual", "A", 685545, 554, "1961", "2030", "ove_oit_ilostat_venezuela_anual.csv.gz"],
   ["Trimestral", "Q", 395813, 186, "1990Q2", "2016Q4", "ove_oit_ilostat_venezuela_trimestral.csv.gz"],
   ["Mensual", "M", 7481, 15, "1999M01", "2016M12", "ove_oit_ilostat_venezuela_mensual.csv.gz"]
+];
+
+const imfCatalog = [
+  ["World Economic Outlook", "weo", 1253, 36, 1980, 2027]
 ];
 
 const topicData = [
@@ -1164,6 +1179,7 @@ function dataBand() {
     ["BCV - Tipo de cambio", "Serie diaria oficial, multimoneda SMC y Excel OVE actualizados por cron.", "Abrir cuadro", "database", "#/datos/tipo-cambio"],
     ["Banco Mundial - Venezuela", "79 indicadores WDI regenerados para Venezuela.", "Explorar fuente", "globe", "#/datos/banco-mundial"],
     ["OIT - ILOSTAT Venezuela", "561 indicadores laborales catalogados con datos anuales, trimestrales y mensuales.", "Explorar OIT", "users", "#/datos/oit"],
+    ["FMI - WEO Venezuela", "36 indicadores macroeconómicos con datos históricos y proyecciones.", "Explorar FMI", "bank", "#/datos/fmi"],
     ["Indicadores clave", "Panel consolidado con series de referencia y archivos descargables.", "Abrir dashboard", "chartbar", "#/indicadores/dashboard"],
     ["Descargas abiertas", "Paquetes CSV, JSON y Excel disponibles para análisis externo.", "Ver formatos", "download", "#/datos"]
   ];
@@ -1283,6 +1299,31 @@ function iloSourceSection() {
   </section>`;
 }
 
+function imfSourceSection() {
+  const totals = imfTotals();
+  return `<section class="section-tight">
+    <div class="container">
+      <article class="world-source-panel">
+        <div>
+          <span class="eyebrow">Fuente internacional macroeconómica</span>
+          <h2>FMI - World Economic Outlook</h2>
+          <p>Indicadores macroeconómicos del FMI para Venezuela, con series históricas y proyecciones WEO organizadas para descarga en CSV, JSON y Excel OVE.</p>
+          <div class="source-stats">
+            <span><strong>${imfCatalog.length}</strong> dataset</span>
+            <span><strong>${formatInteger(totals.records)}</strong> registros</span>
+            <span><strong>${totals.indicators}</strong> indicadores</span>
+            <span><strong>${totals.firstYear}-${totals.lastYear}</strong></span>
+          </div>
+        </div>
+        <div class="world-source-actions">
+          <a class="button button-primary" href="#/datos/fmi">Explorar FMI ${arrow()}</a>
+          <a class="button" href="assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.xlsx" download>Catálogo Excel ${icon("download")}</a>
+        </div>
+      </article>
+    </div>
+  </section>`;
+}
+
 function bcvSourceSection() {
   return `<section class="section-tight">
     <div class="container">
@@ -1373,6 +1414,7 @@ function footer() {
         <h3>Recursos</h3>
         <a href="#/contacto">Preguntas frecuentes</a>
         <a href="#/datos/banco-mundial">Banco Mundial</a>
+        <a href="#/datos/fmi">FMI - WEO</a>
         <a href="#/datos/oit">OIT - ILOSTAT</a>
         <a href="#/datos/bcv">Banco Central de Venezuela</a>
         <a href="#/datos/tipo-cambio">Tipo de cambio</a>
@@ -2208,6 +2250,7 @@ function dataPage() {
     ${bcvSourceSection()}
     ${worldBankSourceSection()}
     ${iloSourceSection()}
+    ${imfSourceSection()}
     ${keyIndicatorDownloadSection()}
     <section id="datasets" class="section">
       <div class="container">
@@ -2228,6 +2271,7 @@ function dataPage() {
             <p class="trend neutral">Disponible: libros Excel OVE</p>
             <a class="button" href="#/datos/banco-mundial">Explorar Banco Mundial</a>
             <a class="button" href="#/datos/oit">Explorar OIT</a>
+            <a class="button" href="#/datos/fmi">Explorar FMI</a>
           </div>
           <div>
             <h3>API pública</h3>
@@ -2275,7 +2319,7 @@ function dataPage() {
         </article>
         <div class="span-7">
           <div class="section-title"><h2>Categorías temáticas disponibles</h2><a class="text-link" href="#/datos/oit">Ver OIT ${arrow()}</a></div>
-          <div class="category-grid">${datasets.concat([["Dinero y banca", "BCV", "Tipo de cambio y catálogos de trabajo PIB/INPC.", "database"], ["Social y demografia", "Banco Mundial", "Demografía, salud, género y condiciones de vida.", "users"], ["Trabajo y empleo", "OIT", "ILOSTAT: ocupación, desempleo, informalidad, horas, ingresos y protección social.", "users"]]).map(datasetCard).join("")}</div>
+          <div class="category-grid">${datasets.concat([["Dinero y banca", "BCV", "Tipo de cambio y catálogos de trabajo PIB/INPC.", "database"], ["Social y demografia", "Banco Mundial", "Demografía, salud, género y condiciones de vida.", "users"], ["Trabajo y empleo", "OIT", "ILOSTAT: ocupación, desempleo, informalidad, horas, ingresos y protección social.", "users"], ["Perspectivas macro", "FMI", "World Economic Outlook: crecimiento, inflación, cuentas externas y finanzas públicas.", "bank"]]).map(datasetCard).join("")}</div>
         </div>
       </div>
     </section>
@@ -2604,8 +2648,76 @@ function iloDatasetCard([frequency, code, records, indicators, firstPeriod, last
   </article>`;
 }
 
+function imfPage() {
+  const totals = imfTotals();
+  return `<div class="page">
+    ${pageHero({
+      title: "FMI - World Economic Outlook",
+      lead: "Catálogo descargable de indicadores macroeconómicos del FMI para Venezuela. Incluye crecimiento, inflación, sector externo, finanzas públicas y otras series WEO con datos históricos y proyecciones.",
+      image: "assets/topics/topic-economy.png",
+      breadcrumb: ["Inicio", "Datos", "FMI"],
+      actions: `<a class="button button-primary" href="#/datos">Volver a Datos ${arrow()}</a>
+        <a class="button" href="assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.xlsx" download>Descargar catálogo Excel ${icon("download")}</a>`
+    })}
+    <section class="section">
+      <div class="container">
+        ${dataMetaGrid([
+          ["Fuente", sourceMetadata.imf.source, "World Economic Outlook del Fondo Monetario Internacional.", "bank"],
+          ["Última captura OVE", sourceMetadata.imf.lastFetched, `${sourceMetadata.imf.records}. Cobertura: ${sourceMetadata.imf.latestData}.`, "calendar"],
+          ["Formatos", "CSV / JSON / Excel", "Datos y catálogo con formato corporativo OVE.", "download"]
+        ])}
+        <div class="world-bank-summary">
+          <div>
+            <span class="eyebrow">Perspectivas macroeconómicas</span>
+            <h2>Fuente: FMI - WEO</h2>
+            <p>La ingesta usa el API SDMX 3.0 del FMI para el dataflow IMF.RES/WEO, filtrado para Venezuela. El dataset conserva indicador, periodo, valor, unidad, escala y fecha de actualización país.</p>
+          </div>
+          <div class="source-stats">
+            <span><strong>${imfCatalog.length}</strong> dataset</span>
+            <span><strong>${formatInteger(totals.records)}</strong> registros</span>
+            <span><strong>${totals.indicators}</strong> indicadores</span>
+            <span><strong>${totals.firstYear}-${totals.lastYear}</strong></span>
+          </div>
+        </div>
+        <div class="world-bank-catalog-grid">
+          ${imfCatalog.map(imfDatasetCard).join("")}
+        </div>
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
+}
+
+function imfDatasetCard([title, id, records, indicators, firstYear, lastYear]) {
+  return `<article class="world-bank-card">
+    <div>
+      <span class="source-tag">FMI - WEO</span>
+      <h3>${title}</h3>
+      <p>${indicators} indicadores macroeconómicos, ${formatInteger(records)} registros disponibles para Venezuela.</p>
+    </div>
+    <dl class="source-meta">
+      <div><dt>Periodo</dt><dd>${firstYear}-${lastYear}</dd></div>
+      <div><dt>ID</dt><dd>${id}</dd></div>
+    </dl>
+    <div class="download-row">
+      <a href="assets/data/imf/csv/ove_fmi_weo_venezuela.csv" download>CSV</a>
+      <a href="assets/data/imf/json/ove_fmi_weo_venezuela.json" download>JSON</a>
+      <a href="assets/data/imf/excel/ove_fmi_weo_venezuela.xlsx" download>Excel</a>
+    </div>
+  </article>`;
+}
+
 function worldBankTotals() {
   return worldBankCatalog.reduce((totals, [, , records, indicators, firstYear, lastYear]) => ({
+    records: totals.records + records,
+    indicators: totals.indicators + indicators,
+    firstYear: Math.min(totals.firstYear, firstYear),
+    lastYear: Math.max(totals.lastYear, lastYear)
+  }), { records: 0, indicators: 0, firstYear: Infinity, lastYear: 0 });
+}
+
+function imfTotals() {
+  return imfCatalog.reduce((totals, [, , records, indicators, firstYear, lastYear]) => ({
     records: totals.records + records,
     indicators: totals.indicators + indicators,
     firstYear: Math.min(totals.firstYear, firstYear),
@@ -2664,6 +2776,7 @@ function datasetCard([title, count, text, ico]) {
 function recentDatasetTable() {
   const rows = [
     ["BCV tipo de cambio USD", "CSV/JSON/XLSX", `Último dato ${sourceMetadata.bcv.latestData}`, "Fuente oficial"],
+    ["FMI - WEO Venezuela", "CSV/JSON/XLSX", `${sourceMetadata.imf.records}`, "Fuente macro"],
     ["OIT - ILOSTAT Venezuela", "CSV.GZ/JSON/XLSX", `${sourceMetadata.ilo.records}`, "Fuente laboral"],
     ["Indicadores clave de Venezuela", "CSV/JSON/XLSX", "Series históricas verificables", "Dashboard"],
     ["BCV referencia SMC", "CSV/JSON/XLSX", `Captura ${sourceMetadata.bcv.lastFetched}`, "Fuente oficial"],
