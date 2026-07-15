@@ -12,6 +12,7 @@ const routes = {
   "/datos/fred": fredPage,
   "/datos/ine": inePage,
   "/datos/cepal": cepalPage,
+  "/datos/unctad": unctadPage,
   "/datos/bcv": bcvPage,
   "/datos/tipo-cambio": exchangeRatePage,
   "/datos/agricultura-medio-ambiente": () => topicDetailPage("agriculture"),
@@ -86,6 +87,10 @@ const routeMeta = {
   "/datos/cepal": {
     title: "CEPALSTAT Venezuela | OVE",
     description: "Indicadores abiertos de CEPALSTAT para Venezuela con valores descargables y catálogo OVE."
+  },
+  "/datos/unctad": {
+    title: "UNCTADstat Venezuela | OVE",
+    description: "Reportes abiertos de UNCTADstat para Venezuela con valores descargables y catálogo OVE."
   },
   "/datos/bcv": {
     title: "Banco Central de Venezuela | OVE",
@@ -234,6 +239,12 @@ const sourceMetadata = {
     lastFetched: "15 jul 2026",
     latestData: "1950-2100 según indicador",
     records: "150.230 registros; 2.055 indicadores catalogados"
+  },
+  unctad: {
+    source: "UNCTADstat - UNCTAD",
+    lastFetched: "15 jul 2026",
+    latestData: "1948-2050 según reporte",
+    records: "85.389 valores; 101 reportes catalogados"
   },
   keyIndicators: {
     source: "BCV / Banco Mundial",
@@ -423,6 +434,10 @@ const ineCatalog = [
 
 const cepalCatalog = [
   ["CEPALSTAT Venezuela", "cepalstat", 150230, 2055, 958, 1950, 2100]
+];
+
+const unctadCatalog = [
+  ["UNCTADstat Venezuela", "unctadstat", 85389, 101, 57, 1948, 2050, 121]
 ];
 
 const topicData = [
@@ -1227,6 +1242,7 @@ function dataBand() {
     ["FMI - WEO Venezuela", "36 indicadores macroeconómicos con datos históricos y proyecciones.", "Explorar FMI", "bank", "#/datos/fmi"],
     ["FRED - Venezuela", "Series etiquetadas por FRED para Venezuela con catálogo OVE y descargas trazables.", "Explorar FRED", "globe", "#/datos/fred"],
     ["INE Venezuela", "Catálogo de recursos oficiales con libros tabulares y documentos del portal INE.", "Explorar INE", "database", "#/datos/ine"],
+    ["UNCTADstat - Venezuela", "Reportes de comercio, inversión, transporte y desarrollo con valores filtrados para Venezuela.", "Explorar UNCTAD", "globe", "#/datos/unctad"],
     ["Indicadores clave", "Panel consolidado con series de referencia y archivos descargables.", "Abrir dashboard", "chartbar", "#/indicadores/dashboard"],
     ["Descargas abiertas", "Paquetes CSV, JSON y Excel disponibles para análisis externo.", "Ver formatos", "download", "#/datos"]
   ];
@@ -1448,6 +1464,32 @@ function cepalSourceSection() {
   </section>`;
 }
 
+function unctadSourceSection() {
+  const totals = unctadTotals();
+  return `<section class="section-tight">
+    <div class="container">
+      <article class="world-source-panel">
+        <div>
+          <span class="eyebrow">Fuente internacional de comercio y desarrollo</span>
+          <h2>UNCTADstat - Venezuela</h2>
+          <p>Reportes abiertos de UNCTADstat catalogados para Venezuela, con valores extraídos desde bulk files públicos y catálogo de archivos oficiales trazables.</p>
+          <div class="source-stats">
+            <span><strong>${formatInteger(totals.records)}</strong> valores</span>
+            <span><strong>${formatInteger(totals.cataloged)}</strong> reportes</span>
+            <span><strong>${formatInteger(totals.withData)}</strong> con valores</span>
+            <span><strong>${totals.firstYear}-${totals.lastYear}</strong></span>
+          </div>
+        </div>
+        <div class="world-source-actions">
+          <a class="button button-primary" href="#/datos/unctad">Explorar UNCTAD ${arrow()}</a>
+          <a class="button" href="assets/data/unctad/csv/ove_unctadstat_venezuela_valores.csv.gz" download>Valores CSV.GZ ${icon("download")}</a>
+          <a class="button" href="assets/data/unctad/catalog/catalogo_dataset_web_ove_unctadstat.xlsx" download>Catálogo Excel ${icon("download")}</a>
+        </div>
+      </article>
+    </div>
+  </section>`;
+}
+
 function bcvSourceSection() {
   return `<section class="section-tight">
     <div class="container">
@@ -1542,6 +1584,7 @@ function footer() {
         <a href="#/datos/fred">FRED</a>
         <a href="#/datos/ine">INE Venezuela</a>
         <a href="#/datos/cepal">CEPALSTAT</a>
+        <a href="#/datos/unctad">UNCTADstat</a>
         <a href="#/datos/oit">OIT - ILOSTAT</a>
         <a href="#/datos/bcv">Banco Central de Venezuela</a>
         <a href="#/datos/tipo-cambio">Tipo de cambio</a>
@@ -2367,9 +2410,9 @@ function dataPage() {
     <section class="section-tight">
       <div class="container">
         ${dataMetaGrid([
-          ["Fuentes integradas", "BCV / Banco Mundial / OIT / FMI / FRED / INE / CEPAL", "Organismos oficiales, multilaterales y agregadores con archivos descargables.", "shield"],
+          ["Fuentes integradas", "BCV / Banco Mundial / OIT / FMI / FRED / INE / CEPAL / UNCTAD", "Organismos oficiales, multilaterales y agregadores con archivos descargables.", "shield"],
           ["Última captura OVE", sourceMetadata.keyIndicators.lastFetched, `${sourceMetadata.keyIndicators.records} en el paquete de indicadores clave.`, "calendar"],
-          ["Calendario", "Automatizado", "BCV diario/mensual, Banco Mundial semanal y OIT mensual.", "clipboard"]
+          ["Calendario", "Automatizado", "BCV diario/mensual, Banco Mundial semanal y fuentes multilaterales programadas.", "clipboard"]
         ])}
       </div>
     </section>
@@ -2381,6 +2424,7 @@ function dataPage() {
     ${fredSourceSection()}
     ${ineSourceSection()}
     ${cepalSourceSection()}
+    ${unctadSourceSection()}
     ${keyIndicatorDownloadSection()}
     <section id="datasets" class="section">
       <div class="container">
@@ -2405,6 +2449,7 @@ function dataPage() {
             <a class="button" href="#/datos/fred">Explorar FRED</a>
             <a class="button" href="#/datos/ine">Explorar INE</a>
             <a class="button" href="#/datos/cepal">Explorar CEPAL</a>
+            <a class="button" href="#/datos/unctad">Explorar UNCTAD</a>
           </div>
           <div>
             <h3>API pública</h3>
@@ -2452,7 +2497,7 @@ function dataPage() {
         </article>
         <div class="span-7">
           <div class="section-title"><h2>Categorías temáticas disponibles</h2><a class="text-link" href="#/datos/oit">Ver OIT ${arrow()}</a></div>
-          <div class="category-grid">${datasets.concat([["Dinero y banca", "BCV", "Tipo de cambio y catálogos de trabajo PIB/INPC.", "database"], ["Social y demografia", "Banco Mundial", "Demografía, salud, género y condiciones de vida.", "users"], ["Trabajo y empleo", "OIT", "ILOSTAT: ocupación, desempleo, informalidad, horas, ingresos y protección social.", "users"], ["Perspectivas macro", "FMI", "World Economic Outlook: crecimiento, inflación, cuentas externas y finanzas públicas.", "bank"], ["Indicadores regionales", "CEPALSTAT", "Indicadores comparables de CEPAL para Venezuela.", "globe"]]).map(datasetCard).join("")}</div>
+          <div class="category-grid">${datasets.concat([["Dinero y banca", "BCV", "Tipo de cambio y catálogos de trabajo PIB/INPC.", "database"], ["Social y demografia", "Banco Mundial", "Demografía, salud, género y condiciones de vida.", "users"], ["Trabajo y empleo", "OIT", "ILOSTAT: ocupación, desempleo, informalidad, horas, ingresos y protección social.", "users"], ["Perspectivas macro", "FMI", "World Economic Outlook: crecimiento, inflación, cuentas externas y finanzas públicas.", "bank"], ["Indicadores regionales", "CEPALSTAT", "Indicadores comparables de CEPAL para Venezuela.", "globe"], ["Comercio y desarrollo", "UNCTADstat", "Comercio, inversión, transporte, tecnología y desarrollo.", "globe"]]).map(datasetCard).join("")}</div>
         </div>
       </div>
     </section>
@@ -3018,6 +3063,69 @@ function cepalDatasetCard([title, id, records, cataloged, withData, firstYear, l
   </article>`;
 }
 
+function unctadPage() {
+  const totals = unctadTotals();
+  return `<div class="page">
+    ${pageHero({
+      title: "UNCTADstat - Venezuela",
+      lead: "Reportes abiertos de UNCTADstat filtrados para Venezuela. Incluye valores extraídos de descargas bulk públicas, catálogo de reportes, inventario de archivos oficiales y Excel OVE en español.",
+      image: "assets/topics/topic-economy.png",
+      breadcrumb: ["Inicio", "Datos", "UNCTAD"],
+      actions: `<a class="button button-primary" href="#/datos">Volver a Datos ${arrow()}</a>
+        <a class="button" href="assets/data/unctad/catalog/catalogo_dataset_web_ove_unctadstat.xlsx" download>Descargar catálogo Excel ${icon("download")}</a>
+        <a class="button" href="assets/data/unctad/csv/ove_unctadstat_venezuela_valores.csv.gz" download>Descargar valores CSV.GZ ${icon("download")}</a>`
+    })}
+    <section class="section">
+      <div class="container">
+        ${dataMetaGrid([
+          ["Fuente", sourceMetadata.unctad.source, "UNCTADstat Data Centre, descargas bulk públicas.", "globe"],
+          ["Última captura OVE", sourceMetadata.unctad.lastFetched, `${sourceMetadata.unctad.records}. Cobertura: ${sourceMetadata.unctad.latestData}.`, "calendar"],
+          ["Formatos", "CSV.GZ / CSV / JSON / Excel", "Valores normalizados, bulk files y catálogo OVE corporativo.", "download"]
+        ])}
+        <div class="world-bank-summary">
+          <div>
+            <span class="eyebrow">Comercio, inversión y desarrollo</span>
+            <h2>Fuente: UNCTADstat</h2>
+            <p>La ingesta recorre el catálogo público de UNCTADstat, descarga los bulk files manejables en 7z, extrae los CSV y conserva los valores relacionados con Venezuela. Los archivos oficiales demasiado grandes quedan catalogados con URL y estado de descarga para mantener trazabilidad sin publicar datos incompletos.</p>
+          </div>
+          <div class="source-stats">
+            <span><strong>${formatInteger(totals.records)}</strong> valores</span>
+            <span><strong>${formatInteger(totals.cataloged)}</strong> reportes</span>
+            <span><strong>${formatInteger(totals.withData)}</strong> con valores</span>
+            <span><strong>${formatInteger(totals.bulkFiles)}</strong> bulk files</span>
+            <span><strong>${totals.firstYear}-${totals.lastYear}</strong></span>
+          </div>
+        </div>
+        <div class="world-bank-catalog-grid">
+          ${unctadCatalog.map(unctadDatasetCard).join("")}
+        </div>
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
+}
+
+function unctadDatasetCard([title, id, records, cataloged, withData, firstYear, lastYear, bulkFiles]) {
+  return `<article class="world-bank-card">
+    <div>
+      <span class="source-tag">UNCTADstat</span>
+      <h3>${title}</h3>
+      <p>${formatInteger(withData)} reportes con valores para Venezuela dentro de ${formatInteger(cataloged)} reportes catalogados, con ${formatInteger(records)} valores descargables.</p>
+    </div>
+    <dl class="source-meta">
+      <div><dt>Cobertura</dt><dd>${firstYear}-${lastYear}</dd></div>
+      <div><dt>Bulk files</dt><dd>${formatInteger(bulkFiles)}</dd></div>
+      <div><dt>ID</dt><dd>${id}</dd></div>
+    </dl>
+    <div class="download-row">
+      <a href="assets/data/unctad/csv/ove_unctadstat_venezuela_valores.csv.gz" download>Valores CSV.GZ</a>
+      <a href="assets/data/unctad/excel/ove_unctadstat_venezuela_valores.xlsx" download>Valores Excel</a>
+      <a href="assets/data/unctad/catalog/unctad-catalog.json" download>Catálogo JSON</a>
+      <a href="assets/data/unctad/catalog/catalogo_dataset_web_ove_unctadstat.xlsx" download>Catálogo Excel</a>
+    </div>
+  </article>`;
+}
+
 function worldBankTotals() {
   return worldBankCatalog.reduce((totals, [, , records, indicators, firstYear, lastYear]) => ({
     records: totals.records + records,
@@ -3063,6 +3171,17 @@ function cepalTotals() {
     firstYear: Math.min(totals.firstYear, firstYear),
     lastYear: Math.max(totals.lastYear, lastYear)
   }), { records: 0, cataloged: 0, withData: 0, firstYear: Infinity, lastYear: 0 });
+}
+
+function unctadTotals() {
+  return unctadCatalog.reduce((totals, [, , records, cataloged, withData, firstYear, lastYear, bulkFiles]) => ({
+    records: totals.records + records,
+    cataloged: totals.cataloged + cataloged,
+    withData: totals.withData + withData,
+    firstYear: Math.min(totals.firstYear, firstYear),
+    lastYear: Math.max(totals.lastYear, lastYear),
+    bulkFiles: totals.bulkFiles + bulkFiles
+  }), { records: 0, cataloged: 0, withData: 0, firstYear: Infinity, lastYear: 0, bulkFiles: 0 });
 }
 
 function iloTotals() {
@@ -3120,6 +3239,7 @@ function recentDatasetTable() {
     ["FRED - Venezuela", "CSV/JSON/XLSX", `${sourceMetadata.fred.records}`, "Fuente agregadora"],
     ["INE Venezuela", "CSV/JSON/XLSX", `${sourceMetadata.ine.records}`, "Fuente nacional"],
     ["CEPALSTAT - Venezuela", "CSV.GZ/JSON/XLSX", `${sourceMetadata.cepal.records}`, "Fuente regional"],
+    ["UNCTADstat - Venezuela", "CSV.GZ/JSON/XLSX", `${sourceMetadata.unctad.records}`, "Fuente comercio"],
     ["OIT - ILOSTAT Venezuela", "CSV.GZ/JSON/XLSX", `${sourceMetadata.ilo.records}`, "Fuente laboral"],
     ["Indicadores clave de Venezuela", "CSV/JSON/XLSX", "Series históricas verificables", "Dashboard"],
     ["BCV referencia SMC", "CSV/JSON/XLSX", `Captura ${sourceMetadata.bcv.lastFetched}`, "Fuente oficial"],

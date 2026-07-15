@@ -1,0 +1,19 @@
+{
+  "Organización": "Observatorio Venezolano de Economía",
+  "Dataset": "UNCTADstat - Venezuela",
+  "Fecha generación": "2026-07-15",
+  "Fuente": "UNCTADstat - UNCTAD",
+  "URL fuente": "https://unctadstat.unctad.org/datacentre/",
+  "API catálogo": "https://unctadstat-api.unctad.org/api/datacenter/en",
+  "País": "Venezuela (Bolivarian Rep. of)",
+  "Código país UNCTAD": "862",
+  "Código ISO3": "VEN",
+  "Número de reportes catalogados": 101,
+  "Número de reportes con valores": 57,
+  "Número de archivos bulk catalogados": 121,
+  "Número de valores extraídos": 85389,
+  "Primer año": 1948,
+  "Último año": 2050,
+  "Límite automático de descarga por archivo MB": 20.0,
+  "Nota": "Los bulk files oficiales que superan el límite operativo quedan catalogados con URL oficial y no se sustituyen por archivos vacíos."
+}
