@@ -26,6 +26,7 @@ const routes = {
   "/datos/sociedad": () => topicDetailPage("society"),
   "/datos/estadisticas-experimentales": () => topicDetailPage("experiments"),
   "/metodologia": methodologyPage,
+  "/manifiesto": manifestoPage,
   "/legal": () => legalPage("legal"),
   "/privacidad": () => legalPage("privacidad"),
   "/cookies": () => legalPage("cookies"),
@@ -103,6 +104,10 @@ const routeMeta = {
   "/metodologia": {
     title: "Metodología, fuentes y citación | OVE",
     description: "Criterios metodológicos del OVE: fuentes, tratamiento de datos, actualización, limitaciones y forma de cita."
+  },
+  "/manifiesto": {
+    title: "Manifiesto Institucional | OVE",
+    description: "Manifiesto institucional del Observatorio Venezolano de Economía sobre estadística rigurosa, libertad económica e integridad de las cifras."
   },
   "/legal": {
     title: "Aviso legal | OVE",
@@ -1571,6 +1576,7 @@ function footer() {
       <div class="footer-col">
         <h3>Institucional</h3>
         <a href="#/nosotros">Quiénes somos</a>
+        <a href="#/manifiesto">Manifiesto institucional</a>
         <a href="#/metodologia">Metodología</a>
         <a href="#/nosotros">Equipo</a>
         <a href="#/nosotros">Aliados</a>
@@ -3457,6 +3463,73 @@ function legalPage(kind) {
   </div>`;
 }
 
+function manifestoPage() {
+  return `<div class="page">
+    ${pageHero({
+      title: "Manifiesto Institucional",
+      lead: "La estadística rigurosa como pilar de la libertad económica. Sin independencia institucional y recursos adecuados, la integridad de los datos económicos se ve comprometida, afectando la toma de decisiones ciudadanas.",
+      image: "assets/venezuela-city-wide.jpg",
+      breadcrumb: ["Inicio", "Institucional", "Manifiesto"],
+      dark: true,
+      actions: `<a class="button button-primary" href="#/datos">Explorar datos ${arrow()}</a><a class="button" href="#/metodologia">Ver metodología ${icon("clipboard")}</a>`
+    })}
+    <section class="section">
+      <div class="container dashboard-grid">
+        <article class="panel span-7">
+          <span class="eyebrow">La Integridad de las Cifras</span>
+          <h2>Los datos como derecho fundamental</h2>
+          <span class="accent-line"></span>
+          <blockquote class="quote-card">
+            <p>"La calidad de una democracia depende de la calidad de sus estadísticas. Cuando los datos son vulnerables, la realidad se vuelve negociable. El acceso a cifras precisas es un derecho fundamental."</p>
+          </blockquote>
+          <p>El papel de un observatorio económico moderno trasciende la recolección de cifras; se trata de establecer un estándar de confianza técnica. Las instituciones estadísticas sólidas actúan como faros que permiten medir riesgos y comprender el devenir productivo de la nación.</p>
+        </article>
+        <article class="panel span-5">
+          <span class="eyebrow">Metodología Humana</span>
+          <h2>Economistas interpretando la realidad</h2>
+          <span class="accent-line"></span>
+          <p>Nuestras proyecciones no dependen de algoritmos opacos. Contamos con un equipo de economistas que interpretan la realidad social, política y productiva, aplicando modelos econométricos tradicionales de alta precisión.</p>
+          <div class="button-row" style="margin-top:18px">
+            <a class="button button-small" href="#/metodologia">Criterios metodológicos</a>
+            <a class="button button-small" href="#/datos">Bases de datos</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section-tight">
+      <div class="container dashboard-grid">
+        <article class="panel span-5">
+          <span class="eyebrow">Soberanía del Dato</span>
+          <h2>Medir con precisión técnica</h2>
+          <span class="accent-line"></span>
+          <p>Mantener metodologías armonizadas internacionalmente asegura que la realidad venezolana sea contada con precisión técnica, resistiendo presiones externas o narrativas oficiales sesgadas.</p>
+        </article>
+        <article class="panel span-7">
+          <span class="eyebrow">Nuestros Pilares</span>
+          <h2>Principios operativos</h2>
+          <span class="accent-line"></span>
+          <div class="cards-4 mini-grid-2">
+            ${[
+              ["Autonomía Técnica", "La metodología técnica no se negocia. Nuestros protocolos responden estrictamente a criterios científicos, blindando los resultados de ciclos políticos.", "shield"],
+              ["Veracidad Empírica", "Levantamos datos en campo para sectores de consumo masivo y mercado cambiario, construyendo una imagen fidedigna de la economía formal e informal.", "target"]
+            ].map(([title, text, ico]) => `<div><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p class="tiny">${text}</p></div>`).join("")}
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <article class="cta-panel">
+          <h2>Confianza técnica para mejores decisiones</h2>
+          <p>El OVE organiza datos, metodología y análisis para que ciudadanos, investigadores, periodistas, empresas e instituciones puedan evaluar la realidad económica venezolana con mayor claridad.</p>
+          <a class="button button-primary" href="#/datos">Consultar banco de datos ${arrow()}</a>
+        </article>
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
+}
+
 function aboutPage() {
   return `<div class="page">
     ${pageHero({
@@ -3511,12 +3584,12 @@ function aboutPage() {
         <article class="panel span-5">
           <h2>Fuentes de información</h2>
           <span class="accent-line"></span>
-          <p>El Observatorio se construirá gradualmente con fuentes reales y verificables. Actualmente integra datos del Banco Central de Venezuela y Banco Mundial - Venezuela.</p>
+          <p>El Observatorio se construye con fuentes reales y verificables. Actualmente integra datos del BCV, Banco Mundial, OIT, FMI, FRED, INE Venezuela, CEPALSTAT y UNCTADstat.</p>
           <div class="cards-4 mini-grid-3">
             ${[
               ["Fuente real activa", "Banco Central de Venezuela: tipo de cambio, PIB e INPC preparados para análisis.", "bank"],
-              ["Fuente internacional", "Banco Mundial - Venezuela, disponible en CSV, JSON y Excel.", "globe"],
-              ["Datos propios", "Pendientes de diseño, validación y publicación por parte del OVE.", "users"]
+              ["Fuentes internacionales", "Banco Mundial, OIT, FMI, FRED, CEPAL y UNCTAD organizadas para descarga.", "globe"],
+              ["Fuente nacional", "INE Venezuela con recursos oficiales, documentos y valores extraídos de hojas tabulares.", "database"]
             ].map(([title, text, ico]) => `<div><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p class="tiny">${text}</p></div>`).join("")}
           </div>
         </article>
