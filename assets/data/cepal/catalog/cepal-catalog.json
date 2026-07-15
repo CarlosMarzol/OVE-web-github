@@ -21589,7 +21589,7 @@
       "Último valor disponible": null,
       "Última actualización indicador": "",
       "Estado descarga": "Sin datos para Venezuela",
-      "Error descarga": "int() argument must be a string, a bytes-like object or a number, not 'NoneType'",
+      "Error descarga": "int() argument must be a string, a bytes-like object or a real number, not 'NoneType'",
       "Archivo valores CSV.GZ": "assets/data/cepal/csv/ove_cepalstat_venezuela_valores.csv.gz",
       "Archivo catálogo JSON": "assets/data/cepal/catalog/cepal-catalog.json",
       "Archivo catálogo Excel": "assets/data/cepal/catalog/catalogo_dataset_web_ove_cepalstat.xlsx",
