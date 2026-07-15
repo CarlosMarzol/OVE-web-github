@@ -13,7 +13,7 @@ Sitio web estatico del Observatorio Venezolano de Economia.
 - `assets/data/ilo/`: datos OIT/ILOSTAT para Venezuela, con series completas comprimidas por frecuencia y catalogo CSV, JSON y Excel.
 - `assets/data/imf/`: indicadores macroeconomicos del FMI World Economic Outlook para Venezuela en CSV, JSON y Excel.
 - `assets/data/fred/`: series de FRED para Venezuela, con catalogo de series etiquetadas y observaciones descargables cuando FRED permite acceso CSV.
-- `assets/data/ine/`: catalogo de recursos oficiales del INE Venezuela, con recursos tabulares y documentos enlazados al portal original.
+- `assets/data/ine/`: catalogo de recursos oficiales del INE Venezuela, con recursos tabulares, documentos enlazados al portal original y valores extraidos por celda desde los libros XLS/XLSX.
 - `assets/data/indicadores-clave/`: paquete curado CSV, JSON y Excel para el dashboard de indicadores clave.
 - `.github/workflows/update-bcv-data.yml`: automatizacion de GitHub Actions para actualizar datos BCV, Banco Mundial, OIT/ILOSTAT, FMI/WEO, FRED e INE Venezuela.
 - `manual_corporativo_ove_max_calidad.pdf`: archivo enlazado desde la web.
@@ -147,14 +147,17 @@ El refresco usa la etiqueta publica `venezuela` de FRED, cataloga las series dis
 python3 scripts/ine_refresh.py
 ```
 
-El refresco lee el portal publico `ine.gob.ve`, elimina enlaces duplicados y regenera el catalogo OVE de recursos oficiales. Dado que los libros Excel del INE tienen estructuras heterogeneas, esta primera capa conserva la trazabilidad al archivo oficial y no fuerza una tabla comun de observaciones.
+El refresco lee el portal publico `ine.gob.ve`, elimina enlaces duplicados, regenera el catalogo OVE de recursos oficiales y extrae los valores de los libros XLS/XLSX en formato largo por celda: recurso, hoja, fila, columna, celda y valor. Dado que los libros Excel del INE tienen estructuras heterogeneas, esta capa conserva la estructura original y no fuerza una tabla comun de indicadores.
 
 - `assets/data/ine/catalog/ine-catalog.json`
 - `assets/data/ine/catalog/catalogo_dataset_web_ove_ine_venezuela.csv`
 - `assets/data/ine/catalog/catalogo_dataset_web_ove_ine_venezuela.xlsx`
 - `assets/data/ine/csv/ove_ine_venezuela_catalogo_recursos.csv`
+- `assets/data/ine/csv/ove_ine_venezuela_celdas_tabulares.csv.gz`
+- `assets/data/ine/csv/ove_ine_venezuela_indice_hojas.csv`
 - `assets/data/ine/json/ove_ine_venezuela_catalogo_recursos.json`
 - `assets/data/ine/excel/ove_ine_venezuela_catalogo_recursos.xlsx`
+- `assets/data/ine/excel/ove_ine_venezuela_indice_hojas.xlsx`
 
 ## Ejecutar localmente
 

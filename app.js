@@ -222,7 +222,7 @@ const sourceMetadata = {
     source: "INE Venezuela - Instituto Nacional de Estadística",
     lastFetched: "15 jul 2026",
     latestData: "recursos publicados hasta 2026",
-    records: "323 recursos; 204 tabulares"
+    records: "2.980.320 celdas; 323 recursos"
   },
   keyIndicators: {
     source: "BCV / Banco Mundial",
@@ -407,7 +407,7 @@ const fredCatalog = [
 ];
 
 const ineCatalog = [
-  ["Catálogo de recursos oficiales", "ine_venezuela", 323, 204, 119, "XLS/XLSX/PDF"]
+  ["Catálogo y valores tabulares", "ine_venezuela", 323, 204, 119, 2980320, "XLS/XLSX/PDF"]
 ];
 
 const topicData = [
@@ -1392,13 +1392,14 @@ function ineSourceSection() {
           <p>Catálogo OVE de recursos oficiales publicados por el Instituto Nacional de Estadística de Venezuela, con libros tabulares y documentos enlazados a su fuente original.</p>
           <div class="source-stats">
             <span><strong>${formatInteger(totals.resources)}</strong> recursos</span>
+            <span><strong>${formatInteger(totals.cells)}</strong> celdas</span>
             <span><strong>${totals.tabular}</strong> tabulares</span>
             <span><strong>${totals.documents}</strong> documentos</span>
-            <span><strong>${totals.formats}</strong></span>
           </div>
         </div>
         <div class="world-source-actions">
           <a class="button button-primary" href="#/datos/ine">Explorar INE ${arrow()}</a>
+          <a class="button" href="assets/data/ine/csv/ove_ine_venezuela_celdas_tabulares.csv.gz" download>Valores CSV.GZ ${icon("download")}</a>
           <a class="button" href="assets/data/ine/catalog/catalogo_dataset_web_ove_ine_venezuela.xlsx" download>Catálogo Excel ${icon("download")}</a>
         </div>
       </article>
@@ -2870,7 +2871,7 @@ function inePage() {
         ${dataMetaGrid([
           ["Fuente", sourceMetadata.ine.source, "Portal oficial ine.gob.ve.", "database"],
           ["Última captura OVE", sourceMetadata.ine.lastFetched, `${sourceMetadata.ine.records}. Cobertura: ${sourceMetadata.ine.latestData}.`, "calendar"],
-          ["Formatos", "CSV / JSON / Excel", "Catálogo OVE con enlaces a XLS, XLSX y PDF oficiales.", "download"]
+          ["Formatos", "CSV.GZ / CSV / JSON / Excel", "Valores extraídos por celda, índice de hojas y catálogo OVE.", "download"]
         ])}
         <div class="world-bank-summary">
           <div>
@@ -2880,9 +2881,9 @@ function inePage() {
           </div>
           <div class="source-stats">
             <span><strong>${formatInteger(totals.resources)}</strong> recursos</span>
+            <span><strong>${formatInteger(totals.cells)}</strong> celdas</span>
             <span><strong>${totals.tabular}</strong> tabulares</span>
             <span><strong>${totals.documents}</strong> documentos</span>
-            <span><strong>${totals.formats}</strong></span>
           </div>
         </div>
         <div class="world-bank-catalog-grid">
@@ -2894,21 +2895,21 @@ function inePage() {
   </div>`;
 }
 
-function ineDatasetCard([title, id, resources, tabular, documents, formats]) {
+function ineDatasetCard([title, id, resources, tabular, documents, cells, formats]) {
   return `<article class="world-bank-card">
     <div>
       <span class="source-tag">INE Venezuela</span>
       <h3>${title}</h3>
-      <p>${formatInteger(resources)} recursos oficiales catalogados: ${tabular} tabulares y ${documents} documentos.</p>
+      <p>${formatInteger(resources)} recursos oficiales catalogados y ${formatInteger(cells)} celdas con valor extraídas de libros tabulares.</p>
     </div>
     <dl class="source-meta">
       <div><dt>Formatos</dt><dd>${formats}</dd></div>
       <div><dt>ID</dt><dd>${id}</dd></div>
     </dl>
     <div class="download-row">
-      <a href="assets/data/ine/csv/ove_ine_venezuela_catalogo_recursos.csv" download>CSV</a>
-      <a href="assets/data/ine/json/ove_ine_venezuela_catalogo_recursos.json" download>JSON</a>
-      <a href="assets/data/ine/excel/ove_ine_venezuela_catalogo_recursos.xlsx" download>Excel</a>
+      <a href="assets/data/ine/csv/ove_ine_venezuela_celdas_tabulares.csv.gz" download>Valores CSV.GZ</a>
+      <a href="assets/data/ine/csv/ove_ine_venezuela_indice_hojas.csv" download>Índice CSV</a>
+      <a href="assets/data/ine/excel/ove_ine_venezuela_catalogo_recursos.xlsx" download>Catálogo Excel</a>
     </div>
   </article>`;
 }
@@ -2941,12 +2942,13 @@ function fredTotals() {
 }
 
 function ineTotals() {
-  return ineCatalog.reduce((totals, [, , resources, tabular, documents, formats]) => ({
+  return ineCatalog.reduce((totals, [, , resources, tabular, documents, cells, formats]) => ({
     resources: totals.resources + resources,
     tabular: totals.tabular + tabular,
     documents: totals.documents + documents,
+    cells: totals.cells + cells,
     formats
-  }), { resources: 0, tabular: 0, documents: 0, formats: "XLS/XLSX/PDF" });
+  }), { resources: 0, tabular: 0, documents: 0, cells: 0, formats: "XLS/XLSX/PDF" });
 }
 
 function iloTotals() {
