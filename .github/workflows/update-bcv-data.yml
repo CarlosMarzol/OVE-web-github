@@ -10,12 +10,12 @@ on:
   schedule:
     # Daily BCV exchange-rate refresh. GitHub Actions schedules run in UTC.
     - cron: "30 20 * * *"
-    # Monthly BCV workbook refresh for INPC/PIB.
-    - cron: "15 13 2 * *"
+    # Repeated monthly BCV workbook refresh for INPC/PIB, to catch late releases.
+    - cron: "15 13 2,7,12,17,22 * *"
     # Weekly World Bank refresh.
     - cron: "20 12 * * 1"
-    # Monthly OIT/ILOSTAT refresh for Venezuela labor indicators.
-    - cron: "40 13 3 * *"
+    # Repeated monthly OIT/ILOSTAT refresh for Venezuela labor indicators.
+    - cron: "40 13 3,10,17,24 * *"
 
 permissions:
   contents: write
@@ -40,11 +40,11 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "value=${{ github.event.inputs.group }}" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "40 13 3 * *" ]; then
+          elif [ "${{ github.event.schedule }}" = "40 13 3,10,17,24 * *" ]; then
             echo "value=ilo" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event.schedule }}" = "20 12 * * 1" ]; then
             echo "value=world-bank" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "15 13 2 * *" ]; then
+          elif [ "${{ github.event.schedule }}" = "15 13 2,7,12,17,22 * *" ]; then
             echo "value=monthly" >> "$GITHUB_OUTPUT"
           else
             echo "value=daily" >> "$GITHUB_OUTPUT"
