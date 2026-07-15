@@ -51,7 +51,7 @@ jobs:
           fi
 
       - name: Install Python dependencies
-        run: python -m pip install --upgrade openpyxl pandas xlrd
+        run: python -m pip install --upgrade openpyxl pandas pillow xlrd
 
       - name: Ingest data
         run: |

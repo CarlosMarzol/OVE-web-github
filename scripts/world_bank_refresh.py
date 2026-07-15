@@ -15,6 +15,8 @@ from pathlib import Path
 
 from openpyxl import Workbook
 
+from ove_excel_format import format_sheet, write_key_values, write_table
+
 
 ROOT = Path(__file__).resolve().parents[1]
 WB_ROOT = ROOT / "assets" / "data" / "world-bank"
@@ -149,12 +151,11 @@ def write_area_files(area_id: str, area_name: str, rows: list[dict], fetched: st
   wb = Workbook()
   ws = wb.active
   ws.title = "datos"
-  ws.append(FIELDNAMES)
-  for row in rows:
-    ws.append([row.get(field) for field in FIELDNAMES])
+  format_sheet(ws, f"Banco Mundial - {area_name}", "Venezuela")
+  write_table(ws, FIELDNAMES, rows)
   meta = wb.create_sheet("metadatos")
-  for key, value in payload["metadatos"].items():
-    meta.append([key, value])
+  format_sheet(meta, "Metadatos", f"Banco Mundial - {area_name}")
+  write_key_values(meta, payload["metadatos"].items())
   wb.save(xlsx_path)
 
   years = [row["Año"] for row in rows]
@@ -231,9 +232,8 @@ def write_catalog_tables(catalog: list[dict]) -> None:
   wb = Workbook()
   ws = wb.active
   ws.title = "catalogo"
-  ws.append(fields)
-  for row in catalog:
-    ws.append([row.get(field) for field in fields])
+  format_sheet(ws, "Catálogo Banco Mundial", "Venezuela")
+  write_table(ws, fields, catalog)
   wb.save(CATALOG_DIR / "catalogo_dataset_web_ove_banco_mundial.xlsx")
 
 

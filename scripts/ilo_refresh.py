@@ -14,6 +14,8 @@ from pathlib import Path
 
 from openpyxl import Workbook
 
+from ove_excel_format import format_sheet, write_key_values, write_table
+
 
 ROOT = Path(__file__).resolve().parents[1]
 ILO_ROOT = ROOT / "assets" / "data" / "ilo"
@@ -229,17 +231,15 @@ def write_table_outputs(catalog: list[dict], frequency_summary: list[dict], gene
   wb = Workbook()
   ws = wb.active
   ws.title = "catalogo"
-  ws.append(CATALOG_FIELDS)
-  for row in catalog:
-    ws.append([row.get(field) for field in CATALOG_FIELDS])
+  format_sheet(ws, "OIT - ILOSTAT Venezuela", "Catálogo de indicadores laborales")
+  write_table(ws, CATALOG_FIELDS, catalog)
   summary = wb.create_sheet("frecuencias")
   summary_fields = list(frequency_summary[0].keys()) if frequency_summary else []
-  summary.append(summary_fields)
-  for row in frequency_summary:
-    summary.append([row.get(field) for field in summary_fields])
+  format_sheet(summary, "Frecuencias OIT", "Venezuela")
+  write_table(summary, summary_fields, frequency_summary)
   meta = wb.create_sheet("metadatos")
-  for key, value in catalog_json["metadatos"].items():
-    meta.append([key, value])
+  format_sheet(meta, "Metadatos", "OIT - ILOSTAT Venezuela")
+  write_key_values(meta, catalog_json["metadatos"].items())
   wb.save(EXCEL_DIR / "ove_oit_ilostat_venezuela_catalogo_series.xlsx")
   wb.save(CATALOG_DIR / "catalogo_dataset_web_ove_oit_ilostat.xlsx")
 

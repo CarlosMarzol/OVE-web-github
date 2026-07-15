@@ -58,6 +58,10 @@ Salidas:
 - `assets/data/indicadores-clave/ove_indicadores_clave_venezuela.json`
 - `assets/data/indicadores-clave/ove_indicadores_clave_venezuela.xlsx`
 
+## Formato corporativo Excel
+
+Todos los XLSX publicados desde `assets/data/` deben generarse con `scripts/ove_excel_format.py`. La plantilla deja las primeras 5 filas reservadas para cabecera institucional, coloca el logo oficial OVE y empieza la tabla de datos en la fila 6.
+
 ## Exportar dashboard desde PostgreSQL privado
 
 Para produccion, la web publica no se conecta directamente a PostgreSQL. El servidor exporta la vista aprobada `mart_ove.indicadores_clave_public` a la capa estatica que lee el dashboard:

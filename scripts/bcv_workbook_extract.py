@@ -13,6 +13,8 @@ from pathlib import Path
 import pandas as pd
 from openpyxl import Workbook
 
+from ove_excel_format import format_sheet, write_key_values, write_table
+
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_ROOT = ROOT / "assets" / "data" / "bcv"
@@ -67,14 +69,16 @@ def write_dataset(slug: str, metadata: dict, rows: list[dict], fields: list[str]
   wb = Workbook()
   ws = wb.active
   ws.title = "datos"
-  ws.append(fields)
-  for row in rows:
-    ws.append([row.get(field) for field in fields])
+  format_sheet(ws, metadata.get("title"), "Banco Central de Venezuela")
+  write_table(ws, fields, rows)
   meta = wb.create_sheet("metadatos")
+  format_sheet(meta, "Metadatos", metadata.get("title"))
+  meta_items = []
   for key, value in metadata.items():
     if isinstance(value, (dict, list)):
       value = json.dumps(value, ensure_ascii=False)
-    meta.append([key, value])
+    meta_items.append((key, value))
+  write_key_values(meta, meta_items)
   wb.save(EXCEL_DIR / f"{slug}.xlsx")
 
 

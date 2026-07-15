@@ -23,6 +23,10 @@ from pathlib import Path
 from typing import Iterable
 from xml.sax.saxutils import escape
 
+from openpyxl import Workbook
+
+from ove_excel_format import format_sheet, write_table
+
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "scripts" / "bcv_sources.json"
@@ -338,10 +342,13 @@ def write_xlsx(path: Path, rows: list[list[object]], sheet_name: str = "serie_hi
 
 def write_excel(path: Path, observations: list[dict]) -> None:
   headers = ["indicator_id", "indicator_name", "date", "value", "value_buy", "value_sell", "currency", "unit", "frequency", "source", "source_url", "fetched_at"]
-  rows: list[list[object]] = [headers]
-  for item in observations:
-    rows.append([item.get(header, "") for header in headers])
-  write_xlsx(path, rows)
+  path.parent.mkdir(parents=True, exist_ok=True)
+  wb = Workbook()
+  ws = wb.active
+  ws.title = "serie_historica"
+  format_sheet(ws, "Banco Central de Venezuela", "Tipo de cambio")
+  write_table(ws, headers, observations)
+  wb.save(path)
 
 
 def shared_strings(archive: zipfile.ZipFile) -> list[str]:

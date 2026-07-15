@@ -12,6 +12,8 @@ from pathlib import Path
 
 from openpyxl import Workbook
 
+from ove_excel_format import format_sheet, write_key_values, write_table
+
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "assets" / "data" / "indicadores-clave"
@@ -178,14 +180,16 @@ def write_outputs(rows: list[dict]) -> None:
   wb = Workbook()
   ws = wb.active
   ws.title = "datos"
-  ws.append(FIELDS)
-  for row in rows:
-    ws.append([row.get(field) for field in FIELDS])
+  format_sheet(ws, "Indicadores clave de Venezuela", "Dashboard OVE")
+  write_table(ws, FIELDS, rows)
   meta = wb.create_sheet("metadatos")
+  meta_items = []
   for key, value in metadata.items():
     if isinstance(value, list):
       value = json.dumps(value, ensure_ascii=False)
-    meta.append([key, value])
+    meta_items.append((key, value))
+  format_sheet(meta, "Metadatos", "Indicadores clave de Venezuela")
+  write_key_values(meta, meta_items)
   wb.save(OUT_DIR / "ove_indicadores_clave_venezuela.xlsx")
 
 
