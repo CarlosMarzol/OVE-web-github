@@ -10,6 +10,7 @@ const routes = {
   "/datos/oit": iloPage,
   "/datos/fmi": imfPage,
   "/datos/fred": fredPage,
+  "/datos/ine": inePage,
   "/datos/bcv": bcvPage,
   "/datos/tipo-cambio": exchangeRatePage,
   "/datos/agricultura-medio-ambiente": () => topicDetailPage("agriculture"),
@@ -76,6 +77,10 @@ const routeMeta = {
   "/datos/fred": {
     title: "FRED Venezuela | OVE",
     description: "Series de FRED etiquetadas para Venezuela, catalogadas para descarga abierta."
+  },
+  "/datos/ine": {
+    title: "INE Venezuela | OVE",
+    description: "Catálogo de recursos oficiales del Instituto Nacional de Estadística de Venezuela."
   },
   "/datos/bcv": {
     title: "Banco Central de Venezuela | OVE",
@@ -212,6 +217,12 @@ const sourceMetadata = {
     lastFetched: "15 jul 2026",
     latestData: "1950-2026 según serie FRED",
     records: "13.983 registros; 407 series catalogadas"
+  },
+  ine: {
+    source: "INE Venezuela - Instituto Nacional de Estadística",
+    lastFetched: "15 jul 2026",
+    latestData: "recursos publicados hasta 2026",
+    records: "323 recursos; 204 tabulares"
   },
   keyIndicators: {
     source: "BCV / Banco Mundial",
@@ -393,6 +404,10 @@ const imfCatalog = [
 
 const fredCatalog = [
   ["FRED Venezuela", "venezuela", 13983, 407, 1950, 2026]
+];
+
+const ineCatalog = [
+  ["Catálogo de recursos oficiales", "ine_venezuela", 323, 204, 119, "XLS/XLSX/PDF"]
 ];
 
 const topicData = [
@@ -1196,6 +1211,7 @@ function dataBand() {
     ["OIT - ILOSTAT Venezuela", "561 indicadores laborales catalogados con datos anuales, trimestrales y mensuales.", "Explorar OIT", "users", "#/datos/oit"],
     ["FMI - WEO Venezuela", "36 indicadores macroeconómicos con datos históricos y proyecciones.", "Explorar FMI", "bank", "#/datos/fmi"],
     ["FRED - Venezuela", "Series etiquetadas por FRED para Venezuela con catálogo OVE y descargas trazables.", "Explorar FRED", "globe", "#/datos/fred"],
+    ["INE Venezuela", "Catálogo de recursos oficiales con libros tabulares y documentos del portal INE.", "Explorar INE", "database", "#/datos/ine"],
     ["Indicadores clave", "Panel consolidado con series de referencia y archivos descargables.", "Abrir dashboard", "chartbar", "#/indicadores/dashboard"],
     ["Descargas abiertas", "Paquetes CSV, JSON y Excel disponibles para análisis externo.", "Ver formatos", "download", "#/datos"]
   ];
@@ -1365,6 +1381,31 @@ function fredSourceSection() {
   </section>`;
 }
 
+function ineSourceSection() {
+  const totals = ineTotals();
+  return `<section class="section-tight">
+    <div class="container">
+      <article class="world-source-panel">
+        <div>
+          <span class="eyebrow">Fuente estadística nacional</span>
+          <h2>INE Venezuela</h2>
+          <p>Catálogo OVE de recursos oficiales publicados por el Instituto Nacional de Estadística de Venezuela, con libros tabulares y documentos enlazados a su fuente original.</p>
+          <div class="source-stats">
+            <span><strong>${formatInteger(totals.resources)}</strong> recursos</span>
+            <span><strong>${totals.tabular}</strong> tabulares</span>
+            <span><strong>${totals.documents}</strong> documentos</span>
+            <span><strong>${totals.formats}</strong></span>
+          </div>
+        </div>
+        <div class="world-source-actions">
+          <a class="button button-primary" href="#/datos/ine">Explorar INE ${arrow()}</a>
+          <a class="button" href="assets/data/ine/catalog/catalogo_dataset_web_ove_ine_venezuela.xlsx" download>Catálogo Excel ${icon("download")}</a>
+        </div>
+      </article>
+    </div>
+  </section>`;
+}
+
 function bcvSourceSection() {
   return `<section class="section-tight">
     <div class="container">
@@ -1457,6 +1498,7 @@ function footer() {
         <a href="#/datos/banco-mundial">Banco Mundial</a>
         <a href="#/datos/fmi">FMI - WEO</a>
         <a href="#/datos/fred">FRED</a>
+        <a href="#/datos/ine">INE Venezuela</a>
         <a href="#/datos/oit">OIT - ILOSTAT</a>
         <a href="#/datos/bcv">Banco Central de Venezuela</a>
         <a href="#/datos/tipo-cambio">Tipo de cambio</a>
@@ -2294,6 +2336,7 @@ function dataPage() {
     ${iloSourceSection()}
     ${imfSourceSection()}
     ${fredSourceSection()}
+    ${ineSourceSection()}
     ${keyIndicatorDownloadSection()}
     <section id="datasets" class="section">
       <div class="container">
@@ -2316,6 +2359,7 @@ function dataPage() {
             <a class="button" href="#/datos/oit">Explorar OIT</a>
             <a class="button" href="#/datos/fmi">Explorar FMI</a>
             <a class="button" href="#/datos/fred">Explorar FRED</a>
+            <a class="button" href="#/datos/ine">Explorar INE</a>
           </div>
           <div>
             <h3>API pública</h3>
@@ -2810,6 +2854,65 @@ function fredDatasetCard([title, id, records, series, firstYear, coverage]) {
   </article>`;
 }
 
+function inePage() {
+  const totals = ineTotals();
+  return `<div class="page">
+    ${pageHero({
+      title: "INE Venezuela",
+      lead: "Catálogo descargable de recursos oficiales del Instituto Nacional de Estadística de Venezuela. Incluye libros tabulares, documentos y enlaces trazables al archivo original publicado por el INE.",
+      image: "assets/topics/topic-demography.png",
+      breadcrumb: ["Inicio", "Datos", "INE"],
+      actions: `<a class="button button-primary" href="#/datos">Volver a Datos ${arrow()}</a>
+        <a class="button" href="assets/data/ine/catalog/catalogo_dataset_web_ove_ine_venezuela.xlsx" download>Descargar catálogo Excel ${icon("download")}</a>`
+    })}
+    <section class="section">
+      <div class="container">
+        ${dataMetaGrid([
+          ["Fuente", sourceMetadata.ine.source, "Portal oficial ine.gob.ve.", "database"],
+          ["Última captura OVE", sourceMetadata.ine.lastFetched, `${sourceMetadata.ine.records}. Cobertura: ${sourceMetadata.ine.latestData}.`, "calendar"],
+          ["Formatos", "CSV / JSON / Excel", "Catálogo OVE con enlaces a XLS, XLSX y PDF oficiales.", "download"]
+        ])}
+        <div class="world-bank-summary">
+          <div>
+            <span class="eyebrow">Recursos estadísticos oficiales</span>
+            <h2>Fuente: INE Venezuela</h2>
+            <p>La ingesta cataloga recursos publicados por el INE y conserva la URL oficial de cada archivo. Los Excel originales tienen estructuras heterogéneas; por eso esta capa prioriza inventario, trazabilidad y descarga OVE del catálogo.</p>
+          </div>
+          <div class="source-stats">
+            <span><strong>${formatInteger(totals.resources)}</strong> recursos</span>
+            <span><strong>${totals.tabular}</strong> tabulares</span>
+            <span><strong>${totals.documents}</strong> documentos</span>
+            <span><strong>${totals.formats}</strong></span>
+          </div>
+        </div>
+        <div class="world-bank-catalog-grid">
+          ${ineCatalog.map(ineDatasetCard).join("")}
+        </div>
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
+}
+
+function ineDatasetCard([title, id, resources, tabular, documents, formats]) {
+  return `<article class="world-bank-card">
+    <div>
+      <span class="source-tag">INE Venezuela</span>
+      <h3>${title}</h3>
+      <p>${formatInteger(resources)} recursos oficiales catalogados: ${tabular} tabulares y ${documents} documentos.</p>
+    </div>
+    <dl class="source-meta">
+      <div><dt>Formatos</dt><dd>${formats}</dd></div>
+      <div><dt>ID</dt><dd>${id}</dd></div>
+    </dl>
+    <div class="download-row">
+      <a href="assets/data/ine/csv/ove_ine_venezuela_catalogo_recursos.csv" download>CSV</a>
+      <a href="assets/data/ine/json/ove_ine_venezuela_catalogo_recursos.json" download>JSON</a>
+      <a href="assets/data/ine/excel/ove_ine_venezuela_catalogo_recursos.xlsx" download>Excel</a>
+    </div>
+  </article>`;
+}
+
 function worldBankTotals() {
   return worldBankCatalog.reduce((totals, [, , records, indicators, firstYear, lastYear]) => ({
     records: totals.records + records,
@@ -2835,6 +2938,15 @@ function fredTotals() {
     firstYear: firstYear && totals.firstYear ? Math.min(totals.firstYear, firstYear) : firstYear || totals.firstYear,
     coverage
   }), { records: 0, series: 0, firstYear: 0, coverage: "según serie" });
+}
+
+function ineTotals() {
+  return ineCatalog.reduce((totals, [, , resources, tabular, documents, formats]) => ({
+    resources: totals.resources + resources,
+    tabular: totals.tabular + tabular,
+    documents: totals.documents + documents,
+    formats
+  }), { resources: 0, tabular: 0, documents: 0, formats: "XLS/XLSX/PDF" });
 }
 
 function iloTotals() {
@@ -2890,6 +3002,7 @@ function recentDatasetTable() {
     ["BCV tipo de cambio USD", "CSV/JSON/XLSX", `Último dato ${sourceMetadata.bcv.latestData}`, "Fuente oficial"],
     ["FMI - WEO Venezuela", "CSV/JSON/XLSX", `${sourceMetadata.imf.records}`, "Fuente macro"],
     ["FRED - Venezuela", "CSV/JSON/XLSX", `${sourceMetadata.fred.records}`, "Fuente agregadora"],
+    ["INE Venezuela", "CSV/JSON/XLSX", `${sourceMetadata.ine.records}`, "Fuente nacional"],
     ["OIT - ILOSTAT Venezuela", "CSV.GZ/JSON/XLSX", `${sourceMetadata.ilo.records}`, "Fuente laboral"],
     ["Indicadores clave de Venezuela", "CSV/JSON/XLSX", "Series históricas verificables", "Dashboard"],
     ["BCV referencia SMC", "CSV/JSON/XLSX", `Captura ${sourceMetadata.bcv.lastFetched}`, "Fuente oficial"],

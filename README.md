@@ -13,12 +13,13 @@ Sitio web estatico del Observatorio Venezolano de Economia.
 - `assets/data/ilo/`: datos OIT/ILOSTAT para Venezuela, con series completas comprimidas por frecuencia y catalogo CSV, JSON y Excel.
 - `assets/data/imf/`: indicadores macroeconomicos del FMI World Economic Outlook para Venezuela en CSV, JSON y Excel.
 - `assets/data/fred/`: series de FRED para Venezuela, con catalogo de series etiquetadas y observaciones descargables cuando FRED permite acceso CSV.
+- `assets/data/ine/`: catalogo de recursos oficiales del INE Venezuela, con recursos tabulares y documentos enlazados al portal original.
 - `assets/data/indicadores-clave/`: paquete curado CSV, JSON y Excel para el dashboard de indicadores clave.
-- `.github/workflows/update-bcv-data.yml`: automatizacion de GitHub Actions para actualizar datos BCV, Banco Mundial, OIT/ILOSTAT, FMI/WEO y FRED.
+- `.github/workflows/update-bcv-data.yml`: automatizacion de GitHub Actions para actualizar datos BCV, Banco Mundial, OIT/ILOSTAT, FMI/WEO, FRED e INE Venezuela.
 - `manual_corporativo_ove_max_calidad.pdf`: archivo enlazado desde la web.
 - `source-assets/`: materiales de apoyo, logos originales e imagenes fuente.
 
-El workflow `Update OVE data` ejecuta el tipo de cambio BCV todos los dias a las 20:30 UTC, refresca PIB/INPC varias veces al mes, Banco Mundial semanalmente, OIT/ILOSTAT varias veces al mes, FMI/WEO varias veces al mes, FRED semanalmente y regenera el paquete `indicadores-clave` antes de commitear cambios.
+El workflow `Update OVE data` ejecuta el tipo de cambio BCV todos los dias a las 20:30 UTC, refresca PIB/INPC varias veces al mes, Banco Mundial semanalmente, OIT/ILOSTAT varias veces al mes, FMI/WEO varias veces al mes, FRED semanalmente, INE Venezuela semanalmente y regenera el paquete `indicadores-clave` antes de commitear cambios.
 
 ## Actualizar datos BCV
 
@@ -139,6 +140,21 @@ El refresco usa la etiqueta publica `venezuela` de FRED, cataloga las series dis
 - `assets/data/fred/csv/ove_fred_venezuela.csv`
 - `assets/data/fred/json/ove_fred_venezuela.json`
 - `assets/data/fred/excel/ove_fred_venezuela.xlsx`
+
+## Actualizar datos INE Venezuela
+
+```bash
+python3 scripts/ine_refresh.py
+```
+
+El refresco lee el portal publico `ine.gob.ve`, elimina enlaces duplicados y regenera el catalogo OVE de recursos oficiales. Dado que los libros Excel del INE tienen estructuras heterogeneas, esta primera capa conserva la trazabilidad al archivo oficial y no fuerza una tabla comun de observaciones.
+
+- `assets/data/ine/catalog/ine-catalog.json`
+- `assets/data/ine/catalog/catalogo_dataset_web_ove_ine_venezuela.csv`
+- `assets/data/ine/catalog/catalogo_dataset_web_ove_ine_venezuela.xlsx`
+- `assets/data/ine/csv/ove_ine_venezuela_catalogo_recursos.csv`
+- `assets/data/ine/json/ove_ine_venezuela_catalogo_recursos.json`
+- `assets/data/ine/excel/ove_ine_venezuela_catalogo_recursos.xlsx`
 
 ## Ejecutar localmente
 
