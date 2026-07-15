@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import Iterable, Sequence
+import datetime as dt
 
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
@@ -21,6 +22,10 @@ NAVY = "0A2D5A"
 YELLOW = "FFC20E"
 WHITE = "FFFFFF"
 GRAY = "6B6B6B"
+SPANISH_INTEGER_FORMAT = '[$-es-ES]#,##0'
+SPANISH_DECIMAL_FORMAT = '[$-es-ES]#,##0.00'
+SPANISH_DATE_FORMAT = '[$-es-ES]dd/mm/yyyy'
+SPANISH_DATETIME_FORMAT = '[$-es-ES]dd/mm/yyyy hh:mm'
 
 
 def add_ove_header(ws, title: str | None = None, subtitle: str | None = None) -> None:
@@ -63,6 +68,7 @@ def write_table(ws, fields: Sequence[str], rows: Iterable[dict], start_row: int 
     for col_idx, field in enumerate(fields, start=1):
       cell = ws.cell(row=row_idx, column=col_idx, value=row.get(field))
       cell.alignment = Alignment(vertical="top", wrap_text=True)
+      apply_spanish_number_format(cell)
 
   ws.freeze_panes = f"A{start_row + 1}"
   apply_widths(ws, len(fields))
@@ -81,6 +87,7 @@ def write_key_values(ws, items: Iterable[tuple[str, object]], start_row: int = T
     ws.cell(row=row_idx, column=2, value=value)
     ws.cell(row=row_idx, column=1).font = Font(bold=True, color=NAVY)
     ws.cell(row=row_idx, column=2).alignment = Alignment(wrap_text=True, vertical="top")
+    apply_spanish_number_format(ws.cell(row=row_idx, column=2))
   ws.freeze_panes = f"A{start_row + 1}"
   apply_widths(ws, 2)
 
@@ -93,3 +100,20 @@ def apply_widths(ws, column_count: int) -> None:
 
 def format_sheet(ws, title: str | None = None, subtitle: str | None = None) -> None:
   add_ove_header(ws, title=title, subtitle=subtitle)
+
+
+def apply_spanish_number_format(cell) -> None:
+  value = cell.value
+  if isinstance(value, bool) or value is None:
+    return
+  if isinstance(value, dt.datetime):
+    cell.number_format = SPANISH_DATETIME_FORMAT
+    return
+  if isinstance(value, dt.date):
+    cell.number_format = SPANISH_DATE_FORMAT
+    return
+  if isinstance(value, int):
+    cell.number_format = SPANISH_INTEGER_FORMAT
+    return
+  if isinstance(value, float):
+    cell.number_format = SPANISH_INTEGER_FORMAT if value.is_integer() else SPANISH_DECIMAL_FORMAT
