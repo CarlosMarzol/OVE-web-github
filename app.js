@@ -210,11 +210,11 @@ const sourceMetadata = {
   fred: {
     source: "FRED - Federal Reserve Bank of St. Louis",
     lastFetched: "15 jul 2026",
-    latestData: "según serie FRED",
-    records: "407 series catalogadas"
+    latestData: "1950-2026 según serie FRED",
+    records: "13.983 registros; 407 series catalogadas"
   },
   keyIndicators: {
-    source: "BCV / Banco Mundial / OIT / FMI / FRED",
+    source: "BCV / Banco Mundial",
     lastFetched: "15 jul 2026",
     latestData: "según serie",
     records: "2.946 observaciones"
@@ -392,7 +392,7 @@ const imfCatalog = [
 ];
 
 const fredCatalog = [
-  ["FRED Venezuela", "venezuela", 0, 407, 0, "según acceso FRED"]
+  ["FRED Venezuela", "venezuela", 13983, 407, 1950, 2026]
 ];
 
 const topicData = [
