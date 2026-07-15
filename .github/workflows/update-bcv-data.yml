@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       group:
-        description: "Dataset group to update: daily, monthly, all, world-bank, ilo, imf, or dataset id"
+        description: "Dataset group to update: daily, monthly, all, world-bank, ilo, imf, fred, or dataset id"
         required: true
         default: "daily"
   schedule:
@@ -16,6 +16,8 @@ on:
     - cron: "20 12 * * 1"
     # Repeated monthly IMF WEO refresh for Venezuela macro indicators.
     - cron: "10 14 5,15,25 * *"
+    # Weekly FRED refresh for Venezuela series exposed by the St. Louis Fed.
+    - cron: "35 14 * * 2"
     # Repeated monthly OIT/ILOSTAT refresh for Venezuela labor indicators.
     - cron: "40 13 3,10,17,24 * *"
 
@@ -46,6 +48,8 @@ jobs:
             echo "value=ilo" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event.schedule }}" = "10 14 5,15,25 * *" ]; then
             echo "value=imf" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "35 14 * * 2" ]; then
+            echo "value=fred" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event.schedule }}" = "20 12 * * 1" ]; then
             echo "value=world-bank" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event.schedule }}" = "15 13 2,7,12,17,22 * *" ]; then
@@ -65,12 +69,15 @@ jobs:
             python scripts/ilo_refresh.py
           elif [ "${{ steps.group.outputs.value }}" = "imf" ]; then
             python scripts/imf_refresh.py
+          elif [ "${{ steps.group.outputs.value }}" = "fred" ]; then
+            python scripts/fred_refresh.py
           elif [ "${{ steps.group.outputs.value }}" = "all" ]; then
             python scripts/bcv_ingest.py --group all
             python scripts/bcv_workbook_extract.py
             python scripts/world_bank_refresh.py
             python scripts/ilo_refresh.py
             python scripts/imf_refresh.py
+            python scripts/fred_refresh.py
           else
             python scripts/bcv_ingest.py --group "${{ steps.group.outputs.value }}"
             if [ "${{ steps.group.outputs.value }}" = "monthly" ]; then
@@ -81,12 +88,12 @@ jobs:
 
       - name: Commit data changes
         run: |
-          if git diff --quiet -- assets/data/bcv assets/data/world-bank assets/data/ilo assets/data/imf assets/data/indicadores-clave; then
+          if git diff --quiet -- assets/data/bcv assets/data/world-bank assets/data/ilo assets/data/imf assets/data/fred assets/data/indicadores-clave; then
             echo "No data changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/data/bcv assets/data/world-bank assets/data/ilo assets/data/imf assets/data/indicadores-clave
+          git add assets/data/bcv assets/data/world-bank assets/data/ilo assets/data/imf assets/data/fred assets/data/indicadores-clave
           git commit -m "Update OVE data"
           git push

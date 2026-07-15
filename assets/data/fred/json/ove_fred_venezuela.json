@@ -1,0 +1,2051 @@
+{
+  "metadatos": {
+    "Organización": "Observatorio Venezolano de Economía",
+    "Dataset": "FRED - Venezuela",
+    "Fecha generación": "2026-07-15",
+    "Fuente": "FRED - Federal Reserve Bank of St. Louis",
+    "URL fuente": "https://fred.stlouisfed.org/tags/series?t=venezuela",
+    "País": "Venezuela",
+    "Número de indicadores": 0,
+    "Número de registros": 0,
+    "Errores descarga": 407
+  },
+  "errores": [
+    {
+      "ID serie FRED": "DDOE01VEA086NWDB",
+      "Título": "Consumer Price Index for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FPCPITOTLZGVEN",
+      "Título": "Inflation, consumer prices for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DEXVZUS",
+      "Título": "Venezuelan Bolivares to U.S. Dollar Spot Exchange Rate",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FXRATEVEA618NUPN",
+      "Título": "Exchange Rate to U.S. Dollar for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RGDPNAVEA666NRUG",
+      "Título": "Real GDP at Constant National Prices for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MKTGDPVEA646NWDB",
+      "Título": "Gross Domestic Product for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SEADTLITRZSVEN",
+      "Título": "Literacy Rate, Adult Total for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NYGDPPCAPKDVEN",
+      "Título": "Constant GDP per capita for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SIPOVGINIVEN",
+      "Título": "GINI Index for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SLUEM1524ZSVEN",
+      "Título": "Youth Unemployment Rate for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PPPTTLVEA618NUPN",
+      "Título": "Purchasing Power Parity over GDP for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PRVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Puerto Rico",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SPPOPGROWVEN",
+      "Título": "Population Growth for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI11VEA156NWDB",
+      "Título": "Remittance Inflows to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "ITNETUSERP2VEN",
+      "Título": "Internet users for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "POPTOTVEA647NWDB",
+      "Título": "Population, Total for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IMP3070",
+      "Título": "U.S. Imports of Goods by Customs Basis from Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MKTGNIVEA646NWDB",
+      "Título": "Gross National Income for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RTFPNAVEA632NRUG",
+      "Título": "Total Factor Productivity at Constant National Prices for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PCAGDPVEA646NWDB",
+      "Título": "Gross Domestic Product Per Capita for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RKNANPVEA666NRUG",
+      "Título": "Capital Stock at Constant National Prices for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SPDYNCBRTINVEN",
+      "Título": "Crude Birth Rate for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SPDYNLE00INVEN",
+      "Título": "Life Expectancy at Birth, Total for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDM07VEA156NWDB",
+      "Título": "Outstanding Total International Debt Securities to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SLEMPTOTLSPZSVEN",
+      "Título": "Employment to Population Ratio for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "XRNCUSVEA618NRUG",
+      "Título": "Exchange Rate (market+estimated) for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SMPOPNETMVEN",
+      "Título": "Net migration for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RBVEBIS",
+      "Título": "Real Broad Effective Exchange Rate for Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SPDYNTFRTINVEN",
+      "Título": "Fertility Rate, Total for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RGDPCHVEA625NUPN",
+      "Título": "Purchasing Power Parity Converted GDP Per Capita (Chain Series) for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SPDYNIMRTINVEN",
+      "Título": "Infant Mortality Rate for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI07VEA648NWDB",
+      "Título": "Liquid Liabilities (Broad Money) for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CASHBLVEA188A",
+      "Título": "Cash surplus/deficit (% of GDP) for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "EXP3070",
+      "Título": "U.S. Exports of Goods by F.A.S. Basis to Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDM01VEA156NWDB",
+      "Título": "Stock Market Capitalization to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDI06VEA156NWDB",
+      "Título": "Central Bank Assets to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "LABSHPVEA156NRUG",
+      "Título": "Share of Labour Compensation in GDP at Current National Prices for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDSM01VEA066NWDB",
+      "Título": "Volatility of Stock Price Index for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDM10VEA156NWDB",
+      "Título": "Gross Portfolio Debt Liabilities to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSGAMNIAOVE",
+      "Título": "Amounts Outstanding of International Debt Securities for All Issuers, All Maturities, Nationality of Issuer in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "WUIVEN",
+      "Título": "World Uncertainty Index for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDS1YMAORIGGVE",
+      "Título": "Amount Outstanding Due within One Year of International Debt Securities for General Government Sector, Residence of Issuer in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "GNPGDPVEA156NUPN",
+      "Título": "Ratio of GNP to GDP for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SPADOTFRTVEN",
+      "Título": "Adolescent Fertility Rate for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "POPTTLVEA173NUPN",
+      "Título": "Population for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SMPOPREFGVEN",
+      "Título": "Refugee Population by Country or Territory of Asylum for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI01VEA156NWDB",
+      "Título": "Bank Concentration for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PLKCPPVEA670NRUG",
+      "Título": "Price Level of the Capital Stock for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "HCIYISVEA066NRUG",
+      "Título": "Index of Human Capital per Person for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SPPOP65UPTOZSVEN",
+      "Título": "Population ages 65 and above for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CTFPPPVEA669NRUG",
+      "Título": "Total Factor Productivity Level at Current Purchasing Power Parities for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PLCCPPVEA670NRUG",
+      "Título": "Price Level of Household Consumption for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PLXCPPVEA670NRUG",
+      "Título": "Price Level of Exports for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PC2GDPVEA620NUPN",
+      "Título": "Purchasing Power Parity Converted GDP Per Capita, average GEKS-CPDW, at current prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NBVEBIS",
+      "Título": "Broad Effective Exchange Rate for Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PGDPUSVEA621NUPN",
+      "Título": "Purchasing Power Parity Converted GDP Per Capita Relative to the United States, G-K method, at current prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RGDPOSVEA666NRUG",
+      "Título": "Output-side Real GDP at chained Purchasing Power Parities for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDM06VEA156NWDB",
+      "Título": "Outstanding International Public Debt Securities to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CGDPESVEA666NRUG",
+      "Título": "Expenditure-side Real GDP at Current Purchasing Power Parities for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "POPTTLVEA148NRUG",
+      "Título": "Population for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "AVHWPEVEA065NRUG",
+      "Título": "Average Annual Hours Worked by Persons Engaged for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RGDPL2VEA625NUPN",
+      "Título": "Purchasing Power Parity Converted GDP Per Capita (Laspeyres), derived from growth rates of domestic absorption for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCNODCNUM",
+      "Título": "Use of Financial Services: Number of Loan Accounts at Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTEQTYPOS32719",
+      "Título": "U.S. Portfolio Holdings of Foreign Equity Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSAMRINIVE",
+      "Título": "Net Issues of International Debt Securities for All Issuers, All Maturities, Residence of Issuer in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSGAMRINIVE",
+      "Título": "Net Issues of International Debt Securities for Issuers in General Government Sector, All Maturities, Residence of Issuer in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSGNFAMNINIVE",
+      "Título": "Net Issues of International Debt Securities for Issuers in Non-Financial Corporations (Corporate Issuers), All Maturities, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "BARTERICMP25UPZSVEN",
+      "Título": "Barro-Lee: Population age 25+ with tertiary schooling. Total (Incomplete and Completed Tertiary) for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDS1MNIAOAIVE",
+      "Título": "Amount Outstanding Due within One Year of International Debt Securities for All Issuers, Nationality of Issuer in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PLOINVVEA624NUPN",
+      "Título": "Price Level of Investment for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORTREASPOS32719",
+      "Título": "Foreign Portfolio Holdings of U.S. Long-Term and Short-Term Treasury Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCLODCGGDPPT",
+      "Título": "Use of Financial Services: Key Indicators, Outstanding Deposits with Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SPPOPDPNDOLVEN",
+      "Título": "Age Dependency Ratio: Older Dependents to Working-Age Population for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CKSPPPVEA666NRUG",
+      "Título": "Capital stock at Current Purchasing Power Parities for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CSHICPVEA156NRUG",
+      "Título": "Share of Gross Capital Formation at Current Purchasing Power Parities for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDAI02VEA643NWDB",
+      "Título": "Number of Bank Branches for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCIODCNUM",
+      "Título": "Geographical Outreach: Number of Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RGDPESVEA666NRUG",
+      "Título": "Expenditure-side Real GDP at Chained Purchasing Power Parities for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PPCGDPVEA620NUPN",
+      "Título": "Purchasing Power Parity Converted GDP Per Capita, G-K method, at current prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCLODMFXDC",
+      "Título": "Use of Financial Services, Liabilities: Outstanding Deposits at Deposit Taking Microfinance Institutions (MFIs) for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CGDPOSVEA666NRUG",
+      "Título": "Output-side Real GDP at Current Purchasing Power Parities for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDEI08VEA156NWDB",
+      "Título": "Credit to Government and State-Owned Enterprises to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "WVVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from West Virginia",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDSI01VEA645NWDB",
+      "Título": "Bank Z-Score for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "ITCELSETSP2VEN",
+      "Título": "Mobile Cellular Subscriptions in the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "EMPENGVEA148NRUG",
+      "Título": "Number of Persons Engaged for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PLGCPPVEA670NRUG",
+      "Título": "Price Level of Government Consumption for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RGDPLPVEA625NUPN",
+      "Título": "Purchasing Power Parity Converted GDP Per Capita (Laspeyres), derived from growth rates of Consumption, Government Consumption, Investment for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDEI02VEA156NWDB",
+      "Título": "Bank Lending Deposit Spread for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PL2GDPVEA621NUPN",
+      "Título": "Price Level of GDP, average of GEKS-CPDW for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCAOFILNNUM",
+      "Título": "Use of Financial Services Deposit Accounts: Non-life Insurance Accounts at Insurance Corporations for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCNODCANUM",
+      "Título": "Use of Financial Services: Key Indicators, Loan Accounts with Commercial Banks Per 1,000 Adults for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDEI05VEA156NWDB",
+      "Título": "Bank's Return on Assets for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PLMCPPVEA670NRUG",
+      "Título": "Price Level of Imports for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCDODCHPENUM",
+      "Título": "Use of Financial Services: Number of Depositors which are Households at Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORSTTREASNET32719",
+      "Título": "Foreign Net Transactions of U.S. Short-Term Treasury Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCACNUM",
+      "Título": "Geographical Outreach: Number of Automated Teller Machines (ATMs), Country Wide for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RGDPEQVEA626NUPN",
+      "Título": "Purchasing Power Parity Converted GDP Chain per equivalent adult for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CIPPPGVEA156NUPN",
+      "Título": "Investment Share of Purchasing Power Parity Converted GDP Per Capita at current prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VIVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from U.S. Virgin Islands",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NJVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from New Jersey",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDM02VEA156NWDB",
+      "Título": "Stock Market Total Value Traded to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PLOCONVEA622NUPN",
+      "Título": "Price Level of Consumption for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDSI04VEA156NWDB",
+      "Título": "Bank Credit to Bank Deposits for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PPPGDPVEA619NUPN",
+      "Título": "Total Purchasing Power Parity Converted GDP, G-K method, at current prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "ICBUSEASEXQVEN",
+      "Título": "Ease of doing business index for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDI12VEA156NWDB",
+      "Título": "Private Credit by Deposit Money Banks and Other Financial Institutions to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCAODCNUM",
+      "Título": "Use of Financial Services Deposit Accounts: Accounts at Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCRODCHPENUM",
+      "Título": "Use of Financial Services Borrowers: Households Borrowing from Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PGD2USVEA621NUPN",
+      "Título": "Purchasing Power Parity Converted GDP Per Capita Relative to the United States, average GEKS-CPDW, at current prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDEI01VEA156NWDB",
+      "Título": "Bank's Net Interest Margin for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "KGPPPGVEA156NUPN",
+      "Título": "Government Consumption Share of Purchasing Power Parity Converted GDP Per Capita at constant prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IMMINIAINIVE",
+      "Título": "Net Issues of International Money Market instruments for All Issuers, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "KIPPPGVEA156NUPN",
+      "Título": "Investment Share of Purchasing Power Parity Converted GDP Per Capita at constant prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "OPENCPVEA156NUPN",
+      "Título": "Openness at Current Prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI02VEA156NWDB",
+      "Título": "Bank Deposits to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDI04VEA156NWDB",
+      "Título": "Deposit Money Bank Assets to Deposit Money Bank Assets and Central Bank Assets for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "UTVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Utah",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "ORVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Oregon",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RGDPTEVEA629NUPN",
+      "Título": "Purchasing Power Parity Converted GDP Laspeyres per person counted in total employment for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RGDPLWVEA627NUPN",
+      "Título": "Purchasing Power Parity Converted GDP Laspeyres per worker for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IMMINIAIGIVE",
+      "Título": "Gross Issuance of International Money Market instruments for All Issuers, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "KCPPPGVEA156NUPN",
+      "Título": "Consumption Share of Purchasing Power Parity Converted GDP Per Capita at constant prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCBODMFKNUM",
+      "Título": "Geographical Outreach: Key Indicators, All MFI Branches Per 1000 Km2 for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CSHCCPVEA156NRUG",
+      "Título": "Share of Household Consumption at Current Purchasing Power Parities for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SDVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from South Dakota",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RGDPTHVEA630NUPN",
+      "Título": "Purchasing Power Parity Converted GDP Laspeyres per hour worked by employees for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSGAMRIAOVE",
+      "Título": "Amount Outstanding of International Debt Securities for Issuers in General Government Sector, All Maturities, Residence of Issuer in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PATENT4NVEUTILITY",
+      "Título": "U.S. Granted Patents: Utility Patents Originating in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RGDPWOVEA627NUPN",
+      "Título": "Purchasing Power Parity Converted GDP Chain per worker for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDSI03VEA156NWDB",
+      "Título": "Bank Capital to Total Assets for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SEENRSECOFMZSVEN",
+      "Título": "Ratio of Female to Male Secondary School Enrollment for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SPPOP0014TOZSVEN",
+      "Título": "Population Ages 0 to 14 for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCSODCGGDPPT",
+      "Título": "Use of Financial Services: Key Indicators, Outstanding Loans from Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCSODCSGGDPPT",
+      "Título": "Use of Financial Services: Key Indicators, Outstanding Small and Medium Enterprises Loans from Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CSHMCPVEA156NRUG",
+      "Título": "Share of Merchandise Imports at Current Purchasing Power Parities for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SEENRTERTFMZSVEN",
+      "Título": "Ratio of Female to Male Tertiary School Enrollment for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "WUPIVEN",
+      "Título": "World Pandemic Uncertainty Index for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCDODCSPNUM",
+      "Título": "Use of Financial Services: Key Indicators, Small and Medium Enterprises (SME) Depositors with Commercial Banks (% of Non-financial Corporation Depositors with Commercial Banks) for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PLOGINVEA623NUPN",
+      "Título": "Price Level of Government Consumption for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IMMINIAIAOVE",
+      "Título": "Amount Outstanding of International Money Market instruments for All Issuers, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSGGGAMNINIVE",
+      "Título": "Net Issues of International Debt Securities for Issuers in General Government Sector, All Maturities, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDEI04VEA156NWDB",
+      "Título": "Bank's Overhead Costs to Total Assets for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PATENT4NVETOTAL",
+      "Título": "U.S. Granted Patents: Total Patents Originating in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NVVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Nevada",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCSODMFSXDC",
+      "Título": "Use of Financial Services, Assets: Outstanding Loans to Small and Medium Enterprises at Deposit Taking Microfinance Institutions (MFIs) for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOM01VEA644NWDB",
+      "Título": "Number of Listed Companies for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDI11VEA156NWDB",
+      "Título": "Insurance Company Assets to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDSI02VEA156NWDB",
+      "Título": "Bank Non-Performing Loans to Gross Loans for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCIODDNUM",
+      "Título": "Geographical Outreach: Number of Institutions, Other Depository Corporations, Other Deposit Takers for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDI03VEA156NWDB",
+      "Título": "Non-Bank Financial Institutions' Assets to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PRVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Puerto Rico",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCLODCSGGDPPT",
+      "Título": "Use of Financial Services: Key Indicators, Outstanding Small and Medium Enterprises (SME) Deposits with Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PCDGDPVEA620NUPN",
+      "Título": "Purchasing Power Parity Converted Domestic Absorption Per Capita, average GEKS-CPDW, at current prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MTVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Montana",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "OHVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Ohio",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCAODMFNUM",
+      "Título": "Use of Financial Services: Number of Deposit Accounts at Deposit Taking Microfinance Institutions (MFIs) for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "TXVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Texas",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MTVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Montana",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCDODCSPENUM",
+      "Título": "Use of Financial Services: Number of Depositors which are Small and Medium Enterprises at Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PATENT4NVEPLANT",
+      "Título": "U.S. Granted Patents: Plant Patents Originating in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCSODCXDC",
+      "Título": "Use of Financial Services, Assets: Outstanding Loans at Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NCVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from North Carolina",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCSODMFXDC",
+      "Título": "Use of Financial Services, Assets: Outstanding Loans at Deposit Taking Microfinance Institutions (MFIs) for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "TXVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Texas",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CSHRCPVEA156NRUG",
+      "Título": "Share of Residual Trade and GDP Statistical Discrepancy at Current Purchasing Power Parities for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCRODCHANUM",
+      "Título": "Use of Financial Services: Key Indicators, Household Borrowers from Commercial Banks Per 1000 Adults for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SCVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from South Carolina",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PLICPPVEA670NRUG",
+      "Título": "Price Level of Capital Formation for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCNODMFNUM",
+      "Título": "Use of Financial Services: Number of Loan Accounts at Deposit Taking Microfinance Institutions (MFIs) for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RGDPTTVEA625NUPN",
+      "Título": "Purchasing Power Parity Converted Gross Domestic Income (adjusted for Terms of Trade changes) for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MAVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Massachusetts",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MOVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Missouri",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IMMIRIAOVE",
+      "Título": "Amount Outstanding of International Money Market instruments for All Issuers, Residence of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTAGCYVALCHG32719",
+      "Título": "Valuation Change on Foreign Portfolio Holdings of U.S. Long-Term Agency Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SCVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from South Carolina",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCDODCPENUM",
+      "Título": "Use of Financial Services: Number of Depositors at Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MAVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Massachusetts",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IBANRIAIVE",
+      "Título": "Announced Issues of International Bonds and Notes for All Issuers, Residence of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "WIVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Wisconsin",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MOVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Missouri",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VAVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Virginia",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PATENT4NVEDESIGN",
+      "Título": "U.S. Granted Patents: Design Patents Originating in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Idaho",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PLGDPOVEA670NRUG",
+      "Título": "Price level of Output-side Real GDP at Current Purchasing Power Parities (Purchasing Power Parity/Exchange Rate) for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI06VEA156NWDB",
+      "Título": "5-Bank Asset Concentration for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCDODCANUM",
+      "Título": "Use of Financial Services: Key Indicators, Depositors with Commercial Banks Per 1000 Adults for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MIVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Michigan",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SMPOPTOTLVEN",
+      "Título": "International Migrant Stock, Total for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CSPPPGVEA156NUPN",
+      "Título": "Consumption Share of Purchasing Power Parity Converted GDP Per Capita at current prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MSVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Mississippi",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDM09VEA156NWDB",
+      "Título": "Gross Portfolio Equity Assets to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "WAVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Washington",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCBODDNUM",
+      "Título": "Geographical Outreach: Number of Branches, Excluding Headquarters, for Other Deposit Takers for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCLODCSXDC",
+      "Título": "Use of Financial Services, Liabilities: Outstanding Deposits by Small and Medium Enterprises at Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCDOFINPPENUM",
+      "Título": "Use of Financial Services: Number of Non-life Insurance Depositors at Insurance Corporations for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCBODMFLNUM",
+      "Título": "Geographical Outreach: Number of Branches in 3 Largest Cities, Excluding Headquarters, for Deposit Taking Microfinance Institutions (MFIs) for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "LAVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Louisiana",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDI10VEA156NWDB",
+      "Título": "Non-Life Insurance Premium Volume to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MEVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Maine",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDM08VEA156NWDB",
+      "Título": "Gross Portfolio Equity Liabilities to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NJVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from New Jersey",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCDODCHANUM",
+      "Título": "Use of Financial Services: Key Indicators, Household Depositors with Commercial Banks Per 1000 Adults for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCAOFILPNUM",
+      "Título": "Use of Financial Services Deposit Accounts: Life Insurance Accounts at Insurance Corporations for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDI01VEA156NWDB",
+      "Título": "Private Credit by Deposit Money Banks to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDEM01VEA156NWDB",
+      "Título": "Stock Market Turnover Ratio (Value Traded/Capitalization) for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "HIVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Hawaii",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "WUIMAVEN",
+      "Título": "Smoothed World Uncertainty Index for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCLODCHXDC",
+      "Título": "Use of Financial Services, Liabilities: Outstanding Deposits by Households at Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NHVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from New Hampshire",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDSI07VEA156NWDB",
+      "Título": "Provisions to Non-Performing Loans for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI04VEA066NWDB",
+      "Título": "Lerner Index in Banking Market for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCSODDXDC",
+      "Título": "Use of Financial Services, Assets: Outstanding Loans at Other Deposit Takers for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MEVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Maine",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCAKNUM",
+      "Título": "Geographical Outreach: Key Indicators ATMs Per 1000 Km2 for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORSTTREASPOS32719",
+      "Título": "Foreign Portfolio Holdings of U.S. Short-Term Treasury Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI13VEA156NWDB",
+      "Título": "Percentage of Foreign Banks Among Total Banks for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDAI05VEA156NWDB",
+      "Título": "People 15 Years and Over with Account at a Formal Financial Institution for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PAVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Pennsylvania",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSGFCAMNIAOVE",
+      "Título": "Amount Outstanding of International Debt Securities for Issuers in Other Financial Corporations, All Maturities, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCRODCSPNUM",
+      "Título": "Use of Financial Services: Key Indicators, Small and Medium Enterprises (SME) Borrowers from Commercial Banks (% of Non-financial Corporation Depositors with Commercial Banks) for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDS1MNIAOFCVE",
+      "Título": "Amount Outstanding Due within One Year of International Debt Securities for Financial Corporations Sector, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDS1YMAORIFCVE",
+      "Título": "Amount Outstanding Due within One Year of International Debt Securities for Financial Corporations Sector, Residence of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI08VEA156NWDB",
+      "Título": "Loans from Non-Resident Banks, Net, to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDI09VEA156NWDB",
+      "Título": "Life Insurance Premium Volume to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDAI06VEA156NWDB",
+      "Título": "People 15 Years and Over Saving at a Financial Institution in the Past Year for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SPPOP1564TOZSVEN",
+      "Título": "Population Ages 15 to 64 for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCBODDLNUM",
+      "Título": "Geographical Outreach: Number of Branches in 3 Largest Cities, Excluding Headquarters, for Other Deposit Takers for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCBODMFNUM",
+      "Título": "Geographical Outreach: Number of Branches, Excluding Headquarters, for Deposit Taking Microfinance Institutions (MFIs) for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "GAVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Georgia",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FLVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Florida",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDI02VEA156NWDB",
+      "Título": "Deposit Money Bank Assets to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MDVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Maryland",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCLODDXDC",
+      "Título": "Use of Financial Services, Liabilities: Outstanding Deposits at Other Deposit Takers for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "AZVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Arizona",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSGNFAMNIAOVE",
+      "Título": "Amount Outstanding of International Debt Securities for Issuers in Non-Financial Corporations (Corporate Issuers), All Maturities, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "GAVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Georgia",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI12VEA156NWDB",
+      "Título": "Consolidated Foreign Claims of BIS-Reporting Banks to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PLOGDPVEA621NUPN",
+      "Título": "Price Level of GDP, G-K method for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCIODMFNUM",
+      "Título": "Geographical Outreach: Number of Institutions, Other Depository Corporations, Deposit Taking Microfinance Institutions (MFIs) for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI05VEA156NWDB",
+      "Título": "Boone Indicator in Banking Market for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCLODCXDC",
+      "Título": "Use of Financial Services, Liabilities: Outstanding Deposits at Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IMMIRINIVE",
+      "Título": "Net Issues of International Money Market instruments for All Issuers, Residence of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCRODCPENUM",
+      "Título": "Use of Financial Services Borrowers: Persons Borrowing from Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCLOFIXDC",
+      "Título": "Use of Financial Services, Liabilities: Outstanding Deposits at Insurance Corporations for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "TNVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Tennessee",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDEI03VEA156NWDB",
+      "Título": "Bank's Non-Interest Income to Total Income for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CAVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from California",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SDVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from South Dakota",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCBODCLNUM",
+      "Título": "Geographical Outreach: Number of Branches in 3 Largest Cities, Excluding Headquarters, for Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDAI03VEA156NWDB",
+      "Título": "Firms with a Bank Loan or Line of Credit to Total Firms for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "KYVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Kentucky",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "COVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Colorado",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "ARVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Arkansas",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PATENT4NVEREISSUE",
+      "Título": "U.S. Granted Patents: Reissue Patents Originating in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NHVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from New Hampshire",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IBANAINIAOVE",
+      "Título": "Amount Outstanding of International Bonds and Notes for All Issuers, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MNVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Minnesota",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDSI06VEA156NWDB",
+      "Título": "Liquid Assets to Deposits and Short Term Funding for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "INVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Indiana",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "WYVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Wyoming",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "ILVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Illinois",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSGBAMNINIVE",
+      "Título": "Net Issues of International Debt Securities for Issuers in Financial Institutions Sector (Banks), All Maturities, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSOFAMRINIVE",
+      "Título": "Net Issues of International Debt Securities for Issuers in Other Financial Corporations, All Maturities, Residence of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCBODCKNUM",
+      "Título": "Geographical Outreach: Key Indicators Commercial Bank Branches Per 1000 Km2 for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCRODCANUM",
+      "Título": "Use of Financial Services: Key Indicators, Borrowers from Commercial Banks Per 1000 Adults for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDAI07VEA156NWDB",
+      "Título": "People 15 Years and Over Borrowing from a Financial Institution in the Past Year for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDI08VEA156NWDB",
+      "Título": "Financial System Deposits to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VAVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Virginia",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSGBAMNIAOVE",
+      "Título": "Amount Outstanding of International Debt Securities for Issuers in Financial Institutions Sector (Banks), All Maturities, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MSVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Mississippi",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CSHGCPVEA156NRUG",
+      "Título": "Share of Government Consumption at Current Purchasing Power Parities for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDAM03VEA156NWDB",
+      "Título": "Nonfinancial Corporate Bonds to Total Bonds and Notes Outstanding for Bolivarian Republic of Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DEVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Delaware",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDEI06VEA156NWDB",
+      "Título": "Bank's Return on Equity for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NYVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from New York",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSBMRIAOVE",
+      "Título": "Amount Outstanding of International Debt Securities for Issuers in Financial Institutions Sector (Banks), All Maturities, Residence of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "TNVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Tennessee",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCRODCSPENUM",
+      "Título": "Use of Financial Services Borrowers: Small and Medium Enterprises Borrowing from Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NYVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from New York",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "ORVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Oregon",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NVVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Nevada",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "AKVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Alaska",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSAMRIAOVE",
+      "Título": "Amount Outstanding of International Debt Securities for All Issuers, All Maturities, Residence of Issuer in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCBODCANUM",
+      "Título": "Geographical Outreach: Key Indicators Commercial Bank Branches Per 100,000 Adults for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI14VEA156NWDB",
+      "Título": "Percentage of Foreign Bank Assets Among Total Bank Assets for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCSODCSXDC",
+      "Título": "Use of Financial Services, Assets: Outstanding Loans to Small and Medium Enterprises at Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CSHXCPVEA156NRUG",
+      "Título": "Share of Merchandise Exports at Current Purchasing Power Parities for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NDVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from North Dakota",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "HIVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Hawaii",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "WVVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from West Virginia",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CGPPPGVEA156NUPN",
+      "Título": "Government Consumption Share of Purchasing Power Parity Converted GDP Per Capita at current prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VTVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Vermont",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDS1MNIAOGGVE",
+      "Título": "Amount Outstanding Due within One Year of International Debt Securities for General Government Sector, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDSI05VEA156NWDB",
+      "Título": "Bank Regulatory Capital to Risk-Weighted Assets for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NDVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from North Dakota",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDI05VEA156NWDB",
+      "Título": "Liquid Liabilities to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "OHVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Ohio",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "SEENRPRIMFMZSVEN",
+      "Título": "Ratio of Female to Male Primary School Enrollment for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "WAVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Washington",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "ILVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Illinois",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDS1YMAORIAIVE",
+      "Título": "Amount Outstanding Due within One Year of International Debt Securities for All Issuers, Residence of Issuer in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CTVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Connecticut",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCLOFINPXDC",
+      "Título": "Use of Financial Services, Liabilities: Outstanding Deposits for Non-life Insurance at Insurance Corporations for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NEVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Nebraska",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DEVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Delaware",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCBODCNUM",
+      "Título": "Geographical Outreach: Number of Branches, Excluding Headquarters, for Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSNFAMRINIVE",
+      "Título": "Net Issues of International Debt Securities for Issuers in Non-Financial Corporations (Corporate Issuers), All Maturities, Residence of Issuer in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "WPDIVEN",
+      "Título": "Discussion About Pandemics Index for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCDOFIHPENUM",
+      "Título": "Use of Financial Services: Number of Depositors which are Households at Insurance Corporations for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CTVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Connecticut",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "ALVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Alabama",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "OPENRPVEA156NUPN",
+      "Título": "Openness at constant prices for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "ARVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Arkansas",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDM03VEA156NWDB",
+      "Título": "Outstanding Domestic Private Debt Securities to GDP for Bolivarian Republic of Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "ALVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Alabama",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "WYVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Wyoming",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSGFCAMNINIVE",
+      "Título": "Net Issues of International Debt Securities for Issuers in Other Financial Corporations, All Maturities, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCAANUM",
+      "Título": "Geographical Outreach: Key Indicators ATMs Per 100,000 Adults for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NCVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from North Carolina",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "KSVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Kansas",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "COVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Colorado",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "CAVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from California",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DCVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from District of Columbia",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IBANRIAOVE",
+      "Título": "Amount Outstanding of International Bonds and Notes for All Issuers, Residence of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDAI04VEA156NWDB",
+      "Título": "Small Firms with a Bank Loan or Line of Credit to Total Small Firms for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MNVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Minnesota",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MDVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Maryland",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "ITNETSECRP6VEN",
+      "Título": "Secure Internet Servers for the Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IBANAININIVE",
+      "Título": "Net Issues of International Bonds and Notes for All Issuers, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCACLNUM",
+      "Título": "Geographical Outreach: Number of Automated Teller Machines (ATMs) in 3 Largest Cities for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "KSVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Kansas",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTEQTYPOS32719",
+      "Título": "Foreign Portfolio Holdings of U.S. Equity Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSOFAMRIAOVE",
+      "Título": "Amount Outstanding of International Debt Securities for Issuers in Other Financial Corporations, All Maturities, Residence of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSGGGAMNIAOVE",
+      "Título": "Amount Outstanding of International Debt Securities for Issuers in General Government Sector, All Maturities, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "KYVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Kentucky",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSBMRINIVE",
+      "Título": "Net Issues of International Debt Securities for Issuers in Financial Institutions Sector (Banks), All Maturities, Residence of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDM04VEA156NWDB",
+      "Título": "Outstanding Domestic Public Debt Securities to GDP for Bolivarian Republic of Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Idaho",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCLOFILPXDC",
+      "Título": "Use of Financial Services, Liabilities: Outstanding Deposits for Life Insurance at Insurance Corporations for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "INVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Indiana",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "AKVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Alaska",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NEVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Nebraska",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VTVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Vermont",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "OKVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Oklahoma",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDS1YMAORINCVE",
+      "Título": "Amount Outstanding Due within One Year of International Debt Securities for Non-financial Corporations Sector, Residence of Issuer in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSNFAMRIAOVE",
+      "Título": "Amount Outstanding of International Debt Securities for Issuers in Non-Financial Corporations (Corporate Issuers), All Maturities, Residence of Issuer in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDSGAMNINIVE",
+      "Título": "Net Issues of International Debt Securities for All Issuers, All Maturities, Nationality of Issuer in Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "WIVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Wisconsin",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IAVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Iowa",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DCVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from District of Columbia",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NMVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from New Mexico",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCLODCHGGDPPT",
+      "Título": "Use of Financial Services: Key Indicators, Outstanding Deposits of Households with Commercial Banks for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI09VEA156NWDB",
+      "Título": "Loans from Non-Resident Banks, Amounts Outstanding, to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCIOFINUM",
+      "Título": "Geographical Outreach: Number of Institutions, Other Financial Corporations, Insurance Corporations for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI10VEA156NWDB",
+      "Título": "External Loans and Deposits of Reporting Banks in Relation to the Banking Sector for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FLVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Florida",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PLGDPEVEA670NRUG",
+      "Título": "Price level of Expenditure-side Real GDP at Current Purchasing Power Parities (Purchasing Power Parity/Exchange Rate) for Bolivarian Republic of Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "MIVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Michigan",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IDS1MNIAONCVE",
+      "Título": "Amount Outstanding Due within One Year of International Debt Securities for Non-financial Corporations Sector, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IBANRINIVE",
+      "Título": "Net Issues of International Bonds and Notes for All Issuers, Residence of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDOI03VEA066NWDB",
+      "Título": "H-Statistic in Banking Market for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "UTVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Utah",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "LAVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Louisiana",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "NMVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from New Mexico",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCAODCANUM",
+      "Título": "Use of Financial Services: Key Indicators, Deposit Accounts with Commercial Banks Per 1000 Adults for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IBANAINIAIVE",
+      "Título": "Announced Issues of International Bonds and Notes for All Issuers, Nationality of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDDM05VEA156NWDB",
+      "Título": "Outstanding International Private Debt Securities to GDP for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCSODDSXDC",
+      "Título": "Use of Financial Services, Assets: Outstanding Loans to Small and Medium Enterprisesat Other Deposit Takers for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "OKVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Oklahoma",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IAVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Iowa",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RIVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Rhode Island",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "IMMIRIGIVE",
+      "Título": "Gross Issuance of International Money Market instruments for All Issuers, Residence of Issuer in Venezuela (DISCONTINUED)",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCAODDNUM",
+      "Título": "Use of Financial Services Deposit Accounts: Accounts at Other Deposit Takers for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "PAVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Pennsylvania",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "RIVENA052SCEN",
+      "Título": "Value of Exports to Bolivarian Republic of Venezuela from Rhode Island",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "DDEI07VEA156NWDB",
+      "Título": "Bank's Cost to Income Ratio for Bolivarian Republic of Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "AZVENA475SCEN",
+      "Título": "Number of Identified Exporters to Bolivarian Republic of Venezuela from Arizona",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTTOTALNET32719",
+      "Título": "Foreign Net Transactions of All U.S. Long-Term Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTEQTYVALCHG32719",
+      "Título": "Valuation Change on Foreign Portfolio Holdings of U.S. Equity Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "VENFCNODDNUM",
+      "Título": "Use of Financial Services: Number of Loan Accounts at Other Deposit Takers for Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTTOTALPOS32719",
+      "Título": "Foreign Portfolio Holdings of All U.S. Long-Term Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTTREASNET32719",
+      "Título": "Foreign Net Transactions of U.S. Long-Term Treasury Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTTOTALVALCHG32719",
+      "Título": "Valuation Change on Foreign Portfolio Holdings of All U.S. Long-Term Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTTREASVALCHG32719",
+      "Título": "Valuation Change on Foreign Portfolio Holdings of U.S. Long-Term Treasury Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTTREASPOS32719",
+      "Título": "Foreign Portfolio Holdings of U.S. Long-Term Treasury Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORTREASNET32719",
+      "Título": "Foreign Net Transactions of U.S. Long-Term and Short-Term Treasury Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTBONDPOS32719",
+      "Título": "U.S. Portfolio Holdings of Foreign Long-Term Corporate and Government Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTBONDNET32719",
+      "Título": "U.S. Net Transactions of Foreign Long-Term Corporate and Government Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTEQTYNET32719",
+      "Título": "U.S. Net Transactions of Foreign Equity Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTTOTALVALCHG32719",
+      "Título": "Valuation Change on U.S. Portfolio Holdings of All Foreign Long-Term Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTTOTALNET32719",
+      "Título": "U.S. Net Transactions of All Foreign Long-Term Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTCORPBONDVALCHG32719",
+      "Título": "Valuation Change on U.S. Portfolio Holdings of Foreign Long-Term Corporate Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTGOVTBONDVALCHG32719",
+      "Título": "Valuation Change on U.S. Portfolio Holdings of Foreign Long-Term Government Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTAGCYNET32719",
+      "Título": "Foreign Net Transactions of U.S. Long-Term Agency Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTAGCYPOS32719",
+      "Título": "Foreign Portfolio Holdings of U.S. Long-Term Agency Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTTOTALPOS32719",
+      "Título": "U.S. Portfolio Holdings of All Foreign Long-Term Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTCORPPOS32719",
+      "Título": "Foreign Portfolio Holdings of U.S. Long-Term Corporate Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTCORPNET32719",
+      "Título": "Foreign Net Transactions of U.S. Long-Term Corporate Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTCORPVALCHG32719",
+      "Título": "Valuation Change on Foreign Portfolio Holdings of U.S. Long-Term Corporate Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTGOVTBONDNET32719",
+      "Título": "U.S. Net Transactions of Foreign Long-Term Government Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "FORLTEQTYNET32719",
+      "Título": "Foreign Net Transactions of U.S. Equity Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTBONDVALCHG32719",
+      "Título": "Valuation Change on U.S. Portfolio Holdings of Foreign Long-Term Corporate and Government Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTEQTYVALCHG32719",
+      "Título": "Valuation Change on U.S. Portfolio Holdings of Foreign Equity Securities: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTCORPBONDPOS32719",
+      "Título": "U.S. Portfolio Holdings of Foreign Long-Term Corporate Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTGOVTBONDPOS32719",
+      "Título": "U.S. Portfolio Holdings of Foreign Long-Term Government Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "ID serie FRED": "USLTCORPBONDNET32719",
+      "Título": "U.S. Net Transactions of Foreign Long-Term Corporate Bonds: Venezuela",
+      "Error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "datos": []
+}

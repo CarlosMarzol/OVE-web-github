@@ -12,12 +12,13 @@ Sitio web estatico del Observatorio Venezolano de Economia.
 - `assets/data/bcv/`: datasets oficiales del Banco Central de Venezuela generados por `scripts/bcv_ingest.py`.
 - `assets/data/ilo/`: datos OIT/ILOSTAT para Venezuela, con series completas comprimidas por frecuencia y catalogo CSV, JSON y Excel.
 - `assets/data/imf/`: indicadores macroeconomicos del FMI World Economic Outlook para Venezuela en CSV, JSON y Excel.
+- `assets/data/fred/`: series de FRED para Venezuela, con catalogo de series etiquetadas y observaciones descargables cuando FRED permite acceso CSV.
 - `assets/data/indicadores-clave/`: paquete curado CSV, JSON y Excel para el dashboard de indicadores clave.
-- `.github/workflows/update-bcv-data.yml`: automatizacion de GitHub Actions para actualizar datos BCV, Banco Mundial y OIT/ILOSTAT.
+- `.github/workflows/update-bcv-data.yml`: automatizacion de GitHub Actions para actualizar datos BCV, Banco Mundial, OIT/ILOSTAT, FMI/WEO y FRED.
 - `manual_corporativo_ove_max_calidad.pdf`: archivo enlazado desde la web.
 - `source-assets/`: materiales de apoyo, logos originales e imagenes fuente.
 
-El workflow `Update OVE data` ejecuta el tipo de cambio BCV todos los dias a las 20:30 UTC, refresca PIB/INPC varias veces al mes, Banco Mundial semanalmente, OIT/ILOSTAT varias veces al mes, FMI/WEO varias veces al mes y regenera el paquete `indicadores-clave` antes de commitear cambios.
+El workflow `Update OVE data` ejecuta el tipo de cambio BCV todos los dias a las 20:30 UTC, refresca PIB/INPC varias veces al mes, Banco Mundial semanalmente, OIT/ILOSTAT varias veces al mes, FMI/WEO varias veces al mes, FRED semanalmente y regenera el paquete `indicadores-clave` antes de commitear cambios.
 
 ## Actualizar datos BCV
 
@@ -123,6 +124,21 @@ El refresco consulta el API publico SDMX 3.0 del FMI para `IMF.RES/WEO`, filtra 
 - `assets/data/imf/csv/ove_fmi_weo_venezuela.csv`
 - `assets/data/imf/json/ove_fmi_weo_venezuela.json`
 - `assets/data/imf/excel/ove_fmi_weo_venezuela.xlsx`
+
+## Actualizar datos FRED
+
+```bash
+python3 scripts/fred_refresh.py
+```
+
+El refresco usa la etiqueta publica `venezuela` de FRED, cataloga las series disponibles y descarga observaciones por `fredgraph.csv` cuando FRED permite acceso directo. Si FRED bloquea temporalmente las descargas, el script conserva el ultimo dataset no vacio y registra los errores en el catalogo.
+
+- `assets/data/fred/catalog/fred-catalog.json`
+- `assets/data/fred/catalog/catalogo_dataset_web_ove_fred.csv`
+- `assets/data/fred/catalog/catalogo_dataset_web_ove_fred.xlsx`
+- `assets/data/fred/csv/ove_fred_venezuela.csv`
+- `assets/data/fred/json/ove_fred_venezuela.json`
+- `assets/data/fred/excel/ove_fred_venezuela.xlsx`
 
 ## Ejecutar localmente
 

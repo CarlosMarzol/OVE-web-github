@@ -9,6 +9,7 @@ const routes = {
   "/datos/banco-mundial": worldBankPage,
   "/datos/oit": iloPage,
   "/datos/fmi": imfPage,
+  "/datos/fred": fredPage,
   "/datos/bcv": bcvPage,
   "/datos/tipo-cambio": exchangeRatePage,
   "/datos/agricultura-medio-ambiente": () => topicDetailPage("agriculture"),
@@ -71,6 +72,10 @@ const routeMeta = {
   "/datos/fmi": {
     title: "FMI WEO Venezuela | OVE",
     description: "Indicadores macroeconómicos del FMI World Economic Outlook para Venezuela."
+  },
+  "/datos/fred": {
+    title: "FRED Venezuela | OVE",
+    description: "Series de FRED etiquetadas para Venezuela, catalogadas para descarga abierta."
   },
   "/datos/bcv": {
     title: "Banco Central de Venezuela | OVE",
@@ -202,8 +207,14 @@ const sourceMetadata = {
     latestData: "1980-2027 según indicador",
     records: "1.253 registros"
   },
+  fred: {
+    source: "FRED - Federal Reserve Bank of St. Louis",
+    lastFetched: "15 jul 2026",
+    latestData: "según serie FRED",
+    records: "407 series catalogadas"
+  },
   keyIndicators: {
-    source: "BCV / Banco Mundial / OIT / FMI",
+    source: "BCV / Banco Mundial / OIT / FMI / FRED",
     lastFetched: "15 jul 2026",
     latestData: "según serie",
     records: "2.946 observaciones"
@@ -378,6 +389,10 @@ const iloCatalog = [
 
 const imfCatalog = [
   ["World Economic Outlook", "weo", 1253, 36, 1980, 2027]
+];
+
+const fredCatalog = [
+  ["FRED Venezuela", "venezuela", 0, 407, 0, "según acceso FRED"]
 ];
 
 const topicData = [
@@ -1180,6 +1195,7 @@ function dataBand() {
     ["Banco Mundial - Venezuela", "79 indicadores WDI regenerados para Venezuela.", "Explorar fuente", "globe", "#/datos/banco-mundial"],
     ["OIT - ILOSTAT Venezuela", "561 indicadores laborales catalogados con datos anuales, trimestrales y mensuales.", "Explorar OIT", "users", "#/datos/oit"],
     ["FMI - WEO Venezuela", "36 indicadores macroeconómicos con datos históricos y proyecciones.", "Explorar FMI", "bank", "#/datos/fmi"],
+    ["FRED - Venezuela", "Series etiquetadas por FRED para Venezuela con catálogo OVE y descargas trazables.", "Explorar FRED", "globe", "#/datos/fred"],
     ["Indicadores clave", "Panel consolidado con series de referencia y archivos descargables.", "Abrir dashboard", "chartbar", "#/indicadores/dashboard"],
     ["Descargas abiertas", "Paquetes CSV, JSON y Excel disponibles para análisis externo.", "Ver formatos", "download", "#/datos"]
   ];
@@ -1324,6 +1340,31 @@ function imfSourceSection() {
   </section>`;
 }
 
+function fredSourceSection() {
+  const totals = fredTotals();
+  return `<section class="section-tight">
+    <div class="container">
+      <article class="world-source-panel">
+        <div>
+          <span class="eyebrow">Fuente agregadora internacional</span>
+          <h2>FRED - St. Louis Fed</h2>
+          <p>Series etiquetadas para Venezuela en FRED, con catálogo OVE y descargas en CSV, JSON y Excel corporativo cuando la fuente permite acceso directo a observaciones.</p>
+          <div class="source-stats">
+            <span><strong>${fredCatalog.length}</strong> dataset</span>
+            <span><strong>${formatInteger(totals.records)}</strong> registros</span>
+            <span><strong>${totals.series}</strong> series</span>
+            <span><strong>${totals.coverage}</strong></span>
+          </div>
+        </div>
+        <div class="world-source-actions">
+          <a class="button button-primary" href="#/datos/fred">Explorar FRED ${arrow()}</a>
+          <a class="button" href="assets/data/fred/catalog/catalogo_dataset_web_ove_fred.xlsx" download>Catálogo Excel ${icon("download")}</a>
+        </div>
+      </article>
+    </div>
+  </section>`;
+}
+
 function bcvSourceSection() {
   return `<section class="section-tight">
     <div class="container">
@@ -1415,6 +1456,7 @@ function footer() {
         <a href="#/contacto">Preguntas frecuentes</a>
         <a href="#/datos/banco-mundial">Banco Mundial</a>
         <a href="#/datos/fmi">FMI - WEO</a>
+        <a href="#/datos/fred">FRED</a>
         <a href="#/datos/oit">OIT - ILOSTAT</a>
         <a href="#/datos/bcv">Banco Central de Venezuela</a>
         <a href="#/datos/tipo-cambio">Tipo de cambio</a>
@@ -2251,6 +2293,7 @@ function dataPage() {
     ${worldBankSourceSection()}
     ${iloSourceSection()}
     ${imfSourceSection()}
+    ${fredSourceSection()}
     ${keyIndicatorDownloadSection()}
     <section id="datasets" class="section">
       <div class="container">
@@ -2272,6 +2315,7 @@ function dataPage() {
             <a class="button" href="#/datos/banco-mundial">Explorar Banco Mundial</a>
             <a class="button" href="#/datos/oit">Explorar OIT</a>
             <a class="button" href="#/datos/fmi">Explorar FMI</a>
+            <a class="button" href="#/datos/fred">Explorar FRED</a>
           </div>
           <div>
             <h3>API pública</h3>
@@ -2707,6 +2751,65 @@ function imfDatasetCard([title, id, records, indicators, firstYear, lastYear]) {
   </article>`;
 }
 
+function fredPage() {
+  const totals = fredTotals();
+  return `<div class="page">
+    ${pageHero({
+      title: "FRED - Venezuela",
+      lead: "Catálogo descargable de series de Federal Reserve Economic Data etiquetadas para Venezuela. FRED funciona como agregador: cada serie conserva su identificador, título, unidad, frecuencia y enlace de origen.",
+      image: "assets/topics/topic-economy.png",
+      breadcrumb: ["Inicio", "Datos", "FRED"],
+      actions: `<a class="button button-primary" href="#/datos">Volver a Datos ${arrow()}</a>
+        <a class="button" href="assets/data/fred/catalog/catalogo_dataset_web_ove_fred.xlsx" download>Descargar catálogo Excel ${icon("download")}</a>`
+    })}
+    <section class="section">
+      <div class="container">
+        ${dataMetaGrid([
+          ["Fuente", sourceMetadata.fred.source, "Federal Reserve Bank of St. Louis, base FRED.", "globe"],
+          ["Última captura OVE", sourceMetadata.fred.lastFetched, `${sourceMetadata.fred.records}. Cobertura: ${sourceMetadata.fred.latestData}.`, "calendar"],
+          ["Formatos", "CSV / JSON / Excel", "Datos y catálogo con formato corporativo OVE.", "download"]
+        ])}
+        <div class="world-bank-summary">
+          <div>
+            <span class="eyebrow">Agregador de series económicas</span>
+            <h2>Fuente: FRED</h2>
+            <p>La ingesta usa la etiqueta pública de Venezuela en FRED y descarga observaciones mediante fredgraph.csv cuando la fuente permite acceso directo. El catálogo registra las series no descargadas para mantener trazabilidad.</p>
+          </div>
+          <div class="source-stats">
+            <span><strong>${fredCatalog.length}</strong> dataset</span>
+            <span><strong>${formatInteger(totals.records)}</strong> registros</span>
+            <span><strong>${totals.series}</strong> series</span>
+            <span><strong>${totals.coverage}</strong></span>
+          </div>
+        </div>
+        <div class="world-bank-catalog-grid">
+          ${fredCatalog.map(fredDatasetCard).join("")}
+        </div>
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
+}
+
+function fredDatasetCard([title, id, records, series, firstYear, coverage]) {
+  return `<article class="world-bank-card">
+    <div>
+      <span class="source-tag">FRED</span>
+      <h3>${title}</h3>
+      <p>${series} series catalogadas en FRED para Venezuela, con ${formatInteger(records)} observaciones descargables cuando hay acceso CSV.</p>
+    </div>
+    <dl class="source-meta">
+      <div><dt>Cobertura</dt><dd>${firstYear ? `${firstYear}-${coverage}` : coverage}</dd></div>
+      <div><dt>ID</dt><dd>${id}</dd></div>
+    </dl>
+    <div class="download-row">
+      <a href="assets/data/fred/csv/ove_fred_venezuela.csv" download>CSV</a>
+      <a href="assets/data/fred/json/ove_fred_venezuela.json" download>JSON</a>
+      <a href="assets/data/fred/excel/ove_fred_venezuela.xlsx" download>Excel</a>
+    </div>
+  </article>`;
+}
+
 function worldBankTotals() {
   return worldBankCatalog.reduce((totals, [, , records, indicators, firstYear, lastYear]) => ({
     records: totals.records + records,
@@ -2723,6 +2826,15 @@ function imfTotals() {
     firstYear: Math.min(totals.firstYear, firstYear),
     lastYear: Math.max(totals.lastYear, lastYear)
   }), { records: 0, indicators: 0, firstYear: Infinity, lastYear: 0 });
+}
+
+function fredTotals() {
+  return fredCatalog.reduce((totals, [, , records, series, firstYear, coverage]) => ({
+    records: totals.records + records,
+    series: totals.series + series,
+    firstYear: firstYear && totals.firstYear ? Math.min(totals.firstYear, firstYear) : firstYear || totals.firstYear,
+    coverage
+  }), { records: 0, series: 0, firstYear: 0, coverage: "según serie" });
 }
 
 function iloTotals() {
@@ -2777,6 +2889,7 @@ function recentDatasetTable() {
   const rows = [
     ["BCV tipo de cambio USD", "CSV/JSON/XLSX", `Último dato ${sourceMetadata.bcv.latestData}`, "Fuente oficial"],
     ["FMI - WEO Venezuela", "CSV/JSON/XLSX", `${sourceMetadata.imf.records}`, "Fuente macro"],
+    ["FRED - Venezuela", "CSV/JSON/XLSX", `${sourceMetadata.fred.records}`, "Fuente agregadora"],
     ["OIT - ILOSTAT Venezuela", "CSV.GZ/JSON/XLSX", `${sourceMetadata.ilo.records}`, "Fuente laboral"],
     ["Indicadores clave de Venezuela", "CSV/JSON/XLSX", "Series históricas verificables", "Dashboard"],
     ["BCV referencia SMC", "CSV/JSON/XLSX", `Captura ${sourceMetadata.bcv.lastFetched}`, "Fuente oficial"],
