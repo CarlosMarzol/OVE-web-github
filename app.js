@@ -1237,11 +1237,11 @@ function pageHero({ title, lead, image = "assets/venezuela-hero.png", breadcrumb
 function dataBand() {
   const tools = [
     ["BCV - Tipo de cambio", "Serie diaria oficial, multimoneda SMC y Excel OVE actualizados por cron.", "Abrir cuadro", "database", "#/datos/tipo-cambio"],
-    ["Banco Mundial - Venezuela", "79 indicadores WDI regenerados para Venezuela.", "Explorar fuente", "globe", "#/datos/banco-mundial"],
-    ["OIT - ILOSTAT Venezuela", "561 indicadores laborales catalogados con datos anuales, trimestrales y mensuales.", "Explorar OIT", "users", "#/datos/oit"],
-    ["FMI - WEO Venezuela", "36 indicadores macroeconómicos con datos históricos y proyecciones.", "Explorar FMI", "bank", "#/datos/fmi"],
-    ["FRED - Venezuela", "Series etiquetadas por FRED para Venezuela con catálogo OVE y descargas trazables.", "Explorar FRED", "globe", "#/datos/fred"],
-    ["INE Venezuela", "Catálogo de recursos oficiales con libros tabulares y documentos del portal INE.", "Explorar INE", "database", "#/datos/ine"],
+    ["Banco Mundial - Venezuela", "Población, salud, educación, empleo, pobreza, inflación, crecimiento, comercio e infraestructura.", "Explorar fuente", "globe", "#/datos/banco-mundial"],
+    ["OIT - ILOSTAT Venezuela", "Empleo, desempleo, fuerza de trabajo, informalidad, horas, ingresos y brechas laborales.", "Explorar OIT", "users", "#/datos/oit"],
+    ["FMI - WEO Venezuela", "PIB, inflación, cuentas externas, finanzas públicas, deuda y proyecciones económicas.", "Explorar FMI", "bank", "#/datos/fmi"],
+    ["FRED - Venezuela", "Series internacionales recopiladas por la Fed de St. Louis sobre economía, trabajo, precios y comercio.", "Explorar FRED", "globe", "#/datos/fred"],
+    ["INE Venezuela", "Libros y documentos oficiales del INE, con valores extraídos de hojas tabulares cuando es posible.", "Explorar INE", "database", "#/datos/ine"],
     ["UNCTADstat - Venezuela", "Comercio exterior, inversión, transporte marítimo, economía digital, materias primas e industrias creativas.", "Explorar UNCTAD", "globe", "#/datos/unctad"],
     ["Indicadores clave", "Panel consolidado con series de referencia y archivos descargables.", "Abrir dashboard", "chartbar", "#/indicadores/dashboard"],
     ["Descargas abiertas", "Paquetes CSV, JSON y Excel disponibles para análisis externo.", "Ver formatos", "download", "#/datos"]
@@ -1320,7 +1320,7 @@ function worldBankSourceSection() {
         <div>
           <span class="eyebrow">Fuente internacional</span>
           <h2>Banco Mundial - Venezuela</h2>
-          <p>Series de World Development Indicators organizadas por área temática del OVE, listas para descarga en CSV, JSON y Excel.</p>
+          <p>Base del Banco Mundial para comparar la evolución de Venezuela en población, salud, educación, empleo, pobreza, inflación, crecimiento económico, comercio, energía, infraestructura y sector público.</p>
           <div class="source-stats">
             <span><strong>${worldBankCatalog.length}</strong> áreas</span>
             <span><strong>${formatInteger(totals.records)}</strong> registros</span>
@@ -1345,7 +1345,7 @@ function iloSourceSection() {
         <div>
           <span class="eyebrow">Fuente internacional laboral</span>
           <h2>OIT - ILOSTAT Venezuela</h2>
-          <p>Indicadores laborales de la OIT catalogados para Venezuela, con datos completos comprimidos por frecuencia y catálogo descargable en CSV, JSON y Excel.</p>
+          <p>Base laboral de la OIT para consultar empleo, desempleo, ocupación, informalidad, fuerza de trabajo, horas trabajadas, ingresos, género, edad y condiciones del mercado laboral venezolano.</p>
           <div class="source-stats">
             <span><strong>${iloCatalog.length}</strong> frecuencias</span>
             <span><strong>${formatInteger(totals.records)}</strong> registros</span>
@@ -1370,7 +1370,7 @@ function imfSourceSection() {
         <div>
           <span class="eyebrow">Fuente internacional macroeconómica</span>
           <h2>FMI - World Economic Outlook</h2>
-          <p>Indicadores macroeconómicos del FMI para Venezuela, con series históricas y proyecciones WEO organizadas para descarga en CSV, JSON y Excel OVE.</p>
+          <p>Base macroeconómica del FMI para revisar crecimiento del PIB, inflación, precios, cuentas externas, finanzas públicas, deuda, saldo fiscal y proyecciones económicas de Venezuela.</p>
           <div class="source-stats">
             <span><strong>${imfCatalog.length}</strong> dataset</span>
             <span><strong>${formatInteger(totals.records)}</strong> registros</span>
@@ -1395,7 +1395,7 @@ function fredSourceSection() {
         <div>
           <span class="eyebrow">Fuente agregadora internacional</span>
           <h2>FRED - St. Louis Fed</h2>
-          <p>Series etiquetadas para Venezuela en FRED, con catálogo OVE y descargas en CSV, JSON y Excel corporativo cuando la fuente permite acceso directo a observaciones.</p>
+          <p>Base agregadora de la Reserva Federal de St. Louis con series internacionales sobre Venezuela: producción, trabajo, productividad, precios, comercio, finanzas y otros indicadores recopilados desde distintas fuentes.</p>
           <div class="source-stats">
             <span><strong>${fredCatalog.length}</strong> dataset</span>
             <span><strong>${formatInteger(totals.records)}</strong> registros</span>
@@ -1420,7 +1420,7 @@ function ineSourceSection() {
         <div>
           <span class="eyebrow">Fuente estadística nacional</span>
           <h2>INE Venezuela</h2>
-          <p>Catálogo OVE de recursos oficiales publicados por el Instituto Nacional de Estadística de Venezuela, con libros tabulares y documentos enlazados a su fuente original.</p>
+          <p>Repositorio de archivos oficiales del INE Venezuela. Permite localizar y descargar cuadros estadísticos y documentos publicados por el instituto, con valores extraídos de los libros tabulares cuando el formato lo permite.</p>
           <div class="source-stats">
             <span><strong>${formatInteger(totals.resources)}</strong> recursos</span>
             <span><strong>${formatInteger(totals.cells)}</strong> celdas</span>
@@ -1446,7 +1446,7 @@ function cepalSourceSection() {
         <div>
           <span class="eyebrow">Fuente regional abierta</span>
           <h2>CEPALSTAT - CEPAL</h2>
-          <p>Indicadores abiertos de CEPALSTAT filtrados para Venezuela, con valores completos en CSV.GZ, catálogo trazable y Excel corporativo OVE.</p>
+          <p>Base regional de CEPAL para comparar Venezuela con América Latina en demografía, economía, comercio, empleo, pobreza, desigualdad, género, ambiente, cuentas nacionales y condiciones sociales.</p>
           <div class="source-stats">
             <span><strong>${formatInteger(totals.records)}</strong> registros</span>
             <span><strong>${formatInteger(totals.cataloged)}</strong> indicadores</span>
@@ -1497,7 +1497,7 @@ function bcvSourceSection() {
         <div>
           <span class="eyebrow">Fuente oficial nacional</span>
           <h2>Banco Central de Venezuela</h2>
-          <p>Primera ingesta automatizada del BCV: tipo de cambio de referencia SMC, con salida en JSON, CSV y Excel OVE.</p>
+          <p>Base oficial del Banco Central de Venezuela con tipo de cambio, inflación INPC y producto interno bruto. Sirve para seguir precios, actividad económica y referencia cambiaria oficial.</p>
           <div class="source-stats">
             <span><strong>Diaria</strong> frecuencia</span>
             <span><strong>5</strong> monedas</span>
@@ -2403,7 +2403,7 @@ function dataPage() {
   return `<div class="page">
     ${pageHero({
       title: "Datos de Venezuela",
-      lead: "Repositorio de datos actualizados del Observatorio: Banco Mundial, Banco Central de Venezuela, OIT/ILOSTAT, FMI, FRED, INE y CEPALSTAT, con archivos descargables en CSV, JSON y Excel.",
+      lead: "Repositorio de datos actualizados del Observatorio: BCV, Banco Mundial, OIT, FMI, FRED, INE Venezuela, CEPALSTAT y UNCTADstat. Cada fuente explica qué indicadores contiene y ofrece archivos descargables para análisis.",
       breadcrumb: ["Inicio", "Datos", "Datos abiertos y API"],
       actions: `<a class="button button-primary" href="#/indicadores/dashboard">Abrir dashboard ${arrow()}</a><a class="button" href="#/datos/oit">Ver OIT ${arrow()}</a><a class="button" href="#/datos/bcv">Ver BCV ${icon("database")}</a>`
     })}
@@ -2439,7 +2439,7 @@ function dataPage() {
         <article class="panel api-panel">
           <div>
             <h3>${icon("code")} Descargas reutilizables</h3>
-            <p>Antes de activar una API pública, el OVE ofrece paquetes estáticos en CSV, JSON y Excel para que los datos puedan revisarse, citarse y reutilizarse con trazabilidad.</p>
+            <p>El OVE ofrece archivos CSV, JSON y Excel para que los datos puedan abrirse en Excel, usarse en análisis estadístico, citarse en informes o conectarse a dashboards.</p>
             <p class="trend neutral">Disponible: archivos CSV</p>
             <p class="trend neutral">Disponible: archivos JSON</p>
             <p class="trend neutral">Disponible: libros Excel OVE</p>
@@ -2521,7 +2521,7 @@ function bcvPage() {
   return `<div class="page">
     ${pageHero({
       title: "Banco Central de Venezuela",
-      lead: "Datos oficiales del BCV integrados al Observatorio. El tipo de cambio diario queda automatizado para descarga diaria, verificación multimoneda y exportación en JSON, CSV y Excel OVE.",
+      lead: "Datos oficiales del Banco Central de Venezuela para seguir el tipo de cambio, la inflación nacional y el producto interno bruto. El OVE organiza estas series para consulta y descarga en CSV, JSON y Excel.",
       image: "assets/topics/topic-economy.png",
       breadcrumb: ["Inicio", "Datos", "Banco Central de Venezuela"],
       actions: `<a class="button button-primary" href="#/datos/tipo-cambio">Cuadro tipo de cambio ${arrow()}</a>
@@ -2538,7 +2538,7 @@ function bcvPage() {
           <div>
             <span class="eyebrow">Ingesta automatizada</span>
             <h2>Tipo de cambio diario Bs/USD</h2>
-            <p>El proceso interno consulta el Excel histórico oficial 2_1_1_tdc.xlsx y la página diaria del BCV, organiza la serie para descarga y conserva la fuente original de cada dato.</p>
+            <p>En esta base se pueden consultar la serie diaria del tipo de cambio oficial, la referencia multimoneda SMC, el INPC nacional y el PIB publicado por el BCV. Cada archivo conserva la fuente oficial para que el dato pueda verificarse.</p>
           </div>
           <div class="source-stats">
             <span><strong>Diaria</strong> frecuencia</span>
@@ -2712,7 +2712,7 @@ function worldBankPage() {
   return `<div class="page">
     ${pageHero({
       title: "Banco Mundial - Venezuela",
-      lead: "Catalogo descargable de indicadores del Banco Mundial para Venezuela, organizado por areas tematicas del Observatorio.",
+      lead: "Indicadores del Banco Mundial para Venezuela organizados por temas. Aquí se encuentran datos de población, salud, educación, empleo, pobreza, inflación, crecimiento, comercio, energía, infraestructura y sector público.",
       image: "assets/topics/topic-economy.png",
       breadcrumb: ["Inicio", "Datos", "Banco Mundial"],
       actions: `<a class="button button-primary" href="#/datos">Volver a Datos ${arrow()}</a>
@@ -2729,7 +2729,7 @@ function worldBankPage() {
           <div>
             <span class="eyebrow">World Development Indicators</span>
             <h2>Fuente: Banco Mundial</h2>
-            <p>Los archivos se guardan dentro del proyecto para publicacion estatica. El catalogo web usa rutas relativas y evita dependencias locales.</p>
+            <p>Esta base permite revisar la evolución de Venezuela en indicadores internacionales comparables. El OVE los agrupa por áreas para que sea más fácil descargar macroeconomía, mercado laboral, salud, educación, demografía, pobreza, sector externo y otros temas.</p>
           </div>
           <div class="source-stats">
             <span><strong>${worldBankCatalog.length}</strong> areas</span>
@@ -2772,7 +2772,7 @@ function iloPage() {
   return `<div class="page">
     ${pageHero({
       title: "OIT - ILOSTAT Venezuela",
-      lead: "Catálogo descargable de indicadores laborales de la OIT para Venezuela. Incluye series anuales, trimestrales y mensuales en archivos comprimidos, más inventario estructurado en CSV, JSON y Excel.",
+      lead: "Indicadores laborales de la OIT para Venezuela. Permiten analizar empleo, desempleo, fuerza de trabajo, ocupación, informalidad, horas trabajadas, ingresos y brechas por sexo, edad u otras dimensiones.",
       image: "assets/topics/topic-labor.png",
       breadcrumb: ["Inicio", "Datos", "OIT"],
       actions: `<a class="button button-primary" href="#/datos">Volver a Datos ${arrow()}</a>
@@ -2783,13 +2783,13 @@ function iloPage() {
         ${dataMetaGrid([
           ["Fuente", sourceMetadata.ilo.source, "Organización Internacional del Trabajo, base ILOSTAT.", "users"],
           ["Última captura OVE", sourceMetadata.ilo.lastFetched, `${sourceMetadata.ilo.records}. Cobertura: ${sourceMetadata.ilo.latestData}.`, "calendar"],
-          ["Formatos", "CSV.GZ / JSON / Excel", "Datos completos comprimidos por frecuencia y catálogo reutilizable.", "download"]
+          ["Formatos", "CSV.GZ / JSON / Excel", "Series laborales por frecuencia y archivos listos para análisis.", "download"]
         ])}
         <div class="world-bank-summary">
           <div>
             <span class="eyebrow">Mercado laboral internacional</span>
             <h2>Fuente: OIT - ILOSTAT</h2>
-            <p>La ingesta conserva los campos originales de ILOSTAT y añade un catálogo web con indicador, tema, base de datos, dimensiones, número de series, registros y último dato disponible.</p>
+            <p>En esta base se pueden encontrar series anuales, trimestrales y mensuales del mercado laboral venezolano. El catálogo muestra qué indicador existe, cuántos registros tiene, qué dimensiones incluye y hasta qué periodo llega.</p>
           </div>
           <div class="source-stats">
             <span><strong>${iloCatalog.length}</strong> frecuencias</span>
@@ -2831,7 +2831,7 @@ function imfPage() {
   return `<div class="page">
     ${pageHero({
       title: "FMI - World Economic Outlook",
-      lead: "Catálogo descargable de indicadores macroeconómicos del FMI para Venezuela. Incluye crecimiento, inflación, sector externo, finanzas públicas y otras series WEO con datos históricos y proyecciones.",
+      lead: "Indicadores macroeconómicos del FMI para Venezuela. Incluyen crecimiento del PIB, inflación, precios, cuentas externas, finanzas públicas, deuda, saldo fiscal y proyecciones del World Economic Outlook.",
       image: "assets/topics/topic-economy.png",
       breadcrumb: ["Inicio", "Datos", "FMI"],
       actions: `<a class="button button-primary" href="#/datos">Volver a Datos ${arrow()}</a>
@@ -2842,13 +2842,13 @@ function imfPage() {
         ${dataMetaGrid([
           ["Fuente", sourceMetadata.imf.source, "World Economic Outlook del Fondo Monetario Internacional.", "bank"],
           ["Última captura OVE", sourceMetadata.imf.lastFetched, `${sourceMetadata.imf.records}. Cobertura: ${sourceMetadata.imf.latestData}.`, "calendar"],
-          ["Formatos", "CSV / JSON / Excel", "Datos y catálogo con formato corporativo OVE.", "download"]
+          ["Formatos", "CSV / JSON / Excel", "Series históricas y proyecciones listas para análisis.", "download"]
         ])}
         <div class="world-bank-summary">
           <div>
             <span class="eyebrow">Perspectivas macroeconómicas</span>
             <h2>Fuente: FMI - WEO</h2>
-            <p>La ingesta usa el API SDMX 3.0 del FMI para el dataflow IMF.RES/WEO, filtrado para Venezuela. El dataset conserva indicador, periodo, valor, unidad, escala y fecha de actualización país.</p>
+            <p>Esta base sirve para revisar la visión macroeconómica del FMI sobre Venezuela, combinando datos históricos y proyecciones. Cada registro conserva indicador, periodo, valor, unidad y fecha de actualización.</p>
           </div>
           <div class="source-stats">
             <span><strong>${imfCatalog.length}</strong> dataset</span>
@@ -2890,7 +2890,7 @@ function fredPage() {
   return `<div class="page">
     ${pageHero({
       title: "FRED - Venezuela",
-      lead: "Catálogo descargable de series de Federal Reserve Economic Data etiquetadas para Venezuela. FRED funciona como agregador: cada serie conserva su identificador, título, unidad, frecuencia y enlace de origen.",
+      lead: "Series de FRED etiquetadas para Venezuela. FRED reúne datos de distintas fuentes internacionales sobre producción, productividad, trabajo, precios, comercio, finanzas y otros temas económicos.",
       image: "assets/topics/topic-economy.png",
       breadcrumb: ["Inicio", "Datos", "FRED"],
       actions: `<a class="button button-primary" href="#/datos">Volver a Datos ${arrow()}</a>
@@ -2901,13 +2901,13 @@ function fredPage() {
         ${dataMetaGrid([
           ["Fuente", sourceMetadata.fred.source, "Federal Reserve Bank of St. Louis, base FRED.", "globe"],
           ["Última captura OVE", sourceMetadata.fred.lastFetched, `${sourceMetadata.fred.records}. Cobertura: ${sourceMetadata.fred.latestData}.`, "calendar"],
-          ["Formatos", "CSV / JSON / Excel", "Datos y catálogo con formato corporativo OVE.", "download"]
+          ["Formatos", "CSV / JSON / Excel", "Series descargables y enlaces a la fuente original.", "download"]
         ])}
         <div class="world-bank-summary">
           <div>
             <span class="eyebrow">Agregador de series económicas</span>
             <h2>Fuente: FRED</h2>
-            <p>La ingesta usa la etiqueta pública de Venezuela en FRED y descarga observaciones mediante fredgraph.csv cuando la fuente permite acceso directo. El catálogo registra las series no descargadas para mantener trazabilidad.</p>
+            <p>Esta base permite descubrir qué series sobre Venezuela están disponibles en FRED. Cuando la fuente permite descarga directa, el OVE publica los valores; cuando no, mantiene el catálogo con enlace a la serie original.</p>
           </div>
           <div class="source-stats">
             <span><strong>${fredCatalog.length}</strong> dataset</span>
@@ -2949,7 +2949,7 @@ function inePage() {
   return `<div class="page">
     ${pageHero({
       title: "INE Venezuela",
-      lead: "Catálogo descargable de recursos oficiales del Instituto Nacional de Estadística de Venezuela. Incluye libros tabulares, documentos y enlaces trazables al archivo original publicado por el INE.",
+      lead: "Recursos oficiales del Instituto Nacional de Estadística de Venezuela. Incluye libros tabulares, documentos PDF, enlaces a la fuente original y valores extraídos de los Excel cuando la estructura lo permite.",
       image: "assets/topics/topic-demography.png",
       breadcrumb: ["Inicio", "Datos", "INE"],
       actions: `<a class="button button-primary" href="#/datos">Volver a Datos ${arrow()}</a>
@@ -2960,13 +2960,13 @@ function inePage() {
         ${dataMetaGrid([
           ["Fuente", sourceMetadata.ine.source, "Portal oficial ine.gob.ve.", "database"],
           ["Última captura OVE", sourceMetadata.ine.lastFetched, `${sourceMetadata.ine.records}. Cobertura: ${sourceMetadata.ine.latestData}.`, "calendar"],
-          ["Formatos", "CSV.GZ / CSV / JSON / Excel", "Valores extraídos por celda, índice de hojas y catálogo OVE.", "download"]
+          ["Formatos", "CSV.GZ / CSV / JSON / Excel", "Valores de los libros, índice de hojas y archivos de consulta.", "download"]
         ])}
         <div class="world-bank-summary">
           <div>
             <span class="eyebrow">Recursos estadísticos oficiales</span>
             <h2>Fuente: INE Venezuela</h2>
-            <p>La ingesta cataloga recursos publicados por el INE y conserva la URL oficial de cada archivo. Los Excel originales tienen estructuras heterogéneas; por eso esta capa prioriza inventario, trazabilidad y descarga OVE del catálogo.</p>
+            <p>Esta base ayuda a localizar información publicada por el INE Venezuela sin navegar manualmente por el portal. El OVE descarga los libros tabulares, extrae celdas con valor y conserva la ubicación de cada dato dentro del archivo original.</p>
           </div>
           <div class="source-stats">
             <span><strong>${formatInteger(totals.resources)}</strong> recursos</span>
@@ -3008,7 +3008,7 @@ function cepalPage() {
   return `<div class="page">
     ${pageHero({
       title: "CEPALSTAT - Venezuela",
-      lead: "Indicadores abiertos de CEPALSTAT para Venezuela. Incluye valores completos filtrados por país, dimensiones, fuentes, notas, periodo y unidad, publicados en CSV.GZ y catálogo OVE en CSV, JSON y Excel.",
+      lead: "Indicadores de CEPALSTAT para Venezuela. Permiten consultar datos regionales comparables sobre población, economía, comercio, empleo, pobreza, desigualdad, género, ambiente, cuentas nacionales y condiciones sociales.",
       image: "assets/topics/topic-economy.png",
       breadcrumb: ["Inicio", "Datos", "CEPAL"],
       actions: `<a class="button button-primary" href="#/datos">Volver a Datos ${arrow()}</a>
@@ -3018,15 +3018,15 @@ function cepalPage() {
     <section class="section">
       <div class="container">
         ${dataMetaGrid([
-          ["Fuente", sourceMetadata.cepal.source, "CEPALSTAT, API Open Data de la CEPAL.", "globe"],
+          ["Fuente", sourceMetadata.cepal.source, "CEPALSTAT: indicadores regionales comparables.", "globe"],
           ["Última captura OVE", sourceMetadata.cepal.lastFetched, `${sourceMetadata.cepal.records}. Cobertura: ${sourceMetadata.cepal.latestData}.`, "calendar"],
-          ["Formatos", "CSV.GZ / CSV / JSON / Excel", "Valores completos comprimidos y catálogo OVE corporativo.", "download"]
+          ["Formatos", "CSV.GZ / CSV / JSON / Excel", "Valores por indicador, tema, periodo y dimensión.", "download"]
         ])}
         <div class="world-bank-summary">
           <div>
             <span class="eyebrow">Datos regionales comparables</span>
             <h2>Fuente: CEPALSTAT</h2>
-            <p>La ingesta usa el API público de CEPALSTAT y filtra Venezuela mediante el miembro CEPALSTAT 259 e ISO3 VEN. El archivo de valores conserva indicador, tema, área, unidad, periodo, valor, dimensiones, fuente original y notas.</p>
+            <p>Esta base sirve para comparar a Venezuela con el contexto latinoamericano. Cada registro conserva indicador, tema, área, unidad, periodo, valor, dimensiones, fuente original y notas metodológicas cuando existen.</p>
           </div>
           <div class="source-stats">
             <span><strong>${formatInteger(totals.records)}</strong> registros</span>
@@ -3092,7 +3092,7 @@ function unctadPage() {
             <span><strong>${formatInteger(totals.records)}</strong> valores</span>
             <span><strong>${formatInteger(totals.cataloged)}</strong> reportes</span>
             <span><strong>${formatInteger(totals.withData)}</strong> con valores</span>
-            <span><strong>${formatInteger(totals.bulkFiles)}</strong> bulk files</span>
+            <span><strong>${formatInteger(totals.bulkFiles)}</strong> archivos oficiales</span>
             <span><strong>${totals.firstYear}-${totals.lastYear}</strong></span>
           </div>
         </div>
@@ -3114,7 +3114,7 @@ function unctadDatasetCard([title, id, records, cataloged, withData, firstYear, 
     </div>
     <dl class="source-meta">
       <div><dt>Cobertura</dt><dd>${firstYear}-${lastYear}</dd></div>
-      <div><dt>Bulk files</dt><dd>${formatInteger(bulkFiles)}</dd></div>
+      <div><dt>Archivos oficiales</dt><dd>${formatInteger(bulkFiles)}</dd></div>
       <div><dt>ID</dt><dd>${id}</dd></div>
     </dl>
     <div class="download-row">
