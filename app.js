@@ -11,6 +11,7 @@ const routes = {
   "/datos/fmi": imfPage,
   "/datos/fred": fredPage,
   "/datos/ine": inePage,
+  "/datos/cepal": cepalPage,
   "/datos/bcv": bcvPage,
   "/datos/tipo-cambio": exchangeRatePage,
   "/datos/agricultura-medio-ambiente": () => topicDetailPage("agriculture"),
@@ -81,6 +82,10 @@ const routeMeta = {
   "/datos/ine": {
     title: "INE Venezuela | OVE",
     description: "Catálogo de recursos oficiales del Instituto Nacional de Estadística de Venezuela."
+  },
+  "/datos/cepal": {
+    title: "CEPALSTAT Venezuela | OVE",
+    description: "Indicadores abiertos de CEPALSTAT para Venezuela con valores descargables y catálogo OVE."
   },
   "/datos/bcv": {
     title: "Banco Central de Venezuela | OVE",
@@ -223,6 +228,12 @@ const sourceMetadata = {
     lastFetched: "15 jul 2026",
     latestData: "recursos publicados hasta 2026",
     records: "2.980.320 celdas; 323 recursos"
+  },
+  cepal: {
+    source: "CEPALSTAT - CEPAL",
+    lastFetched: "15 jul 2026",
+    latestData: "1950-2100 según indicador",
+    records: "150.230 registros; 2.055 indicadores catalogados"
   },
   keyIndicators: {
     source: "BCV / Banco Mundial",
@@ -408,6 +419,10 @@ const fredCatalog = [
 
 const ineCatalog = [
   ["Catálogo y valores tabulares", "ine_venezuela", 323, 204, 119, 2980320, "XLS/XLSX/PDF"]
+];
+
+const cepalCatalog = [
+  ["CEPALSTAT Venezuela", "cepalstat", 150230, 2055, 958, 1950, 2100]
 ];
 
 const topicData = [
@@ -1407,6 +1422,32 @@ function ineSourceSection() {
   </section>`;
 }
 
+function cepalSourceSection() {
+  const totals = cepalTotals();
+  return `<section class="section-tight">
+    <div class="container">
+      <article class="world-source-panel">
+        <div>
+          <span class="eyebrow">Fuente regional abierta</span>
+          <h2>CEPALSTAT - CEPAL</h2>
+          <p>Indicadores abiertos de CEPALSTAT filtrados para Venezuela, con valores completos en CSV.GZ, catálogo trazable y Excel corporativo OVE.</p>
+          <div class="source-stats">
+            <span><strong>${formatInteger(totals.records)}</strong> registros</span>
+            <span><strong>${formatInteger(totals.cataloged)}</strong> indicadores</span>
+            <span><strong>${formatInteger(totals.withData)}</strong> con datos</span>
+            <span><strong>${totals.firstYear}-${totals.lastYear}</strong></span>
+          </div>
+        </div>
+        <div class="world-source-actions">
+          <a class="button button-primary" href="#/datos/cepal">Explorar CEPAL ${arrow()}</a>
+          <a class="button" href="assets/data/cepal/csv/ove_cepalstat_venezuela_valores.csv.gz" download>Valores CSV.GZ ${icon("download")}</a>
+          <a class="button" href="assets/data/cepal/catalog/catalogo_dataset_web_ove_cepalstat.xlsx" download>Catálogo Excel ${icon("download")}</a>
+        </div>
+      </article>
+    </div>
+  </section>`;
+}
+
 function bcvSourceSection() {
   return `<section class="section-tight">
     <div class="container">
@@ -1500,6 +1541,7 @@ function footer() {
         <a href="#/datos/fmi">FMI - WEO</a>
         <a href="#/datos/fred">FRED</a>
         <a href="#/datos/ine">INE Venezuela</a>
+        <a href="#/datos/cepal">CEPALSTAT</a>
         <a href="#/datos/oit">OIT - ILOSTAT</a>
         <a href="#/datos/bcv">Banco Central de Venezuela</a>
         <a href="#/datos/tipo-cambio">Tipo de cambio</a>
@@ -2318,14 +2360,14 @@ function dataPage() {
   return `<div class="page">
     ${pageHero({
       title: "Datos de Venezuela",
-      lead: "Repositorio de datos actualizados del Observatorio: Banco Mundial, Banco Central de Venezuela y OIT/ILOSTAT, con archivos descargables en CSV, JSON y Excel.",
+      lead: "Repositorio de datos actualizados del Observatorio: Banco Mundial, Banco Central de Venezuela, OIT/ILOSTAT, FMI, FRED, INE y CEPALSTAT, con archivos descargables en CSV, JSON y Excel.",
       breadcrumb: ["Inicio", "Datos", "Datos abiertos y API"],
       actions: `<a class="button button-primary" href="#/indicadores/dashboard">Abrir dashboard ${arrow()}</a><a class="button" href="#/datos/oit">Ver OIT ${arrow()}</a><a class="button" href="#/datos/bcv">Ver BCV ${icon("database")}</a>`
     })}
     <section class="section-tight">
       <div class="container">
         ${dataMetaGrid([
-          ["Fuentes integradas", "BCV / Banco Mundial / OIT", "Organismos oficiales y multilaterales con archivos descargables.", "shield"],
+          ["Fuentes integradas", "BCV / Banco Mundial / OIT / FMI / FRED / INE / CEPAL", "Organismos oficiales, multilaterales y agregadores con archivos descargables.", "shield"],
           ["Última captura OVE", sourceMetadata.keyIndicators.lastFetched, `${sourceMetadata.keyIndicators.records} en el paquete de indicadores clave.`, "calendar"],
           ["Calendario", "Automatizado", "BCV diario/mensual, Banco Mundial semanal y OIT mensual.", "clipboard"]
         ])}
@@ -2338,6 +2380,7 @@ function dataPage() {
     ${imfSourceSection()}
     ${fredSourceSection()}
     ${ineSourceSection()}
+    ${cepalSourceSection()}
     ${keyIndicatorDownloadSection()}
     <section id="datasets" class="section">
       <div class="container">
@@ -2361,6 +2404,7 @@ function dataPage() {
             <a class="button" href="#/datos/fmi">Explorar FMI</a>
             <a class="button" href="#/datos/fred">Explorar FRED</a>
             <a class="button" href="#/datos/ine">Explorar INE</a>
+            <a class="button" href="#/datos/cepal">Explorar CEPAL</a>
           </div>
           <div>
             <h3>API pública</h3>
@@ -2408,7 +2452,7 @@ function dataPage() {
         </article>
         <div class="span-7">
           <div class="section-title"><h2>Categorías temáticas disponibles</h2><a class="text-link" href="#/datos/oit">Ver OIT ${arrow()}</a></div>
-          <div class="category-grid">${datasets.concat([["Dinero y banca", "BCV", "Tipo de cambio y catálogos de trabajo PIB/INPC.", "database"], ["Social y demografia", "Banco Mundial", "Demografía, salud, género y condiciones de vida.", "users"], ["Trabajo y empleo", "OIT", "ILOSTAT: ocupación, desempleo, informalidad, horas, ingresos y protección social.", "users"], ["Perspectivas macro", "FMI", "World Economic Outlook: crecimiento, inflación, cuentas externas y finanzas públicas.", "bank"]]).map(datasetCard).join("")}</div>
+          <div class="category-grid">${datasets.concat([["Dinero y banca", "BCV", "Tipo de cambio y catálogos de trabajo PIB/INPC.", "database"], ["Social y demografia", "Banco Mundial", "Demografía, salud, género y condiciones de vida.", "users"], ["Trabajo y empleo", "OIT", "ILOSTAT: ocupación, desempleo, informalidad, horas, ingresos y protección social.", "users"], ["Perspectivas macro", "FMI", "World Economic Outlook: crecimiento, inflación, cuentas externas y finanzas públicas.", "bank"], ["Indicadores regionales", "CEPALSTAT", "Indicadores comparables de CEPAL para Venezuela.", "globe"]]).map(datasetCard).join("")}</div>
         </div>
       </div>
     </section>
@@ -2914,6 +2958,66 @@ function ineDatasetCard([title, id, resources, tabular, documents, cells, format
   </article>`;
 }
 
+function cepalPage() {
+  const totals = cepalTotals();
+  return `<div class="page">
+    ${pageHero({
+      title: "CEPALSTAT - Venezuela",
+      lead: "Indicadores abiertos de CEPALSTAT para Venezuela. Incluye valores completos filtrados por país, dimensiones, fuentes, notas, periodo y unidad, publicados en CSV.GZ y catálogo OVE en CSV, JSON y Excel.",
+      image: "assets/topics/topic-economy.png",
+      breadcrumb: ["Inicio", "Datos", "CEPAL"],
+      actions: `<a class="button button-primary" href="#/datos">Volver a Datos ${arrow()}</a>
+        <a class="button" href="assets/data/cepal/catalog/catalogo_dataset_web_ove_cepalstat.xlsx" download>Descargar catálogo Excel ${icon("download")}</a>
+        <a class="button" href="assets/data/cepal/csv/ove_cepalstat_venezuela_valores.csv.gz" download>Descargar valores CSV.GZ ${icon("download")}</a>`
+    })}
+    <section class="section">
+      <div class="container">
+        ${dataMetaGrid([
+          ["Fuente", sourceMetadata.cepal.source, "CEPALSTAT, API Open Data de la CEPAL.", "globe"],
+          ["Última captura OVE", sourceMetadata.cepal.lastFetched, `${sourceMetadata.cepal.records}. Cobertura: ${sourceMetadata.cepal.latestData}.`, "calendar"],
+          ["Formatos", "CSV.GZ / CSV / JSON / Excel", "Valores completos comprimidos y catálogo OVE corporativo.", "download"]
+        ])}
+        <div class="world-bank-summary">
+          <div>
+            <span class="eyebrow">Datos regionales comparables</span>
+            <h2>Fuente: CEPALSTAT</h2>
+            <p>La ingesta usa el API público de CEPALSTAT y filtra Venezuela mediante el miembro CEPALSTAT 259 e ISO3 VEN. El archivo de valores conserva indicador, tema, área, unidad, periodo, valor, dimensiones, fuente original y notas.</p>
+          </div>
+          <div class="source-stats">
+            <span><strong>${formatInteger(totals.records)}</strong> registros</span>
+            <span><strong>${formatInteger(totals.cataloged)}</strong> indicadores catalogados</span>
+            <span><strong>${formatInteger(totals.withData)}</strong> con datos</span>
+            <span><strong>${totals.firstYear}-${totals.lastYear}</strong></span>
+          </div>
+        </div>
+        <div class="world-bank-catalog-grid">
+          ${cepalCatalog.map(cepalDatasetCard).join("")}
+        </div>
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
+}
+
+function cepalDatasetCard([title, id, records, cataloged, withData, firstYear, lastYear]) {
+  return `<article class="world-bank-card">
+    <div>
+      <span class="source-tag">CEPALSTAT</span>
+      <h3>${title}</h3>
+      <p>${formatInteger(withData)} indicadores con valores para Venezuela dentro de ${formatInteger(cataloged)} indicadores catalogados, con ${formatInteger(records)} registros descargables.</p>
+    </div>
+    <dl class="source-meta">
+      <div><dt>Cobertura</dt><dd>${firstYear}-${lastYear}</dd></div>
+      <div><dt>ID</dt><dd>${id}</dd></div>
+    </dl>
+    <div class="download-row">
+      <a href="assets/data/cepal/csv/ove_cepalstat_venezuela_valores.csv.gz" download>Valores CSV.GZ</a>
+      <a href="assets/data/cepal/catalog/cepal-catalog.json" download>Catálogo JSON</a>
+      <a href="assets/data/cepal/catalog/catalogo_dataset_web_ove_cepalstat.xlsx" download>Catálogo Excel</a>
+    </div>
+  </article>`;
+}
+
 function worldBankTotals() {
   return worldBankCatalog.reduce((totals, [, , records, indicators, firstYear, lastYear]) => ({
     records: totals.records + records,
@@ -2949,6 +3053,16 @@ function ineTotals() {
     cells: totals.cells + cells,
     formats
   }), { resources: 0, tabular: 0, documents: 0, cells: 0, formats: "XLS/XLSX/PDF" });
+}
+
+function cepalTotals() {
+  return cepalCatalog.reduce((totals, [, , records, cataloged, withData, firstYear, lastYear]) => ({
+    records: totals.records + records,
+    cataloged: totals.cataloged + cataloged,
+    withData: totals.withData + withData,
+    firstYear: Math.min(totals.firstYear, firstYear),
+    lastYear: Math.max(totals.lastYear, lastYear)
+  }), { records: 0, cataloged: 0, withData: 0, firstYear: Infinity, lastYear: 0 });
 }
 
 function iloTotals() {
@@ -3005,6 +3119,7 @@ function recentDatasetTable() {
     ["FMI - WEO Venezuela", "CSV/JSON/XLSX", `${sourceMetadata.imf.records}`, "Fuente macro"],
     ["FRED - Venezuela", "CSV/JSON/XLSX", `${sourceMetadata.fred.records}`, "Fuente agregadora"],
     ["INE Venezuela", "CSV/JSON/XLSX", `${sourceMetadata.ine.records}`, "Fuente nacional"],
+    ["CEPALSTAT - Venezuela", "CSV.GZ/JSON/XLSX", `${sourceMetadata.cepal.records}`, "Fuente regional"],
     ["OIT - ILOSTAT Venezuela", "CSV.GZ/JSON/XLSX", `${sourceMetadata.ilo.records}`, "Fuente laboral"],
     ["Indicadores clave de Venezuela", "CSV/JSON/XLSX", "Series históricas verificables", "Dashboard"],
     ["BCV referencia SMC", "CSV/JSON/XLSX", `Captura ${sourceMetadata.bcv.lastFetched}`, "Fuente oficial"],
