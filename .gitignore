@@ -20,3 +20,6 @@ __pycache__/
 
 # Generated source snapshots from BCV ingestion
 assets/data/bcv/raw/
+
+# Local Graphify working output; publish selected artifacts under /graphify/
+graphify-out/

@@ -1,0 +1,262 @@
+{
+  "app.js": {
+    "mtime": 1784127774.3445587,
+    "ast_hash": "5ff7aa561c3590aaf474f39e82ef6928",
+    "semantic_hash": "5ff7aa561c3590aaf474f39e82ef6928"
+  },
+  "assets/data/bcv/catalog/bcv-catalog.json": {
+    "mtime": 1784108207.2117722,
+    "ast_hash": "87bd4a72e43494371709e8d1aa919532",
+    "semantic_hash": "87bd4a72e43494371709e8d1aa919532"
+  },
+  "assets/data/bcv/catalog/ove_bcv_indice_nacional_precios_consumidor_workbooks.json": {
+    "mtime": 1784107707.8038886,
+    "ast_hash": "301c8c4e0e3538364f4ca9261e28d57f",
+    "semantic_hash": "301c8c4e0e3538364f4ca9261e28d57f"
+  },
+  "assets/data/bcv/catalog/ove_bcv_producto_interno_bruto_workbooks.json": {
+    "mtime": 1784107707.8038886,
+    "ast_hash": "c10276f67aa072be2a9d76c715eaadb5",
+    "semantic_hash": "c10276f67aa072be2a9d76c715eaadb5"
+  },
+  "assets/data/bcv/json/ove_bcv_inpc_nacional_mensual.json": {
+    "mtime": 1784108207.039771,
+    "ast_hash": "a43f6e35b7511dc85229012e8b8c9e9c",
+    "semantic_hash": "a43f6e35b7511dc85229012e8b8c9e9c"
+  },
+  "assets/data/bcv/json/ove_bcv_pib_real_anual.json": {
+    "mtime": 1784108207.183772,
+    "ast_hash": "eec819f66841d0ba984c436f715091fe",
+    "semantic_hash": "eec819f66841d0ba984c436f715091fe"
+  },
+  "assets/data/bcv/json/ove_bcv_tipo_cambio_referencia_smc.json": {
+    "mtime": 1784108202.2117333,
+    "ast_hash": "0f14ca5c8e617b2e9adedb05679877cc",
+    "semantic_hash": "0f14ca5c8e617b2e9adedb05679877cc"
+  },
+  "assets/data/bcv/json/ove_bcv_tipo_cambio_usd.json": {
+    "mtime": 1784108205.0117552,
+    "ast_hash": "aac5964c0e4113a2a576c90a8db5ba3d",
+    "semantic_hash": "aac5964c0e4113a2a576c90a8db5ba3d"
+  },
+  "assets/data/cepal/catalog/cepal-catalog.json": {
+    "mtime": 1784124497.182787,
+    "ast_hash": "f66981bdc28ffbc3ddc5361d55fdc23b",
+    "semantic_hash": "f66981bdc28ffbc3ddc5361d55fdc23b"
+  },
+  "assets/data/cepal/json/ove_cepalstat_venezuela_metadata.json": {
+    "mtime": 1784123083.151749,
+    "ast_hash": "d44a52c4021a852687d67aaff51232d4",
+    "semantic_hash": "d44a52c4021a852687d67aaff51232d4"
+  },
+  "assets/data/cepal/raw/cepalstat_thematic_tree_es.json": {
+    "mtime": 1784124497.2027872,
+    "ast_hash": "1dd8e6aeef502c2269afc5dc932e20fb",
+    "semantic_hash": "1dd8e6aeef502c2269afc5dc932e20fb"
+  },
+  "assets/data/fred/catalog/fred-catalog.json": {
+    "mtime": 1784114999.2723777,
+    "ast_hash": "931bff05f94342acdbed57f7daf04521",
+    "semantic_hash": "931bff05f94342acdbed57f7daf04521"
+  },
+  "assets/data/fred/json/ove_fred_venezuela.json": {
+    "mtime": 1784114999.2963781,
+    "ast_hash": "418aa8aedd789c5c846b542ea03d9209",
+    "semantic_hash": "418aa8aedd789c5c846b542ea03d9209"
+  },
+  "assets/data/ilo/catalog/ilo-catalog.json": {
+    "mtime": 1784108226.8159251,
+    "ast_hash": "7bc78043a88a580ce3572a394c19845c",
+    "semantic_hash": "7bc78043a88a580ce3572a394c19845c"
+  },
+  "assets/data/ilo/json/ove_oit_ilostat_venezuela_catalogo_series.json": {
+    "mtime": 1784108226.8319252,
+    "ast_hash": "7bc78043a88a580ce3572a394c19845c",
+    "semantic_hash": "7bc78043a88a580ce3572a394c19845c"
+  },
+  "assets/data/imf/catalog/imf-catalog.json": {
+    "mtime": 1784112947.7127545,
+    "ast_hash": "0202561e1a61fc16abdcf4e6d1b9b62a",
+    "semantic_hash": "0202561e1a61fc16abdcf4e6d1b9b62a"
+  },
+  "assets/data/imf/json/ove_fmi_weo_venezuela.json": {
+    "mtime": 1784112946.8007474,
+    "ast_hash": "22f38c18faf6e0e93395714ac4892635",
+    "semantic_hash": "22f38c18faf6e0e93395714ac4892635"
+  },
+  "assets/data/indicadores-clave/ove_indicadores_clave_venezuela.json": {
+    "mtime": 1784126632.951576,
+    "ast_hash": "c5c362be5ccb099cf1aa0b8cf574ed3c",
+    "semantic_hash": "c5c362be5ccb099cf1aa0b8cf574ed3c"
+  },
+  "assets/data/ine/catalog/ine-catalog.json": {
+    "mtime": 1784117326.394329,
+    "ast_hash": "896a1344ea9521df472df03813db156f",
+    "semantic_hash": "896a1344ea9521df472df03813db156f"
+  },
+  "assets/data/ine/json/ove_ine_venezuela_catalogo_recursos.json": {
+    "mtime": 1784117326.4023292,
+    "ast_hash": "896a1344ea9521df472df03813db156f",
+    "semantic_hash": "896a1344ea9521df472df03813db156f"
+  },
+  "assets/data/unctad/catalog/unctad-catalog.json": {
+    "mtime": 1784125604.3274472,
+    "ast_hash": "d542dd309721f61c6cc0372cad34b5fa",
+    "semantic_hash": "d542dd309721f61c6cc0372cad34b5fa"
+  },
+  "assets/data/unctad/json/ove_unctadstat_venezuela_metadata.json": {
+    "mtime": 1784125604.3274472,
+    "ast_hash": "bc2620cbf93c79ec7fd442d10da84aec",
+    "semantic_hash": "bc2620cbf93c79ec7fd442d10da84aec"
+  },
+  "assets/data/unctad/raw/unctadstat_datacenter_tree_en.json": {
+    "mtime": 1784125249.7166698,
+    "ast_hash": "29df253067baa6f9694671fa8e3b67ed",
+    "semantic_hash": "29df253067baa6f9694671fa8e3b67ed"
+  },
+  "assets/data/world-bank/catalog/world-bank-catalog.json": {
+    "mtime": 1784036952.4321885,
+    "ast_hash": "466223e4629c2738c1b7316f14ca8418",
+    "semantic_hash": "466223e4629c2738c1b7316f14ca8418"
+  },
+  "assets/data/world-bank/catalog/world-bank-latest-summary.json": {
+    "mtime": 1784036952.4321885,
+    "ast_hash": "dc084a78eba3e239671b5407b8df161e",
+    "semantic_hash": "dc084a78eba3e239671b5407b8df161e"
+  },
+  "assets/data/world-bank/json/ove_banco_mundial_venezuela_demografia.json": {
+    "mtime": 1784036952.4361885,
+    "ast_hash": "5a382a20671c283a41a83e086e7348ba",
+    "semantic_hash": "5a382a20671c283a41a83e086e7348ba"
+  },
+  "assets/data/world-bank/json/ove_banco_mundial_venezuela_educacion.json": {
+    "mtime": 1784036952.4361885,
+    "ast_hash": "dea4c0a3e2e0937fefbe9577855a5cc3",
+    "semantic_hash": "dea4c0a3e2e0937fefbe9577855a5cc3"
+  },
+  "assets/data/world-bank/json/ove_banco_mundial_venezuela_energia_y_ambiente.json": {
+    "mtime": 1784036952.4361885,
+    "ast_hash": "9149a0b17dd9d8f71adbe0e7e84c9df6",
+    "semantic_hash": "9149a0b17dd9d8f71adbe0e7e84c9df6"
+  },
+  "assets/data/world-bank/json/ove_banco_mundial_venezuela_genero.json": {
+    "mtime": 1784036952.4401886,
+    "ast_hash": "d42ae1a433464c3777385a33215bfd05",
+    "semantic_hash": "d42ae1a433464c3777385a33215bfd05"
+  },
+  "assets/data/world-bank/json/ove_banco_mundial_venezuela_infraestructura_y_digitalizacion.json": {
+    "mtime": 1784036952.4401886,
+    "ast_hash": "1941625c34aa7a20dd2e31adafb7a250",
+    "semantic_hash": "1941625c34aa7a20dd2e31adafb7a250"
+  },
+  "assets/data/world-bank/json/ove_banco_mundial_venezuela_macroeconomia.json": {
+    "mtime": 1784036952.4401886,
+    "ast_hash": "735be928eee516832164e95b999c11a4",
+    "semantic_hash": "735be928eee516832164e95b999c11a4"
+  },
+  "assets/data/world-bank/json/ove_banco_mundial_venezuela_mercado_laboral.json": {
+    "mtime": 1784036952.4401886,
+    "ast_hash": "23c994d945c397e2a12441cd007221dc",
+    "semantic_hash": "23c994d945c397e2a12441cd007221dc"
+  },
+  "assets/data/world-bank/json/ove_banco_mundial_venezuela_pobreza_y_desigualdad.json": {
+    "mtime": 1784036952.4401886,
+    "ast_hash": "80dffbc7552686c41d66cc1825160230",
+    "semantic_hash": "80dffbc7552686c41d66cc1825160230"
+  },
+  "assets/data/world-bank/json/ove_banco_mundial_venezuela_precios_e_inflacion.json": {
+    "mtime": 1784036952.4401886,
+    "ast_hash": "e534a83d5e83d30672d0284d1860765f",
+    "semantic_hash": "e534a83d5e83d30672d0284d1860765f"
+  },
+  "assets/data/world-bank/json/ove_banco_mundial_venezuela_salud.json": {
+    "mtime": 1784036952.4401886,
+    "ast_hash": "72a947bf0d686bea8488824fe8604e74",
+    "semantic_hash": "72a947bf0d686bea8488824fe8604e74"
+  },
+  "assets/data/world-bank/json/ove_banco_mundial_venezuela_sector_externo.json": {
+    "mtime": 1784036952.4441886,
+    "ast_hash": "2a7cd514216598a242b25843d4e62685",
+    "semantic_hash": "2a7cd514216598a242b25843d4e62685"
+  },
+  "assets/data/world-bank/json/ove_banco_mundial_venezuela_sector_publico_e_instituciones.json": {
+    "mtime": 1784036952.4441886,
+    "ast_hash": "18969e68189f6e4876fdd696f1e88caa",
+    "semantic_hash": "18969e68189f6e4876fdd696f1e88caa"
+  },
+  "assets/forms/forms-config.json": {
+    "mtime": 1784036952.5361893,
+    "ast_hash": "bc9ac4c34550b23f483970e90d7d80b2",
+    "semantic_hash": "bc9ac4c34550b23f483970e90d7d80b2"
+  },
+  "scripts/bcv_ingest.py": {
+    "mtime": 1784108143.0432725,
+    "ast_hash": "2653467011d02e7de1df159bacbfcb6f",
+    "semantic_hash": "2653467011d02e7de1df159bacbfcb6f"
+  },
+  "scripts/bcv_sources.json": {
+    "mtime": 1783496440.0585012,
+    "ast_hash": "c808b8c5b946a7850ae0e0f074a57ae5",
+    "semantic_hash": "c808b8c5b946a7850ae0e0f074a57ae5"
+  },
+  "scripts/bcv_workbook_extract.py": {
+    "mtime": 1784108128.847162,
+    "ast_hash": "09ceafc545fef840cf54548f7d6d8344",
+    "semantic_hash": "09ceafc545fef840cf54548f7d6d8344"
+  },
+  "scripts/build_key_indicators_dataset.py": {
+    "mtime": 1784108128.8551621,
+    "ast_hash": "6c72bf20af8e23511d0177479e703b21",
+    "semantic_hash": "6c72bf20af8e23511d0177479e703b21"
+  },
+  "scripts/cepal_refresh.py": {
+    "mtime": 1784122729.37298,
+    "ast_hash": "af586d319d65e08bbe1e02adff713902",
+    "semantic_hash": "af586d319d65e08bbe1e02adff713902"
+  },
+  "scripts/export_dashboard_from_postgres.py": {
+    "mtime": 1784108128.8551621,
+    "ast_hash": "8b23ec2e5167451cdd6a5b8c70d69b75",
+    "semantic_hash": "8b23ec2e5167451cdd6a5b8c70d69b75"
+  },
+  "scripts/fred_refresh.py": {
+    "mtime": 1784114554.0929663,
+    "ast_hash": "db1020a2f5f347d26bcca85a29fb0539",
+    "semantic_hash": "db1020a2f5f347d26bcca85a29fb0539"
+  },
+  "scripts/ilo_refresh.py": {
+    "mtime": 1784108128.847162,
+    "ast_hash": "f1143a00b3ba03756cf46515bceab439",
+    "semantic_hash": "f1143a00b3ba03756cf46515bceab439"
+  },
+  "scripts/imf_refresh.py": {
+    "mtime": 1784112932.728638,
+    "ast_hash": "6c813eaada37c47a8d0277ead8b0b402",
+    "semantic_hash": "6c813eaada37c47a8d0277ead8b0b402"
+  },
+  "scripts/ine_refresh.py": {
+    "mtime": 1784117072.132366,
+    "ast_hash": "1e4738fdca2cfd8bdb8641e376d95980",
+    "semantic_hash": "1e4738fdca2cfd8bdb8641e376d95980"
+  },
+  "scripts/ove_excel_format.py": {
+    "mtime": 1784121586.1280916,
+    "ast_hash": "1de06ddc17a77ad43c3e27b2ab9f084f",
+    "semantic_hash": "1de06ddc17a77ad43c3e27b2ab9f084f"
+  },
+  "scripts/sync_dashboard_data_from_postgres.sh": {
+    "mtime": 1783860184.5613027,
+    "ast_hash": "3e06d68581cc2354ce3e91bfa8a0b345",
+    "semantic_hash": "3e06d68581cc2354ce3e91bfa8a0b345"
+  },
+  "scripts/unctad_refresh.py": {
+    "mtime": 1784125233.14454,
+    "ast_hash": "8a03c434f7e855dfec05acc87eb3d457",
+    "semantic_hash": "8a03c434f7e855dfec05acc87eb3d457"
+  },
+  "scripts/world_bank_refresh.py": {
+    "mtime": 1784108128.847162,
+    "ast_hash": "3025b31d2332f628ab056c072872b8c3",
+    "semantic_hash": "3025b31d2332f628ab056c072872b8c3"
+  }
+}
