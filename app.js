@@ -101,6 +101,46 @@ const routeMeta = {
     title: "Tipo de cambio BCV | OVE",
     description: "Cuadro de mando del tipo de cambio oficial BCV con descargas diarias en CSV, JSON y Excel OVE."
   },
+  "/datos/agricultura-medio-ambiente": {
+    title: "Agricultura y medio ambiente | OVE",
+    description: "Indicadores de agricultura, recursos naturales y medio ambiente para Venezuela en el banco de datos OVE."
+  },
+  "/datos/ciencia-tecnologia": {
+    title: "Ciencia y tecnología | OVE",
+    description: "Indicadores de ciencia, tecnología e innovación para Venezuela en el banco de datos OVE."
+  },
+  "/datos/demografia-poblacion": {
+    title: "Demografía y población | OVE",
+    description: "Indicadores demográficos y poblacionales de Venezuela organizados por el Observatorio Venezolano de Economía."
+  },
+  "/datos/economia": {
+    title: "Economía Venezuela | OVE",
+    description: "Indicadores económicos de Venezuela con series, catálogos y descargas abiertas del OVE."
+  },
+  "/datos/industria-energia-construccion": {
+    title: "Industria, energía y construcción | OVE",
+    description: "Indicadores de industria, energía y construcción para Venezuela en el banco de datos OVE."
+  },
+  "/datos/mercado-laboral": {
+    title: "Mercado laboral Venezuela | OVE",
+    description: "Indicadores laborales de Venezuela con fuentes oficiales e internacionales organizadas por el OVE."
+  },
+  "/datos/servicios": {
+    title: "Servicios Venezuela | OVE",
+    description: "Indicadores del sector servicios de Venezuela disponibles en el banco de datos OVE."
+  },
+  "/datos/nivel-condiciones-vida": {
+    title: "Nivel y condiciones de vida | OVE",
+    description: "Indicadores sociales y de condiciones de vida para Venezuela organizados por el OVE."
+  },
+  "/datos/sociedad": {
+    title: "Sociedad Venezuela | OVE",
+    description: "Indicadores sociales de Venezuela con catálogos y descargas abiertas del OVE."
+  },
+  "/datos/estadisticas-experimentales": {
+    title: "Estadísticas experimentales | OVE",
+    description: "Indicadores experimentales y series exploratorias para Venezuela en el banco de datos OVE."
+  },
   "/metodologia": {
     title: "Metodología, fuentes y citación | OVE",
     description: "Criterios metodológicos del OVE: fuentes, tratamiento de datos, actualización, limitaciones y forma de cita."
@@ -141,6 +181,7 @@ const routeMeta = {
 
 const appRoot = document.getElementById("app");
 const siteHeader = document.querySelector(".site-header");
+const siteOrigin = "https://ove-venezuela.com";
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 let lastRoute = null;
 let routeRenderId = 0;
@@ -158,6 +199,22 @@ const analyticsEvents = {
 function trackAnalytics(eventName, payload = {}) {
   if (typeof window.va !== "function") return;
   window.va("event", eventName, payload);
+}
+
+function routeToUrl(route) {
+  return route === "/" ? "/" : route;
+}
+
+function canonicalUrl(route) {
+  return `${siteOrigin}${routeToUrl(normalizeRoute(route))}`;
+}
+
+function currentRoute() {
+  if (location.hash.startsWith("#/")) {
+    return normalizeRoute(location.hash.replace("#", ""));
+  }
+  const path = normalizeRoute(location.pathname);
+  return routes[path] ? path : "/";
 }
 
 function routeSection(route) {
@@ -3854,7 +3911,7 @@ function contactPage() {
 }
 
 function render() {
-  const route = normalizeRoute(location.hash.replace("#", "") || "/");
+  const route = currentRoute();
   const view = routes[route] || routes["/"];
   const meta = routeMeta[route] || routeMeta["/"];
   const currentRender = ++routeRenderId;
@@ -3868,7 +3925,13 @@ function render() {
     document.querySelector('meta[name="description"]')?.setAttribute("content", meta.description);
     document.querySelector('meta[property="og:title"]')?.setAttribute("content", meta.title);
     document.querySelector('meta[property="og:description"]')?.setAttribute("content", meta.description);
+    document.querySelector('link[rel="canonical"]')?.setAttribute("href", canonicalUrl(route));
+    document.querySelector('link[rel="alternate"][hreflang="es"]')?.setAttribute("href", canonicalUrl(route));
+    document.querySelector('meta[property="og:url"]')?.setAttribute("content", canonicalUrl(route));
+    document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", meta.title);
+    document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", meta.description);
     appRoot.focus({ preventScroll: true });
+    upgradeInternalLinksForSeo(document);
     updateActiveNav(route);
     wireForms();
     hydrateBcvWidgets();
@@ -3913,7 +3976,33 @@ function render() {
 
 function normalizeRoute(route) {
   if (!route || route === "") return "/";
-  return route.startsWith("/") ? route : `/${route}`;
+  const normalized = route.startsWith("/") ? route : `/${route}`;
+  return normalized.length > 1 ? normalized.replace(/\/+$/, "") : normalized;
+}
+
+function upgradeInternalLinksForSeo(root = document) {
+  root.querySelectorAll('a[href^="#/"]').forEach(link => {
+    const route = normalizeRoute(link.getAttribute("href").replace("#", ""));
+    link.setAttribute("href", routeToUrl(route));
+  });
+}
+
+function handleInternalNavigation(event) {
+  const link = event.target.closest("a[href]");
+  if (!link) return;
+  if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+  const url = new URL(link.href, location.href);
+  if (url.origin !== location.origin) return;
+
+  const route = normalizeRoute(url.pathname);
+  if (!routes[route]) return;
+
+  event.preventDefault();
+  if (location.pathname !== routeToUrl(route) || location.hash) {
+    history.pushState({}, "", routeToUrl(route));
+    render();
+  }
 }
 
 function updateActiveNav(route) {
@@ -4370,7 +4459,10 @@ document.querySelectorAll(".main-nav a").forEach(link => {
 });
 
 wireAnalytics(document);
+upgradeInternalLinksForSeo(document);
+document.addEventListener("click", handleInternalNavigation);
 window.addEventListener("scroll", syncHeaderState, { passive: true });
 window.addEventListener("hashchange", render);
+window.addEventListener("popstate", render);
 syncHeaderState();
 render();

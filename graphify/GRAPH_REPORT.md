@@ -1,16 +1,16 @@
 # Graph Report - OVE-web-github  (2026-07-16)
 
 ## Corpus Check
-- 61 files · ~5,512,653 words
+- 62 files · ~5,521,455 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1032 nodes · 1528 edges · 145 communities (144 shown, 1 thin omitted)
-- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 75 edges (avg confidence: 0.66)
+- 1041 nodes · 1546 edges · 146 communities (145 shown, 1 thin omitted)
+- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 76 edges (avg confidence: 0.66)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `bbb7478e`
+- Built from commit: `4de9c192`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -160,6 +160,7 @@
 - source-assets/ChatGPT Image 20 may 2026, 18_00_20 (3).png
 - source-assets/OVE Logo/Manual Corporativo/manual_corporativo_ove_max_calidad.pdf
 - source-assets/OVE Logo/Manual Corporativo/Manual Corporativo y de Imagen del OVE.pdf
+- vercel.json
 
 ## God Nodes (most connected - your core abstractions)
 1. `Communities (145 total, 1 thin omitted)` - 145 edges
@@ -188,15 +189,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (145 total, 1 thin omitted)
+## Communities (146 total, 1 thin omitted)
 
 ### Community 0 - "ove_excel_format.py"
 Cohesion: 0.07
-Nodes (59): download(), extract_gdp(), extract_inpc(), main(), now_utc(), Path, update_catalog(), write_dataset() (+51 more)
+Nodes (61): download(), extract_gdp(), extract_inpc(), main(), now_utc(), Path, update_catalog(), write_dataset() (+53 more)
 
 ### Community 1 - "app.js"
 Cohesion: 0.06
-Nodes (56): agricultureEnvironmentGroups, analyticsEvents, analyticsFormatFromHref(), analyticsSourceFromHref(), appRoot, buildDashboardSeries(), cepalCatalog, comparisonSvg() (+48 more)
+Nodes (45): agricultureEnvironmentGroups, analyticsEvents, appRoot, barChart(), buildDashboardSeries(), cepalCatalog, chartCard(), comparisonSvg() (+37 more)
 
 ### Community 2 - "bcv_ingest.py"
 Cohesion: 0.15
@@ -231,8 +232,8 @@ Cohesion: 0.24
 Nodes (16): catalog_rows(), clean_text(), download_batch_observations(), download_single_observations(), fetch_bytes(), fetch_text(), infer_year(), load_catalog_from_fred() (+8 more)
 
 ### Community 10 - "ilo_refresh.py"
-Cohesion: 0.32
-Nodes (12): download_frequency(), fetch_bytes(), iter_rows_from_gzip(), load_metadata(), main(), period_key(), Path, read_csv_bytes() (+4 more)
+Cohesion: 0.14
+Nodes (23): analyticsFormatFromHref(), analyticsSourceFromHref(), canonicalUrl(), currentRoute(), formatBcvDate(), formatBcvNumber(), formatDashboardValue(), handleInternalNavigation() (+15 more)
 
 ### Community 11 - "build_key_indicators_dataset.py"
 Cohesion: 0.09
@@ -275,7 +276,7 @@ Cohesion: 0.50
 Nodes (4): assets/data/bcv/catalog/ove_bcv_indice_nacional_precios_consumidor_workbooks.json, ast_hash, mtime, semantic_hash
 
 ### Community 22 - "assets/data/bcv/catalog/ove_bcv_producto_interno_bruto_workbooks.json"
-Cohesion: 0.50
+Cohesion: 0.40
 Nodes (4): assets/data/bcv/catalog/ove_bcv_producto_interno_bruto_workbooks.json, ast_hash, mtime, semantic_hash
 
 ### Community 23 - "assets/data/bcv/json/ove_bcv_inpc_nacional_mensual.json"
@@ -471,8 +472,8 @@ Cohesion: 0.18
 Nodes (10): Community Hubs (Navigation), Corpus Check, God Nodes (most connected - your core abstractions), Graph Freshness, Graph Report - OVE-web-github  (2026-07-16), Import Cycles, Knowledge Gaps, Suggested Questions (+2 more)
 
 ### Community 71 - "indicatorsPage"
-Cohesion: 0.33
-Nodes (7): barChart(), chartCard(), donutChart(), indicatorsPage(), indicatorTable(), lineChart(), mapWidget()
+Cohesion: 0.36
+Nodes (10): add_bcv_gdp(), add_bcv_inpc(), add_bcv_usd(), add_wdi(), fetch_wdi_rows(), main(), now_utc(), Path (+2 more)
 
 ### Community 72 - "manifest.json"
 Cohesion: 0.50
@@ -607,7 +608,7 @@ Cohesion: 0.50
 Nodes (4): assets/ove-logo-white.png, ast_hash, mtime, semantic_hash
 
 ### Community 105 - "assets/publication-cover-1.png"
-Cohesion: 0.40
+Cohesion: 0.50
 Nodes (4): assets/publication-cover-1.png, ast_hash, mtime, semantic_hash
 
 ### Community 106 - "assets/publication-cover-2.png"
@@ -766,8 +767,12 @@ Nodes (4): source-assets/OVE Logo/Manual Corporativo/manual_corporativo_ove_max_
 Cohesion: 0.50
 Nodes (4): source-assets/OVE Logo/Manual Corporativo/Manual Corporativo y de Imagen del OVE.pdf, ast_hash, mtime, semantic_hash
 
+### Community 145 - "vercel.json"
+Cohesion: 0.50
+Nodes (3): cleanUrls, rewrites, trailingSlash
+
 ## Knowledge Gaps
-- **597 isolated node(s):** `routes`, `routeMeta`, `appRoot`, `siteHeader`, `analyticsEvents` (+592 more)
+- **600 isolated node(s):** `routes`, `routeMeta`, `appRoot`, `siteHeader`, `analyticsEvents` (+595 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -775,16 +780,16 @@ Nodes (4): source-assets/OVE Logo/Manual Corporativo/Manual Corporativo y de Ima
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Communities (145 total, 1 thin omitted)` connect `icon` to `Graph Report - OVE-web-github  (2026-07-16)`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **Why does `assets/data/world-bank/catalog/world-bank-latest-summary.json` connect `assets/data/world-bank/catalog/world-bank-latest-summary.json` to `assets/publication-cover-1.png`?**
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+- **Why does `scripts/bcv_ingest.py` connect `scripts/bcv_ingest.py` to `assets/data/bcv/catalog/ove_bcv_producto_interno_bruto_workbooks.json`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `scripts/bcv_sources.json` connect `scripts/bcv_sources.json` to `assets/publication-cover-1.png`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `assets/data/cepal/catalog/cepal-catalog.json` connect `assets/data/cepal/catalog/cepal-catalog.json` to `assets/data/bcv/catalog/ove_bcv_producto_interno_bruto_workbooks.json`?**
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **What connects `routes`, `routeMeta`, `appRoot` to the rest of the system?**
-  _597 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _600 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ove_excel_format.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.06923076923076923 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06693803708729082 - nodes in this community are weakly interconnected._
 - **Should `app.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.05807622504537205 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05920444033302498 - nodes in this community are weakly interconnected._
 - **Should `bcv_ingest.py` be split into smaller, more focused modules?**
   _Cohesion score 0.14789915966386555 - nodes in this community are weakly interconnected._

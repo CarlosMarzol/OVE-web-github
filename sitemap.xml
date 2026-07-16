@@ -6,4 +6,37 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  <url><loc>https://ove-venezuela.com/indicadores</loc><lastmod>2026-07-16</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ove-venezuela.com/indicadores/dashboard</loc><lastmod>2026-07-16</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ove-venezuela.com/publicaciones</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ove-venezuela.com/nota-lanzamiento</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ove-venezuela.com/datos</loc><lastmod>2026-07-16</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/bcv</loc><lastmod>2026-07-16</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/tipo-cambio</loc><lastmod>2026-07-16</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/banco-mundial</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/oit</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/fmi</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/fred</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/ine</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/cepal</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/unctad</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/agricultura-medio-ambiente</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/ciencia-tecnologia</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/demografia-poblacion</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/economia</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/industria-energia-construccion</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/mercado-laboral</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/servicios</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/nivel-condiciones-vida</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/sociedad</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ove-venezuela.com/datos/estadisticas-experimentales</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ove-venezuela.com/metodologia</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ove-venezuela.com/manifiesto</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ove-venezuela.com/nosotros</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ove-venezuela.com/contacto</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ove-venezuela.com/legal</loc><lastmod>2026-07-16</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://ove-venezuela.com/privacidad</loc><lastmod>2026-07-16</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://ove-venezuela.com/cookies</loc><lastmod>2026-07-16</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://ove-venezuela.com/terminos</loc><lastmod>2026-07-16</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://ove-venezuela.com/licencia-datos</loc><lastmod>2026-07-16</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
 </urlset>

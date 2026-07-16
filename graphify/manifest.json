@@ -1,7 +1,7 @@
 {
   "app.js": {
-    "mtime": 1784195351.6275494,
-    "ast_hash": "b16daefb4e03206eb14cbdae5176dca1",
+    "mtime": 1784203227.816623,
+    "ast_hash": "72f510320d875f6d49aa27a6201d9237",
     "semantic_hash": ""
   },
   "assets/data/bcv/catalog/bcv-catalog.json": {
@@ -260,13 +260,13 @@
     "semantic_hash": "3025b31d2332f628ab056c072872b8c3"
   },
   "graphify/graph.json": {
-    "mtime": 1784195384.447809,
-    "ast_hash": "9b4bbef50fe3be2751199eaf3a4109e1",
+    "mtime": 1784202879.213925,
+    "ast_hash": "010921ecc9a7705ad32e175b2a4054cc",
     "semantic_hash": ""
   },
   "graphify/manifest.json": {
-    "mtime": 1784195384.451809,
-    "ast_hash": "7393b421e2a5a227d80afcb993c3c0d4",
+    "mtime": 1784202879.2179248,
+    "ast_hash": "ebcfbb37db1ab82a5de01d73b4a01c42",
     "semantic_hash": ""
   },
   ".github/workflows/update-bcv-data.yml": {
@@ -350,8 +350,8 @@
     "semantic_hash": ""
   },
   "docs/OVE_LAUNCH_CHECKLIST.md": {
-    "mtime": 1784202834.3175778,
-    "ast_hash": "6e1b9a6549c291f141a481d495153f9c",
+    "mtime": 1784203227.816623,
+    "ast_hash": "f6428009d4d84db55d466c8a9c387e41",
     "semantic_hash": ""
   },
   "docs/OVE_QA_BASIC_20260714.md": {
@@ -360,18 +360,18 @@
     "semantic_hash": ""
   },
   "graphify/GRAPH_REPORT.md": {
-    "mtime": 1784195384.4438088,
-    "ast_hash": "81bb3880508107615596c38ba5484a93",
+    "mtime": 1784202879.2099247,
+    "ast_hash": "99b16658d1f0c61066252c7423b72a1e",
     "semantic_hash": ""
   },
   "graphify/graph.html": {
-    "mtime": 1784195384.4398088,
-    "ast_hash": "b7e3232657a9666b20f4fb47ff5bf28f",
+    "mtime": 1784202879.2019248,
+    "ast_hash": "cf9ae359e77ee5b469302fbeb01b881d",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1784202834.3135777,
-    "ast_hash": "41bc303f2b13a8aeef15c8a44409c480",
+    "mtime": 1784203162.520117,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
     "semantic_hash": ""
   },
   "requirements-bcv.txt": {
@@ -887,6 +887,11 @@
   "robots.txt": {
     "mtime": 1784202834.3175778,
     "ast_hash": "a28221dbe27b444278ab539cf6714a18",
+    "semantic_hash": ""
+  },
+  "vercel.json": {
+    "mtime": 1784203162.5241172,
+    "ast_hash": "3a58753b9c06ca17fd09c75ae789c7db",
     "semantic_hash": ""
   }
 }

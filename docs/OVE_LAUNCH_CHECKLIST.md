@@ -71,7 +71,7 @@ Current recommendation: do not launch as a public observatory until data governa
 
 - [x] Confirm final hosting route: GitHub Pages, custom domain, or another host. Completed 2026-07-16: final public domain set to `https://ove-venezuela.com/`, served from the Vercel deployment.
 - [ ] Configure HTTPS and domain redirects. Started 2026-07-16: `https://ove-venezuela.com/` responds with the OVE site; confirm in Vercel that the custom domain is marked primary and that the Vercel preview domain redirects as desired.
-- [x] Add `robots.txt` and `sitemap.xml`. Completed 2026-07-16: added basic root sitemap and robots policy for the custom domain.
+- [x] Add `robots.txt` and `sitemap.xml`. Completed 2026-07-16: added robots policy and expanded sitemap with clean public routes for the custom domain.
 - [x] Finalize Open Graph / social preview metadata. Completed 2026-07-16: added canonical URL, `og:url`, absolute `og:image`, and Twitter card metadata for `https://ove-venezuela.com/`.
 - [ ] Configure analytics and Search Console. Started 2026-07-16: added Vercel Web Analytics script, hash-route tracking, download/outbound/dashboard/form events, and privacy/cookies disclosure. Vercel Analytics still needs to be enabled in the Vercel project dashboard; Search Console remains pending.
 - [ ] Configure uptime/error monitoring if possible.
@@ -114,3 +114,4 @@ Current recommendation: do not launch as a public observatory until data governa
 - 2026-07-14: Checked deployed Vercel URL `https://ove-web-github.vercel.app/`. The site, CSS, JS, logo, and key JSON assets respond with 200, but the deployment is behind local work: it has 21 routes instead of 28, lacks methodology/legal/launch-note/forms-config changes, still shows older public copy, and therefore is not ready for public launch until the current local changes are committed, pushed, and redeployed.
 - 2026-07-14: Published corrected pre-launch version to GitHub/Vercel. Commit `1564464` is on `origin/main`. Post-push deployed QA confirmed 28 routes, 106 internal hash links, 0 missing internal routes, required metadata/legal/methodology/launch-note/form markers present, and removed public placeholder copy absent.
 - 2026-07-16: Carlos confirmed the custom domain `https://ove-venezuela.com/`. Added canonical/social metadata, root sitemap, robots policy, and updated ingestion user-agent strings to use the public domain.
+- 2026-07-16: Added technical SEO improvements without changing visible page copy: clean URL routing support, Vercel rewrites, expanded route sitemap, per-route canonical/OG metadata, robots index directive, alternate language tag, and JSON-LD for Organization, WebSite, DataCatalog and key datasets.
