@@ -146,6 +146,75 @@ let lastRoute = null;
 let routeRenderId = 0;
 let revealObserver = null;
 
+const analyticsEvents = {
+  route: "OVE Route View",
+  download: "OVE Download",
+  outbound: "OVE Outbound Link",
+  dashboard: "OVE Dashboard",
+  form: "OVE Form",
+  copy: "OVE Copy"
+};
+
+function trackAnalytics(eventName, payload = {}) {
+  if (typeof window.va !== "function") return;
+  window.va("event", eventName, payload);
+}
+
+function routeSection(route) {
+  const parts = normalizeRoute(route).split("/").filter(Boolean);
+  return parts[0] || "inicio";
+}
+
+function analyticsSourceFromHref(href) {
+  const value = String(href || "").toLowerCase();
+  if (value.includes("/bcv/")) return "bcv";
+  if (value.includes("/world-bank/")) return "world-bank";
+  if (value.includes("/ilo/")) return "oit";
+  if (value.includes("/imf/")) return "fmi";
+  if (value.includes("/fred/")) return "fred";
+  if (value.includes("/ine/")) return "ine";
+  if (value.includes("/cepal/")) return "cepal";
+  if (value.includes("/unctad/")) return "unctad";
+  if (value.includes("/indicadores-clave/")) return "indicadores-clave";
+  if (value.includes("bcv.org.ve")) return "bcv";
+  return "otro";
+}
+
+function analyticsFormatFromHref(href) {
+  const path = String(href || "").split("?")[0].toLowerCase();
+  if (path.endsWith(".csv.gz")) return "csv-gz";
+  if (path.endsWith(".xlsx")) return "excel";
+  if (path.endsWith(".csv")) return "csv";
+  if (path.endsWith(".json")) return "json";
+  if (path.endsWith(".pdf")) return "pdf";
+  if (path.startsWith("http")) return "fuente";
+  return "otro";
+}
+
+function wireAnalytics(root = document) {
+  root.querySelectorAll("a[href]").forEach(link => {
+    if (link.dataset.analyticsWired === "true") return;
+    link.dataset.analyticsWired = "true";
+    link.addEventListener("click", () => {
+      const href = link.getAttribute("href") || "";
+      const isDownload = link.hasAttribute("download") || href.startsWith("assets/data/");
+      if (isDownload) {
+        trackAnalytics(analyticsEvents.download, {
+          source: analyticsSourceFromHref(href),
+          format: analyticsFormatFromHref(href)
+        });
+        return;
+      }
+      if (/^https?:\/\//i.test(href)) {
+        trackAnalytics(analyticsEvents.outbound, {
+          source: analyticsSourceFromHref(href),
+          format: analyticsFormatFromHref(href)
+        });
+      }
+    });
+  });
+}
+
 const metricData = [
   {
     title: "PIB real",
@@ -3372,26 +3441,28 @@ const legalContent = {
   privacidad: {
     title: "Política de privacidad",
     eyebrow: "Datos personales",
-    lead: "Política provisional sobre datos personales. Actualmente los formularios están preparados técnicamente, pero el envío y almacenamiento están desactivados hasta definir el canal oficial.",
+    lead: "Política provisional sobre datos personales. Actualmente los formularios están preparados técnicamente, pero el envío y almacenamiento están desactivados hasta definir el canal oficial. El sitio puede usar analítica agregada y sin cookies personales para medir audiencia y mejorar contenidos.",
     sections: [
       ["Datos que podrían solicitarse", "Nombre, correo electrónico, teléfono opcional, tipo de consulta, mensaje, propuesta de colaboración y suscripción al boletín."],
       ["Estado actual de los formularios", "Mientras `assets/forms/forms-config.json` mantenga `enabled: false`, los formularios no envían ni almacenan información. La validación ocurre en el navegador del usuario."],
+      ["Analítica web", "El OVE puede utilizar Vercel Web Analytics para obtener métricas agregadas de visitas, páginas, país aproximado, dispositivo, navegador, descargas y uso de secciones. Esta medición no usa cookies personales ni crea perfiles individuales de usuarios."],
       ["Finalidades futuras", "Responder consultas, gestionar colaboraciones, atender solicitudes de prensa, enviar boletines si el usuario se suscribe y mantener trazabilidad administrativa."],
       ["Base y consentimiento", "La activación de formularios deberá apoyarse en consentimiento informado, aceptación de privacidad y un canal de tratamiento definido."],
       ["Conservación y derechos", "Antes del lanzamiento público se debe definir plazo de conservación, responsable, correo de ejercicio de derechos y procedimiento para acceso, rectificación o supresión."],
-      ["Servicios de terceros", "Si se utiliza Formspree, HubSpot, Airtable, Google Sheets u otro proveedor, esta política deberá identificarlo y explicar su papel en el tratamiento."]
+      ["Servicios de terceros", "Si se utiliza Formspree, HubSpot, Airtable, Google Sheets u otro proveedor, esta política deberá identificarlo y explicar su papel en el tratamiento. La analítica agregada se presta mediante la infraestructura de Vercel cuando esté activada en el proyecto."]
     ]
   },
   cookies: {
     title: "Política de cookies",
     eyebrow: "Cookies y analítica",
-    lead: "Información provisional sobre cookies. En la versión actual no se ha integrado analítica, publicidad ni seguimiento de terceros.",
+    lead: "Información provisional sobre cookies y medición de audiencia. El sitio puede incorporar analítica agregada de Vercel sin cookies personales, publicidad ni seguimiento entre sitios.",
     sections: [
-      ["Estado actual", "El sitio no usa cookies de analítica, publicidad o perfilado. Tampoco se ha detectado uso de `localStorage`, `sessionStorage` o `document.cookie` en el código actual."],
+      ["Estado actual", "El sitio no usa cookies de publicidad o perfilado. La analítica prevista se limita a medición agregada de audiencia y eventos del propio sitio mediante Vercel Web Analytics."],
       ["Cookies técnicas", "Si el alojamiento o futuras funciones requieren cookies técnicas estrictamente necesarias, deberán identificarse en esta página."],
-      ["Analítica futura", "Si se añade Google Analytics, Search Console, píxeles u otras herramientas, se deberá actualizar esta política y, cuando proceda, ofrecer mecanismos de aceptación o rechazo."],
+      ["Analítica agregada", "La medición puede incluir visitas, rutas internas, descargas de archivos, fuentes consultadas, dispositivo, navegador y país aproximado. No se usan cookies personales para esta medición ni se persigue identificar a una persona concreta."],
+      ["Herramientas futuras", "Si se añade Google Analytics, píxeles publicitarios u otras herramientas con cookies no técnicas o perfilado, se deberá actualizar esta política y ofrecer mecanismos de aceptación o rechazo cuando proceda."],
       ["Gestión de preferencias", "Pendiente de implementar solo si se incorporan cookies no técnicas o tecnologías equivalentes que requieran consentimiento."],
-      ["Revisión", "Página pendiente de revisión legal antes de activar analítica o cookies no técnicas."]
+      ["Revisión", "Página pendiente de revisión legal antes del lanzamiento público definitivo."]
     ]
   },
   terminos: {
@@ -3805,6 +3876,11 @@ function render() {
     hydrateNativeDashboard();
     hydrateExchangeDashboard();
     prepareRevealAnimations(appRoot);
+    wireAnalytics(appRoot);
+    trackAnalytics(analyticsEvents.route, {
+      route,
+      section: routeSection(route)
+    });
 
     if (!firstRender) {
       window.scrollTo({ top: 0, behavior: prefersReducedMotion ? "auto" : "smooth" });
@@ -3900,6 +3976,7 @@ function wireForms() {
 
         if (config.enabled !== true) {
           setFormStatus(form, "Formulario preparado. Falta activar el endpoint o correo definitivo.", "pending");
+          trackAnalytics(analyticsEvents.form, { form: formId, state: "pending" });
         } else if (endpoint) {
           const response = await fetch(endpoint, {
             method: "POST",
@@ -3908,17 +3985,21 @@ function wireForms() {
           });
           if (!response.ok) throw new Error("FORM_ENDPOINT_ERROR");
           setFormStatus(form, "Recibido. Gracias por escribir al OVE.", "success");
+          trackAnalytics(analyticsEvents.form, { form: formId, state: "success" });
           form.reset();
         } else if (recipient) {
           const body = Object.entries(payload).map(([key, value]) => `${key}: ${value}`).join("\n");
           window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
           setFormStatus(form, "Se abrió tu cliente de correo para completar el envío.", "success");
+          trackAnalytics(analyticsEvents.form, { form: formId, state: "mailto" });
           form.reset();
         } else {
           setFormStatus(form, "Formulario preparado. Falta configurar el endpoint o correo definitivo.", "pending");
+          trackAnalytics(analyticsEvents.form, { form: formId, state: "pending" });
         }
       } catch {
         setFormStatus(form, "No se pudo enviar. Inténtalo de nuevo o usa el canal de contacto alternativo.", "error");
+        trackAnalytics(analyticsEvents.form, { form: form.dataset.formId || "unknown", state: "error" });
       } finally {
         button.innerHTML = original;
         button.disabled = false;
@@ -3932,6 +4013,7 @@ function wireForms() {
       try {
         await navigator.clipboard.writeText(text);
         copy.textContent = "Cita copiada";
+        trackAnalytics(analyticsEvents.copy, { source: "nota", format: "cita" });
       } catch {
         copy.textContent = "Cita lista";
       }
@@ -4032,6 +4114,7 @@ function hydrateKeyDashboard() {
       source.textContent = meta.source;
       unit.textContent = `${meta.frequency} · ${meta.unit}`;
       chart.innerHTML = sparklineSvg(series);
+      trackAnalytics(analyticsEvents.dashboard, { action: "key_series", detail: id });
     });
   });
 }
@@ -4105,7 +4188,16 @@ async function hydrateNativeDashboard() {
       const currentPrimary = primary.value;
       primary.value = secondary.value;
       secondary.value = currentPrimary;
+      trackAnalytics(analyticsEvents.dashboard, { action: "swap", detail: "native" });
       renderDashboard();
+    });
+    [primary, secondary, mode, windowSelect].forEach(control => {
+      control.addEventListener("change", () => {
+        trackAnalytics(analyticsEvents.dashboard, {
+          action: control.dataset.dashboardPrimary ? "primary" : control.dataset.dashboardSecondary ? "secondary" : control.dataset.dashboardMode ? "mode" : "window",
+          detail: control.value
+        });
+      });
     });
     renderDashboard();
   } catch {
@@ -4176,7 +4268,11 @@ async function hydrateExchangeDashboard() {
     };
 
     buttons.forEach(button => {
-      button.addEventListener("click", () => renderCurrency(button.getAttribute("data-exchange-currency")));
+      button.addEventListener("click", () => {
+        const code = button.getAttribute("data-exchange-currency");
+        trackAnalytics(analyticsEvents.dashboard, { action: "currency", detail: code });
+        renderCurrency(code);
+      });
     });
 
     renderCurrency("USD");
@@ -4273,6 +4369,7 @@ document.querySelectorAll(".main-nav a").forEach(link => {
   });
 });
 
+wireAnalytics(document);
 window.addEventListener("scroll", syncHeaderState, { passive: true });
 window.addEventListener("hashchange", render);
 syncHeaderState();

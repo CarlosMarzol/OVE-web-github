@@ -73,7 +73,7 @@ Current recommendation: do not launch as a public observatory until data governa
 - [ ] Configure HTTPS and domain redirects.
 - [ ] Add `robots.txt` and `sitemap.xml`.
 - [ ] Finalize Open Graph / social preview metadata.
-- [ ] Configure analytics and Search Console.
+- [ ] Configure analytics and Search Console. Started 2026-07-16: added Vercel Web Analytics script, hash-route tracking, download/outbound/dashboard/form events, and privacy/cookies disclosure. Vercel Analytics still needs to be enabled in the Vercel project dashboard; Search Console remains pending.
 - [ ] Configure uptime/error monitoring if possible.
 - [ ] Prepare rollback plan.
 - [x] Publish latest launch-preparation changes to the deployed environment. Completed 2026-07-14: local launch-preparation work was committed, pushed to `main`, and Vercel redeployed. The deployed app now contains methodology, legal, launch note, forms config, and updated BCV value, and no longer contains removed public copy such as `API Playground` or `Contactar con Carlos`.

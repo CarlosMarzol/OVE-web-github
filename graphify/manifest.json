@@ -1,13 +1,13 @@
 {
   "app.js": {
-    "mtime": 1784127774.3445587,
-    "ast_hash": "5ff7aa561c3590aaf474f39e82ef6928",
-    "semantic_hash": "5ff7aa561c3590aaf474f39e82ef6928"
+    "mtime": 1784195351.6275494,
+    "ast_hash": "b16daefb4e03206eb14cbdae5176dca1",
+    "semantic_hash": ""
   },
   "assets/data/bcv/catalog/bcv-catalog.json": {
-    "mtime": 1784108207.2117722,
-    "ast_hash": "87bd4a72e43494371709e8d1aa919532",
-    "semantic_hash": "87bd4a72e43494371709e8d1aa919532"
+    "mtime": 1784195314.6632571,
+    "ast_hash": "b3bba1b64e888d02db7056849243ab35",
+    "semantic_hash": ""
   },
   "assets/data/bcv/catalog/ove_bcv_indice_nacional_precios_consumidor_workbooks.json": {
     "mtime": 1784107707.8038886,
@@ -30,14 +30,14 @@
     "semantic_hash": "eec819f66841d0ba984c436f715091fe"
   },
   "assets/data/bcv/json/ove_bcv_tipo_cambio_referencia_smc.json": {
-    "mtime": 1784108202.2117333,
-    "ast_hash": "0f14ca5c8e617b2e9adedb05679877cc",
-    "semantic_hash": "0f14ca5c8e617b2e9adedb05679877cc"
+    "mtime": 1784195314.6672573,
+    "ast_hash": "d28f18f3098aeaf7fe8b29fdfd026221",
+    "semantic_hash": ""
   },
   "assets/data/bcv/json/ove_bcv_tipo_cambio_usd.json": {
-    "mtime": 1784108205.0117552,
-    "ast_hash": "aac5964c0e4113a2a576c90a8db5ba3d",
-    "semantic_hash": "aac5964c0e4113a2a576c90a8db5ba3d"
+    "mtime": 1784195314.6672573,
+    "ast_hash": "0901989c7fec38547a5d14737ce54492",
+    "semantic_hash": ""
   },
   "assets/data/cepal/catalog/cepal-catalog.json": {
     "mtime": 1784124497.182787,
@@ -85,9 +85,9 @@
     "semantic_hash": "22f38c18faf6e0e93395714ac4892635"
   },
   "assets/data/indicadores-clave/ove_indicadores_clave_venezuela.json": {
-    "mtime": 1784126632.951576,
-    "ast_hash": "c5c362be5ccb099cf1aa0b8cf574ed3c",
-    "semantic_hash": "c5c362be5ccb099cf1aa0b8cf574ed3c"
+    "mtime": 1784195351.571549,
+    "ast_hash": "63e07cfa8fec47ccb978a268dcf777ed",
+    "semantic_hash": ""
   },
   "assets/data/ine/catalog/ine-catalog.json": {
     "mtime": 1784117326.394329,
@@ -258,5 +258,630 @@
     "mtime": 1784108128.847162,
     "ast_hash": "3025b31d2332f628ab056c072872b8c3",
     "semantic_hash": "3025b31d2332f628ab056c072872b8c3"
+  },
+  "graphify/graph.json": {
+    "mtime": 1784195351.6315496,
+    "ast_hash": "b41328f5161c06b432783e33c78430c7",
+    "semantic_hash": ""
+  },
+  "graphify/manifest.json": {
+    "mtime": 1784195351.6315496,
+    "ast_hash": "5381648b896c88eed237caf18da82fa7",
+    "semantic_hash": ""
+  },
+  ".github/workflows/update-bcv-data.yml": {
+    "mtime": 1784125915.0338829,
+    "ast_hash": "ac43b30d2976cb503068f7f961f077e8",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1784117402.146914,
+    "ast_hash": "4f4841d73810900da126959ae3e1552d",
+    "semantic_hash": ""
+  },
+  "assets/data/bcv/README.md": {
+    "mtime": 1783496439.9745004,
+    "ast_hash": "960367a3b78f0e0080543da93119440b",
+    "semantic_hash": ""
+  },
+  "assets/data/fred/raw/fred_venezuela_tag_page_1.html": {
+    "mtime": 1784114300.8510394,
+    "ast_hash": "629cd79ab53206be881f92fb3f546735",
+    "semantic_hash": ""
+  },
+  "assets/data/fred/raw/fred_venezuela_tag_page_2.html": {
+    "mtime": 1784114301.0390408,
+    "ast_hash": "aef32d4f5ab53b2f830f909f2760d716",
+    "semantic_hash": ""
+  },
+  "assets/data/fred/raw/fred_venezuela_tag_page_3.html": {
+    "mtime": 1784114301.067041,
+    "ast_hash": "f82f0dc1810d79842c2bbf55964a9dd9",
+    "semantic_hash": ""
+  },
+  "assets/data/fred/raw/fred_venezuela_tag_page_4.html": {
+    "mtime": 1784114301.1110413,
+    "ast_hash": "7b8143545ef848b966a7804c6c83f534",
+    "semantic_hash": ""
+  },
+  "assets/data/fred/raw/fred_venezuela_tag_page_5.html": {
+    "mtime": 1784114301.1550417,
+    "ast_hash": "dae8f46789602f6770db4ae131209b4a",
+    "semantic_hash": ""
+  },
+  "assets/data/fred/raw/fred_venezuela_tag_page_6.html": {
+    "mtime": 1784114301.187042,
+    "ast_hash": "c5bbcc40bd0e8d0b4ca3c8a534ae3802",
+    "semantic_hash": ""
+  },
+  "assets/data/fred/raw/fred_venezuela_tag_page_7.html": {
+    "mtime": 1784114301.2310424,
+    "ast_hash": "e6df47651d8be7c004dbec4be1de0a5c",
+    "semantic_hash": ""
+  },
+  "assets/data/fred/raw/fred_venezuela_tag_page_8.html": {
+    "mtime": 1784114301.2630424,
+    "ast_hash": "cf64e798e6930c46908df61be8e83421",
+    "semantic_hash": ""
+  },
+  "assets/data/fred/raw/fred_venezuela_tag_page_9.html": {
+    "mtime": 1784114301.2990427,
+    "ast_hash": "930fa5b4418a1b9707018968cedaebb1",
+    "semantic_hash": ""
+  },
+  "assets/data/ine/raw/ine_venezuela_home.html": {
+    "mtime": 1784117084.6524625,
+    "ast_hash": "62f61cc53f2c288e7fbfa55bc40881df",
+    "semantic_hash": ""
+  },
+  "assets/data/world-bank/README_Dataset_para_web.txt": {
+    "mtime": 1783496439.9745004,
+    "ast_hash": "88d337cc7ec014361a5ab89f4dfb3d49",
+    "semantic_hash": ""
+  },
+  "docs/OVE_ANALYTICS_20260716.md": {
+    "mtime": 1784195351.6235495,
+    "ast_hash": "46822696f4c161411c497898e2795373",
+    "semantic_hash": ""
+  },
+  "docs/OVE_DATA_VALIDATION_20260714.md": {
+    "mtime": 1784036952.5361893,
+    "ast_hash": "c1a644cbeea46b8932c7f0377cb00eb0",
+    "semantic_hash": ""
+  },
+  "docs/OVE_LAUNCH_CHECKLIST.md": {
+    "mtime": 1784195351.6275494,
+    "ast_hash": "e1a8868c2eab4a96a7f5309196fc4e0e",
+    "semantic_hash": ""
+  },
+  "docs/OVE_QA_BASIC_20260714.md": {
+    "mtime": 1784037093.9092872,
+    "ast_hash": "6f125f8d0275d5a0ca3a4905852f73b1",
+    "semantic_hash": ""
+  },
+  "graphify/GRAPH_REPORT.md": {
+    "mtime": 1784195351.6275494,
+    "ast_hash": "bbc4bf96c90854bb2de3ff8c0629942c",
+    "semantic_hash": ""
+  },
+  "graphify/graph.html": {
+    "mtime": 1784195351.6275494,
+    "ast_hash": "7daf13a705783b9c5f2b89851bb85717",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1784195351.6315496,
+    "ast_hash": "4867c4d48636031de6d9d2c1c2363a30",
+    "semantic_hash": ""
+  },
+  "requirements-bcv.txt": {
+    "mtime": 1783496440.0585012,
+    "ast_hash": "39420dcf31a0e0bf351a8fb9ed5656ad",
+    "semantic_hash": ""
+  },
+  "manual_corporativo_ove_max_calidad.pdf": {
+    "mtime": 1783496440.054501,
+    "ast_hash": "433cde4d4676dc4cbed244dcf8e66a30",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/Manual Corporativo/Manual Corporativo y de Imagen del OVE.pdf": {
+    "mtime": 1783496440.138502,
+    "ast_hash": "ba84cf9aa5d7394e5f907c669df76a61",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/Manual Corporativo/manual_corporativo_ove_max_calidad.pdf": {
+    "mtime": 1783496440.1585019,
+    "ast_hash": "433cde4d4676dc4cbed244dcf8e66a30",
+    "semantic_hash": ""
+  },
+  "assets/ChatGPT Image 21 may 2026, 18_06_52 (7).png": {
+    "mtime": 1783496439.9625003,
+    "ast_hash": "2576fb2bbcb1ec7f189cbd252706501b",
+    "semantic_hash": ""
+  },
+  "assets/Ciencia y Tecnologia.png": {
+    "mtime": 1783496439.9625003,
+    "ast_hash": "2852aaaf959e60064e45400a4f16207e",
+    "semantic_hash": ""
+  },
+  "assets/Demograf\u00eda y Poblaci\u00f3n.png": {
+    "mtime": 1783496439.9625003,
+    "ast_hash": "6ea494481f82c292bb0726c2a691cc1b",
+    "semantic_hash": ""
+  },
+  "assets/Econom\u00eda.png": {
+    "mtime": 1783496439.9625003,
+    "ast_hash": "19c4f1e3e607d87dd631a130af86a3b9",
+    "semantic_hash": ""
+  },
+  "assets/Industria, energi\u00eda y construcci\u00f3n.png": {
+    "mtime": 1783496439.9665005,
+    "ast_hash": "3f6d493122840f3c78c51344606725e3",
+    "semantic_hash": ""
+  },
+  "assets/Logo de Agricultura y medio ambiente.png": {
+    "mtime": 1783496439.9665005,
+    "ast_hash": "156a9976dc4fc4bf97055f5aabf98123",
+    "semantic_hash": ""
+  },
+  "assets/Logo de Estadistica Experimetal.png": {
+    "mtime": 1783496439.9665005,
+    "ast_hash": "ddf355274ef42aee5e4bfc0e61d84a09",
+    "semantic_hash": ""
+  },
+  "assets/Mercado Laboral.png": {
+    "mtime": 1783496439.9705005,
+    "ast_hash": "ba7f3f393d7331a7850b6a2b7a760fd4",
+    "semantic_hash": ""
+  },
+  "assets/Nivel y Condiciones de vida (IPC).png": {
+    "mtime": 1783496439.9705005,
+    "ast_hash": "6b2d88573bbf190e89b933feeb1918fa",
+    "semantic_hash": ""
+  },
+  "assets/Servicios.png": {
+    "mtime": 1783496439.9705005,
+    "ast_hash": "a1aaf1a833e5dcc7308b8fad61f09c4a",
+    "semantic_hash": ""
+  },
+  "assets/about-hero.png": {
+    "mtime": 1783496439.9705005,
+    "ast_hash": "a86e9d77f25315e0e69e2167d8a1f542",
+    "semantic_hash": ""
+  },
+  "assets/apple-touch-icon.png": {
+    "mtime": 1783496439.9705005,
+    "ast_hash": "a0a01047431cff9bd736297b08e0955d",
+    "semantic_hash": ""
+  },
+  "assets/contact-hero.png": {
+    "mtime": 1783496439.9705005,
+    "ast_hash": "a25fd9473731d7889d8aecc10ae357b9",
+    "semantic_hash": ""
+  },
+  "assets/favicon.png": {
+    "mtime": 1783496440.0105007,
+    "ast_hash": "757a827a937599aee0dae877a3127211",
+    "semantic_hash": ""
+  },
+  "assets/featured-report.png": {
+    "mtime": 1783496440.0105007,
+    "ast_hash": "98d531d053295cc53a57ad988b39eba9",
+    "semantic_hash": ""
+  },
+  "assets/hero-caracas-clean.png": {
+    "mtime": 1783496440.0105007,
+    "ast_hash": "3bcb8358411fad6971f62b2e2d34b240",
+    "semantic_hash": ""
+  },
+  "assets/hero-caracas.png": {
+    "mtime": 1783496440.0145009,
+    "ast_hash": "cd5ccfc071cd13c9b091e05a74627adc",
+    "semantic_hash": ""
+  },
+  "assets/map-preview.png": {
+    "mtime": 1783496440.0145009,
+    "ast_hash": "a1f70c3914dca055fc9ef17875c549c0",
+    "semantic_hash": ""
+  },
+  "assets/ove-logo-brand.png": {
+    "mtime": 1783496440.0145009,
+    "ast_hash": "0f748d2f82973fd1faf05978a786d938",
+    "semantic_hash": ""
+  },
+  "assets/ove-logo-white.png": {
+    "mtime": 1783496440.0145009,
+    "ast_hash": "ab0d7367258fa0a8959a471c21854156",
+    "semantic_hash": ""
+  },
+  "assets/ove-logo.png": {
+    "mtime": 1783496440.0145009,
+    "ast_hash": "fac822507ecd715131b03428b69e2da8",
+    "semantic_hash": ""
+  },
+  "assets/publication-cover-1.png": {
+    "mtime": 1783496440.0145009,
+    "ast_hash": "9c9b35daeb5bcadb686535450dc359a0",
+    "semantic_hash": ""
+  },
+  "assets/publication-cover-2.png": {
+    "mtime": 1783496440.0185008,
+    "ast_hash": "d31a72e778771b0f3432ea0abab1d6f9",
+    "semantic_hash": ""
+  },
+  "assets/publication-cover-3.png": {
+    "mtime": 1783496440.0185008,
+    "ast_hash": "d246f099fce747289d66d93d360aebbf",
+    "semantic_hash": ""
+  },
+  "assets/publication-cover-4.png": {
+    "mtime": 1783496440.0225008,
+    "ast_hash": "96bb148b1dd3e5a954f413d23f404630",
+    "semantic_hash": ""
+  },
+  "assets/report-cover.png": {
+    "mtime": 1783496440.0225008,
+    "ast_hash": "e088c48cc871ebbee759d4529038c736",
+    "semantic_hash": ""
+  },
+  "assets/team-meeting.png": {
+    "mtime": 1783496440.0225008,
+    "ast_hash": "2ab4eaa8a95ae2344184a0fbc6d44f17",
+    "semantic_hash": ""
+  },
+  "assets/topics/topic-agriculture.png": {
+    "mtime": 1783496440.0225008,
+    "ast_hash": "3bf97f48230cfda0a4dc085d5e8c8572",
+    "semantic_hash": ""
+  },
+  "assets/topics/topic-demography.png": {
+    "mtime": 1783496440.0225008,
+    "ast_hash": "2d2bd40642483c91dad06ec822136b01",
+    "semantic_hash": ""
+  },
+  "assets/topics/topic-economy.png": {
+    "mtime": 1783496440.0225008,
+    "ast_hash": "50973789870f5b80e281a03151168915",
+    "semantic_hash": ""
+  },
+  "assets/topics/topic-experiments.png": {
+    "mtime": 1783496440.026501,
+    "ast_hash": "77968bc5185d7c313316e6e1c2d2f019",
+    "semantic_hash": ""
+  },
+  "assets/topics/topic-industry.png": {
+    "mtime": 1783496440.026501,
+    "ast_hash": "2adb87b3dab620860c003346f9ffe3f8",
+    "semantic_hash": ""
+  },
+  "assets/topics/topic-labor.png": {
+    "mtime": 1783496440.026501,
+    "ast_hash": "5ba7094c3a9f2fbd43a184e54bb4c8fa",
+    "semantic_hash": ""
+  },
+  "assets/topics/topic-living.png": {
+    "mtime": 1783496440.026501,
+    "ast_hash": "ed0484d36907569df3ff2ff33654be24",
+    "semantic_hash": ""
+  },
+  "assets/topics/topic-science.png": {
+    "mtime": 1783496440.026501,
+    "ast_hash": "52a7c3721d95626802befbcef4fd50e5",
+    "semantic_hash": ""
+  },
+  "assets/topics/topic-services.png": {
+    "mtime": 1783496440.026501,
+    "ast_hash": "900366e0833f435cab5ab8090f1768ec",
+    "semantic_hash": ""
+  },
+  "assets/topics/topic-society.png": {
+    "mtime": 1783496440.026501,
+    "ast_hash": "ed23cc295a1b13ad3f7228bccd42a577",
+    "semantic_hash": ""
+  },
+  "assets/venezuela-avila.jpg": {
+    "mtime": 1783496440.026501,
+    "ast_hash": "58c24d1b8791dcb92f1487b27cff0a1c",
+    "semantic_hash": ""
+  },
+  "assets/venezuela-city-wide.jpg": {
+    "mtime": 1783496440.026501,
+    "ast_hash": "c0e12dfd1eddcd7d7be6e159a174e5b7",
+    "semantic_hash": ""
+  },
+  "assets/venezuela-hero.jpg": {
+    "mtime": 1783496440.030501,
+    "ast_hash": "7dc7373eec14455c8b9a2387f7acc8b7",
+    "semantic_hash": ""
+  },
+  "assets/venezuela-hero.png": {
+    "mtime": 1783496440.030501,
+    "ast_hash": "ca97e9af9b10742585856fe1745b3f6c",
+    "semantic_hash": ""
+  },
+  "assets/venezuela-llanos.png": {
+    "mtime": 1783496440.034501,
+    "ast_hash": "c44b34841b63435b47e776a1ee361fb1",
+    "semantic_hash": ""
+  },
+  "source-assets/ChatGPT Image 20 may 2026, 17_58_33.png": {
+    "mtime": 1783496440.0625012,
+    "ast_hash": "ca74457bfc82c20868ecb7e15bff974c",
+    "semantic_hash": ""
+  },
+  "source-assets/ChatGPT Image 20 may 2026, 18_00_19 (1).png": {
+    "mtime": 1783496440.0625012,
+    "ast_hash": "ca74457bfc82c20868ecb7e15bff974c",
+    "semantic_hash": ""
+  },
+  "source-assets/ChatGPT Image 20 may 2026, 18_00_19 (2).png": {
+    "mtime": 1783496440.0665011,
+    "ast_hash": "540d283942dab97bb5df83a2a2acd743",
+    "semantic_hash": ""
+  },
+  "source-assets/ChatGPT Image 20 may 2026, 18_00_20 (3).png": {
+    "mtime": 1783496440.0665011,
+    "ast_hash": "ca36741717caa789d4d23f1324eb64ac",
+    "semantic_hash": ""
+  },
+  "source-assets/ChatGPT Image 20 may 2026, 18_00_20 (4).png": {
+    "mtime": 1783496440.0705013,
+    "ast_hash": "ea426d89a8de34fc107ed8328fa14048",
+    "semantic_hash": ""
+  },
+  "source-assets/ChatGPT Image 20 may 2026, 18_00_20 (5).png": {
+    "mtime": 1783496440.0705013,
+    "ast_hash": "782e8afcf71a8466e31fb6012b1882b2",
+    "semantic_hash": ""
+  },
+  "source-assets/ChatGPT Image 20 may 2026, 18_00_21 (6).png": {
+    "mtime": 1783496440.0745013,
+    "ast_hash": "5fbe7ceb8ba1dfe47659d42d562349d5",
+    "semantic_hash": ""
+  },
+  "source-assets/ChatGPT Image 20 may 2026, 18_00_21 (7).png": {
+    "mtime": 1783496440.0745013,
+    "ast_hash": "184d465c52f7ce6c90d9d44b45220fbc",
+    "semantic_hash": ""
+  },
+  "source-assets/Imagenes soporte/360_F_226358206_e6Z8BuwkQRvYOM70INACyADuHbMApLvK.jpg": {
+    "mtime": 1783496440.0785012,
+    "ast_hash": "58c24d1b8791dcb92f1487b27cff0a1c",
+    "semantic_hash": ""
+  },
+  "source-assets/Imagenes soporte/557050af6dff624c3c384d1b6583bd23.jpg": {
+    "mtime": 1783496440.0785012,
+    "ast_hash": "e82c0dd183d58f829d7c6ad35b162412",
+    "semantic_hash": ""
+  },
+  "source-assets/Imagenes soporte/ChatGPT Image 20 may 2026, 21_25_43.png": {
+    "mtime": 1783496440.0785012,
+    "ast_hash": "ca97e9af9b10742585856fe1745b3f6c",
+    "semantic_hash": ""
+  },
+  "source-assets/Imagenes soporte/a5abdc30-city-990-19e17d3d966.jpg": {
+    "mtime": 1783496440.0825014,
+    "ast_hash": "c0e12dfd1eddcd7d7be6e159a174e5b7",
+    "semantic_hash": ""
+  },
+  "source-assets/Imagenes soporte/images (1).jpg": {
+    "mtime": 1783496440.0825014,
+    "ast_hash": "cafd5665a36ae51d3fa0aa0bfce6fa63",
+    "semantic_hash": ""
+  },
+  "source-assets/Imagenes soporte/images.jpg": {
+    "mtime": 1783496440.0825014,
+    "ast_hash": "88907098da63f83df9a88118a11ec21d",
+    "semantic_hash": ""
+  },
+  "source-assets/Imagenes soporte/istockphoto-500750930-612x612.jpg": {
+    "mtime": 1783496440.0825014,
+    "ast_hash": "7dc7373eec14455c8b9a2387f7acc8b7",
+    "semantic_hash": ""
+  },
+  "source-assets/Imagenes soporte/tu-venezuela-los-llanos-01.png": {
+    "mtime": 1783496440.0825014,
+    "ast_hash": "c44b34841b63435b47e776a1ee361fb1",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/ChatGPT Image 20 may 2026, 10_39_40.png": {
+    "mtime": 1783496440.0865014,
+    "ast_hash": "f58334384119f5fb579b4476719e760f",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/ChatGPT Image 20 may 2026, 10_40_24 (1).png": {
+    "mtime": 1783496440.0865014,
+    "ast_hash": "c57bdacb759366dbb46b5a689fcc1b8b",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/ChatGPT Image 20 may 2026, 10_40_25 (2).png": {
+    "mtime": 1783496440.0905013,
+    "ast_hash": "ca835342c4ad981e85acc4027fb84794",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/ChatGPT Image 20 may 2026, 10_40_25 (3).png": {
+    "mtime": 1783496440.0905013,
+    "ast_hash": "eed1fa2b233772fd1a5159db64f464db",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/ChatGPT Image 20 may 2026, 10_40_25 (4).png": {
+    "mtime": 1783496440.0945015,
+    "ast_hash": "9eba70a39ad7ab63dd2f3eb5ea578105",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/ChatGPT Image 20 may 2026, 12_11_33 (1).png": {
+    "mtime": 1783496440.0945015,
+    "ast_hash": "7371a35deef0e24c0a797701a645c332",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/ChatGPT Image 20 may 2026, 12_11_33 (2).png": {
+    "mtime": 1783496440.1025014,
+    "ast_hash": "b784cb30ed8e94ac104a70dee1650958",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/ChatGPT Image 20 may 2026, 12_11_34 (3).png": {
+    "mtime": 1783496440.1025014,
+    "ast_hash": "3ba6072ea225231c6758e6515e3cfbc5",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/ChatGPT Image 20 may 2026, 12_11_34 (4).png": {
+    "mtime": 1783496440.1025014,
+    "ast_hash": "3ba836b5ce6a4268c5e0e5762a65c63c",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/ChatGPT Image 20 may 2026, 12_11_34 (5).png": {
+    "mtime": 1783496440.1025014,
+    "ast_hash": "6afd06f8473ab974dd7915e0fd8889f3",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/ChatGPT Image 20 may 2026, 12_11_35 (6).png": {
+    "mtime": 1783496440.1065016,
+    "ast_hash": "88a1660fe31e536261b275e242c4c4de",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/ChatGPT Image 20 may 2026, 12_11_35 (7).png": {
+    "mtime": 1783496440.1065016,
+    "ast_hash": "c1ea38b8b54cae8b76bdca7e06d6ecfb",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/ChatGPT Image 20 may 2026, 12_11_35 (8).png": {
+    "mtime": 1783496440.1065016,
+    "ast_hash": "aab9e2efd6add7b7347f8f8f759c2ebd",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/Logo con fondo de Cuadriculas/ChatGPT Image 20 may 2026, 12_28_54 (1).png": {
+    "mtime": 1783496440.1105015,
+    "ast_hash": "10ab541267231d0e9ed46ba124217d41",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/Logo con fondo de Cuadriculas/ChatGPT Image 20 may 2026, 12_28_54 (2).png": {
+    "mtime": 1783496440.1105015,
+    "ast_hash": "833e52c5745f12a5b79485aef5221b03",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/Logo con fondo de Cuadriculas/ChatGPT Image 20 may 2026, 12_28_55 (3).png": {
+    "mtime": 1783496440.1105015,
+    "ast_hash": "724a3396aa49d5b86879b49db4a50db1",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/Logo con fondo de Cuadriculas/ChatGPT Image 20 may 2026, 12_28_55 (4).png": {
+    "mtime": 1783496440.1145015,
+    "ast_hash": "0b26be9d434b89f78c3ed34683efc1c0",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/Logo con fondo de Cuadriculas/ChatGPT Image 20 may 2026, 12_28_58 (5).png": {
+    "mtime": 1783496440.1145015,
+    "ast_hash": "b1c225e4639c070a37ed49add2af623f",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/Logo con fondo de Cuadriculas/ChatGPT Image 20 may 2026, 12_28_58 (6).png": {
+    "mtime": 1783496440.1145015,
+    "ast_hash": "193b27c1169fe4ec9554df865d8abe8f",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/Logo con fondo de Cuadriculas/ChatGPT Image 20 may 2026, 12_28_59 (7).png": {
+    "mtime": 1783496440.1185017,
+    "ast_hash": "eac8193ae7e4941898ca5ce66768e437",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/Logo con fondo de Cuadriculas/ChatGPT Image 20 may 2026, 12_28_59 (8).png": {
+    "mtime": 1783496440.1185017,
+    "ast_hash": "9c8cbe16ee29ccdd1aeefb4aeec5ef7d",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/LOGO/OVE Colores de Vente.png": {
+    "mtime": 1783496440.1185017,
+    "ast_hash": "6cca64e3f42045e2f1107cb67b00cf9c",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/Manual Corporativo/ChatGPT Image 20 may 2026, 10_58_57 (1).png": {
+    "mtime": 1783496440.1225016,
+    "ast_hash": "1baee0f3c287960af9acaaafed001e60",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/Manual Corporativo/ChatGPT Image 20 may 2026, 10_58_57 (2).png": {
+    "mtime": 1783496440.1225016,
+    "ast_hash": "571cea80d936fd2f17ea3d17d72538de",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/Manual Corporativo/ChatGPT Image 20 may 2026, 10_58_58 (3).png": {
+    "mtime": 1783496440.1265016,
+    "ast_hash": "be6bc0d597f3ad31494adbe5e60566dc",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/Manual Corporativo/ChatGPT Image 20 may 2026, 10_58_58 (4).png": {
+    "mtime": 1783496440.1265016,
+    "ast_hash": "b3889ececd66be6ea5d09bb9039dfbed",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/Manual Corporativo/ChatGPT Image 20 may 2026, 10_58_59 (5).png": {
+    "mtime": 1783496440.1305017,
+    "ast_hash": "e5cb86e93e6b9b1df4d71f8c92acd422",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/Manual Corporativo/ChatGPT Image 20 may 2026, 10_58_59 (6).png": {
+    "mtime": 1783496440.1305017,
+    "ast_hash": "b772db5aa2c94b92bab64c54f1e9e037",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/Manual Corporativo/ChatGPT Image 20 may 2026, 10_59_00 (7).png": {
+    "mtime": 1783496440.1345017,
+    "ast_hash": "cb9757847de1ab2e5382632949cad6e4",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/Manual Corporativo/ChatGPT Image 20 may 2026, 10_59_00 (8).png": {
+    "mtime": 1783496440.1345017,
+    "ast_hash": "d38ec7ee0c77fa636d7f909b20740d0c",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/Manual Corporativo/ChatGPT Image 20 may 2026, 10_59_00 (9).png": {
+    "mtime": 1783496440.138502,
+    "ast_hash": "53ed675484d62745a000b1de71f06297",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/OVE SIN FONDO.png": {
+    "mtime": 1783496440.162502,
+    "ast_hash": "9faaeb99dc5ee065e986dc4a85f24cd9",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/OVE portada de los informes/ChatGPT Image 20 may 2026, 10_46_35 (1).png": {
+    "mtime": 1783496440.162502,
+    "ast_hash": "d31a72e778771b0f3432ea0abab1d6f9",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/OVE portada de los informes/ChatGPT Image 20 may 2026, 10_46_35 (2).png": {
+    "mtime": 1783496440.166502,
+    "ast_hash": "96bb148b1dd3e5a954f413d23f404630",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/OVE portada de los informes/ChatGPT Image 20 may 2026, 10_46_39 (3).png": {
+    "mtime": 1783496440.166502,
+    "ast_hash": "d246f099fce747289d66d93d360aebbf",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/OVE portada de los informes/ChatGPT Image 20 may 2026, 10_46_40 (4).png": {
+    "mtime": 1783496440.170502,
+    "ast_hash": "9c9b35daeb5bcadb686535450dc359a0",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/OVE presentaci\u00f3n/ChatGPT Image 20 may 2026, 10_51_49 (1).png": {
+    "mtime": 1783496440.170502,
+    "ast_hash": "33772129d32ac42b364c060fb7daa53a",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/OVE presentaci\u00f3n/ChatGPT Image 20 may 2026, 10_51_49 (2).png": {
+    "mtime": 1783496440.1745021,
+    "ast_hash": "d39fb05acaeecdf0046082b5ff9e09e1",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/OVE presentaci\u00f3n/ChatGPT Image 20 may 2026, 10_51_49 (3).png": {
+    "mtime": 1783496440.1745021,
+    "ast_hash": "8343f0476abe8788616efa51d6128f62",
+    "semantic_hash": ""
+  },
+  "source-assets/OVE Logo/OVE presentaci\u00f3n/ChatGPT Image 20 may 2026, 10_51_49 (4).png": {
+    "mtime": 1783496440.1745021,
+    "ast_hash": "e3528cd296b6647c3efb73dd784d6d1a",
+    "semantic_hash": ""
   }
 }
