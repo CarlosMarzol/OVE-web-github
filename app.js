@@ -3842,7 +3842,7 @@ function contactPage() {
         <article id="mapa" class="panel span-5 map-card">
           <h2>Dónde estamos</h2>
           <img src="assets/map-preview.png" alt="Mapa de ubicación del OVE">
-          <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=8.929844,-67.429870" target="_blank" rel="noopener">Ver en Google Maps ${arrow()}</a>
+          <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Carrera%2014%20Federacion%2C%20Calabozo%202312%2C%20Gu%C3%A1rico%2C%20Venezuela" target="_blank" rel="noopener">Ver en Google Maps ${arrow()}</a>
         </article>
       </div>
     </section>
