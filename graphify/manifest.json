@@ -210,9 +210,9 @@
     "semantic_hash": "6c72bf20af8e23511d0177479e703b21"
   },
   "scripts/cepal_refresh.py": {
-    "mtime": 1784122729.37298,
-    "ast_hash": "af586d319d65e08bbe1e02adff713902",
-    "semantic_hash": "af586d319d65e08bbe1e02adff713902"
+    "mtime": 1784202834.3135777,
+    "ast_hash": "453f53228394ae4009f657988a117d6f",
+    "semantic_hash": ""
   },
   "scripts/export_dashboard_from_postgres.py": {
     "mtime": 1784108128.8551621,
@@ -220,9 +220,9 @@
     "semantic_hash": "8b23ec2e5167451cdd6a5b8c70d69b75"
   },
   "scripts/fred_refresh.py": {
-    "mtime": 1784114554.0929663,
-    "ast_hash": "db1020a2f5f347d26bcca85a29fb0539",
-    "semantic_hash": "db1020a2f5f347d26bcca85a29fb0539"
+    "mtime": 1784202834.3135777,
+    "ast_hash": "2228ed3d5720180348f579dca5531d88",
+    "semantic_hash": ""
   },
   "scripts/ilo_refresh.py": {
     "mtime": 1784108128.847162,
@@ -235,9 +235,9 @@
     "semantic_hash": "6c813eaada37c47a8d0277ead8b0b402"
   },
   "scripts/ine_refresh.py": {
-    "mtime": 1784117072.132366,
-    "ast_hash": "1e4738fdca2cfd8bdb8641e376d95980",
-    "semantic_hash": "1e4738fdca2cfd8bdb8641e376d95980"
+    "mtime": 1784202834.3135777,
+    "ast_hash": "69730f836bd25ad2a529e9f814532952",
+    "semantic_hash": ""
   },
   "scripts/ove_excel_format.py": {
     "mtime": 1784121586.1280916,
@@ -250,9 +250,9 @@
     "semantic_hash": "3e06d68581cc2354ce3e91bfa8a0b345"
   },
   "scripts/unctad_refresh.py": {
-    "mtime": 1784125233.14454,
-    "ast_hash": "8a03c434f7e855dfec05acc87eb3d457",
-    "semantic_hash": "8a03c434f7e855dfec05acc87eb3d457"
+    "mtime": 1784202834.3135777,
+    "ast_hash": "09794c19c530a5b4db82ddce1c5ae3a3",
+    "semantic_hash": ""
   },
   "scripts/world_bank_refresh.py": {
     "mtime": 1784108128.847162,
@@ -260,13 +260,13 @@
     "semantic_hash": "3025b31d2332f628ab056c072872b8c3"
   },
   "graphify/graph.json": {
-    "mtime": 1784195351.6315496,
-    "ast_hash": "b41328f5161c06b432783e33c78430c7",
+    "mtime": 1784195384.447809,
+    "ast_hash": "9b4bbef50fe3be2751199eaf3a4109e1",
     "semantic_hash": ""
   },
   "graphify/manifest.json": {
-    "mtime": 1784195351.6315496,
-    "ast_hash": "5381648b896c88eed237caf18da82fa7",
+    "mtime": 1784195384.451809,
+    "ast_hash": "7393b421e2a5a227d80afcb993c3c0d4",
     "semantic_hash": ""
   },
   ".github/workflows/update-bcv-data.yml": {
@@ -350,8 +350,8 @@
     "semantic_hash": ""
   },
   "docs/OVE_LAUNCH_CHECKLIST.md": {
-    "mtime": 1784195351.6275494,
-    "ast_hash": "e1a8868c2eab4a96a7f5309196fc4e0e",
+    "mtime": 1784202834.3175778,
+    "ast_hash": "6e1b9a6549c291f141a481d495153f9c",
     "semantic_hash": ""
   },
   "docs/OVE_QA_BASIC_20260714.md": {
@@ -360,18 +360,18 @@
     "semantic_hash": ""
   },
   "graphify/GRAPH_REPORT.md": {
-    "mtime": 1784195351.6275494,
-    "ast_hash": "bbc4bf96c90854bb2de3ff8c0629942c",
+    "mtime": 1784195384.4438088,
+    "ast_hash": "81bb3880508107615596c38ba5484a93",
     "semantic_hash": ""
   },
   "graphify/graph.html": {
-    "mtime": 1784195351.6275494,
-    "ast_hash": "7daf13a705783b9c5f2b89851bb85717",
+    "mtime": 1784195384.4398088,
+    "ast_hash": "b7e3232657a9666b20f4fb47ff5bf28f",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1784195351.6315496,
-    "ast_hash": "4867c4d48636031de6d9d2c1c2363a30",
+    "mtime": 1784202834.3135777,
+    "ast_hash": "41bc303f2b13a8aeef15c8a44409c480",
     "semantic_hash": ""
   },
   "requirements-bcv.txt": {
@@ -882,6 +882,11 @@
   "source-assets/OVE Logo/OVE presentaci\u00f3n/ChatGPT Image 20 may 2026, 10_51_49 (4).png": {
     "mtime": 1783496440.1745021,
     "ast_hash": "e3528cd296b6647c3efb73dd784d6d1a",
+    "semantic_hash": ""
+  },
+  "robots.txt": {
+    "mtime": 1784202834.3175778,
+    "ast_hash": "a28221dbe27b444278ab539cf6714a18",
     "semantic_hash": ""
   }
 }

@@ -38,7 +38,7 @@ DATACENTER_API = f"{API_ROOT}/api/datacenter/en"
 COUNTRY_NAME = "Venezuela (Bolivarian Rep. of)"
 COUNTRY_CODE = "862"
 COUNTRY_ISO3 = "VEN"
-USER_AGENT = "OVE UNCTADstat refresh/1.0 (+https://ove-web-github.vercel.app/)"
+USER_AGENT = "OVE UNCTADstat refresh/1.0 (+https://ove-venezuela.com/)"
 MAX_BULK_BYTES = int(float(os.environ.get("UNCTAD_MAX_BULK_MB", "20")) * 1024 * 1024)
 EXCEL_MAX_ROWS = 1_048_000
 

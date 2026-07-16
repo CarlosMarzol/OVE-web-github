@@ -35,7 +35,7 @@ TAG_URL = "https://fred.stlouisfed.org/tags/series?t=venezuela"
 SERIES_URL = "https://fred.stlouisfed.org/series/{series_id}"
 CSV_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}"
 SOURCE_URL = "https://fred.stlouisfed.org/tags/series?t=venezuela"
-USER_AGENT = "OVE FRED refresh/1.0 (+https://ove-web-github.vercel.app/)"
+USER_AGENT = "OVE FRED refresh/1.0 (+https://ove-venezuela.com/)"
 
 DATA_FIELDS = [
   "País",

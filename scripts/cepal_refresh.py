@@ -35,7 +35,7 @@ SPEC_URL = "https://api-cepalstat.cepal.org/apispec_1.json"
 COUNTRY_MEMBER_ID = 259
 COUNTRY_NAME = "Venezuela (República Bolivariana de)"
 COUNTRY_ISO3 = "VEN"
-USER_AGENT = "OVE CEPALSTAT refresh/1.0 (+https://ove-web-github.vercel.app/)"
+USER_AGENT = "OVE CEPALSTAT refresh/1.0 (+https://ove-venezuela.com/)"
 MAX_WORKERS = 8
 
 DATA_FIELDS = [

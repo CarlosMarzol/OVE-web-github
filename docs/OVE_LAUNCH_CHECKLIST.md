@@ -69,10 +69,10 @@ Current recommendation: do not launch as a public observatory until data governa
 
 ## Workstream 8 - Deployment, Domain, And Monitoring
 
-- [ ] Confirm final hosting route: GitHub Pages, custom domain, or another host. Started 2026-07-14: GitHub Pages is not active for `CarlosMarzol/OVE-web-github`; repository homepage points to Vercel at `https://ove-web-github.vercel.app/`.
-- [ ] Configure HTTPS and domain redirects.
-- [ ] Add `robots.txt` and `sitemap.xml`.
-- [ ] Finalize Open Graph / social preview metadata.
+- [x] Confirm final hosting route: GitHub Pages, custom domain, or another host. Completed 2026-07-16: final public domain set to `https://ove-venezuela.com/`, served from the Vercel deployment.
+- [ ] Configure HTTPS and domain redirects. Started 2026-07-16: `https://ove-venezuela.com/` responds with the OVE site; confirm in Vercel that the custom domain is marked primary and that the Vercel preview domain redirects as desired.
+- [x] Add `robots.txt` and `sitemap.xml`. Completed 2026-07-16: added basic root sitemap and robots policy for the custom domain.
+- [x] Finalize Open Graph / social preview metadata. Completed 2026-07-16: added canonical URL, `og:url`, absolute `og:image`, and Twitter card metadata for `https://ove-venezuela.com/`.
 - [ ] Configure analytics and Search Console. Started 2026-07-16: added Vercel Web Analytics script, hash-route tracking, download/outbound/dashboard/form events, and privacy/cookies disclosure. Vercel Analytics still needs to be enabled in the Vercel project dashboard; Search Console remains pending.
 - [ ] Configure uptime/error monitoring if possible.
 - [ ] Prepare rollback plan.
@@ -113,3 +113,4 @@ Current recommendation: do not launch as a public observatory until data governa
 - 2026-07-14: Started basic technical QA. `node --check app.js` passes. Local audits found 28 routes / 106 internal hash links / 0 missing internal routes, 66 quoted asset references / 0 missing assets, and 4 configured form instances with `forms-config.json` still disabled as intended. Reviewed screenshots for desktop/mobile pages without obvious first-viewport breakage. Deployed URL, tablet, dashboard resilience, performance, browser compatibility, and deeper accessibility QA remain pending.
 - 2026-07-14: Checked deployed Vercel URL `https://ove-web-github.vercel.app/`. The site, CSS, JS, logo, and key JSON assets respond with 200, but the deployment is behind local work: it has 21 routes instead of 28, lacks methodology/legal/launch-note/forms-config changes, still shows older public copy, and therefore is not ready for public launch until the current local changes are committed, pushed, and redeployed.
 - 2026-07-14: Published corrected pre-launch version to GitHub/Vercel. Commit `1564464` is on `origin/main`. Post-push deployed QA confirmed 28 routes, 106 internal hash links, 0 missing internal routes, required metadata/legal/methodology/launch-note/form markers present, and removed public placeholder copy absent.
+- 2026-07-16: Carlos confirmed the custom domain `https://ove-venezuela.com/`. Added canonical/social metadata, root sitemap, robots policy, and updated ingestion user-agent strings to use the public domain.

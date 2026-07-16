@@ -37,7 +37,7 @@ EXCEL_DIR = INE_ROOT / "excel"
 
 HOME_URL = "https://ine.gob.ve/"
 SOURCE_NAME = "INE Venezuela - Instituto Nacional de Estadística"
-USER_AGENT = "OVE INE refresh/1.0 (+https://ove-web-github.vercel.app/)"
+USER_AGENT = "OVE INE refresh/1.0 (+https://ove-venezuela.com/)"
 
 CATALOG_FIELDS = [
   "Fuente",
