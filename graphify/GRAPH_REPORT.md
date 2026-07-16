@@ -1,16 +1,16 @@
 # Graph Report - OVE-web-github  (2026-07-16)
 
 ## Corpus Check
-- 63 files · ~5,536,453 words
+- 63 files · ~5,537,796 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1045 nodes · 1550 edges · 147 communities (145 shown, 2 thin omitted)
+- 1046 nodes · 1552 edges · 147 communities (146 shown, 1 thin omitted)
 - Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 76 edges (avg confidence: 0.66)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a8de3af0`
+- Built from commit: `30be0a44`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -164,7 +164,7 @@
 - build_static_routes.py
 
 ## God Nodes (most connected - your core abstractions)
-1. `Communities (146 total, 1 thin omitted)` - 146 edges
+1. `Communities (147 total, 2 thin omitted)` - 146 edges
 2. `icon()` - 42 edges
 3. `arrow()` - 38 edges
 4. `footer()` - 25 edges
@@ -190,11 +190,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (147 total, 2 thin omitted)
+## Communities (147 total, 1 thin omitted)
 
 ### Community 0 - "ove_excel_format.py"
 Cohesion: 0.07
-Nodes (59): download(), extract_gdp(), extract_inpc(), main(), now_utc(), Path, update_catalog(), write_dataset() (+51 more)
+Nodes (61): download(), extract_gdp(), extract_inpc(), main(), now_utc(), Path, update_catalog(), write_dataset() (+53 more)
 
 ### Community 1 - "app.js"
 Cohesion: 0.06
@@ -206,7 +206,7 @@ Nodes (34): build_catalog(), catalog_excel_links(), cell_to_float(), column_name
 
 ### Community 3 - "icon"
 Cohesion: 0.01
-Nodes (146): Communities (146 total, 1 thin omitted), Community 0 - "ove_excel_format.py", Community 100 - "assets/Mercado Laboral.png", Community 101 - "assets/Nivel y Condiciones de vida (IPC).png", Community 102 - "assets/ove-logo-brand.png", Community 103 - "assets/ove-logo.png", Community 104 - "assets/ove-logo-white.png", Community 105 - "assets/publication-cover-1.png" (+138 more)
+Nodes (146): Communities (147 total, 2 thin omitted), Community 0 - "ove_excel_format.py", Community 100 - "assets/Mercado Laboral.png", Community 101 - "assets/Nivel y Condiciones de vida (IPC).png", Community 102 - "assets/ove-logo-brand.png", Community 103 - "assets/ove-logo.png", Community 104 - "assets/ove-logo-white.png", Community 105 - "assets/publication-cover-1.png" (+138 more)
 
 ### Community 4 - "unctad_refresh.py"
 Cohesion: 0.17
@@ -473,8 +473,8 @@ Cohesion: 0.18
 Nodes (10): Community Hubs (Navigation), Corpus Check, God Nodes (most connected - your core abstractions), Graph Freshness, Graph Report - OVE-web-github  (2026-07-16), Import Cycles, Knowledge Gaps, Suggested Questions (+2 more)
 
 ### Community 71 - "indicatorsPage"
-Cohesion: 0.32
-Nodes (12): download_frequency(), fetch_bytes(), iter_rows_from_gzip(), load_metadata(), main(), period_key(), Path, read_csv_bytes() (+4 more)
+Cohesion: 0.36
+Nodes (10): add_bcv_gdp(), add_bcv_inpc(), add_bcv_usd(), add_wdi(), fetch_wdi_rows(), main(), now_utc(), Path (+2 more)
 
 ### Community 72 - "manifest.json"
 Cohesion: 0.50
@@ -772,24 +772,28 @@ Nodes (4): source-assets/OVE Logo/Manual Corporativo/Manual Corporativo y de Ima
 Cohesion: 0.50
 Nodes (3): cleanUrls, rewrites, trailingSlash
 
+### Community 146 - "build_static_routes.py"
+Cohesion: 0.83
+Nodes (3): main(), route_html(), route_paths()
+
 ## Knowledge Gaps
 - **601 isolated node(s):** `routes`, `routeMeta`, `appRoot`, `siteHeader`, `analyticsEvents` (+596 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Communities (146 total, 1 thin omitted)` connect `icon` to `Graph Report - OVE-web-github  (2026-07-16)`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `assets/data/fred/raw/fred_venezuela_tag_page_8.html` connect `assets/data/fred/raw/fred_venezuela_tag_page_8.html` to `assets/data/bcv/json/ove_bcv_inpc_nacional_mensual.json`?**
+- **Why does `Communities (147 total, 2 thin omitted)` connect `icon` to `Graph Report - OVE-web-github  (2026-07-16)`?**
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+- **Why does `scripts/unctad_refresh.py` connect `scripts/unctad_refresh.py` to `assets/data/bcv/json/ove_bcv_inpc_nacional_mensual.json`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `scripts/bcv_ingest.py` connect `scripts/bcv_ingest.py` to `assets/data/bcv/json/ove_bcv_inpc_nacional_mensual.json`?**
+- **Why does `assets/publication-cover-3.png` connect `assets/publication-cover-3.png` to `assets/data/bcv/json/ove_bcv_inpc_nacional_mensual.json`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **What connects `routes`, `routeMeta`, `appRoot` to the rest of the system?**
   _601 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ove_excel_format.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.06923076923076923 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06693803708729082 - nodes in this community are weakly interconnected._
 - **Should `app.js` be split into smaller, more focused modules?**
   _Cohesion score 0.05920444033302498 - nodes in this community are weakly interconnected._
 - **Should `bcv_ingest.py` be split into smaller, more focused modules?**
