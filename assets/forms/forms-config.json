@@ -1,11 +1,11 @@
 {
   "enabled": true,
-  "mode": "mailto",
+  "mode": "api",
   "recipientEmail": "ove.venezuela@outlook.com",
   "endpoints": {
-    "contacto": "",
-    "boletin": "",
-    "colaboracion": ""
+    "contacto": "/api/contact",
+    "boletin": "/api/contact",
+    "colaboracion": "/api/contact"
   },
   "subjects": {
     "contacto": "Nueva consulta desde la web OVE",

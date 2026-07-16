@@ -27,11 +27,11 @@ Current recommendation: do not launch as a public observatory until data governa
 
 ## Workstream 3 - Contact, Forms, And Channels
 
-- [x] Decide whether contact forms will send email, enter a CRM, or be disabled for launch. Completed 2026-07-16: launch channel is `mailto` to `ove.venezuela@outlook.com`, without backend or site database.
-- [x] Connect forms to a real backend or replace with direct mailto / contact instructions. Completed 2026-07-16: `assets/forms/forms-config.json` enables mailto delivery to `ove.venezuela@outlook.com` for contact, newsletter, and collaboration forms.
+- [x] Decide whether contact forms will send email, enter a CRM, or be disabled for launch. Completed 2026-07-16: forms send automatically through Vercel Function + Resend to `ove.venezuela@outlook.com`, without a site database.
+- [x] Connect forms to a real backend or replace with direct mailto / contact instructions. Completed 2026-07-16: `assets/forms/forms-config.json` posts contact, newsletter, and collaboration forms to `/api/contact`.
 - [ ] Replace placeholder addresses, phones, people, press contact, and office details. Started 2026-07-16: public email is shown; institutional address is Carrera 14 Federacion, Calabozo 2312, Guárico, Venezuela; no institutional phone will be published for now; specific press responsible and attention hours remain pending.
 - [ ] Replace placeholder social media links with official OVE links or hide them. Started 2026-07-14: social links now route to contact with pending-confirmation labels instead of presenting unverified official channels.
-- [x] Confirm newsletter subscription flow and storage/consent rules. Completed 2026-07-16: newsletter is handled by mailto only for the initial low-cost launch; the site does not store subscriber records.
+- [x] Confirm newsletter subscription flow and storage/consent rules. Completed 2026-07-16: newsletter requests are sent to the institutional email through `/api/contact`; the site does not store subscriber records.
 
 ## Workstream 4 - Legal, Privacy, And Licensing
 
@@ -115,5 +115,5 @@ Current recommendation: do not launch as a public observatory until data governa
 - 2026-07-14: Published corrected pre-launch version to GitHub/Vercel. Commit `1564464` is on `origin/main`. Post-push deployed QA confirmed 28 routes, 106 internal hash links, 0 missing internal routes, required metadata/legal/methodology/launch-note/form markers present, and removed public placeholder copy absent.
 - 2026-07-16: Carlos confirmed the custom domain `https://ove-venezuela.com/`. Added canonical/social metadata, root sitemap, robots policy, and updated ingestion user-agent strings to use the public domain.
 - 2026-07-16: Added technical SEO improvements without changing visible page copy: clean URL routing support, Vercel rewrites, expanded route sitemap, per-route canonical/OG metadata, robots index directive, alternate language tag, and JSON-LD for Organization, WebSite, DataCatalog and key datasets.
-- 2026-07-16: Carlos created the temporary low-cost public contact email `ove.venezuela@outlook.com`. Enabled contact, collaboration, and newsletter forms via mailto; updated contact/footer/privacy copy to state that the site opens the user's email client and does not store form messages or subscriber records.
+- 2026-07-16: Carlos created the temporary low-cost public contact email `ove.venezuela@outlook.com`. Initially enabled mailto forms, then migrated contact, collaboration, and newsletter forms to automatic delivery through Vercel Function + Resend; the site still does not store form messages or subscriber records.
 - 2026-07-16: Carlos confirmed OVE will not publish an institutional phone number for now. Added the initial institutional address: Carrera 14 Federacion, Calabozo 2312, Guárico, Venezuela.

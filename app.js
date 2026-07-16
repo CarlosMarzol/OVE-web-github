@@ -1669,6 +1669,7 @@ function newsletter() {
         </div>
       </div>
       <form class="subscribe-form js-form" data-form-id="boletin">
+        <input class="visually-hidden" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input class="field" name="email" type="email" placeholder="tu@email.com" aria-label="Correo electrónico" required>
         <button class="button button-yellow" type="submit">Suscribirme</button>
         <p class="form-status tiny" data-form-status aria-live="polite"></p>
@@ -1725,7 +1726,7 @@ function footer() {
       <div class="footer-col">
         <h3>Contacto</h3>
         <p><a href="mailto:ove.venezuela@outlook.com">ove.venezuela@outlook.com</a></p>
-        <p>Los formularios abren un correo preparado. La web no almacena mensajes ni suscripciones.</p>
+        <p>Los formularios envían mensajes al correo institucional del OVE.</p>
         <a class="text-link" href="#/contacto">Ver formulario ${arrow()}</a>
       </div>
     </div>
@@ -3420,15 +3421,15 @@ const legalContent = {
   privacidad: {
     title: "Política de privacidad",
     eyebrow: "Datos personales",
-    lead: "Política provisional sobre datos personales. Los formularios de contacto funcionan mediante correo electrónico: al enviarlos se abre el cliente de correo del usuario con el mensaje preparado. El sitio puede usar analítica agregada y sin cookies personales para medir audiencia y mejorar contenidos.",
+    lead: "Política provisional sobre datos personales. Los formularios de contacto envían los mensajes al correo institucional del OVE mediante un servicio backend de envío de correo. El sitio puede usar analítica agregada y sin cookies personales para medir audiencia y mejorar contenidos.",
     sections: [
       ["Datos que podrían solicitarse", "Nombre, correo electrónico, teléfono opcional, tipo de consulta, mensaje, propuesta de colaboración y suscripción al boletín."],
-      ["Estado actual de los formularios", "Los formularios no guardan información en una base de datos del sitio. El envío se realiza desde el cliente de correo del usuario hacia ove.venezuela@outlook.com."],
+      ["Estado actual de los formularios", "Los formularios no guardan información en una base de datos del sitio. El envío se realiza mediante una función serverless en Vercel y Resend hacia ove.venezuela@outlook.com."],
       ["Analítica web", "El OVE puede utilizar Vercel Web Analytics para obtener métricas agregadas de visitas, páginas, país aproximado, dispositivo, navegador, descargas y uso de secciones. Esta medición no usa cookies personales ni crea perfiles individuales de usuarios."],
       ["Finalidades futuras", "Responder consultas, gestionar colaboraciones, atender solicitudes de prensa, enviar boletines si el usuario se suscribe y mantener trazabilidad administrativa."],
-      ["Base y consentimiento", "El usuario decide enviar el correo desde su propio cliente y acepta la política de privacidad antes de preparar el mensaje."],
+      ["Base y consentimiento", "El usuario envía voluntariamente el formulario y acepta la política de privacidad antes de remitir el mensaje."],
       ["Conservación y derechos", "Los mensajes se conservarán en el buzón de contacto durante el tiempo necesario para responder y gestionar la consulta. El procedimiento formal de derechos deberá completarse antes del lanzamiento público definitivo."],
-      ["Servicios de terceros", "No hay backend de formularios ni base de datos de suscriptores en el sitio. La analítica agregada se presta mediante la infraestructura de Vercel cuando esté activada en el proyecto."]
+      ["Servicios de terceros", "El envío de formularios utiliza Vercel Functions y Resend. La analítica agregada se presta mediante la infraestructura de Vercel cuando esté activada en el proyecto."]
     ]
   },
   cookies: {
@@ -3721,6 +3722,7 @@ function contactPage() {
         <article id="mensaje" class="panel">
           <h2>${icon("mail")} Envíanos un mensaje</h2>
           <form class="form-grid js-form" data-form-id="contacto">
+            <input class="visually-hidden" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
             <input class="field full" name="nombre" type="text" placeholder="Nombre completo *" required>
             <input class="field full" name="email" type="email" placeholder="Correo electrónico *" required>
             <input class="field" name="telefono" type="tel" placeholder="Teléfono">
@@ -3730,7 +3732,7 @@ function contactPage() {
             <button class="button button-primary full" type="submit">Enviar mensaje ${arrow()}</button>
             <p class="form-status tiny full" data-form-status aria-live="polite"></p>
           </form>
-          <p class="tiny">El formulario abre tu cliente de correo con el mensaje preparado. La web no almacena el contenido del formulario.</p>
+          <p class="tiny">El formulario envía tu consulta al correo institucional del OVE. La web no publica el contenido del formulario.</p>
         </article>
         <article id="sedes" class="panel">
           <h2>${icon("bank")} Canal institucional</h2>
@@ -3742,7 +3744,7 @@ function contactPage() {
           </div>
           <div class="office">
             <h3>Estado del canal</h3>
-            <p>${icon("shield")} Formularios activos mediante correo del usuario, sin almacenamiento en la web.</p>
+            <p>${icon("shield")} Formularios activos mediante envío automático al correo institucional.</p>
             <p>${icon("mail")} Contacto general y colaboración enviados a ove.venezuela@outlook.com.</p>
             <p>${icon("file")} Política de privacidad inicial creada; revisión legal pendiente.</p>
           </div>
@@ -3771,8 +3773,8 @@ function contactPage() {
         <article class="panel span-4" style="color:#fff;background:linear-gradient(135deg,var(--navy-950),var(--blue-700))">
           <h2 style="color:#fff">${icon("mail")} Suscríbete a nuestro boletín</h2>
           <p>Recibe análisis, indicadores y publicaciones directamente en tu correo.</p>
-          <form class="subscribe-form js-form" data-form-id="boletin"><input class="field" name="email" type="email" placeholder="tu@email.com" required><button class="button button-yellow">Suscribirme ${arrow()}</button><p class="form-status tiny" data-form-status aria-live="polite"></p></form>
-          <p class="tiny" style="color:#dce8ff">La suscripción se gestiona inicialmente por correo. La web no guarda una base de datos de suscriptores.</p>
+          <form class="subscribe-form js-form" data-form-id="boletin"><input class="visually-hidden" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"><input class="field" name="email" type="email" placeholder="tu@email.com" required><button class="button button-yellow">Suscribirme ${arrow()}</button><p class="form-status tiny" data-form-status aria-live="polite"></p></form>
+          <p class="tiny" style="color:#dce8ff">La suscripción se envía al correo institucional del OVE para su gestión inicial.</p>
         </article>
         <article class="panel span-3">
           <h2>Síguenos en redes sociales</h2>
@@ -3807,6 +3809,7 @@ function contactPage() {
             <a class="button" href="#/nosotros">Conoce nuestras líneas de trabajo ${arrow()}</a>
           </div>
           <form class="form-grid js-form" data-form-id="colaboracion">
+            <input class="visually-hidden" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
             <input class="field" name="nombre" type="text" placeholder="Nombre completo *" required>
             <input class="field" name="email" type="email" placeholder="Correo electrónico *" required>
             <select class="field" name="tipo_colaboracion"><option>Investigación</option><option>Datos</option><option>Alianzas</option></select>
@@ -3955,6 +3958,7 @@ function wireForms() {
     });
     payload.form_id = form.dataset.formId;
     payload.submitted_at = new Date().toISOString();
+    payload.page_url = window.location.href;
     return payload;
   };
 
@@ -3980,8 +3984,6 @@ function wireForms() {
         const formId = form.dataset.formId;
         const payload = serializeForm(form);
         const endpoint = config.endpoints?.[formId];
-        const recipient = config.recipientEmail;
-        const subject = config.subjects?.[formId] || "Mensaje desde la web OVE";
 
         if (config.enabled !== true) {
           setFormStatus(form, "Formulario preparado. Falta activar el endpoint o correo definitivo.", "pending");
@@ -3993,17 +3995,11 @@ function wireForms() {
             body: JSON.stringify(payload)
           });
           if (!response.ok) throw new Error("FORM_ENDPOINT_ERROR");
-          setFormStatus(form, "Recibido. Gracias por escribir al OVE.", "success");
+          setFormStatus(form, "Mensaje enviado correctamente. Gracias por escribir al OVE.", "success");
           trackAnalytics(analyticsEvents.form, { form: formId, state: "success" });
           form.reset();
-        } else if (recipient) {
-          const body = Object.entries(payload).map(([key, value]) => `${key}: ${value}`).join("\n");
-          window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-          setFormStatus(form, "Se abrió tu cliente de correo para completar el envío. Revisa y pulsa enviar.", "success");
-          trackAnalytics(analyticsEvents.form, { form: formId, state: "mailto" });
-          form.reset();
         } else {
-          setFormStatus(form, "Formulario preparado. Falta configurar el endpoint o correo definitivo.", "pending");
+          setFormStatus(form, "Formulario preparado. Falta configurar el endpoint de envío automático.", "pending");
           trackAnalytics(analyticsEvents.form, { form: formId, state: "pending" });
         }
       } catch {
