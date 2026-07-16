@@ -1,16 +1,16 @@
 # Graph Report - OVE-web-github  (2026-07-16)
 
 ## Corpus Check
-- 63 files · ~5,538,864 words
+- 63 files · ~5,538,385 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1047 nodes · 1552 edges · 147 communities (146 shown, 1 thin omitted)
+- 1046 nodes · 1541 edges · 148 communities (147 shown, 1 thin omitted)
 - Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 76 edges (avg confidence: 0.66)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `aa5216ec`
+- Built from commit: `6e0e2de4`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -162,10 +162,11 @@
 - source-assets/OVE Logo/Manual Corporativo/Manual Corporativo y de Imagen del OVE.pdf
 - vercel.json
 - build_static_routes.py
+- topicsSection
 
 ## God Nodes (most connected - your core abstractions)
 1. `Communities (147 total, 1 thin omitted)` - 147 edges
-2. `icon()` - 42 edges
+2. `icon()` - 41 edges
 3. `arrow()` - 38 edges
 4. `footer()` - 25 edges
 5. `formatInteger()` - 24 edges
@@ -190,15 +191,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (147 total, 1 thin omitted)
+## Communities (148 total, 1 thin omitted)
 
 ### Community 0 - "ove_excel_format.py"
 Cohesion: 0.07
-Nodes (56): download(), extract_gdp(), extract_inpc(), main(), now_utc(), Path, update_catalog(), write_dataset() (+48 more)
+Nodes (59): download(), extract_gdp(), extract_inpc(), main(), now_utc(), Path, update_catalog(), write_dataset() (+51 more)
 
 ### Community 1 - "app.js"
 Cohesion: 0.06
-Nodes (45): agricultureEnvironmentGroups, analyticsEvents, appRoot, barChart(), buildDashboardSeries(), cepalCatalog, chartCard(), comparisonSvg() (+37 more)
+Nodes (40): agricultureEnvironmentGroups, analyticsEvents, appRoot, buildDashboardSeries(), cepalCatalog, chartCard(), comparisonSvg(), dashboardNumber() (+32 more)
 
 ### Community 2 - "bcv_ingest.py"
 Cohesion: 0.15
@@ -213,12 +214,12 @@ Cohesion: 0.17
 Nodes (25): bulk_download_url(), bulkfiles_url(), clean_text(), detect_delimiter(), dimensions_json(), extract_csv_files(), infer_year(), is_dimension_column() (+17 more)
 
 ### Community 5 - "render"
-Cohesion: 0.23
-Nodes (31): aboutPage(), arrow(), bcvPage(), bcvUsdHomePanel(), cepalPage(), contactPage(), dataBand(), dataMetaGrid() (+23 more)
+Cohesion: 0.17
+Nodes (39): aboutPage(), arrow(), bcvPage(), bcvSourceSection(), bcvUsdHomePanel(), cepalPage(), cepalSourceSection(), cepalTotals() (+31 more)
 
 ### Community 6 - "ine_refresh.py"
-Cohesion: 0.24
-Nodes (19): DictWriter, clean_cell_value(), clean_text(), extension(), extract_tabular_values(), extract_xls(), extract_xlsx(), fetch_bytes() (+11 more)
+Cohesion: 0.25
+Nodes (18): DictWriter, clean_cell_value(), clean_text(), extension(), extract_tabular_values(), extract_xls(), extract_xlsx(), fetch_bytes() (+10 more)
 
 ### Community 7 - "cepal_refresh.py"
 Cohesion: 0.24
@@ -229,16 +230,16 @@ Cohesion: 0.14
 Nodes (13): Initial Priority Order, Launch Readiness, OVE Launch Checklist, Progress Log, Workstream 1 - Content And Placeholders, Workstream 2 - Institutional Identity, Workstream 3 - Contact, Forms, And Channels, Workstream 4 - Legal, Privacy, And Licensing (+5 more)
 
 ### Community 9 - "fred_refresh.py"
-Cohesion: 0.22
-Nodes (17): catalog_rows(), clean_text(), download_batch_observations(), download_single_observations(), fetch_bytes(), fetch_text(), infer_year(), load_catalog_from_fred() (+9 more)
+Cohesion: 0.24
+Nodes (16): catalog_rows(), clean_text(), download_batch_observations(), download_single_observations(), fetch_bytes(), fetch_text(), infer_year(), load_catalog_from_fred() (+8 more)
 
 ### Community 10 - "ilo_refresh.py"
-Cohesion: 0.14
-Nodes (23): analyticsFormatFromHref(), analyticsSourceFromHref(), canonicalUrl(), currentRoute(), formatBcvDate(), formatBcvNumber(), formatDashboardValue(), handleInternalNavigation() (+15 more)
+Cohesion: 0.15
+Nodes (22): analyticsFormatFromHref(), analyticsSourceFromHref(), canonicalUrl(), currentRoute(), formatBcvDate(), formatBcvNumber(), formatDashboardValue(), handleInternalNavigation() (+14 more)
 
 ### Community 11 - "build_key_indicators_dataset.py"
-Cohesion: 0.09
-Nodes (29): bcvSourceSection(), cepalDatasetCard(), cepalSourceSection(), cepalTotals(), dataPage(), exampleNotice(), formatInteger(), fredDatasetCard() (+21 more)
+Cohesion: 0.16
+Nodes (16): cepalDatasetCard(), formatInteger(), fredDatasetCard(), fredPage(), fredSourceSection(), fredTotals(), iloDatasetCard(), imfDatasetCard() (+8 more)
 
 ### Community 12 - "dataPage"
 Cohesion: 0.14
@@ -265,7 +266,7 @@ Cohesion: 0.50
 Nodes (4): assets/data/fred/catalog/fred-catalog.json, ast_hash, mtime, semantic_hash
 
 ### Community 19 - "app.js"
-Cohesion: 0.40
+Cohesion: 0.50
 Nodes (4): app.js, ast_hash, mtime, semantic_hash
 
 ### Community 20 - "assets/data/bcv/catalog/bcv-catalog.json"
@@ -273,7 +274,7 @@ Cohesion: 0.50
 Nodes (4): assets/data/bcv/catalog/bcv-catalog.json, ast_hash, mtime, semantic_hash
 
 ### Community 21 - "assets/data/bcv/catalog/ove_bcv_indice_nacional_precios_consumidor_workbooks.json"
-Cohesion: 0.50
+Cohesion: 0.40
 Nodes (4): assets/data/bcv/catalog/ove_bcv_indice_nacional_precios_consumidor_workbooks.json, ast_hash, mtime, semantic_hash
 
 ### Community 22 - "assets/data/bcv/catalog/ove_bcv_producto_interno_bruto_workbooks.json"
@@ -473,8 +474,8 @@ Cohesion: 0.18
 Nodes (10): Community Hubs (Navigation), Corpus Check, God Nodes (most connected - your core abstractions), Graph Freshness, Graph Report - OVE-web-github  (2026-07-16), Import Cycles, Knowledge Gaps, Suggested Questions (+2 more)
 
 ### Community 71 - "indicatorsPage"
-Cohesion: 0.30
-Nodes (13): download_frequency(), fetch_bytes(), iter_rows_from_gzip(), load_metadata(), main(), period_key(), Path, read_csv_bytes() (+5 more)
+Cohesion: 0.32
+Nodes (12): download_frequency(), fetch_bytes(), iter_rows_from_gzip(), load_metadata(), main(), period_key(), Path, read_csv_bytes() (+4 more)
 
 ### Community 72 - "manifest.json"
 Cohesion: 0.50
@@ -776,6 +777,10 @@ Nodes (3): cleanUrls, rewrites, trailingSlash
 Cohesion: 0.83
 Nodes (3): main(), route_html(), route_paths()
 
+### Community 147 - "topicsSection"
+Cohesion: 0.40
+Nodes (6): exampleNotice(), topicOperationCount(), topicsSection(), topicStats(), worldBankSourceSection(), worldBankTotals()
+
 ## Knowledge Gaps
 - **602 isolated node(s):** `routes`, `routeMeta`, `appRoot`, `siteHeader`, `analyticsEvents` (+597 more)
   These have ≤1 connection - possible missing edges or undocumented components.
@@ -786,15 +791,15 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Communities (147 total, 1 thin omitted)` connect `icon` to `Graph Report - OVE-web-github  (2026-07-16)`?**
   _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **Why does `scripts/unctad_refresh.py` connect `scripts/unctad_refresh.py` to `app.js`?**
+- **Why does `scripts/bcv_ingest.py` connect `scripts/bcv_ingest.py` to `assets/data/bcv/catalog/ove_bcv_indice_nacional_precios_consumidor_workbooks.json`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `assets/publication-cover-3.png` connect `assets/publication-cover-3.png` to `app.js`?**
+- **Why does `assets/ChatGPT Image 21 may 2026, 18_06_52 (7).png` connect `assets/ChatGPT Image 21 may 2026, 18_06_52 (7).png` to `assets/data/bcv/catalog/ove_bcv_indice_nacional_precios_consumidor_workbooks.json`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **What connects `routes`, `routeMeta`, `appRoot` to the rest of the system?**
   _602 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ove_excel_format.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.07139079851930195 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06923076923076923 - nodes in this community are weakly interconnected._
 - **Should `app.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.05920444033302498 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05507246376811594 - nodes in this community are weakly interconnected._
 - **Should `bcv_ingest.py` be split into smaller, more focused modules?**
   _Cohesion score 0.14789915966386555 - nodes in this community are weakly interconnected._

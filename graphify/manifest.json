@@ -1,7 +1,7 @@
 {
   "app.js": {
-    "mtime": 1784210400.8406575,
-    "ast_hash": "8ade540bf373201dc98e22b195d7a14a",
+    "mtime": 1784210642.6184788,
+    "ast_hash": "3328e9fe9d4e53c0c89a519fc49d6082",
     "semantic_hash": ""
   },
   "assets/data/bcv/catalog/bcv-catalog.json": {
@@ -260,13 +260,13 @@
     "semantic_hash": "3025b31d2332f628ab056c072872b8c3"
   },
   "graphify/graph.json": {
-    "mtime": 1784210288.871822,
+    "mtime": 1784210481.393262,
     "ast_hash": "a0c5887a248da689904f9b5b2b5d90e7",
     "semantic_hash": ""
   },
   "graphify/manifest.json": {
-    "mtime": 1784210288.8838222,
-    "ast_hash": "a1f72e3049cd8997f5847b924f69de15",
+    "mtime": 1784210481.401262,
+    "ast_hash": "87d85c48fe911f743ce63cfb98f91845",
     "semantic_hash": ""
   },
   ".github/workflows/update-bcv-data.yml": {
@@ -360,12 +360,12 @@
     "semantic_hash": ""
   },
   "graphify/GRAPH_REPORT.md": {
-    "mtime": 1784210288.8798223,
+    "mtime": 1784210481.401262,
     "ast_hash": "4057a2b6549fbe90bd7a79b4eff2ecf0",
     "semantic_hash": ""
   },
   "graphify/graph.html": {
-    "mtime": 1784210288.8758223,
+    "mtime": 1784210481.397262,
     "ast_hash": "ded2bf46d23759256a19a8c26330a6c1",
     "semantic_hash": ""
   },

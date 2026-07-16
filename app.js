@@ -1865,30 +1865,6 @@ function indicatorsPage() {
             <a class="button button-primary" href="#/indicadores/dashboard">Abrir dashboard ${arrow()}</a>
           </div>
           <p class="source-note">Fuentes: Banco Mundial - World Development Indicators y Banco Central de Venezuela. Algunas series multilaterales tienen rezagos propios de publicación; se muestra el último año con dato no nulo.</p>
-          ${keyIndicatorDashboard()}
-          <div class="dashboard-grid">
-            <article class="panel span-7">
-              <div class="panel-title"><h3>PIB real <span class="tiny">Banco Mundial</span></h3><span class="pill">2025</span></div>
-              <div class="chart">${lineChart("blue")}</div>
-            </article>
-            <article class="panel span-5">
-              <div class="panel-title"><h3>Venezuela <span class="tiny">cobertura nacional</span></h3></div>
-              ${mapWidget()}
-              <a class="text-link" href="#/datos/banco-mundial">Ver catálogo Banco Mundial ${arrow()}</a>
-            </article>
-            <article class="panel span-4"><h3>Indicadores seleccionados</h3>${barChart()}</article>
-            <article class="panel span-4">${chartCard("USD/BCV", "BCV oficial", "yellow")}</article>
-            <article class="panel span-4"><h3>Composición referencial</h3>${donutChart()}</article>
-            <article class="panel span-8">
-              <h3>Últimos valores disponibles</h3>
-              <div class="table-wrap">${indicatorTable()}</div>
-            </article>
-            <aside class="span-4" style="display:grid;gap:14px">
-              ${infoPanel("Metodología", "Cada valor mantiene fuente, año y serie original. El catálogo descargable conserva datos nulos para identificar rezagos estadísticos.", "clipboard", "Ver datos")}
-              ${infoPanel("Descargas", "Las series actualizadas están disponibles en CSV, JSON y Excel para Banco Mundial y BCV.", "download", "Ver Banco Mundial")}
-              ${infoPanel("Notas", "Los datos BCV son oficiales diarios; los datos Banco Mundial dependen del calendario WDI y pueden tener rezagos por indicador.", "file", "Ver nota")}
-            </aside>
-          </div>
         </div>
       </div>
     </section>
@@ -1927,43 +1903,6 @@ function indicatorTable() {
     <thead><tr><th>Indicador</th><th>Periodo</th><th>Valor</th><th>Unidad</th><th>Variacion</th><th>Fuente</th></tr></thead>
     <tbody>${rows.map(row => `<tr>${row.map(cell => `<td>${cell}</td>`).join("")}</tr>`).join("")}</tbody>
   </table>`;
-}
-
-function keyIndicatorDashboard() {
-  return `<section class="key-dashboard panel" data-key-dashboard>
-    <div class="key-dashboard-head">
-      <div>
-        <span class="eyebrow">Dashboard interactivo</span>
-        <h2>Indicadores clave verificables</h2>
-        <p>Selecciona un indicador para ver su evolución reciente y descarga la base completa con las seis series históricas.</p>
-      </div>
-      <div class="download-row key-downloads">
-        <a href="${keyIndicatorDownloads.csv}" download>CSV</a>
-        <a href="${keyIndicatorDownloads.json}" download>JSON</a>
-        <a href="${keyIndicatorDownloads.excel}" download>Excel</a>
-      </div>
-    </div>
-    <div class="key-dashboard-layout">
-      <div class="key-selector" role="tablist" aria-label="Indicadores clave">
-        ${keyIndicatorSeries.map((series, index) => `<button class="${index === 0 ? "is-active" : ""}" type="button" data-series-id="${series.id}">
-          <span>${series.title}</span>
-          <strong>${series.latest}</strong>
-          <small>${series.period} · ${series.unit}</small>
-        </button>`).join("")}
-      </div>
-      <div class="key-chart-panel">
-        <div class="panel-title">
-          <h3 data-key-title>${keyIndicatorSeries[0].title}</h3>
-          <span class="pill" data-key-source>${keyIndicatorSeries[0].source}</span>
-        </div>
-        <div class="key-chart" data-key-chart>${sparklineSvg(dashboardSeries[keyIndicatorSeries[0].id])}</div>
-        <div class="key-dashboard-foot">
-          <span data-key-unit>${keyIndicatorSeries[0].unit}</span>
-          <a class="text-link" href="${keyIndicatorDownloads.excel}" download>Descargar serie completa ${icon("download")}</a>
-        </div>
-      </div>
-    </div>
-  </section>`;
 }
 
 function interactiveDashboardPage() {
