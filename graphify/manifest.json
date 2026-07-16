@@ -260,13 +260,13 @@
     "semantic_hash": "3025b31d2332f628ab056c072872b8c3"
   },
   "graphify/graph.json": {
-    "mtime": 1784202879.213925,
-    "ast_hash": "010921ecc9a7705ad32e175b2a4054cc",
+    "mtime": 1784203291.8931193,
+    "ast_hash": "d1556971d754ba30f6e07297a6ed1495",
     "semantic_hash": ""
   },
   "graphify/manifest.json": {
-    "mtime": 1784202879.2179248,
-    "ast_hash": "ebcfbb37db1ab82a5de01d73b4a01c42",
+    "mtime": 1784203291.8971193,
+    "ast_hash": "4608c5f4bdd9dbea44039cf9e795ca0c",
     "semantic_hash": ""
   },
   ".github/workflows/update-bcv-data.yml": {
@@ -275,8 +275,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1784117402.146914,
-    "ast_hash": "4f4841d73810900da126959ae3e1552d",
+    "mtime": 1784203409.8500335,
+    "ast_hash": "dc9908c611b484c76bf419efaeae03c3",
     "semantic_hash": ""
   },
   "assets/data/bcv/README.md": {
@@ -360,13 +360,13 @@
     "semantic_hash": ""
   },
   "graphify/GRAPH_REPORT.md": {
-    "mtime": 1784202879.2099247,
-    "ast_hash": "99b16658d1f0c61066252c7423b72a1e",
+    "mtime": 1784203291.8931193,
+    "ast_hash": "9f51e1c5d27cfb2edbd36fe02c2dc0d9",
     "semantic_hash": ""
   },
   "graphify/graph.html": {
-    "mtime": 1784202879.2019248,
-    "ast_hash": "cf9ae359e77ee5b469302fbeb01b881d",
+    "mtime": 1784203291.8891191,
+    "ast_hash": "17e1fe5d967efb4ced2c8b05da45155e",
     "semantic_hash": ""
   },
   "index.html": {
@@ -892,6 +892,176 @@
   "vercel.json": {
     "mtime": 1784203162.5241172,
     "ast_hash": "3a58753b9c06ca17fd09c75ae789c7db",
+    "semantic_hash": ""
+  },
+  "scripts/build_static_routes.py": {
+    "mtime": 1784203409.8420334,
+    "ast_hash": "089487733daeacbc5d9558798db9d244",
+    "semantic_hash": ""
+  },
+  "contacto/index.html": {
+    "mtime": 1784203421.7061253,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "cookies/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/agricultura-medio-ambiente/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/banco-mundial/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/bcv/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/cepal/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/ciencia-tecnologia/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/demografia-poblacion/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/economia/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/estadisticas-experimentales/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/fmi/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/fred/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/industria-energia-construccion/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/ine/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/mercado-laboral/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/nivel-condiciones-vida/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/oit/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/servicios/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/sociedad/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/tipo-cambio/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "datos/unctad/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "indicadores/dashboard/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "indicadores/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "legal/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "licencia-datos/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "manifiesto/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "metodologia/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "nosotros/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "nota-lanzamiento/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "privacidad/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "publicaciones/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
+    "semantic_hash": ""
+  },
+  "terminos/index.html": {
+    "mtime": 1784203421.7101254,
+    "ast_hash": "37ae2d04ab3a490180e99e4c1084d15d",
     "semantic_hash": ""
   }
 }

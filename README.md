@@ -5,6 +5,7 @@ Sitio web estatico del Observatorio Venezolano de Economia.
 ## Estructura
 
 - `index.html`: entrada principal del sitio.
+- `scripts/build_static_routes.py`: genera entradas HTML estaticas para rutas limpias indexables a partir de `sitemap.xml`.
 - `styles.css`: estilos globales y animaciones.
 - `app.js`: rutas, contenido dinamico y comportamiento de la interfaz.
 - `assets/`: imagenes y recursos usados directamente por la web.
