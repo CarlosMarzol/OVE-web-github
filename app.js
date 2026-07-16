@@ -3468,13 +3468,14 @@ const legalContent = {
   legal: {
     title: "Aviso legal",
     eyebrow: "Versión inicial",
-    lead: "Información legal provisional del sitio web del Observatorio Venezolano de Economía. Esta página debe revisarse cuando queden definidos entidad responsable, domicilio, correo oficial y jurisdicción aplicable.",
+    lead: "Información legal provisional del sitio web del Observatorio Venezolano de Economía. Esta página debe revisarse cuando queden definidos entidad responsable definitiva, jurisdicción aplicable y mecanismo formal de reclamación.",
     sections: [
       ["Responsable del sitio", "El responsable institucional definitivo del sitio OVE está pendiente de formalización. Hasta entonces, esta página funciona como aviso provisional y no sustituye la revisión jurídica final."],
+      ["Dirección institucional", "Carrera 14 Federacion, Calabozo 2312, Guárico, Venezuela."],
       ["Naturaleza del Observatorio", "El OVE es una plataforma de información económica, datos abiertos y análisis. Su contenido tiene finalidad informativa, académica y divulgativa."],
       ["Responsabilidad sobre la información", "El OVE organiza datos procedentes de organismos multilaterales y fuentes oficiales de Venezuela. La fuente original conserva la responsabilidad primaria sobre los datos publicados."],
       ["Uso del sitio", "El acceso al sitio implica un uso diligente de la información. El usuario no debe manipular, descontextualizar o atribuir al OVE conclusiones que no hayan sido publicadas expresamente."],
-      ["Estado legal", "Texto pendiente de revisión legal. Antes del lanzamiento público deberán completarse entidad responsable, datos de contacto, domicilio, jurisdicción y mecanismo de reclamación."]
+      ["Estado legal", "Texto pendiente de revisión legal. Antes del lanzamiento público deberán completarse entidad responsable, jurisdicción y mecanismo de reclamación."]
     ]
   },
   privacidad: {
@@ -3796,8 +3797,7 @@ function contactPage() {
           <h2>${icon("bank")} Canal institucional</h2>
           <div class="office">
             <h3>Contacto oficial</h3>
-            <p>${icon("pin")} Ubicación institucional pendiente de confirmación.</p>
-            <p>${icon("phone")} Teléfono pendiente de confirmación.</p>
+            <p>${icon("pin")} Carrera 14 Federacion, Calabozo 2312, Guárico, Venezuela.</p>
             <p>${icon("mail")} <a href="mailto:ove.venezuela@outlook.com">ove.venezuela@outlook.com</a></p>
             <p>${icon("calendar")} Horario de atención por definir.</p>
           </div>
@@ -3815,9 +3815,8 @@ function contactPage() {
             <div class="filter-panel">
               <h3>Prensa OVE</h3>
               <p>Responsable específico pendiente de confirmación.</p>
-              <p>${icon("phone")} Teléfono pendiente.</p>
               <p>${icon("mail")} <a href="mailto:ove.venezuela@outlook.com">ove.venezuela@outlook.com</a></p>
-              <p>${icon("pin")} Ubicación pendiente.</p>
+              <p>${icon("pin")} Carrera 14 Federacion, Calabozo 2312, Guárico, Venezuela.</p>
             </div>
           </article>
           <article class="panel">
@@ -3843,7 +3842,7 @@ function contactPage() {
         <article id="mapa" class="panel span-5 map-card">
           <h2>Dónde estamos</h2>
           <img src="assets/map-preview.png" alt="Mapa de ubicación del OVE">
-          <a class="text-link" href="#/contacto">Ver en Google Maps ${arrow()}</a>
+          <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=8.929844,-67.429870" target="_blank" rel="noopener">Ver en Google Maps ${arrow()}</a>
         </article>
       </div>
     </section>
