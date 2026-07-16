@@ -2,7 +2,7 @@
   "metadata": {
     "title": "Indicadores clave de Venezuela",
     "description": "Series históricas descargables para el dashboard OVE de indicadores clave.",
-    "generated_at": "2026-07-16T15:54:58Z",
+    "generated_at": "2026-07-16T21:32:16Z",
     "records": 2948,
     "indicators": [
       "desempleo_total_wdi",
@@ -23558,7 +23558,7 @@
       "period": "2021-10-20",
       "date": "2021-10-20",
       "year": 2021,
-      "value": 4.2111,
+      "value": 4.1564,
       "unit": "Bs/USD"
     },
     {
@@ -23571,7 +23571,7 @@
       "period": "2021-10-21",
       "date": "2021-10-21",
       "year": 2021,
-      "value": 4.2111,
+      "value": 4.1745,
       "unit": "Bs/USD"
     },
     {
@@ -23623,7 +23623,7 @@
       "period": "2021-10-27",
       "date": "2021-10-27",
       "year": 2021,
-      "value": 4.3244,
+      "value": 4.2944,
       "unit": "Bs/USD"
     },
     {
@@ -38321,7 +38321,7 @@
       "indicator": "Tipo de cambio BCV",
       "area": "Economía",
       "source": "Banco Central de Venezuela",
-      "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
+      "source_url": "https://www.bcv.org.ve/sites/default/files/indicadores_sector_externo/2_1_1_tdc.xlsx",
       "frequency": "Diaria",
       "period": "2026-07-15",
       "date": "2026-07-15",
