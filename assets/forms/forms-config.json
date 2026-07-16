@@ -1,7 +1,7 @@
 {
-  "enabled": false,
-  "mode": "pending",
-  "recipientEmail": "",
+  "enabled": true,
+  "mode": "mailto",
+  "recipientEmail": "ove.venezuela@outlook.com",
   "endpoints": {
     "contacto": "",
     "boletin": "",

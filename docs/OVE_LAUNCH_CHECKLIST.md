@@ -27,11 +27,11 @@ Current recommendation: do not launch as a public observatory until data governa
 
 ## Workstream 3 - Contact, Forms, And Channels
 
-- [ ] Decide whether contact forms will send email, enter a CRM, or be disabled for launch. Started 2026-07-14: forms now have real client-side handling and are controlled from `assets/forms/forms-config.json`; `enabled` remains `false` until the final channel is confirmed.
-- [ ] Connect forms to a real backend or replace with direct mailto / contact instructions. Technical scaffolding exists for endpoint POST or mailto fallback; needs Carlos's final contact email or endpoint.
-- [ ] Replace placeholder addresses, phones, people, press contact, and office details. Started 2026-07-14: fake addresses, phone numbers, emails, offices, and press contact were removed from footer/contact page and replaced with pending-channel language.
+- [x] Decide whether contact forms will send email, enter a CRM, or be disabled for launch. Completed 2026-07-16: launch channel is `mailto` to `ove.venezuela@outlook.com`, without backend or site database.
+- [x] Connect forms to a real backend or replace with direct mailto / contact instructions. Completed 2026-07-16: `assets/forms/forms-config.json` enables mailto delivery to `ove.venezuela@outlook.com` for contact, newsletter, and collaboration forms.
+- [ ] Replace placeholder addresses, phones, people, press contact, and office details. Started 2026-07-16: public email is now shown; phone, address, specific press responsible, and location remain pending.
 - [ ] Replace placeholder social media links with official OVE links or hide them. Started 2026-07-14: social links now route to contact with pending-confirmation labels instead of presenting unverified official channels.
-- [ ] Confirm newsletter subscription flow and storage/consent rules.
+- [x] Confirm newsletter subscription flow and storage/consent rules. Completed 2026-07-16: newsletter is handled by mailto only for the initial low-cost launch; the site does not store subscriber records.
 
 ## Workstream 4 - Legal, Privacy, And Licensing
 
@@ -73,7 +73,7 @@ Current recommendation: do not launch as a public observatory until data governa
 - [ ] Configure HTTPS and domain redirects. Started 2026-07-16: `https://ove-venezuela.com/` responds with the OVE site; confirm in Vercel that the custom domain is marked primary and that the Vercel preview domain redirects as desired.
 - [x] Add `robots.txt` and `sitemap.xml`. Completed 2026-07-16: added robots policy and expanded sitemap with clean public routes for the custom domain.
 - [x] Finalize Open Graph / social preview metadata. Completed 2026-07-16: added canonical URL, `og:url`, absolute `og:image`, and Twitter card metadata for `https://ove-venezuela.com/`.
-- [ ] Configure analytics and Search Console. Started 2026-07-16: added Vercel Web Analytics script, hash-route tracking, download/outbound/dashboard/form events, and privacy/cookies disclosure. Vercel Analytics still needs to be enabled in the Vercel project dashboard; Search Console remains pending.
+- [x] Configure analytics and Search Console. Completed 2026-07-16: Vercel Web Analytics is enabled, Google Search Console property is verified, sitemap was submitted successfully, and key URLs were manually requested for indexing.
 - [ ] Configure uptime/error monitoring if possible.
 - [ ] Prepare rollback plan.
 - [x] Publish latest launch-preparation changes to the deployed environment. Completed 2026-07-14: local launch-preparation work was committed, pushed to `main`, and Vercel redeployed. The deployed app now contains methodology, legal, launch note, forms config, and updated BCV value, and no longer contains removed public copy such as `API Playground` or `Contactar con Carlos`.
@@ -115,3 +115,4 @@ Current recommendation: do not launch as a public observatory until data governa
 - 2026-07-14: Published corrected pre-launch version to GitHub/Vercel. Commit `1564464` is on `origin/main`. Post-push deployed QA confirmed 28 routes, 106 internal hash links, 0 missing internal routes, required metadata/legal/methodology/launch-note/form markers present, and removed public placeholder copy absent.
 - 2026-07-16: Carlos confirmed the custom domain `https://ove-venezuela.com/`. Added canonical/social metadata, root sitemap, robots policy, and updated ingestion user-agent strings to use the public domain.
 - 2026-07-16: Added technical SEO improvements without changing visible page copy: clean URL routing support, Vercel rewrites, expanded route sitemap, per-route canonical/OG metadata, robots index directive, alternate language tag, and JSON-LD for Organization, WebSite, DataCatalog and key datasets.
+- 2026-07-16: Carlos created the temporary low-cost public contact email `ove.venezuela@outlook.com`. Enabled contact, collaboration, and newsletter forms via mailto; updated contact/footer/privacy copy to state that the site opens the user's email client and does not store form messages or subscriber records.

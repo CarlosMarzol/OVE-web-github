@@ -31,12 +31,12 @@ Custom events are intentionally limited to two properties per event:
 - Key-indicator dashboard series selections.
 - Native dashboard primary/secondary/mode/window changes and swaps.
 - Exchange-rate dashboard currency selections.
-- Contact/newsletter/collaboration form states while forms remain disabled or later enabled.
+- Contact/newsletter/collaboration form states; forms currently use mailto delivery to `ove.venezuela@outlook.com`.
 - Citation copy interactions.
 
 ## Vercel Dashboard Step
 
-The code is present in the site, but Vercel Web Analytics must also be enabled in the Vercel project dashboard:
+The code is present in the site, and Carlos enabled Vercel Web Analytics in the project dashboard on 2026-07-16. For future checks:
 
 1. Open the Vercel project for `OVE-web-github`.
 2. Go to Analytics.

@@ -174,8 +174,8 @@ const routeMeta = {
     description: "Conoce la misión, visión, valores y metodología del Observatorio Venezolano de Economía."
   },
   "/contacto": {
-    title: "Contacto y boletín | OVE",
-    description: "Escríbenos, suscríbete al boletín o plantea una colaboración institucional."
+    title: "Contacto institucional | OVE",
+    description: "Escríbenos o plantea una colaboración institucional con el Observatorio Venezolano de Economía."
   }
 };
 
@@ -1724,8 +1724,8 @@ function footer() {
       </div>
       <div class="footer-col">
         <h3>Contacto</h3>
-        <p>Canal institucional pendiente de confirmación.</p>
-        <p>Los formularios están preparados, pero no envían información hasta activar el canal definitivo.</p>
+        <p><a href="mailto:ove.venezuela@outlook.com">ove.venezuela@outlook.com</a></p>
+        <p>Los formularios abren un correo preparado. La web no almacena mensajes ni suscripciones.</p>
         <a class="text-link" href="#/contacto">Ver formulario ${arrow()}</a>
       </div>
     </div>
@@ -3498,15 +3498,15 @@ const legalContent = {
   privacidad: {
     title: "Política de privacidad",
     eyebrow: "Datos personales",
-    lead: "Política provisional sobre datos personales. Actualmente los formularios están preparados técnicamente, pero el envío y almacenamiento están desactivados hasta definir el canal oficial. El sitio puede usar analítica agregada y sin cookies personales para medir audiencia y mejorar contenidos.",
+    lead: "Política provisional sobre datos personales. Los formularios de contacto funcionan mediante correo electrónico: al enviarlos se abre el cliente de correo del usuario con el mensaje preparado. El sitio puede usar analítica agregada y sin cookies personales para medir audiencia y mejorar contenidos.",
     sections: [
       ["Datos que podrían solicitarse", "Nombre, correo electrónico, teléfono opcional, tipo de consulta, mensaje, propuesta de colaboración y suscripción al boletín."],
-      ["Estado actual de los formularios", "Mientras `assets/forms/forms-config.json` mantenga `enabled: false`, los formularios no envían ni almacenan información. La validación ocurre en el navegador del usuario."],
+      ["Estado actual de los formularios", "Los formularios no guardan información en una base de datos del sitio. El envío se realiza desde el cliente de correo del usuario hacia ove.venezuela@outlook.com."],
       ["Analítica web", "El OVE puede utilizar Vercel Web Analytics para obtener métricas agregadas de visitas, páginas, país aproximado, dispositivo, navegador, descargas y uso de secciones. Esta medición no usa cookies personales ni crea perfiles individuales de usuarios."],
       ["Finalidades futuras", "Responder consultas, gestionar colaboraciones, atender solicitudes de prensa, enviar boletines si el usuario se suscribe y mantener trazabilidad administrativa."],
-      ["Base y consentimiento", "La activación de formularios deberá apoyarse en consentimiento informado, aceptación de privacidad y un canal de tratamiento definido."],
-      ["Conservación y derechos", "Antes del lanzamiento público se debe definir plazo de conservación, responsable, correo de ejercicio de derechos y procedimiento para acceso, rectificación o supresión."],
-      ["Servicios de terceros", "Si se utiliza Formspree, HubSpot, Airtable, Google Sheets u otro proveedor, esta política deberá identificarlo y explicar su papel en el tratamiento. La analítica agregada se presta mediante la infraestructura de Vercel cuando esté activada en el proyecto."]
+      ["Base y consentimiento", "El usuario decide enviar el correo desde su propio cliente y acepta la política de privacidad antes de preparar el mensaje."],
+      ["Conservación y derechos", "Los mensajes se conservarán en el buzón de contacto durante el tiempo necesario para responder y gestionar la consulta. El procedimiento formal de derechos deberá completarse antes del lanzamiento público definitivo."],
+      ["Servicios de terceros", "No hay backend de formularios ni base de datos de suscriptores en el sitio. La analítica agregada se presta mediante la infraestructura de Vercel cuando esté activada en el proyecto."]
     ]
   },
   cookies: {
@@ -3788,10 +3788,10 @@ function faqList(items) {
 function contactPage() {
   return `<div class="page">
     ${pageHero({
-      title: "Contacto y boletín",
-      lead: "Estamos preparando los canales oficiales del OVE. Los formularios están listos técnicamente, pero el envío se activará cuando exista un canal institucional definitivo.",
+      title: "Contacto institucional",
+      lead: "El OVE atiende consultas generales, solicitudes sobre datos y propuestas de colaboración a través de su correo de contacto.",
       image: "assets/venezuela-avila.jpg",
-      actions: `<a class="text-link" href="#/contacto">${icon("mail")} Formulario preparado</a><a class="text-link" href="#/contacto">${icon("shield")} Canal pendiente</a>`,
+      actions: `<a class="text-link" href="mailto:ove.venezuela@outlook.com">${icon("mail")} ove.venezuela@outlook.com</a><a class="text-link" href="#/privacidad">${icon("shield")} Privacidad</a>`,
       breadcrumb: []
     })}
     <section class="section">
@@ -3808,7 +3808,7 @@ function contactPage() {
             <button class="button button-primary full" type="submit">Enviar mensaje ${arrow()}</button>
             <p class="form-status tiny full" data-form-status aria-live="polite"></p>
           </form>
-          <p class="tiny">El envío quedará activo cuando se confirme el correo, endpoint o servicio definitivo.</p>
+          <p class="tiny">El formulario abre tu cliente de correo con el mensaje preparado. La web no almacena el contenido del formulario.</p>
         </article>
         <article id="sedes" class="panel">
           <h2>${icon("bank")} Canal institucional</h2>
@@ -3816,25 +3816,25 @@ function contactPage() {
             <h3>Contacto oficial</h3>
             <p>${icon("pin")} Ubicación institucional pendiente de confirmación.</p>
             <p>${icon("phone")} Teléfono pendiente de confirmación.</p>
-            <p>${icon("mail")} Correo institucional pendiente de confirmación.</p>
+            <p>${icon("mail")} <a href="mailto:ove.venezuela@outlook.com">ove.venezuela@outlook.com</a></p>
             <p>${icon("calendar")} Horario de atención por definir.</p>
           </div>
           <div class="office">
             <h3>Estado del canal</h3>
-            <p>${icon("shield")} Formularios preparados con validación y configuración central.</p>
-            <p>${icon("mail")} Envío desactivado hasta aprobar el canal definitivo.</p>
+            <p>${icon("shield")} Formularios activos mediante correo del usuario, sin almacenamiento en la web.</p>
+            <p>${icon("mail")} Contacto general y colaboración enviados a ove.venezuela@outlook.com.</p>
             <p>${icon("file")} Política de privacidad inicial creada; revisión legal pendiente.</p>
           </div>
         </article>
         <aside class="stack-gap">
           <article class="panel">
             <h2>${icon("megaphone")} Contacto para medios</h2>
-            <p>Canal de prensa pendiente de confirmación antes del lanzamiento público.</p>
+            <p>Las consultas de prensa pueden enviarse al correo de contacto institucional.</p>
             <div class="filter-panel">
               <h3>Prensa OVE</h3>
-              <p>Responsable y canal por definir.</p>
+              <p>Responsable específico pendiente de confirmación.</p>
               <p>${icon("phone")} Teléfono pendiente.</p>
-              <p>${icon("mail")} Correo pendiente.</p>
+              <p>${icon("mail")} <a href="mailto:ove.venezuela@outlook.com">ove.venezuela@outlook.com</a></p>
               <p>${icon("pin")} Ubicación pendiente.</p>
             </div>
           </article>
@@ -3852,7 +3852,7 @@ function contactPage() {
           <h2 style="color:#fff">${icon("mail")} Suscríbete a nuestro boletín</h2>
           <p>Recibe análisis, indicadores y publicaciones directamente en tu correo.</p>
           <form class="subscribe-form js-form" data-form-id="boletin"><input class="field" name="email" type="email" placeholder="tu@email.com" required><button class="button button-yellow">Suscribirme ${arrow()}</button><p class="form-status tiny" data-form-status aria-live="polite"></p></form>
-          <p class="tiny" style="color:#dce8ff">La suscripción se activará cuando esté aprobada la política de privacidad y el canal de almacenamiento.</p>
+          <p class="tiny" style="color:#dce8ff">La suscripción se gestiona inicialmente por correo. La web no guarda una base de datos de suscriptores.</p>
         </article>
         <article class="panel span-3">
           <h2>Síguenos en redes sociales</h2>
@@ -4053,7 +4053,7 @@ function wireForms() {
       const original = button.innerHTML;
       button.innerHTML = "Enviando";
       button.disabled = true;
-      setFormStatus(form, "Preparando envio...", "neutral");
+      setFormStatus(form, "Preparando envío...", "neutral");
 
       try {
         const config = await getFormConfig();
@@ -4079,7 +4079,7 @@ function wireForms() {
         } else if (recipient) {
           const body = Object.entries(payload).map(([key, value]) => `${key}: ${value}`).join("\n");
           window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-          setFormStatus(form, "Se abrió tu cliente de correo para completar el envío.", "success");
+          setFormStatus(form, "Se abrió tu cliente de correo para completar el envío. Revisa y pulsa enviar.", "success");
           trackAnalytics(analyticsEvents.form, { form: formId, state: "mailto" });
           form.reset();
         } else {
