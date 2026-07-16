@@ -1751,24 +1751,6 @@ function homePage() {
         ${metricCards()}
       </div>
     </section>
-    <section class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Indicadores actualizados</h2>
-          <a class="text-link" href="#/indicadores">Ver tablero ${arrow()}</a>
-        </div>
-        <div class="home-indicators">
-          ${chartCard("PIB real", "Banco Mundial, variación anual", "blue")}
-          ${chartCard("USD/BCV", "BCV, serie diaria", "yellow")}
-          ${chartCard("Desempleo total", "Banco Mundial, % fuerza laboral", "red")}
-          <aside class="support-panel">
-            <div class="support-item">${icon("monitor")}<div><h3>Panel interactivo</h3><p class="tiny">Explora y personaliza datos y gráficos.</p></div></div>
-            <div class="support-item">${icon("download")}<div><h3>Descarga de datos</h3><p class="tiny">Series históricas en formatos abiertos.</p></div></div>
-            <div class="support-item">${icon("clipboard")}<div><h3>Metodologías</h3><p class="tiny">Conoce cómo medimos e integramos.</p></div></div>
-          </aside>
-        </div>
-      </div>
-    </section>
     <section class="section section-tight">
       <div class="container">
         <div class="section-title">
