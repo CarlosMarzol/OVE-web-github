@@ -3753,7 +3753,7 @@ function contactPage() {
             <p>Las consultas de prensa pueden enviarse al correo de contacto institucional.</p>
             <div class="filter-panel">
               <h3>Prensa OVE</h3>
-              <p>Responsable específico pendiente de confirmación.</p>
+              <p>Carlos Marzol.</p>
               <p>${icon("mail")} <a href="mailto:ove.venezuela@outlook.com">ove.venezuela@outlook.com</a></p>
               <p>${icon("pin")} Carrera 14 Federacion, Calabozo 2312, Guárico, Venezuela.</p>
             </div>
