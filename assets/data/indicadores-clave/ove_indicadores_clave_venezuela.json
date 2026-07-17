@@ -2,8 +2,8 @@
   "metadata": {
     "title": "Indicadores clave de Venezuela",
     "description": "Series históricas descargables para el dashboard OVE de indicadores clave.",
-    "generated_at": "2026-07-16T21:32:16Z",
-    "records": 2948,
+    "generated_at": "2026-07-17T14:53:26Z",
+    "records": 2949,
     "indicators": [
       "desempleo_total_wdi",
       "inpc_nacional_bcv",
@@ -3357,6 +3357,19 @@
       "date": "2026-05-01",
       "year": 2026,
       "value": 6.3,
+      "unit": "% mensual"
+    },
+    {
+      "indicator_id": "inpc_nacional_bcv",
+      "indicator": "INPC nacional",
+      "area": "Nivel y condiciones de vida",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_7_2.xls",
+      "frequency": "Mensual",
+      "period": "2026-06",
+      "date": "2026-06-01",
+      "year": 2026,
+      "value": 13.8,
       "unit": "% mensual"
     },
     {
