@@ -757,18 +757,7 @@ def write_outputs(records):
 
 
 def excel_download_for_record(row):
-    source = row.get("fuente", "")
-    if source in SOURCE_EXCEL_DOWNLOADS:
-        return SOURCE_EXCEL_DOWNLOADS[source]
-
-    origin = row.get("archivo_origen", "")
-    if origin.endswith(".xlsx"):
-        return origin
-    if origin.endswith(".csv"):
-        candidate = origin.replace("/csv/", "/excel/")[:-4] + ".xlsx"
-        if (ROOT / candidate).exists():
-            return candidate
-    return origin
+    return ""
 
 
 def write_web_index(records, counts, by_subarea):

@@ -107,6 +107,7 @@ jobs:
           fi
           python scripts/build_key_indicators_dataset.py
           python scripts/build_indicator_theme_inventory.py
+          python scripts/build_indicator_download_links.py
 
       - name: Commit data changes
         run: |

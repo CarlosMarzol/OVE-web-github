@@ -314,6 +314,18 @@ body.nav-open .nav-toggle span:nth-child(3) {
   font-size: 0.86rem;
 }
 
+.button-disabled {
+  color: var(--gray-600);
+  background: var(--gray-50);
+  border-color: var(--line);
+  cursor: not-allowed;
+}
+
+.button-disabled:hover {
+  box-shadow: none;
+  transform: none;
+}
+
 .page {
   overflow: hidden;
 }

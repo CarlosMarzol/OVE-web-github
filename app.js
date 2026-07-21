@@ -4325,7 +4325,14 @@ async function hydrateIndicatorExplorer() {
           return;
         }
 
-        results.innerHTML = `${visible.map(row => `<article class="indicator-result-card">
+        results.innerHTML = `${visible.map(row => {
+          const downloadAction = row.excel
+            ? `<a class="button button-small" href="${escapeHtml(row.excel)}" download>Excel OVE ${icon("download")}</a>`
+            : `<span class="button button-small button-disabled" aria-disabled="true">Sin datos descargables</span>`;
+          const downloadNote = row.excel
+            ? `Datos filtrados: ${escapeHtml(row.fuente)}`
+            : "Serie pendiente de normalización";
+          return `<article class="indicator-result-card">
           <div>
             <span class="source-tag">${escapeHtml(row.fuente)}</span>
             <h3>${escapeHtml(row.indicador)}</h3>
@@ -4338,10 +4345,11 @@ async function hydrateIndicatorExplorer() {
             <div><dt>Estado</dt><dd>${escapeHtml(row.estado || "Inventariado")}</dd></div>
           </dl>
           <div class="indicator-card-actions">
-            <a class="button button-small" href="${escapeHtml(row.excel || row.archivo_origen || indicatorInventoryDownloads.excel)}" download>Excel OVE ${icon("download")}</a>
-            <span class="tiny">Fuente no mezclada: ${escapeHtml(row.fuente)}</span>
+            ${downloadAction}
+            <span class="tiny">${downloadNote}</span>
           </div>
-        </article>`).join("")}
+        </article>`;
+        }).join("")}
         ${rows.length > visible.length ? `<p class="source-note">Mostrando ${visible.length} de ${rows.length}. Usa el buscador o el selector de indicador para acotar la lista.</p>` : ""}`;
         wireAnalytics(results);
       };
