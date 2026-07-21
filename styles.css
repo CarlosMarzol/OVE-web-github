@@ -1757,7 +1757,8 @@ textarea.field {
   font-size: 0.78rem;
 }
 
-.side-menu a {
+.side-menu a,
+.side-menu button {
   display: grid;
   grid-template-columns: 26px 1fr auto;
   align-items: center;
@@ -1766,23 +1767,30 @@ textarea.field {
   padding: 0 12px;
   border-radius: 5px;
   color: var(--ink);
+  background: transparent;
+  border: 0;
   font-size: 0.86rem;
   font-weight: 650;
+  text-align: left;
+  cursor: pointer;
   transition: color 0.22s ease, background-color 0.22s ease, transform 0.22s ease;
 }
 
-.side-menu a.is-selected {
+.side-menu a.is-selected,
+.side-menu button.is-selected {
   color: #fff;
   background: var(--blue-700);
 }
 
-.side-menu a:hover {
+.side-menu a:hover,
+.side-menu button:hover {
   color: var(--blue-700);
   background: var(--blue-100);
   transform: translateX(3px);
 }
 
-.side-menu a.is-selected:hover {
+.side-menu a.is-selected:hover,
+.side-menu button.is-selected:hover {
   color: #fff;
   background: var(--blue-600);
 }
@@ -1795,6 +1803,11 @@ textarea.field {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 2;
+}
+
+.side-menu button strong {
+  font-size: 0.78rem;
+  font-weight: 850;
 }
 
 .filter-row {
@@ -2019,6 +2032,129 @@ textarea.field {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+}
+
+.indicator-explorer {
+  min-width: 0;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.indicator-loading {
+  padding: 12px;
+  color: var(--muted);
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 0.86rem;
+}
+
+.indicator-controls {
+  display: grid;
+  grid-template-columns: minmax(170px, 1fr) minmax(180px, 1fr) minmax(220px, 1.3fr) minmax(180px, 0.9fr);
+  gap: 12px;
+  align-items: end;
+  margin: 22px 0 16px;
+}
+
+.indicator-controls label {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.indicator-controls label span {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.indicator-controls select,
+.indicator-controls input {
+  width: 100%;
+  min-height: 42px;
+  padding: 9px 12px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.indicator-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.indicator-summary-item {
+  min-width: 0;
+  padding: 14px;
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--yellow);
+  border-radius: 6px;
+}
+
+.indicator-summary-item span,
+.indicator-summary-item small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.indicator-summary-item strong {
+  display: block;
+  margin: 3px 0;
+  font-size: 1.05rem;
+}
+
+.indicator-results {
+  display: grid;
+  gap: 12px;
+}
+
+.indicator-result-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.95fr) minmax(160px, 0.45fr);
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.indicator-result-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.indicator-result-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.indicator-result-card .source-meta {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+}
+
+.indicator-card-actions {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+}
+
+.indicator-card-actions .button {
+  width: 100%;
+  justify-content: center;
 }
 
 .native-dashboard-head {
@@ -2903,6 +3039,8 @@ th {
   .key-download-summary,
   .dashboard-entry,
   .native-dashboard-head,
+  .indicator-controls,
+  .indicator-result-card,
   .native-controls,
   .bcv-live-card {
     grid-template-columns: 1fr;
@@ -2920,6 +3058,10 @@ th {
 
   .filter-row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .indicator-summary {
+    grid-template-columns: 1fr;
   }
 
   .featured-panel {
@@ -3027,6 +3169,14 @@ th {
   .cards-4,
   .form-grid,
   .cta-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .indicator-explorer {
+    padding: 16px;
+  }
+
+  .indicator-result-card .source-meta {
     grid-template-columns: 1fr;
   }
 

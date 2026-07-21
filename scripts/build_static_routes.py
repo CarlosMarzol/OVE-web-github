@@ -16,8 +16,8 @@ SITE_ORIGIN = "https://ove-venezuela.com"
 
 ROUTE_META = {
   "indicadores": (
-    "Indicadores económicos | OVE",
-    "Indicadores actualizados para Venezuela con fuentes BCV y Banco Mundial.",
+    "Explorador de indicadores | OVE",
+    "Inventario OVE de indicadores para Venezuela por tema, subárea, fuente y descarga Excel.",
   ),
   "indicadores/dashboard": (
     "Dashboard interactivo | OVE",

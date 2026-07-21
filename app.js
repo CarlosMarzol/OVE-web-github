@@ -42,8 +42,8 @@ const routeMeta = {
     description: "Indicadores, informes y datos abiertos para comprender la economía venezolana."
   },
   "/indicadores": {
-    title: "Indicadores económicos | OVE",
-    description: "Indicadores actualizados para Venezuela con fuentes BCV y Banco Mundial."
+    title: "Explorador de indicadores | OVE",
+    description: "Inventario OVE de indicadores para Venezuela por tema, subárea, fuente y descarga Excel."
   },
   "/indicadores/dashboard": {
     title: "Dashboard interactivo | OVE",
@@ -196,6 +196,12 @@ const analyticsEvents = {
   copy: "OVE Copy"
 };
 
+const indicatorInventoryDownloads = {
+  json: "assets/data/inventario-indicadores/inventario_indicadores_ove_web.json",
+  csv: "assets/data/inventario-indicadores/inventario_indicadores_ove_clasificado_temas_es.csv",
+  excel: "assets/data/inventario-indicadores/inventario_indicadores_ove_clasificado_temas_es.xlsx"
+};
+
 function trackAnalytics(eventName, payload = {}) {
   if (typeof window.va !== "function") return;
   window.va("event", eventName, payload);
@@ -246,6 +252,22 @@ function analyticsFormatFromHref(href) {
   if (path.endsWith(".pdf")) return "pdf";
   if (path.startsWith("http")) return "fuente";
   return "otro";
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function normalizeSearchText(value) {
+  return String(value ?? "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
 }
 
 function wireAnalytics(root = document) {
@@ -1814,69 +1836,71 @@ function bcvUsdHomePanel() {
 }
 
 function indicatorsPage() {
-  const categories = [
-    ["Actividad economica", "trend"],
-    ["Precios e inflacion", "coin"],
-    ["Mercado laboral", "users"],
-    ["Sector externo", "globe"],
-    ["Finanzas publicas", "bank"],
-    ["Monetarios y financieros", "database"],
-    ["Empresas y sector productivo", "factory"],
-    ["Regiones", "pin"]
-  ];
   return `<div class="page">
     ${pageHero({
       title: "Indicadores de Venezuela",
-      lead: "Esta sección integra los últimos datos disponibles de Banco Mundial - Venezuela y Banco Central de Venezuela, manteniendo trazabilidad por fuente y año.",
-      breadcrumb: ["Inicio", "Indicadores"]
+      lead: "Explora el inventario completo del OVE por tema, subárea e indicador. Cada serie queda separada por fuente para descargar datos sin mezclar metodologías.",
+      breadcrumb: ["Inicio", "Indicadores"],
+      actions: `<a class="button button-primary" href="${indicatorInventoryDownloads.excel}" download>Inventario Excel ${icon("download")}</a>
+        <a class="button" href="#/indicadores/dashboard">Dashboard comparador ${arrow()}</a>`
     })}
     <section class="section">
       <div class="container layout-sidebar">
-        <aside class="side-menu">
-          <h3>Categorias</h3>
-          ${categories.map((item, index) => `<a class="${index === 0 ? "is-selected" : ""}" href="#/indicadores">${icon(item[1])}<span>${item[0]}</span><span>›</span></a>`).join("")}
+        <aside class="side-menu indicator-topic-menu" data-indicator-topic-menu>
+          <h3>Temas OVE</h3>
+          <div class="indicator-loading">Cargando temas</div>
           <div class="filter-panel">
-            <h3>Fuente real disponible</h3>
-            <p class="tiny">Paquete OVE generado el ${sourceMetadata.keyIndicators.lastFetched}.</p>
-            <a class="button button-small" href="#/datos/banco-mundial">Ir a Banco Mundial</a>
+            <h3>Inventario clasificado</h3>
+            <p class="tiny">Incluye las fuentes recopiladas hasta ahora y conserva trazabilidad por código, fuente y archivo de origen.</p>
+            <a class="button button-small" href="${indicatorInventoryDownloads.csv}" download>Descargar CSV</a>
           </div>
         </aside>
-        <div>
-          <div class="filter-row">
-            ${[
-              ["Periodo", "Último dato", "calendar"],
-              ["Tema", "Venezuela", "clipboard"],
-              ["Region", "Nacional", "pin"],
-              ["Fuente", "BCV / Banco Mundial", "database"]
-            ].map(([label, value, ico]) => `<div class="filter-box">${icon(ico)}<div><label>${label}</label><strong>${value}</strong></div></div>`).join("")}
-            <a class="text-link" href="#/indicadores">Limpiar filtros</a>
-          </div>
-          ${dataMetaGrid([
-            ["Paquete de indicadores", sourceMetadata.keyIndicators.lastFetched, `${sourceMetadata.keyIndicators.records}. Fuentes: ${sourceMetadata.keyIndicators.source}.`, "database"],
-            ["Último BCV", sourceMetadata.bcv.latestData, `${sourceMetadata.bcv.records}. Captura: ${sourceMetadata.bcv.lastFetched}.`, "calendar"],
-            ["Banco Mundial", sourceMetadata.worldBank.lastFetched, `${sourceMetadata.worldBank.records}. Último año disponible: ${sourceMetadata.worldBank.latestData}.`, "globe"]
-          ])}
-          ${metricCards("inline-metrics")}
-          <div class="dashboard-entry">
+        <article class="indicator-explorer" data-indicator-explorer>
+          <div class="native-dashboard-head">
             <div>
-              <span class="eyebrow">Explorador OVE</span>
-              <h2>Comparador de variables</h2>
-              <p>Selecciona dos series, cambia la ventana temporal y alterna entre niveles e índice base 100.</p>
+              <span class="eyebrow">Explorador de inventario</span>
+              <h2>Tema → subárea → indicador → fuente</h2>
+              <p>Busca por texto o navega por niveles. Si escribes PIB dentro de Economía y Actividad económica, verás una línea por fuente disponible.</p>
             </div>
-            <a class="button button-primary" href="#/indicadores/dashboard">Abrir dashboard ${arrow()}</a>
+            <div class="download-row key-downloads">
+              <a href="${indicatorInventoryDownloads.csv}" download>CSV</a>
+              <a href="${indicatorInventoryDownloads.json}" download>JSON</a>
+              <a href="${indicatorInventoryDownloads.excel}" download>Excel</a>
+            </div>
           </div>
-          <p class="source-note">Fuentes: Banco Mundial - World Development Indicators y Banco Central de Venezuela. Algunas series multilaterales tienen rezagos propios de publicación; se muestra el último año con dato no nulo.</p>
-        </div>
+          <div class="indicator-controls">
+            <label>
+              <span>Tema</span>
+              <select data-indicator-topic></select>
+            </label>
+            <label>
+              <span>Subárea</span>
+              <select data-indicator-subarea></select>
+            </label>
+            <label>
+              <span>Indicador</span>
+              <select data-indicator-name></select>
+            </label>
+            <label>
+              <span>Buscar</span>
+              <input type="search" data-indicator-search placeholder="PIB, inflación, empleo...">
+            </label>
+          </div>
+          <div class="indicator-summary" data-indicator-summary></div>
+          <div class="indicator-results" data-indicator-results>
+            <p class="source-note">Cargando inventario de indicadores.</p>
+          </div>
+        </article>
       </div>
     </section>
     <section class="section-tight">
       <div class="container">
         <div class="cards-4">
           ${[
-            ["BCV actualizado", `Tipo de cambio oficial con fecha valor ${sourceMetadata.bcv.latestData}.`, "calendar"],
-            ["Banco Mundial actualizado", `${sourceMetadata.worldBank.records} regenerados desde WDI.`, "pin"],
-            ["Fuente real activa", "Banco Mundial - Venezuela y BCV quedan disponibles como bases verificables.", "shield"],
-            ["Datos abiertos", "Descargas en CSV, JSON y Excel con metadatos claros.", "lock"]
+            ["Temas OVE", "10 áreas institucionales aplicadas al inventario completo.", "clipboard"],
+            ["Subáreas", "Cada indicador queda ubicado dentro del árbol temático OVE.", "target"],
+            ["Fuentes separadas", "La misma variable aparece en líneas distintas por fuente y código.", "database"],
+            ["Datos abiertos", "Descargas en CSV, JSON y Excel con trazabilidad.", "download"]
           ].map(([title, text, ico]) => `<article class="value-card"><span class="line-icon">${icon(ico)}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}
         </div>
       </div>
@@ -3859,6 +3883,7 @@ function render() {
     wireForms();
     hydrateBcvWidgets();
     hydrateKeyDashboard();
+    hydrateIndicatorExplorer();
     hydrateNativeDashboard();
     hydrateExchangeDashboard();
     prepareRevealAnimations(appRoot);
@@ -4122,6 +4147,152 @@ function hydrateKeyDashboard() {
       trackAnalytics(analyticsEvents.dashboard, { action: "key_series", detail: id });
     });
   });
+}
+
+async function hydrateIndicatorExplorer() {
+  const explorer = document.querySelector("[data-indicator-explorer]");
+  if (!explorer) return;
+
+  const topicMenu = document.querySelector("[data-indicator-topic-menu]");
+  const topicSelect = explorer.querySelector("[data-indicator-topic]");
+  const subareaSelect = explorer.querySelector("[data-indicator-subarea]");
+  const indicatorSelect = explorer.querySelector("[data-indicator-name]");
+  const searchInput = explorer.querySelector("[data-indicator-search]");
+  const summary = explorer.querySelector("[data-indicator-summary]");
+  const results = explorer.querySelector("[data-indicator-results]");
+
+  try {
+    const response = await fetch(indicatorInventoryDownloads.json, { cache: "no-store" });
+    if (!response.ok) throw new Error("Indicator inventory unavailable");
+    const inventory = await response.json();
+    const records = inventory.records || [];
+    const topics = inventory.topics || [];
+
+    const countForTopic = topic => records.filter(row => row.tema === topic).length;
+    const countForSubarea = (topic, subarea) => records.filter(row => row.tema === topic && row.subarea === subarea).length;
+    const unique = values => [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
+    const option = (value, label, count) => `<option value="${escapeHtml(value)}">${escapeHtml(label)}${typeof count === "number" ? ` (${count})` : ""}</option>`;
+    const activeTopic = () => topicSelect.value || topics[0]?.tema || "";
+    const activeSubarea = () => subareaSelect.value || "Todas";
+
+    const renderTopicMenu = () => {
+      if (!topicMenu) return;
+      const selected = activeTopic();
+      const links = topics.map((topic, index) => {
+        const isSelected = topic.tema === selected || (!selected && index === 0);
+        return `<button class="${isSelected ? "is-selected" : ""}" type="button" data-topic-choice="${escapeHtml(topic.tema)}">
+          ${icon(index === 3 ? "trend" : "database")}<span>${escapeHtml(topic.tema)}</span><strong>${formatInteger(topic.count || countForTopic(topic.tema))}</strong>
+        </button>`;
+      }).join("");
+      const panel = topicMenu.querySelector(".filter-panel")?.outerHTML || "";
+      topicMenu.innerHTML = `<h3>Temas OVE</h3>${links}${panel}`;
+      topicMenu.querySelectorAll("[data-topic-choice]").forEach(button => {
+        button.addEventListener("click", () => {
+          topicSelect.value = button.getAttribute("data-topic-choice");
+          populateSubareas();
+          renderExplorer();
+          trackAnalytics(analyticsEvents.dashboard, { action: "indicator_topic", detail: topicSelect.value });
+        });
+      });
+    };
+
+    const populateTopics = () => {
+      topicSelect.innerHTML = topics.map(topic => option(topic.tema, topic.tema, topic.count || countForTopic(topic.tema))).join("");
+      const economy = topics.find(topic => topic.tema === "Economía");
+      topicSelect.value = economy?.tema || topics[0]?.tema || "";
+    };
+
+    const populateSubareas = () => {
+      const topic = activeTopic();
+      const configured = topics.find(item => item.tema === topic)?.subareas?.map(item => item.subarea) || [];
+      const fromRecords = unique(records.filter(row => row.tema === topic).map(row => row.subarea));
+      const subareas = unique([...configured, ...fromRecords]);
+      subareaSelect.innerHTML = option("Todas", "Todas las subáreas", countForTopic(topic)) +
+        subareas.map(subarea => option(subarea, subarea, countForSubarea(topic, subarea))).join("");
+      subareaSelect.value = subareas.includes("Actividad económica") ? "Actividad económica" : "Todas";
+      populateIndicators();
+      renderTopicMenu();
+    };
+
+    const populateIndicators = () => {
+      const topic = activeTopic();
+      const subarea = activeSubarea();
+      const scoped = records.filter(row => row.tema === topic && (subarea === "Todas" || row.subarea === subarea));
+      const indicators = unique(scoped.map(row => row.indicador));
+      indicatorSelect.innerHTML = option("Todos", "Todos los indicadores", scoped.length) +
+        indicators.map(indicator => option(indicator, indicator)).join("");
+      indicatorSelect.value = "Todos";
+    };
+
+    const filteredRecords = () => {
+      const topic = activeTopic();
+      const subarea = activeSubarea();
+      const indicator = indicatorSelect.value;
+      const query = normalizeSearchText(searchInput.value);
+      return records.filter(row => {
+        const matchesTopic = row.tema === topic;
+        const matchesSubarea = subarea === "Todas" || row.subarea === subarea;
+        const matchesIndicator = indicator === "Todos" || row.indicador === indicator;
+        const text = normalizeSearchText([row.indicador, row.indicador_original, row.codigo, row.fuente, row.subarea].join(" "));
+        const matchesSearch = !query || text.includes(query);
+        return matchesTopic && matchesSubarea && matchesIndicator && matchesSearch;
+      });
+    };
+
+    const renderExplorer = () => {
+      const rows = filteredRecords();
+      const visible = rows.slice(0, 120);
+      const sourceCount = new Set(rows.map(row => row.fuente)).size;
+      summary.innerHTML = [
+        ["Indicadores", formatInteger(rows.length), "Filtrados por la selección actual"],
+        ["Fuentes", formatInteger(sourceCount), "Cada fuente aparece separada"],
+        ["Subárea", activeSubarea(), activeTopic()]
+      ].map(([label, value, text]) => `<div class="indicator-summary-item"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong><small>${escapeHtml(text)}</small></div>`).join("");
+
+      if (!rows.length) {
+        results.innerHTML = `<p class="source-note">No hay indicadores para esa combinación. Prueba otra subárea o una búsqueda más amplia.</p>`;
+        return;
+      }
+
+      results.innerHTML = `${visible.map(row => `<article class="indicator-result-card">
+        <div>
+          <span class="source-tag">${escapeHtml(row.fuente)}</span>
+          <h3>${escapeHtml(row.indicador)}</h3>
+          <p>${escapeHtml(row.subarea)} · ${escapeHtml(row.codigo || "Sin código")}</p>
+        </div>
+        <dl class="source-meta">
+          <div><dt>Periodo</dt><dd>${escapeHtml(row.primer_periodo || "N/D")} - ${escapeHtml(row.ultimo_periodo || "N/D")}</dd></div>
+          <div><dt>Registros</dt><dd>${escapeHtml(row.registros_con_valor || row.registros || "N/D")}</dd></div>
+          <div><dt>Frecuencia</dt><dd>${escapeHtml(row.frecuencia || "N/D")}</dd></div>
+          <div><dt>Estado</dt><dd>${escapeHtml(row.estado || "Inventariado")}</dd></div>
+        </dl>
+        <div class="indicator-card-actions">
+          <a class="button button-small" href="${escapeHtml(row.excel || row.archivo_origen || indicatorInventoryDownloads.excel)}" download>Excel OVE ${icon("download")}</a>
+          <span class="tiny">Fuente no mezclada: ${escapeHtml(row.fuente)}</span>
+        </div>
+      </article>`).join("")}
+      ${rows.length > visible.length ? `<p class="source-note">Mostrando ${visible.length} de ${rows.length}. Usa el buscador o el selector de indicador para acotar la lista.</p>` : ""}`;
+      wireAnalytics(results);
+    };
+
+    populateTopics();
+    populateSubareas();
+    renderExplorer();
+
+    topicSelect.addEventListener("change", () => {
+      populateSubareas();
+      renderExplorer();
+    });
+    subareaSelect.addEventListener("change", () => {
+      populateIndicators();
+      renderExplorer();
+    });
+    indicatorSelect.addEventListener("change", renderExplorer);
+    searchInput.addEventListener("input", renderExplorer);
+  } catch {
+    results.innerHTML = `<p class="source-note">No fue posible cargar el inventario clasificado. Revisa que el archivo JSON del inventario haya sido generado por el workflow.</p>`;
+    summary.innerHTML = "";
+  }
 }
 
 async function hydrateNativeDashboard() {

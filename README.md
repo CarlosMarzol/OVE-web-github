@@ -16,11 +16,12 @@ Sitio web estatico del Observatorio Venezolano de Economia.
 - `assets/data/fred/`: series de FRED para Venezuela, con catalogo de series etiquetadas y observaciones descargables cuando FRED permite acceso CSV.
 - `assets/data/ine/`: catalogo de recursos oficiales del INE Venezuela, con recursos tabulares, documentos enlazados al portal original y valores extraidos por celda desde los libros XLS/XLSX.
 - `assets/data/indicadores-clave/`: paquete curado CSV, JSON y Excel para el dashboard de indicadores clave.
+- `assets/data/inventario-indicadores/`: inventario completo de indicadores clasificados por tema OVE, con nombres de indicadores en espanol y columna de trazabilidad del nombre original.
 - `.github/workflows/update-bcv-data.yml`: automatizacion de GitHub Actions para actualizar datos BCV, Banco Mundial, OIT/ILOSTAT, FMI/WEO, FRED e INE Venezuela.
 - `manual_corporativo_ove_max_calidad.pdf`: archivo enlazado desde la web.
 - `source-assets/`: materiales de apoyo, logos originales e imagenes fuente.
 
-El workflow `Update OVE data` ejecuta el tipo de cambio BCV todos los dias a las 20:30 UTC, refresca PIB/INPC varias veces al mes, Banco Mundial semanalmente, OIT/ILOSTAT varias veces al mes, FMI/WEO varias veces al mes, FRED semanalmente, INE Venezuela semanalmente y regenera el paquete `indicadores-clave` antes de commitear cambios.
+El workflow `Update OVE data` ejecuta el tipo de cambio BCV todos los dias a las 20:30 UTC, refresca PIB/INPC varias veces al mes, Banco Mundial semanalmente, OIT/ILOSTAT varias veces al mes, FMI/WEO varias veces al mes, FRED semanalmente, INE Venezuela semanalmente y regenera el paquete `indicadores-clave` y el inventario tematico de indicadores antes de commitear cambios.
 
 ## Actualizar datos BCV
 
@@ -61,6 +62,20 @@ Salidas:
 - `assets/data/indicadores-clave/ove_indicadores_clave_venezuela.csv`
 - `assets/data/indicadores-clave/ove_indicadores_clave_venezuela.json`
 - `assets/data/indicadores-clave/ove_indicadores_clave_venezuela.xlsx`
+
+## Actualizar inventario tematico de indicadores
+
+Despues de refrescar cualquiera de las fuentes, regenera el inventario completo clasificado por tema OVE:
+
+```bash
+python3 scripts/build_indicator_theme_inventory.py
+```
+
+Salidas:
+
+- `assets/data/inventario-indicadores/inventario_indicadores_ove_clasificado_temas_es.csv`
+- `assets/data/inventario-indicadores/inventario_indicadores_ove_clasificado_temas_es.xlsx`
+- `assets/data/inventario-indicadores/resumen_clasificacion_temas_es.csv`
 
 ## Formato corporativo Excel
 
