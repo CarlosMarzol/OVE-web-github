@@ -201,6 +201,7 @@ const indicatorInventoryDownloads = {
   csv: "assets/data/inventario-indicadores/inventario_indicadores_ove_clasificado_temas_es.csv",
   excel: "assets/data/inventario-indicadores/inventario_indicadores_ove_clasificado_temas_es.xlsx"
 };
+let indicatorInventoryPromise = null;
 
 function trackAnalytics(eventName, payload = {}) {
   if (typeof window.va !== "function") return;
@@ -252,6 +253,20 @@ function analyticsFormatFromHref(href) {
   if (path.endsWith(".pdf")) return "pdf";
   if (path.startsWith("http")) return "fuente";
   return "otro";
+}
+
+function topicInventoryName(topicKey) {
+  return topicData.find(([id]) => id === topicKey)?.[1] || "";
+}
+
+function getIndicatorInventory() {
+  if (!indicatorInventoryPromise) {
+    indicatorInventoryPromise = fetch(indicatorInventoryDownloads.json, { cache: "no-store" }).then(response => {
+      if (!response.ok) throw new Error("Indicator inventory unavailable");
+      return response.json();
+    });
+  }
+  return indicatorInventoryPromise;
 }
 
 function escapeHtml(value) {
@@ -1439,6 +1454,7 @@ function topicsSection() {
               <img class="topic-icon" src="${image}" alt="" loading="lazy" decoding="async">
               <span>${label}</span>
               <small>${topicOperationCount(id)} operaciones</small>
+              <small data-topic-indicator-count="${id}">Indicadores: cargando</small>
             </a>
           `).join("")}
         </div>
@@ -2753,11 +2769,53 @@ function topicDetailPage(topicKey) {
         <div class="topic-accordion">
           ${topic.groups.map((group, index) => topicGroup(group, index === 0)).join("")}
         </div>
+        ${topicIndicatorExplorer(topicKey)}
         ${downloads.length ? topicDownloads(topic, downloads) : ""}
       </div>
     </section>
     ${footer()}
   </div>`;
+}
+
+function topicIndicatorExplorer(topicKey) {
+  const topic = topicDetails[topicKey] || topicDetails.agriculture;
+  const topicName = topicInventoryName(topicKey) || topic.title;
+  return `<article class="indicator-explorer topic-indicator-explorer" data-indicator-explorer data-indicator-topic-key="${escapeHtml(topicKey)}">
+    <div class="native-dashboard-head">
+      <div>
+        <span class="eyebrow">Indicadores disponibles</span>
+        <h2>Indicadores en ${escapeHtml(topicName)}</h2>
+        <p>Series inventariadas para este tema, organizadas por subárea. Cada línea mantiene separada la fuente y descarga su Excel OVE correspondiente.</p>
+      </div>
+      <div class="download-row key-downloads">
+        <a href="${indicatorInventoryDownloads.csv}" download>CSV</a>
+        <a href="${indicatorInventoryDownloads.json}" download>JSON</a>
+        <a href="${indicatorInventoryDownloads.excel}" download>Excel</a>
+      </div>
+    </div>
+    <div class="indicator-controls indicator-controls-topic">
+      <label>
+        <span>Tema</span>
+        <select data-indicator-topic disabled></select>
+      </label>
+      <label>
+        <span>Subárea</span>
+        <select data-indicator-subarea></select>
+      </label>
+      <label>
+        <span>Indicador</span>
+        <select data-indicator-name></select>
+      </label>
+      <label>
+        <span>Buscar</span>
+        <input type="search" data-indicator-search placeholder="PIB, inflación, empleo...">
+      </label>
+    </div>
+    <div class="indicator-summary" data-indicator-summary></div>
+    <div class="indicator-results" data-indicator-results>
+      <p class="source-note">Cargando indicadores de ${escapeHtml(topicName)}.</p>
+    </div>
+  </article>`;
 }
 
 function topicDownloads(topic, downloads) {
@@ -4150,148 +4208,169 @@ function hydrateKeyDashboard() {
 }
 
 async function hydrateIndicatorExplorer() {
-  const explorer = document.querySelector("[data-indicator-explorer]");
-  if (!explorer) return;
-
-  const topicMenu = document.querySelector("[data-indicator-topic-menu]");
-  const topicSelect = explorer.querySelector("[data-indicator-topic]");
-  const subareaSelect = explorer.querySelector("[data-indicator-subarea]");
-  const indicatorSelect = explorer.querySelector("[data-indicator-name]");
-  const searchInput = explorer.querySelector("[data-indicator-search]");
-  const summary = explorer.querySelector("[data-indicator-summary]");
-  const results = explorer.querySelector("[data-indicator-results]");
+  const explorers = [...document.querySelectorAll("[data-indicator-explorer]")];
+  const topicBadges = [...document.querySelectorAll("[data-topic-indicator-count]")];
+  if (!explorers.length && !topicBadges.length) return;
 
   try {
-    const response = await fetch(indicatorInventoryDownloads.json, { cache: "no-store" });
-    if (!response.ok) throw new Error("Indicator inventory unavailable");
-    const inventory = await response.json();
+    const inventory = await getIndicatorInventory();
     const records = inventory.records || [];
     const topics = inventory.topics || [];
-
     const countForTopic = topic => records.filter(row => row.tema === topic).length;
-    const countForSubarea = (topic, subarea) => records.filter(row => row.tema === topic && row.subarea === subarea).length;
     const unique = values => [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
     const option = (value, label, count) => `<option value="${escapeHtml(value)}">${escapeHtml(label)}${typeof count === "number" ? ` (${count})` : ""}</option>`;
-    const activeTopic = () => topicSelect.value || topics[0]?.tema || "";
-    const activeSubarea = () => subareaSelect.value || "Todas";
 
-    const renderTopicMenu = () => {
-      if (!topicMenu) return;
-      const selected = activeTopic();
-      const links = topics.map((topic, index) => {
-        const isSelected = topic.tema === selected || (!selected && index === 0);
-        return `<button class="${isSelected ? "is-selected" : ""}" type="button" data-topic-choice="${escapeHtml(topic.tema)}">
-          ${icon(index === 3 ? "trend" : "database")}<span>${escapeHtml(topic.tema)}</span><strong>${formatInteger(topic.count || countForTopic(topic.tema))}</strong>
-        </button>`;
-      }).join("");
-      const panel = topicMenu.querySelector(".filter-panel")?.outerHTML || "";
-      topicMenu.innerHTML = `<h3>Temas OVE</h3>${links}${panel}`;
-      topicMenu.querySelectorAll("[data-topic-choice]").forEach(button => {
-        button.addEventListener("click", () => {
-          topicSelect.value = button.getAttribute("data-topic-choice");
-          populateSubareas();
-          renderExplorer();
-          trackAnalytics(analyticsEvents.dashboard, { action: "indicator_topic", detail: topicSelect.value });
+    topicBadges.forEach(badge => {
+      const topicName = topicInventoryName(badge.getAttribute("data-topic-indicator-count"));
+      badge.textContent = `${formatInteger(countForTopic(topicName))} indicadores`;
+    });
+
+    explorers.forEach((explorer, explorerIndex) => {
+      const topicMenu = explorerIndex === 0 ? document.querySelector("[data-indicator-topic-menu]") : null;
+      const topicSelect = explorer.querySelector("[data-indicator-topic]");
+      const subareaSelect = explorer.querySelector("[data-indicator-subarea]");
+      const indicatorSelect = explorer.querySelector("[data-indicator-name]");
+      const searchInput = explorer.querySelector("[data-indicator-search]");
+      const summary = explorer.querySelector("[data-indicator-summary]");
+      const results = explorer.querySelector("[data-indicator-results]");
+      const fixedTopic = topicInventoryName(explorer.getAttribute("data-indicator-topic-key"));
+
+      if (!topicSelect || !subareaSelect || !indicatorSelect || !searchInput || !summary || !results) return;
+
+      const countForSubarea = (topic, subarea) => records.filter(row => row.tema === topic && row.subarea === subarea).length;
+      const activeTopic = () => fixedTopic || topicSelect.value || topics[0]?.tema || "";
+      const activeSubarea = () => subareaSelect.value || "Todas";
+
+      const renderTopicMenu = () => {
+        if (!topicMenu) return;
+        const selected = activeTopic();
+        const links = topics.map((topic, index) => {
+          const isSelected = topic.tema === selected || (!selected && index === 0);
+          return `<button class="${isSelected ? "is-selected" : ""}" type="button" data-topic-choice="${escapeHtml(topic.tema)}">
+            ${icon(index === 3 ? "trend" : "database")}<span>${escapeHtml(topic.tema)}</span><strong>${formatInteger(topic.count || countForTopic(topic.tema))}</strong>
+          </button>`;
+        }).join("");
+        const panel = topicMenu.querySelector(".filter-panel")?.outerHTML || "";
+        topicMenu.innerHTML = `<h3>Temas OVE</h3>${links}${panel}`;
+        topicMenu.querySelectorAll("[data-topic-choice]").forEach(button => {
+          button.addEventListener("click", () => {
+            topicSelect.value = button.getAttribute("data-topic-choice");
+            populateSubareas();
+            renderExplorer();
+            trackAnalytics(analyticsEvents.dashboard, { action: "indicator_topic", detail: topicSelect.value });
+          });
         });
-      });
-    };
+      };
 
-    const populateTopics = () => {
-      topicSelect.innerHTML = topics.map(topic => option(topic.tema, topic.tema, topic.count || countForTopic(topic.tema))).join("");
-      const economy = topics.find(topic => topic.tema === "Economía");
-      topicSelect.value = economy?.tema || topics[0]?.tema || "";
-    };
+      const populateTopics = () => {
+        if (fixedTopic) {
+          topicSelect.innerHTML = option(fixedTopic, fixedTopic, countForTopic(fixedTopic));
+          topicSelect.value = fixedTopic;
+          return;
+        }
+        topicSelect.innerHTML = topics.map(topic => option(topic.tema, topic.tema, topic.count || countForTopic(topic.tema))).join("");
+        const economy = topics.find(topic => topic.tema === "Economía");
+        topicSelect.value = economy?.tema || topics[0]?.tema || "";
+      };
 
-    const populateSubareas = () => {
-      const topic = activeTopic();
-      const configured = topics.find(item => item.tema === topic)?.subareas?.map(item => item.subarea) || [];
-      const fromRecords = unique(records.filter(row => row.tema === topic).map(row => row.subarea));
-      const subareas = unique([...configured, ...fromRecords]);
-      subareaSelect.innerHTML = option("Todas", "Todas las subáreas", countForTopic(topic)) +
-        subareas.map(subarea => option(subarea, subarea, countForSubarea(topic, subarea))).join("");
-      subareaSelect.value = subareas.includes("Actividad económica") ? "Actividad económica" : "Todas";
-      populateIndicators();
-      renderTopicMenu();
-    };
+      const populateSubareas = () => {
+        const topic = activeTopic();
+        const configured = topics.find(item => item.tema === topic)?.subareas?.map(item => item.subarea) || [];
+        const fromRecords = unique(records.filter(row => row.tema === topic).map(row => row.subarea));
+        const subareas = unique([...configured, ...fromRecords]);
+        subareaSelect.innerHTML = option("Todas", "Todas las subáreas", countForTopic(topic)) +
+          subareas.map(subarea => option(subarea, subarea, countForSubarea(topic, subarea))).join("");
+        subareaSelect.value = subareas.includes("Actividad económica") ? "Actividad económica" : "Todas";
+        populateIndicators();
+        renderTopicMenu();
+      };
 
-    const populateIndicators = () => {
-      const topic = activeTopic();
-      const subarea = activeSubarea();
-      const scoped = records.filter(row => row.tema === topic && (subarea === "Todas" || row.subarea === subarea));
-      const indicators = unique(scoped.map(row => row.indicador));
-      indicatorSelect.innerHTML = option("Todos", "Todos los indicadores", scoped.length) +
-        indicators.map(indicator => option(indicator, indicator)).join("");
-      indicatorSelect.value = "Todos";
-    };
+      const populateIndicators = () => {
+        const topic = activeTopic();
+        const subarea = activeSubarea();
+        const scoped = records.filter(row => row.tema === topic && (subarea === "Todas" || row.subarea === subarea));
+        const indicators = unique(scoped.map(row => row.indicador));
+        indicatorSelect.innerHTML = option("Todos", "Todos los indicadores", scoped.length) +
+          indicators.map(indicator => option(indicator, indicator)).join("");
+        indicatorSelect.value = "Todos";
+      };
 
-    const filteredRecords = () => {
-      const topic = activeTopic();
-      const subarea = activeSubarea();
-      const indicator = indicatorSelect.value;
-      const query = normalizeSearchText(searchInput.value);
-      return records.filter(row => {
-        const matchesTopic = row.tema === topic;
-        const matchesSubarea = subarea === "Todas" || row.subarea === subarea;
-        const matchesIndicator = indicator === "Todos" || row.indicador === indicator;
-        const text = normalizeSearchText([row.indicador, row.indicador_original, row.codigo, row.fuente, row.subarea].join(" "));
-        const matchesSearch = !query || text.includes(query);
-        return matchesTopic && matchesSubarea && matchesIndicator && matchesSearch;
-      });
-    };
+      const filteredRecords = () => {
+        const topic = activeTopic();
+        const subarea = activeSubarea();
+        const indicator = indicatorSelect.value;
+        const query = normalizeSearchText(searchInput.value);
+        return records.filter(row => {
+          const matchesTopic = row.tema === topic;
+          const matchesSubarea = subarea === "Todas" || row.subarea === subarea;
+          const matchesIndicator = indicator === "Todos" || row.indicador === indicator;
+          const text = normalizeSearchText([row.indicador, row.indicador_original, row.codigo, row.fuente, row.subarea].join(" "));
+          const matchesSearch = !query || text.includes(query);
+          return matchesTopic && matchesSubarea && matchesIndicator && matchesSearch;
+        });
+      };
 
-    const renderExplorer = () => {
-      const rows = filteredRecords();
-      const visible = rows.slice(0, 120);
-      const sourceCount = new Set(rows.map(row => row.fuente)).size;
-      summary.innerHTML = [
-        ["Indicadores", formatInteger(rows.length), "Filtrados por la selección actual"],
-        ["Fuentes", formatInteger(sourceCount), "Cada fuente aparece separada"],
-        ["Subárea", activeSubarea(), activeTopic()]
-      ].map(([label, value, text]) => `<div class="indicator-summary-item"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong><small>${escapeHtml(text)}</small></div>`).join("");
+      const renderExplorer = () => {
+        const rows = filteredRecords();
+        const visible = rows.slice(0, fixedTopic ? 60 : 120);
+        const sourceCount = new Set(rows.map(row => row.fuente)).size;
+        summary.innerHTML = [
+          ["Indicadores", formatInteger(rows.length), "Filtrados por la selección actual"],
+          ["Fuentes", formatInteger(sourceCount), "Cada fuente aparece separada"],
+          ["Subárea", activeSubarea(), activeTopic()]
+        ].map(([label, value, text]) => `<div class="indicator-summary-item"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong><small>${escapeHtml(text)}</small></div>`).join("");
 
-      if (!rows.length) {
-        results.innerHTML = `<p class="source-note">No hay indicadores para esa combinación. Prueba otra subárea o una búsqueda más amplia.</p>`;
-        return;
-      }
+        if (!rows.length) {
+          results.innerHTML = `<p class="source-note">No hay indicadores para esa combinación. Prueba otra subárea o una búsqueda más amplia.</p>`;
+          return;
+        }
 
-      results.innerHTML = `${visible.map(row => `<article class="indicator-result-card">
-        <div>
-          <span class="source-tag">${escapeHtml(row.fuente)}</span>
-          <h3>${escapeHtml(row.indicador)}</h3>
-          <p>${escapeHtml(row.subarea)} · ${escapeHtml(row.codigo || "Sin código")}</p>
-        </div>
-        <dl class="source-meta">
-          <div><dt>Periodo</dt><dd>${escapeHtml(row.primer_periodo || "N/D")} - ${escapeHtml(row.ultimo_periodo || "N/D")}</dd></div>
-          <div><dt>Registros</dt><dd>${escapeHtml(row.registros_con_valor || row.registros || "N/D")}</dd></div>
-          <div><dt>Frecuencia</dt><dd>${escapeHtml(row.frecuencia || "N/D")}</dd></div>
-          <div><dt>Estado</dt><dd>${escapeHtml(row.estado || "Inventariado")}</dd></div>
-        </dl>
-        <div class="indicator-card-actions">
-          <a class="button button-small" href="${escapeHtml(row.excel || row.archivo_origen || indicatorInventoryDownloads.excel)}" download>Excel OVE ${icon("download")}</a>
-          <span class="tiny">Fuente no mezclada: ${escapeHtml(row.fuente)}</span>
-        </div>
-      </article>`).join("")}
-      ${rows.length > visible.length ? `<p class="source-note">Mostrando ${visible.length} de ${rows.length}. Usa el buscador o el selector de indicador para acotar la lista.</p>` : ""}`;
-      wireAnalytics(results);
-    };
+        results.innerHTML = `${visible.map(row => `<article class="indicator-result-card">
+          <div>
+            <span class="source-tag">${escapeHtml(row.fuente)}</span>
+            <h3>${escapeHtml(row.indicador)}</h3>
+            <p>${escapeHtml(row.subarea)} · ${escapeHtml(row.codigo || "Sin código")}</p>
+          </div>
+          <dl class="source-meta">
+            <div><dt>Periodo</dt><dd>${escapeHtml(row.primer_periodo || "N/D")} - ${escapeHtml(row.ultimo_periodo || "N/D")}</dd></div>
+            <div><dt>Registros</dt><dd>${escapeHtml(row.registros_con_valor || row.registros || "N/D")}</dd></div>
+            <div><dt>Frecuencia</dt><dd>${escapeHtml(row.frecuencia || "N/D")}</dd></div>
+            <div><dt>Estado</dt><dd>${escapeHtml(row.estado || "Inventariado")}</dd></div>
+          </dl>
+          <div class="indicator-card-actions">
+            <a class="button button-small" href="${escapeHtml(row.excel || row.archivo_origen || indicatorInventoryDownloads.excel)}" download>Excel OVE ${icon("download")}</a>
+            <span class="tiny">Fuente no mezclada: ${escapeHtml(row.fuente)}</span>
+          </div>
+        </article>`).join("")}
+        ${rows.length > visible.length ? `<p class="source-note">Mostrando ${visible.length} de ${rows.length}. Usa el buscador o el selector de indicador para acotar la lista.</p>` : ""}`;
+        wireAnalytics(results);
+      };
 
-    populateTopics();
-    populateSubareas();
-    renderExplorer();
-
-    topicSelect.addEventListener("change", () => {
+      populateTopics();
       populateSubareas();
       renderExplorer();
+
+      topicSelect.addEventListener("change", () => {
+        populateSubareas();
+        renderExplorer();
+      });
+      subareaSelect.addEventListener("change", () => {
+        populateIndicators();
+        renderExplorer();
+      });
+      indicatorSelect.addEventListener("change", renderExplorer);
+      searchInput.addEventListener("input", renderExplorer);
     });
-    subareaSelect.addEventListener("change", () => {
-      populateIndicators();
-      renderExplorer();
-    });
-    indicatorSelect.addEventListener("change", renderExplorer);
-    searchInput.addEventListener("input", renderExplorer);
   } catch {
-    results.innerHTML = `<p class="source-note">No fue posible cargar el inventario clasificado. Revisa que el archivo JSON del inventario haya sido generado por el workflow.</p>`;
-    summary.innerHTML = "";
+    explorers.forEach(explorer => {
+      const results = explorer.querySelector("[data-indicator-results]");
+      const summary = explorer.querySelector("[data-indicator-summary]");
+      if (results) results.innerHTML = `<p class="source-note">No fue posible cargar el inventario clasificado. Revisa que el archivo JSON del inventario haya sido generado por el workflow.</p>`;
+      if (summary) summary.innerHTML = "";
+    });
+    topicBadges.forEach(badge => {
+      badge.textContent = "Indicadores no disponibles";
+    });
   }
 }
 

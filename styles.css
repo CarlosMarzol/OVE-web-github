@@ -622,6 +622,12 @@ h3 {
   font-weight: 850;
 }
 
+.topic-card small + small {
+  color: var(--ink);
+  background: #fff8df;
+  border: 1px solid rgba(255, 194, 14, 0.48);
+}
+
 .topic-card:hover {
   color: var(--topic-highlight);
   transform: translateY(-4px);
@@ -2043,6 +2049,10 @@ textarea.field {
   box-shadow: var(--shadow);
 }
 
+.topic-indicator-explorer {
+  margin-top: 34px;
+}
+
 .indicator-loading {
   padding: 12px;
   color: var(--muted);
@@ -2082,6 +2092,12 @@ textarea.field {
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 6px;
+}
+
+.indicator-controls select:disabled {
+  color: var(--ink);
+  background: #f8fbff;
+  opacity: 1;
 }
 
 .indicator-summary {
