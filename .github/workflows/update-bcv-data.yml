@@ -102,6 +102,11 @@ jobs:
             python scripts/ine_refresh.py
             python scripts/cepal_refresh.py
             python scripts/unctad_refresh.py
+          elif [ "${{ steps.group.outputs.value }}" = "daily" ]; then
+            python scripts/bcv_ingest.py --group daily
+            python scripts/bcv_ingest.py --group bcv_producto_interno_bruto
+            python scripts/bcv_workbook_extract.py
+            python scripts/build_bcv_pib_operation_excels.py
           else
             python scripts/bcv_ingest.py --group "${{ steps.group.outputs.value }}"
             if [ "${{ steps.group.outputs.value }}" = "monthly" ]; then

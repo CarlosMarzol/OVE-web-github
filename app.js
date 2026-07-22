@@ -3142,6 +3142,15 @@ function economyPibOperationPage(slug) {
   const operation = pibOperations[slug] || pibOperations["pib-precios-corrientes-moneda-nacional"];
   const seriesRows = operation.seriesRows || [];
   const relatedDownloads = operation.relatedDownloads || [];
+  const relatedFormatLinks = item => {
+    const csv = item.href.replace("/excel/", "/csv/").replace(/\.xlsx$/, ".csv");
+    const json = item.href.replace("/excel/", "/json/").replace(/\.xlsx$/, ".json");
+    return `<span class="operation-data-formats">
+      <a href="${item.href}" download>Excel</a>
+      <a href="${csv}" download>CSV</a>
+      <a href="${json}" download>JSON</a>
+    </span>`;
+  };
   const excelHref = operation.excel || operation.download;
   const excelLabel = operation.excelLabel || "Excel OVE";
   return `<div class="page operation-page">
@@ -3241,11 +3250,29 @@ function economyPibOperationPage(slug) {
             <section>
               <h2>Acceso directo a...</h2>
               <a href="${excelHref}" download>${escapeHtml(excelLabel)}</a>
+              ${relatedDownloads.length ? `<a href="#datos-bcv">Datos BCV oficiales</a>` : ""}
               <a href="#resultados">Tabla de resultados</a>
               <a href="#metodologia">Metodología</a>
             </section>
           </aside>
         </div>
+        ${relatedDownloads.length ? `<section class="operation-info-block operation-bcv-data" id="datos-bcv">
+          <div class="operation-table-title">
+            <strong>Datos oficiales BCV disponibles en OVE</strong>
+            <span>Actualización automática</span>
+          </div>
+          <p>Series normalizadas desde los workbooks oficiales enlazados por la página Producto Interno Bruto del Banco Central de Venezuela. OVE conserva fuente, periodo, unidad, frecuencia y archivo de origen.</p>
+          <div class="operation-bcv-list">
+            ${relatedDownloads.map(item => `<article>
+              <div>
+                <strong>${escapeHtml(item.label)}</strong>
+                <small>${escapeHtml(item.meta)}</small>
+              </div>
+              ${relatedFormatLinks(item)}
+            </article>`).join("")}
+          </div>
+          <a class="operation-catalog-link" href="assets/data/bcv/catalog/ove_bcv_producto_interno_bruto_operaciones.json" download>${icon("database")} Catálogo BCV PIB OVE</a>
+        </section>` : ""}
         <section class="operation-consulted">
           <h2>Tablas más consultadas</h2>
           <a class="operation-download-card" href="${excelHref}" download>
