@@ -691,6 +691,109 @@ h3 {
   gap: 12px;
 }
 
+.economy-base {
+  margin-top: 28px;
+  padding: 24px;
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--yellow);
+  border-radius: var(--radius);
+}
+
+.economy-base-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: start;
+}
+
+.economy-base-head h2 {
+  margin: 6px 0 8px;
+  color: var(--blue-700);
+  font-size: 1.45rem;
+}
+
+.economy-base-head p {
+  max-width: 790px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.economy-base-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.economy-operation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.economy-operation-card {
+  display: grid;
+  align-content: space-between;
+  gap: 16px;
+  min-height: 305px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #d5e1f0;
+  border-radius: var(--radius);
+}
+
+.economy-operation-title {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.economy-operation-title h3 {
+  margin: 0 0 7px;
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.economy-operation-title p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.economy-operation-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.economy-operation-stats span {
+  min-width: 0;
+  padding: 10px;
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.economy-operation-stats strong,
+.economy-operation-stats small {
+  display: block;
+}
+
+.economy-operation-stats strong {
+  color: var(--blue-700);
+  font-size: 1.05rem;
+}
+
+.economy-operation-stats small {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 750;
+}
+
 .topic-detail {
   background: #fff;
   border: 1px solid var(--line);
@@ -3302,6 +3405,23 @@ th {
   .topic-detail-head {
     grid-template-columns: 1fr;
     padding: 18px;
+  }
+
+  .economy-base {
+    padding: 18px;
+  }
+
+  .economy-base-head,
+  .economy-operation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .economy-base-actions {
+    justify-content: stretch;
+  }
+
+  .economy-operation-card {
+    min-height: 0;
   }
 
   .topic-detail-head img {

@@ -621,6 +621,33 @@ const topicData = [
   ["experiments", "Estadísticas experimentales", "assets/topics/topic-experiments.png", "#/datos/estadisticas-experimentales"]
 ];
 
+const economyOperations = [
+  {
+    id: "activity",
+    title: "Actividad económica",
+    subarea: "Actividad económica",
+    description: "PIB, cuentas nacionales, crecimiento real, ingreso nacional, ahorro e indicadores de producción agregada.",
+    icon: "trend",
+    focus: "PIB"
+  },
+  {
+    id: "prices",
+    title: "Precios e inflación",
+    subarea: "Precios e inflación",
+    description: "Inflación, deflactores, precios corrientes, PPA, IPC y variables monetarias vinculadas al poder de compra.",
+    icon: "coin",
+    focus: "inflación"
+  },
+  {
+    id: "external",
+    title: "Sector externo y finanzas",
+    subarea: "Sector externo y finanzas",
+    description: "Tipo de cambio, comercio exterior, cuenta corriente, inversión extranjera, deuda, finanzas y reportes comparables.",
+    icon: "globe",
+    focus: "tipo de cambio"
+  }
+];
+
 const agricultureEnvironmentGroups = [
   {
     title: "Agricultura",
@@ -1441,10 +1468,10 @@ function topicsSection() {
     <div class="container">
       <div class="topic-panel">
         <h2 id="topic-title">Datos por temas</h2>
-        ${exampleNotice("Temas y operaciones propios en elaboración. No equivalen a datos publicados; sirven como mapa de construcción del Observatorio.")}
+        ${exampleNotice("Explore las estadísticas disponibles del OVE por tema, operación, fuente, frecuencia y último dato publicado. Cada tema conduce al inventario filtrado y a sus descargas ciudadanas.")}
         <div class="topic-stats" aria-label="Estadisticas de datos por temas">
           <span><strong>${stats.topics}</strong> temas</span>
-          <span><strong>${formatInteger(stats.operations)}</strong> operaciones en elaboración</span>
+          <span><strong>${formatInteger(stats.operations)}</strong> operaciones organizadas</span>
           <span><strong>${stats.worldBankAreas}</strong> areas Banco Mundial</span>
           <span><strong>${formatInteger(stats.worldBankRecords)}</strong> registros fuente</span>
         </div>
@@ -2747,6 +2774,7 @@ function keyIndicatorDownloadSection() {
 function topicDetailPage(topicKey) {
   const topic = topicDetails[topicKey] || topicDetails.agriculture;
   const downloads = keyIndicatorSeries.filter(series => (topic.keyIndicators || []).includes(series.id));
+  const economyPilot = topicKey === "economy" ? economyOperationsSection() : "";
 
   return `<div class="page">
     ${pageHero({
@@ -2769,6 +2797,7 @@ function topicDetailPage(topicKey) {
         <div class="topic-accordion">
           ${topic.groups.map((group, index) => topicGroup(group, index === 0)).join("")}
         </div>
+        ${economyPilot}
         ${topicIndicatorExplorer(topicKey)}
         ${downloads.length ? topicDownloads(topic, downloads) : ""}
       </div>
@@ -2780,7 +2809,7 @@ function topicDetailPage(topicKey) {
 function topicIndicatorExplorer(topicKey) {
   const topic = topicDetails[topicKey] || topicDetails.agriculture;
   const topicName = topicInventoryName(topicKey) || topic.title;
-  return `<article class="indicator-explorer topic-indicator-explorer" data-indicator-explorer data-indicator-topic-key="${escapeHtml(topicKey)}">
+  return `<article id="indicadores-tema" class="indicator-explorer topic-indicator-explorer" data-indicator-explorer data-indicator-topic-key="${escapeHtml(topicKey)}">
     <div class="native-dashboard-head">
       <div>
         <span class="eyebrow">Indicadores disponibles</span>
@@ -2816,6 +2845,43 @@ function topicIndicatorExplorer(topicKey) {
       <p class="source-note">Cargando indicadores de ${escapeHtml(topicName)}.</p>
     </div>
   </article>`;
+}
+
+function economyOperationsSection() {
+  return `<section class="economy-base" aria-labelledby="economy-base-title" data-economy-operations>
+    <div class="economy-base-head">
+      <div>
+        <span class="eyebrow">Piloto OVEbase</span>
+        <h2 id="economy-base-title">Economía organizada por operaciones estadísticas</h2>
+        <p>Entrada ciudadana al inventario económico ya disponible. Cada operación agrupa indicadores por fuente, periodo y descarga para llegar al dato sin navegar una lista plana.</p>
+      </div>
+      <div class="economy-base-actions">
+        <button class="button button-primary" type="button" data-operation-all>Ver todos los indicadores ${arrow()}</button>
+        <a class="button" href="${indicatorInventoryDownloads.excel}" download>Catálogo completo ${icon("download")}</a>
+      </div>
+    </div>
+    <div class="economy-operation-grid">
+      ${economyOperations.map(operation => `<article class="economy-operation-card" data-economy-operation="${operation.id}" data-operation-subarea="${escapeHtml(operation.subarea)}">
+        <div class="economy-operation-title">
+          <span class="line-icon">${icon(operation.icon)}</span>
+          <div>
+            <h3>${operation.title}</h3>
+            <p>${operation.description}</p>
+          </div>
+        </div>
+        <div class="economy-operation-stats" aria-label="Resumen de ${operation.title}">
+          <span><strong data-operation-count>...</strong><small>indicadores</small></span>
+          <span><strong data-operation-downloads>...</strong><small>Excel OVE</small></span>
+          <span><strong data-operation-sources>...</strong><small>fuentes</small></span>
+        </div>
+        <div class="download-row">
+          <button class="button button-small" type="button" data-operation-open="${escapeHtml(operation.subarea)}">Ver indicadores</button>
+          <button class="button button-small button-ghost" type="button" data-operation-search="${escapeHtml(operation.focus)}">Buscar ${escapeHtml(operation.focus)}</button>
+        </div>
+        <p class="tiny" data-operation-latest>Calculando último dato disponible...</p>
+      </article>`).join("")}
+    </div>
+  </section>`;
 }
 
 function topicDownloads(topic, downloads) {
@@ -4219,6 +4285,30 @@ async function hydrateIndicatorExplorer() {
     const countForTopic = topic => records.filter(row => row.tema === topic).length;
     const unique = values => [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
     const option = (value, label, count) => `<option value="${escapeHtml(value)}">${escapeHtml(label)}${typeof count === "number" ? ` (${count})` : ""}</option>`;
+    const latestPeriod = rows => {
+      const periods = unique(rows.map(row => row.ultimo_periodo || row.primer_periodo));
+      periods.sort((a, b) => b.localeCompare(a, "es", { numeric: true }));
+      return periods[0] || "N/D";
+    };
+
+    document.querySelectorAll("[data-economy-operation]").forEach(card => {
+      const subarea = card.getAttribute("data-operation-subarea");
+      const scoped = records.filter(row => row.tema === "Economía" && row.subarea === subarea);
+      const sources = unique(scoped.map(row => row.fuente));
+      const downloads = scoped.filter(row => row.excel).length;
+      const countNode = card.querySelector("[data-operation-count]");
+      const downloadsNode = card.querySelector("[data-operation-downloads]");
+      const sourcesNode = card.querySelector("[data-operation-sources]");
+      const latestNode = card.querySelector("[data-operation-latest]");
+      if (countNode) countNode.textContent = formatInteger(scoped.length);
+      if (downloadsNode) downloadsNode.textContent = formatInteger(downloads);
+      if (sourcesNode) sourcesNode.textContent = formatInteger(sources.length);
+      if (latestNode) {
+        latestNode.textContent = sources.length
+          ? `Último dato: ${latestPeriod(scoped)}. Fuentes: ${sources.slice(0, 3).join(", ")}${sources.length > 3 ? "..." : ""}.`
+          : "Operación pendiente de carga en el inventario.";
+      }
+    });
 
     topicBadges.forEach(badge => {
       const topicName = topicInventoryName(badge.getAttribute("data-topic-indicator-count"));
@@ -4354,9 +4444,51 @@ async function hydrateIndicatorExplorer() {
         wireAnalytics(results);
       };
 
+      const wireEconomyOperations = () => {
+        if (fixedTopic !== "Economía") return;
+        document.querySelectorAll("[data-operation-all]").forEach(button => {
+          if (button.dataset.operationWired === "true") return;
+          button.dataset.operationWired = "true";
+          button.addEventListener("click", () => {
+            subareaSelect.value = "Todas";
+            indicatorSelect.value = "Todos";
+            searchInput.value = "";
+            populateIndicators();
+            renderExplorer();
+            document.getElementById("indicadores-tema")?.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
+          });
+        });
+        document.querySelectorAll("[data-operation-open]").forEach(button => {
+          if (button.dataset.operationWired === "true") return;
+          button.dataset.operationWired = "true";
+          button.addEventListener("click", () => {
+            const subarea = button.getAttribute("data-operation-open");
+            if ([...subareaSelect.options].some(item => item.value === subarea)) {
+              subareaSelect.value = subarea;
+            }
+            indicatorSelect.value = "Todos";
+            searchInput.value = "";
+            populateIndicators();
+            renderExplorer();
+            document.getElementById("indicadores-tema")?.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
+          });
+        });
+        document.querySelectorAll("[data-operation-search]").forEach(button => {
+          if (button.dataset.operationWired === "true") return;
+          button.dataset.operationWired = "true";
+          button.addEventListener("click", () => {
+            searchInput.value = button.getAttribute("data-operation-search") || "";
+            indicatorSelect.value = "Todos";
+            renderExplorer();
+            document.getElementById("indicadores-tema")?.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
+          });
+        });
+      };
+
       populateTopics();
       populateSubareas();
       renderExplorer();
+      wireEconomyOperations();
 
       topicSelect.addEventListener("change", () => {
         populateSubareas();
