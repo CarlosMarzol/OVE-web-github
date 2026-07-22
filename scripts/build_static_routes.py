@@ -91,21 +91,41 @@ ROUTE_META = {
     "PIB precios corrientes, moneda nacional | OVE",
     "Ficha estadística OVE del Producto interno bruto a precios corrientes en moneda nacional.",
   ),
+  "datos/economia/pib-precios-corrientes-moneda-nacional/preguntas-frecuentes": (
+    "Preguntas frecuentes PIB precios corrientes, moneda nacional | OVE",
+    "Preguntas frecuentes sobre la serie OVE del PIB a precios corrientes en moneda nacional.",
+  ),
   "datos/economia/pib-precios-corrientes-dolares-estadounidenses": (
     "PIB precios corrientes, dólares estadounidenses | OVE",
     "Ficha estadística OVE del Producto interno bruto a precios corrientes en dólares estadounidenses.",
+  ),
+  "datos/economia/pib-precios-corrientes-dolares-estadounidenses/preguntas-frecuentes": (
+    "Preguntas frecuentes PIB precios corrientes, dólares estadounidenses | OVE",
+    "Preguntas frecuentes sobre la serie OVE del PIB a precios corrientes en dólares estadounidenses.",
   ),
   "datos/economia/pib-precios-constantes-moneda-nacional": (
     "PIB precios constantes, moneda nacional | OVE",
     "Ficha estadística OVE del Producto interno bruto a precios constantes en moneda nacional.",
   ),
+  "datos/economia/pib-precios-constantes-moneda-nacional/preguntas-frecuentes": (
+    "Preguntas frecuentes PIB precios constantes, moneda nacional | OVE",
+    "Preguntas frecuentes sobre la serie OVE del PIB a precios constantes en moneda nacional.",
+  ),
   "datos/economia/pib-precios-constantes-dolares-estadounidenses": (
     "PIB precios constantes, dólares estadounidenses | OVE",
     "Ficha estadística OVE del Producto interno bruto a precios constantes en dólares estadounidenses.",
   ),
+  "datos/economia/pib-precios-constantes-dolares-estadounidenses/preguntas-frecuentes": (
+    "Preguntas frecuentes PIB precios constantes, dólares estadounidenses | OVE",
+    "Preguntas frecuentes sobre la serie OVE del PIB a precios constantes en dólares estadounidenses.",
+  ),
   "datos/economia/pib-precios-corrientes-ppa-dolares-internacionales": (
     "PIB precios corrientes PPA, dólares internacionales | OVE",
     "Ficha estadística OVE del Producto interno bruto a precios corrientes PPA en dólares internacionales.",
+  ),
+  "datos/economia/pib-precios-corrientes-ppa-dolares-internacionales/preguntas-frecuentes": (
+    "Preguntas frecuentes PIB precios corrientes PPA | OVE",
+    "Preguntas frecuentes sobre la serie OVE del PIB a precios corrientes PPA en dólares internacionales.",
   ),
   "datos/industria-energia-construccion": (
     "Industria, energía y construcción | OVE",
