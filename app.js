@@ -19,7 +19,11 @@ const routes = {
   "/datos/ciencia-tecnologia": () => topicDetailPage("science"),
   "/datos/demografia-poblacion": () => topicDetailPage("demography"),
   "/datos/economia": () => topicDetailPage("economy"),
-  "/datos/economia/pib-precios-corrientes-moneda-nacional": economyPibCurrentNationalPage,
+  "/datos/economia/pib-precios-corrientes-moneda-nacional": () => economyPibOperationPage("pib-precios-corrientes-moneda-nacional"),
+  "/datos/economia/pib-precios-corrientes-dolares-estadounidenses": () => economyPibOperationPage("pib-precios-corrientes-dolares-estadounidenses"),
+  "/datos/economia/pib-precios-constantes-moneda-nacional": () => economyPibOperationPage("pib-precios-constantes-moneda-nacional"),
+  "/datos/economia/pib-precios-constantes-dolares-estadounidenses": () => economyPibOperationPage("pib-precios-constantes-dolares-estadounidenses"),
+  "/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales": () => economyPibOperationPage("pib-precios-corrientes-ppa-dolares-internacionales"),
   "/datos/industria-energia-construccion": () => topicDetailPage("industry"),
   "/datos/mercado-laboral": () => topicDetailPage("labor"),
   "/datos/servicios": () => topicDetailPage("services"),
@@ -121,6 +125,22 @@ const routeMeta = {
   "/datos/economia/pib-precios-corrientes-moneda-nacional": {
     title: "PIB precios corrientes, moneda nacional | OVE",
     description: "Ficha estadística OVE del Producto interno bruto a precios corrientes en moneda nacional."
+  },
+  "/datos/economia/pib-precios-corrientes-dolares-estadounidenses": {
+    title: "PIB precios corrientes, dólares estadounidenses | OVE",
+    description: "Ficha estadística OVE del Producto interno bruto a precios corrientes en dólares estadounidenses."
+  },
+  "/datos/economia/pib-precios-constantes-moneda-nacional": {
+    title: "PIB precios constantes, moneda nacional | OVE",
+    description: "Ficha estadística OVE del Producto interno bruto a precios constantes en moneda nacional."
+  },
+  "/datos/economia/pib-precios-constantes-dolares-estadounidenses": {
+    title: "PIB precios constantes, dólares estadounidenses | OVE",
+    description: "Ficha estadística OVE del Producto interno bruto a precios constantes en dólares estadounidenses."
+  },
+  "/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales": {
+    title: "PIB precios corrientes PPA, dólares internacionales | OVE",
+    description: "Ficha estadística OVE del Producto interno bruto a precios corrientes PPA en dólares internacionales."
   },
   "/datos/industria-energia-construccion": {
     title: "Industria, energía y construcción | OVE",
@@ -682,10 +702,22 @@ const economyIneCategories = [
         label: "Producto interno bruto (PIB), precios corrientes, moneda nacional",
         href: "#/datos/economia/pib-precios-corrientes-moneda-nacional"
       },
-      "Producto interno bruto (PIB), precios corrientes, dólares estadounidenses",
-      "Producto interno bruto (PIB), precios constantes, moneda nacional",
-      "Producto interno bruto (PIB), precios constantes, dólares estadounidenses",
-      "Producto interno bruto (PIB), precios corrientes, paridad de poder adquisitivo (PPA), dólares internacionales"
+      {
+        label: "Producto interno bruto (PIB), precios corrientes, dólares estadounidenses",
+        href: "#/datos/economia/pib-precios-corrientes-dolares-estadounidenses"
+      },
+      {
+        label: "Producto interno bruto (PIB), precios constantes, moneda nacional",
+        href: "#/datos/economia/pib-precios-constantes-moneda-nacional"
+      },
+      {
+        label: "Producto interno bruto (PIB), precios constantes, dólares estadounidenses",
+        href: "#/datos/economia/pib-precios-constantes-dolares-estadounidenses"
+      },
+      {
+        label: "Producto interno bruto (PIB), precios corrientes, paridad de poder adquisitivo (PPA), dólares internacionales",
+        href: "#/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales"
+      }
     ]
   },
   {
@@ -704,18 +736,87 @@ const economyIneCategories = [
   }
 ];
 
-const pibCurrentNationalOperation = {
-  title: "Producto interno bruto (PIB), precios corrientes, moneda nacional",
-  shortTitle: "PIB a precios corrientes, moneda nacional",
-  source: "FMI - World Economic Outlook",
-  code: "NGDP",
-  frequency: "Anual",
-  latestPeriod: "2027",
-  publishedAt: "Base FMI WEO integrada al catálogo OVE",
-  latestValue: "184.820.483.420.000",
-  unit: "Moneda nacional, precios corrientes",
-  download: "/api/indicator-excel?id=fmi-world-economic-outlook__ngdp__annual__producto-interno-bruto-pib-precios-corrientes-moneda-nacional",
-  origin: "assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.csv"
+const pibOperations = {
+  "pib-precios-corrientes-moneda-nacional": {
+    title: "Producto interno bruto (PIB), precios corrientes, moneda nacional",
+    shortTitle: "PIB a precios corrientes, moneda nacional",
+    source: "FMI - World Economic Outlook",
+    code: "NGDP",
+    frequency: "Anual",
+    latestPeriod: "2027",
+    publishedAt: "Base FMI WEO integrada al catálogo OVE",
+    latestValue: "184.820.483.420.000",
+    unit: "Moneda nacional, precios corrientes",
+    tableTitle: "PIB, precios corrientes, moneda nacional",
+    summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes expresado en moneda nacional.",
+    download: "/api/indicator-excel?id=fmi-world-economic-outlook__ngdp__annual__producto-interno-bruto-pib-precios-corrientes-moneda-nacional",
+    origin: "assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.csv",
+    chartKind: "blue"
+  },
+  "pib-precios-corrientes-dolares-estadounidenses": {
+    title: "Producto interno bruto (PIB), precios corrientes, dólares estadounidenses",
+    shortTitle: "PIB a precios corrientes, dólares estadounidenses",
+    source: "FMI - World Economic Outlook",
+    code: "NGDPD",
+    frequency: "Anual",
+    latestPeriod: "2027",
+    publishedAt: "Base FMI WEO integrada al catálogo OVE",
+    latestValue: "117.908.128.000",
+    unit: "Dólares estadounidenses, precios corrientes",
+    tableTitle: "PIB, precios corrientes, dólares estadounidenses",
+    summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes expresado en dólares estadounidenses.",
+    download: "/api/indicator-excel?id=fmi-world-economic-outlook__ngdpd__annual__producto-interno-bruto-pib-precios-corrientes-dolar-estadounidense",
+    origin: "assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.csv",
+    chartKind: "yellow"
+  },
+  "pib-precios-constantes-moneda-nacional": {
+    title: "Producto interno bruto (PIB), precios constantes, moneda nacional",
+    shortTitle: "PIB a precios constantes, moneda nacional",
+    source: "CEPALSTAT - CEPAL",
+    code: "2194",
+    frequency: "Anual",
+    latestPeriod: "En normalización",
+    publishedAt: "Serie identificada en el catálogo OVE",
+    latestValue: "Pendiente",
+    unit: "Moneda nacional, precios constantes",
+    tableTitle: "PIB, precios constantes, moneda nacional",
+    summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios constantes expresado en moneda nacional.",
+    download: "/api/indicator-excel?id=cepalstat-cepal__2194__sin-frecuencia__producto-interno-bruto-anual-pib-por-objeto-del-gasto-a-precios-constantes-en-moneda-nacional",
+    origin: "assets/data/cepal/catalog/catalogo_dataset_web_ove_cepalstat.csv",
+    chartKind: "blue"
+  },
+  "pib-precios-constantes-dolares-estadounidenses": {
+    title: "Producto interno bruto (PIB), precios constantes, dólares estadounidenses",
+    shortTitle: "PIB a precios constantes, dólares estadounidenses",
+    source: "CEPALSTAT - CEPAL",
+    code: "2204",
+    frequency: "Anual",
+    latestPeriod: "2025",
+    publishedAt: "Base CEPALSTAT integrada al catálogo OVE",
+    latestValue: "94.368,65",
+    unit: "Dólares estadounidenses, precios constantes",
+    tableTitle: "PIB, precios constantes, dólares estadounidenses",
+    summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios constantes expresado en dólares estadounidenses.",
+    download: "/api/indicator-excel?id=cepalstat-cepal__2204__sin-frecuencia__producto-interno-bruto-pib-total-anual-a-precios-constantes-en-dolares",
+    origin: "assets/data/cepal/catalog/catalogo_dataset_web_ove_cepalstat.csv",
+    chartKind: "red"
+  },
+  "pib-precios-corrientes-ppa-dolares-internacionales": {
+    title: "Producto interno bruto (PIB), precios corrientes, paridad de poder adquisitivo (PPA), dólares internacionales",
+    shortTitle: "PIB a precios corrientes PPA, dólares internacionales",
+    source: "FMI - World Economic Outlook",
+    code: "PPPGDP",
+    frequency: "Anual",
+    latestPeriod: "2027",
+    publishedAt: "Base FMI WEO integrada al catálogo OVE",
+    latestValue: "275.547.798.000",
+    unit: "Dólares internacionales, PPA, precios corrientes",
+    tableTitle: "PIB, precios corrientes PPA, dólares internacionales",
+    summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes medido por paridad de poder adquisitivo.",
+    download: "/api/indicator-excel?id=fmi-world-economic-outlook__pppgdp__annual__producto-interno-bruto-pib-precios-corrientes-paridad-de-poder-adquisitivo-ppa-dolares-internaci",
+    origin: "assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.csv",
+    chartKind: "yellow"
+  }
 };
 
 const agricultureEnvironmentGroups = [
@@ -2928,8 +3029,8 @@ function economyIneCategory(category) {
   </details>`;
 }
 
-function economyPibCurrentNationalPage() {
-  const operation = pibCurrentNationalOperation;
+function economyPibOperationPage(slug) {
+  const operation = pibOperations[slug] || pibOperations["pib-precios-corrientes-moneda-nacional"];
   return `<div class="page operation-page">
     <section class="operation-topbar" aria-label="Navegación de operación estadística">
       <div class="container operation-topbar-inner">
@@ -2981,7 +3082,7 @@ function economyPibCurrentNationalPage() {
           <div>
             <h1>${escapeHtml(operation.title)}</h1>
             <p class="operation-date">${escapeHtml(operation.publishedAt)}</p>
-            <p>Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes expresado en moneda nacional. Esta página servirá como modelo para las demás opciones de PIB dentro de Cuentas económicas.</p>
+            <p>${escapeHtml(operation.summary)} Esta página forma parte de Cuentas económicas y mantiene la misma navegación de operación estadística para todas las opciones de PIB.</p>
             <div class="operation-inline-links">
               <a href="${operation.download}" download>${icon("download")} Descargar Excel OVE</a>
               <a href="${operation.origin}" download>${icon("database")} Catálogo fuente</a>
@@ -2991,7 +3092,7 @@ function economyPibCurrentNationalPage() {
         <div class="operation-content-grid">
           <article class="operation-results-card" id="resultados">
             <div class="operation-table-title">
-              <strong>PIB, precios corrientes, moneda nacional</strong>
+              <strong>${escapeHtml(operation.tableTitle)}</strong>
               <span>${escapeHtml(operation.frequency)}</span>
             </div>
             <table class="operation-latest-table">
@@ -3017,7 +3118,7 @@ function economyPibCurrentNationalPage() {
                 <strong>Serie disponible en el catálogo OVE</strong>
                 <span>La conexión completa de tabla y gráfico dinámico se hará en el siguiente paso.</span>
               </div>
-              ${lineChart("blue")}
+              ${lineChart(operation.chartKind)}
             </div>
           </article>
           <aside class="operation-side-panel">
@@ -3040,7 +3141,7 @@ function economyPibCurrentNationalPage() {
         </section>
         <section class="operation-info-block" id="metodologia">
           <h2>¿Sabías que...?</h2>
-          <p>El Producto interno bruto a precios corrientes mide el valor monetario de la producción final de bienes y servicios en una economía durante un período determinado, sin descontar el efecto de los precios.</p>
+          <p>El Producto interno bruto mide el valor de la producción final de bienes y servicios en una economía durante un período determinado. La lectura cambia según se consulte a precios corrientes, a precios constantes, en moneda nacional, en dólares estadounidenses o en paridad de poder adquisitivo.</p>
           <p>En esta ficha OVE se conserva la fuente, el código estadístico, la frecuencia, el último período disponible y el enlace de descarga para facilitar el acceso ciudadano.</p>
         </section>
         <section class="operation-info-block" id="mas-informacion">
