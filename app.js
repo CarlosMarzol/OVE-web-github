@@ -666,6 +666,42 @@ const economyOperations = [
   }
 ];
 
+const economyIneCategories = [
+  {
+    id: "accounts",
+    title: "Cuentas económicas",
+    description: "Producción, demanda agregada, PIB, ingreso nacional y agregados macroeconómicos.",
+    note: "Operaciones económicas organizadas desde el inventario OVE.",
+    examples: [
+      ["Producto interno bruto", "PIB real, corriente y variaciones."],
+      ["Cuentas nacionales", "Producción, demanda agregada e ingreso nacional."],
+      ["Actividad económica", "Series macroeconómicas de corto y largo plazo."]
+    ]
+  },
+  {
+    id: "business",
+    title: "Empresas",
+    description: "Indicadores empresariales, sociedades, crédito corporativo y actividad productiva.",
+    note: "Bloque inicial para ordenar estadísticas empresariales disponibles y futuras.",
+    examples: [
+      ["Empresas y sociedades", "Registros e indicadores empresariales disponibles."],
+      ["Crédito a empresas", "Financiamiento, préstamos y líneas de crédito."],
+      ["Producción empresarial", "Variables vinculadas a actividad y negocios."]
+    ]
+  },
+  {
+    id: "financial",
+    title: "Estadísticas financieras y monetarias",
+    description: "Tipo de cambio, liquidez monetaria, deuda, sector externo y variables financieras.",
+    note: "Series monetarias y financieras integradas desde BCV, CEPAL, FMI, FRED y Banco Mundial.",
+    examples: [
+      ["Tipo de cambio", "Referencia BCV y monedas del sistema cambiario."],
+      ["Agregados monetarios", "Liquidez, tasas y variables financieras."],
+      ["Sector externo", "Deuda, cuenta corriente, inversión y comercio exterior."]
+    ]
+  }
+];
+
 const agricultureEnvironmentGroups = [
   {
     title: "Agricultura",
@@ -2833,20 +2869,54 @@ function economyTopicPage(topic) {
       breadcrumb: ["Inicio", "Datos", topic.title],
       actions: `<a class="button button-primary" href="#/datos">Volver a datos por temas ${arrow()}</a>`
     })}
-    <section class="section economy-empty-section">
+    <section class="section economy-ine-section">
       <div class="container">
-        <div class="economy-empty-panel">
-          <img src="${topic.image}" alt="" loading="lazy" decoding="async">
-          <div>
-            <span class="eyebrow">Datos de Venezuela</span>
-            <h2>Economía</h2>
-            <p>Sección en reconstrucción.</p>
+        <div class="economy-ine-layout">
+          <aside class="economy-ine-menu" aria-label="Temas de Datos de Venezuela">
+            <a href="#/datos/operaciones-alfabetico">Operaciones estadísticas por orden alfabético</a>
+            <a href="#/datos">Lista completa de operaciones</a>
+            ${topicData.map(([id, label, , href]) => `<a class="${id === "economy" ? "is-current" : ""}" href="${href}">${escapeHtml(label)}</a>`).join("")}
+          </aside>
+          <div class="economy-ine-main">
+            <div class="economy-ine-title">
+              <span>OVEbase / <strong>Economía</strong></span>
+              <img src="${topic.image}" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="economy-ine-rule"></div>
+            <div class="economy-ine-categories">
+              ${economyIneCategories.map(category => economyIneCategory(category)).join("")}
+            </div>
           </div>
         </div>
       </div>
     </section>
     ${footer()}
   </div>`;
+}
+
+function economyIneCategory(category) {
+  return `<details class="economy-ine-category" data-economy-category="${category.id}">
+    <summary>
+      <span class="economy-ine-toggle" aria-hidden="true"></span>
+      <span>${escapeHtml(category.title)}</span>
+    </summary>
+    <div class="economy-ine-category-body">
+      <p>${escapeHtml(category.description)}</p>
+      <div class="economy-ine-table">
+        <div class="economy-ine-table-head">
+          <span>Operaciones estadísticas disponibles en OVE</span>
+          <span>Últimos datos</span>
+        </div>
+        <div data-economy-category-rows>
+          ${category.examples.map(([name, period]) => `<a class="economy-ine-row" href="#/indicadores?tema=Econom%C3%ADa&q=${encodeURIComponent(name)}">
+            <span>${escapeHtml(name)}</span>
+            <span>${escapeHtml(period)}</span>
+          </a>`).join("")}
+        </div>
+      </div>
+      <p class="economy-ine-note">${escapeHtml(category.note)}</p>
+    </div>
+  </details>`;
 }
 
 function topicIndicatorExplorer(topicKey) {
@@ -4377,7 +4447,8 @@ function hydrateKeyDashboard() {
 async function hydrateIndicatorExplorer() {
   const explorers = [...document.querySelectorAll("[data-indicator-explorer]")];
   const topicBadges = [...document.querySelectorAll("[data-topic-indicator-count]")];
-  if (!explorers.length && !topicBadges.length) return;
+  const economyCategoryPanels = [...document.querySelectorAll("[data-economy-category]")];
+  if (!explorers.length && !topicBadges.length && !economyCategoryPanels.length) return;
 
   try {
     const inventory = await getIndicatorInventory();
@@ -4396,6 +4467,27 @@ async function hydrateIndicatorExplorer() {
     const economySources = unique(economyRows.map(row => row.fuente));
     const economyDownloads = economyRows.filter(row => row.excel).length;
     const economyLatest = latestPeriod(economyRows);
+    const textForRow = row => normalizeSearchText([row.indicador, row.indicador_original, row.codigo, row.subarea, row.fuente].join(" "));
+    const categoryRows = {
+      accounts: economyRows.filter(row => row.subarea === "Actividad económica" || /pib|cuenta|produccion|consumo|capital|ingreso|ahorro/.test(textForRow(row))),
+      business: economyRows.filter(row => /empresa|empresarial|sociedad|sociedades|negocio|corporativo|credito|prestamo/.test(textForRow(row))),
+      financial: economyRows.filter(row => row.subarea === "Sector externo y finanzas" || /financier|monetari|cambio|liquidez|deuda|banco|credito|tasa/.test(textForRow(row)))
+    };
+    economyCategoryPanels.forEach(panel => {
+      const categoryId = panel.getAttribute("data-economy-category");
+      const rowsNode = panel.querySelector("[data-economy-category-rows]");
+      if (!rowsNode) return;
+      const scoped = unique((categoryRows[categoryId] || []).map(row => row.indicador))
+        .map(name => (categoryRows[categoryId] || []).find(row => row.indicador === name))
+        .filter(Boolean)
+        .sort((a, b) => (b.ultimo_periodo || "").localeCompare(a.ultimo_periodo || "", "es", { numeric: true }))
+        .slice(0, 16);
+      if (!scoped.length) return;
+      rowsNode.innerHTML = scoped.map(row => `<a class="economy-ine-row" href="#/indicadores?tema=Econom%C3%ADa&q=${encodeURIComponent(row.indicador)}">
+        <span>${escapeHtml(row.indicador)}</span>
+        <span>${escapeHtml(row.ultimo_periodo || row.primer_periodo || "N/D")}</span>
+      </a>`).join("");
+    });
     document.querySelectorAll("[data-economy-total]").forEach(node => {
       node.textContent = formatInteger(economyRows.length);
     });
