@@ -128,20 +128,20 @@ const routeMeta = {
     description: "Indicadores económicos de Venezuela con series, catálogos y descargas abiertas del OVE."
   },
   "/datos/economia/pib-precios-corrientes-moneda-nacional": {
-    title: "PIB precios corrientes, moneda nacional | OVE",
-    description: "Ficha estadística OVE del Producto interno bruto a precios corrientes en moneda nacional."
+    title: "PIB moneda nacional | OVE",
+    description: "Ficha estadística OVE del Producto interno bruto en moneda nacional."
   },
   "/datos/economia/pib-precios-corrientes-moneda-nacional/preguntas-frecuentes": {
-    title: "Preguntas frecuentes PIB precios corrientes, moneda nacional | OVE",
-    description: "Preguntas frecuentes sobre la serie OVE del PIB a precios corrientes en moneda nacional."
+    title: "Preguntas frecuentes PIB moneda nacional | OVE",
+    description: "Preguntas frecuentes sobre la serie OVE del PIB en moneda nacional."
   },
   "/datos/economia/pib-precios-corrientes-dolares-estadounidenses": {
-    title: "PIB precios corrientes, dólares estadounidenses | OVE",
-    description: "Ficha estadística OVE del Producto interno bruto a precios corrientes en dólares estadounidenses."
+    title: "PIB dólares estadounidenses | OVE",
+    description: "Ficha estadística OVE del Producto interno bruto en dólares estadounidenses."
   },
   "/datos/economia/pib-precios-corrientes-dolares-estadounidenses/preguntas-frecuentes": {
-    title: "Preguntas frecuentes PIB precios corrientes, dólares estadounidenses | OVE",
-    description: "Preguntas frecuentes sobre la serie OVE del PIB a precios corrientes en dólares estadounidenses."
+    title: "Preguntas frecuentes PIB dólares estadounidenses | OVE",
+    description: "Preguntas frecuentes sobre la serie OVE del PIB en dólares estadounidenses."
   },
   "/datos/economia/pib-precios-constantes-moneda-nacional": {
     title: "PIB precios constantes, moneda nacional | OVE",
@@ -160,12 +160,12 @@ const routeMeta = {
     description: "Preguntas frecuentes sobre la serie OVE del PIB a precios constantes en dólares estadounidenses."
   },
   "/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales": {
-    title: "PIB precios corrientes PPA, dólares internacionales | OVE",
-    description: "Ficha estadística OVE del Producto interno bruto a precios corrientes PPA en dólares internacionales."
+    title: "PIB PPA, dólares internacionales | OVE",
+    description: "Ficha estadística OVE del Producto interno bruto PPA en dólares internacionales."
   },
   "/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales/preguntas-frecuentes": {
-    title: "Preguntas frecuentes PIB precios corrientes PPA | OVE",
-    description: "Preguntas frecuentes sobre la serie OVE del PIB a precios corrientes PPA en dólares internacionales."
+    title: "Preguntas frecuentes PIB PPA | OVE",
+    description: "Preguntas frecuentes sobre la serie OVE del PIB PPA en dólares internacionales."
   },
   "/datos/industria-energia-construccion": {
     title: "Industria, energía y construcción | OVE",
@@ -724,11 +724,11 @@ const economyIneCategories = [
     note: "Listado inicial definido para ordenar primero el PIB. Las descargas y series se conectarán en el siguiente paso.",
     rows: [
       {
-        label: "Producto interno bruto (PIB), precios corrientes, moneda nacional",
+        label: "Producto interno bruto (PIB), moneda nacional",
         href: "#/datos/economia/pib-precios-corrientes-moneda-nacional"
       },
       {
-        label: "Producto interno bruto (PIB), precios corrientes, dólares estadounidenses",
+        label: "Producto interno bruto (PIB), dólares estadounidenses",
         href: "#/datos/economia/pib-precios-corrientes-dolares-estadounidenses"
       },
       {
@@ -740,8 +740,12 @@ const economyIneCategories = [
         href: "#/datos/economia/pib-precios-constantes-dolares-estadounidenses"
       },
       {
-        label: "Producto interno bruto (PIB), precios corrientes, paridad de poder adquisitivo (PPA), dólares internacionales",
+        label: "Producto interno bruto (PIB), paridad de poder adquisitivo (PPA), dólares internacionales",
         href: "#/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales"
+      },
+      {
+        label: "Componentes del PIB",
+        href: "assets/data/bcv/excel/ove_bcv_pib_demanda_anual.xlsx"
       }
     ]
   },
@@ -763,8 +767,8 @@ const economyIneCategories = [
 
 const pibOperations = {
   "pib-precios-corrientes-moneda-nacional": {
-    title: "Producto interno bruto (PIB), precios corrientes, moneda nacional",
-    shortTitle: "PIB a precios corrientes, moneda nacional",
+    title: "Producto interno bruto (PIB), moneda nacional",
+    shortTitle: "PIB, moneda nacional",
     source: "FMI - World Economic Outlook",
     code: "NGDP",
     frequency: "Anual",
@@ -773,8 +777,8 @@ const pibOperations = {
     publishedAt: "FMI WEO, actualización país 16/09/2025",
     latestValue: "184.820.483.420.000",
     unit: "Moneda nacional, precios corrientes",
-    tableTitle: "PIB, precios corrientes, moneda nacional",
-    summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes expresado en moneda nacional.",
+    tableTitle: "PIB, moneda nacional",
+    summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano expresado en moneda nacional.",
     sourceNote: "Fuente: FMI - World Economic Outlook (WEO), actualización país 16/09/2025.",
     valueNote: "El FMI reporta esta serie en moneda nacional corriente; OVE conserva el valor fuente sin reescalar.",
     seriesRows: [
@@ -801,8 +805,8 @@ const pibOperations = {
     chartKind: "blue"
   },
   "pib-precios-corrientes-dolares-estadounidenses": {
-    title: "Producto interno bruto (PIB), precios corrientes, dólares estadounidenses",
-    shortTitle: "PIB a precios corrientes, dólares estadounidenses",
+    title: "Producto interno bruto (PIB), dólares estadounidenses",
+    shortTitle: "PIB, dólares estadounidenses",
     source: "FMI - World Economic Outlook",
     code: "NGDPD",
     frequency: "Anual",
@@ -811,8 +815,8 @@ const pibOperations = {
     publishedAt: "FMI WEO, actualización país 16/09/2025",
     latestValue: "117.908.128.000",
     unit: "Dólares estadounidenses, precios corrientes",
-    tableTitle: "PIB, precios corrientes, dólares estadounidenses",
-    summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes expresado en dólares estadounidenses.",
+    tableTitle: "PIB, dólares estadounidenses",
+    summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano expresado en dólares estadounidenses.",
     sourceNote: "Fuente: FMI - World Economic Outlook (WEO), actualización país 16/09/2025.",
     valueNote: "Serie en dólares estadounidenses corrientes. OVE conserva el valor fuente sin reescalar.",
     seriesRows: [
@@ -914,8 +918,8 @@ const pibOperations = {
     chartKind: "red"
   },
   "pib-precios-corrientes-ppa-dolares-internacionales": {
-    title: "Producto interno bruto (PIB), precios corrientes, paridad de poder adquisitivo (PPA), dólares internacionales",
-    shortTitle: "PIB a precios corrientes PPA, dólares internacionales",
+    title: "Producto interno bruto (PIB), paridad de poder adquisitivo (PPA), dólares internacionales",
+    shortTitle: "PIB PPA, dólares internacionales",
     source: "FMI - World Economic Outlook",
     code: "PPPGDP",
     frequency: "Anual",
@@ -924,8 +928,8 @@ const pibOperations = {
     publishedAt: "FMI WEO, actualización país 16/09/2025",
     latestValue: "275.547.798.000",
     unit: "Dólares internacionales, PPA, precios corrientes",
-    tableTitle: "PIB, precios corrientes PPA, dólares internacionales",
-    summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes medido por paridad de poder adquisitivo.",
+    tableTitle: "PIB PPA, dólares internacionales",
+    summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano medido por paridad de poder adquisitivo.",
     sourceNote: "Fuente: FMI - World Economic Outlook (WEO), actualización país 16/09/2025.",
     valueNote: "Serie en dólares internacionales corrientes ajustados por paridad de poder adquisitivo (PPA).",
     seriesRows: [
