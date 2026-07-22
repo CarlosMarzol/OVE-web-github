@@ -3289,6 +3289,135 @@ function operationPlaceholderPage(operation, section) {
   </section>`;
 }
 
+function operationDashboardPage(operation, slug) {
+  return `<section class="pib-dashboard" data-pib-dashboard data-pib-operation="${escapeHtml(slug)}" data-pib-code="${escapeHtml(operation.code || "")}">
+    <div class="pib-dashboard-hero">
+      <div>
+        <span class="eyebrow">Dashboard OVE</span>
+        <h1>Cuadro de mando del PIB de Venezuela</h1>
+        <p>Panel interactivo conectado a las series normalizadas del Banco Central de Venezuela y del FMI WEO. Los gráficos y tablas se alimentan de los mismos JSON que respaldan los Excel de descarga.</p>
+      </div>
+      <div class="pib-dashboard-badge">
+        <strong data-pib-dashboard-updated>Actualización automática</strong>
+        <span>BCV · FMI WEO · OVE</span>
+      </div>
+    </div>
+    <nav class="pib-dashboard-nav" aria-label="Secciones del dashboard PIB">
+      <button type="button" class="is-active" data-pib-dashboard-view="overview">${icon("home")} Inicio</button>
+      <button type="button" data-pib-dashboard-view="historical">${icon("chartbar")} PIB histórico</button>
+      <button type="button" data-pib-dashboard-view="components">${icon("database")} Componentes del PIB</button>
+      <button type="button" data-pib-dashboard-view="imf">${icon("globe")} FMI WEO</button>
+      <button type="button" data-pib-dashboard-view="sources">${icon("download")} Datos y fuentes</button>
+    </nav>
+    <div class="pib-dashboard-kpis">
+      <article><span>Registros integrados</span><strong data-pib-kpi="records">...</strong><small>BCV y FMI</small></article>
+      <article><span>Cobertura temporal</span><strong data-pib-kpi="coverage">...</strong><small>Años disponibles</small></article>
+      <article><span>Componentes</span><strong data-pib-kpi="components">...</strong><small>Demanda, producción e ingreso</small></article>
+      <article><span>Último BCV anual</span><strong data-pib-kpi="latestBcv">...</strong><small data-pib-kpi-note="latestBcv">Dato oficial</small></article>
+    </div>
+    <div class="pib-dashboard-view is-active" data-pib-dashboard-panel="overview">
+      <div class="pib-dashboard-grid">
+        <article class="pib-dashboard-card pib-dashboard-card-wide">
+          <div class="pib-dashboard-card-head">
+            <div>
+              <h2>PIB histórico a precios constantes</h2>
+              <p>Banco Central de Venezuela · serie anual oficial</p>
+            </div>
+            <a href="assets/data/bcv/excel/ove_bcv_pib_historico_anual.xlsx" download>Excel BCV</a>
+          </div>
+          <div class="pib-dashboard-chart" data-pib-chart="historical"></div>
+        </article>
+        <article class="pib-dashboard-card">
+          <div class="pib-dashboard-card-head">
+            <div>
+              <h2>Componentes con mayor valor</h2>
+              <p>Enfoque de demanda · último año BCV</p>
+            </div>
+          </div>
+          <div class="pib-dashboard-chart" data-pib-chart="ranking"></div>
+        </article>
+      </div>
+      <div class="pib-dashboard-grid pib-dashboard-grid-even">
+        <article class="pib-dashboard-card">
+          <div class="pib-dashboard-card-head">
+            <div>
+              <h2>Variación anual del PIB real</h2>
+              <p>Calculada dentro de la serie comparable disponible</p>
+            </div>
+          </div>
+          <div class="pib-dashboard-chart pib-dashboard-chart-small" data-pib-chart="growth"></div>
+        </article>
+        <article class="pib-dashboard-card">
+          <div class="pib-dashboard-card-head">
+            <div>
+              <h2>PIB nominal en moneda nacional</h2>
+              <p>FMI WEO · serie NGDP</p>
+            </div>
+            <a href="assets/data/imf/excel/ove_pib_fmi_ngdp_precios_corrientes_moneda_nacional.xlsx" download>Excel FMI</a>
+          </div>
+          <div class="pib-dashboard-chart pib-dashboard-chart-small" data-pib-chart="imf"></div>
+        </article>
+      </div>
+    </div>
+    <div class="pib-dashboard-view" data-pib-dashboard-panel="historical">
+      <div class="pib-dashboard-controls">
+        <label><span>Tipo de precios</span><select data-pib-historical-price><option>Precios constantes</option><option>Precios corrientes</option></select></label>
+      </div>
+      <article class="pib-dashboard-card">
+        <div class="pib-dashboard-card-head">
+          <div><h2>Serie histórica BCV</h2><p data-pib-historical-subtitle>Precios constantes</p></div>
+          <a href="assets/data/bcv/excel/ove_bcv_pib_historico_anual.xlsx" download>Descargar Excel</a>
+        </div>
+        <div class="pib-dashboard-chart" data-pib-chart="historical-detail"></div>
+        <div class="table-wrap"><table class="pib-dashboard-table" data-pib-table="historical"></table></div>
+      </article>
+    </div>
+    <div class="pib-dashboard-view" data-pib-dashboard-panel="components">
+      <div class="pib-dashboard-controls">
+        <label><span>Enfoque</span><select data-pib-component-class></select></label>
+        <label><span>Tipo de precios</span><select data-pib-component-price><option>Precios corrientes</option><option>Precios constantes</option></select></label>
+      </div>
+      <article class="pib-dashboard-card">
+        <div class="pib-dashboard-card-head">
+          <div><h2>Componentes del PIB</h2><p data-pib-component-subtitle>BCV · componentes anuales</p></div>
+          <a href="assets/data/bcv/excel/ove_bcv_pib_demanda_anual.xlsx" download>Descargar Excel</a>
+        </div>
+        <div class="pib-dashboard-chart" data-pib-chart="components-detail"></div>
+        <div class="table-wrap"><table class="pib-dashboard-table" data-pib-table="components"></table></div>
+      </article>
+    </div>
+    <div class="pib-dashboard-view" data-pib-dashboard-panel="imf">
+      <div class="pib-dashboard-controls">
+        <label><span>Indicador FMI</span><select data-pib-imf-code>
+          <option value="NGDP">PIB corriente, moneda nacional</option>
+          <option value="NGDPD">PIB corriente, dólares estadounidenses</option>
+          <option value="PPPGDP">PIB corriente PPA, dólares internacionales</option>
+          <option value="NGDP_RPCH">PIB real, variación porcentual</option>
+        </select></label>
+      </div>
+      <article class="pib-dashboard-card">
+        <div class="pib-dashboard-card-head">
+          <div><h2>FMI WEO</h2><p data-pib-imf-subtitle>Serie anual para Venezuela</p></div>
+          <a href="assets/data/imf/excel/ove_fmi_weo_venezuela.xlsx" download>Descargar base FMI</a>
+        </div>
+        <div class="pib-dashboard-chart" data-pib-chart="imf-detail"></div>
+        <div class="table-wrap"><table class="pib-dashboard-table" data-pib-table="imf"></table></div>
+      </article>
+    </div>
+    <div class="pib-dashboard-view" data-pib-dashboard-panel="sources">
+      <div class="pib-dashboard-downloads">
+        <a href="assets/data/bcv/excel/ove_bcv_pib_historico_anual.xlsx" download><strong>PIB histórico anual BCV</strong><span>Excel OVE</span></a>
+        <a href="assets/data/bcv/excel/ove_bcv_pib_demanda_anual.xlsx" download><strong>Componentes del PIB BCV</strong><span>Excel OVE</span></a>
+        <a href="assets/data/bcv/excel/ove_bcv_pib_actividad_economica_anual.xlsx" download><strong>PIB por actividad económica BCV</strong><span>Excel OVE</span></a>
+        <a href="assets/data/bcv/excel/ove_bcv_pib_sector_institucional_anual.xlsx" download><strong>PIB por sector institucional BCV</strong><span>Excel OVE</span></a>
+        <a href="assets/data/imf/excel/ove_pib_fmi_ngdp_precios_corrientes_moneda_nacional.xlsx" download><strong>PIB FMI NGDP</strong><span>Excel OVE</span></a>
+        <a href="assets/data/imf/excel/ove_pib_fmi_ngdpd_precios_corrientes_dolares_estadounidenses.xlsx" download><strong>PIB FMI NGDPD</strong><span>Excel OVE</span></a>
+        <a href="assets/data/imf/excel/ove_pib_fmi_pppgdp_precios_corrientes_ppa_dolares_internacionales.xlsx" download><strong>PIB FMI PPA</strong><span>Excel OVE</span></a>
+      </div>
+    </div>
+  </section>`;
+}
+
 function economyPibOperationPage(slug, section = "latest") {
   const operation = pibOperations[slug] || pibOperations["pib-precios-corrientes-moneda-nacional"];
   const seriesRows = operation.seriesRows || [];
@@ -3358,7 +3487,7 @@ function economyPibOperationPage(slug, section = "latest") {
           <h1>Preguntas frecuentes</h1>
           <p>Respuestas básicas para interpretar la ficha <strong>${escapeHtml(operation.shortTitle)}</strong>, sus fuentes, unidades, descargas y revisiones estadísticas.</p>
           ${operationFaqList(operation)}
-        </section>` : isPlaceholderPage ? operationPlaceholderPage(operation, section) : `
+        </section>` : section === "dashboard" ? operationDashboardPage(operation, slug) : isPlaceholderPage ? operationPlaceholderPage(operation, section) : `
         <div class="operation-news" id="ultimos-datos">
           <div class="operation-news-label">
             <strong>ÚLTIMOS</strong>
@@ -4734,6 +4863,7 @@ function render() {
     hydrateIndicatorExplorer();
     hydrateNativeDashboard();
     hydrateExchangeDashboard();
+    hydratePibDashboard();
     prepareRevealAnimations(appRoot);
     wireAnalytics(appRoot);
     trackAnalytics(analyticsEvents.route, {
@@ -5439,6 +5569,220 @@ async function hydrateExchangeDashboard() {
     unit.textContent = "Actualización automática pendiente";
     chart.innerHTML = `<p class="source-note">No fue posible cargar las bases de tipo de cambio en este momento.</p>`;
   }
+}
+
+async function hydratePibDashboard() {
+  const dashboard = document.querySelector("[data-pib-dashboard]");
+  if (!dashboard) return;
+
+  const histUrl = "assets/data/bcv/json/ove_bcv_pib_historico_anual.json";
+  const compUrl = "assets/data/bcv/json/ove_bcv_pib_demanda_anual.json";
+  const imfUrl = "assets/data/imf/json/ove_fmi_weo_venezuela.json";
+
+  try {
+    const [histResponse, compResponse, imfResponse] = await Promise.all([
+      fetch(histUrl, { cache: "no-store" }),
+      fetch(compUrl, { cache: "no-store" }),
+      fetch(imfUrl, { cache: "no-store" })
+    ]);
+    if (!histResponse.ok || !compResponse.ok || !imfResponse.ok) throw new Error("PIB dashboard data unavailable");
+
+    const [histData, compData, imfData] = await Promise.all([
+      histResponse.json(),
+      compResponse.json(),
+      imfResponse.json()
+    ]);
+    const histRows = (histData.observations || []).filter(row => row.value !== null && row.value !== undefined);
+    const compRows = (compData.observations || []).filter(row => row.value !== null && row.value !== undefined);
+    const imfRows = (imfData.datos || []).filter(row => row.Valor !== null && row.Valor !== undefined);
+    const allYears = [...histRows, ...compRows, ...imfRows].map(row => Number(row.year || row.Año)).filter(Number.isFinite);
+    const latestBcv = latestByYear(histRows.filter(row => row.component === "Producto interno bruto" && row.price_type === "Precios constantes"));
+    const classes = unique(compRows.map(row => row.classification).filter(Boolean));
+
+    dashboard.querySelector('[data-pib-kpi="records"]').textContent = formatInteger(histRows.length + compRows.length + imfRows.length);
+    dashboard.querySelector('[data-pib-kpi="coverage"]').textContent = `${Math.min(...allYears)}-${Math.max(...allYears)}`;
+    dashboard.querySelector('[data-pib-kpi="components"]').textContent = formatInteger(unique(compRows.map(row => row.component)).length);
+    dashboard.querySelector('[data-pib-kpi="latestBcv"]').textContent = latestBcv ? `${formatCompact(latestBcv.value)}` : "Sin dato";
+    dashboard.querySelector('[data-pib-kpi-note="latestBcv"]').textContent = latestBcv ? `${latestBcv.year} · ${latestBcv.unit}` : "Dato oficial";
+    const updated = dashboard.querySelector("[data-pib-dashboard-updated]");
+    if (updated) updated.textContent = `Actualizado ${shortDate(histData.metadata?.last_fetched_at || compData.metadata?.last_fetched_at || "")}`;
+
+    const componentClass = dashboard.querySelector("[data-pib-component-class]");
+    if (componentClass) componentClass.innerHTML = classes.map(item => `<option>${escapeHtml(item)}</option>`).join("");
+
+    const primaryCode = dashboard.getAttribute("data-pib-code") || "NGDP";
+    const imfCode = dashboard.querySelector("[data-pib-imf-code]");
+    if (imfCode && [...imfCode.options].some(option => option.value === primaryCode)) imfCode.value = primaryCode;
+
+    const renderHistorical = () => {
+      const price = dashboard.querySelector("[data-pib-historical-price]")?.value || "Precios constantes";
+      const rows = histRows
+        .filter(row => row.component === "Producto interno bruto" && row.price_type === price)
+        .sort((left, right) => Number(left.year) - Number(right.year));
+      const points = rows.map(row => ({ label: String(row.year), value: Number(row.value) }));
+      setHtml(dashboard, '[data-pib-chart="historical"]', pibLineSvg(points, { color: "#0052B4", fill: "#EAF2FF" }));
+      setHtml(dashboard, '[data-pib-chart="historical-detail"]', pibLineSvg(points, { color: "#0052B4", fill: "#EAF2FF" }));
+      setText(dashboard, "[data-pib-historical-subtitle]", `${price} · ${rows[0]?.year || ""}-${rows[rows.length - 1]?.year || ""}`);
+      setHtml(dashboard, '[data-pib-table="historical"]', pibTable(
+        ["Año", "Valor", "Unidad", "Base"],
+        rows.slice().reverse().map(row => [row.year, formatPibValue(row.value), row.unit, row.base])
+      ));
+      const growth = yearOverYear(points);
+      setHtml(dashboard, '[data-pib-chart="growth"]', pibBarSvg(growth.slice(-24), { color: "#D62828" }));
+    };
+
+    const renderComponents = () => {
+      const klass = dashboard.querySelector("[data-pib-component-class]")?.value || classes[0];
+      const price = dashboard.querySelector("[data-pib-component-price]")?.value || "Precios corrientes";
+      const rows = compRows
+        .filter(row => row.classification === klass && row.price_type === price)
+        .sort((left, right) => Number(left.year) - Number(right.year));
+      const latestYear = Math.max(...rows.map(row => Number(row.year)).filter(Number.isFinite));
+      const latestRows = rows
+        .filter(row => Number(row.year) === latestYear && row.component !== "Producto interno bruto")
+        .sort((left, right) => Math.abs(Number(right.value)) - Math.abs(Number(left.value)));
+      setText(dashboard, "[data-pib-component-subtitle]", `${klass} · ${price} · ${latestYear}`);
+      setHtml(dashboard, '[data-pib-chart="ranking"]', pibBarSvg(latestRows.slice(0, 7).map(row => ({ label: row.component, value: Number(row.value) })), { color: "#FFC20E" }));
+      setHtml(dashboard, '[data-pib-chart="components-detail"]', pibBarSvg(latestRows.slice(0, 10).map(row => ({ label: row.component, value: Number(row.value) })), { color: "#0052B4" }));
+      setHtml(dashboard, '[data-pib-table="components"]', pibTable(
+        ["Año", "Componente", "Valor", "Unidad", "Estado"],
+        latestRows.map(row => [row.year, row.component, formatPibValue(row.value), row.unit, row.status || ""])
+      ));
+    };
+
+    const renderImf = () => {
+      const code = dashboard.querySelector("[data-pib-imf-code]")?.value || primaryCode || "NGDP";
+      const rows = imfRows
+        .filter(row => row["Código indicador"] === code)
+        .sort((left, right) => Number(left.Año) - Number(right.Año));
+      const points = rows.map(row => ({ label: String(row.Año), value: Number(row.Valor) }));
+      const latest = rows[rows.length - 1];
+      setText(dashboard, "[data-pib-imf-subtitle]", `${code} · ${rows[0]?.Año || ""}-${latest?.Año || ""} · ${latest?.Unidad || ""}`);
+      setHtml(dashboard, '[data-pib-chart="imf"]', pibLineSvg(points, { color: "#0052B4", fill: "#F8FBFF", log: code !== "NGDP_RPCH" }));
+      setHtml(dashboard, '[data-pib-chart="imf-detail"]', pibLineSvg(points, { color: "#0052B4", fill: "#F8FBFF", log: code !== "NGDP_RPCH" }));
+      setHtml(dashboard, '[data-pib-table="imf"]', pibTable(
+        ["Año", "Indicador", "Valor", "Unidad", "Tipo dato"],
+        rows.slice().reverse().map(row => [row.Año, row.Indicador, formatPibValue(row.Valor), row.Unidad, row["Tipo dato"] || ""])
+      ));
+    };
+
+    dashboard.querySelectorAll("[data-pib-dashboard-view]").forEach(button => {
+      button.addEventListener("click", () => {
+        const view = button.getAttribute("data-pib-dashboard-view");
+        dashboard.querySelectorAll("[data-pib-dashboard-view]").forEach(item => item.classList.toggle("is-active", item === button));
+        dashboard.querySelectorAll("[data-pib-dashboard-panel]").forEach(panel => panel.classList.toggle("is-active", panel.getAttribute("data-pib-dashboard-panel") === view));
+      });
+    });
+    dashboard.querySelector("[data-pib-historical-price]")?.addEventListener("change", renderHistorical);
+    dashboard.querySelector("[data-pib-component-class]")?.addEventListener("change", renderComponents);
+    dashboard.querySelector("[data-pib-component-price]")?.addEventListener("change", renderComponents);
+    dashboard.querySelector("[data-pib-imf-code]")?.addEventListener("change", renderImf);
+
+    renderHistorical();
+    renderComponents();
+    renderImf();
+  } catch {
+    dashboard.innerHTML = `<section class="operation-empty-page">
+      <h1>Dashboard no disponible</h1>
+      <p>No fue posible cargar en este momento los JSON normalizados de PIB. Las descargas siguen disponibles en la ficha.</p>
+    </section>`;
+  }
+}
+
+function unique(values) {
+  return [...new Set(values)];
+}
+
+function latestByYear(rows) {
+  return rows.slice().sort((left, right) => Number(left.year) - Number(right.year)).at(-1);
+}
+
+function setHtml(root, selector, html) {
+  const element = root.querySelector(selector);
+  if (element) element.innerHTML = html;
+}
+
+function setText(root, selector, text) {
+  const element = root.querySelector(selector);
+  if (element) element.textContent = text;
+}
+
+function shortDate(value) {
+  if (!value) return "automáticamente";
+  return String(value).slice(0, 10);
+}
+
+function formatCompact(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "—";
+  return new Intl.NumberFormat("es-VE", { notation: "compact", maximumFractionDigits: 1 }).format(number);
+}
+
+function formatPibValue(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "—";
+  return new Intl.NumberFormat("es-VE", { maximumFractionDigits: Math.abs(number) < 10 ? 2 : 0 }).format(number);
+}
+
+function yearOverYear(points) {
+  return points.slice(1).map((point, index) => {
+    const previous = points[index];
+    const value = previous?.value ? ((point.value / previous.value) - 1) * 100 : null;
+    return { label: point.label, value };
+  }).filter(point => Number.isFinite(point.value));
+}
+
+function pibTable(headers, rows) {
+  return `<thead><tr>${headers.map(header => `<th>${escapeHtml(header)}</th>`).join("")}</tr></thead>
+    <tbody>${rows.length ? rows.map(row => `<tr>${row.map(cell => `<td>${escapeHtml(cell ?? "")}</td>`).join("")}</tr>`).join("") : `<tr><td colspan="${headers.length}">Sin registros disponibles.</td></tr>`}</tbody>`;
+}
+
+function pibLineSvg(points, options = {}) {
+  const clean = points.filter(point => Number.isFinite(point.value));
+  if (clean.length < 2) return `<p class="source-note">Sin puntos suficientes para graficar.</p>`;
+  const width = 720;
+  const height = 260;
+  const pad = 34;
+  const values = clean.map(point => options.log && point.value > 0 ? Math.log(point.value) : point.value);
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const span = max - min || 1;
+  const x = index => pad + (index / Math.max(clean.length - 1, 1)) * (width - pad * 2);
+  const y = value => height - pad - ((value - min) / span) * (height - pad * 2);
+  const path = clean.map((point, index) => `${index ? "L" : "M"}${x(index).toFixed(1)},${y(values[index]).toFixed(1)}`).join(" ");
+  const area = `${path} L${x(clean.length - 1).toFixed(1)},${height - pad} L${pad},${height - pad} Z`;
+  const first = clean[0];
+  const last = clean[clean.length - 1];
+  return `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Gráfico de línea">
+    <path d="M${pad} ${height - pad}H${width - pad}" stroke="#DDE7F3" stroke-width="1"/>
+    <path d="M${pad} ${pad}V${height - pad}" stroke="#DDE7F3" stroke-width="1"/>
+    <path d="${area}" fill="${options.fill || "#EAF2FF"}"/>
+    <path d="${path}" fill="none" stroke="${options.color || "#0052B4"}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="${x(clean.length - 1).toFixed(1)}" cy="${y(values[values.length - 1]).toFixed(1)}" r="4" fill="${options.color || "#0052B4"}"/>
+    <text x="${pad}" y="${height - 8}" fill="#617089" font-size="11">${escapeHtml(first.label)}</text>
+    <text x="${width - pad}" y="${height - 8}" fill="#617089" font-size="11" text-anchor="end">${escapeHtml(last.label)}</text>
+    <text x="${width - pad}" y="${pad - 10}" fill="#0A2D5A" font-size="12" text-anchor="end">${escapeHtml(formatPibValue(last.value))}</text>
+  </svg>`;
+}
+
+function pibBarSvg(points, options = {}) {
+  const clean = points.filter(point => Number.isFinite(point.value)).slice(0, 12);
+  if (!clean.length) return `<p class="source-note">Sin registros suficientes para graficar.</p>`;
+  const width = 720;
+  const rowHeight = 25;
+  const height = Math.max(190, clean.length * rowHeight + 42);
+  const labelWidth = 210;
+  const max = Math.max(...clean.map(point => Math.abs(point.value))) || 1;
+  return `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Gráfico de barras">
+    ${clean.map((point, index) => {
+      const y = 22 + index * rowHeight;
+      const barWidth = Math.max(2, (Math.abs(point.value) / max) * (width - labelWidth - 120));
+      const label = point.label.length > 32 ? `${point.label.slice(0, 31)}...` : point.label;
+      return `<text x="0" y="${y + 14}" fill="#34465B" font-size="11">${escapeHtml(label)}</text>
+        <rect x="${labelWidth}" y="${y}" width="${barWidth.toFixed(1)}" height="15" rx="3" fill="${options.color || "#0052B4"}" opacity="${point.value < 0 ? "0.55" : "0.92"}"/>
+        <text x="${labelWidth + barWidth + 8}" y="${y + 12}" fill="#617089" font-size="10">${escapeHtml(formatPibValue(point.value))}</text>`;
+    }).join("")}
+  </svg>`;
 }
 
 function prepareRevealAnimations(root) {
