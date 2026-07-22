@@ -202,9 +202,31 @@ def route_paths() -> list[str]:
   return sorted(set(paths))
 
 
+def meta_for_route(route: str) -> tuple[str, str]:
+  if route in ROUTE_META:
+    return ROUTE_META[route]
+
+  section_labels = {
+    "dashboard": "Dashboard",
+    "metodologia": "Metodología",
+    "mas-informacion": "Más información",
+  }
+  base, _, section = route.rpartition("/")
+  if section in section_labels and base in ROUTE_META:
+    base_title, _ = ROUTE_META[base]
+    clean_base_title = base_title.replace(" | OVE", "")
+    label = section_labels[section]
+    return (
+      f"{label} {clean_base_title} | OVE",
+      f"Página {label.lower()} de la ficha estadística {clean_base_title} en OVEbase.",
+    )
+
+  return ROUTE_META["datos"]
+
+
 def route_html(route: str) -> str:
   html = INDEX.read_text(encoding="utf-8")
-  title, description = ROUTE_META.get(route, ROUTE_META["datos"])
+  title, description = meta_for_route(route)
   url = f"{SITE_ORIGIN}/{route}"
   replacements = {
     "<title>Observatorio Venezolano de Economía | Indicadores, informes y datos abiertos</title>": f"<title>{title}</title>",

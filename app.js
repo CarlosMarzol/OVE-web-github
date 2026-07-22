@@ -20,14 +20,29 @@ const routes = {
   "/datos/demografia-poblacion": () => topicDetailPage("demography"),
   "/datos/economia": () => topicDetailPage("economy"),
   "/datos/economia/pib-precios-corrientes-moneda-nacional": () => economyPibOperationPage("pib-precios-corrientes-moneda-nacional"),
+  "/datos/economia/pib-precios-corrientes-moneda-nacional/dashboard": () => economyPibOperationPage("pib-precios-corrientes-moneda-nacional", "dashboard"),
+  "/datos/economia/pib-precios-corrientes-moneda-nacional/metodologia": () => economyPibOperationPage("pib-precios-corrientes-moneda-nacional", "methodology"),
+  "/datos/economia/pib-precios-corrientes-moneda-nacional/mas-informacion": () => economyPibOperationPage("pib-precios-corrientes-moneda-nacional", "more"),
   "/datos/economia/pib-precios-corrientes-moneda-nacional/preguntas-frecuentes": () => economyPibOperationPage("pib-precios-corrientes-moneda-nacional", "faq"),
   "/datos/economia/pib-precios-corrientes-dolares-estadounidenses": () => economyPibOperationPage("pib-precios-corrientes-dolares-estadounidenses"),
+  "/datos/economia/pib-precios-corrientes-dolares-estadounidenses/dashboard": () => economyPibOperationPage("pib-precios-corrientes-dolares-estadounidenses", "dashboard"),
+  "/datos/economia/pib-precios-corrientes-dolares-estadounidenses/metodologia": () => economyPibOperationPage("pib-precios-corrientes-dolares-estadounidenses", "methodology"),
+  "/datos/economia/pib-precios-corrientes-dolares-estadounidenses/mas-informacion": () => economyPibOperationPage("pib-precios-corrientes-dolares-estadounidenses", "more"),
   "/datos/economia/pib-precios-corrientes-dolares-estadounidenses/preguntas-frecuentes": () => economyPibOperationPage("pib-precios-corrientes-dolares-estadounidenses", "faq"),
   "/datos/economia/pib-precios-constantes-moneda-nacional": () => economyPibOperationPage("pib-precios-constantes-moneda-nacional"),
+  "/datos/economia/pib-precios-constantes-moneda-nacional/dashboard": () => economyPibOperationPage("pib-precios-constantes-moneda-nacional", "dashboard"),
+  "/datos/economia/pib-precios-constantes-moneda-nacional/metodologia": () => economyPibOperationPage("pib-precios-constantes-moneda-nacional", "methodology"),
+  "/datos/economia/pib-precios-constantes-moneda-nacional/mas-informacion": () => economyPibOperationPage("pib-precios-constantes-moneda-nacional", "more"),
   "/datos/economia/pib-precios-constantes-moneda-nacional/preguntas-frecuentes": () => economyPibOperationPage("pib-precios-constantes-moneda-nacional", "faq"),
   "/datos/economia/pib-precios-constantes-dolares-estadounidenses": () => economyPibOperationPage("pib-precios-constantes-dolares-estadounidenses"),
+  "/datos/economia/pib-precios-constantes-dolares-estadounidenses/dashboard": () => economyPibOperationPage("pib-precios-constantes-dolares-estadounidenses", "dashboard"),
+  "/datos/economia/pib-precios-constantes-dolares-estadounidenses/metodologia": () => economyPibOperationPage("pib-precios-constantes-dolares-estadounidenses", "methodology"),
+  "/datos/economia/pib-precios-constantes-dolares-estadounidenses/mas-informacion": () => economyPibOperationPage("pib-precios-constantes-dolares-estadounidenses", "more"),
   "/datos/economia/pib-precios-constantes-dolares-estadounidenses/preguntas-frecuentes": () => economyPibOperationPage("pib-precios-constantes-dolares-estadounidenses", "faq"),
   "/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales": () => economyPibOperationPage("pib-precios-corrientes-ppa-dolares-internacionales"),
+  "/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales/dashboard": () => economyPibOperationPage("pib-precios-corrientes-ppa-dolares-internacionales", "dashboard"),
+  "/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales/metodologia": () => economyPibOperationPage("pib-precios-corrientes-ppa-dolares-internacionales", "methodology"),
+  "/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales/mas-informacion": () => economyPibOperationPage("pib-precios-corrientes-ppa-dolares-internacionales", "more"),
   "/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales/preguntas-frecuentes": () => economyPibOperationPage("pib-precios-corrientes-ppa-dolares-internacionales", "faq"),
   "/datos/industria-energia-construccion": () => topicDetailPage("industry"),
   "/datos/mercado-laboral": () => topicDetailPage("labor"),
@@ -277,6 +292,29 @@ function currentRoute() {
 function routeSection(route) {
   const parts = normalizeRoute(route).split("/").filter(Boolean);
   return parts[0] || "inicio";
+}
+
+function metaForRoute(route) {
+  const normalized = normalizeRoute(route);
+  if (routeMeta[normalized]) return routeMeta[normalized];
+
+  const sectionLabels = {
+    dashboard: "Dashboard",
+    metodologia: "Metodología",
+    "mas-informacion": "Más información"
+  };
+  const parts = normalized.split("/").filter(Boolean);
+  const section = parts[parts.length - 1];
+  const baseRoute = `/${parts.slice(0, -1).join("/")}`;
+  if (sectionLabels[section] && routeMeta[baseRoute]) {
+    const baseTitle = routeMeta[baseRoute].title.replace(" | OVE", "");
+    return {
+      title: `${sectionLabels[section]} ${baseTitle} | OVE`,
+      description: `Página ${sectionLabels[section].toLowerCase()} de la ficha estadística ${baseTitle} en OVEbase.`
+    };
+  }
+
+  return routeMeta["/"];
 }
 
 function analyticsSourceFromHref(href) {
@@ -772,8 +810,8 @@ const pibOperations = {
     source: "FMI - World Economic Outlook",
     code: "NGDP",
     frequency: "Anual",
-    latestPeriod: "2027",
-    latestStatus: "Estimación/proyección FMI WEO",
+    latestPeriod: "2025",
+    latestStatus: "Estimación FMI WEO",
     publishedAt: "FMI WEO, actualización país 16/09/2025",
     latestValue: "184.820.483.420.000",
     unit: "Moneda nacional, precios corrientes",
@@ -782,9 +820,7 @@ const pibOperations = {
     sourceNote: "Fuente: FMI - World Economic Outlook (WEO), actualización país 16/09/2025.",
     valueNote: "El FMI reporta esta serie en moneda nacional corriente; OVE conserva el valor fuente sin reescalar.",
     seriesRows: [
-      { period: "2025", value: "16.489.790.761.000", unit: "Moneda nacional corriente", status: "Estimación FMI WEO" },
-      { period: "2026", value: "89.759.368.949.000", unit: "Moneda nacional corriente", status: "Estimación/proyección FMI WEO" },
-      { period: "2027", value: "184.820.483.420.000", unit: "Moneda nacional corriente", status: "Proyección FMI WEO" }
+      { period: "2025", value: "16.489.790.761.000", unit: "Moneda nacional corriente", status: "Estimación FMI WEO" }
     ],
     excel: "assets/data/imf/excel/ove_pib_fmi_ngdp_precios_corrientes_moneda_nacional.xlsx",
     excelLabel: "Excel OVE - serie histórica FMI",
@@ -810,8 +846,8 @@ const pibOperations = {
     source: "FMI - World Economic Outlook",
     code: "NGDPD",
     frequency: "Anual",
-    latestPeriod: "2027",
-    latestStatus: "Estimación/proyección FMI WEO",
+    latestPeriod: "2025",
+    latestStatus: "Estimación FMI WEO",
     publishedAt: "FMI WEO, actualización país 16/09/2025",
     latestValue: "117.908.128.000",
     unit: "Dólares estadounidenses, precios corrientes",
@@ -820,9 +856,7 @@ const pibOperations = {
     sourceNote: "Fuente: FMI - World Economic Outlook (WEO), actualización país 16/09/2025.",
     valueNote: "Serie en dólares estadounidenses corrientes. OVE conserva el valor fuente sin reescalar.",
     seriesRows: [
-      { period: "2025", value: "99.661.235.000", unit: "Dólares estadounidenses corrientes", status: "Estimación FMI WEO" },
-      { period: "2026", value: "111.303.343.000", unit: "Dólares estadounidenses corrientes", status: "Estimación/proyección FMI WEO" },
-      { period: "2027", value: "117.908.128.000", unit: "Dólares estadounidenses corrientes", status: "Proyección FMI WEO" }
+      { period: "2025", value: "99.661.235.000", unit: "Dólares estadounidenses corrientes", status: "Estimación FMI WEO" }
     ],
     excel: "assets/data/imf/excel/ove_pib_fmi_ngdpd_precios_corrientes_dolares_estadounidenses.xlsx",
     excelLabel: "Excel OVE - serie histórica FMI",
@@ -923,8 +957,8 @@ const pibOperations = {
     source: "FMI - World Economic Outlook",
     code: "PPPGDP",
     frequency: "Anual",
-    latestPeriod: "2027",
-    latestStatus: "Estimación/proyección FMI WEO",
+    latestPeriod: "2025",
+    latestStatus: "Estimación FMI WEO",
     publishedAt: "FMI WEO, actualización país 16/09/2025",
     latestValue: "275.547.798.000",
     unit: "Dólares internacionales, PPA, precios corrientes",
@@ -933,9 +967,7 @@ const pibOperations = {
     sourceNote: "Fuente: FMI - World Economic Outlook (WEO), actualización país 16/09/2025.",
     valueNote: "Serie en dólares internacionales corrientes ajustados por paridad de poder adquisitivo (PPA).",
     seriesRows: [
-      { period: "2025", value: "237.678.893.000", unit: "Dólares internacionales corrientes PPA", status: "Estimación FMI WEO" },
-      { period: "2026", value: "254.371.862.000", unit: "Dólares internacionales corrientes PPA", status: "Estimación/proyección FMI WEO" },
-      { period: "2027", value: "275.547.798.000", unit: "Dólares internacionales corrientes PPA", status: "Proyección FMI WEO" }
+      { period: "2025", value: "237.678.893.000", unit: "Dólares internacionales corrientes PPA", status: "Estimación FMI WEO" }
     ],
     excel: "assets/data/imf/excel/ove_pib_fmi_pppgdp_precios_corrientes_ppa_dolares_internacionales.xlsx",
     excelLabel: "Excel OVE - serie histórica FMI",
@@ -3216,6 +3248,15 @@ function pibFaqItems(operation) {
   ];
 }
 
+const pibComponentRows = [
+  ["Consumo final", "Demanda", "BCV disponible 1997-2017"],
+  ["Formación bruta de capital", "Demanda", "BCV disponible 1997-2017"],
+  ["Exportaciones de bienes y servicios", "Demanda", "BCV disponible 1997-2017"],
+  ["Importaciones de bienes y servicios", "Demanda", "BCV disponible 1997-2017"],
+  ["Excedente de explotación bruto", "Ingreso", "BCV disponible 1997-2017"],
+  ["Remuneración de asalariados", "Ingreso", "BCV disponible 1997-2017"]
+];
+
 function operationFaqList(operation) {
   return `<div class="operation-faq-list">
     ${pibFaqItems(operation).map(([question, answer], index) => `<details class="operation-faq-item"${index === 0 ? " open" : ""}>
@@ -3225,12 +3266,39 @@ function operationFaqList(operation) {
   </div>`;
 }
 
+function operationPlaceholderPage(operation, section) {
+  const pages = {
+    dashboard: {
+      title: "Dashboard",
+      text: "Página en construcción. Aquí se integrará una vista visual para consultar la serie, comparar períodos y revisar descargas asociadas."
+    },
+    methodology: {
+      title: "Metodología",
+      text: "Página en construcción. Aquí se documentará la fuente, la unidad, la frecuencia, el tratamiento OVE y las notas metodológicas de la operación."
+    },
+    more: {
+      title: "Más información",
+      text: "Página en construcción. Aquí se reunirán enlaces técnicos, descargas complementarias y materiales de referencia sobre esta operación estadística."
+    }
+  };
+  const page = pages[section] || pages.dashboard;
+  return `<section class="operation-empty-page">
+    <h1>${escapeHtml(page.title)}</h1>
+    <p>${escapeHtml(page.text)}</p>
+    <p class="operation-empty-context">${escapeHtml(operation.shortTitle)}</p>
+  </section>`;
+}
+
 function economyPibOperationPage(slug, section = "latest") {
   const operation = pibOperations[slug] || pibOperations["pib-precios-corrientes-moneda-nacional"];
   const seriesRows = operation.seriesRows || [];
   const relatedDownloads = operation.relatedDownloads || [];
   const isFaqPage = section === "faq";
+  const isPlaceholderPage = ["dashboard", "methodology", "more"].includes(section);
   const baseHref = `#/datos/economia/${slug}`;
+  const dashboardHref = `#/datos/economia/${slug}/dashboard`;
+  const methodologyHref = `#/datos/economia/${slug}/metodologia`;
+  const moreHref = `#/datos/economia/${slug}/mas-informacion`;
   const faqHref = `#/datos/economia/${slug}/preguntas-frecuentes`;
   const relatedFormatLinks = item => {
     const csv = item.href.replace("/excel/", "/csv/").replace(/\.xlsx$/, ".csv");
@@ -3264,19 +3332,19 @@ function economyPibOperationPage(slug, section = "latest") {
           <strong>OVEbase</strong>
         </div>
         <nav class="operation-tabs" aria-label="Secciones de la operación">
-          <a class="${!isFaqPage ? "is-active" : ""}" href="${baseHref}#ultimos-datos">
+          <a class="${section === "latest" ? "is-active" : ""}" href="${baseHref}">
             <span class="operation-tab-icon">${operationTabIcon("latest")}</span>
             <span>Últimos datos</span>
           </a>
-          <a href="${baseHref}#resultados">
+          <a class="${section === "dashboard" ? "is-active" : ""}" href="${dashboardHref}">
             <span class="operation-tab-icon">${operationTabIcon("results")}</span>
-            <span>Resultados</span>
+            <span>Dashboard</span>
           </a>
-          <a href="${baseHref}#metodologia">
+          <a class="${section === "methodology" ? "is-active" : ""}" href="${methodologyHref}">
             <span class="operation-tab-icon">${operationTabIcon("methodology")}</span>
             <span>Metodología</span>
           </a>
-          <a href="${baseHref}#mas-informacion">
+          <a class="${section === "more" ? "is-active" : ""}" href="${moreHref}">
             <span class="operation-tab-icon">${operationTabIcon("more")}</span>
             <span>Más información</span>
           </a>
@@ -3290,7 +3358,7 @@ function economyPibOperationPage(slug, section = "latest") {
           <h1>Preguntas frecuentes</h1>
           <p>Respuestas básicas para interpretar la ficha <strong>${escapeHtml(operation.shortTitle)}</strong>, sus fuentes, unidades, descargas y revisiones estadísticas.</p>
           ${operationFaqList(operation)}
-        </section>` : `
+        </section>` : isPlaceholderPage ? operationPlaceholderPage(operation, section) : `
         <div class="operation-news" id="ultimos-datos">
           <div class="operation-news-label">
             <strong>ÚLTIMOS</strong>
@@ -3299,6 +3367,7 @@ function economyPibOperationPage(slug, section = "latest") {
           <div>
             <h1>${escapeHtml(operation.title)}</h1>
             <p class="operation-date">${escapeHtml(operation.publishedAt)}</p>
+            <p>El Producto interno bruto (PIB) mide el valor de los bienes y servicios finales producidos en la economía durante un período. Sus componentes permiten ver de dónde viene el resultado: consumo, inversión, gasto público, exportaciones e importaciones, según la apertura publicada por la fuente.</p>
             <p>${escapeHtml(operation.summary)} ${escapeHtml(operation.sourceNote || "")}</p>
             <div class="operation-inline-links">
               <a href="${excelHref}" download>${icon("download")} Descargar ${escapeHtml(excelLabel)}</a>
@@ -3336,20 +3405,30 @@ function economyPibOperationPage(slug, section = "latest") {
               <strong>Fuente</strong>
               <span>${escapeHtml(operation.valueNote || "OVE conserva la fuente, unidad y periodo para facilitar consulta, descarga y trazabilidad.")}</span>
             </div>
+            <div class="operation-components">
+              <div class="operation-table-title">
+                <strong>Componentes del PIB</strong>
+                <span>BCV</span>
+              </div>
+              <p>Los componentes ayudan a interpretar el PIB por el lado de la demanda y del ingreso. En el catálogo OVE, el desglose oficial BCV de componentes de demanda está disponible para 1997-2017; para 2025 se muestra arriba el dato principal de la fuente de esta ficha.</p>
+              <table class="operation-latest-table operation-components-table">
+                <thead>
+                  <tr>
+                    <th>Componente</th>
+                    <th>Enfoque</th>
+                    <th>Cobertura disponible</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${pibComponentRows.map(row => `<tr>
+                    <td>${escapeHtml(row[0])}</td>
+                    <td>${escapeHtml(row[1])}</td>
+                    <td>${escapeHtml(row[2])}</td>
+                  </tr>`).join("")}
+                </tbody>
+              </table>
+            </div>
           </article>
-          <aside class="operation-side-panel">
-            <section>
-              <h2>Últimos datos</h2>
-              <p><strong>${escapeHtml(operation.latestPeriod)}</strong> ${escapeHtml(operation.latestStatus || "publicado en el catálogo OVE")}.</p>
-            </section>
-            <section>
-              <h2>Acceso directo a...</h2>
-              <a href="${excelHref}" download>${escapeHtml(excelLabel)}</a>
-              ${relatedDownloads.length ? `<a href="#datos-bcv">Datos BCV oficiales</a>` : ""}
-              <a href="#resultados">Tabla de resultados</a>
-              <a href="#metodologia">Metodología</a>
-            </section>
-          </aside>
         </div>
         ${relatedDownloads.length ? `<section class="operation-info-block operation-bcv-data" id="datos-bcv">
           <div class="operation-table-title">
@@ -3385,22 +3464,6 @@ function economyPibOperationPage(slug, section = "latest") {
             </span>
           </a>`).join("")}
           <a href="#/datos/economia">${icon("database")} Volver a Cuentas económicas</a>
-        </section>
-        <section class="operation-info-block" id="metodologia">
-          <h2>¿Sabías que...?</h2>
-          <p>El Producto interno bruto mide el valor de la producción final de bienes y servicios en una economía durante un período determinado. La lectura cambia según se consulte a precios corrientes, a precios constantes, en moneda nacional, en dólares estadounidenses o en paridad de poder adquisitivo.</p>
-          <p>En esta ficha OVE se conserva la fuente, el código estadístico, la frecuencia, el último período disponible y el enlace de descarga para facilitar el acceso ciudadano.</p>
-        </section>
-        <section class="operation-info-block" id="mas-informacion">
-          <h2>Más sobre el tema...</h2>
-          <div class="operation-more-item">
-            <img src="assets/topics/topic-economy.png" alt="" loading="lazy" decoding="async">
-            <a href="#/datos/economia">Cuentas económicas en OVEbase</a>
-          </div>
-        </section>
-        <section class="operation-info-block" id="preguntas-frecuentes">
-          <h2>Preguntas frecuentes</h2>
-          ${operationFaqList(operation)}
         </section>
         `}
       </div>
@@ -4645,7 +4708,7 @@ function contactPage() {
 function render() {
   const route = currentRoute();
   const view = routes[route] || routes["/"];
-  const meta = routeMeta[route] || routeMeta["/"];
+  const meta = metaForRoute(route);
   const currentRender = ++routeRenderId;
   const firstRender = lastRoute === null;
 

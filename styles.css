@@ -1122,7 +1122,7 @@ h3 {
 
 .operation-content-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
   margin-top: 10px;
 }
@@ -1351,6 +1351,33 @@ h3 {
   padding: 4px 0 28px;
 }
 
+.operation-empty-page {
+  min-height: 300px;
+  padding: 26px 28px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--yellow);
+}
+
+.operation-empty-page h1 {
+  margin: 0 0 10px;
+  color: var(--navy-900);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.operation-empty-page p {
+  max-width: 820px;
+  margin: 0 0 12px;
+  color: #101820;
+  font-size: 0.94rem;
+}
+
+.operation-empty-context {
+  color: var(--muted) !important;
+  font-weight: 700;
+}
+
 .operation-faq-page h1 {
   margin: 0 0 8px;
   color: var(--navy-900);
@@ -1425,6 +1452,23 @@ h3 {
   border-left: 4px solid var(--yellow);
   font-size: 0.9rem;
   line-height: 1.55;
+}
+
+.operation-components {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.operation-components p {
+  max-width: 980px;
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.operation-components-table {
+  margin-top: 8px;
 }
 
 .operation-more-item {
