@@ -628,7 +628,13 @@ const economyOperations = [
     subarea: "Actividad económica",
     description: "PIB, cuentas nacionales, crecimiento real, ingreso nacional, ahorro e indicadores de producción agregada.",
     icon: "trend",
-    focus: "PIB"
+    focus: "PIB",
+    cadence: "Mensual / trimestral / anual",
+    entries: [
+      ["Producto interno bruto", "PIB real, PIB corriente y variaciones de actividad."],
+      ["Cuentas nacionales", "Producción, demanda agregada e ingreso nacional."],
+      ["Indicador de actividad", "Series de seguimiento económico de corto plazo."]
+    ]
   },
   {
     id: "prices",
@@ -636,7 +642,13 @@ const economyOperations = [
     subarea: "Precios e inflación",
     description: "Inflación, deflactores, precios corrientes, PPA, IPC y variables monetarias vinculadas al poder de compra.",
     icon: "coin",
-    focus: "inflación"
+    focus: "inflación",
+    cadence: "Mensual / anual",
+    entries: [
+      ["Índice de precios", "INPC, IPC e índices comparables de precios."],
+      ["Inflación", "Variaciones mensuales, acumuladas y anuales."],
+      ["Precios macroeconómicos", "Deflactores, PPA y precios corrientes."]
+    ]
   },
   {
     id: "external",
@@ -644,7 +656,13 @@ const economyOperations = [
     subarea: "Sector externo y finanzas",
     description: "Tipo de cambio, comercio exterior, cuenta corriente, inversión extranjera, deuda, finanzas y reportes comparables.",
     icon: "globe",
-    focus: "tipo de cambio"
+    focus: "tipo de cambio",
+    cadence: "Diaria / mensual / anual",
+    entries: [
+      ["Tipo de cambio", "Referencia BCV y series monetarias comparables."],
+      ["Comercio exterior", "Exportaciones, importaciones y balanza externa."],
+      ["Finanzas internacionales", "Cuenta corriente, deuda e inversión extranjera."]
+    ]
   }
 ];
 
@@ -2773,8 +2791,9 @@ function keyIndicatorDownloadSection() {
 
 function topicDetailPage(topicKey) {
   const topic = topicDetails[topicKey] || topicDetails.agriculture;
+  if (topicKey === "economy") return economyTopicPage(topic);
+
   const downloads = keyIndicatorSeries.filter(series => (topic.keyIndicators || []).includes(series.id));
-  const economyPilot = topicKey === "economy" ? economyOperationsSection() : "";
 
   return `<div class="page">
     ${pageHero({
@@ -2797,9 +2816,28 @@ function topicDetailPage(topicKey) {
         <div class="topic-accordion">
           ${topic.groups.map((group, index) => topicGroup(group, index === 0)).join("")}
         </div>
-        ${economyPilot}
         ${topicIndicatorExplorer(topicKey)}
         ${downloads.length ? topicDownloads(topic, downloads) : ""}
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
+}
+
+function economyTopicPage(topic) {
+  return `<div class="page economy-page">
+    ${pageHero({
+      title: topic.title,
+      lead: topic.lead,
+      image: topic.image,
+      breadcrumb: ["Inicio", "Datos", topic.title],
+      actions: `<a class="button button-primary" href="#/datos">Volver a datos por temas ${arrow()}</a>
+        <a class="button" href="${indicatorInventoryDownloads.excel}" download>Descargar catálogo ${icon("download")}</a>`
+    })}
+    <section class="section economy-directory-section">
+      <div class="container">
+        ${economyOperationsSection()}
+        ${topicIndicatorExplorer("economy")}
       </div>
     </section>
     ${footer()}
@@ -2848,38 +2886,96 @@ function topicIndicatorExplorer(topicKey) {
 }
 
 function economyOperationsSection() {
-  return `<section class="economy-base" aria-labelledby="economy-base-title" data-economy-operations>
-    <div class="economy-base-head">
-      <div>
-        <span class="eyebrow">Piloto OVEbase</span>
-        <h2 id="economy-base-title">Economía organizada por operaciones estadísticas</h2>
-        <p>Entrada ciudadana al inventario económico ya disponible. Cada operación agrupa indicadores por fuente, periodo y descarga para llegar al dato sin navegar una lista plana.</p>
+  return `<section class="economy-directory" aria-labelledby="economy-base-title" data-economy-operations>
+    <aside class="economy-nav" aria-label="Navegación de Economía">
+      <div class="economy-nav-head">
+        <img src="assets/topics/topic-economy.png" alt="" loading="lazy" decoding="async">
+        <div>
+          <span class="eyebrow">Datos de Venezuela</span>
+          <h2 id="economy-base-title">Economía</h2>
+        </div>
       </div>
-      <div class="economy-base-actions">
-        <button class="button button-primary" type="button" data-operation-all>Ver todos los indicadores ${arrow()}</button>
-        <a class="button" href="${indicatorInventoryDownloads.excel}" download>Catálogo completo ${icon("download")}</a>
+      <nav>
+        <button class="is-active" type="button" data-operation-all>${icon("database")} Todas las operaciones</button>
+        ${economyOperations.map(operation => `<button type="button" data-operation-open="${escapeHtml(operation.subarea)}">${icon(operation.icon)} ${escapeHtml(operation.title)}</button>`).join("")}
+        <a href="#indicadores-tema">${icon("search")} Buscador de indicadores</a>
+      </nav>
+      <div class="economy-nav-download">
+        <strong>Catálogo OVE</strong>
+        <span>Inventario completo con fuente, frecuencia, periodo y descarga.</span>
+        <a class="button button-small" href="${indicatorInventoryDownloads.excel}" download>Excel ${icon("download")}</a>
       </div>
-    </div>
-    <div class="economy-operation-grid">
-      ${economyOperations.map(operation => `<article class="economy-operation-card" data-economy-operation="${operation.id}" data-operation-subarea="${escapeHtml(operation.subarea)}">
-        <div class="economy-operation-title">
-          <span class="line-icon">${icon(operation.icon)}</span>
+    </aside>
+    <div class="economy-main">
+      <div class="economy-intro">
+        <div>
+          <span class="eyebrow">Directorio estadístico</span>
+          <h2>Operaciones estadísticas de Economía</h2>
+          <p>Series económicas organizadas por tema, operación, indicador y archivo, con fuente, frecuencia, último periodo disponible y descargas OVE.</p>
+        </div>
+        <div class="economy-intro-stats">
+          <span><strong data-economy-total>...</strong><small>indicadores</small></span>
+          <span><strong data-economy-downloads>...</strong><small>Excel OVE</small></span>
+          <span><strong data-economy-sources>...</strong><small>fuentes</small></span>
+        </div>
+      </div>
+      <div class="economy-service-grid">
+        <article>
+          <span class="line-icon">${icon("chartbar")}</span>
+          <h3>Últimos datos</h3>
+          <p data-economy-latest>Calculando el último periodo publicado en el inventario económico.</p>
+        </article>
+        <article>
+          <span class="line-icon">${icon("download")}</span>
+          <h3>Descarga directa</h3>
+          <p>Los indicadores normalizados tienen Excel OVE individual, listo para ciudadanía, investigadores y medios.</p>
+        </article>
+        <article>
+          <span class="line-icon">${icon("shield")}</span>
+          <h3>Fuente trazable</h3>
+          <p>Cada línea conserva organismo, código, frecuencia, periodo inicial y último dato publicado.</p>
+        </article>
+      </div>
+      <div class="economy-table-panel">
+        <div class="economy-panel-head">
           <div>
-            <h3>${operation.title}</h3>
-            <p>${operation.description}</p>
+            <h3>Relación de operaciones disponibles</h3>
+            <p>Organización inicial de Economía a partir del inventario OVE existente.</p>
           </div>
+          <button class="button button-small button-ghost" type="button" data-operation-all>Mostrar todo</button>
         </div>
-        <div class="economy-operation-stats" aria-label="Resumen de ${operation.title}">
-          <span><strong data-operation-count>...</strong><small>indicadores</small></span>
-          <span><strong data-operation-downloads>...</strong><small>Excel OVE</small></span>
-          <span><strong data-operation-sources>...</strong><small>fuentes</small></span>
+        <div class="economy-operation-list">
+          <div class="economy-operation-head">
+            <strong>Operación estadística</strong>
+            <strong>Series disponibles</strong>
+            <strong>Periodo</strong>
+            <strong>Acceso</strong>
+          </div>
+          ${economyOperations.map(operation => `<article class="economy-operation-row" data-economy-operation="${operation.id}" data-operation-subarea="${escapeHtml(operation.subarea)}">
+            <div class="economy-operation-name">
+              <span class="line-icon">${icon(operation.icon)}</span>
+              <div>
+                <h3>${escapeHtml(operation.title)}</h3>
+                <p>${escapeHtml(operation.description)}</p>
+                <ul>${operation.entries.map(([label, text]) => `<li><strong>${escapeHtml(label)}</strong><span>${escapeHtml(text)}</span></li>`).join("")}</ul>
+              </div>
+            </div>
+            <div class="economy-operation-counts">
+              <span><strong data-operation-count>...</strong> indicadores</span>
+              <span><strong data-operation-downloads>...</strong> Excel OVE</span>
+              <span><strong data-operation-sources>...</strong> fuentes</span>
+            </div>
+            <div class="economy-operation-period">
+              <strong>${escapeHtml(operation.cadence)}</strong>
+              <span data-operation-latest>Calculando último dato...</span>
+            </div>
+            <div class="economy-operation-actions">
+              <button class="button button-small" type="button" data-operation-open="${escapeHtml(operation.subarea)}">Consultar</button>
+              <button class="button button-small button-ghost" type="button" data-operation-search="${escapeHtml(operation.focus)}">Buscar ${escapeHtml(operation.focus)}</button>
+            </div>
+          </article>`).join("")}
         </div>
-        <div class="download-row">
-          <button class="button button-small" type="button" data-operation-open="${escapeHtml(operation.subarea)}">Ver indicadores</button>
-          <button class="button button-small button-ghost" type="button" data-operation-search="${escapeHtml(operation.focus)}">Buscar ${escapeHtml(operation.focus)}</button>
-        </div>
-        <p class="tiny" data-operation-latest>Calculando último dato disponible...</p>
-      </article>`).join("")}
+      </div>
     </div>
   </section>`;
 }
@@ -4291,6 +4387,25 @@ async function hydrateIndicatorExplorer() {
       return periods[0] || "N/D";
     };
 
+    const economyRows = records.filter(row => row.tema === "Economía");
+    const economySources = unique(economyRows.map(row => row.fuente));
+    const economyDownloads = economyRows.filter(row => row.excel).length;
+    const economyLatest = latestPeriod(economyRows);
+    document.querySelectorAll("[data-economy-total]").forEach(node => {
+      node.textContent = formatInteger(economyRows.length);
+    });
+    document.querySelectorAll("[data-economy-downloads]").forEach(node => {
+      node.textContent = formatInteger(economyDownloads);
+    });
+    document.querySelectorAll("[data-economy-sources]").forEach(node => {
+      node.textContent = formatInteger(economySources.length);
+    });
+    document.querySelectorAll("[data-economy-latest]").forEach(node => {
+      node.textContent = economyRows.length
+        ? `Último periodo registrado: ${economyLatest}. Fuentes activas: ${economySources.slice(0, 4).join(", ")}${economySources.length > 4 ? "..." : ""}.`
+        : "Economía todavía no tiene registros normalizados en el inventario.";
+    });
+
     document.querySelectorAll("[data-economy-operation]").forEach(card => {
       const subarea = card.getAttribute("data-operation-subarea");
       const scoped = records.filter(row => row.tema === "Economía" && row.subarea === subarea);
@@ -4446,6 +4561,13 @@ async function hydrateIndicatorExplorer() {
 
       const wireEconomyOperations = () => {
         if (fixedTopic !== "Economía") return;
+        const setActiveOperation = subarea => {
+          document.querySelectorAll(".economy-nav [data-operation-all], .economy-nav [data-operation-open]").forEach(item => {
+            const isAll = item.hasAttribute("data-operation-all");
+            const matches = isAll ? subarea === "Todas" : item.getAttribute("data-operation-open") === subarea;
+            item.classList.toggle("is-active", matches);
+          });
+        };
         document.querySelectorAll("[data-operation-all]").forEach(button => {
           if (button.dataset.operationWired === "true") return;
           button.dataset.operationWired = "true";
@@ -4455,6 +4577,7 @@ async function hydrateIndicatorExplorer() {
             searchInput.value = "";
             populateIndicators();
             renderExplorer();
+            setActiveOperation("Todas");
             document.getElementById("indicadores-tema")?.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
           });
         });
@@ -4470,6 +4593,7 @@ async function hydrateIndicatorExplorer() {
             searchInput.value = "";
             populateIndicators();
             renderExplorer();
+            setActiveOperation(subarea);
             document.getElementById("indicadores-tema")?.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
           });
         });
@@ -4497,6 +4621,14 @@ async function hydrateIndicatorExplorer() {
       subareaSelect.addEventListener("change", () => {
         populateIndicators();
         renderExplorer();
+        if (fixedTopic === "Economía") {
+          document.querySelectorAll(".economy-nav [data-operation-all], .economy-nav [data-operation-open]").forEach(item => {
+            const subarea = activeSubarea();
+            const isAll = item.hasAttribute("data-operation-all");
+            const matches = isAll ? subarea === "Todas" : item.getAttribute("data-operation-open") === subarea;
+            item.classList.toggle("is-active", matches);
+          });
+        }
       });
       indicatorSelect.addEventListener("change", renderExplorer);
       searchInput.addEventListener("input", renderExplorer);

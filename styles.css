@@ -691,107 +691,311 @@ h3 {
   gap: 12px;
 }
 
-.economy-base {
-  margin-top: 28px;
-  padding: 24px;
-  background: #f8fbff;
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--yellow);
-  border-radius: var(--radius);
+.economy-directory-section {
+  background: #f5f7fb;
 }
 
-.economy-base-head {
+.economy-directory {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 20px;
+  grid-template-columns: minmax(230px, 285px) minmax(0, 1fr);
+  gap: 24px;
   align-items: start;
 }
 
-.economy-base-head h2 {
-  margin: 6px 0 8px;
-  color: var(--blue-700);
-  font-size: 1.45rem;
+.economy-nav,
+.economy-intro,
+.economy-service-grid article,
+.economy-table-panel {
+  background: #fff;
+  border: 1px solid #d8e1ee;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
-.economy-base-head p {
-  max-width: 790px;
-  margin: 0;
+.economy-nav {
+  position: sticky;
+  top: 96px;
+  overflow: hidden;
+}
+
+.economy-nav-head {
+  display: grid;
+  grid-template-columns: 62px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 18px;
+  border-top: 4px solid var(--blue-700);
+  border-bottom: 1px solid var(--line);
+}
+
+.economy-nav-head img {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+}
+
+.economy-nav-head h2 {
+  margin: 8px 0 0;
+  color: var(--blue-700);
+  font-size: 1.35rem;
+}
+
+.economy-nav nav {
+  display: grid;
+}
+
+.economy-nav nav button,
+.economy-nav nav a {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 18px;
+  color: var(--ink);
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  text-decoration: none;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.economy-nav nav button:hover,
+.economy-nav nav a:hover,
+.economy-nav nav .is-active {
+  color: var(--blue-700);
+  background: #eef5ff;
+}
+
+.economy-nav svg {
+  width: 20px;
+  height: 20px;
+}
+
+.economy-nav-download {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  background: #fafcff;
+}
+
+.economy-nav-download strong {
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.economy-nav-download span {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.economy-main {
+  display: grid;
+  gap: 18px;
+}
+
+.economy-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+  gap: 24px;
+  align-items: center;
+  padding: 22px 24px;
+  border-top: 4px solid var(--blue-700);
+}
+
+.economy-intro h2 {
+  margin: 10px 0 8px;
+  color: var(--blue-700);
+}
+
+.economy-intro p,
+.economy-service-grid p,
+.economy-panel-head p,
+.economy-operation-name p,
+.economy-operation-name li span,
+.economy-operation-period span {
   color: var(--muted);
 }
 
-.economy-base-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 10px;
+.economy-intro-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.economy-operation-grid {
+.economy-intro-stats span {
+  min-width: 0;
+  padding: 14px 12px;
+  background: #f8fbff;
+  border-left: 1px solid var(--line);
+}
+
+.economy-intro-stats span:first-child {
+  border-left: 0;
+}
+
+.economy-intro-stats strong,
+.economy-intro-stats small {
+  display: block;
+}
+
+.economy-intro-stats strong {
+  color: var(--blue-700);
+  font-size: 1.35rem;
+}
+
+.economy-intro-stats small {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.economy-service-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
-  margin-top: 20px;
 }
 
-.economy-operation-card {
-  display: grid;
-  align-content: space-between;
-  gap: 16px;
-  min-height: 305px;
-  padding: 18px;
-  background: #fff;
-  border: 1px solid #d5e1f0;
-  border-radius: var(--radius);
-}
-
-.economy-operation-title {
+.economy-service-grid article {
   display: grid;
   grid-template-columns: 42px minmax(0, 1fr);
   gap: 12px;
   align-items: start;
+  padding: 16px;
 }
 
-.economy-operation-title h3 {
-  margin: 0 0 7px;
-  color: var(--ink);
-  font-size: 1.05rem;
+.economy-service-grid h3,
+.economy-service-grid p {
+  grid-column: 2;
+  margin-bottom: 0;
 }
 
-.economy-operation-title p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.5;
+.economy-table-panel {
+  overflow: hidden;
 }
 
-.economy-operation-stats {
+.economy-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.economy-panel-head h3,
+.economy-panel-head p {
+  margin-bottom: 0;
+}
+
+.economy-operation-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.economy-operation-head,
+.economy-operation-row {
+  display: grid;
+  grid-template-columns: minmax(280px, 1.4fr) minmax(150px, 0.55fr) minmax(150px, 0.55fr) minmax(150px, 0.5fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.economy-operation-head {
+  min-height: 42px;
+  align-items: center;
+  padding: 0 18px;
+  color: #fff;
+  background: var(--blue-700);
+  font-size: 0.82rem;
+}
+
+.economy-operation-row {
+  padding: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.economy-operation-row:nth-child(odd) {
+  background: #f8fbff;
+}
+
+.economy-operation-row:last-child {
+  border-bottom: 0;
+}
+
+.economy-operation-name {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 12px;
+}
+
+.economy-operation-name h3 {
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.economy-operation-name p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.economy-operation-name ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.economy-operation-name li {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.4fr) minmax(0, 1fr);
+  gap: 8px;
+  font-size: 0.82rem;
+}
+
+.economy-operation-name li strong {
+  color: var(--ink);
+}
+
+.economy-operation-counts,
+.economy-operation-period,
+.economy-operation-actions {
+  display: grid;
   gap: 8px;
 }
 
-.economy-operation-stats span {
-  min-width: 0;
-  padding: 10px;
-  background: #f8fbff;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-}
-
-.economy-operation-stats strong,
-.economy-operation-stats small {
-  display: block;
-}
-
-.economy-operation-stats strong {
-  color: var(--blue-700);
-  font-size: 1.05rem;
-}
-
-.economy-operation-stats small {
+.economy-operation-counts span {
   color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 750;
+  font-size: 0.84rem;
+}
+
+.economy-operation-counts strong {
+  color: var(--blue-700);
+  font-size: 1rem;
+}
+
+.economy-operation-period strong {
+  color: var(--ink);
+  font-size: 0.88rem;
+}
+
+.economy-operation-period span {
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.economy-operation-actions .button {
+  width: 100%;
+  justify-content: center;
 }
 
 .topic-detail {
@@ -3407,21 +3611,52 @@ th {
     padding: 18px;
   }
 
-  .economy-base {
-    padding: 18px;
-  }
-
-  .economy-base-head,
-  .economy-operation-grid {
+  .economy-directory,
+  .economy-intro,
+  .economy-service-grid,
+  .economy-operation-head,
+  .economy-operation-row {
     grid-template-columns: 1fr;
   }
 
-  .economy-base-actions {
-    justify-content: stretch;
+  .economy-nav {
+    position: static;
   }
 
-  .economy-operation-card {
-    min-height: 0;
+  .economy-intro {
+    padding: 18px;
+  }
+
+  .economy-intro-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .economy-intro-stats span,
+  .economy-intro-stats span:first-child {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .economy-intro-stats span:first-child {
+    border-top: 0;
+  }
+
+  .economy-operation-head {
+    display: none;
+  }
+
+  .economy-operation-row {
+    gap: 14px;
+  }
+
+  .economy-operation-name li {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .economy-panel-head {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .topic-detail-head img {
