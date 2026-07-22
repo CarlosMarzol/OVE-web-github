@@ -871,8 +871,8 @@ h3 {
 .economy-ine-table-head,
 .economy-ine-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(130px, 180px);
-  gap: 18px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
   align-items: center;
 }
 
