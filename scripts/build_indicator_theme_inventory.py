@@ -548,6 +548,12 @@ def collect_bcv(records):
     bcv_dir = DATA / "bcv" / "csv"
     specs = [
         ("ove_bcv_pib_real_anual.csv", "bcv_pib_real_anual", "PIB real anual - variación porcentual", "Año", "year", "annual_real_gdp_growth_pct", "Anual"),
+        ("ove_bcv_pib_historico_anual.csv", "bcv_pib_historico_anual", "PIB histórico anual - precios corrientes y constantes", "Economía", "period", "value", "Anual"),
+        ("ove_bcv_pib_demanda_anual.csv", "bcv_pib_demanda_anual", "PIB por componentes de demanda - anual", "Economía", "period", "value", "Anual"),
+        ("ove_bcv_pib_sector_institucional_anual.csv", "bcv_pib_sector_institucional_anual", "PIB por sector institucional - anual", "Economía", "period", "value", "Anual"),
+        ("ove_bcv_pib_sector_institucional_trimestral.csv", "bcv_pib_sector_institucional_trimestral", "PIB por sector institucional - trimestral", "Economía", "period", "value", "Trimestral"),
+        ("ove_bcv_pib_actividad_economica_anual.csv", "bcv_pib_actividad_economica_anual", "PIB por actividad económica - anual", "Economía", "period", "value", "Anual"),
+        ("ove_bcv_pib_actividad_economica_trimestral.csv", "bcv_pib_actividad_economica_trimestral", "PIB por actividad económica - trimestral", "Economía", "period", "value", "Trimestral"),
         ("ove_bcv_inpc_nacional_mensual.csv", "bcv_inpc_indice", "INPC nacional mensual - índice", "Nivel y condiciones de vida (IPC)", "date", "index_value", "Mensual"),
         ("ove_bcv_inpc_nacional_mensual.csv", "bcv_inpc_variacion_mensual", "INPC nacional mensual - variación mensual", "Nivel y condiciones de vida (IPC)", "date", "monthly_variation_pct", "Mensual"),
     ]

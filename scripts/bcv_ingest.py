@@ -502,6 +502,10 @@ def ingest_catalogued_workbook(dataset: dict, fetched_at: str) -> dict:
   RAW_DIR.mkdir(parents=True, exist_ok=True)
   (RAW_DIR / f'{dataset["output_slug"]}.html').write_bytes(payload)
   catalog = catalog_excel_links(decode_html(payload), dataset, fetched_at)
+  for item in catalog.get("files", []):
+    if not item.get("url") or not item.get("file_name"):
+      continue
+    fetch_binary_to_path(item["url"], RAW_DIR / item["file_name"])
   write_json(CATALOG_DIR / f'{dataset["output_slug"]}_workbooks.json', catalog)
   return catalog["metadata"]
 

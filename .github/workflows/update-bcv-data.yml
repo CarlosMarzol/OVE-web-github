@@ -93,6 +93,7 @@ jobs:
           elif [ "${{ steps.group.outputs.value }}" = "all" ]; then
             python scripts/bcv_ingest.py --group all
             python scripts/bcv_workbook_extract.py
+            python scripts/build_bcv_pib_operation_excels.py
             python scripts/world_bank_refresh.py
             python scripts/ilo_refresh.py
             python scripts/imf_refresh.py
@@ -105,6 +106,10 @@ jobs:
             python scripts/bcv_ingest.py --group "${{ steps.group.outputs.value }}"
             if [ "${{ steps.group.outputs.value }}" = "monthly" ]; then
               python scripts/bcv_workbook_extract.py
+              python scripts/build_bcv_pib_operation_excels.py
+            elif [ "${{ steps.group.outputs.value }}" = "bcv_producto_interno_bruto" ]; then
+              python scripts/bcv_workbook_extract.py
+              python scripts/build_bcv_pib_operation_excels.py
             fi
           fi
           python scripts/build_key_indicators_dataset.py

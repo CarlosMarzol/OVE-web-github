@@ -1258,6 +1258,11 @@ h3 {
   border-left: 5px solid var(--yellow);
 }
 
+.operation-download-card-secondary {
+  border-left-color: var(--blue-600);
+  background: #f8fbff;
+}
+
 .operation-download-card svg {
   flex: 0 0 auto;
 }

@@ -2,12 +2,12 @@
 Agricultura y medio ambiente,257
 Ciencia y tecnología,94
 Demografía y población,768
-Economía,526
+Economía,528
 "Industria, energía y construcción",193
 Mercado laboral,816
 Servicios,100
-Nivel y condiciones de vida (IPC),644
-Sociedad,374
+Nivel y condiciones de vida (IPC),646
+Sociedad,376
 Estadísticas experimentales,2
 
 tema_ove,subarea_ove,indicadores_o_recursos
@@ -22,8 +22,8 @@ Ciencia y tecnología,Conectividad y capacidades digitales,51
 Demografía y población,Población,690
 Demografía y población,Natalidad y mortalidad,67
 Demografía y población,Migración y movilidad,11
-Economía,Actividad económica,96
-Economía,Precios e inflación,64
+Economía,Actividad económica,97
+Economía,Precios e inflación,65
 Economía,Sector externo y finanzas,366
 "Industria, energía y construcción",Industria manufacturera,17
 "Industria, energía y construcción",Energía e hidrocarburos,165
@@ -34,12 +34,12 @@ Mercado laboral,Informalidad y movilidad laboral,157
 Servicios,Comercio y consumo,29
 Servicios,"Turismo, transporte y logística",22
 Servicios,Servicios digitales y profesionales,49
-Nivel y condiciones de vida (IPC),Condiciones de vida,313
+Nivel y condiciones de vida (IPC),Condiciones de vida,315
 Nivel y condiciones de vida (IPC),Costo de vida e IPC,273
 Nivel y condiciones de vida (IPC),"Salud, educación y vivienda",58
 Sociedad,Seguridad y convivencia,7
 Sociedad,"Género, juventud y grupos vulnerables",31
-Sociedad,Participación y comunidad,336
+Sociedad,Participación y comunidad,338
 Estadísticas experimentales,Indicadores de alta frecuencia,2
 Estadísticas experimentales,Datos geoespaciales,0
 Estadísticas experimentales,Modelos y nowcasting,0
@@ -52,7 +52,7 @@ INE Venezuela,323
 UNCTADstat - UNCTAD,101
 Banco Mundial - WDI,79
 FMI - World Economic Outlook,36
-Banco Central de Venezuela,9
+Banco Central de Venezuela,15
 OVE - Indicadores clave,6
 
 clasificaciones_baja_confianza,90

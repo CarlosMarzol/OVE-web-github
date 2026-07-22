@@ -759,6 +759,18 @@ const pibOperations = {
     ],
     excel: "assets/data/imf/excel/ove_pib_fmi_ngdp_precios_corrientes_moneda_nacional.xlsx",
     excelLabel: "Excel OVE - serie histórica FMI",
+    relatedDownloads: [
+      {
+        label: "PIB histórico anual BCV - precios corrientes y constantes",
+        href: "assets/data/bcv/excel/ove_bcv_pib_historico_anual.xlsx",
+        meta: "1950-2017, Banco Central de Venezuela"
+      },
+      {
+        label: "PIB por componentes de demanda BCV",
+        href: "assets/data/bcv/excel/ove_bcv_pib_demanda_anual.xlsx",
+        meta: "1997-2017, precios corrientes y constantes"
+      }
+    ],
     download: "/api/indicator-excel?id=fmi-world-economic-outlook__ngdp__annual__producto-interno-bruto-pib-precios-corrientes-moneda-nacional",
     origin: "assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.csv",
     chartKind: "blue"
@@ -805,6 +817,38 @@ const pibOperations = {
     sourceNote: "Serie identificada para normalización. OVE no publica todavía un último valor validado para esta ficha.",
     valueNote: "Hasta que la serie esté normalizada, la ficha conserva acceso a la fuente y evita mostrar valores no verificados.",
     seriesRows: [],
+    relatedDownloads: [
+      {
+        label: "PIB histórico anual BCV - precios corrientes y constantes",
+        href: "assets/data/bcv/excel/ove_bcv_pib_historico_anual.xlsx",
+        meta: "1950-2017, serie histórica oficial"
+      },
+      {
+        label: "PIB por sector institucional BCV - anual",
+        href: "assets/data/bcv/excel/ove_bcv_pib_sector_institucional_anual.xlsx",
+        meta: "1997-2025, precios constantes"
+      },
+      {
+        label: "PIB por sector institucional BCV - trimestral",
+        href: "assets/data/bcv/excel/ove_bcv_pib_sector_institucional_trimestral.xlsx",
+        meta: "1997-2026-I, precios constantes"
+      },
+      {
+        label: "PIB por actividad económica BCV - anual",
+        href: "assets/data/bcv/excel/ove_bcv_pib_actividad_economica_anual.xlsx",
+        meta: "1997-2025, actividades económicas"
+      },
+      {
+        label: "PIB por actividad económica BCV - trimestral",
+        href: "assets/data/bcv/excel/ove_bcv_pib_actividad_economica_trimestral.xlsx",
+        meta: "1997-2026-I, actividades económicas"
+      },
+      {
+        label: "PIB por componentes de demanda BCV",
+        href: "assets/data/bcv/excel/ove_bcv_pib_demanda_anual.xlsx",
+        meta: "1997-2017, enfoque demanda y producción"
+      }
+    ],
     download: "/api/indicator-excel?id=cepalstat-cepal__2194__sin-frecuencia__producto-interno-bruto-anual-pib-por-objeto-del-gasto-a-precios-constantes-en-moneda-nacional",
     origin: "assets/data/cepal/catalog/catalogo_dataset_web_ove_cepalstat.csv",
     chartKind: "blue"
@@ -827,6 +871,18 @@ const pibOperations = {
     seriesRows: [
       { period: "2024", value: "86.845,09", unit: "Millones de dólares de 2018", status: "Estimación CEPAL" },
       { period: "2025", value: "94.368,65", unit: "Millones de dólares de 2018", status: "Estimación CEPAL" }
+    ],
+    relatedDownloads: [
+      {
+        label: "PIB por actividad económica BCV - anual",
+        href: "assets/data/bcv/excel/ove_bcv_pib_actividad_economica_anual.xlsx",
+        meta: "1997-2025, precios constantes en moneda nacional"
+      },
+      {
+        label: "PIB por actividad económica BCV - trimestral",
+        href: "assets/data/bcv/excel/ove_bcv_pib_actividad_economica_trimestral.xlsx",
+        meta: "1997-2026-I, precios constantes en moneda nacional"
+      }
     ],
     download: "/api/indicator-excel?id=cepalstat-cepal__2204__sin-frecuencia__producto-interno-bruto-pib-total-anual-a-precios-constantes-en-dolares",
     origin: "assets/data/cepal/catalog/catalogo_dataset_web_ove_cepalstat.csv",
@@ -3085,6 +3141,7 @@ function economyIneCategory(category) {
 function economyPibOperationPage(slug) {
   const operation = pibOperations[slug] || pibOperations["pib-precios-corrientes-moneda-nacional"];
   const seriesRows = operation.seriesRows || [];
+  const relatedDownloads = operation.relatedDownloads || [];
   const excelHref = operation.excel || operation.download;
   const excelLabel = operation.excelLabel || "Excel OVE";
   return `<div class="page operation-page">
@@ -3198,6 +3255,13 @@ function economyPibOperationPage(slug) {
               <small>${escapeHtml(excelLabel)}</small>
             </span>
           </a>
+          ${relatedDownloads.map(item => `<a class="operation-download-card operation-download-card-secondary" href="${item.href}" download>
+            ${icon("download")}
+            <span>
+              <strong>${escapeHtml(item.label)}</strong>
+              <small>${escapeHtml(item.meta)}</small>
+            </span>
+          </a>`).join("")}
           <a href="#/datos/economia">${icon("database")} Volver a Cuentas económicas</a>
         </section>
         <section class="operation-info-block" id="metodologia">
