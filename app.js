@@ -750,13 +750,15 @@ const pibOperations = {
     unit: "Moneda nacional, precios corrientes",
     tableTitle: "PIB, precios corrientes, moneda nacional",
     summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes expresado en moneda nacional.",
-    sourceNote: "Fuente: FMI - World Economic Outlook (WEO). Los valores 2025, 2026 y 2027 se presentan como estimaciones/proyecciones de la fuente integradas al catálogo OVE.",
+    sourceNote: "Fuente: FMI - World Economic Outlook (WEO), actualización país 16/09/2025.",
     valueNote: "El FMI reporta esta serie en moneda nacional corriente; OVE conserva el valor fuente sin reescalar.",
     seriesRows: [
       { period: "2025", value: "16.489.790.761.000", unit: "Moneda nacional corriente", status: "Estimación FMI WEO" },
       { period: "2026", value: "89.759.368.949.000", unit: "Moneda nacional corriente", status: "Estimación/proyección FMI WEO" },
       { period: "2027", value: "184.820.483.420.000", unit: "Moneda nacional corriente", status: "Proyección FMI WEO" }
     ],
+    excel: "assets/data/imf/excel/ove_pib_fmi_ngdp_precios_corrientes_moneda_nacional.xlsx",
+    excelLabel: "Excel OVE - serie histórica FMI",
     download: "/api/indicator-excel?id=fmi-world-economic-outlook__ngdp__annual__producto-interno-bruto-pib-precios-corrientes-moneda-nacional",
     origin: "assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.csv",
     chartKind: "blue"
@@ -774,13 +776,15 @@ const pibOperations = {
     unit: "Dólares estadounidenses, precios corrientes",
     tableTitle: "PIB, precios corrientes, dólares estadounidenses",
     summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes expresado en dólares estadounidenses.",
-    sourceNote: "Fuente: FMI - World Economic Outlook (WEO). Los valores 2025, 2026 y 2027 se presentan como estimaciones/proyecciones de la fuente integradas al catálogo OVE.",
+    sourceNote: "Fuente: FMI - World Economic Outlook (WEO), actualización país 16/09/2025.",
     valueNote: "Serie en dólares estadounidenses corrientes. OVE conserva el valor fuente sin reescalar.",
     seriesRows: [
       { period: "2025", value: "99.661.235.000", unit: "Dólares estadounidenses corrientes", status: "Estimación FMI WEO" },
       { period: "2026", value: "111.303.343.000", unit: "Dólares estadounidenses corrientes", status: "Estimación/proyección FMI WEO" },
       { period: "2027", value: "117.908.128.000", unit: "Dólares estadounidenses corrientes", status: "Proyección FMI WEO" }
     ],
+    excel: "assets/data/imf/excel/ove_pib_fmi_ngdpd_precios_corrientes_dolares_estadounidenses.xlsx",
+    excelLabel: "Excel OVE - serie histórica FMI",
     download: "/api/indicator-excel?id=fmi-world-economic-outlook__ngdpd__annual__producto-interno-bruto-pib-precios-corrientes-dolar-estadounidense",
     origin: "assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.csv",
     chartKind: "yellow"
@@ -841,13 +845,15 @@ const pibOperations = {
     unit: "Dólares internacionales, PPA, precios corrientes",
     tableTitle: "PIB, precios corrientes PPA, dólares internacionales",
     summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes medido por paridad de poder adquisitivo.",
-    sourceNote: "Fuente: FMI - World Economic Outlook (WEO). Los valores 2025, 2026 y 2027 se presentan como estimaciones/proyecciones de la fuente integradas al catálogo OVE.",
+    sourceNote: "Fuente: FMI - World Economic Outlook (WEO), actualización país 16/09/2025.",
     valueNote: "Serie en dólares internacionales corrientes ajustados por paridad de poder adquisitivo (PPA).",
     seriesRows: [
       { period: "2025", value: "237.678.893.000", unit: "Dólares internacionales corrientes PPA", status: "Estimación FMI WEO" },
       { period: "2026", value: "254.371.862.000", unit: "Dólares internacionales corrientes PPA", status: "Estimación/proyección FMI WEO" },
       { period: "2027", value: "275.547.798.000", unit: "Dólares internacionales corrientes PPA", status: "Proyección FMI WEO" }
     ],
+    excel: "assets/data/imf/excel/ove_pib_fmi_pppgdp_precios_corrientes_ppa_dolares_internacionales.xlsx",
+    excelLabel: "Excel OVE - serie histórica FMI",
     download: "/api/indicator-excel?id=fmi-world-economic-outlook__pppgdp__annual__producto-interno-bruto-pib-precios-corrientes-paridad-de-poder-adquisitivo-ppa-dolares-internaci",
     origin: "assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.csv",
     chartKind: "yellow"
@@ -3079,6 +3085,8 @@ function economyIneCategory(category) {
 function economyPibOperationPage(slug) {
   const operation = pibOperations[slug] || pibOperations["pib-precios-corrientes-moneda-nacional"];
   const seriesRows = operation.seriesRows || [];
+  const excelHref = operation.excel || operation.download;
+  const excelLabel = operation.excelLabel || "Excel OVE";
   return `<div class="page operation-page">
     <section class="operation-topbar" aria-label="Navegación de operación estadística">
       <div class="container operation-topbar-inner">
@@ -3132,7 +3140,7 @@ function economyPibOperationPage(slug) {
             <p class="operation-date">${escapeHtml(operation.publishedAt)}</p>
             <p>${escapeHtml(operation.summary)} ${escapeHtml(operation.sourceNote || "")}</p>
             <div class="operation-inline-links">
-              <a href="${operation.download}" download>${icon("download")} Descargar Excel OVE</a>
+              <a href="${excelHref}" download>${icon("download")} Descargar ${escapeHtml(excelLabel)}</a>
               <a href="${operation.origin}" download>${icon("database")} Catálogo fuente</a>
             </div>
           </div>
@@ -3164,7 +3172,7 @@ function economyPibOperationPage(slug) {
               </tbody>
             </table>
             <div class="operation-source-note">
-              <strong>Fuente y lectura del dato</strong>
+              <strong>Fuente</strong>
               <span>${escapeHtml(operation.valueNote || "OVE conserva la fuente, unidad y periodo para facilitar consulta, descarga y trazabilidad.")}</span>
             </div>
           </article>
@@ -3175,7 +3183,7 @@ function economyPibOperationPage(slug) {
             </section>
             <section>
               <h2>Acceso directo a...</h2>
-              <a href="${operation.download}" download>Excel OVE</a>
+              <a href="${excelHref}" download>${escapeHtml(excelLabel)}</a>
               <a href="#resultados">Tabla de resultados</a>
               <a href="#metodologia">Metodología</a>
             </section>
@@ -3183,7 +3191,13 @@ function economyPibOperationPage(slug) {
         </div>
         <section class="operation-consulted">
           <h2>Tablas más consultadas</h2>
-          <a href="${operation.download}" download>${icon("download")} ${escapeHtml(operation.shortTitle)}</a>
+          <a class="operation-download-card" href="${excelHref}" download>
+            ${icon("download")}
+            <span>
+              <strong>${escapeHtml(operation.shortTitle)}</strong>
+              <small>${escapeHtml(excelLabel)}</small>
+            </span>
+          </a>
           <a href="#/datos/economia">${icon("database")} Volver a Cuentas económicas</a>
         </section>
         <section class="operation-info-block" id="metodologia">

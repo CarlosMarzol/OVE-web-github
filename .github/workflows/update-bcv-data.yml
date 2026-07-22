@@ -81,6 +81,7 @@ jobs:
             python scripts/ilo_refresh.py
           elif [ "${{ steps.group.outputs.value }}" = "imf" ]; then
             python scripts/imf_refresh.py
+            python scripts/build_imf_pib_operation_excels.py
           elif [ "${{ steps.group.outputs.value }}" = "fred" ]; then
             python scripts/fred_refresh.py
           elif [ "${{ steps.group.outputs.value }}" = "ine" ]; then
@@ -95,6 +96,7 @@ jobs:
             python scripts/world_bank_refresh.py
             python scripts/ilo_refresh.py
             python scripts/imf_refresh.py
+            python scripts/build_imf_pib_operation_excels.py
             python scripts/fred_refresh.py
             python scripts/ine_refresh.py
             python scripts/cepal_refresh.py
