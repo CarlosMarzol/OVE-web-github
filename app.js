@@ -1378,6 +1378,62 @@ function icon(name) {
   return `<svg viewBox="0 0 24 24" aria-hidden="true">${paths[name] || paths.file}</svg>`;
 }
 
+function operationTabIcon(name) {
+  const icons = {
+    latest: `
+      <path class="stroke-navy" d="M5.3 4.6h8.8l4.6 4.6v10.2a1.8 1.8 0 0 1-1.8 1.8H5.3a1.8 1.8 0 0 1-1.8-1.8v-13a1.8 1.8 0 0 1 1.8-1.8Z"></path>
+      <path class="stroke-navy" d="M14.1 4.7v4.5h4.5"></path>
+      <path class="stroke-blue" d="M6.7 8.2h2.4v2.4H6.7Z"></path>
+      <path class="stroke-yellow" d="M10.8 8.2h2.4v2.4h-2.4Z"></path>
+      <path class="stroke-red" d="M14.9 8.2h2.4v2.4h-2.4Z"></path>
+      <path class="stroke-navy" d="M6.8 13.2h6.7"></path>
+      <path class="stroke-navy" d="M6.8 15.5h5.5"></path>
+      <path class="stroke-blue" d="M15.4 14.1a4.2 4.2 0 1 1-2.2 3.7"></path>
+      <path class="stroke-navy" d="M17.4 13.6v3.5l2.7 1.7"></path>
+    `,
+    results: `
+      <path class="stroke-navy" d="M3.8 20.2h10.8"></path>
+      <path class="stroke-navy" d="M5 18.3v-4.5h2.4v4.5"></path>
+      <path class="stroke-navy" d="M8.9 18.3v-7.2h2.4v7.2"></path>
+      <path class="stroke-navy" d="M12.8 18.3V7.7h2.4v10.6"></path>
+      <circle class="stroke-navy" cx="14.2" cy="10.3" r="5.8"></circle>
+      <path class="stroke-navy" d="m18.4 14.5 3.3 3.3"></path>
+      <path class="stroke-blue" d="M10.2 7.4a5.3 5.3 0 0 1 4-2.2"></path>
+      <path class="stroke-yellow" d="M9.8 13.2v3.1"></path>
+      <path class="stroke-blue" d="M6.2 15.2v2.2"></path>
+      <path class="stroke-red" d="M14 9.4v3"></path>
+    `,
+    methodology: `
+      <path class="stroke-navy" d="M3.6 17.9V6.4h2.6l3.4 6 3.4-6h2.6v11.5"></path>
+      <path class="stroke-navy" d="M19.2 5.3h-5.6a1.6 1.6 0 0 0-1.6 1.6v12.2h7.2a1.6 1.6 0 0 0 1.6-1.6V6.9a1.6 1.6 0 0 0-1.6-1.6Z"></path>
+      <path class="stroke-blue" d="m14.2 10.5 1 1 2.1-2.2"></path>
+      <path class="stroke-yellow" d="M14.2 14h.1"></path>
+      <path class="stroke-red" d="M14.2 17h.1"></path>
+      <path class="stroke-navy" d="M16.5 14h2.3"></path>
+      <path class="stroke-navy" d="M16.5 17h2.3"></path>
+    `,
+    more: `
+      <path class="stroke-navy" d="M9.4 7.4 11 5.8a4.2 4.2 0 0 1 5.9 5.9l-2.5 2.5a4.2 4.2 0 0 1-5.9 0"></path>
+      <path class="stroke-navy" d="M14.6 16.6 13 18.2a4.2 4.2 0 0 1-5.9-5.9l2.5-2.5a4.2 4.2 0 0 1 5.9 0"></path>
+      <path class="stroke-navy" d="M9.7 14.3 14.3 9.7"></path>
+      <path class="stroke-blue" d="M5.8 15.4a2.4 2.4 0 0 0 2.8 2.8"></path>
+      <path class="stroke-yellow" d="M5.1 11.6l.8-.8"></path>
+      <path class="stroke-red" d="M18.3 8.5a2.4 2.4 0 0 0-2.8-2.8"></path>
+    `,
+    faq: `
+      <path class="stroke-navy" d="M4.2 6.4h9.2a3 3 0 0 1 3 3v3.1a3 3 0 0 1-3 3H8.1l-3.5 3v-3a3 3 0 0 1-2.4-2.9V8.4a2 2 0 0 1 2-2Z"></path>
+      <path class="stroke-navy" d="M12.5 5.6h7.3a2 2 0 0 1 2 2v4.2a3 3 0 0 1-2.4 2.9v2.8l-3.1-2.7"></path>
+      <path class="stroke-blue" d="M15.8 8.4c1.1-1.4 3.7-.6 3.4 1.4-.2 1.1-1.3 1.4-1.7 2.2"></path>
+      <path class="stroke-blue" d="M17.5 14.1h.1"></path>
+      <path class="stroke-navy" d="M5.8 10.2h6.2"></path>
+      <path class="stroke-navy" d="M5.8 12.7h4.7"></path>
+      <path class="stroke-yellow" d="M3.2 9.8v.7"></path>
+      <path class="stroke-red" d="M20.9 10.5v.7"></path>
+    `
+  };
+  return `<svg viewBox="0 0 24 24" aria-hidden="true">${icons[name] || icons.latest}</svg>`;
+}
+
 function arrow() {
   return icon("arrow");
 }
@@ -3048,28 +3104,28 @@ function economyPibOperationPage(slug) {
     <section class="section operation-ine-page">
       <div class="container">
         <div class="operation-brand-row">
-          <span></span>
+          <img src="assets/ove-logo-brand.png" alt="Observatorio Venezolano de Economía">
           <strong>OVEbase</strong>
         </div>
         <nav class="operation-tabs" aria-label="Secciones de la operación">
           <a class="is-active" href="#ultimos-datos">
-            <span class="operation-tab-icon">${icon("calculator")}</span>
+            <span class="operation-tab-icon">${operationTabIcon("latest")}</span>
             <span>Últimos datos</span>
           </a>
           <a href="#resultados">
-            <span class="operation-tab-icon">${icon("chartbar")}</span>
+            <span class="operation-tab-icon">${operationTabIcon("results")}</span>
             <span>Resultados</span>
           </a>
           <a href="#metodologia">
-            <span class="operation-tab-icon operation-tab-letter">M</span>
+            <span class="operation-tab-icon">${operationTabIcon("methodology")}</span>
             <span>Metodología</span>
           </a>
           <a href="#mas-informacion">
-            <span class="operation-tab-icon">${icon("copy")}</span>
+            <span class="operation-tab-icon">${operationTabIcon("more")}</span>
             <span>Más información</span>
           </a>
           <a href="#preguntas-frecuentes">
-            <span class="operation-tab-icon">${icon("quote")}</span>
+            <span class="operation-tab-icon">${operationTabIcon("faq")}</span>
             <span>Preguntas frecuentes</span>
           </a>
         </nav>
@@ -3116,7 +3172,7 @@ function economyPibOperationPage(slug) {
             <div class="operation-mini-chart" aria-label="Vista previa gráfica">
               <div>
                 <strong>Serie disponible en el catálogo OVE</strong>
-                <span>La conexión completa de tabla y gráfico dinámico se hará en el siguiente paso.</span>
+                <span>Vista institucional de la serie para facilitar consulta, descarga y trazabilidad de la fuente.</span>
               </div>
               ${lineChart(operation.chartKind)}
             </div>
