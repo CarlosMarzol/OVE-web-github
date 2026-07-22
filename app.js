@@ -744,11 +744,19 @@ const pibOperations = {
     code: "NGDP",
     frequency: "Anual",
     latestPeriod: "2027",
-    publishedAt: "Base FMI WEO integrada al catálogo OVE",
+    latestStatus: "Estimación/proyección FMI WEO",
+    publishedAt: "FMI WEO, actualización país 16/09/2025",
     latestValue: "184.820.483.420.000",
     unit: "Moneda nacional, precios corrientes",
     tableTitle: "PIB, precios corrientes, moneda nacional",
     summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes expresado en moneda nacional.",
+    sourceNote: "Fuente: FMI - World Economic Outlook (WEO). Los valores 2025, 2026 y 2027 se presentan como estimaciones/proyecciones de la fuente integradas al catálogo OVE.",
+    valueNote: "El FMI reporta esta serie en moneda nacional corriente; OVE conserva el valor fuente sin reescalar.",
+    seriesRows: [
+      { period: "2025", value: "16.489.790.761.000", unit: "Moneda nacional corriente", status: "Estimación FMI WEO" },
+      { period: "2026", value: "89.759.368.949.000", unit: "Moneda nacional corriente", status: "Estimación/proyección FMI WEO" },
+      { period: "2027", value: "184.820.483.420.000", unit: "Moneda nacional corriente", status: "Proyección FMI WEO" }
+    ],
     download: "/api/indicator-excel?id=fmi-world-economic-outlook__ngdp__annual__producto-interno-bruto-pib-precios-corrientes-moneda-nacional",
     origin: "assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.csv",
     chartKind: "blue"
@@ -760,11 +768,19 @@ const pibOperations = {
     code: "NGDPD",
     frequency: "Anual",
     latestPeriod: "2027",
-    publishedAt: "Base FMI WEO integrada al catálogo OVE",
+    latestStatus: "Estimación/proyección FMI WEO",
+    publishedAt: "FMI WEO, actualización país 16/09/2025",
     latestValue: "117.908.128.000",
     unit: "Dólares estadounidenses, precios corrientes",
     tableTitle: "PIB, precios corrientes, dólares estadounidenses",
     summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes expresado en dólares estadounidenses.",
+    sourceNote: "Fuente: FMI - World Economic Outlook (WEO). Los valores 2025, 2026 y 2027 se presentan como estimaciones/proyecciones de la fuente integradas al catálogo OVE.",
+    valueNote: "Serie en dólares estadounidenses corrientes. OVE conserva el valor fuente sin reescalar.",
+    seriesRows: [
+      { period: "2025", value: "99.661.235.000", unit: "Dólares estadounidenses corrientes", status: "Estimación FMI WEO" },
+      { period: "2026", value: "111.303.343.000", unit: "Dólares estadounidenses corrientes", status: "Estimación/proyección FMI WEO" },
+      { period: "2027", value: "117.908.128.000", unit: "Dólares estadounidenses corrientes", status: "Proyección FMI WEO" }
+    ],
     download: "/api/indicator-excel?id=fmi-world-economic-outlook__ngdpd__annual__producto-interno-bruto-pib-precios-corrientes-dolar-estadounidense",
     origin: "assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.csv",
     chartKind: "yellow"
@@ -776,11 +792,15 @@ const pibOperations = {
     code: "2194",
     frequency: "Anual",
     latestPeriod: "En normalización",
+    latestStatus: "Pendiente de normalización OVE",
     publishedAt: "Serie identificada en el catálogo OVE",
     latestValue: "Pendiente",
     unit: "Moneda nacional, precios constantes",
     tableTitle: "PIB, precios constantes, moneda nacional",
     summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios constantes expresado en moneda nacional.",
+    sourceNote: "Serie identificada para normalización. OVE no publica todavía un último valor validado para esta ficha.",
+    valueNote: "Hasta que la serie esté normalizada, la ficha conserva acceso a la fuente y evita mostrar valores no verificados.",
+    seriesRows: [],
     download: "/api/indicator-excel?id=cepalstat-cepal__2194__sin-frecuencia__producto-interno-bruto-anual-pib-por-objeto-del-gasto-a-precios-constantes-en-moneda-nacional",
     origin: "assets/data/cepal/catalog/catalogo_dataset_web_ove_cepalstat.csv",
     chartKind: "blue"
@@ -792,11 +812,18 @@ const pibOperations = {
     code: "2204",
     frequency: "Anual",
     latestPeriod: "2025",
-    publishedAt: "Base CEPALSTAT integrada al catálogo OVE",
+    latestStatus: "Estimación CEPAL con base en fuentes oficiales",
+    publishedAt: "CEPALSTAT, actualización 24/04/2026",
     latestValue: "94.368,65",
-    unit: "Dólares estadounidenses, precios constantes",
+    unit: "Millones de dólares, precios constantes de 2018",
     tableTitle: "PIB, precios constantes, dólares estadounidenses",
     summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios constantes expresado en dólares estadounidenses.",
+    sourceNote: "Fuente: CEPALSTAT - CEPAL. La serie se publica como estimaciones propias con base en fuentes oficiales, a precios de 2018.",
+    valueNote: "Valores en millones de dólares constantes de 2018.",
+    seriesRows: [
+      { period: "2024", value: "86.845,09", unit: "Millones de dólares de 2018", status: "Estimación CEPAL" },
+      { period: "2025", value: "94.368,65", unit: "Millones de dólares de 2018", status: "Estimación CEPAL" }
+    ],
     download: "/api/indicator-excel?id=cepalstat-cepal__2204__sin-frecuencia__producto-interno-bruto-pib-total-anual-a-precios-constantes-en-dolares",
     origin: "assets/data/cepal/catalog/catalogo_dataset_web_ove_cepalstat.csv",
     chartKind: "red"
@@ -808,11 +835,19 @@ const pibOperations = {
     code: "PPPGDP",
     frequency: "Anual",
     latestPeriod: "2027",
-    publishedAt: "Base FMI WEO integrada al catálogo OVE",
+    latestStatus: "Estimación/proyección FMI WEO",
+    publishedAt: "FMI WEO, actualización país 16/09/2025",
     latestValue: "275.547.798.000",
     unit: "Dólares internacionales, PPA, precios corrientes",
     tableTitle: "PIB, precios corrientes PPA, dólares internacionales",
     summary: "Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes medido por paridad de poder adquisitivo.",
+    sourceNote: "Fuente: FMI - World Economic Outlook (WEO). Los valores 2025, 2026 y 2027 se presentan como estimaciones/proyecciones de la fuente integradas al catálogo OVE.",
+    valueNote: "Serie en dólares internacionales corrientes ajustados por paridad de poder adquisitivo (PPA).",
+    seriesRows: [
+      { period: "2025", value: "237.678.893.000", unit: "Dólares internacionales corrientes PPA", status: "Estimación FMI WEO" },
+      { period: "2026", value: "254.371.862.000", unit: "Dólares internacionales corrientes PPA", status: "Estimación/proyección FMI WEO" },
+      { period: "2027", value: "275.547.798.000", unit: "Dólares internacionales corrientes PPA", status: "Proyección FMI WEO" }
+    ],
     download: "/api/indicator-excel?id=fmi-world-economic-outlook__pppgdp__annual__producto-interno-bruto-pib-precios-corrientes-paridad-de-poder-adquisitivo-ppa-dolares-internaci",
     origin: "assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.csv",
     chartKind: "yellow"
@@ -1380,58 +1415,14 @@ function icon(name) {
 
 function operationTabIcon(name) {
   const icons = {
-    latest: `
-      <path class="stroke-navy" d="M5.3 4.6h8.8l4.6 4.6v10.2a1.8 1.8 0 0 1-1.8 1.8H5.3a1.8 1.8 0 0 1-1.8-1.8v-13a1.8 1.8 0 0 1 1.8-1.8Z"></path>
-      <path class="stroke-navy" d="M14.1 4.7v4.5h4.5"></path>
-      <path class="stroke-blue" d="M6.7 8.2h2.4v2.4H6.7Z"></path>
-      <path class="stroke-yellow" d="M10.8 8.2h2.4v2.4h-2.4Z"></path>
-      <path class="stroke-red" d="M14.9 8.2h2.4v2.4h-2.4Z"></path>
-      <path class="stroke-navy" d="M6.8 13.2h6.7"></path>
-      <path class="stroke-navy" d="M6.8 15.5h5.5"></path>
-      <path class="stroke-blue" d="M15.4 14.1a4.2 4.2 0 1 1-2.2 3.7"></path>
-      <path class="stroke-navy" d="M17.4 13.6v3.5l2.7 1.7"></path>
-    `,
-    results: `
-      <path class="stroke-navy" d="M3.8 20.2h10.8"></path>
-      <path class="stroke-navy" d="M5 18.3v-4.5h2.4v4.5"></path>
-      <path class="stroke-navy" d="M8.9 18.3v-7.2h2.4v7.2"></path>
-      <path class="stroke-navy" d="M12.8 18.3V7.7h2.4v10.6"></path>
-      <circle class="stroke-navy" cx="14.2" cy="10.3" r="5.8"></circle>
-      <path class="stroke-navy" d="m18.4 14.5 3.3 3.3"></path>
-      <path class="stroke-blue" d="M10.2 7.4a5.3 5.3 0 0 1 4-2.2"></path>
-      <path class="stroke-yellow" d="M9.8 13.2v3.1"></path>
-      <path class="stroke-blue" d="M6.2 15.2v2.2"></path>
-      <path class="stroke-red" d="M14 9.4v3"></path>
-    `,
-    methodology: `
-      <path class="stroke-navy" d="M3.6 17.9V6.4h2.6l3.4 6 3.4-6h2.6v11.5"></path>
-      <path class="stroke-navy" d="M19.2 5.3h-5.6a1.6 1.6 0 0 0-1.6 1.6v12.2h7.2a1.6 1.6 0 0 0 1.6-1.6V6.9a1.6 1.6 0 0 0-1.6-1.6Z"></path>
-      <path class="stroke-blue" d="m14.2 10.5 1 1 2.1-2.2"></path>
-      <path class="stroke-yellow" d="M14.2 14h.1"></path>
-      <path class="stroke-red" d="M14.2 17h.1"></path>
-      <path class="stroke-navy" d="M16.5 14h2.3"></path>
-      <path class="stroke-navy" d="M16.5 17h2.3"></path>
-    `,
-    more: `
-      <path class="stroke-navy" d="M9.4 7.4 11 5.8a4.2 4.2 0 0 1 5.9 5.9l-2.5 2.5a4.2 4.2 0 0 1-5.9 0"></path>
-      <path class="stroke-navy" d="M14.6 16.6 13 18.2a4.2 4.2 0 0 1-5.9-5.9l2.5-2.5a4.2 4.2 0 0 1 5.9 0"></path>
-      <path class="stroke-navy" d="M9.7 14.3 14.3 9.7"></path>
-      <path class="stroke-blue" d="M5.8 15.4a2.4 2.4 0 0 0 2.8 2.8"></path>
-      <path class="stroke-yellow" d="M5.1 11.6l.8-.8"></path>
-      <path class="stroke-red" d="M18.3 8.5a2.4 2.4 0 0 0-2.8-2.8"></path>
-    `,
-    faq: `
-      <path class="stroke-navy" d="M4.2 6.4h9.2a3 3 0 0 1 3 3v3.1a3 3 0 0 1-3 3H8.1l-3.5 3v-3a3 3 0 0 1-2.4-2.9V8.4a2 2 0 0 1 2-2Z"></path>
-      <path class="stroke-navy" d="M12.5 5.6h7.3a2 2 0 0 1 2 2v4.2a3 3 0 0 1-2.4 2.9v2.8l-3.1-2.7"></path>
-      <path class="stroke-blue" d="M15.8 8.4c1.1-1.4 3.7-.6 3.4 1.4-.2 1.1-1.3 1.4-1.7 2.2"></path>
-      <path class="stroke-blue" d="M17.5 14.1h.1"></path>
-      <path class="stroke-navy" d="M5.8 10.2h6.2"></path>
-      <path class="stroke-navy" d="M5.8 12.7h4.7"></path>
-      <path class="stroke-yellow" d="M3.2 9.8v.7"></path>
-      <path class="stroke-red" d="M20.9 10.5v.7"></path>
-    `
+    latest: ["assets/operation-icons/latest-data.png", "Icono de últimos datos"],
+    results: ["assets/operation-icons/results.png", "Icono de resultados"],
+    methodology: ["assets/operation-icons/methodology.png", "Icono de metodología"],
+    more: ["assets/operation-icons/more-info.png", "Icono de más información"],
+    faq: ["assets/operation-icons/faq.png", "Icono de preguntas frecuentes"]
   };
-  return `<svg viewBox="0 0 24 24" aria-hidden="true">${icons[name] || icons.latest}</svg>`;
+  const [src, alt] = icons[name] || icons.latest;
+  return `<img src="${src}" alt="${alt}" loading="lazy" decoding="async">`;
 }
 
 function arrow() {
@@ -3087,6 +3078,7 @@ function economyIneCategory(category) {
 
 function economyPibOperationPage(slug) {
   const operation = pibOperations[slug] || pibOperations["pib-precios-corrientes-moneda-nacional"];
+  const seriesRows = operation.seriesRows || [];
   return `<div class="page operation-page">
     <section class="operation-topbar" aria-label="Navegación de operación estadística">
       <div class="container operation-topbar-inner">
@@ -3138,7 +3130,7 @@ function economyPibOperationPage(slug) {
           <div>
             <h1>${escapeHtml(operation.title)}</h1>
             <p class="operation-date">${escapeHtml(operation.publishedAt)}</p>
-            <p>${escapeHtml(operation.summary)} Esta página forma parte de Cuentas económicas y mantiene la misma navegación de operación estadística para todas las opciones de PIB.</p>
+            <p>${escapeHtml(operation.summary)} ${escapeHtml(operation.sourceNote || "")}</p>
             <div class="operation-inline-links">
               <a href="${operation.download}" download>${icon("download")} Descargar Excel OVE</a>
               <a href="${operation.origin}" download>${icon("database")} Catálogo fuente</a>
@@ -3154,33 +3146,32 @@ function economyPibOperationPage(slug) {
             <table class="operation-latest-table">
               <thead>
                 <tr>
-                  <th>Variable</th>
-                  <th>Último período</th>
+                  <th>Periodo</th>
                   <th>Valor</th>
                   <th>Unidad</th>
+                  <th>Tipo / fuente</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>${escapeHtml(operation.shortTitle)}</td>
-                  <td>${escapeHtml(operation.latestPeriod)}</td>
-                  <td>${escapeHtml(operation.latestValue)}</td>
-                  <td>${escapeHtml(operation.unit)}</td>
-                </tr>
+                ${seriesRows.length ? seriesRows.map(row => `<tr>
+                  <td>${escapeHtml(row.period)}</td>
+                  <td>${escapeHtml(row.value)}</td>
+                  <td>${escapeHtml(row.unit)}</td>
+                  <td>${escapeHtml(row.status)}</td>
+                </tr>`).join("") : `<tr>
+                  <td colspan="4">Serie pendiente de normalización. No se publica un valor hasta verificar fuente, unidad y periodo.</td>
+                </tr>`}
               </tbody>
             </table>
-            <div class="operation-mini-chart" aria-label="Vista previa gráfica">
-              <div>
-                <strong>Serie disponible en el catálogo OVE</strong>
-                <span>Vista institucional de la serie para facilitar consulta, descarga y trazabilidad de la fuente.</span>
-              </div>
-              ${lineChart(operation.chartKind)}
+            <div class="operation-source-note">
+              <strong>Fuente y lectura del dato</strong>
+              <span>${escapeHtml(operation.valueNote || "OVE conserva la fuente, unidad y periodo para facilitar consulta, descarga y trazabilidad.")}</span>
             </div>
           </article>
           <aside class="operation-side-panel">
             <section>
               <h2>Últimos datos</h2>
-              <p><strong>${escapeHtml(operation.latestPeriod)}</strong> publicado en el catálogo OVE.</p>
+              <p><strong>${escapeHtml(operation.latestPeriod)}</strong> ${escapeHtml(operation.latestStatus || "publicado en el catálogo OVE")}.</p>
             </section>
             <section>
               <h2>Acceso directo a...</h2>

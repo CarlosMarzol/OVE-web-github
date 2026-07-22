@@ -1000,7 +1000,8 @@ h3 {
   color: var(--navy-900);
   border-color: #c7d6eb;
   border-bottom-color: var(--yellow);
-  background: var(--blue-100);
+  background: #fff;
+  box-shadow: inset 0 4px 0 var(--blue-100);
 }
 
 .operation-tab-icon {
@@ -1020,6 +1021,13 @@ h3 {
   stroke-linecap: round;
   stroke-linejoin: round;
   filter: drop-shadow(0 2px 3px rgba(11, 29, 61, 0.08));
+}
+
+.operation-tab-icon img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  filter: saturate(0.78) contrast(0.96);
 }
 
 .operation-tab-icon .stroke-navy {
@@ -1161,6 +1169,27 @@ h3 {
   gap: 16px;
   align-items: center;
   margin-top: 18px;
+}
+
+.operation-source-note {
+  display: grid;
+  gap: 4px;
+  margin-top: 16px;
+  padding: 12px 14px;
+  color: var(--navy-900);
+  background: #fff;
+  border-left: 5px solid var(--yellow);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+
+.operation-source-note strong,
+.operation-source-note span {
+  display: block;
+}
+
+.operation-source-note span {
+  color: var(--muted);
+  font-size: 0.86rem;
 }
 
 .operation-mini-chart strong,
@@ -4234,6 +4263,11 @@ th {
   }
 
   .operation-tab-icon svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .operation-tab-icon img {
     width: 34px;
     height: 34px;
   }
