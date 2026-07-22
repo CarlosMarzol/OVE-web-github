@@ -19,6 +19,7 @@ const routes = {
   "/datos/ciencia-tecnologia": () => topicDetailPage("science"),
   "/datos/demografia-poblacion": () => topicDetailPage("demography"),
   "/datos/economia": () => topicDetailPage("economy"),
+  "/datos/economia/pib-precios-corrientes-moneda-nacional": economyPibCurrentNationalPage,
   "/datos/industria-energia-construccion": () => topicDetailPage("industry"),
   "/datos/mercado-laboral": () => topicDetailPage("labor"),
   "/datos/servicios": () => topicDetailPage("services"),
@@ -116,6 +117,10 @@ const routeMeta = {
   "/datos/economia": {
     title: "Economía Venezuela | OVE",
     description: "Indicadores económicos de Venezuela con series, catálogos y descargas abiertas del OVE."
+  },
+  "/datos/economia/pib-precios-corrientes-moneda-nacional": {
+    title: "PIB precios corrientes, moneda nacional | OVE",
+    description: "Ficha estadística OVE del Producto interno bruto a precios corrientes en moneda nacional."
   },
   "/datos/industria-energia-construccion": {
     title: "Industria, energía y construcción | OVE",
@@ -673,7 +678,10 @@ const economyIneCategories = [
     description: "Producto interno bruto organizado por valoración, moneda y paridad de poder adquisitivo.",
     note: "Listado inicial definido para ordenar primero el PIB. Las descargas y series se conectarán en el siguiente paso.",
     rows: [
-      "Producto interno bruto (PIB), precios corrientes, moneda nacional",
+      {
+        label: "Producto interno bruto (PIB), precios corrientes, moneda nacional",
+        href: "#/datos/economia/pib-precios-corrientes-moneda-nacional"
+      },
       "Producto interno bruto (PIB), precios corrientes, dólares estadounidenses",
       "Producto interno bruto (PIB), precios constantes, moneda nacional",
       "Producto interno bruto (PIB), precios constantes, dólares estadounidenses",
@@ -695,6 +703,20 @@ const economyIneCategories = [
     rows: []
   }
 ];
+
+const pibCurrentNationalOperation = {
+  title: "Producto interno bruto (PIB), precios corrientes, moneda nacional",
+  shortTitle: "PIB a precios corrientes, moneda nacional",
+  source: "FMI - World Economic Outlook",
+  code: "NGDP",
+  frequency: "Anual",
+  latestPeriod: "2027",
+  publishedAt: "Base FMI WEO integrada al catálogo OVE",
+  latestValue: "184.820.483.420.000",
+  unit: "Moneda nacional, precios corrientes",
+  download: "/api/indicator-excel?id=fmi-world-economic-outlook__ngdp__annual__producto-interno-bruto-pib-precios-corrientes-moneda-nacional",
+  origin: "assets/data/imf/catalog/catalogo_dataset_web_ove_fmi_weo.csv"
+};
 
 const agricultureEnvironmentGroups = [
   {
@@ -2893,14 +2915,149 @@ function economyIneCategory(category) {
           <span>Operaciones estadísticas disponibles en OVE</span>
         </div>
         <div>
-          ${rows.map(name => `<a class="economy-ine-row" href="#/indicadores?tema=Econom%C3%ADa&q=${encodeURIComponent(name)}">
-            <span>${escapeHtml(name)}</span>
-          </a>`).join("")}
+          ${rows.map(row => {
+            const item = typeof row === "string" ? { label: row, href: `#/indicadores?tema=Econom%C3%ADa&q=${encodeURIComponent(row)}` } : row;
+            return `<a class="economy-ine-row" href="${item.href}">
+            <span>${escapeHtml(item.label)}</span>
+          </a>`;
+          }).join("")}
         </div>
       </div>` : ""}
       <p class="economy-ine-note">${escapeHtml(category.note)}</p>
     </div>
   </details>`;
+}
+
+function economyPibCurrentNationalPage() {
+  const operation = pibCurrentNationalOperation;
+  return `<div class="page operation-page">
+    <section class="operation-topbar" aria-label="Navegación de operación estadística">
+      <div class="container operation-topbar-inner">
+        <a class="operation-menu-button" href="#/datos/economia" aria-label="Volver a Economía">
+          ${icon("arrow")}
+        </a>
+        <div class="operation-crumbs">
+          <span>OVEbase</span>
+          <span>Economía</span>
+          <span>Cuentas económicas</span>
+          <strong>${escapeHtml(operation.shortTitle)}</strong>
+        </div>
+      </div>
+    </section>
+    <section class="section operation-ine-page">
+      <div class="container">
+        <div class="operation-brand-row">
+          <span></span>
+          <strong>OVEbase</strong>
+        </div>
+        <nav class="operation-tabs" aria-label="Secciones de la operación">
+          <a class="is-active" href="#ultimos-datos">
+            <span class="operation-tab-icon">${icon("calculator")}</span>
+            <span>Últimos datos</span>
+          </a>
+          <a href="#resultados">
+            <span class="operation-tab-icon">${icon("chartbar")}</span>
+            <span>Resultados</span>
+          </a>
+          <a href="#metodologia">
+            <span class="operation-tab-icon operation-tab-letter">M</span>
+            <span>Metodología</span>
+          </a>
+          <a href="#mas-informacion">
+            <span class="operation-tab-icon">${icon("copy")}</span>
+            <span>Más información</span>
+          </a>
+          <a href="#preguntas-frecuentes">
+            <span class="operation-tab-icon">${icon("quote")}</span>
+            <span>Preguntas frecuentes</span>
+          </a>
+        </nav>
+        <div class="operation-separator"></div>
+        <div class="operation-news" id="ultimos-datos">
+          <div class="operation-news-label">
+            <strong>ÚLTIMOS</strong>
+            <span>DATOS</span>
+          </div>
+          <div>
+            <h1>${escapeHtml(operation.title)}</h1>
+            <p class="operation-date">${escapeHtml(operation.publishedAt)}</p>
+            <p>Ficha inicial de la operación estadística para consultar el PIB venezolano a precios corrientes expresado en moneda nacional. Esta página servirá como modelo para las demás opciones de PIB dentro de Cuentas económicas.</p>
+            <div class="operation-inline-links">
+              <a href="${operation.download}" download>${icon("download")} Descargar Excel OVE</a>
+              <a href="${operation.origin}" download>${icon("database")} Catálogo fuente</a>
+            </div>
+          </div>
+        </div>
+        <div class="operation-content-grid">
+          <article class="operation-results-card" id="resultados">
+            <div class="operation-table-title">
+              <strong>PIB, precios corrientes, moneda nacional</strong>
+              <span>${escapeHtml(operation.frequency)}</span>
+            </div>
+            <table class="operation-latest-table">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Último período</th>
+                  <th>Valor</th>
+                  <th>Unidad</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>${escapeHtml(operation.shortTitle)}</td>
+                  <td>${escapeHtml(operation.latestPeriod)}</td>
+                  <td>${escapeHtml(operation.latestValue)}</td>
+                  <td>${escapeHtml(operation.unit)}</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="operation-mini-chart" aria-label="Vista previa gráfica">
+              <div>
+                <strong>Serie disponible en el catálogo OVE</strong>
+                <span>La conexión completa de tabla y gráfico dinámico se hará en el siguiente paso.</span>
+              </div>
+              ${lineChart("blue")}
+            </div>
+          </article>
+          <aside class="operation-side-panel">
+            <section>
+              <h2>Últimos datos</h2>
+              <p><strong>${escapeHtml(operation.latestPeriod)}</strong> publicado en el catálogo OVE.</p>
+            </section>
+            <section>
+              <h2>Acceso directo a...</h2>
+              <a href="${operation.download}" download>Excel OVE</a>
+              <a href="#resultados">Tabla de resultados</a>
+              <a href="#metodologia">Metodología</a>
+            </section>
+          </aside>
+        </div>
+        <section class="operation-consulted">
+          <h2>Tablas más consultadas</h2>
+          <a href="${operation.download}" download>${icon("download")} ${escapeHtml(operation.shortTitle)}</a>
+          <a href="#/datos/economia">${icon("database")} Volver a Cuentas económicas</a>
+        </section>
+        <section class="operation-info-block" id="metodologia">
+          <h2>¿Sabías que...?</h2>
+          <p>El Producto interno bruto a precios corrientes mide el valor monetario de la producción final de bienes y servicios en una economía durante un período determinado, sin descontar el efecto de los precios.</p>
+          <p>En esta ficha OVE se conserva la fuente, el código estadístico, la frecuencia, el último período disponible y el enlace de descarga para facilitar el acceso ciudadano.</p>
+        </section>
+        <section class="operation-info-block" id="mas-informacion">
+          <h2>Más sobre el tema...</h2>
+          <div class="operation-more-item">
+            <img src="assets/topics/topic-economy.png" alt="" loading="lazy" decoding="async">
+            <a href="#/datos/economia">Cuentas económicas en OVEbase</a>
+          </div>
+        </section>
+        <section class="operation-info-block" id="preguntas-frecuentes">
+          <h2>Preguntas frecuentes</h2>
+          <p><strong>¿Esta página reemplaza la fuente original?</strong> No. OVE organiza, documenta y facilita el acceso, manteniendo trazabilidad hacia la fuente estadística correspondiente.</p>
+        </section>
+      </div>
+    </section>
+    ${footer()}
+  </div>`;
 }
 
 function topicIndicatorExplorer(topicKey) {
@@ -4224,6 +4381,7 @@ function handleInternalNavigation(event) {
 
   const route = normalizeRoute(url.pathname);
   if (!routes[route]) return;
+  if (url.hash && !url.hash.startsWith("#/") && route === currentRoute()) return;
 
   event.preventDefault();
   if (location.pathname !== routeToUrl(route) || location.hash) {
@@ -4959,7 +5117,10 @@ wireAnalytics(document);
 upgradeInternalLinksForSeo(document);
 document.addEventListener("click", handleInternalNavigation);
 window.addEventListener("scroll", syncHeaderState, { passive: true });
-window.addEventListener("hashchange", render);
+window.addEventListener("hashchange", () => {
+  if (location.hash && !location.hash.startsWith("#/")) return;
+  render();
+});
 window.addEventListener("popstate", render);
 syncHeaderState();
 render();

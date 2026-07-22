@@ -87,6 +87,10 @@ ROUTE_META = {
     "Economía Venezuela | OVE",
     "Indicadores económicos de Venezuela con series, catálogos y descargas abiertas del OVE.",
   ),
+  "datos/economia/pib-precios-corrientes-moneda-nacional": (
+    "PIB precios corrientes, moneda nacional | OVE",
+    "Ficha estadística OVE del Producto interno bruto a precios corrientes en moneda nacional.",
+  ),
   "datos/industria-energia-construccion": (
     "Industria, energía y construcción | OVE",
     "Indicadores de industria, energía y construcción para Venezuela en el banco de datos OVE.",

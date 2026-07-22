@@ -911,6 +911,314 @@ h3 {
   font-size: 0.78rem !important;
 }
 
+.operation-topbar {
+  background: #407f75;
+  color: #fff;
+  border-top: 4px solid #9b1028;
+}
+
+.operation-topbar-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 42px;
+}
+
+.operation-menu-button {
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.operation-menu-button svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  transform: rotate(180deg);
+}
+
+.operation-crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.operation-crumbs span::after {
+  content: "/";
+  margin-left: 6px;
+  opacity: 0.72;
+}
+
+.operation-ine-page {
+  background: #fff;
+}
+
+.operation-brand-row {
+  display: flex;
+  justify-content: flex-end;
+  color: #407f75;
+  font-size: 1.35rem;
+}
+
+.operation-tabs {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(120px, 1fr));
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 12px;
+}
+
+.operation-tabs a {
+  display: grid;
+  min-height: 118px;
+  place-items: center;
+  gap: 8px;
+  color: #101820;
+  text-align: center;
+  text-decoration: none;
+}
+
+.operation-tabs a.is-active {
+  background: #dfeeed;
+}
+
+.operation-tab-icon {
+  display: grid;
+  width: 74px;
+  height: 64px;
+  place-items: center;
+  color: #407f75;
+}
+
+.operation-tab-icon svg {
+  width: 60px;
+  height: 60px;
+  stroke: currentColor;
+  stroke-width: 1.35;
+  fill: none;
+}
+
+.operation-tab-letter {
+  font-size: 4.25rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.operation-separator {
+  height: 6px;
+  margin: 14px 0 18px;
+  background: #dfeeed;
+}
+
+.operation-news {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 28px;
+  padding-bottom: 22px;
+  border-bottom: 6px solid #dfeeed;
+}
+
+.operation-news-label {
+  min-height: 120px;
+  padding: 20px 18px;
+  color: #407f75;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.08), #fff),
+    var(--blue-100);
+  font-size: 1.8rem;
+  line-height: 0.95;
+}
+
+.operation-news-label strong,
+.operation-news-label span {
+  display: block;
+}
+
+.operation-news h1 {
+  margin: 0 0 4px;
+  color: #407f75;
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.operation-news p {
+  max-width: 850px;
+  margin: 0 0 12px;
+  color: #101820;
+  font-size: 0.92rem;
+}
+
+.operation-date {
+  color: #9b1028 !important;
+}
+
+.operation-inline-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.operation-inline-links a,
+.operation-consulted a,
+.operation-side-panel a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #407f75;
+  text-decoration: none;
+}
+
+.operation-inline-links svg,
+.operation-consulted svg {
+  width: 17px;
+  height: 17px;
+  stroke: #9b1028;
+  stroke-width: 2;
+  fill: none;
+}
+
+.operation-content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.operation-results-card {
+  min-height: 260px;
+  padding: 14px;
+  border: 1px solid #dfeeed;
+}
+
+.operation-table-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  color: #101820;
+  font-size: 0.88rem;
+}
+
+.operation-latest-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+.operation-latest-table th {
+  color: #101820;
+  text-align: left;
+  border-bottom: 1px solid #dfeeed;
+}
+
+.operation-latest-table th,
+.operation-latest-table td {
+  padding: 8px 6px;
+}
+
+.operation-latest-table tbody tr {
+  background: #f7fbfb;
+}
+
+.operation-mini-chart {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.7fr) minmax(220px, 1fr);
+  gap: 16px;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.operation-mini-chart strong,
+.operation-mini-chart span {
+  display: block;
+}
+
+.operation-mini-chart span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.operation-side-panel {
+  border: 1px solid #dfeeed;
+}
+
+.operation-side-panel section + section {
+  border-top: 1px solid #dfeeed;
+}
+
+.operation-side-panel h2 {
+  margin: 0;
+  padding: 8px 10px;
+  color: #101820;
+  background: #dfeeed;
+  font-size: 0.92rem;
+}
+
+.operation-side-panel p,
+.operation-side-panel a {
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 0.86rem;
+}
+
+.operation-side-panel a {
+  display: flex;
+}
+
+.operation-consulted,
+.operation-info-block {
+  margin-top: 22px;
+  padding: 0 0 18px;
+  border-bottom: 6px solid #dfeeed;
+}
+
+.operation-consulted h2,
+.operation-info-block h2 {
+  margin: 0 0 12px;
+  color: #9b1028;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.operation-consulted {
+  display: grid;
+  gap: 8px;
+}
+
+.operation-info-block p {
+  max-width: 980px;
+  margin: 0 0 12px;
+  color: #101820;
+  font-size: 0.9rem;
+}
+
+.operation-more-item {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 16px;
+  align-items: end;
+  max-width: 540px;
+}
+
+.operation-more-item img {
+  width: 220px;
+  height: 100px;
+  object-fit: contain;
+  background: #eef5f4;
+}
+
+.operation-more-item a {
+  color: #101820;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .economy-directory {
   display: grid;
   grid-template-columns: minmax(230px, 285px) minmax(0, 1fr);
@@ -3869,6 +4177,57 @@ th {
   .economy-ine-row span:last-child {
     text-align: left;
     color: var(--muted);
+  }
+
+  .operation-tabs,
+  .operation-news,
+  .operation-content-grid,
+  .operation-mini-chart,
+  .operation-more-item {
+    grid-template-columns: 1fr;
+  }
+
+  .operation-tabs {
+    gap: 6px;
+  }
+
+  .operation-tabs a {
+    grid-template-columns: 42px minmax(0, 1fr);
+    justify-items: start;
+    min-height: 54px;
+    padding: 8px 10px;
+    text-align: left;
+  }
+
+  .operation-tab-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .operation-tab-icon svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .operation-tab-letter {
+    font-size: 2.2rem;
+  }
+
+  .operation-news-label {
+    min-height: auto;
+  }
+
+  .operation-latest-table {
+    min-width: 620px;
+  }
+
+  .operation-results-card {
+    overflow-x: auto;
+  }
+
+  .operation-more-item img {
+    width: 100%;
+    max-width: 260px;
   }
 
   .economy-directory,

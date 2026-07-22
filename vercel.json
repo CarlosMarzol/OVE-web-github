@@ -26,6 +26,7 @@
     { "source": "/datos/ciencia-tecnologia", "destination": "/index.html" },
     { "source": "/datos/demografia-poblacion", "destination": "/index.html" },
     { "source": "/datos/economia", "destination": "/index.html" },
+    { "source": "/datos/economia/pib-precios-corrientes-moneda-nacional", "destination": "/index.html" },
     { "source": "/datos/industria-energia-construccion", "destination": "/index.html" },
     { "source": "/datos/mercado-laboral", "destination": "/index.html" },
     { "source": "/datos/servicios", "destination": "/index.html" },
