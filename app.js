@@ -1516,26 +1516,16 @@ function dataBand() {
 }
 
 function topicsSection() {
-  const stats = topicStats();
-
   return `<section class="topic-section" aria-labelledby="topic-title">
     <div class="container">
       <div class="topic-panel">
         <h2 id="topic-title">Datos por temas</h2>
         ${exampleNotice("Explore las estadísticas disponibles del OVE por tema, operación, fuente, frecuencia y último dato publicado. Cada tema conduce al inventario filtrado y a sus descargas ciudadanas.")}
-        <div class="topic-stats" aria-label="Estadisticas de datos por temas">
-          <span><strong>${stats.topics}</strong> temas</span>
-          <span><strong>${formatInteger(stats.operations)}</strong> operaciones organizadas</span>
-          <span><strong>${stats.worldBankAreas}</strong> areas Banco Mundial</span>
-          <span><strong>${formatInteger(stats.worldBankRecords)}</strong> registros fuente</span>
-        </div>
         <div class="topic-grid">
           ${topicData.map(([id, label, image, href]) => `
             <a class="topic-card" href="${href}" aria-label="Ver datos de ${label}">
               <img class="topic-icon" src="${image}" alt="" loading="lazy" decoding="async">
               <span>${label}</span>
-              <small>${topicOperationCount(id)} operaciones</small>
-              <small data-topic-indicator-count="${id}">Indicadores: cargando</small>
             </a>
           `).join("")}
         </div>
