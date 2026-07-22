@@ -1346,6 +1346,87 @@ h3 {
   font-size: 0.9rem;
 }
 
+.operation-faq-page {
+  max-width: 1040px;
+  padding: 4px 0 28px;
+}
+
+.operation-faq-page h1 {
+  margin: 0 0 8px;
+  color: var(--navy-900);
+  font-size: 1.48rem;
+  font-weight: 600;
+}
+
+.operation-faq-page > p {
+  max-width: 860px;
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.operation-faq-list {
+  display: grid;
+  gap: 7px;
+  max-width: 980px;
+}
+
+.operation-faq-item {
+  border: 0;
+  background: transparent;
+}
+
+.operation-faq-item summary {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 31px;
+  color: #101820;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+.operation-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.operation-faq-marker {
+  display: inline-grid;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  color: var(--red);
+  border: 2px solid var(--red);
+  border-radius: 999px;
+  background: #fff;
+}
+
+.operation-faq-marker svg {
+  width: 11px;
+  height: 11px;
+  stroke: currentColor;
+  stroke-width: 3;
+  fill: none;
+}
+
+.operation-faq-item[open] .operation-faq-marker svg {
+  transform: rotate(90deg);
+}
+
+.operation-faq-item p {
+  max-width: 900px;
+  margin: 3px 0 12px 29px;
+  padding: 10px 12px;
+  color: #26364b;
+  background: #f8fbff;
+  border-left: 4px solid var(--yellow);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
 .operation-more-item {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
@@ -4381,6 +4462,18 @@ th {
 
   .operation-data-formats {
     justify-content: flex-start;
+  }
+
+  .operation-faq-page h1 {
+    font-size: 1.28rem;
+  }
+
+  .operation-faq-item summary {
+    align-items: flex-start;
+  }
+
+  .operation-faq-item p {
+    margin-left: 0;
   }
 
   .operation-more-item img {

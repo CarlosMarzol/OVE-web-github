@@ -20,10 +20,15 @@ const routes = {
   "/datos/demografia-poblacion": () => topicDetailPage("demography"),
   "/datos/economia": () => topicDetailPage("economy"),
   "/datos/economia/pib-precios-corrientes-moneda-nacional": () => economyPibOperationPage("pib-precios-corrientes-moneda-nacional"),
+  "/datos/economia/pib-precios-corrientes-moneda-nacional/preguntas-frecuentes": () => economyPibOperationPage("pib-precios-corrientes-moneda-nacional", "faq"),
   "/datos/economia/pib-precios-corrientes-dolares-estadounidenses": () => economyPibOperationPage("pib-precios-corrientes-dolares-estadounidenses"),
+  "/datos/economia/pib-precios-corrientes-dolares-estadounidenses/preguntas-frecuentes": () => economyPibOperationPage("pib-precios-corrientes-dolares-estadounidenses", "faq"),
   "/datos/economia/pib-precios-constantes-moneda-nacional": () => economyPibOperationPage("pib-precios-constantes-moneda-nacional"),
+  "/datos/economia/pib-precios-constantes-moneda-nacional/preguntas-frecuentes": () => economyPibOperationPage("pib-precios-constantes-moneda-nacional", "faq"),
   "/datos/economia/pib-precios-constantes-dolares-estadounidenses": () => economyPibOperationPage("pib-precios-constantes-dolares-estadounidenses"),
+  "/datos/economia/pib-precios-constantes-dolares-estadounidenses/preguntas-frecuentes": () => economyPibOperationPage("pib-precios-constantes-dolares-estadounidenses", "faq"),
   "/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales": () => economyPibOperationPage("pib-precios-corrientes-ppa-dolares-internacionales"),
+  "/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales/preguntas-frecuentes": () => economyPibOperationPage("pib-precios-corrientes-ppa-dolares-internacionales", "faq"),
   "/datos/industria-energia-construccion": () => topicDetailPage("industry"),
   "/datos/mercado-laboral": () => topicDetailPage("labor"),
   "/datos/servicios": () => topicDetailPage("services"),
@@ -126,21 +131,41 @@ const routeMeta = {
     title: "PIB precios corrientes, moneda nacional | OVE",
     description: "Ficha estadística OVE del Producto interno bruto a precios corrientes en moneda nacional."
   },
+  "/datos/economia/pib-precios-corrientes-moneda-nacional/preguntas-frecuentes": {
+    title: "Preguntas frecuentes PIB precios corrientes, moneda nacional | OVE",
+    description: "Preguntas frecuentes sobre la serie OVE del PIB a precios corrientes en moneda nacional."
+  },
   "/datos/economia/pib-precios-corrientes-dolares-estadounidenses": {
     title: "PIB precios corrientes, dólares estadounidenses | OVE",
     description: "Ficha estadística OVE del Producto interno bruto a precios corrientes en dólares estadounidenses."
+  },
+  "/datos/economia/pib-precios-corrientes-dolares-estadounidenses/preguntas-frecuentes": {
+    title: "Preguntas frecuentes PIB precios corrientes, dólares estadounidenses | OVE",
+    description: "Preguntas frecuentes sobre la serie OVE del PIB a precios corrientes en dólares estadounidenses."
   },
   "/datos/economia/pib-precios-constantes-moneda-nacional": {
     title: "PIB precios constantes, moneda nacional | OVE",
     description: "Ficha estadística OVE del Producto interno bruto a precios constantes en moneda nacional."
   },
+  "/datos/economia/pib-precios-constantes-moneda-nacional/preguntas-frecuentes": {
+    title: "Preguntas frecuentes PIB precios constantes, moneda nacional | OVE",
+    description: "Preguntas frecuentes sobre la serie OVE del PIB a precios constantes en moneda nacional."
+  },
   "/datos/economia/pib-precios-constantes-dolares-estadounidenses": {
     title: "PIB precios constantes, dólares estadounidenses | OVE",
     description: "Ficha estadística OVE del Producto interno bruto a precios constantes en dólares estadounidenses."
   },
+  "/datos/economia/pib-precios-constantes-dolares-estadounidenses/preguntas-frecuentes": {
+    title: "Preguntas frecuentes PIB precios constantes, dólares estadounidenses | OVE",
+    description: "Preguntas frecuentes sobre la serie OVE del PIB a precios constantes en dólares estadounidenses."
+  },
   "/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales": {
     title: "PIB precios corrientes PPA, dólares internacionales | OVE",
     description: "Ficha estadística OVE del Producto interno bruto a precios corrientes PPA en dólares internacionales."
+  },
+  "/datos/economia/pib-precios-corrientes-ppa-dolares-internacionales/preguntas-frecuentes": {
+    title: "Preguntas frecuentes PIB precios corrientes PPA | OVE",
+    description: "Preguntas frecuentes sobre la serie OVE del PIB a precios corrientes PPA en dólares internacionales."
   },
   "/datos/industria-energia-construccion": {
     title: "Industria, energía y construcción | OVE",
@@ -3138,10 +3163,71 @@ function economyIneCategory(category) {
   </details>`;
 }
 
-function economyPibOperationPage(slug) {
+function pibFaqItems(operation) {
+  return [
+    [
+      "¿Qué es el PIB?",
+      "El Producto interno bruto (PIB) mide el valor de los bienes y servicios finales producidos dentro de un país durante un período determinado. En OVE se presenta como una operación estadística para consultar series, fuentes y descargas de forma ordenada."
+    ],
+    [
+      "¿Para qué se utiliza el PIB?",
+      "Se utiliza para observar el tamaño de la economía, comparar su evolución en el tiempo y analizar ciclos de crecimiento o contracción. También permite relacionar la actividad económica con inflación, empleo, sector externo, finanzas públicas y otros indicadores."
+    ],
+    [
+      "¿Cómo se calcula el PIB?",
+      "Puede calcularse por tres enfoques equivalentes: producción, gasto e ingreso. Las fuentes oficiales e internacionales publican agregados ya calculados; OVE no recalcula la contabilidad nacional, sino que organiza las series publicadas y conserva su trazabilidad."
+    ],
+    [
+      "¿Qué diferencia hay entre el PIB nominal y el PIB real?",
+      "El PIB nominal o a precios corrientes usa los precios del período observado. El PIB real o a precios constantes elimina el efecto de los cambios de precios para aproximar la variación del volumen de producción."
+    ],
+    [
+      "¿Qué significa que una serie esté en moneda nacional, dólares o PPA?",
+      "La moneda nacional muestra la medición en la unidad monetaria local publicada por la fuente. Las series en dólares estadounidenses facilitan comparaciones externas, y las series PPA ajustan por paridad de poder adquisitivo para comparar el tamaño económico entre países."
+    ],
+    [
+      "¿Cada cuánto tiempo se publican los resultados del PIB?",
+      `${operation.frequency || "La frecuencia depende de la fuente."} Para estas fichas, OVE muestra la frecuencia declarada por la fuente y actualiza los archivos cuando cambia el catálogo integrado.`
+    ],
+    [
+      "¿Quién decide el método de cálculo del PIB?",
+      "La metodología de cuentas nacionales la aplican las instituciones estadísticas y bancos centrales según estándares internacionales, como el Sistema de Cuentas Nacionales. OVE documenta la fuente y evita mezclar metodologías sin identificar el origen."
+    ],
+    [
+      "¿De dónde obtiene OVE la información para esta ficha?",
+      `Esta ficha usa como fuente principal ${operation.source}. Cuando corresponde, OVE añade descargas relacionadas del Banco Central de Venezuela para ampliar la serie histórica o complementar la consulta oficial.`
+    ],
+    [
+      "¿Qué es una revisión estadística del PIB?",
+      "Es una actualización de valores previamente publicados cuando la fuente incorpora nueva información, cambia una estimación preliminar o ajusta una serie histórica. Por eso OVE conserva fuente, fecha de actualización y archivo descargable."
+    ],
+    [
+      "¿Dónde puedo encontrar los resultados del PIB?",
+      "En la pestaña Últimos datos se muestran los valores recientes de la ficha. En Tablas más consultadas y Acceso directo se puede descargar el Excel OVE correspondiente, junto con archivos relacionados del BCV cuando están disponibles."
+    ],
+    [
+      "¿Dónde puedo encontrar la documentación técnica del PIB?",
+      "La documentación básica está en Metodología y Más información dentro de la ficha. Para la metodología completa debe consultarse también la publicación original de la fuente estadística correspondiente."
+    ]
+  ];
+}
+
+function operationFaqList(operation) {
+  return `<div class="operation-faq-list">
+    ${pibFaqItems(operation).map(([question, answer], index) => `<details class="operation-faq-item"${index === 0 ? " open" : ""}>
+      <summary><span class="operation-faq-marker">${icon("arrow")}</span><span>${escapeHtml(question)}</span></summary>
+      <p>${escapeHtml(answer)}</p>
+    </details>`).join("")}
+  </div>`;
+}
+
+function economyPibOperationPage(slug, section = "latest") {
   const operation = pibOperations[slug] || pibOperations["pib-precios-corrientes-moneda-nacional"];
   const seriesRows = operation.seriesRows || [];
   const relatedDownloads = operation.relatedDownloads || [];
+  const isFaqPage = section === "faq";
+  const baseHref = `#/datos/economia/${slug}`;
+  const faqHref = `#/datos/economia/${slug}/preguntas-frecuentes`;
   const relatedFormatLinks = item => {
     const csv = item.href.replace("/excel/", "/csv/").replace(/\.xlsx$/, ".csv");
     const json = item.href.replace("/excel/", "/json/").replace(/\.xlsx$/, ".json");
@@ -3174,28 +3260,33 @@ function economyPibOperationPage(slug) {
           <strong>OVEbase</strong>
         </div>
         <nav class="operation-tabs" aria-label="Secciones de la operación">
-          <a class="is-active" href="#ultimos-datos">
+          <a class="${!isFaqPage ? "is-active" : ""}" href="${baseHref}#ultimos-datos">
             <span class="operation-tab-icon">${operationTabIcon("latest")}</span>
             <span>Últimos datos</span>
           </a>
-          <a href="#resultados">
+          <a href="${baseHref}#resultados">
             <span class="operation-tab-icon">${operationTabIcon("results")}</span>
             <span>Resultados</span>
           </a>
-          <a href="#metodologia">
+          <a href="${baseHref}#metodologia">
             <span class="operation-tab-icon">${operationTabIcon("methodology")}</span>
             <span>Metodología</span>
           </a>
-          <a href="#mas-informacion">
+          <a href="${baseHref}#mas-informacion">
             <span class="operation-tab-icon">${operationTabIcon("more")}</span>
             <span>Más información</span>
           </a>
-          <a href="#preguntas-frecuentes">
+          <a class="${isFaqPage ? "is-active" : ""}" href="${faqHref}">
             <span class="operation-tab-icon">${operationTabIcon("faq")}</span>
             <span>Preguntas frecuentes</span>
           </a>
         </nav>
         <div class="operation-separator"></div>
+        ${isFaqPage ? `<section class="operation-faq-page" id="preguntas-frecuentes">
+          <h1>Preguntas frecuentes</h1>
+          <p>Respuestas básicas para interpretar la ficha <strong>${escapeHtml(operation.shortTitle)}</strong>, sus fuentes, unidades, descargas y revisiones estadísticas.</p>
+          ${operationFaqList(operation)}
+        </section>` : `
         <div class="operation-news" id="ultimos-datos">
           <div class="operation-news-label">
             <strong>ÚLTIMOS</strong>
@@ -3305,8 +3396,9 @@ function economyPibOperationPage(slug) {
         </section>
         <section class="operation-info-block" id="preguntas-frecuentes">
           <h2>Preguntas frecuentes</h2>
-          <p><strong>¿Esta página reemplaza la fuente original?</strong> No. OVE organiza, documenta y facilita el acceso, manteniendo trazabilidad hacia la fuente estadística correspondiente.</p>
+          ${operationFaqList(operation)}
         </section>
+        `}
       </div>
     </section>
     ${footer()}
