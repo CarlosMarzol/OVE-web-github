@@ -2831,13 +2831,18 @@ function economyTopicPage(topic) {
       lead: topic.lead,
       image: topic.image,
       breadcrumb: ["Inicio", "Datos", topic.title],
-      actions: `<a class="button button-primary" href="#/datos">Volver a datos por temas ${arrow()}</a>
-        <a class="button" href="${indicatorInventoryDownloads.excel}" download>Descargar catálogo ${icon("download")}</a>`
+      actions: `<a class="button button-primary" href="#/datos">Volver a datos por temas ${arrow()}</a>`
     })}
-    <section class="section economy-directory-section">
+    <section class="section economy-empty-section">
       <div class="container">
-        ${economyOperationsSection()}
-        ${topicIndicatorExplorer("economy")}
+        <div class="economy-empty-panel">
+          <img src="${topic.image}" alt="" loading="lazy" decoding="async">
+          <div>
+            <span class="eyebrow">Datos de Venezuela</span>
+            <h2>Economía</h2>
+            <p>Sección en reconstrucción.</p>
+          </div>
+        </div>
       </div>
     </section>
     ${footer()}

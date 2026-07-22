@@ -695,6 +695,40 @@ h3 {
   background: #f5f7fb;
 }
 
+.economy-empty-section {
+  background: #f5f7fb;
+}
+
+.economy-empty-panel {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 20px;
+  align-items: center;
+  min-height: 220px;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #d8e1ee;
+  border-top: 4px solid var(--blue-700);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.economy-empty-panel img {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+}
+
+.economy-empty-panel h2 {
+  margin: 8px 0;
+  color: var(--blue-700);
+}
+
+.economy-empty-panel p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .economy-directory {
   display: grid;
   grid-template-columns: minmax(230px, 285px) minmax(0, 1fr);
@@ -3609,6 +3643,17 @@ th {
   .topic-detail-head {
     grid-template-columns: 1fr;
     padding: 18px;
+  }
+
+  .economy-empty-panel {
+    grid-template-columns: 1fr;
+    min-height: 180px;
+    padding: 20px;
+  }
+
+  .economy-empty-panel img {
+    width: 92px;
+    height: 92px;
   }
 
   .economy-directory,
