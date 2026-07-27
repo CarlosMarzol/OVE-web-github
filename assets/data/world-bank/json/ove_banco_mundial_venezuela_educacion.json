@@ -2,9 +2,9 @@
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
     "Dataset": "Banco Mundial - Venezuela - Educación",
-    "Fecha generación": "2026-07-13",
+    "Fecha generación": "2026-07-27",
     "Número de indicadores": 5,
-    "Número de registros": 333
+    "Número de registros": 330
   },
   "datos": [
     {
@@ -23,7 +23,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -42,7 +42,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -61,7 +61,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -80,7 +80,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -99,7 +99,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -118,7 +118,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -137,7 +137,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -156,7 +156,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -175,7 +175,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -194,7 +194,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -213,7 +213,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -232,7 +232,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -251,7 +251,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -270,7 +270,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -289,7 +289,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -308,7 +308,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -327,7 +327,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -346,7 +346,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -365,7 +365,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -384,7 +384,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -403,7 +403,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -422,7 +422,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 84.7300033569336,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -441,7 +441,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -460,7 +460,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -479,7 +479,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -498,7 +498,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -517,7 +517,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -536,7 +536,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -555,7 +555,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -574,7 +574,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -593,7 +593,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 89.8300018310547,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -612,7 +612,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -631,7 +631,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -650,7 +650,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -669,7 +669,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -688,7 +688,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -707,7 +707,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -726,7 +726,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -745,7 +745,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -764,7 +764,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -783,7 +783,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -802,7 +802,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 92.9800033569336,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -821,7 +821,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -840,7 +840,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -859,7 +859,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -878,7 +878,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 94.3707013803128,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -897,7 +897,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 94.6620701964151,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -916,7 +916,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 95.1500015258789,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -935,7 +935,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 95.3116995541662,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -954,7 +954,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 95.5100021362305,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -973,7 +973,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 95.3924213233743,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -992,7 +992,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 94.7699966430664,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1011,7 +1011,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 95.9871889937429,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1030,7 +1030,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1049,7 +1049,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1068,7 +1068,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 96.6100006103516,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1087,7 +1087,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 97.129997253418,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1106,7 +1106,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": 97.1837183128414,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1125,7 +1125,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1144,7 +1144,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1163,7 +1163,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1182,7 +1182,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1201,7 +1201,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1220,7 +1220,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1239,7 +1239,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1258,7 +1258,7 @@
       "Indicador": "Tasa de alfabetización adulta",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -1277,8 +1277,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1296,8 +1296,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1315,8 +1315,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1334,8 +1334,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1353,8 +1353,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1372,8 +1372,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1391,8 +1391,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1410,8 +1410,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1429,8 +1429,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1448,8 +1448,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1467,8 +1467,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1484,10 +1484,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 89.086311340332,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1503,10 +1503,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 90.5719680786133,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1522,10 +1522,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 91.3041534423828,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1541,10 +1541,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 90.8208618164062,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1560,10 +1560,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 92.0394134521484,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1579,10 +1579,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 95.639892578125,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1598,10 +1598,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 98.1688766479492,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1617,10 +1617,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 101.076736450195,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1636,10 +1636,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 102.413162231445,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1655,10 +1655,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 104.085968017578,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1674,10 +1674,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 105.414100646973,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1693,10 +1693,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 106.078842163086,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1712,10 +1712,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 105.254440307617,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1731,10 +1731,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 103.982536315918,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1750,10 +1750,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 104.39527130127,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1769,10 +1769,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 104.340309143066,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1788,10 +1788,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 103.786468505859,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1807,10 +1807,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 103.345626831055,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1826,10 +1826,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 102.946510314941,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1845,10 +1845,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 103.632537841797,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1864,10 +1864,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 107.00602722168,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1883,10 +1883,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 108.725692749023,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1902,10 +1902,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 107.152236938477,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1923,8 +1923,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1942,8 +1942,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1959,10 +1959,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 98.7612991333008,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1978,10 +1978,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 100.005096435547,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -1999,8 +1999,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2016,10 +2016,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 98.338996887207,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2035,10 +2035,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 99.864990234375,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2054,10 +2054,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 102.415657043457,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2073,10 +2073,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 104.676307678223,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2092,10 +2092,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 102.77710723877,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2111,10 +2111,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 102.658088684082,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2130,10 +2130,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 102.275398254395,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2149,10 +2149,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 102.063499450684,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2168,10 +2168,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 103.891387939453,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2187,10 +2187,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 101.032890319824,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2206,10 +2206,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 101.235862731934,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2225,10 +2225,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 100.685157775879,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2244,10 +2244,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 100.664756774902,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2263,10 +2263,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 100.787887573242,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2282,10 +2282,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 101.162292480469,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2301,10 +2301,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 100.276649475098,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2320,10 +2320,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 99.8761825561523,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2339,10 +2339,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 97.506591796875,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2358,10 +2358,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 95.0507202148438,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2379,8 +2379,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2398,8 +2398,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2417,8 +2417,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2436,8 +2436,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2453,10 +2453,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 109.259559631348,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2472,10 +2472,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 111.130409240723,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2491,10 +2491,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.PRM.ENRR",
       "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
+      "Valor": 113.693878173828,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2512,27 +2512,8 @@
       "Indicador": "Tasa bruta de escolarización primaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2026,
-      "Área temática": "Educación",
-      "ID área": "educacion",
-      "Subárea": "Escolarización",
-      "ID subárea": "escolarizacion",
-      "Código indicador": "SE.PRM.ENRR",
-      "Indicador": "Tasa bruta de escolarización primaria",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2550,8 +2531,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2569,8 +2550,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2588,8 +2569,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2607,8 +2588,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2626,8 +2607,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2645,8 +2626,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2664,8 +2645,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2683,8 +2664,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2702,8 +2683,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2721,8 +2702,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2740,8 +2721,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2757,10 +2738,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 30.5217304229736,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2776,10 +2757,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 33.1764907836914,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2795,10 +2776,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 35.5657501220703,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2814,10 +2795,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 37.7445297241211,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2833,10 +2814,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 39.6757888793945,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2852,10 +2833,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 43.916919708252,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2871,10 +2852,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 46.5141181945801,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2890,10 +2871,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 47.7237510681152,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2909,10 +2890,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 49.0558891296387,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2928,10 +2909,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 50.0724411010742,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2947,10 +2928,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 50.6321105957031,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2966,10 +2947,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 51.1844291687012,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -2985,10 +2966,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 52.3728790283203,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3004,10 +2985,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 53.0127182006836,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3023,10 +3004,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 54.5595817565918,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3042,10 +3023,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 55.3031311035156,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3061,10 +3042,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 54.3160591125488,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3080,10 +3061,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 54.0853614807129,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3099,10 +3080,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 53.3951301574707,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3118,10 +3099,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 53.3853302001953,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3137,10 +3118,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 53.7813987731934,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3156,10 +3137,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 54.664478302002,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3175,10 +3156,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 55.1568489074707,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3196,8 +3177,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3215,8 +3196,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3234,8 +3215,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3253,8 +3234,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3272,8 +3253,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3289,10 +3270,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 56.0293006896973,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3308,10 +3289,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 59.0772895812988,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3327,10 +3308,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 63.1789817810059,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3346,10 +3327,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 67.2197189331055,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3365,10 +3346,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 68.4049072265625,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3384,10 +3365,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 71.0196380615234,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3403,10 +3384,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 73.3435287475586,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3422,10 +3403,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 75.8546676635742,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3441,10 +3422,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 78.2070236206055,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3460,10 +3441,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 79.8805770874023,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3479,10 +3460,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 80.7918167114258,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3498,10 +3479,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 80.7240982055664,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3517,10 +3498,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 81.6782836914062,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3536,10 +3517,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 83.8216934204102,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3555,10 +3536,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 91.4725494384766,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3574,10 +3555,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 90.8081207275391,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3593,10 +3574,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 88.8302230834961,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3612,10 +3593,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 85.1329498291016,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3631,10 +3612,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 83.9518280029297,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3652,8 +3633,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3671,8 +3652,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3690,8 +3671,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3709,8 +3690,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3726,10 +3707,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 96.7906723022461,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3745,10 +3726,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 97.229606628418,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3764,10 +3745,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.SEC.ENRR",
       "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
+      "Valor": 97.7908172607422,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3785,27 +3766,8 @@
       "Indicador": "Tasa bruta de escolarización secundaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2026,
-      "Área temática": "Educación",
-      "ID área": "educacion",
-      "Subárea": "Escolarización",
-      "ID subárea": "escolarizacion",
-      "Código indicador": "SE.SEC.ENRR",
-      "Indicador": "Tasa bruta de escolarización secundaria",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3823,8 +3785,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3842,8 +3804,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3861,8 +3823,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3880,8 +3842,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3899,8 +3861,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3918,8 +3880,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3937,8 +3899,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3956,8 +3918,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3975,8 +3937,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -3994,8 +3956,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4013,8 +3975,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4030,10 +3992,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 9.16672992706299,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4049,10 +4011,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 10.608229637146,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4068,10 +4030,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 11.8261995315552,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4087,10 +4049,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 12.688380241394,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4106,10 +4068,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 14.1456604003906,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4125,10 +4087,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 15.4267597198486,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4146,8 +4108,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4163,10 +4125,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 17.8186893463135,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4182,10 +4144,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 18.3426303863525,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4201,10 +4163,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 18.9691390991211,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4220,10 +4182,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 18.9722003936768,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4239,10 +4201,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 20.0155601501465,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4258,10 +4220,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 20.6762008666992,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4277,10 +4239,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 21.8267993927002,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4296,10 +4258,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 21.6080799102783,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4315,10 +4277,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 24.5814800262451,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4334,10 +4296,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 23.5750999450684,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4353,10 +4315,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 24.520809173584,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4372,10 +4334,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 25.8283996582031,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4391,10 +4353,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 26.8769798278809,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4410,10 +4372,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 27.4910392761231,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4429,10 +4391,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 27.0434608459473,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4450,8 +4412,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4469,8 +4431,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4488,8 +4450,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4507,8 +4469,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4526,8 +4488,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4545,8 +4507,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4564,8 +4526,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4581,10 +4543,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 27.8114891052246,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4602,8 +4564,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4619,10 +4581,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 37.518970489502,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4638,10 +4600,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 39.2063407897949,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4657,10 +4619,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 41.2058296203613,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4678,8 +4640,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4697,8 +4659,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4716,8 +4678,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4733,10 +4695,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 78.2515029907227,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4752,10 +4714,10 @@
       "ID subárea": "escolarizacion",
       "Código indicador": "SE.TER.ENRR",
       "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
+      "Valor": 78.2699203491211,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4773,8 +4735,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4792,8 +4754,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4811,8 +4773,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4830,8 +4792,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4849,8 +4811,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4868,8 +4830,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4887,8 +4849,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4906,8 +4868,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4925,8 +4887,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4944,8 +4906,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4963,8 +4925,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -4982,8 +4944,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -5001,8 +4963,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -5020,8 +4982,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -5039,8 +5001,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -5058,27 +5020,8 @@
       "Indicador": "Tasa bruta de escolarización terciaria",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
-    },
-    {
-      "País OVE": "Venezuela",
-      "País Banco Mundial": "Venezuela, RB",
-      "Código ISO 2": "VE",
-      "Código ISO 3": "VEN",
-      "Región": "Latin America & Caribbean",
-      "Nivel de ingreso": "Not classified",
-      "Año": 2026,
-      "Área temática": "Educación",
-      "ID área": "educacion",
-      "Subárea": "Escolarización",
-      "ID subárea": "escolarizacion",
-      "Código indicador": "SE.TER.ENRR",
-      "Indicador": "Tasa bruta de escolarización terciaria",
-      "Valor": null,
-      "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
-      "Error descarga": "The read operation timed out"
+      "Fecha descarga": "2026-07-27",
+      "Error descarga": null
     },
     {
       "País OVE": "Venezuela",
@@ -5096,7 +5039,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5115,7 +5058,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5134,7 +5077,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5153,7 +5096,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5172,7 +5115,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5191,7 +5134,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5210,7 +5153,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5229,7 +5172,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5248,7 +5191,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5267,7 +5210,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5286,7 +5229,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 4.16286993026733,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5305,7 +5248,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 4.1799201965332,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5324,7 +5267,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 4.83728981018066,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5343,7 +5286,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5362,7 +5305,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 3.94795989990234,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5381,7 +5324,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 5.19851016998291,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5400,7 +5343,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5419,7 +5362,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 5.25665998458862,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5438,7 +5381,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5457,7 +5400,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5476,7 +5419,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 4.40072011947632,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5495,7 +5438,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 5.18743991851807,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5514,7 +5457,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 5.00895023345947,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5533,7 +5476,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 6.0598201751709,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5552,7 +5495,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 4.06372976303101,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5571,7 +5514,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5590,7 +5533,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5609,7 +5552,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 3.92751002311706,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5628,7 +5571,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 3.62941002845764,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5647,7 +5590,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5666,7 +5609,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 2.44671010971069,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5685,7 +5628,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5704,7 +5647,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 4.31067991256714,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5723,7 +5666,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 3.81783008575439,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5742,7 +5685,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 5.00603008270264,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5761,7 +5704,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5780,7 +5723,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5799,7 +5742,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5818,7 +5761,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5837,7 +5780,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5856,7 +5799,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5875,7 +5818,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5894,7 +5837,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5913,7 +5856,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5932,7 +5875,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5951,7 +5894,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5970,7 +5913,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 3.66905999183655,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -5989,7 +5932,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 3.62732005119324,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6008,7 +5951,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6027,7 +5970,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": 6.87467002868652,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6046,7 +5989,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6065,7 +6008,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6084,7 +6027,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6103,7 +6046,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6122,7 +6065,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6141,7 +6084,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6160,7 +6103,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6179,7 +6122,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6198,7 +6141,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6217,7 +6160,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6236,7 +6179,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6255,7 +6198,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6274,7 +6217,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6293,7 +6236,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6312,7 +6255,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     },
     {
@@ -6331,7 +6274,7 @@
       "Indicador": "Gasto público en educación como porcentaje del PIB",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-13",
+      "Fecha descarga": "2026-07-27",
       "Error descarga": null
     }
   ]
