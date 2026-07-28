@@ -1,162 +1,1000 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Observatorio Venezolano de Economía | Indicadores, informes y datos abiertos</title>
-    <meta
-      name="description"
-      content="Portal del Observatorio Venezolano de Economía con indicadores, informes, datos abiertos y análisis económico independiente para Venezuela."
-    >
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="author" content="Observatorio Venezolano de Economía">
-    <meta name="application-name" content="Observatorio Venezolano de Economía">
-    <meta name="language" content="es">
-    <meta name="theme-color" content="#0B1D3D">
-    <link rel="canonical" href="https://ove-venezuela.com/">
-    <link rel="alternate" hreflang="es" href="https://ove-venezuela.com/">
-    <meta property="og:title" content="Observatorio Venezolano de Economía">
-    <meta property="og:description" content="Indicadores, informes y datos abiertos para comprender la economía venezolana.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ove-venezuela.com/">
-    <meta property="og:image" content="https://ove-venezuela.com/assets/ove-logo-brand.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Observatorio Venezolano de Economía">
-    <meta name="twitter:description" content="Indicadores, informes y datos abiertos para comprender la economía venezolana.">
-    <meta name="twitter:image" content="https://ove-venezuela.com/assets/ove-logo-brand.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a35">
+  <title>Observatorio Venezolano de Economía | Economía con contexto</title>
+  <meta name="description" content="Indicadores, datos abiertos y análisis económico independiente para comprender Venezuela con fuentes verificables.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Observatorio Venezolano de Economía">
+  <link rel="canonical" href="https://ove-venezuela.com/">
+  <meta property="og:title" content="Observatorio Venezolano de Economía">
+  <meta property="og:description" content="Indicadores, datos abiertos y análisis económico independiente para comprender Venezuela con fuentes verificables.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ove-venezuela.com/">
+  <meta property="og:image" content="https://ove-venezuela.com/assets/venezuela-hero-optimized.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Observatorio Venezolano de Economía">
+  <meta name="twitter:description" content="Indicadores, datos abiertos y análisis económico independiente para comprender Venezuela con fuentes verificables.">
+  <meta name="twitter:image" content="https://ove-venezuela.com/assets/venezuela-hero-optimized.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/venezuela-hero-optimized.jpg" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@560;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    :root{
+      --bg:oklch(97.80% 0.0062 255.5);
+      --surface:oklch(100.00% 0.0000 89.9);
+      --fg:oklch(23.62% 0.0659 260.9);
+      --muted:oklch(54.44% 0.0505 264.0);
+      --border:oklch(92.32% 0.0180 261.3);
+      --accent:oklch(45.96% 0.1702 258.0);
+      --muted-strong:color-mix(in oklch,var(--muted),var(--fg) 24%);
+      --hero:oklch(17.8% 0.056 257);
+      --hero-soft:oklch(26.5% 0.072 256);
+      --signal:oklch(84.62% 0.1716 85.3);
+      --danger:oklch(56.76% 0.2084 27.1);
+      --success:oklch(66% 0.145 154);
+      --font-display:Montserrat,"Avenir Next","Segoe UI",sans-serif;
+      --font-body:Inter,"Segoe UI",Arial,Helvetica,sans-serif;
+      --font-mono:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;
+      --max:1240px;
+      --radius:16px;
+      --shadow:0 26px 70px oklch(14% 0.045 258 / .18);
+      --ease:cubic-bezier(.2,0,0,1);
+    }
+    *{box-sizing:border-box}
+    [hidden]{display:none!important}
+    html{scroll-behavior:smooth;background:var(--bg);color:var(--fg)}
+    body{margin:0;min-width:0;overflow-x:hidden;background:var(--bg);font-family:var(--font-body);font-size:16px;line-height:1.6}
+    body.menu-open{overflow:hidden}
+    img,svg{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    button,input{font:inherit}
+    button{color:inherit}
+    a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+    .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+    .container{width:min(var(--max),calc(100% - 64px));margin-inline:auto}
+    .skip-link{position:fixed;left:16px;top:12px;z-index:1000;transform:translateY(-140%);background:var(--surface);color:var(--fg);padding:10px 14px;border-radius:8px}
+    .skip-link:focus{transform:none}
+
+    .eyebrow{display:flex;align-items:center;gap:12px;margin:0 0 18px;color:var(--muted);font-size:12px;font-weight:600;letter-spacing:.09em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{font-family:var(--font-display);text-wrap:balance}
+    h1{max-width:13ch;margin-bottom:0;font-size:clamp(3.2rem,5.2vw,4.5rem);font-weight:600;line-height:.98;letter-spacing:-.03em}
+    h2{max-width:17ch;margin-bottom:0;font-size:clamp(2.25rem,4.2vw,4.4rem);font-weight:600;line-height:1.02;letter-spacing:-.025em}
+    h3{margin-bottom:0;font-size:clamp(1.15rem,1.7vw,1.45rem);font-weight:600;line-height:1.2}
+    .section-lead{max-width:58ch;margin:0;color:var(--muted-strong);font-size:17px}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:13px;min-height:48px;padding:12px 18px;border:1px solid transparent;border-radius:10px;font-size:14px;font-weight:600;letter-spacing:.02em;cursor:pointer;transition:transform .16s var(--ease),box-shadow .16s var(--ease),background .16s var(--ease),opacity .16s ease}
+    .button svg{width:17px;transition:transform .16s var(--ease)}
+    .button:hover{transform:translateY(-2px)}
+    .button:hover svg{transform:translateX(4px)}
+    .button:active{transform:translateY(0) scale(.98)}
+    .button:disabled,.button[aria-disabled="true"]{cursor:not-allowed;opacity:.55;transform:none;box-shadow:none}
+    .button-primary{background:var(--accent);color:var(--surface);box-shadow:0 14px 32px oklch(45.96% .1702 258 / .28)}
+    .button-ghost{border-color:oklch(100% 0 0 / .32);background:oklch(100% 0 0 / .08);color:var(--surface);backdrop-filter:blur(12px)}
+    .button-ghost:hover,.button-ghost:focus-visible{background:oklch(100% 0 0 / .14)}
+
+    .hero{position:relative;min-height:880px;overflow:hidden;background:var(--hero);color:var(--surface);isolation:isolate}
+    .hero-background{position:absolute;inset:0;z-index:-3}
+    .hero-background img{width:100%;height:112%;object-fit:cover;object-position:center 48%;transform:scale(1.03);will-change:transform}
+    .hero-background::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,oklch(13.5% .055 258 / .95) 0%,oklch(16% .05 258 / .82) 36%,oklch(15% .045 258 / .23) 67%,oklch(12% .045 258 / .34) 100%),linear-gradient(0deg,oklch(13.5% .055 258 / .92) 0%,transparent 42%)}
+    .hero-grid-lines{position:absolute;inset:0;z-index:-2;opacity:.12;background-image:linear-gradient(to right,oklch(100% 0 0 / .5) 1px,transparent 1px);background-size:calc((100% - max(32px,(100% - var(--max))/2)*2)/6) 100%;mask-image:linear-gradient(to bottom,transparent 0,black 16%,black 76%,transparent 100%)}
+    .site-header{position:relative;z-index:20;border-bottom:1px solid oklch(100% 0 0 / .14)}
+    .header-inner{display:grid;grid-template-columns:auto 1fr auto;align-items:center;min-height:86px;gap:20px}
+    .brand img{width:216px;height:auto}
+    .site-nav{display:flex;align-items:center;justify-content:center;gap:clamp(10px,1.15vw,18px)}
+    .site-nav a{position:relative;padding:10px 0;color:oklch(100% 0 0 / .72);font-size:12px;font-weight:500;white-space:nowrap}
+    .site-nav a::after{content:"";position:absolute;left:0;right:100%;bottom:4px;height:1px;background:var(--surface);transition:right .18s var(--ease)}
+    .site-nav a:hover,.site-nav a:focus-visible{color:var(--surface)}
+    .site-nav a:hover::after,.site-nav a:focus-visible::after{right:0}
+    .nav-search{display:grid;place-items:center;width:44px;height:44px;flex:0 0 44px;border:1px solid oklch(100% 0 0 / .2);border-radius:50%;background:transparent;color:oklch(100% 0 0 / .78);cursor:pointer;transition:background .15s var(--ease),color .15s var(--ease)}
+    .nav-search:hover{background:oklch(100% 0 0 / .1);color:var(--surface)}
+    .nav-search svg{width:17px;height:17px}
+    .nav-search-label,.nav-newsletter{display:none}
+    .header-link{display:flex;align-items:center;gap:10px;color:var(--surface);font-size:13px;font-weight:600}
+    .header-link span{display:grid;place-items:center;width:32px;height:32px;border:1px solid oklch(100% 0 0 / .25);border-radius:50%;transition:transform .18s var(--ease),background .18s var(--ease)}
+    .header-link:hover span{transform:translate(2px,-2px);background:oklch(100% 0 0 / .1)}
+    .nav-toggle{display:none;width:46px;height:46px;border:1px solid oklch(100% 0 0 / .25);border-radius:10px;background:transparent;cursor:pointer}
+    .nav-toggle i{display:block;width:19px;height:1px;margin:5px auto;background:var(--surface);transition:transform .18s var(--ease),opacity .18s}
+    .nav-toggle[aria-expanded="true"] i:first-child{transform:translateY(3px) rotate(45deg)}
+    .nav-toggle[aria-expanded="true"] i:last-child{transform:translateY(-3px) rotate(-45deg)}
+    .search-dialog{width:min(680px,calc(100% - 32px));max-height:min(720px,calc(100dvh - 32px));margin:auto;padding:0;overflow:hidden;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--fg);box-shadow:0 30px 100px oklch(10% .04 258 / .42)}
+    .search-dialog::backdrop{background:oklch(10% .04 258 / .72);backdrop-filter:blur(8px)}
+    .search-shell{display:grid;grid-template-rows:auto minmax(0,1fr)}
+    .search-head{display:grid;grid-template-columns:1fr 44px;gap:12px;padding:18px;border-bottom:1px solid var(--border)}
+    .search-field{display:flex;align-items:center;gap:12px;min-height:52px;border:1px solid var(--border);border-radius:9px;background:var(--bg);padding:0 15px}
+    .search-field:focus-within{border-color:var(--fg);box-shadow:0 0 0 3px color-mix(in oklch,var(--fg),transparent 88%)}
+    .search-field svg{width:18px;flex:0 0 auto;color:var(--muted-strong)}
+    .search-field input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:var(--fg)}
+    .search-close{width:44px;height:44px;align-self:center;border:1px solid var(--border);border-radius:50%;background:transparent;cursor:pointer}
+    .search-results{max-height:510px;overflow:auto;padding:6px 18px 18px}
+    .search-summary{margin:0;padding:13px 4px 8px;color:var(--muted-strong);font-size:11px;letter-spacing:.02em}
+    .search-result{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;min-height:72px;border-bottom:1px solid var(--border);padding:12px 4px}
+    .search-result strong{display:block;font-family:var(--font-display);font-size:16px;font-weight:600}
+    .search-result span{display:block;margin-top:2px;color:var(--muted-strong);font-size:12px}
+    .search-result b{font-family:var(--font-mono);font-size:12px;font-weight:500}
+    .search-empty{padding:46px 12px;text-align:center;color:var(--muted-strong)}
+    .hero-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.62fr);align-items:end;gap:80px;min-height:660px;padding:90px 0 80px}
+    .hero-copy{align-self:center;animation:hero-enter .48s .08s both var(--ease)}
+    .hero .eyebrow{color:oklch(96% .04 89)}
+    .hero-lead{max-width:56ch;margin:28px 0 0;color:oklch(100% 0 0 / .76);font-size:clamp(1rem,1.4vw,1.2rem)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+    .hero-note{display:flex;align-items:center;gap:10px;margin-top:30px;color:oklch(100% 0 0 / .74);font-size:12px}
+    .hero-note::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--success);box-shadow:0 0 0 6px oklch(66% .145 154 / .14)}
+    .live-panel{align-self:end;overflow:hidden;border:1px solid oklch(100% 0 0 / .2);border-radius:var(--radius);background:oklch(13.5% .045 258 / .72);box-shadow:var(--shadow);backdrop-filter:blur(22px);animation:hero-enter .5s .14s both var(--ease)}
+    .live-panel-head{display:flex;align-items:center;justify-content:space-between;padding:17px 20px;border-bottom:1px solid oklch(100% 0 0 / .12)}
+    .live-label{display:flex;align-items:center;gap:9px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+    .live-dot{width:7px;height:7px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 0 oklch(84.62% .1716 85.3 / .45);animation:pulse 2.4s 2}
+    .live-panel-head span:last-child{color:oklch(100% 0 0 / .68);font-family:var(--font-mono);font-size:10px}
+    .live-body{padding:24px 20px 20px}
+    .live-metric{color:oklch(100% 0 0 / .72);font-size:13px}
+    .live-value{display:flex;align-items:baseline;gap:10px;margin-top:8px;font-family:var(--font-display);font-size:clamp(2.7rem,5vw,4.35rem);font-weight:600;line-height:1;letter-spacing:-.03em}
+    .live-value small{color:oklch(100% 0 0 / .62);font-family:var(--font-body);font-size:12px;font-weight:500;letter-spacing:0}
+    .live-sparkline{height:100px;margin-top:20px}
+    .live-sparkline svg{width:100%;height:100%;overflow:visible}
+    .spark-grid{stroke:oklch(100% 0 0 / .1);stroke-width:1}
+    .spark-area{fill:oklch(100% 0 0 / .08)}
+    .spark-line{fill:none;stroke:var(--surface);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw-line .5s .25s forwards var(--ease)}
+    .live-foot{display:flex;justify-content:space-between;gap:16px;margin-top:12px;padding-top:15px;border-top:1px solid oklch(100% 0 0 / .12);color:oklch(100% 0 0 / .68);font-family:var(--font-mono);font-size:10px}
+    .ticker{position:absolute;left:0;right:0;bottom:0;overflow:hidden;border-top:1px solid oklch(100% 0 0 / .14);background:oklch(12% .045 258 / .78);backdrop-filter:blur(16px)}
+    .ticker-track{display:flex;width:max-content;animation:ticker 32s linear infinite}
+    .ticker.is-paused .ticker-track{animation-play-state:paused}
+    .ticker-group{display:flex;flex-shrink:0}
+    .ticker-item{display:flex;align-items:center;gap:18px;min-width:285px;padding:18px 28px;border-right:1px solid oklch(100% 0 0 / .12)}
+    .ticker-item span{color:oklch(100% 0 0 / .72);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+    .ticker-item strong{font-family:var(--font-mono);font-size:13px;font-weight:500}
+    .ticker-item em{color:var(--signal);font-size:11px;font-style:normal}
+    .ticker-toggle{position:absolute;right:10px;top:50%;z-index:2;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:94px;min-height:44px;transform:translateY(-50%);border:1px solid oklch(100% 0 0 / .2);border-radius:8px;background:var(--hero);color:var(--surface);padding:8px 12px;font-size:11px;font-weight:600;letter-spacing:.02em;cursor:pointer}
+    .ticker-toggle svg{width:14px;height:14px}
+    .ticker-toggle:active{transform:translateY(-50%) scale(.98)}
+    .ticker-toggle:disabled{cursor:default;opacity:.72}
+
+    .section{padding:clamp(84px,10vw,140px) 0}
+    .section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.43fr);align-items:end;gap:64px;margin-bottom:60px}
+    .studio{display:grid;grid-template-columns:300px minmax(0,1fr);gap:22px}
+    .indicator-index{border-top:1px solid var(--border)}
+    .indicator-tab{position:relative;width:100%;min-height:92px;padding:18px 42px 18px 0;border:0;border-bottom:1px solid var(--border);background:transparent;cursor:pointer;text-align:left}
+    .indicator-tab::after{content:"↗";position:absolute;right:8px;top:33px;opacity:0;transform:translate(-8px,8px);font-size:17px;transition:opacity .16s var(--ease),transform .16s var(--ease)}
+    .indicator-tab strong{display:block;font-family:var(--font-display);font-size:16px;font-weight:600}
+    .indicator-tab span{display:block;margin-top:5px;color:var(--muted-strong);font-size:12px}
+    .indicator-tab:hover::after,.indicator-tab.is-active::after{opacity:1;transform:none}
+    .indicator-tab.is-active strong{color:var(--accent)}
+    .indicator-tab:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+    .chart-panel{overflow:hidden;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);box-shadow:0 28px 70px oklch(23.62% .0659 260.9 / .09)}
+    .chart-top{display:grid;grid-template-columns:1fr auto;align-items:start;gap:30px;padding:32px 34px 20px}
+    .chart-kicker{margin-bottom:6px;color:var(--muted-strong);font-size:12px}
+    .chart-top p{max-width:54ch;margin:10px 0 0;color:var(--muted-strong);font-size:14px}
+    .chart-value{font-family:var(--font-display);font-size:clamp(2.6rem,5vw,4.8rem);font-weight:600;line-height:1;letter-spacing:-.035em;text-align:right}
+    .chart-value span{display:block;margin-top:9px;color:var(--muted-strong);font-family:var(--font-body);font-size:11px;font-weight:500;letter-spacing:.02em}
+    .chart-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 34px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg)}
+    .range-control{display:inline-flex;gap:3px;padding:3px;border:1px solid var(--border);border-radius:9px;background:var(--surface)}
+    .range-button,.chart-download{min-height:44px;border:0;background:transparent;color:var(--muted-strong);font-size:11px;font-weight:600;letter-spacing:.02em;cursor:pointer;transition:background .15s var(--ease),color .15s var(--ease),transform .15s var(--ease),opacity .15s ease}
+    .range-button{padding:7px 11px;border-radius:6px}
+    .range-button.is-active{background:var(--fg);color:var(--surface)}
+    .range-button:focus-visible,.chart-download:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+    .chart-download{display:inline-flex;align-items:center;gap:8px;padding:7px 0;color:var(--fg)}
+    .chart-download svg{width:16px;height:16px}
+    .chart-download:hover{transform:translateY(-2px)}
+    .chart-download:active{transform:none}
+    .chart-download:disabled{cursor:default;opacity:.65;transform:none}
+    .chart-canvas{position:relative;min-height:330px;padding:0 24px 8px}
+    .chart-visual{min-height:320px}
+    .chart-canvas svg{width:100%;height:auto}
+    .chart-grid{stroke:var(--border);stroke-width:1}
+    .chart-area{fill:color-mix(in oklch,var(--fg),transparent 93%);opacity:0;animation:area-in .25s .12s forwards ease}
+    .chart-line{fill:none;stroke:var(--fg);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw-line .42s forwards var(--ease)}
+    .chart-hit{fill:transparent;cursor:crosshair}
+    .chart-dot{fill:var(--surface);stroke:var(--fg);stroke-width:2.5;opacity:0;pointer-events:none;transform-box:fill-box;transform-origin:center;animation:dot-in .15s .18s forwards ease;transition:transform .15s var(--ease),fill .15s var(--ease),stroke-width .15s ease}
+    .chart-hit:hover + .chart-dot,.chart-hit:focus + .chart-dot{fill:var(--signal);transform:scale(1.55);stroke-width:4}
+    .chart-label{fill:var(--muted);font-family:var(--font-mono);font-size:11px}
+    .chart-tooltip{position:absolute;z-index:3;min-width:138px;max-width:190px;pointer-events:none;opacity:0;transform:translate(-50%,calc(-100% - 16px)) scale(.96);border:1px solid oklch(100% 0 0 / .12);border-radius:9px;background:var(--hero);box-shadow:0 14px 34px oklch(14% .045 258 / .22);color:var(--surface);padding:10px 12px;transition:opacity .18s ease,transform .18s var(--ease)}
+    .chart-tooltip.is-visible{opacity:1;transform:translate(-50%,calc(-100% - 16px)) scale(1)}
+    .chart-tooltip.is-below{transform:translate(-50%,16px) scale(.96)}
+    .chart-tooltip.is-visible.is-below{transform:translate(-50%,16px) scale(1)}
+    .chart-tooltip span{display:block;color:oklch(100% 0 0 / .72);font-size:10px;letter-spacing:.06em;text-transform:uppercase}
+    .chart-tooltip strong{display:block;margin-top:2px;font-family:var(--font-mono);font-size:14px;font-weight:500}
+    .chart-meta{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border)}
+    .chart-meta div{padding:18px 22px;border-right:1px solid var(--border)}
+    .chart-meta div:last-child{border:0}
+    .chart-meta span{display:block;color:var(--muted-strong);font-size:10px;letter-spacing:.07em;text-transform:uppercase}
+    .chart-meta strong{display:block;margin-top:5px;font-size:12px;font-weight:600}
+    .chart-state{position:absolute;inset:0;z-index:4;display:grid;place-content:center;justify-items:center;min-height:320px;background:var(--surface);padding:34px;text-align:center}
+    .chart-state strong{font-family:var(--font-display);font-size:18px;font-weight:600}
+    .chart-state p{max-width:42ch;margin:8px 0 0;color:var(--muted-strong);font-size:13px}
+    .state-loader{width:24px;height:24px;margin-bottom:16px;border:2px solid var(--border);border-top-color:var(--fg);border-radius:50%;animation:spin .7s linear infinite}
+    .state-action{min-height:44px;margin-top:18px;border:1px solid var(--border);border-radius:8px;background:var(--surface);padding:9px 14px;font-size:12px;font-weight:600;cursor:pointer}
+
+    .data-section{background:var(--surface)}
+    .data-layout{display:grid;grid-template-columns:minmax(300px,.78fr) minmax(0,1.22fr);gap:clamp(50px,9vw,120px);align-items:start}
+    .data-intro{position:relative}
+    .data-intro .section-lead{margin-top:28px}
+    .data-note{display:flex;gap:16px;margin-top:36px;padding-top:24px;border-top:1px solid var(--border);color:var(--muted-strong);font-size:13px}
+    .data-note strong{color:var(--fg);font-family:var(--font-mono);font-size:22px;font-weight:500}
+    .source-list{border-top:1px solid var(--fg)}
+    .source-row{display:grid;grid-template-columns:50px 1fr auto;align-items:center;gap:18px;min-height:104px;border-bottom:1px solid var(--border)}
+    .source-number{color:var(--muted-strong);font-family:var(--font-mono);font-size:11px}
+    .source-row h3{font-size:20px}
+    .source-row p{margin:5px 0 0;color:var(--muted-strong);font-size:13px}
+    .source-count{text-align:right}
+    .source-count strong{display:block;font-family:var(--font-mono);font-size:14px;font-weight:500}
+    .source-count span{display:block;color:var(--muted-strong);font-size:10px;letter-spacing:.06em;text-transform:uppercase}
+
+    .publications{background:var(--bg)}
+    .publication-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(320px,.65fr);gap:22px}
+    .feature-story{position:relative;min-height:560px;overflow:hidden;border-radius:var(--radius);background:var(--hero);color:var(--surface);isolation:isolate}
+    .feature-story img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;transition:transform .2s var(--ease)}
+    .feature-story::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,oklch(12% .05 258 / .96) 0%,oklch(12% .05 258 / .16) 68%)}
+    .feature-story:hover img{transform:scale(1.035)}
+    .story-content{position:absolute;left:0;right:0;bottom:0;padding:40px}
+    .story-status{display:inline-flex;margin-bottom:18px;padding:7px 10px;border:1px solid oklch(100% 0 0 / .28);border-radius:999px;background:oklch(10% .04 258 / .28);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;backdrop-filter:blur(12px)}
+    .story-content h3{max-width:18ch;font-size:clamp(2rem,4vw,3.8rem);line-height:1.02;letter-spacing:-.025em}
+    .story-content p{max-width:58ch;margin:18px 0 0;color:oklch(100% 0 0 / .72)}
+    .story-link{display:inline-flex;align-items:center;gap:12px;margin-top:24px;font-size:13px;font-weight:600}
+    .story-link span{display:grid;place-items:center;width:32px;height:32px;border:1px solid oklch(100% 0 0 / .3);border-radius:50%;transition:transform .16s var(--ease)}
+    .story-link:hover span{transform:translate(4px,-4px)}
+    .story-stack{display:grid;grid-template-rows:1fr 1fr;gap:22px}
+    .story-card{display:flex;flex-direction:column;justify-content:space-between;padding:28px;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);transition:transform .2s var(--ease),box-shadow .2s var(--ease)}
+    .story-card:hover{transform:translateY(-5px);box-shadow:0 24px 60px oklch(23.62% .0659 260.9 / .09)}
+    .story-card .story-status{align-self:flex-start;border-color:var(--border);background:var(--bg);color:var(--muted-strong)}
+    .story-card p{margin:14px 0 0;color:var(--muted-strong);font-size:14px}
+    .story-card .story-link{color:var(--fg)}
+    .story-card .story-link span{border-color:var(--border)}
+
+    .method{position:relative;overflow:hidden;background:var(--hero);color:var(--surface)}
+    .method::before{content:"OVE";position:absolute;right:-.05em;top:-.33em;color:oklch(100% 0 0 / .025);font-family:var(--font-display);font-size:min(42vw,640px);font-weight:700;line-height:1;letter-spacing:-.08em}
+    .method .eyebrow{color:oklch(100% 0 0 / .72)}
+    .method-head{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.47fr);align-items:end;gap:70px}
+    .method-head p{margin:0;color:oklch(100% 0 0 / .76)}
+    .method-steps{position:relative;display:grid;grid-template-columns:repeat(4,1fr);margin-top:80px;border-top:1px solid oklch(100% 0 0 / .18)}
+    .method-step{position:relative;padding:34px 28px 10px 0}
+    .method-step::before{content:"";position:absolute;left:0;top:-5px;width:9px;height:9px;border-radius:50%;background:var(--surface);box-shadow:0 0 0 7px oklch(100% 0 0 / .08)}
+    .method-step .number{display:block;margin-bottom:44px;color:oklch(100% 0 0 / .34);font-family:var(--font-mono);font-size:11px}
+    .method-step h3{font-size:18px}
+    .method-step p{max-width:27ch;margin:12px 0 0;color:oklch(100% 0 0 / .72);font-size:13px}
+    .method-quote{position:relative;display:grid;grid-template-columns:110px 1fr;gap:28px;max-width:900px;margin-top:96px;padding-top:36px;border-top:1px solid oklch(100% 0 0 / .18)}
+    .method-quote span{color:var(--signal);font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+    .method-quote blockquote{margin:0;font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2.8rem);line-height:1.18;letter-spacing:-.02em}
+
+    .contact{padding:clamp(78px,9vw,124px) 0;background:var(--surface)}
+    .contact-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,.72fr);overflow:hidden;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);box-shadow:0 26px 70px oklch(23.62% .0659 260.9 / .08)}
+    .contact-copy{padding:clamp(34px,6vw,72px)}
+    .contact-copy h2{font-size:clamp(2.2rem,4vw,4rem)}
+    .contact-copy p{max-width:54ch;margin:22px 0 0;color:var(--muted-strong)}
+    .subscribe-form{display:grid;grid-template-columns:1fr auto;gap:10px;margin-top:34px}
+    .subscribe-form label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+    .subscribe-form input{min-width:0;min-height:52px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--fg);padding:0 16px}
+    .subscribe-form input:focus{border-color:var(--fg);outline:3px solid color-mix(in oklch,var(--fg),transparent 84%)}
+    .subscribe-form .button{border:0;background:var(--fg);color:var(--surface);cursor:pointer}
+    .input-hint,.form-status{grid-column:1/-1;margin:0;color:var(--muted-strong);font-size:12px}
+    .input-hint{margin-top:0}
+    .form-status{min-height:20px}
+    .form-status.is-error{color:color-mix(in oklch,var(--danger),var(--fg) 28%)}
+    .subscribe-form input[aria-invalid="true"]{border-color:var(--danger);outline-color:color-mix(in oklch,var(--danger),transparent 76%)}
+    .contact-image{position:relative;min-height:430px;overflow:hidden}
+    .contact-image img{width:100%;height:100%;object-fit:cover}
+    .image-label{position:absolute;right:18px;bottom:18px;max-width:220px;padding:12px 14px;border:1px solid oklch(100% 0 0 / .28);border-radius:10px;background:oklch(14% .04 258 / .72);box-shadow:0 14px 30px oklch(10% .04 258 / .24);color:var(--surface);font-size:11px;backdrop-filter:blur(16px)}
+
+    .site-footer{padding:34px 0;border-top:1px solid var(--border);background:var(--surface)}
+    .footer-main{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+    .footer-brand{display:inline-flex;align-items:center;width:190px}
+    .footer-brand img{width:100%;height:auto}
+    .footer-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:24px;color:var(--muted-strong);font-size:12px}
+    .footer-meta{display:flex;justify-content:space-between;gap:30px;margin-top:26px;padding-top:22px;border-top:1px solid var(--border);color:var(--muted-strong);font-size:11px}
+
+    [data-reveal]{opacity:0;transform:translateY(20px);transition:opacity .36s var(--ease),transform .36s var(--ease)}
+    [data-reveal].is-visible{opacity:1;transform:none}
+    [data-reveal="stagger"]>*{opacity:0;transform:translateY(18px);transition:opacity .32s var(--ease),transform .32s var(--ease)}
+    [data-reveal="stagger"].is-visible>*{opacity:1;transform:none}
+    [data-reveal="stagger"].is-visible>*:nth-child(2){transition-delay:.08s}
+    [data-reveal="stagger"].is-visible>*:nth-child(3){transition-delay:.16s}
+    [data-reveal="stagger"].is-visible>*:nth-child(4){transition-delay:.24s}
+    [data-reveal="stagger"].is-visible>*:nth-child(5){transition-delay:.32s}
+    [data-reveal="stagger"].is-visible>*:nth-child(6){transition-delay:.4s}
+    @keyframes hero-enter{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+    @keyframes ticker{to{transform:translateX(-50%)}}
+    @keyframes pulse{70%{box-shadow:0 0 0 8px transparent}100%{box-shadow:0 0 0 0 transparent}}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes draw-line{to{stroke-dashoffset:0}}
+    @keyframes area-in{to{opacity:1}}
+    @keyframes dot-in{to{opacity:1}}
+
+    @media (max-width:1060px){
+      .container{width:min(var(--max),calc(100% - 40px))}
+      .site-nav{position:fixed;inset:0;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:7px;overflow-y:auto;padding:104px 24px 36px;background:var(--hero);opacity:0;visibility:hidden;transition:opacity .25s var(--ease),visibility .25s}
+      .site-nav[data-open="true"]{opacity:1;visibility:visible}
+      .site-nav a{min-height:44px;padding:4px 12px;font-family:var(--font-display);font-size:clamp(1.45rem,5vw,2.35rem)}
+      .site-nav a::after{bottom:2px}
+      .nav-search{display:flex;width:auto;min-width:148px;height:46px;margin-top:8px;padding:0 20px;border-radius:999px;gap:10px;font-size:13px;font-weight:600}
+      .nav-search-label{display:inline}
+      .nav-newsletter{display:inline-flex!important;align-items:center;justify-content:center;margin-top:5px!important;padding:8px 20px!important;border:1px solid oklch(100% 0 0 / .26);border-radius:999px;font-family:var(--font-body)!important;font-size:13px!important;font-weight:600}
+      .header-link{display:none}
+      .nav-toggle{display:block;justify-self:end;z-index:2}
+      .header-inner{grid-template-columns:1fr auto}
+      .hero{min-height:940px}
+      .hero-content{grid-template-columns:minmax(0,1fr) minmax(310px,.58fr);gap:32px}
+      .studio{grid-template-columns:250px minmax(0,1fr)}
+      .publication-grid{grid-template-columns:1fr}
+      .story-stack{grid-template-columns:1fr 1fr;grid-template-rows:none}
+      .contact-panel{grid-template-columns:1fr}
+      .contact-image{min-height:340px}
+    }
+    @media (max-width:800px){
+      .container{width:min(var(--max),calc(100% - 32px))}
+      .hero{min-height:0}
+      .hero-background img{height:100%;object-position:58% center}
+      .hero-content{grid-template-columns:1fr;align-items:start;gap:46px;min-height:0;padding:70px 0 130px}
+      .hero-copy{align-self:start}
+      .hero-lead{max-width:46ch}
+      .live-panel{width:min(100%,500px);justify-self:end}
+      .section-head,.data-layout,.method-head{grid-template-columns:1fr;gap:26px}
+      .section-head{margin-bottom:42px}
+      .studio{grid-template-columns:1fr}
+      .indicator-index{display:grid;grid-template-columns:1fr 1fr}
+      .indicator-tab{padding-right:24px}
+      .indicator-tab::after{display:none}
+      .chart-top{grid-template-columns:1fr}
+      .chart-value{text-align:left}
+      .chart-toolbar{align-items:flex-start}
+      .chart-canvas{min-height:0}
+      .data-intro{position:static}
+      .method-steps{grid-template-columns:1fr 1fr;row-gap:34px}
+      .method-quote{grid-template-columns:1fr}
+      .footer-main{grid-template-columns:1fr}
+      .footer-links{justify-content:flex-start}
+    }
+    @media (max-width:560px){
+      .container{width:min(var(--max),calc(100% - 24px))}
+      .site-header{border-bottom-color:oklch(100% 0 0 / .1)}
+      .header-inner{min-height:74px}
+      .brand img{width:175px}
+      .hero-content{padding-top:52px}
+      h1{font-size:2.75rem;line-height:1.02}
+      .hero-actions{display:grid}
+      .button{width:100%}
+      .live-panel{justify-self:stretch}
+      .ticker-item{min-width:245px;padding-inline:20px}
+      .section{padding:76px 0}
+      .indicator-index{grid-template-columns:1fr}
+      .indicator-tab{min-height:74px;padding-block:12px}
+      .chart-top{padding:24px 20px 14px}
+      .chart-toolbar{display:grid;padding:12px 20px}
+      .range-control{width:100%}
+      .range-button{flex:1}
+      .chart-canvas{padding-inline:8px}
+      .chart-meta{grid-template-columns:1fr}
+      .chart-meta div{border-right:0;border-bottom:1px solid var(--border)}
+      .source-row{grid-template-columns:36px 1fr}
+      .source-count{grid-column:2;text-align:left;padding-bottom:15px}
+      .publication-grid{gap:14px}
+      .feature-story{min-height:520px}
+      .story-content{padding:24px}
+      .story-stack{grid-template-columns:1fr;gap:14px}
+      .method-steps{grid-template-columns:1fr;margin-top:56px}
+      .method-step{padding-top:28px}
+      .method-step .number{margin-bottom:20px}
+      .subscribe-form{grid-template-columns:1fr}
+      .subscribe-form .button{width:100%}
+      .contact-copy{padding:30px 22px}
+      .contact-image{min-height:280px}
+      .footer-meta{display:grid}
+    }
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+      [data-reveal],[data-reveal="stagger"]>*{opacity:1!important;transform:none!important}
+      .hero-background img{transform:none!important}
+      .ticker-track{animation:none!important;transform:none!important}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <section class="hero" id="inicio" data-od-id="hero-section">
+    <div class="hero-background" aria-hidden="true">
+      <img src="assets/venezuela-hero-optimized.jpg" alt="" width="1672" height="941" fetchpriority="high" decoding="async" data-parallax>
+    </div>
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+
+    <header class="site-header" data-od-id="site-header">
       <div class="container header-inner">
-        <a class="brand" href="/" aria-label="Observatorio Venezolano de Economía">
-          <img src="assets/ove-logo-brand.png" alt="Observatorio Venezolano de Economía">
+        <a class="brand" href="#inicio" aria-label="OVE Venezuela — inicio" data-od-id="brand-logo">
+          <img src="assets/ove-logo-white.png" alt="Observatorio Venezolano de Economía" width="215" height="42">
         </a>
-        <button class="nav-toggle icon-button" type="button" aria-label="Abrir menú" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav class="main-nav" aria-label="Navegación principal">
-          <a href="/" data-route="/">Inicio</a>
-          <a href="/indicadores" data-route="/indicadores">Indicadores</a>
-          <a href="/publicaciones" data-route="/publicaciones">Publicaciones</a>
-          <a href="/datos" data-route="/datos">Datos</a>
-          <a href="/metodologia" data-route="/metodologia">Metodología</a>
-          <a href="/manifiesto" data-route="/manifiesto">Manifiesto</a>
-          <a href="/nosotros" data-route="/nosotros">Nosotros</a>
-          <a href="/contacto" data-route="/contacto">Contacto</a>
-        </nav>
-        <div class="header-actions">
-          <button class="icon-button search-button" type="button" aria-label="Buscar">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.6-3.6"></path></svg>
+        <nav class="site-nav" id="site-nav" aria-label="Navegación principal" data-od-id="main-navigation">
+          <a href="#inicio">Inicio</a>
+          <a href="#indicadores">Indicadores</a>
+          <a href="#publicaciones">Publicaciones</a>
+          <a href="#datos">Datos</a>
+          <a href="#metodo">Metodología</a>
+          <a href="https://ove-venezuela.com/manifiesto">Manifiesto</a>
+          <a href="https://ove-venezuela.com/nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+          <button class="nav-search" type="button" aria-label="Buscar en OVE" data-search-open data-od-id="nav-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg><span class="nav-search-label">Buscar</span>
           </button>
-          <a class="button button-primary button-small" href="/contacto">Suscríbete al boletín</a>
-        </div>
+          <a class="nav-newsletter" href="#contacto">Suscríbete al boletín</a>
+        </nav>
+        <a class="header-link" href="#contacto">Suscríbete al boletín <span aria-hidden="true">↗</span></a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false" data-nav-toggle><i></i><i></i></button>
       </div>
     </header>
 
-    <main id="app" tabindex="-1"></main>
+    <dialog class="search-dialog" id="site-search-dialog" aria-labelledby="search-title" data-od-id="site-search">
+      <div class="search-shell">
+        <div class="search-head">
+          <label class="search-field" for="site-search-input">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+            <span class="sr-only" id="search-title">Buscar en OVE</span>
+            <input id="site-search-input" type="search" autocomplete="off" placeholder="Buscar indicadores, datos o publicaciones…">
+          </label>
+          <button class="search-close" type="button" aria-label="Cerrar búsqueda" data-search-close>×</button>
+        </div>
+        <div class="search-results" aria-live="polite">
+          <p class="search-summary" id="search-summary">Explora las secciones y recursos principales.</p>
+          <div id="search-result-list"></div>
+        </div>
+      </div>
+    </dialog>
 
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "https://ove-venezuela.com/#organization",
-            "name": "Observatorio Venezolano de Economía",
-            "alternateName": "OVE",
-            "url": "https://ove-venezuela.com/",
-            "logo": "https://ove-venezuela.com/assets/ove-logo-brand.png",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Carrera 14 Federacion",
-              "addressLocality": "Calabozo",
-              "postalCode": "2312",
-              "addressRegion": "Guárico",
-              "addressCountry": "VE"
-            }
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://ove-venezuela.com/#website",
-            "url": "https://ove-venezuela.com/",
-            "name": "Observatorio Venezolano de Economía",
-            "inLanguage": "es",
-            "publisher": {
-              "@id": "https://ove-venezuela.com/#organization"
-            }
-          },
-          {
-            "@type": "DataCatalog",
-            "@id": "https://ove-venezuela.com/datos#catalog",
-            "name": "Banco de datos del Observatorio Venezolano de Economía",
-            "url": "https://ove-venezuela.com/datos",
-            "inLanguage": "es",
-            "publisher": {
-              "@id": "https://ove-venezuela.com/#organization"
-            },
-            "dataset": [
-              {
-                "@type": "Dataset",
-                "name": "Indicadores clave de Venezuela",
-                "url": "https://ove-venezuela.com/indicadores",
-                "distribution": [
-                  {
-                    "@type": "DataDownload",
-                    "encodingFormat": "text/csv",
-                    "contentUrl": "https://ove-venezuela.com/assets/data/indicadores-clave/ove_indicadores_clave_venezuela.csv"
-                  },
-                  {
-                    "@type": "DataDownload",
-                    "encodingFormat": "application/json",
-                    "contentUrl": "https://ove-venezuela.com/assets/data/indicadores-clave/ove_indicadores_clave_venezuela.json"
-                  }
-                ]
-              },
-              {
-                "@type": "Dataset",
-                "name": "Tipo de cambio oficial BCV",
-                "url": "https://ove-venezuela.com/datos/tipo-cambio",
-                "distribution": [
-                  {
-                    "@type": "DataDownload",
-                    "encodingFormat": "application/json",
-                    "contentUrl": "https://ove-venezuela.com/assets/data/bcv/json/ove_bcv_tipo_cambio_usd.json"
-                  }
-                ]
-              },
-              {
-                "@type": "Dataset",
-                "name": "Catálogo de indicadores del Banco Mundial para Venezuela",
-                "url": "https://ove-venezuela.com/datos/banco-mundial",
-                "distribution": [
-                  {
-                    "@type": "DataDownload",
-                    "encodingFormat": "application/json",
-                    "contentUrl": "https://ove-venezuela.com/assets/data/world-bank/catalog/world-bank-catalog.json"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
+    <div class="container hero-content">
+      <div class="hero-copy" data-od-id="hero-copy">
+        <p class="eyebrow">Observatorio Venezolano de Economía</p>
+        <h1 data-od-id="hero-title">La economía de Venezuela, sin ruido.</h1>
+        <p class="hero-lead">Indicadores, datos abiertos y análisis independiente para comprender qué está cambiando, por qué importa y de dónde sale cada cifra.</p>
+        <div class="hero-actions" data-od-id="hero-actions">
+          <a class="button button-primary" href="#indicadores">Explorar indicadores
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="button button-ghost" href="#datos">Consultar fuentes</a>
+        </div>
+        <p class="hero-note">Datos con fuente, periodo y metodología visibles</p>
+      </div>
+
+      <aside class="live-panel" aria-label="Indicador destacado" data-od-id="hero-live-indicator">
+        <div class="live-panel-head">
+          <span class="live-label"><i class="live-dot"></i>Lectura destacada</span>
+          <span>OVE / BCV</span>
+        </div>
+        <div class="live-body">
+          <div class="live-metric">PIB real · variación anual</div>
+          <div class="live-value">8,94 <small>% · 2025</small></div>
+          <div class="live-sparkline" aria-hidden="true">
+            <svg viewBox="0 0 360 100" preserveAspectRatio="none">
+              <line class="spark-grid" x1="0" y1="20" x2="360" y2="20"/>
+              <line class="spark-grid" x1="0" y1="80" x2="360" y2="80"/>
+              <polygon class="spark-area" points="0,74 52,82 103,90 154,62 206,30 257,42 309,35 360,36 360,100 0,100"/>
+              <polyline class="spark-line" pathLength="1" points="0,74 52,82 103,90 154,62 206,30 257,42 309,35 360,36"/>
+            </svg>
+          </div>
+          <div class="live-foot"><span>2018</span><span>Fuente: BCV</span><span>2025</span></div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="ticker" aria-label="Resumen de indicadores">
+      <div class="ticker-track">
+        <div class="ticker-group">
+          <div class="ticker-item"><span>INPC nacional</span><strong>6,3%</strong><em>mayo 2026</em></div>
+          <div class="ticker-item"><span>Tipo de cambio</span><strong>721,35</strong><em>Bs/USD</em></div>
+          <div class="ticker-item"><span>Desempleo</span><strong>5,31%</strong><em>2025</em></div>
+          <div class="ticker-item"><span>PIB corriente</span><strong>99,7</strong><em>US$ mil M</em></div>
+        </div>
+        <div class="ticker-group" aria-hidden="true">
+          <div class="ticker-item"><span>INPC nacional</span><strong>6,3%</strong><em>mayo 2026</em></div>
+          <div class="ticker-item"><span>Tipo de cambio</span><strong>721,35</strong><em>Bs/USD</em></div>
+          <div class="ticker-item"><span>Desempleo</span><strong>5,31%</strong><em>2025</em></div>
+          <div class="ticker-item"><span>PIB corriente</span><strong>99,7</strong><em>US$ mil M</em></div>
+        </div>
+      </div>
+      <button class="ticker-toggle" type="button" aria-label="Pausar la cinta de indicadores" aria-pressed="false" data-ticker-toggle>
+        <svg viewBox="0 0 16 16" aria-hidden="true" data-ticker-icon><path d="M5 3v10M11 3v10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <span data-ticker-label>Pausar</span>
+      </button>
+    </div>
+  </section>
+
+  <main id="contenido">
+    <section class="section" id="indicadores" data-od-id="indicator-studio">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">Estudio de indicadores</p>
+            <h2 data-od-id="indicator-heading">Del dato aislado a una lectura útil.</h2>
+          </div>
+          <p class="section-lead">Selecciona una serie para consultar su evolución reciente, unidad, frecuencia y fuente. Sin cifras descontextualizadas.</p>
+        </header>
+
+        <div class="studio" data-reveal>
+          <div class="indicator-index" role="tablist" aria-label="Indicadores destacados">
+            <button class="indicator-tab is-active" id="indicator-tab-pib" type="button" role="tab" aria-selected="true" aria-controls="indicator-panel" tabindex="0" data-indicator="pib"><strong>PIB real</strong><span>BCV · variación anual</span></button>
+            <button class="indicator-tab" id="indicator-tab-inpc" type="button" role="tab" aria-selected="false" aria-controls="indicator-panel" tabindex="-1" data-indicator="inpc"><strong>INPC nacional</strong><span>BCV · variación mensual</span></button>
+            <button class="indicator-tab" id="indicator-tab-cambio" type="button" role="tab" aria-selected="false" aria-controls="indicator-panel" tabindex="-1" data-indicator="cambio"><strong>Tipo de cambio</strong><span>BCV · referencia diaria</span></button>
+            <button class="indicator-tab" id="indicator-tab-desempleo" type="button" role="tab" aria-selected="false" aria-controls="indicator-panel" tabindex="-1" data-indicator="desempleo"><strong>Desempleo total</strong><span>Banco Mundial · anual</span></button>
+          </div>
+
+          <article class="chart-panel" id="indicator-panel" role="tabpanel" aria-labelledby="indicator-tab-pib" aria-live="polite" aria-busy="false" data-od-id="interactive-chart">
+            <div class="chart-top">
+              <div>
+                <span class="chart-kicker" id="chart-kicker">Actividad económica</span>
+                <h3 id="chart-title">PIB real</h3>
+                <p id="chart-description">Variación anual reciente publicada por el Banco Central de Venezuela.</p>
+              </div>
+              <div class="chart-value" id="chart-value">8,94<span>% anual · 2025</span></div>
+            </div>
+            <div class="chart-toolbar" data-od-id="chart-controls">
+              <div class="range-control" role="group" aria-label="Rango temporal">
+                <button class="range-button is-active" type="button" data-range="all" aria-pressed="true">Serie completa</button>
+                <button class="range-button" type="button" data-range="recent" aria-pressed="false">Últimos 5</button>
+              </div>
+              <button class="chart-download" type="button" title="Descargar la serie completa en formato CSV" data-download-series>
+                <span data-download-label>Descargar CSV</span>
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v9m0 0 3.5-3.5M10 12 6.5 8.5M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <span class="sr-only" aria-live="polite" data-chart-action-status></span>
+            </div>
+            <div class="chart-canvas" id="chart-canvas">
+              <div class="chart-visual" data-chart-visual></div>
+              <div class="chart-state" role="status" aria-live="polite" hidden data-chart-state>
+                <span class="state-loader" aria-hidden="true" data-state-loader></span>
+                <strong data-state-title>Actualizando serie</strong>
+                <p data-state-copy>Preparando los datos seleccionados.</p>
+                <button class="state-action" type="button" hidden data-chart-retry>Reintentar</button>
+              </div>
+            </div>
+            <div class="chart-meta">
+              <div><span>Fuente</span><strong id="chart-source">Banco Central de Venezuela</strong></div>
+              <div><span>Frecuencia</span><strong id="chart-frequency">Anual</strong></div>
+              <div><span>Descarga</span><strong>CSV desde esta vista</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section data-section" id="datos" data-od-id="open-data-section">
+      <div class="container data-layout">
+        <div class="data-intro" data-reveal>
+          <p class="eyebrow">Infraestructura abierta</p>
+          <h2 data-od-id="data-heading">Fuentes que puedes rastrear.</h2>
+          <p class="section-lead">Cada conjunto conserva organismo, cobertura, fecha de captura y formato. El dato no termina en una gráfica: queda listo para verificar y reutilizar.</p>
+          <div class="data-note"><strong>06</strong><span>familias de fuentes nacionales y multilaterales organizadas por tema y uso.</span></div>
+        </div>
+
+        <div class="source-list" data-reveal="stagger" data-od-id="source-list">
+          <article class="source-row" data-od-id="source-bcv"><span class="source-number">01</span><div><h3>Banco Central de Venezuela</h3><p>Tipo de cambio, INPC y cuentas nacionales.</p></div><div class="source-count"><strong>11 jul 2026</strong><span>última captura</span></div></article>
+          <article class="source-row" data-od-id="source-world-bank"><span class="source-number">02</span><div><h3>Banco Mundial</h3><p>Indicadores económicos y sociales WDI.</p></div><div class="source-count"><strong>5.216</strong><span>registros</span></div></article>
+          <article class="source-row" data-od-id="source-imf"><span class="source-number">03</span><div><h3>FMI · WEO</h3><p>PIB, inflación, deuda y cuentas externas.</p></div><div class="source-count"><strong>1980–2027</strong><span>cobertura variable</span></div></article>
+          <article class="source-row" data-od-id="source-ilo"><span class="source-number">04</span><div><h3>OIT · ILOSTAT</h3><p>Empleo, informalidad e ingresos laborales.</p></div><div class="source-count"><strong>1.088.839</strong><span>registros</span></div></article>
+          <article class="source-row" data-od-id="source-fred"><span class="source-number">05</span><div><h3>FRED</h3><p>Series internacionales sobre Venezuela.</p></div><div class="source-count"><strong>407</strong><span>series</span></div></article>
+          <article class="source-row" data-od-id="source-regional"><span class="source-number">06</span><div><h3>INE · CEPAL · UNCTAD</h3><p>Demografía, comercio y contexto social.</p></div><div class="source-count"><strong>3</strong><span>repositorios</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section publications" id="publicaciones" data-od-id="publications-section">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">Publicaciones</p>
+            <h2 data-od-id="publications-heading">Análisis con estado visible.</h2>
+          </div>
+          <p class="section-lead">Documentos publicados, bases metodológicas y trabajos en preparación, diferenciados con claridad.</p>
+        </header>
+
+        <div class="publication-grid" data-reveal>
+          <article class="feature-story" data-od-id="featured-publication">
+            <img src="assets/venezuela-city-wide.jpg" alt="Vista urbana de Venezuela entre montañas" width="1020" height="498" loading="lazy" decoding="async">
+            <div class="story-content">
+              <span class="story-status">Prelanzamiento institucional</span>
+              <h3>Una nueva infraestructura para leer la economía venezolana.</h3>
+              <p>Misión, alcance inicial, fuentes disponibles y hoja de ruta pública del observatorio.</p>
+              <a class="story-link" href="#contacto">Solicitar actualización <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <div class="story-stack">
+            <article class="story-card" data-od-id="methodology-publication">
+              <div><span class="story-status">Documento base</span><h3>Metodología de datos abiertos</h3><p>Criterios de selección, actualización, limitaciones y forma de cita.</p></div>
+              <a class="story-link" href="#metodo">Ver metodología <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="story-card" data-od-id="upcoming-publication">
+              <div><span class="story-status">En preparación</span><h3>Primer informe económico</h3><p>Análisis con anexos, fuentes y revisión técnica antes de publicación.</p></div>
+              <a class="story-link" href="#indicadores">Revisar indicadores <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section method" id="metodo" data-od-id="method-section">
+      <div class="container">
+        <header class="method-head" data-reveal>
+          <div><p class="eyebrow">Cómo trabajamos</p><h2 data-od-id="method-heading">La confianza también se diseña con método.</h2></div>
+          <p>Una cifra gana valor cuando cualquier persona puede conocer su origen, entender sus límites y reproducir el camino hasta ella.</p>
+        </header>
+
+        <div class="method-steps" data-reveal="stagger">
+          <article class="method-step"><span class="number">01</span><h3>Seleccionamos</h3><p>Priorizamos organismos identificables y series con documentación pública.</p></article>
+          <article class="method-step"><span class="number">02</span><h3>Documentamos</h3><p>Conservamos código, unidad, periodo, frecuencia y fecha de captura.</p></article>
+          <article class="method-step"><span class="number">03</span><h3>Publicamos</h3><p>Ofrecemos formatos reutilizables para análisis y verificación externa.</p></article>
+          <article class="method-step"><span class="number">04</span><h3>Explicamos</h3><p>Señalamos rezagos, cambios de serie y límites de interpretación.</p></article>
+        </div>
+
+        <div class="method-quote" data-reveal>
+          <span>Principio OVE</span>
+          <blockquote>“No pedimos que confíes en una cifra sin mostrarte primero de dónde viene.”</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto" data-od-id="contact-section">
+      <div class="container">
+        <div class="contact-panel" data-reveal>
+          <div class="contact-copy">
+            <p class="eyebrow">Boletín OVE</p>
+            <h2 data-od-id="contact-heading">La próxima lectura, en tu correo.</h2>
+            <p>Recibe nuevas series, publicaciones y notas metodológicas. Solo cuando haya algo sustantivo que contar.</p>
+            <form class="subscribe-form" data-od-id="newsletter-form">
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="tu@email.com" aria-describedby="email-hint email-status" aria-invalid="false" required>
+              <button class="button" type="submit" data-submit-button><span data-submit-label>Suscribirme</span></button>
+              <p class="input-hint" id="email-hint">Prepararemos un correo para confirmar tu solicitud.</p>
+              <p class="form-status" id="email-status" role="status" aria-live="polite" data-form-status></p>
+            </form>
+          </div>
+          <div class="contact-image">
+            <img src="assets/venezuela-hero-optimized.jpg" alt="Caracas y el Ávila bajo un cielo azul" width="1672" height="941" loading="lazy" decoding="async">
+            <span class="image-label">Caracas, Venezuela · una economía que merece contexto</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-od-id="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <a class="footer-brand" href="#inicio" aria-label="OVE Venezuela — inicio"><img src="assets/ove-logo-brand.png" alt="Observatorio Venezolano de Economía" width="1276" height="324" loading="lazy" decoding="async"></a>
+        <nav class="footer-links" aria-label="Navegación secundaria"><a href="#inicio">Inicio</a><a href="#indicadores">Indicadores</a><a href="#publicaciones">Publicaciones</a><a href="#datos">Datos</a><a href="#metodo">Metodología</a><a href="https://ove-venezuela.com/manifiesto">Manifiesto</a><a href="https://ove-venezuela.com/nosotros">Nosotros</a><a href="#contacto">Contacto</a></nav>
+      </div>
+      <div class="footer-meta"><span>© 2026 Observatorio Venezolano de Economía</span><span>Datos abiertos · análisis independiente · metodología visible</span></div>
+    </div>
+  </footer>
+
+  <script>
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      revealThreshold:.14,
+      parallaxStrength:.08,
+      maxParallax:70
+    }/*EDITMODE-END*/;
+    const reducedMotion=matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const indicatorData={
+      pib:{kicker:"Actividad económica",title:"PIB real",description:"Variación anual reciente publicada por el Banco Central de Venezuela.",value:"8,94",unit:"% anual · 2025",unitLabel:"%",source:"Banco Central de Venezuela",frequency:"Anual",points:[[2018,-21.3959],[2019,-28.9915],[2020,-33.2038],[2021,1.111],[2022,14.9177],[2023,5.1436],[2024,9.0255],[2025,8.9445]]},
+      inpc:{kicker:"Precios",title:"INPC nacional",description:"Variación mensual del índice nacional de precios al consumidor publicado por el BCV.",value:"6,3",unit:"% mensual · mayo 2026",unitLabel:"%",source:"Banco Central de Venezuela",frequency:"Mensual",points:[["oct 25",25.9313],["nov",21.6],["dic",13.6],["ene 26",32.6],["feb",14.6],["mar",13.1],["abr",10.6],["may",6.3]]},
+      cambio:{kicker:"Mercado cambiario",title:"Tipo de cambio BCV",description:"Referencia oficial diaria en bolívares por dólar estadounidense.",value:"721,35",unit:"Bs/USD · 13 jul 2026",unitLabel:"Bs/USD",source:"Banco Central de Venezuela",frequency:"Diaria",points:[["30 jun",623.0223],["1 jul",633.3644],["2 jul",639.7029],["3 jul",652.9726],["6 jul",667.05],["7 jul",674.9305],["8 jul",685.9427],["9 jul",700.2249],["10 jul",709.6935],["13 jul",721.3456]]},
+      desempleo:{kicker:"Mercado laboral",title:"Desempleo total",description:"Estimación anual de desempleo total sobre la fuerza laboral.",value:"5,31",unit:"% · 2025",unitLabel:"%",source:"Banco Mundial WDI",frequency:"Anual",points:[[2018,5.468],[2019,5.89],[2020,7.53],[2021,7.027],[2022,5.646],[2023,5.407],[2024,5.321],[2025,5.307]]}
+    };
+    let currentIndicator="pib";
+    let currentRange="all";
+    const numberFormatter=new Intl.NumberFormat("es-VE",{maximumFractionDigits:2});
+
+    const navToggle=document.querySelector("[data-nav-toggle]");
+    const nav=document.querySelector("#site-nav");
+    const menuBackground=[document.querySelector(".brand"),document.querySelector(".hero-content"),document.querySelector(".ticker"),document.querySelector("main"),document.querySelector("footer")];
+    function setMenu(open,{returnFocus=false}={}){
+      nav.setAttribute("data-open",String(open));
+      navToggle.setAttribute("aria-expanded",String(open));
+      navToggle.setAttribute("aria-label",open?"Cerrar menú":"Abrir menú");
+      document.body.classList.toggle("menu-open",open);
+      menuBackground.forEach(element=>element?.toggleAttribute("inert",open));
+      if(open)requestAnimationFrame(()=>nav.querySelector("a")?.focus());
+      if(!open&&returnFocus)navToggle.focus();
+    }
+    navToggle.addEventListener("click",()=>setMenu(nav.getAttribute("data-open")!=="true"));
+    nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>setMenu(false)));
+    document.addEventListener("keydown",event=>{
+      if(event.key==="Escape"&&nav.getAttribute("data-open")==="true")setMenu(false,{returnFocus:true});
+    });
+
+    const searchDialog=document.querySelector("#site-search-dialog");
+    const searchInput=document.querySelector("#site-search-input");
+    const searchList=document.querySelector("#search-result-list");
+    const searchSummary=document.querySelector("#search-summary");
+    const searchItems=[
+      {label:"Inicio",description:"Portada del Observatorio Venezolano de Economía",href:"#inicio"},
+      {label:"Indicadores",description:"Series económicas con fuente, periodo y contexto",href:"#indicadores"},
+      {label:"PIB real",description:"Actividad económica · Banco Central de Venezuela",href:"#indicadores"},
+      {label:"INPC nacional",description:"Precios · Banco Central de Venezuela",href:"#indicadores"},
+      {label:"Tipo de cambio BCV",description:"Referencia oficial diaria",href:"#indicadores"},
+      {label:"Desempleo total",description:"Mercado laboral · Banco Mundial",href:"#indicadores"},
+      {label:"Publicaciones",description:"Informes, análisis y documentos de trabajo",href:"#publicaciones"},
+      {label:"Datos",description:"Fuentes abiertas y organismos de referencia",href:"#datos"},
+      {label:"Metodología",description:"Cómo seleccionamos, verificamos y documentamos",href:"#metodo"},
+      {label:"Manifiesto",description:"Principios públicos de OVE Venezuela",href:"https://ove-venezuela.com/manifiesto"},
+      {label:"Nosotros",description:"Conoce al Observatorio Venezolano de Economía",href:"https://ove-venezuela.com/nosotros"},
+      {label:"Contacto",description:"Boletín y vías de contacto",href:"#contacto"}
+    ];
+    const normalizeSearch=value=>value.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
+    function renderSearch(query=""){
+      const needle=normalizeSearch(query);
+      const matches=searchItems.filter(item=>normalizeSearch(`${item.label} ${item.description}`).includes(needle));
+      searchSummary.textContent=needle?`${matches.length} ${matches.length===1?"resultado":"resultados"} para “${query.trim()}”`:"Explora las secciones y recursos principales.";
+      searchList.innerHTML=matches.length?matches.map(item=>`<a class="search-result" href="${item.href}"><span><strong>${item.label}</strong><span>${item.description}</span></span><b aria-hidden="true">↗</b></a>`).join(""):'<p class="search-empty">No encontramos coincidencias. Prueba con “inflación”, “datos” o “metodología”.</p>';
+      searchList.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>searchDialog.close()));
+    }
+    document.querySelectorAll("[data-search-open]").forEach(button=>button.addEventListener("click",()=>{
+      setMenu(false);
+      renderSearch("");
+      searchInput.value="";
+      searchDialog.showModal();
+      requestAnimationFrame(()=>searchInput.focus());
+    }));
+    document.querySelector("[data-search-close]").addEventListener("click",()=>searchDialog.close());
+    searchInput.addEventListener("input",()=>renderSearch(searchInput.value));
+    searchDialog.addEventListener("click",event=>{if(event.target===searchDialog)searchDialog.close()});
+
+    const ticker=document.querySelector(".ticker");
+    const tickerToggle=document.querySelector("[data-ticker-toggle]");
+    const tickerLabel=tickerToggle.querySelector("[data-ticker-label]");
+    const tickerIcon=tickerToggle.querySelector("[data-ticker-icon]");
+    function setTickerPaused(paused){
+      ticker.classList.toggle("is-paused",paused);
+      tickerToggle.setAttribute("aria-pressed",String(paused));
+      tickerToggle.setAttribute("aria-label",paused?"Reproducir la cinta de indicadores":"Pausar la cinta de indicadores");
+      tickerLabel.textContent=paused?"Reproducir":"Pausar";
+      tickerIcon.innerHTML=paused
+        ?'<path d="m6 3 7 5-7 5V3Z" fill="currentColor"/>'
+        :'<path d="M5 3v10M11 3v10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>';
+    }
+    tickerToggle.addEventListener("click",()=>setTickerPaused(!ticker.classList.contains("is-paused")));
+    if(reducedMotion){
+      setTickerPaused(true);
+      tickerToggle.disabled=true;
+      tickerToggle.setAttribute("aria-label","Cinta pausada por la preferencia de movimiento reducido");
+      tickerLabel.textContent="Pausada";
+    }
+
+    function buildChart(points,item){
+      const values=points.map(point=>Number(point[1]));
+      const min=Math.min(...values);
+      const max=Math.max(...values);
+      const range=max-min||1;
+      const width=760,height=320,padX=48,padY=34;
+      const step=(width-padX*2)/Math.max(points.length-1,1);
+      const coords=points.map((point,index)=>{
+        const x=padX+index*step;
+        const y=height-padY-((Number(point[1])-min)/range)*(height-padY*2);
+        return [x,y,point[0]];
+      });
+      const line=coords.map(([x,y])=>`${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
+      const area=`${line} ${coords.at(-1)[0].toFixed(1)},${height-padY} ${coords[0][0].toFixed(1)},${height-padY}`;
+      return `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Evolución de ${item.title}">
+        <line class="chart-grid" x1="${padX}" y1="${padY}" x2="${width-padX}" y2="${padY}"/>
+        <line class="chart-grid" x1="${padX}" y1="${height/2}" x2="${width-padX}" y2="${height/2}"/>
+        <line class="chart-grid" x1="${padX}" y1="${height-padY}" x2="${width-padX}" y2="${height-padY}"/>
+        <polygon class="chart-area" points="${area}"/>
+        <polyline class="chart-line" pathLength="1" points="${line}"/>
+        ${coords.map(([x,y,label],index)=>`<circle class="chart-hit" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="22" tabindex="0" role="img" data-point-index="${index}" data-chart-x="${x.toFixed(1)}" data-chart-y="${y.toFixed(1)}" aria-label="${label}: ${numberFormatter.format(Number(points[index][1]))} ${item.unitLabel}"/><circle class="chart-dot" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4" aria-hidden="true"/>`).join("")}
+        <text class="chart-label" x="${padX}" y="${height-8}">${coords[0][2]}</text>
+        <text class="chart-label" x="${width-padX}" y="${height-8}" text-anchor="end">${coords.at(-1)[2]}</text>
+      </svg><div class="chart-tooltip" role="tooltip" data-chart-tooltip></div>`;
+    }
+
+    function getVisiblePoints(){
+      const points=indicatorData[currentIndicator].points;
+      return currentRange==="recent"?points.slice(-5):points;
+    }
+
+    function bindChartPoints(points,item){
+      const canvas=document.querySelector("#chart-canvas");
+      const visual=canvas.querySelector("[data-chart-visual]");
+      const tooltip=visual.querySelector("[data-chart-tooltip]");
+      const svg=visual.querySelector("svg");
+      const showTooltip=dot=>{
+        const point=points[Number(dot.dataset.pointIndex)];
+        const canvasRect=canvas.getBoundingClientRect();
+        const svgRect=svg.getBoundingClientRect();
+        const x=svgRect.left-canvasRect.left+(Number(dot.dataset.chartX)/760)*svgRect.width;
+        const y=svgRect.top-canvasRect.top+(Number(dot.dataset.chartY)/320)*svgRect.height;
+        tooltip.innerHTML=`<span>${point[0]}</span><strong>${numberFormatter.format(Number(point[1]))} ${item.unitLabel}</strong>`;
+        tooltip.style.left=`${x}px`;
+        tooltip.style.top=`${y}px`;
+        tooltip.classList.toggle("is-below",y<86);
+        tooltip.classList.add("is-visible");
+      };
+      const hideTooltip=()=>tooltip.classList.remove("is-visible");
+      visual.querySelectorAll(".chart-hit").forEach(dot=>{
+        dot.addEventListener("pointerenter",()=>showTooltip(dot));
+        dot.addEventListener("pointerleave",hideTooltip);
+        dot.addEventListener("focus",()=>showTooltip(dot));
+        dot.addEventListener("blur",hideTooltip);
+      });
+    }
+
+    function setChartState(state,{title="",copy=""}={}){
+      const panel=document.querySelector("#indicator-panel");
+      const visual=panel.querySelector("[data-chart-visual]");
+      const stateBox=panel.querySelector("[data-chart-state]");
+      const loader=stateBox.querySelector("[data-state-loader]");
+      const retry=stateBox.querySelector("[data-chart-retry]");
+      panel.setAttribute("aria-busy",String(state==="loading"));
+      if(state==="ready"){
+        stateBox.hidden=true;
+        visual.hidden=false;
+        return;
       }
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
-    <script src="app.js"></script>
-  </body>
+      visual.hidden=true;
+      stateBox.hidden=false;
+      loader.hidden=state!=="loading";
+      retry.hidden=state!=="error";
+      stateBox.querySelector("[data-state-title]").textContent=title;
+      stateBox.querySelector("[data-state-copy]").textContent=copy;
+    }
+
+    function renderChart(){
+      const item=indicatorData[currentIndicator];
+      const visual=document.querySelector("[data-chart-visual]");
+      setChartState("loading",{title:"Actualizando serie",copy:"Preparando los datos seleccionados."});
+      try{
+        if(!item)throw new Error("Serie no disponible");
+        const points=getVisiblePoints();
+        if(!points.length){
+          visual.innerHTML="";
+          setChartState("empty",{title:"Sin datos para este rango",copy:"Prueba con la serie completa o selecciona otro indicador."});
+          return;
+        }
+        visual.innerHTML=buildChart(points,item);
+        bindChartPoints(points,item);
+        setChartState("ready");
+      }catch(error){
+        visual.innerHTML="";
+        setChartState("error",{title:"No pudimos cargar la serie",copy:"Comprueba los datos y vuelve a intentarlo."});
+      }
+    }
+
+    function setIndicator(id){
+      const item=indicatorData[id];
+      if(!item){
+        setChartState("error",{title:"Indicador no disponible",copy:"Selecciona otra serie o vuelve a intentarlo."});
+        return;
+      }
+      currentIndicator=id;
+      document.querySelector("#chart-kicker").textContent=item.kicker;
+      document.querySelector("#chart-title").textContent=item.title;
+      document.querySelector("#chart-description").textContent=item.description;
+      document.querySelector("#chart-value").innerHTML=`${item.value}<span>${item.unit}</span>`;
+      document.querySelector("#chart-source").textContent=item.source;
+      document.querySelector("#chart-frequency").textContent=item.frequency;
+      renderChart();
+      document.querySelectorAll("[data-indicator]").forEach(tab=>{
+        const active=tab.dataset.indicator===id;
+        tab.classList.toggle("is-active",active);
+        tab.setAttribute("aria-selected",String(active));
+        tab.tabIndex=active?0:-1;
+      });
+      document.querySelector("#indicator-panel").setAttribute("aria-labelledby",`indicator-tab-${id}`);
+    }
+    const indicatorTabs=Array.from(document.querySelectorAll("[data-indicator]"));
+    indicatorTabs.forEach((tab,index)=>{
+      tab.addEventListener("click",()=>setIndicator(tab.dataset.indicator));
+      tab.addEventListener("keydown",event=>{
+        let nextIndex=null;
+        if(event.key==="ArrowDown"||event.key==="ArrowRight")nextIndex=(index+1)%indicatorTabs.length;
+        if(event.key==="ArrowUp"||event.key==="ArrowLeft")nextIndex=(index-1+indicatorTabs.length)%indicatorTabs.length;
+        if(event.key==="Home")nextIndex=0;
+        if(event.key==="End")nextIndex=indicatorTabs.length-1;
+        if(nextIndex===null)return;
+        event.preventDefault();
+        const next=indicatorTabs[nextIndex];
+        setIndicator(next.dataset.indicator);
+        next.focus();
+      });
+    });
+    document.querySelector("[data-chart-retry]").addEventListener("click",()=>setIndicator(currentIndicator));
+    document.querySelectorAll("[data-range]").forEach(button=>button.addEventListener("click",()=>{
+      currentRange=button.dataset.range;
+      document.querySelectorAll("[data-range]").forEach(item=>{
+        const active=item===button;
+        item.classList.toggle("is-active",active);
+        item.setAttribute("aria-pressed",String(active));
+      });
+      renderChart();
+    }));
+    const downloadButton=document.querySelector("[data-download-series]");
+    const downloadLabel=downloadButton.querySelector("[data-download-label]");
+    const chartActionStatus=document.querySelector("[data-chart-action-status]");
+    downloadButton.addEventListener("click",()=>{
+      const item=indicatorData[currentIndicator];
+      const rows=[["Periodo","Valor","Unidad","Fuente"],...item.points.map(point=>[point[0],point[1],item.unitLabel,item.source])];
+      const csv=rows.map(row=>row.map(value=>`"${String(value).replaceAll('"','""')}"`).join(",")).join("\r\n");
+      const blob=new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8"});
+      const link=document.createElement("a");
+      const url=URL.createObjectURL(blob);
+      link.href=url;
+      link.download=`ove-${currentIndicator}.csv`;
+      link.click();
+      downloadButton.disabled=true;
+      downloadLabel.textContent="CSV descargado";
+      chartActionStatus.textContent=`Serie ${item.title} descargada en formato CSV.`;
+      setTimeout(()=>{
+        URL.revokeObjectURL(url);
+        downloadButton.disabled=false;
+        downloadLabel.textContent="Descargar CSV";
+      },1200);
+    });
+    setIndicator("pib");
+
+    if(!reducedMotion){
+      const revealObserver=new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },{threshold:TWEAK_DEFAULTS.revealThreshold,rootMargin:"0px 0px -8% 0px"});
+      document.querySelectorAll("[data-reveal]").forEach(element=>revealObserver.observe(element));
+
+      const heroImage=document.querySelector("[data-parallax]");
+      let ticking=false;
+      addEventListener("scroll",()=>{
+        if(!ticking){
+          requestAnimationFrame(()=>{
+            const offset=Math.min(scrollY*TWEAK_DEFAULTS.parallaxStrength,TWEAK_DEFAULTS.maxParallax);
+            heroImage.style.transform=`scale(1.03) translateY(${offset}px)`;
+            ticking=false;
+          });
+          ticking=true;
+        }
+      },{passive:true});
+    }else{
+      document.querySelectorAll("[data-reveal]").forEach(element=>element.classList.add("is-visible"));
+    }
+
+    const subscribeForm=document.querySelector(".subscribe-form");
+    const emailInput=subscribeForm.email;
+    const submitButton=subscribeForm.querySelector("[data-submit-button]");
+    const submitLabel=subscribeForm.querySelector("[data-submit-label]");
+    const formStatus=subscribeForm.querySelector("[data-form-status]");
+    emailInput.addEventListener("input",()=>{
+      emailInput.setAttribute("aria-invalid","false");
+      formStatus.classList.remove("is-error");
+      formStatus.textContent="";
+    });
+    subscribeForm.addEventListener("submit",event=>{
+      event.preventDefault();
+      const email=emailInput.value.trim();
+      const valid=/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email);
+      emailInput.setAttribute("aria-invalid",String(!valid));
+      formStatus.classList.toggle("is-error",!valid);
+      if(!valid){
+        formStatus.setAttribute("role","alert");
+        formStatus.textContent="Introduce un correo válido, por ejemplo nombre@dominio.com.";
+        emailInput.focus();
+        return;
+      }
+      formStatus.setAttribute("role","status");
+      submitButton.disabled=true;
+      submitLabel.textContent="Preparando correo…";
+      formStatus.textContent="Abriremos tu aplicación de correo para confirmar la solicitud.";
+      const subject=encodeURIComponent("Alta en el boletín OVE");
+      const body=encodeURIComponent(`Solicito suscribir ${email} al boletín del Observatorio Venezolano de Economía.`);
+      setTimeout(()=>{
+        location.href=`mailto:ove.venezuela@outlook.com?subject=${subject}&body=${body}`;
+        submitButton.disabled=false;
+        submitLabel.textContent="Suscribirme";
+      },150);
+    });
+  </script>
+</body>
 </html>
