@@ -3173,7 +3173,7 @@ function economyTopicPage(topic) {
       <div class="container">
         <div class="economy-ine-layout">
           <aside class="economy-ine-menu" aria-label="Temas de Datos de Venezuela">
-            <a href="#/datos/operaciones-alfabetico">Operaciones estadísticas por orden alfabético</a>
+            <a href="#/indicadores">Indicadores y operaciones por tema</a>
             <a href="#/datos">Lista completa de operaciones</a>
             ${topicData.map(([id, label, , href]) => `<a class="${id === "economy" ? "is-current" : ""}" href="${href}">${escapeHtml(label)}</a>`).join("")}
           </aside>
