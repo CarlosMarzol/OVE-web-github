@@ -6,6 +6,7 @@ import re
 import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
+from urllib.parse import quote
 
 import xlsxwriter
 
@@ -16,6 +17,8 @@ OUT = DATA / "inventario-indicadores"
 TRANSLATIONS_PATH = OUT / "traducciones_indicadores_es.json"
 
 SOURCE_EXCEL_DOWNLOADS = {
+    "Banco Mundial - WDI": "assets/data/world-bank/catalog/catalogo_dataset_web_ove_banco_mundial.xlsx",
+    "Banco Central de Venezuela": "assets/data/bcv/catalog/bcv-catalog.json",
     "FMI - World Economic Outlook": "assets/data/imf/excel/ove_fmi_weo_venezuela.xlsx",
     "OIT - ILOSTAT": "assets/data/ilo/excel/ove_oit_ilostat_venezuela_catalogo_series.xlsx",
     "CEPALSTAT - CEPAL": "assets/data/cepal/catalog/catalogo_dataset_web_ove_cepalstat.xlsx",
@@ -24,6 +27,8 @@ SOURCE_EXCEL_DOWNLOADS = {
     "OVE - Indicadores clave": "assets/data/indicadores-clave/ove_indicadores_clave_venezuela.xlsx",
     "INE Venezuela": "assets/data/ine/excel/ove_ine_venezuela_catalogo_recursos.xlsx",
 }
+
+DOWNLOADABLE_SOURCES = set(SOURCE_EXCEL_DOWNLOADS)
 
 TOPICS = [
     "Agricultura y medio ambiente",
@@ -160,6 +165,46 @@ def norm(text):
     text = "" if text is None else str(text)
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
     return re.sub(r"\s+", " ", text.lower()).strip()
+
+
+def slug(value, fallback="indicador"):
+    text = unicodedata.normalize("NFKD", value or "")
+    text = "".join(ch for ch in text if not unicodedata.combining(ch))
+    text = re.sub(r"[^a-zA-Z0-9]+", "-", text.lower()).strip("-")
+    return text[:96] or fallback
+
+
+def has_observed_values(record):
+    raw_value = record.get("registros_con_valor")
+    if raw_value in (None, ""):
+        raw_value = record.get("registros")
+    value = str(raw_value or "").strip()
+    try:
+        return float(value) > 0
+    except ValueError:
+        return record.get("fuente") == "INE Venezuela"
+
+
+def add_download_links(records):
+    seen = defaultdict(int)
+    for record in records:
+        base = "__".join([
+            slug(record.get("fuente", ""), "fuente"),
+            slug(record.get("codigo", ""), "sin-codigo"),
+            slug(record.get("frecuencia", ""), "sin-frecuencia"),
+            slug(record.get("indicador", ""), "indicador"),
+        ])
+        seen[base] += 1
+        download_id = base if seen[base] == 1 else f"{base}-{seen[base]}"
+        record["download_id"] = download_id
+
+        if record.get("fuente") in DOWNLOADABLE_SOURCES and record.get("codigo") and has_observed_values(record):
+            record["excel"] = f"/api/indicator-excel?id={quote(download_id)}"
+            record["download_estado"] = "datos_indicador"
+        else:
+            record["excel"] = ""
+            record["download_estado"] = "sin_datos_normalizados"
+    return records
 
 
 def read_semicolon_csv(path):
@@ -659,12 +704,13 @@ def write_outputs(records):
     OUT.mkdir(parents=True, exist_ok=True)
     records = translate_records(records)
     records = add_subareas(records)
+    records = add_download_links(records)
     fields = [
         "tema_ove", "subarea_ove", "fuente", "codigo", "indicador", "indicador_original", "idioma_indicador",
         "traduccion_indicador", "tema_origen", "subtema_origen", "ruta_origen", "frecuencia",
         "primer_periodo", "ultimo_periodo", "registros", "registros_con_valor",
         "ultimo_valor", "estado", "confianza_clasificacion", "criterio_clasificacion",
-        "confianza_subarea", "criterio_subarea", "archivo_origen",
+        "confianza_subarea", "criterio_subarea", "excel", "download_estado", "download_id", "archivo_origen",
     ]
     csv_path = OUT / "inventario_indicadores_ove_clasificado_temas_es.csv"
     with open(csv_path, "w", encoding="utf-8-sig", newline="") as fh:
@@ -763,7 +809,7 @@ def write_outputs(records):
 
 
 def excel_download_for_record(row):
-    return ""
+    return row.get("excel", "")
 
 
 def write_web_index(records, counts, by_subarea):
@@ -786,6 +832,8 @@ def write_web_index(records, counts, by_subarea):
             "confianza_subarea": row.get("confianza_subarea", ""),
             "excel": excel_download_for_record(row),
             "archivo_origen": row.get("archivo_origen", ""),
+            "download_id": row.get("download_id", ""),
+            "download_estado": row.get("download_estado", ""),
         }
 
     web_index = {
@@ -794,6 +842,8 @@ def write_web_index(records, counts, by_subarea):
             "topics": len(TOPICS),
             "full_inventory_excel": "assets/data/inventario-indicadores/inventario_indicadores_ove_clasificado_temas_es.xlsx",
             "full_inventory_csv": "assets/data/inventario-indicadores/inventario_indicadores_ove_clasificado_temas_es.csv",
+            "indicator_excel_api_links": sum(1 for row in records if row.get("download_estado") == "datos_indicador"),
+            "indicator_excel_api_missing": sum(1 for row in records if row.get("download_estado") != "datos_indicador"),
         },
         "topics": [
             {

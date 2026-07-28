@@ -736,6 +736,85 @@ h3 {
   gap: 12px;
 }
 
+.topic-real-operations {
+  display: grid;
+  gap: 12px;
+}
+
+.topic-operation-loading {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.topic-operation-loading h3 {
+  margin: 0 0 4px;
+  color: var(--blue-700);
+}
+
+.topic-operation-loading p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.topic-real-detail summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.topic-real-detail summary small {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.topic-subarea-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.topic-subarea-summary span {
+  padding: 10px 12px;
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--yellow);
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.topic-subarea-summary strong {
+  display: block;
+  color: var(--blue-700);
+  font-size: 1rem;
+}
+
+.topic-open-data-table .topic-table-head,
+.topic-open-data-table .topic-table-row {
+  grid-template-columns: minmax(260px, 1.35fr) minmax(170px, 0.8fr) minmax(110px, 0.45fr) minmax(110px, 0.45fr) minmax(120px, 0.45fr);
+}
+
+.topic-open-data-table .topic-table-row > span:first-child {
+  display: grid;
+  gap: 4px;
+}
+
+.topic-open-data-table .topic-table-row small {
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.3;
+}
+
 .economy-directory-section {
   background: #f5f7fb;
 }
@@ -4806,6 +4885,17 @@ th {
   .economy-ine-table-head,
   .economy-ine-row {
     grid-template-columns: 1fr;
+  }
+
+  .topic-real-detail summary,
+  .topic-subarea-summary,
+  .topic-open-data-table .topic-table-head,
+  .topic-open-data-table .topic-table-row {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-real-detail summary small {
+    justify-self: start;
   }
 
   .economy-ine-menu {

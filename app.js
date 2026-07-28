@@ -3143,15 +3143,13 @@ function topicDetailPage(topicKey) {
       <div class="container">
         <div class="topic-detail-head">
           <div>
-            <span class="eyebrow">En desarrollo</span>
-            <h2>Operaciones priorizadas</h2>
-            <p>Seleccionadas por pertinencia para Venezuela y marcadas como procesos en elaboración mientras se definen fuentes, periodicidad y metodologia.</p>
+            <span class="eyebrow">Datos abiertos</span>
+            <h2>Operaciones estadísticas disponibles</h2>
+            <p>Listado construido desde el inventario real del OVE. Cada operación conserva fuente, frecuencia, cobertura temporal y descarga ciudadana cuando existe serie normalizada.</p>
           </div>
           <img src="${topic.image}" alt="" loading="lazy" decoding="async">
         </div>
-        <div class="topic-accordion">
-          ${topic.groups.map((group, index) => topicGroup(group, index === 0)).join("")}
-        </div>
+        ${topicRealOperations(topicKey)}
         ${topicIndicatorExplorer(topicKey)}
         ${downloads.length ? topicDownloads(topic, downloads) : ""}
       </div>
@@ -3183,9 +3181,7 @@ function economyTopicPage(topic) {
               <img src="${topic.image}" alt="" loading="lazy" decoding="async">
             </div>
             <div class="economy-ine-rule"></div>
-            <div class="economy-ine-categories">
-              ${economyIneCategories.map(category => economyIneCategory(category)).join("")}
-            </div>
+            ${topicRealOperations("economy", "economy-ine-categories")}
           </div>
         </div>
       </div>
@@ -3220,6 +3216,19 @@ function economyIneCategory(category) {
       <p class="economy-ine-note">${escapeHtml(category.note)}</p>
     </div>
   </details>`;
+}
+
+function topicRealOperations(topicKey, extraClass = "") {
+  const topic = topicDetails[topicKey] || topicDetails.agriculture;
+  return `<div class="topic-real-operations ${extraClass}" data-topic-real-operations data-topic-key="${escapeHtml(topicKey)}">
+    <article class="topic-operation-loading">
+      <span class="line-icon">${icon("database")}</span>
+      <div>
+        <h3>Cargando operaciones reales de ${escapeHtml(topic.title)}</h3>
+        <p>El listado se alimenta del inventario OVE publicado en JSON y Excel.</p>
+      </div>
+    </article>
+  </div>`;
 }
 
 function pibFaqItems(operation) {
@@ -5168,7 +5177,8 @@ function hydrateKeyDashboard() {
 async function hydrateIndicatorExplorer() {
   const explorers = [...document.querySelectorAll("[data-indicator-explorer]")];
   const topicBadges = [...document.querySelectorAll("[data-topic-indicator-count]")];
-  if (!explorers.length && !topicBadges.length) return;
+  const topicOperationPanels = [...document.querySelectorAll("[data-topic-real-operations]")];
+  if (!explorers.length && !topicBadges.length && !topicOperationPanels.length) return;
 
   try {
     const inventory = await getIndicatorInventory();
@@ -5181,6 +5191,82 @@ async function hydrateIndicatorExplorer() {
       const periods = unique(rows.map(row => row.ultimo_periodo || row.primer_periodo));
       periods.sort((a, b) => b.localeCompare(a, "es", { numeric: true }));
       return periods[0] || "N/D";
+    };
+    const firstPeriod = rows => {
+      const periods = unique(rows.map(row => row.primer_periodo || row.ultimo_periodo));
+      periods.sort((a, b) => a.localeCompare(b, "es", { numeric: true }));
+      return periods[0] || "N/D";
+    };
+    const hasDownload = row => row.download_estado === "datos_indicador" && row.excel;
+    const isRealOpenData = row => {
+      const status = normalizeSearchText(row.estado || row.download_estado || "");
+      const count = Number(row.registros_con_valor || row.registros || 0);
+      return hasDownload(row) || row.fuente === "INE Venezuela" || count > 0 || status.includes("con datos") || status.includes("recurso");
+    };
+    const renderTopicOperationPanels = () => {
+      topicOperationPanels.forEach(panel => {
+        const topicName = topicInventoryName(panel.getAttribute("data-topic-key"));
+        const scoped = records.filter(row => row.tema === topicName && isRealOpenData(row));
+        const subareas = unique(scoped.map(row => row.subarea));
+
+        if (!scoped.length) {
+          panel.innerHTML = `<article class="topic-operation-loading">
+            <span class="line-icon">${icon("database")}</span>
+            <div>
+              <h3>Sin series publicables todavía</h3>
+              <p>Este tema no tiene datos normalizados en el inventario abierto actual. No se muestran operaciones de muestra.</p>
+            </div>
+          </article>`;
+          return;
+        }
+
+        panel.innerHTML = subareas.map((subarea, index) => {
+          const rows = scoped.filter(row => row.subarea === subarea);
+          const sources = unique(rows.map(row => row.fuente));
+          const downloads = rows.filter(hasDownload).length;
+          const visibleRows = rows
+            .slice()
+            .sort((left, right) => String(left.indicador).localeCompare(String(right.indicador), "es"))
+            .slice(0, 14);
+
+          return `<details class="topic-detail topic-real-detail" ${index === 0 ? "open" : ""}>
+            <summary>
+              <span>${escapeHtml(subarea)}</span>
+              <small>${formatInteger(rows.length)} indicadores · ${formatInteger(downloads)} Excel</small>
+            </summary>
+            <div class="topic-detail-body">
+              <div class="topic-subarea-summary">
+                <span><strong>${formatInteger(sources.length)}</strong> fuentes</span>
+                <span><strong>${firstPeriod(rows)}-${latestPeriod(rows)}</strong> periodo</span>
+                <span><strong>${formatInteger(downloads)}</strong> descargas Excel OVE</span>
+              </div>
+              <div class="topic-table topic-open-data-table">
+                <div class="topic-table-head">
+                  <strong>Operación estadística / indicador</strong>
+                  <strong>Fuente</strong>
+                  <strong>Frecuencia</strong>
+                  <strong>Último dato</strong>
+                  <strong>Descarga</strong>
+                </div>
+                ${visibleRows.map(row => `<div class="topic-table-row">
+                  <span>
+                    <strong>${escapeHtml(row.indicador)}</strong>
+                    <small>${escapeHtml(row.codigo || "Sin código")} · ${escapeHtml(row.estado || "Con datos")}</small>
+                  </span>
+                  <span>${escapeHtml(row.fuente)}</span>
+                  <span>${escapeHtml(row.frecuencia || "N/D")}</span>
+                  <span>${escapeHtml(row.ultimo_periodo || row.primer_periodo || "N/D")}</span>
+                  <span>${hasDownload(row)
+                    ? `<a class="button button-small" href="${escapeHtml(row.excel)}" download>Excel ${icon("download")}</a>`
+                    : `<span class="source-tag">Recurso</span>`}</span>
+                </div>`).join("")}
+              </div>
+              ${rows.length > visibleRows.length ? `<p class="source-note">Mostrando ${visibleRows.length} de ${rows.length}. Usa el buscador inferior para localizar cualquier indicador de esta subárea.</p>` : ""}
+            </div>
+          </details>`;
+        }).join("");
+        wireAnalytics(panel);
+      });
     };
 
     const economyRows = records.filter(row => row.tema === "Economía");
@@ -5225,6 +5311,7 @@ async function hydrateIndicatorExplorer() {
       const topicName = topicInventoryName(badge.getAttribute("data-topic-indicator-count"));
       badge.textContent = `${formatInteger(countForTopic(topicName))} indicadores`;
     });
+    renderTopicOperationPanels();
 
     explorers.forEach((explorer, explorerIndex) => {
       const topicMenu = explorerIndex === 0 ? document.querySelector("[data-indicator-topic-menu]") : null;
@@ -5438,6 +5525,15 @@ async function hydrateIndicatorExplorer() {
     });
     topicBadges.forEach(badge => {
       badge.textContent = "Indicadores no disponibles";
+    });
+    topicOperationPanels.forEach(panel => {
+      panel.innerHTML = `<article class="topic-operation-loading">
+        <span class="line-icon">${icon("database")}</span>
+        <div>
+          <h3>No fue posible cargar las operaciones</h3>
+          <p>Revisa que el inventario JSON de datos abiertos esté publicado correctamente.</p>
+        </div>
+      </article>`;
     });
   }
 }
