@@ -92,6 +92,7 @@ jobs:
             python scripts/unctad_refresh.py
           elif [ "${{ steps.group.outputs.value }}" = "all" ]; then
             python scripts/bcv_ingest.py --group all
+            python scripts/exchange_market_ingest.py
             python scripts/bcv_workbook_extract.py
             python scripts/build_bcv_pib_operation_excels.py
             python scripts/world_bank_refresh.py
@@ -104,6 +105,7 @@ jobs:
             python scripts/unctad_refresh.py
           elif [ "${{ steps.group.outputs.value }}" = "daily" ]; then
             python scripts/bcv_ingest.py --group daily
+            python scripts/exchange_market_ingest.py
             python scripts/bcv_ingest.py --group bcv_producto_interno_bruto
             python scripts/bcv_workbook_extract.py
             python scripts/build_bcv_pib_operation_excels.py
@@ -123,12 +125,12 @@ jobs:
 
       - name: Commit data changes
         run: |
-          if git diff --quiet -- assets/data/bcv assets/data/world-bank assets/data/ilo assets/data/imf assets/data/fred assets/data/ine assets/data/cepal assets/data/unctad assets/data/indicadores-clave assets/data/inventario-indicadores; then
+          if git diff --quiet -- assets/data/bcv assets/data/tipo-cambio assets/data/world-bank assets/data/ilo assets/data/imf assets/data/fred assets/data/ine assets/data/cepal assets/data/unctad assets/data/indicadores-clave assets/data/inventario-indicadores; then
             echo "No data changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/data/bcv assets/data/world-bank assets/data/ilo assets/data/imf assets/data/fred assets/data/ine assets/data/cepal assets/data/unctad assets/data/indicadores-clave assets/data/inventario-indicadores
+          git add assets/data/bcv assets/data/tipo-cambio assets/data/world-bank assets/data/ilo assets/data/imf assets/data/fred assets/data/ine assets/data/cepal assets/data/unctad assets/data/indicadores-clave assets/data/inventario-indicadores
           git commit -m "Update OVE data"
           git push

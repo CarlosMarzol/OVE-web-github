@@ -1,0 +1,21 @@
+{
+  "name": "Observatorio Venezolano de Economía",
+  "short_name": "OVE",
+  "description": "Indicadores, informes y datos abiertos para comprender la economía venezolana.",
+  "icons": [
+    {
+      "src": "/assets/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0B1D3D",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "start_url": "/"
+}

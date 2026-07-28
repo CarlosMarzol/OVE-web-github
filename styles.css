@@ -78,9 +78,9 @@ body.nav-open {
 }
 
 .reveal-on-scroll {
-  opacity: 0;
-  transform: translateY(24px);
-  filter: blur(3px);
+  opacity: 1;
+  transform: translateY(0);
+  filter: none;
   transition:
     opacity 0.72s cubic-bezier(0.2, 0.78, 0.18, 1),
     transform 0.72s cubic-bezier(0.2, 0.78, 0.18, 1),
@@ -497,6 +497,51 @@ h3 {
 .hero-dark h1,
 .hero-dark .lead {
   color: #fff;
+}
+
+.home-brand-hero h1 {
+  max-width: 700px;
+  margin-bottom: 26px;
+  font-size: clamp(2.45rem, 4.5vw, 4.6rem);
+  line-height: 0.95;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.home-brand-hero .brand-title-word {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+  max-width: 100%;
+  padding-right: 18px;
+  white-space: nowrap;
+  color: var(--navy-950);
+  letter-spacing: 0;
+}
+
+.home-brand-hero .brand-title-word::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 8px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, var(--blue-700) 0 72%, var(--yellow) 72% 88%, var(--red) 88% 100%);
+  border-radius: 999px;
+  box-shadow: 0 10px 22px rgba(0, 74, 173, 0.14);
+}
+
+.home-brand-hero .accent-line {
+  display: none;
+}
+
+.home-brand-hero .lead {
+  max-width: 620px;
+  margin: 0;
+  padding-left: 22px;
+  border-left: 4px solid var(--red);
+  color: #405070;
+  font-size: 1.03rem;
+  line-height: 1.45;
 }
 
 .section {
@@ -3368,6 +3413,60 @@ textarea.field {
   margin-top: 18px;
 }
 
+.exchange-market-panel {
+  margin-top: 18px;
+}
+
+.market-rate-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.market-rate-card {
+  min-width: 0;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.market-rate-card h3 {
+  margin: 10px 0 8px;
+  color: var(--blue-800);
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.market-rate-card strong {
+  display: block;
+  color: var(--blue-700);
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.market-rate-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.market-gap-chart {
+  margin-top: 18px;
+  padding: 16px;
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.market-gap-chart svg {
+  width: 100%;
+  height: auto;
+}
+
 .key-chart svg {
   width: 100%;
   height: auto;
@@ -4524,6 +4623,19 @@ th {
     font-size: clamp(2.1rem, 13vw, 3.5rem);
   }
 
+  .home-brand-hero h1 {
+    font-size: clamp(1.9rem, 9.6vw, 2.45rem);
+  }
+
+  .home-brand-hero .brand-title-word {
+    white-space: normal;
+  }
+
+  .home-brand-hero .lead {
+    padding-left: 16px;
+    font-size: 0.98rem;
+  }
+
   .hero-art {
     aspect-ratio: 16 / 9;
     min-height: 0;
@@ -4642,7 +4754,8 @@ th {
   .collab-grid,
   .native-stats,
   .exchange-latest-grid,
-  .exchange-download-grid {
+  .exchange-download-grid,
+  .market-rate-grid {
     grid-template-columns: 1fr !important;
   }
 

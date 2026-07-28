@@ -11,6 +11,7 @@ Sitio web estatico del Observatorio Venezolano de Economia.
 - `assets/`: imagenes y recursos usados directamente por la web.
 - `assets/data/world-bank/`: datasets del Banco Mundial para Venezuela en CSV, JSON y Excel.
 - `assets/data/bcv/`: datasets oficiales del Banco Central de Venezuela generados por `scripts/bcv_ingest.py`.
+- `assets/data/tipo-cambio/`: referencias de mercado no oficiales generadas por `scripts/exchange_market_ingest.py`.
 - `assets/data/ilo/`: datos OIT/ILOSTAT para Venezuela, con series completas comprimidas por frecuencia y catalogo CSV, JSON y Excel.
 - `assets/data/imf/`: indicadores macroeconomicos del FMI World Economic Outlook para Venezuela en CSV, JSON y Excel.
 - `assets/data/fred/`: series de FRED para Venezuela, con catalogo de series etiquetadas y observaciones descargables cuando FRED permite acceso CSV.
@@ -21,7 +22,7 @@ Sitio web estatico del Observatorio Venezolano de Economia.
 - `manual_corporativo_ove_max_calidad.pdf`: archivo enlazado desde la web.
 - `source-assets/`: materiales de apoyo, logos originales e imagenes fuente.
 
-El workflow `Update OVE data` ejecuta el tipo de cambio BCV todos los dias a las 20:30 UTC, refresca PIB/INPC varias veces al mes, Banco Mundial semanalmente, OIT/ILOSTAT varias veces al mes, FMI/WEO varias veces al mes, FRED semanalmente, INE Venezuela semanalmente y regenera el paquete `indicadores-clave` y el inventario tematico de indicadores antes de commitear cambios.
+El workflow `Update OVE data` ejecuta el tipo de cambio BCV y las referencias de mercado todos los dias a las 20:30 UTC, refresca PIB/INPC varias veces al mes, Banco Mundial semanalmente, OIT/ILOSTAT varias veces al mes, FMI/WEO varias veces al mes, FRED semanalmente, INE Venezuela semanalmente y regenera el paquete `indicadores-clave` y el inventario tematico de indicadores antes de commitear cambios.
 
 ## Actualizar datos BCV
 
@@ -37,6 +38,18 @@ La ingesta diaria actualiza dos salidas BCV:
 - `ove_bcv_tipo_cambio_referencia_smc`: referencia diaria multimoneda publicada en la pagina SMC.
 
 La ingesta mensual refresca el catalogo de archivos oficiales de PIB e INPC para su normalizacion posterior.
+
+## Actualizar referencias de mercado de tipo de cambio
+
+```bash
+python3 scripts/exchange_market_ingest.py
+```
+
+Esta ingesta publica referencias no oficiales separadas del BCV:
+
+- `ve_tipo_cambio_referencias_mercado`: paralelo USD/EUR via DolarApi y USDT/VES via Binance P2P, en CSV, JSON y Excel.
+
+Estas tasas son referencias de mercado y no sustituyen la tasa oficial BCV para facturacion, contabilidad o reportes legales.
 
 Para normalizar las series oficiales ya catalogadas de PIB e INPC:
 

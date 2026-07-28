@@ -519,6 +519,9 @@ const exchangeDownloads = {
   smcCsv: "assets/data/bcv/csv/ove_bcv_tipo_cambio_referencia_smc.csv",
   smcJson: "assets/data/bcv/json/ove_bcv_tipo_cambio_referencia_smc.json",
   smcExcel: "assets/data/bcv/excel/ove_bcv_tipo_cambio_referencia_smc.xlsx",
+  marketCsv: "assets/data/tipo-cambio/csv/ve_tipo_cambio_referencias_mercado.csv",
+  marketJson: "assets/data/tipo-cambio/json/ve_tipo_cambio_referencias_mercado.json",
+  marketExcel: "assets/data/tipo-cambio/excel/ve_tipo_cambio_referencias_mercado.xlsx",
   source: "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc"
 };
 
@@ -1755,8 +1758,9 @@ function reportCard(report, index = 0) {
   </article>`;
 }
 
-function pageHero({ title, lead, image = "assets/venezuela-hero.png", breadcrumb = [], dark = false, actions = "" }) {
-  return `<section class="hero ${dark ? "hero-dark" : ""}">
+function pageHero({ title, lead, image = "assets/venezuela-hero.png", breadcrumb = [], dark = false, actions = "", variant = "" }) {
+  const heroClasses = ["hero", dark ? "hero-dark" : "", variant].filter(Boolean).join(" ");
+  return `<section class="${heroClasses}">
     <div class="container hero-grid">
       <div class="hero-copy">
         ${breadcrumb.length ? `<div class="breadcrumb">${breadcrumb.map(item => `<span>${item}</span>`).join("")}</div>` : ""}
@@ -2136,11 +2140,9 @@ function footer() {
 function homePage() {
   return `<div class="page">
     ${pageHero({
-      title: "Datos económicos para mejores decisiones",
-      lead: "Analizamos y difundimos información económica rigurosa, independiente y accesible para comprender la realidad venezolana.",
-      actions: `<a class="button button-primary" href="#/datos/tipo-cambio">Ver tipo de cambio BCV ${arrow()}</a>
-        <a class="button" href="#/datos/banco-mundial">Ver datos Banco Mundial ${icon("database")}</a>
-        <a class="button" href="#/indicadores">Ver indicadores actualizados ${icon("file")}</a>`
+      variant: "home-brand-hero",
+      title: `Observatorio Venezolano de <span class="brand-title-word">Economía</span>`,
+      lead: "La estadística rigurosa como pilar de la libertad económica y la toma de decisiones basada en evidencia técnica."
     })}
     ${bcvUsdHomePanel()}
     <section class="section-tight">
@@ -2487,11 +2489,11 @@ function exchangeRatePage() {
   return `<div class="page">
     ${pageHero({
       title: "Tipo de cambio BCV",
-      lead: "Cuadro de mando único para verificar el tipo de cambio oficial publicado por el Banco Central de Venezuela, con serie diaria USD y referencia SMC multimoneda descargable.",
+      lead: "Cuadro de mando para verificar el tipo de cambio oficial publicado por el Banco Central de Venezuela y contrastarlo con referencias de mercado no oficiales claramente separadas.",
       image: "assets/topics/topic-economy.png",
       breadcrumb: ["Inicio", "Datos", "Tipo de cambio"],
       actions: `<a class="button button-primary" href="${exchangeDownloads.usdExcel}" download>Excel OVE USD ${icon("download")}</a>
-        <a class="button" href="${exchangeDownloads.smcExcel}" download>Excel OVE multimoneda ${icon("download")}</a>`
+        <a class="button" href="${exchangeDownloads.marketExcel}" download>Excel mercado ${icon("download")}</a>`
     })}
     <section class="section">
       <div class="container">
@@ -2504,7 +2506,7 @@ function exchangeRatePage() {
           <div class="key-dashboard-head">
             <div>
               <span class="eyebrow">Dashboard interactivo</span>
-              <h2>Verificador diario de tipo de cambio</h2>
+              <h2>Verificador diario oficial BCV</h2>
               <p>Selecciona una moneda para consultar el último valor BCV y la evolución disponible. USD usa la serie histórica diaria completa; EUR, CNY, TRY y RUB usan la referencia SMC multimoneda publicada por el BCV.</p>
             </div>
             <div class="download-row key-downloads">
@@ -2536,10 +2538,31 @@ function exchangeRatePage() {
           </div>
         </article>
 
+        <article class="panel exchange-market-panel" data-market-exchange>
+          <div class="key-dashboard-head">
+            <div>
+              <span class="eyebrow">Referencias de mercado</span>
+              <h2>Tasas no oficiales de uso comercial y digital</h2>
+              <p>Estas referencias se publican separadas del BCV para análisis de brecha y seguimiento de mercado. No sustituyen la tasa oficial para facturación, contabilidad o reportes legales.</p>
+            </div>
+            <div class="download-row key-downloads">
+              <a href="${exchangeDownloads.marketCsv}" download>CSV</a>
+              <a href="${exchangeDownloads.marketJson}" download>JSON</a>
+              <a href="${exchangeDownloads.marketExcel}" download>Excel OVE</a>
+            </div>
+          </div>
+          <div class="market-rate-grid" data-market-rate-grid>
+            <p class="source-note">Cargando referencias de mercado.</p>
+          </div>
+          <div class="market-gap-chart" data-market-gap-chart></div>
+          <p class="source-note">Metodología: paralelo USD/EUR vía DolarApi; USDT/VES vía promedio simple OVE de ofertas visibles en Binance P2P. Son referencias no oficiales y pueden cambiar durante el día.</p>
+        </article>
+
         <div class="exchange-download-grid">
           ${[
             ["Serie diaria USD", "Histórico diario Bs/USD organizado desde el Excel oficial BCV y la publicación diaria SMC.", exchangeDownloads.usdCsv, exchangeDownloads.usdJson, exchangeDownloads.usdExcel],
             ["Referencia SMC multimoneda", "Base diaria con las monedas publicadas por BCV: USD, EUR, CNY, TRY y RUB.", exchangeDownloads.smcCsv, exchangeDownloads.smcJson, exchangeDownloads.smcExcel],
+            ["Referencias de mercado", "Paralelo y USDT/P2P separados de la tasa oficial BCV, con trazabilidad de fuente y fecha de captura.", exchangeDownloads.marketCsv, exchangeDownloads.marketJson, exchangeDownloads.marketExcel],
             ["Fuente oficial BCV", "Página de tipo de cambio de referencia SMC usada por el cron diario del Observatorio.", exchangeDownloads.source, exchangeDownloads.source, exchangeDownloads.source]
           ].map(([title, text, csv, json, excel]) => `<article class="world-bank-card">
             <div>
@@ -2564,11 +2587,11 @@ function exchangeRatePage() {
       <div class="container dashboard-grid">
         <article class="panel span-6">
           <h2>Actualización automática</h2>
-          <p>El cron de GitHub Actions ejecuta la ingesta diaria de BCV, actualiza las bases CSV/JSON/Excel en assets/data/bcv y vuelve a generar indicadores-clave para que la portada, Indicadores y Datos usen el último valor disponible.</p>
+          <p>El cron de GitHub Actions ejecuta la ingesta diaria de BCV y referencias de mercado, actualiza las bases CSV/JSON/Excel y vuelve a generar indicadores-clave para que la portada, Indicadores y Datos usen el último valor disponible.</p>
         </article>
         <article class="panel span-6">
-          <h2>Monedas disponibles</h2>
-          <p>El cuadro muestra todas las monedas disponibles en la referencia SMC del BCV dentro del Observatorio: USD, EUR, CNY, TRY y RUB.</p>
+          <h2>Criterio de publicación</h2>
+          <p>BCV se presenta como fuente oficial. Paralelo, USDT/P2P y otras referencias de mercado se muestran con fuente propia, fecha de captura y advertencia metodológica.</p>
         </article>
       </div>
     </section>
@@ -4863,6 +4886,7 @@ function render() {
     hydrateIndicatorExplorer();
     hydrateNativeDashboard();
     hydrateExchangeDashboard();
+    hydrateMarketExchange();
     hydratePibDashboard();
     prepareRevealAnimations(appRoot);
     wireAnalytics(appRoot);
@@ -5045,6 +5069,19 @@ function formatBcvDate(value) {
     day: "2-digit",
     month: "long",
     year: "numeric"
+  }).format(date);
+}
+
+function formatSourceDate(value) {
+  if (!value) return "Fecha no disponible";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return formatBcvDate(value);
+  return new Intl.DateTimeFormat("es-VE", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit"
   }).format(date);
 }
 
@@ -5568,6 +5605,99 @@ async function hydrateExchangeDashboard() {
     records.textContent = "Revisar cron";
     unit.textContent = "Actualización automática pendiente";
     chart.innerHTML = `<p class="source-note">No fue posible cargar las bases de tipo de cambio en este momento.</p>`;
+  }
+}
+
+function marketLabel(row) {
+  if (row.indicator_id?.includes("paralelo") && row.currency === "USD") return "Paralelo USD";
+  if (row.indicator_id?.includes("paralelo") && row.currency === "EUR") return "Paralelo EUR";
+  if (row.indicator_id?.includes("binance_p2p_venta")) return "USDT P2P venta";
+  if (row.indicator_id?.includes("binance_p2p_compra")) return "USDT P2P compra";
+  return row.indicator_name || row.indicator_id || "Referencia";
+}
+
+function marketSortOrder(row) {
+  const id = row.indicator_id || "";
+  if (id.includes("usd_paralelo")) return 1;
+  if (id.includes("usdt_binance_p2p_venta")) return 2;
+  if (id.includes("usdt_binance_p2p_compra")) return 3;
+  if (id.includes("eur_paralelo")) return 4;
+  return 9;
+}
+
+function latestRowsByIndicator(rows) {
+  const latest = new Map();
+  rows.forEach(row => {
+    const id = row.indicator_id;
+    if (!id || typeof row.value !== "number") return;
+    const current = latest.get(id);
+    if (!current || String(row.date).localeCompare(String(current.date)) >= 0) {
+      latest.set(id, row);
+    }
+  });
+  return [...latest.values()].sort((left, right) => marketSortOrder(left) - marketSortOrder(right));
+}
+
+function marketGapSvg(rows, bcvUsd) {
+  const comparable = rows.filter(row => ["USD", "USDT"].includes(row.currency) && typeof row.value === "number");
+  if (!comparable.length || typeof bcvUsd !== "number") return `<p class="source-note">Sin datos suficientes para calcular brechas frente al BCV.</p>`;
+  const bars = comparable.map(row => ({
+    label: marketLabel(row),
+    value: ((row.value / bcvUsd) - 1) * 100
+  }));
+  const max = Math.max(...bars.map(item => Math.abs(item.value)), 5);
+  const width = 760;
+  const rowHeight = 44;
+  const height = 38 + bars.length * rowHeight;
+  const zeroX = 210;
+  const plotWidth = width - zeroX - 42;
+  return `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Brecha frente al BCV">
+    <line x1="${zeroX}" y1="18" x2="${zeroX}" y2="${height - 14}" stroke="#9ca3af" stroke-dasharray="4 5"/>
+    ${bars.map((item, index) => {
+      const y = 36 + index * rowHeight;
+      const barWidth = Math.max(2, Math.abs(item.value) / max * plotWidth);
+      const x = item.value >= 0 ? zeroX : zeroX - barWidth;
+      return `<g>
+        <text x="0" y="${y + 6}" class="chart-label">${escapeHtml(item.label)}</text>
+        <rect x="${x}" y="${y - 13}" width="${barWidth}" height="20" rx="4" fill="${item.value >= 0 ? "#0A2D5A" : "#D62828"}"/>
+        <text x="${item.value >= 0 ? x + barWidth + 8 : x - 8}" y="${y + 4}" class="chart-label" text-anchor="${item.value >= 0 ? "start" : "end"}">${formatBcvNumber(item.value)}%</text>
+      </g>`;
+    }).join("")}
+  </svg>`;
+}
+
+async function hydrateMarketExchange() {
+  const panel = document.querySelector("[data-market-exchange]");
+  if (!panel) return;
+  const grid = panel.querySelector("[data-market-rate-grid]");
+  const chart = panel.querySelector("[data-market-gap-chart]");
+  try {
+    const [marketResponse, usdResponse] = await Promise.all([
+      fetch(exchangeDownloads.marketJson, { cache: "no-store" }),
+      fetch(exchangeDownloads.usdJson, { cache: "no-store" })
+    ]);
+    if (!marketResponse.ok || !usdResponse.ok) throw new Error("Market exchange JSON unavailable");
+    const [marketData, usdData] = await Promise.all([marketResponse.json(), usdResponse.json()]);
+    const latestMarket = latestRowsByIndicator(marketData.observations || []);
+    const usdRows = (usdData.observations || []).filter(row => typeof row.value === "number");
+    const latestBcv = usdRows[usdRows.length - 1];
+
+    grid.innerHTML = latestMarket.map(row => `<article class="market-rate-card">
+      <span class="source-tag">Referencia de mercado</span>
+      <h3>${escapeHtml(marketLabel(row))}</h3>
+      <strong>${formatBcvNumber(row.value)} Bs/${escapeHtml(row.currency)}</strong>
+      <dl class="source-meta">
+        <div><dt>Fuente</dt><dd>${escapeHtml(row.source || "Fuente externa")}</dd></div>
+        <div><dt>Actualización</dt><dd>${escapeHtml(formatSourceDate(row.source_updated_at || row.fetched_at || row.date))}</dd></div>
+      </dl>
+      <p>${escapeHtml(row.notes || "Referencia no oficial para seguimiento de mercado.")}</p>
+    </article>`).join("");
+
+    chart.innerHTML = `<div class="panel-title"><h3>Brecha frente al BCV USD</h3><span class="pill">${latestBcv ? `${formatBcvNumber(latestBcv.value)} Bs/USD` : "BCV no disponible"}</span></div>
+      ${marketGapSvg(latestMarket, latestBcv?.value)}`;
+  } catch {
+    grid.innerHTML = `<p class="source-note">No fue posible cargar las referencias de mercado en este momento.</p>`;
+    if (chart) chart.innerHTML = "";
   }
 }
 
