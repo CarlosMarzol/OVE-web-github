@@ -6,8 +6,8 @@ Economía,528
 "Industria, energía y construcción",189
 Mercado laboral,818
 Servicios,99
-Nivel y condiciones de vida (IPC),646
-Sociedad,377
+Nivel y condiciones de vida (IPC),647
+Sociedad,379
 Estadísticas experimentales,2
 
 tema_ove,subarea_ove,indicadores_o_recursos
@@ -36,10 +36,10 @@ Servicios,"Turismo, transporte y logística",22
 Servicios,Servicios digitales y profesionales,49
 Nivel y condiciones de vida (IPC),Condiciones de vida,315
 Nivel y condiciones de vida (IPC),Costo de vida e IPC,273
-Nivel y condiciones de vida (IPC),"Salud, educación y vivienda",58
+Nivel y condiciones de vida (IPC),"Salud, educación y vivienda",59
 Sociedad,Seguridad y convivencia,7
 Sociedad,"Género, juventud y grupos vulnerables",32
-Sociedad,Participación y comunidad,338
+Sociedad,Participación y comunidad,340
 Estadísticas experimentales,Indicadores de alta frecuencia,2
 Estadísticas experimentales,Datos geoespaciales,0
 Estadísticas experimentales,Modelos y nowcasting,0
@@ -48,7 +48,7 @@ fuente,indicadores_o_recursos
 CEPALSTAT - CEPAL,2058
 OIT - ILOSTAT,756
 FRED - Federal Reserve Bank of St. Louis,407
-INE Venezuela,323
+INE Venezuela,326
 UNCTADstat - UNCTAD,99
 Banco Mundial - WDI,79
 FMI - World Economic Outlook,36

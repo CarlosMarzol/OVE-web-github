@@ -2,13 +2,13 @@
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
     "Dataset": "INE Venezuela - catálogo de recursos oficiales",
-    "Fecha generación": "2026-07-22",
+    "Fecha generación": "2026-07-29",
     "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
     "URL portal": "https://ine.gob.ve/",
     "País": "Venezuela",
-    "Número de recursos": 323,
+    "Número de recursos": 326,
     "Recursos tabulares": 204,
-    "Documentos": 119,
+    "Documentos": 122,
     "Hojas extraídas": 220,
     "Celdas con valor extraídas": 2980320,
     "Archivo valores CSV.GZ": "assets/data/ine/csv/ove_ine_venezuela_celdas_tabulares.csv.gz"
@@ -3826,6 +3826,19 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
+      "Título": "Noticias-Julio-29-07-2026.pdf",
+      "Categoría": "Publicaciones",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "julio",
+      "Archivo original": "Noticias-Julio-29-07-2026.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/07/Noticias-Julio-29-07-2026.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
       "Título": "Noviembre",
       "Categoría": "Publicaciones",
       "Tipo de recurso": "Documento",
@@ -4047,6 +4060,19 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
+      "Título": "Trujillo",
+      "Categoría": "Publicaciones",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "julio",
+      "Archivo original": "Estado-Trujillo.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/07/Estado-Trujillo.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
       "Título": "Táchira",
       "Categoría": "Publicaciones",
       "Tipo de recurso": "Documento",
@@ -4131,8 +4157,8 @@
       "Formato": "PDF",
       "Año publicación": "2026",
       "Mes publicación": "julio",
-      "Archivo original": "Censo_de_estructuras_viviendas_y_personas_en_las_zonas_afectadas.pdf",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/07/Censo_de_estructuras_viviendas_y_personas_en_las_zonas_afectadas.pdf",
+      "Archivo original": "CENSO-DE-ESTRUCTURAS-VIVIENDAS-Y-PERSONAS-EN-LAS-ZONAS-AFECTADAS-DEL-ESTADO-VARGAS.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/07/CENSO-DE-ESTRUCTURAS-VIVIENDAS-Y-PERSONAS-EN-LAS-ZONAS-AFECTADAS-DEL-ESTADO-VARGAS.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -4159,6 +4185,19 @@
       "Mes publicación": "julio",
       "Archivo original": "Estado-Aragua_compressed.pdf",
       "URL fuente": "https://ine.gob.ve/wp-content/uploads/2025/07/Estado-Aragua_compressed.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
+      "Título": "Vivienda",
+      "Categoría": "Vivienda y servicios",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "julio",
+      "Archivo original": "VIVIENDA.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/07/VIVIENDA.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
