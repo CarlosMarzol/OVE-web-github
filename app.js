@@ -4955,6 +4955,7 @@ function handleInternalNavigation(event) {
   if (url.origin !== location.origin) return;
 
   const route = normalizeRoute(url.pathname);
+  if (route === "/" && !url.hash.startsWith("#/")) return;
   if (!routes[route]) return;
   if (url.hash && !url.hash.startsWith("#/") && route === currentRoute()) return;
 
