@@ -129,7 +129,8 @@
     .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
     .hero-note{display:flex;align-items:center;gap:10px;margin-top:30px;color:oklch(100% 0 0 / .74);font-size:12px}
     .hero-note::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--success);box-shadow:0 0 0 6px oklch(66% .145 154 / .14)}
-    .live-panel{align-self:end;overflow:hidden;border:1px solid oklch(100% 0 0 / .2);border-radius:var(--radius);background:oklch(13.5% .045 258 / .72);box-shadow:var(--shadow);backdrop-filter:blur(22px);animation:hero-enter .5s .14s both var(--ease)}
+    .live-panel{align-self:end;overflow:hidden;border:1px solid oklch(100% 0 0 / .2);border-radius:var(--radius);background:oklch(13.5% .045 258 / .72);box-shadow:var(--shadow);backdrop-filter:blur(22px);animation:hero-enter .5s .14s both var(--ease);transition:border-color .16s var(--ease),transform .16s var(--ease)}
+    a.live-panel:hover,a.live-panel:focus-visible{border-color:oklch(84.62% .1716 85.3 / .72);transform:translateY(-3px)}
     .live-panel-head{display:flex;align-items:center;justify-content:space-between;padding:17px 20px;border-bottom:1px solid oklch(100% 0 0 / .12)}
     .live-label{display:flex;align-items:center;gap:9px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
     .live-dot{width:7px;height:7px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 0 oklch(84.62% .1716 85.3 / .45);animation:pulse 2.4s 2}
@@ -219,7 +220,8 @@
     .data-note{display:flex;gap:16px;margin-top:36px;padding-top:24px;border-top:1px solid var(--border);color:var(--muted-strong);font-size:13px}
     .data-note strong{color:var(--fg);font-family:var(--font-mono);font-size:22px;font-weight:500}
     .source-list{border-top:1px solid var(--fg)}
-    .source-row{display:grid;grid-template-columns:50px 1fr auto;align-items:center;gap:18px;min-height:104px;border-bottom:1px solid var(--border)}
+    .source-row{display:grid;grid-template-columns:50px 1fr auto;align-items:center;gap:18px;min-height:104px;border-bottom:1px solid var(--border);color:inherit;text-decoration:none;transition:background .16s var(--ease),padding-inline .16s var(--ease)}
+    a.source-row:hover,a.source-row:focus-visible{background:var(--bg);padding-inline:14px}
     .source-number{color:var(--muted-strong);font-family:var(--font-mono);font-size:11px}
     .source-row h3{font-size:20px}
     .source-row p{margin:5px 0 0;color:var(--muted-strong);font-size:13px}
@@ -459,7 +461,7 @@
         <p class="hero-note">Datos verificables, metodología transparente y actualización periódica.</p>
       </div>
 
-      <aside class="live-panel" aria-label="Indicador destacado" data-od-id="hero-live-indicator">
+      <a class="live-panel" href="/datos/economia/pib-precios-constantes-moneda-nacional" aria-label="Abrir ficha del indicador destacado: PIB real" data-od-id="hero-live-indicator">
         <div class="live-panel-head">
           <span class="live-label"><i class="live-dot"></i>Indicador destacado</span>
           <span>OVE / BCV</span>
@@ -477,7 +479,7 @@
           </div>
           <div class="live-foot"><span>2018</span><span>Fuente: BCV</span><span>2025</span></div>
         </div>
-      </aside>
+      </a>
     </div>
 
     <div class="ticker" aria-label="Resumen de indicadores">
@@ -566,16 +568,18 @@
           <p class="eyebrow">Infraestructura abierta</p>
           <h2 data-od-id="data-heading">Fuentes que puedes rastrear.</h2>
           <p class="section-lead">Cada conjunto conserva organismo, cobertura, fecha de captura y formato. El dato no termina en una gráfica: queda listo para verificar y reutilizar.</p>
-          <div class="data-note"><strong>06</strong><span>familias de fuentes nacionales y multilaterales organizadas por tema y uso.</span></div>
+          <div class="data-note"><strong>08</strong><span>familias de fuentes nacionales y multilaterales organizadas por tema y uso.</span></div>
         </div>
 
         <div class="source-list" data-reveal="stagger" data-od-id="source-list">
-          <article class="source-row" data-od-id="source-bcv"><span class="source-number">01</span><div><h3>Banco Central de Venezuela</h3><p>Tipo de cambio, INPC y cuentas nacionales.</p></div><div class="source-count"><strong>11 jul 2026</strong><span>última captura</span></div></article>
-          <article class="source-row" data-od-id="source-world-bank"><span class="source-number">02</span><div><h3>Banco Mundial</h3><p>Indicadores económicos y sociales WDI.</p></div><div class="source-count"><strong>5.216</strong><span>registros</span></div></article>
-          <article class="source-row" data-od-id="source-imf"><span class="source-number">03</span><div><h3>FMI · WEO</h3><p>PIB, inflación, deuda y cuentas externas.</p></div><div class="source-count"><strong>1980–2027</strong><span>cobertura variable</span></div></article>
-          <article class="source-row" data-od-id="source-ilo"><span class="source-number">04</span><div><h3>OIT · ILOSTAT</h3><p>Empleo, informalidad e ingresos laborales.</p></div><div class="source-count"><strong>1.088.839</strong><span>registros</span></div></article>
-          <article class="source-row" data-od-id="source-fred"><span class="source-number">05</span><div><h3>FRED</h3><p>Series internacionales sobre Venezuela.</p></div><div class="source-count"><strong>407</strong><span>series</span></div></article>
-          <article class="source-row" data-od-id="source-regional"><span class="source-number">06</span><div><h3>INE · CEPAL · UNCTAD</h3><p>Demografía, comercio y contexto social.</p></div><div class="source-count"><strong>3</strong><span>repositorios</span></div></article>
+          <a class="source-row" href="/datos/bcv" data-od-id="source-bcv" aria-label="Abrir fuentes del Banco Central de Venezuela"><span class="source-number">01</span><div><h3>Banco Central de Venezuela</h3><p>Tipo de cambio, INPC y cuentas nacionales.</p></div><div class="source-count"><strong>11 jul 2026</strong><span>última captura</span></div></a>
+          <a class="source-row" href="/datos/banco-mundial" data-od-id="source-world-bank" aria-label="Abrir datos del Banco Mundial"><span class="source-number">02</span><div><h3>Banco Mundial</h3><p>Indicadores económicos y sociales WDI.</p></div><div class="source-count"><strong>5.216</strong><span>registros</span></div></a>
+          <a class="source-row" href="/datos/fmi" data-od-id="source-imf" aria-label="Abrir datos del FMI WEO"><span class="source-number">03</span><div><h3>FMI · WEO</h3><p>PIB, inflación, deuda y cuentas externas.</p></div><div class="source-count"><strong>1980-2027</strong><span>cobertura variable</span></div></a>
+          <a class="source-row" href="/datos/oit" data-od-id="source-ilo" aria-label="Abrir datos de OIT ILOSTAT"><span class="source-number">04</span><div><h3>OIT · ILOSTAT</h3><p>Empleo, informalidad e ingresos laborales.</p></div><div class="source-count"><strong>1.088.839</strong><span>registros</span></div></a>
+          <a class="source-row" href="/datos/fred" data-od-id="source-fred" aria-label="Abrir datos de FRED"><span class="source-number">05</span><div><h3>FRED</h3><p>Series internacionales sobre Venezuela.</p></div><div class="source-count"><strong>407</strong><span>series</span></div></a>
+          <a class="source-row" href="/datos/ine" data-od-id="source-ine" aria-label="Abrir datos del INE Venezuela"><span class="source-number">06</span><div><h3>INE Venezuela</h3><p>Demografía, población, precios y documentos oficiales.</p></div><div class="source-count"><strong>INE</strong><span>repositorio</span></div></a>
+          <a class="source-row" href="/datos/cepal" data-od-id="source-cepal" aria-label="Abrir datos de CEPALSTAT"><span class="source-number">07</span><div><h3>CEPALSTAT</h3><p>Series regionales para comparar estructura económica y social.</p></div><div class="source-count"><strong>CEPAL</strong><span>repositorio</span></div></a>
+          <a class="source-row" href="/datos/unctad" data-od-id="source-unctad" aria-label="Abrir datos de UNCTADstat"><span class="source-number">08</span><div><h3>UNCTADstat</h3><p>Comercio exterior, inversión, transporte marítimo y economía digital.</p></div><div class="source-count"><strong>UNCTAD</strong><span>repositorio</span></div></a>
         </div>
       </div>
     </section>
@@ -597,7 +601,7 @@
               <span class="story-status">Prelanzamiento institucional</span>
               <h3>Una nueva infraestructura para leer la economía venezolana.</h3>
               <p>Misión, alcance inicial, fuentes disponibles y hoja de ruta pública del observatorio.</p>
-              <a class="story-link" href="/contacto">Solicitar actualización <span aria-hidden="true">↗</span></a>
+              <a class="story-link" href="/nota-lanzamiento">Leer nota <span aria-hidden="true">↗</span></a>
             </div>
           </article>
 
@@ -608,7 +612,7 @@
             </article>
             <article class="story-card" data-od-id="upcoming-publication">
               <div><span class="story-status">En preparación</span><h3>Primer informe económico</h3><p>Análisis con anexos, fuentes y revisión técnica antes de publicación.</p></div>
-              <a class="story-link" href="/indicadores">Revisar indicadores <span aria-hidden="true">↗</span></a>
+              <a class="story-link" href="/publicaciones">Ver publicaciones <span aria-hidden="true">↗</span></a>
             </article>
           </div>
         </div>
