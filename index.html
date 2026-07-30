@@ -250,6 +250,23 @@
     .story-card .story-link{color:var(--fg)}
     .story-card .story-link span{border-color:var(--border)}
 
+    .reports-carousel{overflow:hidden;background:var(--surface);border-block:1px solid var(--border);padding:76px 0}
+    .reports-carousel .section-head{margin-bottom:34px}
+    .report-marquee{position:relative;margin-inline:calc((100vw - min(var(--max),calc(100vw - 64px)))/-2);overflow:hidden}
+    .report-marquee::before,.report-marquee::after{content:"";position:absolute;top:0;bottom:0;z-index:2;width:min(140px,12vw);pointer-events:none}
+    .report-marquee::before{left:0;background:linear-gradient(90deg,var(--surface),transparent)}
+    .report-marquee::after{right:0;background:linear-gradient(270deg,var(--surface),transparent)}
+    .report-track{display:flex;width:max-content;gap:18px;animation:report-marquee 36s linear infinite}
+    .report-marquee:hover .report-track{animation-play-state:paused}
+    .report-card{display:grid;grid-template-columns:112px minmax(0,1fr);align-items:stretch;gap:18px;width:min(430px,82vw);min-height:168px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);padding:14px;color:inherit;text-decoration:none;transition:transform .16s var(--ease),border-color .16s var(--ease),background .16s var(--ease)}
+    .report-card:hover,.report-card:focus-visible{transform:translateY(-4px);border-color:var(--fg);background:var(--surface)}
+    .report-card img{width:112px;height:140px;object-fit:cover;border-radius:10px;background:var(--surface)}
+    .report-copy{display:grid;align-content:space-between;min-width:0;padding:4px 0}
+    .report-status{color:var(--muted-strong);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+    .report-card h3{margin-top:10px;font-size:22px;line-height:1.08}
+    .report-card p{margin:10px 0 0;color:var(--muted-strong);font-size:13px;line-height:1.45}
+    .report-meta{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:18px;color:var(--muted-strong);font-family:var(--font-mono);font-size:10px;text-transform:uppercase}
+
     .method{position:relative;overflow:hidden;background:var(--hero);color:var(--surface)}
     .method::before{content:"OVE";position:absolute;right:-.05em;top:-.33em;color:oklch(100% 0 0 / .025);font-family:var(--font-display);font-size:min(42vw,640px);font-weight:700;line-height:1;letter-spacing:-.08em}
     .method .eyebrow{color:oklch(100% 0 0 / .72)}
@@ -302,6 +319,7 @@
     [data-reveal="stagger"].is-visible>*:nth-child(6){transition-delay:.4s}
     @keyframes hero-enter{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
     @keyframes ticker{to{transform:translateX(-50%)}}
+    @keyframes report-marquee{to{transform:translateX(calc(-50% - 9px))}}
     @keyframes pulse{70%{box-shadow:0 0 0 8px transparent}100%{box-shadow:0 0 0 0 transparent}}
     @keyframes spin{to{transform:rotate(360deg)}}
     @keyframes draw-line{to{stroke-dashoffset:0}}
@@ -342,6 +360,7 @@
       .indicator-index{display:grid;grid-template-columns:1fr 1fr}
       .indicator-tab{padding-right:24px}
       .indicator-tab::after{display:none}
+      .report-marquee{margin-inline:-16px}
       .chart-top{grid-template-columns:1fr}
       .chart-value{text-align:left}
       .chart-toolbar{align-items:flex-start}
@@ -362,6 +381,10 @@
       .hero-actions{display:grid}
       .button{width:100%}
       .live-panel{justify-self:stretch}
+      .reports-carousel{padding:62px 0}
+      .report-card{grid-template-columns:96px minmax(0,1fr);min-height:156px}
+      .report-card img{width:96px;height:128px}
+      .report-card h3{font-size:19px}
       .ticker-item{min-width:245px;padding-inline:20px}
       .section{padding:76px 0}
       .indicator-index{grid-template-columns:1fr}
@@ -394,6 +417,7 @@
       [data-reveal],[data-reveal="stagger"]>*{opacity:1!important;transform:none!important}
       .hero-background img{transform:none!important}
       .ticker-track{animation:none!important;transform:none!important}
+      .report-track{animation:none!important;flex-wrap:wrap;justify-content:center;transform:none!important}
     }
   </style>
 </head>
@@ -619,6 +643,62 @@
       </div>
     </section>
 
+    <section class="reports-carousel" id="ultimos-informes" aria-labelledby="latest-reports-heading" data-od-id="latest-reports-carousel">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">Últimos informes</p>
+            <h2 id="latest-reports-heading">Informes y fichas en movimiento.</h2>
+          </div>
+          <p class="section-lead">Notas, metodologías y fichas técnicas conectadas con las bases de datos del observatorio.</p>
+        </header>
+      </div>
+      <div class="report-marquee" aria-label="Últimos informes del OVE">
+        <div class="report-track">
+          <a class="report-card" href="/nota-lanzamiento">
+            <img src="assets/report-cover.png" alt="Portada de la nota de lanzamiento OVE" loading="lazy" decoding="async">
+            <span class="report-copy"><span><span class="report-status">Prelanzamiento</span><h3>Nota de lanzamiento</h3><p>Alcance inicial, fuentes disponibles y hoja de ruta pública.</p></span><span class="report-meta"><span>OVE</span><span>Leer</span></span></span>
+          </a>
+          <a class="report-card" href="/metodologia">
+            <img src="assets/publication-cover-2.png" alt="Portada de metodología de datos OVE" loading="lazy" decoding="async">
+            <span class="report-copy"><span><span class="report-status">Documento base</span><h3>Metodología de datos</h3><p>Criterios de selección, actualización, límites y citación.</p></span><span class="report-meta"><span>OVE</span><span>Abrir</span></span></span>
+          </a>
+          <a class="report-card" href="/publicaciones">
+            <img src="assets/publication-cover-3.png" alt="Portada del primer informe económico OVE" loading="lazy" decoding="async">
+            <span class="report-copy"><span><span class="report-status">En preparación</span><h3>Primer informe económico</h3><p>Análisis con anexos, fuentes y revisión técnica.</p></span><span class="report-meta"><span>OVE</span><span>Estado</span></span></span>
+          </a>
+          <a class="report-card" href="/datos/economia/pib-precios-constantes-moneda-nacional">
+            <img src="assets/publication-cover-1.png" alt="Portada de ficha PIB real OVE" loading="lazy" decoding="async">
+            <span class="report-copy"><span><span class="report-status">Ficha técnica</span><h3>PIB real</h3><p>Serie anual, fuente BCV y ficha metodológica.</p></span><span class="report-meta"><span>BCV</span><span>Ficha</span></span></span>
+          </a>
+          <a class="report-card" href="/datos">
+            <img src="assets/publication-cover-4.png" alt="Portada de banco de datos OVE" loading="lazy" decoding="async">
+            <span class="report-copy"><span><span class="report-status">Datos abiertos</span><h3>Banco de datos OVE</h3><p>Fuentes nacionales y multilaterales organizadas por tema.</p></span><span class="report-meta"><span>Datos</span><span>Explorar</span></span></span>
+          </a>
+          <a class="report-card" href="/nota-lanzamiento" aria-hidden="true" tabindex="-1">
+            <img src="assets/report-cover.png" alt="" loading="lazy" decoding="async">
+            <span class="report-copy"><span><span class="report-status">Prelanzamiento</span><h3>Nota de lanzamiento</h3><p>Alcance inicial, fuentes disponibles y hoja de ruta pública.</p></span><span class="report-meta"><span>OVE</span><span>Leer</span></span></span>
+          </a>
+          <a class="report-card" href="/metodologia" aria-hidden="true" tabindex="-1">
+            <img src="assets/publication-cover-2.png" alt="" loading="lazy" decoding="async">
+            <span class="report-copy"><span><span class="report-status">Documento base</span><h3>Metodología de datos</h3><p>Criterios de selección, actualización, límites y citación.</p></span><span class="report-meta"><span>OVE</span><span>Abrir</span></span></span>
+          </a>
+          <a class="report-card" href="/publicaciones" aria-hidden="true" tabindex="-1">
+            <img src="assets/publication-cover-3.png" alt="" loading="lazy" decoding="async">
+            <span class="report-copy"><span><span class="report-status">En preparación</span><h3>Primer informe económico</h3><p>Análisis con anexos, fuentes y revisión técnica.</p></span><span class="report-meta"><span>OVE</span><span>Estado</span></span></span>
+          </a>
+          <a class="report-card" href="/datos/economia/pib-precios-constantes-moneda-nacional" aria-hidden="true" tabindex="-1">
+            <img src="assets/publication-cover-1.png" alt="" loading="lazy" decoding="async">
+            <span class="report-copy"><span><span class="report-status">Ficha técnica</span><h3>PIB real</h3><p>Serie anual, fuente BCV y ficha metodológica.</p></span><span class="report-meta"><span>BCV</span><span>Ficha</span></span></span>
+          </a>
+          <a class="report-card" href="/datos" aria-hidden="true" tabindex="-1">
+            <img src="assets/publication-cover-4.png" alt="" loading="lazy" decoding="async">
+            <span class="report-copy"><span><span class="report-status">Datos abiertos</span><h3>Banco de datos OVE</h3><p>Fuentes nacionales y multilaterales organizadas por tema.</p></span><span class="report-meta"><span>Datos</span><span>Explorar</span></span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="section method" id="metodo" data-od-id="method-section">
       <div class="container">
         <header class="method-head" data-reveal>
@@ -723,6 +803,7 @@
       {label:"Tipo de cambio BCV",description:"Referencia oficial diaria",href:"/indicadores"},
       {label:"Desempleo total",description:"Mercado laboral · Banco Mundial",href:"/indicadores"},
       {label:"Publicaciones",description:"Informes, análisis y documentos de trabajo",href:"/publicaciones"},
+      {label:"Últimos informes",description:"Carrusel de notas, metodologías y fichas técnicas",href:"/#ultimos-informes"},
       {label:"Nota de lanzamiento",description:"Alcance inicial, fuentes disponibles y hoja de ruta",href:"/nota-lanzamiento"},
       {label:"Datos",description:"Fuentes abiertas y organismos de referencia",href:"/datos"},
       {label:"Banco Central de Venezuela",description:"Tipo de cambio, INPC y cuentas nacionales",href:"/datos/bcv"},
