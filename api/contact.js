@@ -1,3 +1,5 @@
+import nodemailer from "nodemailer";
+
 const RESEND_API_URL = "https://api.resend.com/emails";
 
 const FORM_LABELS = {
@@ -148,6 +150,55 @@ function buildEmail(payload, request) {
   };
 }
 
+function buildTransport() {
+  const user = process.env.OVE_SMTP_USER || process.env.OUTLOOK_SMTP_USER;
+  const pass = process.env.OVE_SMTP_PASS || process.env.OUTLOOK_SMTP_PASS;
+
+  if (!user || !pass) {
+    return null;
+  }
+
+  return nodemailer.createTransport({
+    host: process.env.OVE_SMTP_HOST || "smtp-mail.outlook.com",
+    port: Number(process.env.OVE_SMTP_PORT || 587),
+    secure: process.env.OVE_SMTP_SECURE === "true",
+    requireTLS: true,
+    auth: {
+      user,
+      pass
+    }
+  });
+}
+
+async function sendWithResend({ from, to, replyTo, email }) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) return false;
+
+  const resendResponse = await fetch(RESEND_API_URL, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      from,
+      to,
+      reply_to: replyTo,
+      subject: email.subject,
+      text: email.text,
+      html: email.html
+    })
+  });
+
+  if (!resendResponse.ok) {
+    const errorBody = await resendResponse.text();
+    console.error("Resend error", resendResponse.status, errorBody);
+    throw new Error("RESEND_EMAIL_SEND_FAILED");
+  }
+
+  return true;
+}
+
 function parseRequestBody(body) {
   if (!body) return {};
   if (typeof body === "string") {
@@ -166,11 +217,12 @@ export default async function handler(request, response) {
     return jsonResponse(response, 405, { ok: false, error: "METHOD_NOT_ALLOWED" });
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
+  const transport = buildTransport();
+  const smtpUser = process.env.OVE_SMTP_USER || process.env.OUTLOOK_SMTP_USER;
   const to = process.env.OVE_CONTACT_TO || "ove.venezuela@outlook.com";
-  const from = process.env.OVE_CONTACT_FROM || "OVE Web <no-reply@ove-venezuela.com>";
+  const from = process.env.OVE_CONTACT_FROM || (smtpUser ? `OVE Web <${smtpUser}>` : "OVE Web <ove.venezuela@outlook.com>");
 
-  if (!apiKey) {
+  if (!transport && !process.env.RESEND_API_KEY) {
     return jsonResponse(response, 500, { ok: false, error: "CONTACT_SERVICE_NOT_CONFIGURED" });
   }
 
@@ -184,26 +236,17 @@ export default async function handler(request, response) {
   const email = buildEmail(payload, request);
 
   try {
-    const resendResponse = await fetch(RESEND_API_URL, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
+    if (transport) {
+      await transport.sendMail({
         from,
         to,
-        reply_to: payload.email,
+        replyTo: payload.email,
         subject: email.subject,
         text: email.text,
         html: email.html
-      })
-    });
-
-    if (!resendResponse.ok) {
-      const errorBody = await resendResponse.text();
-      console.error("Resend error", resendResponse.status, errorBody);
-      return jsonResponse(response, 502, { ok: false, error: "EMAIL_SEND_FAILED" });
+      });
+    } else {
+      await sendWithResend({ from, to, replyTo: payload.email, email });
     }
 
     return jsonResponse(response, 200, { ok: true });

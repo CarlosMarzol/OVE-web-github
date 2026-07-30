@@ -1066,7 +1066,7 @@
       formStatus.classList.remove("is-error");
       formStatus.textContent="";
     });
-    subscribeForm.addEventListener("submit",event=>{
+    subscribeForm.addEventListener("submit",async event=>{
       event.preventDefault();
       const email=emailInput.value.trim();
       const valid=/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email);
@@ -1080,15 +1080,31 @@
       }
       formStatus.setAttribute("role","status");
       submitButton.disabled=true;
-      submitLabel.textContent="Preparando correo…";
-      formStatus.textContent="Abriremos tu aplicación de correo para confirmar la solicitud.";
-      const subject=encodeURIComponent("Alta en el boletín OVE");
-      const body=encodeURIComponent(`Solicito suscribir ${email} al boletín del Observatorio Venezolano de Economía.`);
-      setTimeout(()=>{
-        location.href=`mailto:ove.venezuela@outlook.com?subject=${subject}&body=${body}`;
+      submitLabel.textContent="Enviando…";
+      formStatus.textContent="Enviando solicitud al correo institucional del OVE.";
+      try{
+        const response=await fetch("/api/contact",{
+          method:"POST",
+          headers:{"Content-Type":"application/json"},
+          body:JSON.stringify({
+            form_id:"boletin",
+            email,
+            page_url:location.href,
+            submitted_at:new Date().toISOString()
+          })
+        });
+        if(!response.ok) throw new Error("CONTACT_FORM_ERROR");
+        formStatus.classList.remove("is-error");
+        formStatus.textContent="Solicitud enviada correctamente. Gracias por suscribirte.";
+        subscribeForm.reset();
+      }catch(error){
+        formStatus.setAttribute("role","alert");
+        formStatus.classList.add("is-error");
+        formStatus.textContent="No se pudo enviar ahora. Inténtalo de nuevo o escribe a ove.venezuela@outlook.com.";
+      }finally{
         submitButton.disabled=false;
         submitLabel.textContent="Suscribirme";
-      },150);
+      }
     });
   </script>
 </body>
