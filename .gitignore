@@ -12,6 +12,7 @@ desktop.ini
 .env
 .env.local
 .env.*.local
+.openclaw/
 
 # Optional tooling folders if the project later adds a build step
 node_modules/
