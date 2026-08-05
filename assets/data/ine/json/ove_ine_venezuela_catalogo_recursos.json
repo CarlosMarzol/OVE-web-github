@@ -2,13 +2,13 @@
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
     "Dataset": "INE Venezuela - catálogo de recursos oficiales",
-    "Fecha generación": "2026-07-29",
+    "Fecha generación": "2026-08-05",
     "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
     "URL portal": "https://ine.gob.ve/",
     "País": "Venezuela",
-    "Número de recursos": 326,
+    "Número de recursos": 327,
     "Recursos tabulares": 204,
-    "Documentos": 122,
+    "Documentos": 123,
     "Hojas extraídas": 220,
     "Celdas con valor extraídas": 2980320,
     "Archivo valores CSV.GZ": "assets/data/ine/csv/ove_ine_venezuela_celdas_tabulares.csv.gz"
@@ -3631,6 +3631,19 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
+      "Título": "Julio",
+      "Categoría": "Publicaciones",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "agosto",
+      "Archivo original": "Noticias-Julio-31.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/08/Noticias-Julio-31.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
       "Título": "Junio",
       "Categoría": "Publicaciones",
       "Tipo de recurso": "Documento",
@@ -3826,14 +3839,14 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
-      "Título": "Noticias-Julio-29-07-2026.pdf",
+      "Título": "Noticias-Agosto-05-08-2026.pdf",
       "Categoría": "Publicaciones",
       "Tipo de recurso": "Documento",
       "Formato": "PDF",
       "Año publicación": "2026",
-      "Mes publicación": "julio",
-      "Archivo original": "Noticias-Julio-29-07-2026.pdf",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/07/Noticias-Julio-29-07-2026.pdf",
+      "Mes publicación": "agosto",
+      "Archivo original": "Noticias-Agosto-05-08-2026.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/08/Noticias-Agosto-05-08-2026.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
