@@ -7,9 +7,9 @@
     "frequency": "daily",
     "unit": "VES por unidad de moneda extranjera",
     "status": "official_source",
-    "last_fetched_at": "2026-08-07T21:08:51Z",
+    "last_fetched_at": "2026-08-08T20:57:33Z",
     "first_date": "2026-06-26",
-    "last_date": "2026-08-07",
+    "last_date": "2026-08-10",
     "currencies": [
       "CNY",
       "EUR",
@@ -17,18 +17,18 @@
       "TRY",
       "USD"
     ],
-    "records": 80,
+    "records": 85,
     "latest_usd": {
-      "date": "2026-08-07",
+      "date": "2026-08-10",
       "currency": "USD",
-      "value": 756.7083,
+      "value": 757.5406,
       "unit": "VES por unidad de moneda extranjera",
       "frequency": "daily",
       "indicator_id": "bcv_tipo_cambio_referencia_smc_usd",
       "indicator_name": "Tipo de Cambio de Referencia SMC - USD",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
-      "fetched_at": "2026-08-07T21:08:51Z"
+      "fetched_at": "2026-08-08T20:57:33Z"
     },
     "notes": "Datos extraidos de la pagina oficial del BCV. La serie se actualiza por fecha y moneda."
   },
@@ -992,6 +992,66 @@
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
       "fetched_at": "2026-08-07T21:08:51Z"
+    },
+    {
+      "date": "2026-08-10",
+      "currency": "CNY",
+      "value": 112.27980257,
+      "unit": "VES por unidad de moneda extranjera",
+      "frequency": "daily",
+      "indicator_id": "bcv_tipo_cambio_referencia_smc_cny",
+      "indicator_name": "Tipo de Cambio de Referencia SMC - CNY",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
+      "fetched_at": "2026-08-08T20:57:33Z"
+    },
+    {
+      "date": "2026-08-10",
+      "currency": "EUR",
+      "value": 875.2169568,
+      "unit": "VES por unidad de moneda extranjera",
+      "frequency": "daily",
+      "indicator_id": "bcv_tipo_cambio_referencia_smc_eur",
+      "indicator_name": "Tipo de Cambio de Referencia SMC - EUR",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
+      "fetched_at": "2026-08-08T20:57:33Z"
+    },
+    {
+      "date": "2026-08-10",
+      "currency": "RUB",
+      "value": 9.25070948,
+      "unit": "VES por unidad de moneda extranjera",
+      "frequency": "daily",
+      "indicator_id": "bcv_tipo_cambio_referencia_smc_rub",
+      "indicator_name": "Tipo de Cambio de Referencia SMC - RUB",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
+      "fetched_at": "2026-08-08T20:57:33Z"
+    },
+    {
+      "date": "2026-08-10",
+      "currency": "TRY",
+      "value": 15.8805586,
+      "unit": "VES por unidad de moneda extranjera",
+      "frequency": "daily",
+      "indicator_id": "bcv_tipo_cambio_referencia_smc_try",
+      "indicator_name": "Tipo de Cambio de Referencia SMC - TRY",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
+      "fetched_at": "2026-08-08T20:57:33Z"
+    },
+    {
+      "date": "2026-08-10",
+      "currency": "USD",
+      "value": 757.5406,
+      "unit": "VES por unidad de moneda extranjera",
+      "frequency": "daily",
+      "indicator_id": "bcv_tipo_cambio_referencia_smc_usd",
+      "indicator_name": "Tipo de Cambio de Referencia SMC - USD",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
+      "fetched_at": "2026-08-08T20:57:33Z"
     }
   ]
 }
