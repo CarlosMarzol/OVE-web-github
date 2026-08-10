@@ -2,7 +2,7 @@
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
     "Dataset": "Banco Mundial - Venezuela - Demografía",
-    "Fecha generación": "2026-07-27",
+    "Fecha generación": "2026-08-10",
     "Número de indicadores": 8,
     "Número de registros": 528
   },
@@ -23,7 +23,7 @@
       "Indicador": "Migración neta",
       "Valor": 8369.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -42,7 +42,7 @@
       "Indicador": "Migración neta",
       "Valor": 6069.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -61,7 +61,7 @@
       "Indicador": "Migración neta",
       "Valor": 4386.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -80,7 +80,7 @@
       "Indicador": "Migración neta",
       "Valor": 3296.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -99,7 +99,7 @@
       "Indicador": "Migración neta",
       "Valor": 2410.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -118,7 +118,7 @@
       "Indicador": "Migración neta",
       "Valor": 1656.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -137,7 +137,7 @@
       "Indicador": "Migración neta",
       "Valor": 1087.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -156,7 +156,7 @@
       "Indicador": "Migración neta",
       "Valor": 717.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -175,7 +175,7 @@
       "Indicador": "Migración neta",
       "Valor": 532.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -194,7 +194,7 @@
       "Indicador": "Migración neta",
       "Valor": 403.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -213,7 +213,7 @@
       "Indicador": "Migración neta",
       "Valor": 305.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -232,7 +232,7 @@
       "Indicador": "Migración neta",
       "Valor": 215.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -251,7 +251,7 @@
       "Indicador": "Migración neta",
       "Valor": 173.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -270,7 +270,7 @@
       "Indicador": "Migración neta",
       "Valor": 171.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -289,7 +289,7 @@
       "Indicador": "Migración neta",
       "Valor": 173.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -308,7 +308,7 @@
       "Indicador": "Migración neta",
       "Valor": 186.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -327,7 +327,7 @@
       "Indicador": "Migración neta",
       "Valor": 190.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -346,7 +346,7 @@
       "Indicador": "Migración neta",
       "Valor": 196.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -365,7 +365,7 @@
       "Indicador": "Migración neta",
       "Valor": 205.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -384,7 +384,7 @@
       "Indicador": "Migración neta",
       "Valor": 228.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -403,7 +403,7 @@
       "Indicador": "Migración neta",
       "Valor": 237.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -422,7 +422,7 @@
       "Indicador": "Migración neta",
       "Valor": 251.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -441,7 +441,7 @@
       "Indicador": "Migración neta",
       "Valor": 260.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -460,7 +460,7 @@
       "Indicador": "Migración neta",
       "Valor": 260.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -479,7 +479,7 @@
       "Indicador": "Migración neta",
       "Valor": 247.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -498,7 +498,7 @@
       "Indicador": "Migración neta",
       "Valor": 237.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -517,7 +517,7 @@
       "Indicador": "Migración neta",
       "Valor": 201.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -536,7 +536,7 @@
       "Indicador": "Migración neta",
       "Valor": 182.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -555,7 +555,7 @@
       "Indicador": "Migración neta",
       "Valor": 137.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -574,7 +574,7 @@
       "Indicador": "Migración neta",
       "Valor": 32.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -593,7 +593,7 @@
       "Indicador": "Migración neta",
       "Valor": -69.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -612,7 +612,7 @@
       "Indicador": "Migración neta",
       "Valor": -236.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -631,7 +631,7 @@
       "Indicador": "Migración neta",
       "Valor": -381.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -650,7 +650,7 @@
       "Indicador": "Migración neta",
       "Valor": -477.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -669,7 +669,7 @@
       "Indicador": "Migración neta",
       "Valor": -559.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -688,7 +688,7 @@
       "Indicador": "Migración neta",
       "Valor": -622.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -707,7 +707,7 @@
       "Indicador": "Migración neta",
       "Valor": -708.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -726,7 +726,7 @@
       "Indicador": "Migración neta",
       "Valor": -816.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -745,7 +745,7 @@
       "Indicador": "Migración neta",
       "Valor": -1010.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -764,7 +764,7 @@
       "Indicador": "Migración neta",
       "Valor": -1376.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -783,7 +783,7 @@
       "Indicador": "Migración neta",
       "Valor": -1999.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -802,7 +802,7 @@
       "Indicador": "Migración neta",
       "Valor": -2856.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -821,7 +821,7 @@
       "Indicador": "Migración neta",
       "Valor": -3944.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -840,7 +840,7 @@
       "Indicador": "Migración neta",
       "Valor": -5729.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -859,7 +859,7 @@
       "Indicador": "Migración neta",
       "Valor": -10798.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -878,7 +878,7 @@
       "Indicador": "Migración neta",
       "Valor": -18407.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -897,7 +897,7 @@
       "Indicador": "Migración neta",
       "Valor": -27240.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -916,7 +916,7 @@
       "Indicador": "Migración neta",
       "Valor": -36060.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -935,7 +935,7 @@
       "Indicador": "Migración neta",
       "Valor": -43636.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -954,7 +954,7 @@
       "Indicador": "Migración neta",
       "Valor": -50286.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -973,7 +973,7 @@
       "Indicador": "Migración neta",
       "Valor": -52781.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -992,7 +992,7 @@
       "Indicador": "Migración neta",
       "Valor": -54384.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1011,7 +1011,7 @@
       "Indicador": "Migración neta",
       "Valor": -55131.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1030,7 +1030,7 @@
       "Indicador": "Migración neta",
       "Valor": -57818.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1049,7 +1049,7 @@
       "Indicador": "Migración neta",
       "Valor": -62437.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1068,7 +1068,7 @@
       "Indicador": "Migración neta",
       "Valor": -77417.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1087,7 +1087,7 @@
       "Indicador": "Migración neta",
       "Valor": -283270.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1106,7 +1106,7 @@
       "Indicador": "Migración neta",
       "Valor": -817376.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1125,7 +1125,7 @@
       "Indicador": "Migración neta",
       "Valor": -1355602.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1144,7 +1144,7 @@
       "Indicador": "Migración neta",
       "Valor": -975534.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1163,7 +1163,7 @@
       "Indicador": "Migración neta",
       "Valor": -524649.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1182,7 +1182,7 @@
       "Indicador": "Migración neta",
       "Valor": -332936.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1201,7 +1201,7 @@
       "Indicador": "Migración neta",
       "Valor": -141107.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1220,7 +1220,7 @@
       "Indicador": "Migración neta",
       "Valor": -112899.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1239,7 +1239,7 @@
       "Indicador": "Migración neta",
       "Valor": -105297.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1258,7 +1258,7 @@
       "Indicador": "Migración neta",
       "Valor": -100467.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1277,7 +1277,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 60.397,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1296,7 +1296,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 61.08,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1315,7 +1315,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 61.711,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1334,7 +1334,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 62.414,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1353,7 +1353,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 63.075,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1372,7 +1372,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 63.748,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1391,7 +1391,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 64.847,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1410,7 +1410,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 65.377,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1429,7 +1429,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 65.828,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1448,7 +1448,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 65.541,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1467,7 +1467,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 66.783,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1486,7 +1486,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 67.159,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1505,7 +1505,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 67.625,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1524,7 +1524,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 67.931,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1543,7 +1543,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 68.494,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1562,7 +1562,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 69.038,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1581,7 +1581,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 69.608,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1600,7 +1600,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 70.298,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1619,7 +1619,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 70.874,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1638,7 +1638,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 71.011,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1657,7 +1657,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 71.068,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1676,7 +1676,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 71.525,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1695,7 +1695,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 71.894,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1714,7 +1714,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 72.373,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1733,7 +1733,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 72.37,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1752,7 +1752,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 72.569,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1771,7 +1771,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 73.123,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1790,7 +1790,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 73.371,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1809,7 +1809,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 73.551,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1828,7 +1828,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 73.775,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1847,7 +1847,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 73.687,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1866,7 +1866,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 74.231,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1885,7 +1885,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 74.412,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1904,7 +1904,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 74.768,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1923,7 +1923,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 74.637,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1942,7 +1942,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 74.929,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1961,7 +1961,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 75.091,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1980,7 +1980,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 75.669,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -1999,7 +1999,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 75.805,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2018,7 +2018,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 75.444,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2037,7 +2037,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 76.244,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2056,7 +2056,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 75.35,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2075,7 +2075,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 76.865,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2094,7 +2094,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 76.161,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2113,7 +2113,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 76.702,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2132,7 +2132,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 76.967,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2151,7 +2151,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 77.184,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2170,7 +2170,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 77.664,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2189,7 +2189,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 77.204,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2208,7 +2208,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 77.315,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2227,7 +2227,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 77.362,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2246,7 +2246,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 77.786,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2265,7 +2265,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 77.632,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2284,7 +2284,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 77.473,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2303,7 +2303,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 77.339,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2322,7 +2322,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 77.395,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2341,7 +2341,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 76.793,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2360,7 +2360,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 76.306,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2379,7 +2379,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 76.554,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2398,7 +2398,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 76.677,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2417,7 +2417,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 76.501,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2436,7 +2436,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 75.619,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2455,7 +2455,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 76.525,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2474,7 +2474,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 76.501,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2493,7 +2493,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": 76.655,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2512,7 +2512,7 @@
       "Indicador": "Esperanza de vida femenina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2531,7 +2531,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 58.376,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2550,7 +2550,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 59.115,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2569,7 +2569,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 59.667,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2588,7 +2588,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 60.502,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2607,7 +2607,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 61.168,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2626,7 +2626,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 61.909,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2645,7 +2645,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 62.894,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2664,7 +2664,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 63.55,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2683,7 +2683,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 63.908,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2702,7 +2702,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 63.84,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2721,7 +2721,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 64.816,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2740,7 +2740,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 65.184,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2759,7 +2759,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 65.555,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2778,7 +2778,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 65.74,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2797,7 +2797,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 66.223,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2816,7 +2816,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 66.686,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2835,7 +2835,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 67.266,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2854,7 +2854,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 67.726,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2873,7 +2873,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 68.108,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2892,7 +2892,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 68.226,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2911,7 +2911,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 68.179,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2930,7 +2930,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 68.697,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2949,7 +2949,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 68.985,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2968,7 +2968,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 69.541,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -2987,7 +2987,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 69.672,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3006,7 +3006,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 69.961,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3025,7 +3025,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 70.528,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3044,7 +3044,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 70.673,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3063,7 +3063,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 70.762,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3082,7 +3082,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 70.805,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3101,7 +3101,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 70.964,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3120,7 +3120,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 71.172,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3139,7 +3139,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 71.177,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3158,7 +3158,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 71.385,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3177,7 +3177,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 71.283,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3196,7 +3196,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 71.714,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3215,7 +3215,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 71.92,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3234,7 +3234,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.56,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3253,7 +3253,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.446,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3272,7 +3272,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.088,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3291,7 +3291,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.388,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3310,7 +3310,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 71.019,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3329,7 +3329,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.823,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3348,7 +3348,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.056,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3367,7 +3367,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.752,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3386,7 +3386,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 73.075,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3405,7 +3405,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.972,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3424,7 +3424,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 73.348,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3443,7 +3443,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.578,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3462,7 +3462,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.785,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3481,7 +3481,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 73.092,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3500,7 +3500,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 73.09,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3519,7 +3519,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 73.086,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3538,7 +3538,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 73.076,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3557,7 +3557,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.837,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3576,7 +3576,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 73.004,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3595,7 +3595,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.002,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3614,7 +3614,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 71.903,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3633,7 +3633,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.641,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3652,7 +3652,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.766,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3671,7 +3671,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.369,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3690,7 +3690,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 71.536,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3709,7 +3709,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.566,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3728,7 +3728,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.514,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3747,7 +3747,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": 72.673,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3766,7 +3766,7 @@
       "Indicador": "Esperanza de vida al nacer",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3785,7 +3785,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 56.523,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3804,7 +3804,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 57.306,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3823,7 +3823,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 57.78,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3842,7 +3842,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 58.724,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3861,7 +3861,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 59.39,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3880,7 +3880,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 60.188,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3899,7 +3899,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 61.074,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3918,7 +3918,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 61.84,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3937,7 +3937,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 62.116,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3956,7 +3956,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 62.234,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3975,7 +3975,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 62.982,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -3994,7 +3994,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 63.341,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4013,7 +4013,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 63.624,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4032,7 +4032,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 63.701,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4051,7 +4051,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 64.105,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4070,7 +4070,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 64.503,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4089,7 +4089,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 65.081,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4108,7 +4108,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 65.335,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4127,7 +4127,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 65.55,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4146,7 +4146,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 65.637,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4165,7 +4165,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 65.498,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4184,7 +4184,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 66.059,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4203,7 +4203,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 66.277,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4222,7 +4222,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 66.89,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4241,7 +4241,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 67.139,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4260,7 +4260,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 67.499,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4279,7 +4279,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.064,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4298,7 +4298,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.12,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4317,7 +4317,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.125,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4336,7 +4336,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.009,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4355,7 +4355,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.364,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4374,7 +4374,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.286,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4393,7 +4393,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.132,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4412,7 +4412,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.2,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4431,7 +4431,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.114,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4450,7 +4450,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.655,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4469,7 +4469,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.896,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4488,7 +4488,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 69.583,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4507,7 +4507,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 69.252,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4526,7 +4526,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.889,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4545,7 +4545,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.757,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4564,7 +4564,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 67.019,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4583,7 +4583,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 69.015,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4602,7 +4602,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.2,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4621,7 +4621,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 69.014,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4640,7 +4640,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 69.378,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4659,7 +4659,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 69.006,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4678,7 +4678,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 69.283,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4697,7 +4697,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.266,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4716,7 +4716,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.546,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4735,7 +4735,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 69.064,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4754,7 +4754,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.714,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4773,7 +4773,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.829,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4792,7 +4792,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.94,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4811,7 +4811,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.618,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4830,7 +4830,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.871,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4849,7 +4849,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 67.563,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4868,7 +4868,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 67.776,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4887,7 +4887,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.902,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4906,7 +4906,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 69.025,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4925,7 +4925,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.459,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4944,7 +4944,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 67.683,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4963,7 +4963,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.789,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -4982,7 +4982,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.72,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5001,7 +5001,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": 68.885,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5020,7 +5020,7 @@
       "Indicador": "Esperanza de vida masculina",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5039,7 +5039,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 6.382,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5058,7 +5058,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 6.298,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5077,7 +5077,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 6.231,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5096,7 +5096,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 6.155,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5115,7 +5115,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 6.071,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5134,7 +5134,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 5.977,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5153,7 +5153,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 5.87,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5172,7 +5172,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 5.748,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5191,7 +5191,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 5.614,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5210,7 +5210,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 5.469,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5229,7 +5229,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 5.321,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5248,7 +5248,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 5.174,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5267,7 +5267,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 5.035,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5286,7 +5286,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 4.906,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5305,7 +5305,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 4.791,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5324,7 +5324,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 4.686,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5343,7 +5343,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 4.589,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5362,7 +5362,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 4.494,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5381,7 +5381,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 4.397,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5400,7 +5400,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 4.298,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5419,7 +5419,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 4.2,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5438,7 +5438,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 4.104,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5457,7 +5457,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 4.014,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5476,7 +5476,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.933,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5495,7 +5495,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.861,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5514,7 +5514,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.794,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5533,7 +5533,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.73,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5552,7 +5552,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.665,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5571,7 +5571,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.597,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5590,7 +5590,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.524,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5609,7 +5609,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.448,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5628,7 +5628,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.37,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5647,7 +5647,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.292,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5666,7 +5666,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.218,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5685,7 +5685,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.147,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5704,7 +5704,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.082,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5723,7 +5723,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 3.022,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5742,7 +5742,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.967,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5761,7 +5761,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.912,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5780,7 +5780,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.856,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5799,7 +5799,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.79,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5818,7 +5818,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.779,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5837,7 +5837,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.739,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5856,7 +5856,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.703,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5875,7 +5875,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.639,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5894,7 +5894,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.629,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5913,7 +5913,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.595,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5932,7 +5932,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.524,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5951,7 +5951,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.475,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5970,7 +5970,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.422,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -5989,7 +5989,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.396,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6008,7 +6008,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.398,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6027,7 +6027,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.379,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6046,7 +6046,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.334,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6065,7 +6065,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.296,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6084,7 +6084,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.253,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6103,7 +6103,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.217,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6122,7 +6122,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.183,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6141,7 +6141,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.151,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6160,7 +6160,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.131,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6179,7 +6179,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.116,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6198,7 +6198,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.105,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6217,7 +6217,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.088,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6236,7 +6236,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.079,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6255,7 +6255,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": 2.077,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6274,7 +6274,7 @@
       "Indicador": "Tasa de fertilidad",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6293,7 +6293,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": null,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6312,7 +6312,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 3.5610998156399,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6331,7 +6331,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 3.49723386798958,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6350,7 +6350,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 3.44743054176691,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6369,7 +6369,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 3.40229694421621,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6388,7 +6388,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 3.35622144763596,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6407,7 +6407,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 3.31693849961177,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6426,7 +6426,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 3.27412842154232,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6445,7 +6445,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 3.2204179987469,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6464,7 +6464,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 3.15375291477192,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6483,7 +6483,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 3.09913259359461,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6502,7 +6502,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 3.05459422386915,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6521,7 +6521,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 3.00500106904498,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6540,7 +6540,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.96696597438552,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6559,7 +6559,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.9395819591844,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6578,7 +6578,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.9216883785441,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6597,7 +6597,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.911170001683,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6616,7 +6616,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.90120378571083,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6635,7 +6635,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.88423643148571,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6654,7 +6654,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.85729074115345,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6673,7 +6673,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.81591887200814,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6692,7 +6692,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.77330334164225,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6711,7 +6711,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.73257068541178,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6730,7 +6730,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.69463088437118,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6749,7 +6749,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.66099754289596,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6768,7 +6768,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.62614099270944,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6787,7 +6787,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.61200318869266,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6806,7 +6806,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.59621676285258,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6825,7 +6825,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.5550534835076,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6844,7 +6844,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.50092436734704,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6863,7 +6863,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.44084938719203,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6882,7 +6882,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.38168897149485,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6901,7 +6901,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.31745661857209,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6920,7 +6920,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.25329732143847,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6939,7 +6939,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.19027461047796,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6958,7 +6958,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.13415920641198,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6977,7 +6977,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.08805824636671,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -6996,7 +6996,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.05088234370289,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7015,7 +7015,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 2.01000402655574,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7034,7 +7034,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.95213333149154,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7053,7 +7053,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.89379499634952,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7072,7 +7072,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.83097359469052,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7091,7 +7091,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.80801767033013,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7110,7 +7110,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.78086326604433,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7129,7 +7129,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.71593189812023,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7148,7 +7148,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.67515351433713,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7167,7 +7167,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.62520895526481,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7186,7 +7186,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.54785544927575,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7205,7 +7205,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.45176982660994,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7224,7 +7224,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.36163698615317,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7243,7 +7243,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.30934216855774,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7262,7 +7262,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.28319630933634,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7281,7 +7281,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.25510683013417,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7300,7 +7300,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.20531461336652,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7319,7 +7319,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.13646612916995,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7338,7 +7338,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 1.0518040406043,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7357,7 +7357,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 0.62520243689416,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7376,7 +7376,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": -0.653495206896492,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7395,7 +7395,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": -2.51030049026678,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7414,7 +7414,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": -2.96041293052007,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7433,7 +7433,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": -1.72190477685565,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7452,7 +7452,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": -0.727752243229035,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7471,7 +7471,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": -0.087895947265923,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7490,7 +7490,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 0.310851368612458,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7509,7 +7509,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 0.369232130679939,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7528,7 +7528,7 @@
       "Indicador": "Crecimiento anual de la población",
       "Valor": 0.39124515392802,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7547,7 +7547,7 @@
       "Indicador": "Población total",
       "Valor": 8160090.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7566,7 +7566,7 @@
       "Indicador": "Población total",
       "Valor": 8455915.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7585,7 +7585,7 @@
       "Indicador": "Población total",
       "Valor": 8756870.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7604,7 +7604,7 @@
       "Indicador": "Población total",
       "Valor": 9064021.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7623,7 +7623,7 @@
       "Indicador": "Población total",
       "Valor": 9377712.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7642,7 +7642,7 @@
       "Indicador": "Población total",
       "Valor": 9697790.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7661,7 +7661,7 @@
       "Indicador": "Población total",
       "Valor": 10024854.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7680,7 +7680,7 @@
       "Indicador": "Población total",
       "Valor": 10358513.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7699,7 +7699,7 @@
       "Indicador": "Población total",
       "Valor": 10697530.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7718,7 +7718,7 @@
       "Indicador": "Población total",
       "Valor": 11040280.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7737,7 +7737,7 @@
       "Indicador": "Población total",
       "Valor": 11387790.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7756,7 +7756,7 @@
       "Indicador": "Población total",
       "Valor": 11741008.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7775,7 +7775,7 @@
       "Indicador": "Población total",
       "Valor": 12099180.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7794,7 +7794,7 @@
       "Indicador": "Población total",
       "Valor": 12463537.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7813,7 +7813,7 @@
       "Indicador": "Población total",
       "Valor": 12835351.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7832,7 +7832,7 @@
       "Indicador": "Población total",
       "Valor": 13215892.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7851,7 +7851,7 @@
       "Indicador": "Población total",
       "Valor": 13606284.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7870,7 +7870,7 @@
       "Indicador": "Población total",
       "Valor": 14006812.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7889,7 +7889,7 @@
       "Indicador": "Población total",
       "Valor": 14416684.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7908,7 +7908,7 @@
       "Indicador": "Población total",
       "Valor": 14834552.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7927,7 +7927,7 @@
       "Indicador": "Población total",
       "Valor": 15258218.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7946,7 +7946,7 @@
       "Indicador": "Población total",
       "Valor": 15687297.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7965,7 +7965,7 @@
       "Indicador": "Población total",
       "Valor": 16121874.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -7984,7 +7984,7 @@
       "Indicador": "Población total",
       "Valor": 16562205.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8003,7 +8003,7 @@
       "Indicador": "Población total",
       "Valor": 17008841.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8022,7 +8022,7 @@
       "Indicador": "Población total",
       "Valor": 17461434.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8041,7 +8041,7 @@
       "Indicador": "Población total",
       "Valor": 17923536.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8060,7 +8060,7 @@
       "Indicador": "Población total",
       "Valor": 18394963.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8079,7 +8079,7 @@
       "Indicador": "Población total",
       "Valor": 18871020.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8098,7 +8098,7 @@
       "Indicador": "Población total",
       "Valor": 19348921.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8117,7 +8117,7 @@
       "Indicador": "Población total",
       "Valor": 19827010.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8136,7 +8136,7 @@
       "Indicador": "Población total",
       "Valor": 20304896.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8155,7 +8155,7 @@
       "Indicador": "Población total",
       "Valor": 20780948.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8174,7 +8174,7 @@
       "Indicador": "Población total",
       "Valor": 21254520.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8193,7 +8193,7 @@
       "Indicador": "Población total",
       "Valor": 21725188.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8212,7 +8212,7 @@
       "Indicador": "Población total",
       "Valor": 22193821.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8231,7 +8231,7 @@
       "Indicador": "Población total",
       "Valor": 22662113.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8250,7 +8250,7 @@
       "Indicador": "Población total",
       "Valor": 23131685.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8269,7 +8269,7 @@
       "Indicador": "Población total",
       "Valor": 23601337.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8288,7 +8288,7 @@
       "Indicador": "Población total",
       "Valor": 24066593.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8307,7 +8307,7 @@
       "Indicador": "Población total",
       "Valor": 24526708.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8326,7 +8326,7 @@
       "Indicador": "Población total",
       "Valor": 24979922.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8345,7 +8345,7 @@
       "Indicador": "Población total",
       "Valor": 25435671.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8364,7 +8364,7 @@
       "Indicador": "Población total",
       "Valor": 25892703.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8383,7 +8383,7 @@
       "Indicador": "Población total",
       "Valor": 26340838.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8402,7 +8402,7 @@
       "Indicador": "Población total",
       "Valor": 26785804.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8421,7 +8421,7 @@
       "Indicador": "Población total",
       "Valor": 27224686.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8440,7 +8440,7 @@
       "Indicador": "Población total",
       "Valor": 27649363.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8459,7 +8459,7 @@
       "Indicador": "Población total",
       "Valor": 28053696.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8478,7 +8478,7 @@
       "Indicador": "Población total",
       "Valor": 28438298.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8497,7 +8497,7 @@
       "Indicador": "Población total",
       "Valor": 28813101.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8516,7 +8516,7 @@
       "Indicador": "Población total",
       "Valor": 29185212.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8535,7 +8535,7 @@
       "Indicador": "Población total",
       "Valor": 29553826.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8554,7 +8554,7 @@
       "Indicador": "Población total",
       "Valor": 29912198.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8573,7 +8573,7 @@
       "Indicador": "Población total",
       "Valor": 30254079.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8592,7 +8592,7 @@
       "Indicador": "Población total",
       "Valor": 30573972.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8611,7 +8611,7 @@
       "Indicador": "Población total",
       "Valor": 30765720.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8630,7 +8630,7 @@
       "Indicador": "Población total",
       "Valor": 30565323.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8649,7 +8649,7 @@
       "Indicador": "Población total",
       "Valor": 29807592.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8668,7 +8668,7 @@
       "Indicador": "Población total",
       "Valor": 28938098.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8687,7 +8687,7 @@
       "Indicador": "Población total",
       "Valor": 28444077.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8706,7 +8706,7 @@
       "Indicador": "Población total",
       "Valor": 28237826.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8725,7 +8725,7 @@
       "Indicador": "Población total",
       "Valor": 28213017.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8744,7 +8744,7 @@
       "Indicador": "Población total",
       "Valor": 28300854.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8763,7 +8763,7 @@
       "Indicador": "Población total",
       "Valor": 28405543.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8782,7 +8782,7 @@
       "Indicador": "Población total",
       "Valor": 28516896.0,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8801,7 +8801,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 61.9199514882795,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8820,7 +8820,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 62.8367548343614,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8839,7 +8839,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 63.7926841478446,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8858,7 +8858,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 64.7948953928115,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8877,7 +8877,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 65.8271577115279,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8896,7 +8896,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 66.876288859656,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8915,7 +8915,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 67.9291065928583,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8934,7 +8934,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 68.9724286667969,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8953,7 +8953,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 69.9930728371343,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8972,7 +8972,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 70.9778568595326,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -8991,7 +8991,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 71.9135984896541,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9010,7 +9010,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 72.7833152048506,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9029,7 +9029,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 73.5987755273193,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9048,7 +9048,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 74.3860588025314,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9067,7 +9067,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 75.1511609788407,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9086,7 +9086,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 75.8928952206553,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9105,7 +9105,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 76.6100746923834,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9124,7 +9124,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 77.3015125584334,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9143,7 +9143,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 77.9660219832134,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9162,7 +9162,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 78.6024161311317,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9181,7 +9181,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 79.2095081665964,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9200,7 +9200,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 79.7854629662589,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9219,7 +9219,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 80.3313667107622,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9238,7 +9238,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 80.8475080996299,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9257,7 +9257,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 81.3384541743188,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9276,7 +9276,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 81.8081397991543,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9295,7 +9295,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 82.2604998384616,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9314,7 +9314,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 82.6994691565662,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9333,7 +9333,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 83.1289826177933,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9352,7 +9352,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 83.5529750864684,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9371,7 +9371,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 83.9741022430344,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9390,7 +9390,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 84.4092017935829,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9409,7 +9409,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 84.8766356611879,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9428,7 +9428,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 85.3657269170578,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9447,7 +9447,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 85.8624720356125,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9466,7 +9466,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 86.352867491272,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9485,7 +9485,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 86.8229097584563,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9504,7 +9504,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 87.2585953115854,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9523,7 +9523,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 87.6459206250794,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9542,7 +9542,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 87.9708821733583,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9561,7 +9561,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.219476430842,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9580,7 +9580,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.372774123042,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9599,7 +9599,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.4553810951083,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9618,7 +9618,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.522274342774,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9637,7 +9637,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.5835546444319,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9656,7 +9656,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.638673298371,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9675,7 +9675,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.6870816028803,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9694,7 +9694,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.7282308562487,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9713,7 +9713,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.7615723567652,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9732,7 +9732,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.7865574027187,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9751,7 +9751,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.8026372923982,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9770,7 +9770,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.8079278904659,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9789,7 +9789,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.8401868543141,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9808,7 +9808,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.8786817039721,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9827,7 +9827,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.9163913525251,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9846,7 +9846,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.9539804079292,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9865,7 +9865,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 88.9914428378712,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9884,7 +9884,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 89.0287726100378,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9903,7 +9903,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 89.0659636921159,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9922,7 +9922,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 89.1030100517924,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9941,7 +9941,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 89.1399056567545,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9960,7 +9960,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 89.1766444746891,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9979,7 +9979,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 89.2132204732836,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -9998,7 +9998,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 89.249627620225,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -10017,7 +10017,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 89.285859883201,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     },
     {
@@ -10036,7 +10036,7 @@
       "Indicador": "Población urbana como porcentaje del total",
       "Valor": 89.3219112298988,
       "Fuente": "Banco Mundial - World Development Indicators",
-      "Fecha descarga": "2026-07-27",
+      "Fecha descarga": "2026-08-10",
       "Error descarga": null
     }
   ]

@@ -2,10 +2,10 @@
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
     "Dataset": "Banco Mundial - Venezuela",
-    "Fecha generación": "2026-07-27",
+    "Fecha generación": "2026-08-10",
     "Número de áreas": 12,
     "Número de indicadores": 79,
-    "Número de registros": 5219
+    "Número de registros": 5226
   },
   "catalogo": [
     {
@@ -35,10 +35,10 @@
     {
       "Área temática": "Energía y ambiente",
       "ID área": "energia_y_ambiente",
-      "Registros": 331,
+      "Registros": 330,
       "Indicadores": 5,
       "Primer año": 1960,
-      "Último año": 2026,
+      "Último año": 2025,
       "Último año con dato": 2024,
       "Archivo CSV": "assets/data/world-bank/csv/ove_banco_mundial_venezuela_energia_y_ambiente.csv",
       "Archivo JSON": "assets/data/world-bank/json/ove_banco_mundial_venezuela_energia_y_ambiente.json",
@@ -47,10 +47,10 @@
     {
       "Área temática": "Género",
       "ID área": "genero",
-      "Registros": 330,
+      "Registros": 331,
       "Indicadores": 5,
       "Primer año": 1960,
-      "Último año": 2025,
+      "Último año": 2026,
       "Último año con dato": 2025,
       "Archivo CSV": "assets/data/world-bank/csv/ove_banco_mundial_venezuela_genero.csv",
       "Archivo JSON": "assets/data/world-bank/json/ove_banco_mundial_venezuela_genero.json",
@@ -71,10 +71,10 @@
     {
       "Área temática": "Macroeconomía",
       "ID área": "macroeconomia",
-      "Registros": 660,
+      "Registros": 662,
       "Indicadores": 10,
       "Primer año": 1960,
-      "Último año": 2025,
+      "Último año": 2026,
       "Último año con dato": 2025,
       "Archivo CSV": "assets/data/world-bank/csv/ove_banco_mundial_venezuela_macroeconomia.csv",
       "Archivo JSON": "assets/data/world-bank/json/ove_banco_mundial_venezuela_macroeconomia.json",
@@ -83,10 +83,10 @@
     {
       "Área temática": "Mercado laboral",
       "ID área": "mercado_laboral",
-      "Registros": 661,
+      "Registros": 660,
       "Indicadores": 10,
       "Primer año": 1960,
-      "Último año": 2026,
+      "Último año": 2025,
       "Último año con dato": 2025,
       "Archivo CSV": "assets/data/world-bank/csv/ove_banco_mundial_venezuela_mercado_laboral.csv",
       "Archivo JSON": "assets/data/world-bank/json/ove_banco_mundial_venezuela_mercado_laboral.json",
@@ -107,11 +107,11 @@
     {
       "Área temática": "Precios e inflación",
       "ID área": "precios_e_inflacion",
-      "Registros": 464,
+      "Registros": 463,
       "Indicadores": 7,
       "Primer año": 1960,
       "Último año": 2026,
-      "Último año con dato": 2025,
+      "Último año con dato": 2017,
       "Archivo CSV": "assets/data/world-bank/csv/ove_banco_mundial_venezuela_precios_e_inflacion.csv",
       "Archivo JSON": "assets/data/world-bank/json/ove_banco_mundial_venezuela_precios_e_inflacion.json",
       "Archivo Excel": "assets/data/world-bank/excel/ove_banco_mundial_venezuela_precios_e_inflacion.xlsx"
@@ -119,7 +119,7 @@
     {
       "Área temática": "Salud",
       "ID área": "salud",
-      "Registros": 463,
+      "Registros": 465,
       "Indicadores": 7,
       "Primer año": 1960,
       "Último año": 2026,
@@ -131,10 +131,10 @@
     {
       "Área temática": "Sector externo",
       "ID área": "sector_externo",
-      "Registros": 594,
+      "Registros": 597,
       "Indicadores": 9,
       "Primer año": 1960,
-      "Último año": 2025,
+      "Último año": 2026,
       "Último año con dato": 2025,
       "Archivo CSV": "assets/data/world-bank/csv/ove_banco_mundial_venezuela_sector_externo.csv",
       "Archivo JSON": "assets/data/world-bank/json/ove_banco_mundial_venezuela_sector_externo.json",
@@ -143,10 +143,10 @@
     {
       "Área temática": "Sector público e instituciones",
       "ID área": "sector_publico_e_instituciones",
-      "Registros": 264,
+      "Registros": 266,
       "Indicadores": 4,
       "Primer año": 1960,
-      "Último año": 2025,
+      "Último año": 2026,
       "Último año con dato": null,
       "Archivo CSV": "assets/data/world-bank/csv/ove_banco_mundial_venezuela_sector_publico_e_instituciones.csv",
       "Archivo JSON": "assets/data/world-bank/json/ove_banco_mundial_venezuela_sector_publico_e_instituciones.json",
