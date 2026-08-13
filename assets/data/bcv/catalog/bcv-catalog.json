@@ -1,7 +1,7 @@
 {
   "source": "Banco Central de Venezuela",
   "source_url": "https://www.bcv.org.ve",
-  "last_fetched_at": "2026-08-12T21:12:47Z",
+  "last_fetched_at": "2026-08-13T21:12:32Z",
   "datasets": [
     {
       "dataset_id": "bcv_indice_nacional_precios_consumidor",
@@ -21,22 +21,22 @@
       "source_url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_7_2.xls",
       "frequency": "monthly",
       "status": "official_source",
-      "last_fetched_at": "2026-08-12T21:12:47Z",
+      "last_fetched_at": "2026-08-13T21:12:32Z",
       "first_date": "2007-12-01",
-      "last_date": "2026-06-01",
-      "records": 223,
+      "last_date": "2026-07-01",
+      "records": 224,
       "latest": {
-        "date": "2026-06-01",
+        "date": "2026-07-01",
         "year": 2026,
-        "month": 6,
-        "month_name": "Junio",
-        "index_value": 488122054630450.06,
-        "monthly_variation_pct": 13.8,
+        "month": 7,
+        "month_name": "Julio",
+        "index_value": 585239124308517.1,
+        "monthly_variation_pct": 19.9,
         "unit": "Índice base diciembre 2007=100 y variación mensual %",
         "frequency": "monthly",
         "source": "Banco Central de Venezuela",
         "source_url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_7_2.xls",
-        "fetched_at": "2026-08-12T21:12:47Z"
+        "fetched_at": "2026-08-13T21:12:32Z"
       },
       "notes": "Serie nacional INPC normalizada desde el workbook oficial BCV 4_5_7_2.xls."
     },
@@ -47,7 +47,7 @@
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
       "frequency": "annual",
       "status": "official_source",
-      "last_fetched_at": "2026-08-12T21:12:47Z",
+      "last_fetched_at": "2026-08-13T21:12:32Z",
       "first_year": 2008,
       "last_year": 2025,
       "records": 18,
@@ -58,7 +58,7 @@
         "frequency": "annual",
         "source": "Banco Central de Venezuela",
         "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-        "fetched_at": "2026-08-12T21:12:47Z"
+        "fetched_at": "2026-08-13T21:12:32Z"
       },
       "notes": "Crecimiento anual del PIB real total normalizado desde workbook oficial BCV 5_2_1_si_anual.xlsx."
     },
@@ -69,7 +69,7 @@
       "source_url": "https://www.bcv.org.ve/estadisticas/producto-interno-bruto",
       "frequency": "monthly",
       "status": "catalogued_official_workbooks",
-      "last_fetched_at": "2026-08-12T21:12:35Z",
+      "last_fetched_at": "2026-08-13T21:12:19Z",
       "files": 10,
       "notes": "Catalogo de archivos oficiales BCV. La normalizacion de hojas se agregara por indicador."
     },
@@ -81,9 +81,9 @@
       "frequency": "daily",
       "unit": "VES por unidad de moneda extranjera",
       "status": "official_source",
-      "last_fetched_at": "2026-08-12T21:12:29Z",
+      "last_fetched_at": "2026-08-13T21:12:13Z",
       "first_date": "2026-06-26",
-      "last_date": "2026-08-12",
+      "last_date": "2026-08-13",
       "currencies": [
         "CNY",
         "EUR",
@@ -91,18 +91,18 @@
         "TRY",
         "USD"
       ],
-      "records": 95,
+      "records": 100,
       "latest_usd": {
-        "date": "2026-08-12",
+        "date": "2026-08-13",
         "currency": "USD",
-        "value": 764.3486,
+        "value": 766.8603,
         "unit": "VES por unidad de moneda extranjera",
         "frequency": "daily",
         "indicator_id": "bcv_tipo_cambio_referencia_smc_usd",
         "indicator_name": "Tipo de Cambio de Referencia SMC - USD",
         "source": "Banco Central de Venezuela",
         "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
-        "fetched_at": "2026-08-12T21:12:29Z"
+        "fetched_at": "2026-08-13T21:12:13Z"
       },
       "notes": "Datos extraidos de la pagina oficial del BCV. La serie se actualiza por fecha y moneda."
     },
@@ -115,10 +115,10 @@
       "frequency": "daily",
       "unit": "VES por USD",
       "status": "official_source",
-      "last_fetched_at": "2026-08-12T21:12:29Z",
+      "last_fetched_at": "2026-08-13T21:12:13Z",
       "first_date": "2016-01-04",
       "last_date": "2026-08-13",
-      "records": 2559,
+      "records": 2560,
       "latest": {
         "date": "2026-08-13",
         "currency": "USD",

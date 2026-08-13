@@ -2,8 +2,8 @@
   "metadata": {
     "title": "Indicadores clave de Venezuela",
     "description": "Series históricas descargables para el dashboard OVE de indicadores clave.",
-    "generated_at": "2026-08-12T21:12:59Z",
-    "records": 2967,
+    "generated_at": "2026-08-13T21:12:48Z",
+    "records": 2969,
     "indicators": [
       "desempleo_total_wdi",
       "inpc_nacional_bcv",
@@ -3370,6 +3370,19 @@
       "date": "2026-06-01",
       "year": 2026,
       "value": 13.8,
+      "unit": "% mensual"
+    },
+    {
+      "indicator_id": "inpc_nacional_bcv",
+      "indicator": "INPC nacional",
+      "area": "Nivel y condiciones de vida",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_7_2.xls",
+      "frequency": "Mensual",
+      "period": "2026-07",
+      "date": "2026-07-01",
+      "year": 2026,
+      "value": 19.9,
       "unit": "% mensual"
     },
     {
@@ -38574,6 +38587,19 @@
       "date": "2026-08-11",
       "year": 2026,
       "value": 761.2167,
+      "unit": "Bs/USD"
+    },
+    {
+      "indicator_id": "tipo_cambio_bcv_usd",
+      "indicator": "Tipo de cambio BCV",
+      "area": "Economía",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/sites/default/files/indicadores_sector_externo/2_1_1_tdc.xlsx",
+      "frequency": "Diaria",
+      "period": "2026-08-12",
+      "date": "2026-08-12",
+      "year": 2026,
+      "value": 764.3486,
       "unit": "Bs/USD"
     },
     {

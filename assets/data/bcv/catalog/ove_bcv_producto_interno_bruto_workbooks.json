@@ -6,7 +6,7 @@
     "source_url": "https://www.bcv.org.ve/estadisticas/producto-interno-bruto",
     "frequency": "monthly",
     "status": "catalogued_official_workbooks",
-    "last_fetched_at": "2026-08-12T21:12:35Z",
+    "last_fetched_at": "2026-08-13T21:12:19Z",
     "files": 10,
     "notes": "Catalogo de archivos oficiales BCV. La normalizacion de hojas se agregara por indicador."
   },
