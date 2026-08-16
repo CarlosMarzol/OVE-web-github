@@ -3,11 +3,11 @@
     "name": "uneclac cepalstat api",
     "version": "1.9.13",
     "success": true,
-    "machine": "02",
+    "machine": "03",
     "context": "public",
     "code": 200,
     "message": "",
-    "timestamp": 1785080035
+    "timestamp": 1786891397
   },
   "body": {
     "name": "Clasificación temática general",
@@ -510,7 +510,7 @@
                     "indicator_id": 3347
                   },
                   {
-                    "name": "Población con ingresos inferiores a 2.15, 3.65 y 6.85  dólares PPA por día",
+                    "name": "Población con ingresos inferiores a 3.0, 4.1 y 8.3  dólares PPA por día",
                     "order": 90,
                     "indicator_id": 160
                   },
@@ -15320,8 +15320,8 @@
   },
   "footer": {
     "records": 2861,
-    "elapsed_time": "8.50845",
-    "ip": "172.185.46.210",
+    "elapsed_time": "8.77175",
+    "ip": "4.154.182.88",
     "query": "http://api-cepalstat.cepal.org/cepalstat/api/v1/thematic-tree?lang=es&format=json"
   }
 }
