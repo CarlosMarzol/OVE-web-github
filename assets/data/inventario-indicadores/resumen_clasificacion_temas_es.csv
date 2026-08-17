@@ -4,7 +4,7 @@ Ciencia y tecnología,95
 Demografía y población,768
 Economía,528
 "Industria, energía y construcción",189
-Mercado laboral,818
+Mercado laboral,820
 Servicios,99
 Nivel y condiciones de vida (IPC),647
 Sociedad,381
@@ -28,7 +28,7 @@ Economía,Sector externo y finanzas,366
 "Industria, energía y construcción",Industria manufacturera,15
 "Industria, energía y construcción",Energía e hidrocarburos,163
 "Industria, energía y construcción",Construcción e infraestructura,11
-Mercado laboral,Empleo y desempleo,460
+Mercado laboral,Empleo y desempleo,462
 Mercado laboral,Ingresos laborales,200
 Mercado laboral,Informalidad y movilidad laboral,158
 Servicios,Comercio y consumo,28
@@ -46,7 +46,7 @@ Estadísticas experimentales,Modelos y nowcasting,0
 
 fuente,indicadores_o_recursos
 CEPALSTAT - CEPAL,2058
-OIT - ILOSTAT,756
+OIT - ILOSTAT,758
 FRED - Federal Reserve Bank of St. Louis,407
 INE Venezuela,328
 UNCTADstat - UNCTAD,99
