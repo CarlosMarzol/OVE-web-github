@@ -8,10 +8,10 @@
     "frequency": "daily",
     "unit": "VES por USD",
     "status": "official_source",
-    "last_fetched_at": "2026-08-16T20:45:49Z",
+    "last_fetched_at": "2026-08-17T20:52:31Z",
     "first_date": "2016-01-04",
     "last_date": "2026-08-17",
-    "records": 2561,
+    "records": 2562,
     "latest": {
       "date": "2026-08-17",
       "currency": "USD",
@@ -35868,6 +35868,20 @@
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/indicadores_sector_externo/2_1_1_tdc.xlsx",
       "fetched_at": "2026-08-14T20:54:52Z"
+    },
+    {
+      "date": "2026-08-14",
+      "currency": "USD",
+      "value": 771.0714,
+      "value_buy": 769.1437215,
+      "value_sell": 771.0714,
+      "unit": "VES por USD",
+      "frequency": "daily",
+      "indicator_id": "bcv_tipo_cambio_usd_usd",
+      "indicator_name": "Tipo de Cambio BCV Bs/USD - USD",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/sites/default/files/indicadores_sector_externo/2_1_1_tdc.xlsx",
+      "fetched_at": "2026-08-17T20:52:31Z"
     },
     {
       "date": "2026-08-17",
