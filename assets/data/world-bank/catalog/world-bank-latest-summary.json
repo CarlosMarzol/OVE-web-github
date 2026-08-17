@@ -2,7 +2,7 @@
   "metadata": {
     "source": "Banco Mundial - World Development Indicators",
     "country": "Venezuela, RB",
-    "last_fetched_at": "2026-08-10",
+    "last_fetched_at": "2026-08-17",
     "status": "official_source"
   },
   "indicators": {
@@ -67,6 +67,13 @@
       "indicator": "Importaciones de bienes y servicios en dólares corrientes",
       "value": 10074121350.14,
       "year": 2025,
+      "source": "Banco Mundial - World Development Indicators"
+    },
+    "current_account_usd": {
+      "code": "BN.CAB.XOKA.CD",
+      "indicator": "Balanza por cuenta corriente en dólares corrientes",
+      "value": -3870000000.0,
+      "year": 2016,
       "source": "Banco Mundial - World Development Indicators"
     },
     "women_parliament": {
