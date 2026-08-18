@@ -357,7 +357,7 @@
           {
             "id": 2210,
             "version": 10003,
-            "reportTitle": "Goods and services (BPM6): Exports and imports of goods and services, annual",
+            "reportTitle": "Balance of payments: Goods and services trade - Annual",
             "lastUpdatedDate": "2026-04-09T07:52:00",
             "category": "International trade in goods and services",
             "keywords": "trade, goods, services",
@@ -367,7 +367,7 @@
           {
             "id": 2211,
             "version": 10003,
-            "reportTitle": "Goods and services (BPM6): Trade balance indicators, annual",
+            "reportTitle": "Balance of payments: Goods and services trade balance indicators - Annual",
             "lastUpdatedDate": "2026-04-09T07:52:00",
             "category": "International trade in goods and services",
             "keywords": "Trade, indicators, balances",
@@ -377,7 +377,7 @@
           {
             "id": 2209,
             "version": 10003,
-            "reportTitle": "Goods and services (BPM6): Trade openness indicators, annual",
+            "reportTitle": "Balance of payments: Goods and services trade openness indicators - Annual",
             "lastUpdatedDate": "2026-04-09T07:52:00",
             "category": "International trade in goods and services",
             "keywords": "Trade, Indicators, Exports, Imports",
@@ -395,10 +395,10 @@
             "order": 2
           },
           {
-            "id": 1912,
-            "version": 10008,
+            "id": 2559,
+            "version": 10014,
             "reportTitle": "Foreign direct investment: Inward and outward flows and stock, annual",
-            "lastUpdatedDate": "2025-09-01T06:17:00",
+            "lastUpdatedDate": "2026-08-17T12:15:00",
             "category": "Foreign direct investment",
             "keywords": "foreign, direct, investment, flow, stock, inward, outward, FDI",
             "reportName": "US.FdiFlowsStock",
@@ -479,10 +479,10 @@
             "order": 0
           },
           {
-            "id": 2511,
-            "version": 10016,
+            "id": 2570,
+            "version": 10020,
             "reportTitle": "Commodity prices: UNCTAD Commodity Price Index - Monthly",
-            "lastUpdatedDate": "2026-07-17T13:17:00",
+            "lastUpdatedDate": "2026-08-17T07:42:00",
             "category": "Commodities prices",
             "keywords": "commodity, price, index",
             "reportName": "US.UCPI_M",
