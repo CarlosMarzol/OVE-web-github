@@ -2,13 +2,13 @@
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
     "Dataset": "INE Venezuela - catálogo de recursos oficiales",
-    "Fecha generación": "2026-08-12",
+    "Fecha generación": "2026-08-19",
     "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
     "URL portal": "https://ine.gob.ve/",
     "País": "Venezuela",
-    "Número de recursos": 328,
+    "Número de recursos": 327,
     "Recursos tabulares": 204,
-    "Documentos": 124,
+    "Documentos": 123,
     "Hojas extraídas": 220,
     "Celdas con valor extraídas": 2980320,
     "Archivo valores CSV.GZ": "assets/data/ine/csv/ove_ine_venezuela_celdas_tabulares.csv.gz"
@@ -3839,27 +3839,14 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
-      "Título": "Noticias-Agosto1.pdf",
+      "Título": "Noticias-Agosto5.pdf",
       "Categoría": "Publicaciones",
       "Tipo de recurso": "Documento",
       "Formato": "PDF",
       "Año publicación": "2026",
       "Mes publicación": "agosto",
-      "Archivo original": "Noticias-Agosto1.pdf",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/08/Noticias-Agosto1.pdf",
-      "URL portal": "https://ine.gob.ve/"
-    },
-    {
-      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
-      "País": "Venezuela",
-      "Título": "Noticias-Agosto2.pdf",
-      "Categoría": "Publicaciones",
-      "Tipo de recurso": "Documento",
-      "Formato": "PDF",
-      "Año publicación": "2026",
-      "Mes publicación": "agosto",
-      "Archivo original": "Noticias-Agosto2.pdf",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/08/Noticias-Agosto2.pdf",
+      "Archivo original": "Noticias-Agosto5.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/08/Noticias-Agosto5.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
