@@ -6,20 +6,21 @@
     "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
     "frequency": "annual",
     "status": "official_source",
-    "last_fetched_at": "2026-08-17T20:52:46Z",
+    "last_fetched_at": "2026-08-21T16:34:23Z",
     "first_year": 2008,
     "last_year": 2025,
     "records": 18,
     "latest": {
       "year": 2025,
-      "annual_real_gdp_growth_pct": 8.944487326024571,
+      "annual_real_gdp_growth_pct": 9.012862992888856,
       "unit": "Variación porcentual anual a precios de 2007",
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
-    "notes": "Crecimiento anual del PIB real total normalizado desde workbook oficial BCV 5_2_1_si_anual.xlsx."
+    "notes": "Crecimiento anual del PIB real total normalizado desde workbook oficial BCV 5_2_1_si_anual.xlsx.",
+    "source_sheet": "Var_pun%"
   },
   "observations": [
     {
@@ -29,7 +30,7 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2009,
@@ -38,7 +39,7 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2010,
@@ -47,7 +48,7 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2011,
@@ -56,7 +57,7 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2012,
@@ -65,7 +66,7 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2013,
@@ -74,7 +75,7 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2014,
@@ -83,7 +84,7 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2015,
@@ -92,7 +93,7 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2016,
@@ -101,7 +102,7 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2017,
@@ -110,7 +111,7 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2018,
@@ -119,7 +120,7 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2019,
@@ -128,7 +129,7 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2020,
@@ -137,7 +138,7 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2021,
@@ -146,43 +147,43 @@
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2022,
-      "annual_real_gdp_growth_pct": 14.917680227650166,
+      "annual_real_gdp_growth_pct": 15.103109957123323,
       "unit": "Variación porcentual anual a precios de 2007",
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2023,
-      "annual_real_gdp_growth_pct": 5.143618581513593,
+      "annual_real_gdp_growth_pct": 5.690099636766604,
       "unit": "Variación porcentual anual a precios de 2007",
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2024,
-      "annual_real_gdp_growth_pct": 9.025539143402,
+      "annual_real_gdp_growth_pct": 8.881616545123563,
       "unit": "Variación porcentual anual a precios de 2007",
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     },
     {
       "year": 2025,
-      "annual_real_gdp_growth_pct": 8.944487326024571,
+      "annual_real_gdp_growth_pct": 9.012862992888856,
       "unit": "Variación porcentual anual a precios de 2007",
       "frequency": "annual",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-      "fetched_at": "2026-08-17T20:52:46Z"
+      "fetched_at": "2026-08-21T16:34:23Z"
     }
   ]
 }
