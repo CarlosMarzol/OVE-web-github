@@ -9,6 +9,7 @@ import json
 import ssl
 import urllib.request
 from pathlib import Path
+from unicodedata import normalize
 
 import pandas as pd
 from openpyxl import Workbook
@@ -52,6 +53,27 @@ def download(url: str, path: Path) -> Path:
   path.parent.mkdir(parents=True, exist_ok=True)
   path.write_bytes(urllib.request.urlopen(request, context=context, timeout=45).read())
   return path
+
+
+def compact_name(value: str) -> str:
+  text = normalize("NFKD", value).encode("ascii", "ignore").decode("ascii")
+  return "".join(char.lower() for char in text if char.isalnum())
+
+
+def select_sheet(path: Path, candidates: list[str]) -> str:
+  workbook = pd.ExcelFile(path)
+  sheets = workbook.sheet_names
+  by_compact = {compact_name(sheet): sheet for sheet in sheets}
+  for candidate in candidates:
+    if candidate in sheets:
+      return candidate
+    match = by_compact.get(compact_name(candidate))
+    if match:
+      return match
+  raise ValueError(
+    f"None of the expected sheets {candidates!r} were found in {path.name}; "
+    f"available sheets: {sheets!r}"
+  )
 
 
 def write_dataset(slug: str, metadata: dict, rows: list[dict], fields: list[str]) -> None:
@@ -144,7 +166,8 @@ def extract_inpc(fetched_at: str) -> dict:
 def extract_gdp(fetched_at: str) -> dict:
   url = "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx"
   path = download(url, RAW_DIR / "5_2_1_si_anual.xlsx")
-  df = pd.read_excel(path, sheet_name="Var_punt%", header=None)
+  sheet_name = select_sheet(path, ["Var_punt%", "Var_pun%", "Var punt", "Variación porcentual"])
+  df = pd.read_excel(path, sheet_name=sheet_name, header=None)
   rows = []
   for _, row in df.iterrows():
     period = row.iloc[1]
@@ -176,6 +199,7 @@ def extract_gdp(fetched_at: str) -> dict:
     "records": len(rows),
     "latest": latest,
     "notes": "Crecimiento anual del PIB real total normalizado desde workbook oficial BCV 5_2_1_si_anual.xlsx.",
+    "source_sheet": sheet_name,
   }
   fields = ["year", "annual_real_gdp_growth_pct", "unit", "frequency", "source", "source_url", "fetched_at"]
   write_dataset("ove_bcv_pib_real_anual", metadata, rows, fields)
