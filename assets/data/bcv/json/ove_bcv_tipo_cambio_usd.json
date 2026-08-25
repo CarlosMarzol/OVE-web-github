@@ -8,23 +8,23 @@
     "frequency": "daily",
     "unit": "VES por USD",
     "status": "official_source",
-    "last_fetched_at": "2026-08-24T20:57:29Z",
+    "last_fetched_at": "2026-08-25T20:54:42Z",
     "first_date": "2016-01-04",
-    "last_date": "2026-08-24",
-    "records": 2567,
+    "last_date": "2026-08-25",
+    "records": 2568,
     "latest": {
-      "date": "2026-08-24",
+      "date": "2026-08-25",
       "currency": "USD",
-      "value": 784.6633,
+      "value": 785.0693,
       "unit": "VES por USD",
       "frequency": "daily",
       "indicator_id": "bcv_tipo_cambio_usd_usd",
       "indicator_name": "Tipo de Cambio BCV Bs/USD - USD",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
-      "fetched_at": "2026-08-22T20:47:29Z",
+      "fetched_at": "2026-08-25T20:54:42Z",
       "value_buy": null,
-      "value_sell": 784.6633
+      "value_sell": 785.0693
     },
     "notes": "Serie diaria USD/BCV normalizada desde el Excel historico oficial 2_1_1_tdc.xlsx y la pagina diaria del BCV."
   },
@@ -35957,15 +35957,29 @@
       "date": "2026-08-24",
       "currency": "USD",
       "value": 784.6633,
+      "value_buy": 782.70164175,
+      "value_sell": 784.6633,
+      "unit": "VES por USD",
+      "frequency": "daily",
+      "indicator_id": "bcv_tipo_cambio_usd_usd",
+      "indicator_name": "Tipo de Cambio BCV Bs/USD - USD",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/sites/default/files/indicadores_sector_externo/2_1_1_tdc.xlsx",
+      "fetched_at": "2026-08-25T20:54:42Z"
+    },
+    {
+      "date": "2026-08-25",
+      "currency": "USD",
+      "value": 785.0693,
       "unit": "VES por USD",
       "frequency": "daily",
       "indicator_id": "bcv_tipo_cambio_usd_usd",
       "indicator_name": "Tipo de Cambio BCV Bs/USD - USD",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
-      "fetched_at": "2026-08-22T20:47:29Z",
+      "fetched_at": "2026-08-25T20:54:42Z",
       "value_buy": null,
-      "value_sell": 784.6633
+      "value_sell": 785.0693
     }
   ]
 }

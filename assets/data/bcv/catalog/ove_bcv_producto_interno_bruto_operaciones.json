@@ -5,7 +5,7 @@
     "source": "Banco Central de Venezuela",
     "source_url": "https://www.bcv.org.ve/estadisticas/producto-interno-bruto",
     "status": "official_source_normalized",
-    "last_fetched_at": "2026-08-24T20:57:43Z",
+    "last_fetched_at": "2026-08-25T20:55:02Z",
     "datasets": 6,
     "notes": "Catálogo de Excel OVE creados a partir de workbooks oficiales del BCV para el apartado PIB."
   },
@@ -17,7 +17,7 @@
       "source_url": "https://www.bcv.org.ve/estadisticas/producto-interno-bruto",
       "frequency": "annual",
       "status": "official_source_normalized",
-      "last_fetched_at": "2026-08-24T20:57:43Z",
+      "last_fetched_at": "2026-08-25T20:55:02Z",
       "first_year": 1950,
       "last_period": "2017",
       "records": 135,
@@ -43,7 +43,7 @@
         "status": "",
         "source": "Banco Central de Venezuela",
         "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/7_1_14_anual.xls",
-        "fetched_at": "2026-08-24T20:57:43Z"
+        "fetched_at": "2026-08-25T20:55:02Z"
       },
       "notes": "Normalizado desde workbooks oficiales enlazados por la página Producto Interno Bruto del Banco Central de Venezuela."
     },
@@ -54,7 +54,7 @@
       "source_url": "https://www.bcv.org.ve/estadisticas/producto-interno-bruto",
       "frequency": "annual",
       "status": "official_source_normalized",
-      "last_fetched_at": "2026-08-24T20:57:43Z",
+      "last_fetched_at": "2026-08-25T20:55:02Z",
       "first_year": 1997,
       "last_period": "2017",
       "records": 882,
@@ -80,7 +80,7 @@
         "status": "Preliminar",
         "source": "Banco Central de Venezuela",
         "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/7_1_7_anual.xls",
-        "fetched_at": "2026-08-24T20:57:43Z"
+        "fetched_at": "2026-08-25T20:55:02Z"
       },
       "notes": "Normalizado desde workbooks oficiales enlazados por la página Producto Interno Bruto del Banco Central de Venezuela."
     },
@@ -91,7 +91,7 @@
       "source_url": "https://www.bcv.org.ve/estadisticas/producto-interno-bruto",
       "frequency": "annual",
       "status": "official_source_normalized",
-      "last_fetched_at": "2026-08-24T20:57:43Z",
+      "last_fetched_at": "2026-08-25T20:55:02Z",
       "first_year": 1997,
       "last_period": "2025",
       "records": 244,
@@ -117,7 +117,7 @@
         "status": "Preliminar",
         "source": "Banco Central de Venezuela",
         "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_anual.xlsx",
-        "fetched_at": "2026-08-24T20:57:43Z"
+        "fetched_at": "2026-08-25T20:55:02Z"
       },
       "notes": "Normalizado desde workbooks oficiales enlazados por la página Producto Interno Bruto del Banco Central de Venezuela."
     },
@@ -128,7 +128,7 @@
       "source_url": "https://www.bcv.org.ve/estadisticas/producto-interno-bruto",
       "frequency": "annual/quarterly",
       "status": "official_source_normalized",
-      "last_fetched_at": "2026-08-24T20:57:43Z",
+      "last_fetched_at": "2026-08-25T20:55:02Z",
       "first_year": 1997,
       "last_period": "2026-T2",
       "records": 652,
@@ -154,7 +154,7 @@
         "status": "Preliminar",
         "source": "Banco Central de Venezuela",
         "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_1_si_trim.xlsx",
-        "fetched_at": "2026-08-24T20:57:43Z"
+        "fetched_at": "2026-08-25T20:55:02Z"
       },
       "notes": "Normalizado desde workbooks oficiales enlazados por la página Producto Interno Bruto del Banco Central de Venezuela."
     },
@@ -165,7 +165,7 @@
       "source_url": "https://www.bcv.org.ve/estadisticas/producto-interno-bruto",
       "frequency": "annual",
       "status": "official_source_normalized",
-      "last_fetched_at": "2026-08-24T20:57:43Z",
+      "last_fetched_at": "2026-08-25T20:55:02Z",
       "first_year": 1997,
       "last_period": "2025",
       "records": 1037,
@@ -191,7 +191,7 @@
         "status": "Preliminar",
         "source": "Banco Central de Venezuela",
         "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_4_ae_anual.xlsx",
-        "fetched_at": "2026-08-24T20:57:43Z"
+        "fetched_at": "2026-08-25T20:55:02Z"
       },
       "notes": "Normalizado desde workbooks oficiales enlazados por la página Producto Interno Bruto del Banco Central de Venezuela."
     },
@@ -202,7 +202,7 @@
       "source_url": "https://www.bcv.org.ve/estadisticas/producto-interno-bruto",
       "frequency": "annual/quarterly",
       "status": "official_source_normalized",
-      "last_fetched_at": "2026-08-24T20:57:43Z",
+      "last_fetched_at": "2026-08-25T20:55:02Z",
       "first_year": 1997,
       "last_period": "2026-T2",
       "records": 4216,
@@ -228,7 +228,7 @@
         "status": "Preliminar",
         "source": "Banco Central de Venezuela",
         "source_url": "https://www.bcv.org.ve/sites/default/files/cuentas_macroeconomicas/5_2_4_ae_trim.xlsx",
-        "fetched_at": "2026-08-24T20:57:43Z"
+        "fetched_at": "2026-08-25T20:55:02Z"
       },
       "notes": "Normalizado desde workbooks oficiales enlazados por la página Producto Interno Bruto del Banco Central de Venezuela."
     }
