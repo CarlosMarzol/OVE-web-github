@@ -1,10 +1,10 @@
 ﻿tema_ove,indicadores_o_recursos
 Agricultura y medio ambiente,257
 Ciencia y tecnología,95
-Demografía y población,768
-Economía,528
+Demografía y población,769
+Economía,530
 "Industria, energía y construcción",189
-Mercado laboral,820
+Mercado laboral,819
 Servicios,99
 Nivel y condiciones de vida (IPC),647
 Sociedad,380
@@ -12,31 +12,31 @@ Estadísticas experimentales,2
 
 tema_ove,subarea_ove,indicadores_o_recursos
 Agricultura y medio ambiente,Agricultura,35
-Agricultura y medio ambiente,Agua,85
+Agricultura y medio ambiente,Agua,86
 Agricultura y medio ambiente,Residuos y protección ambiental,8
 Agricultura y medio ambiente,Cuentas ambientales,7
-Agricultura y medio ambiente,Otras operaciones medioambientales,122
-Ciencia y tecnología,Investigación y desarrollo,12
+Agricultura y medio ambiente,Otras operaciones medioambientales,121
+Ciencia y tecnología,Investigación y desarrollo,11
 Ciencia y tecnología,Innovación empresarial,33
-Ciencia y tecnología,Conectividad y capacidades digitales,50
-Demografía y población,Población,690
+Ciencia y tecnología,Conectividad y capacidades digitales,51
+Demografía y población,Población,691
 Demografía y población,Natalidad y mortalidad,67
 Demografía y población,Migración y movilidad,11
-Economía,Actividad económica,97
+Economía,Actividad económica,98
 Economía,Precios e inflación,65
-Economía,Sector externo y finanzas,366
+Economía,Sector externo y finanzas,367
 "Industria, energía y construcción",Industria manufacturera,15
 "Industria, energía y construcción",Energía e hidrocarburos,163
 "Industria, energía y construcción",Construcción e infraestructura,11
-Mercado laboral,Empleo y desempleo,462
-Mercado laboral,Ingresos laborales,200
+Mercado laboral,Empleo y desempleo,463
+Mercado laboral,Ingresos laborales,198
 Mercado laboral,Informalidad y movilidad laboral,158
 Servicios,Comercio y consumo,28
 Servicios,"Turismo, transporte y logística",22
 Servicios,Servicios digitales y profesionales,49
-Nivel y condiciones de vida (IPC),Condiciones de vida,315
+Nivel y condiciones de vida (IPC),Condiciones de vida,318
 Nivel y condiciones de vida (IPC),Costo de vida e IPC,273
-Nivel y condiciones de vida (IPC),"Salud, educación y vivienda",59
+Nivel y condiciones de vida (IPC),"Salud, educación y vivienda",56
 Sociedad,Seguridad y convivencia,7
 Sociedad,"Género, juventud y grupos vulnerables",32
 Sociedad,Participación y comunidad,341
@@ -45,7 +45,7 @@ Estadísticas experimentales,Datos geoespaciales,0
 Estadísticas experimentales,Modelos y nowcasting,0
 
 fuente,indicadores_o_recursos
-CEPALSTAT - CEPAL,2058
+CEPALSTAT - CEPAL,2060
 OIT - ILOSTAT,758
 FRED - Federal Reserve Bank of St. Louis,407
 INE Venezuela,327
@@ -55,7 +55,7 @@ FMI - World Economic Outlook,36
 Banco Central de Venezuela,15
 OVE - Indicadores clave,6
 
-clasificaciones_baja_confianza,90
+clasificaciones_baja_confianza,92
 subareas_baja_confianza,0
 indicadores_traducidos,518
 indicadores_pendientes_traduccion,24

@@ -7,7 +7,7 @@
     "context": "public",
     "code": 200,
     "message": "",
-    "timestamp": 1786891397
+    "timestamp": 1787759735
   },
   "body": {
     "name": "Clasificación temática general",
@@ -563,6 +563,16 @@
                     "name": "Distribución de la población por tramos de ingreso",
                     "order": 190,
                     "indicator_id": 3335
+                  },
+                  {
+                    "name": "Incidencia de la pobreza multidimensional por grupo de edad y área",
+                    "order": 195,
+                    "indicator_id": 5595
+                  },
+                  {
+                    "name": "Intensidad de la pobreza multidimensional por grupo de edad y área",
+                    "order": 197,
+                    "indicator_id": 5596
                   },
                   {
                     "name": "Incidencia ajustada de la pobreza multidimensional por grupo de edad y área",
@@ -3516,14 +3526,14 @@
                 "area_id": 483,
                 "children": [
                   {
-                    "name": "Saldo de la deuda pública en millones de dólares",
-                    "order": 0,
-                    "indicator_id": 1239
-                  },
-                  {
                     "name": "Saldo de la deuda pública en porcentajes del PIB",
                     "order": 0,
                     "indicator_id": 1240
+                  },
+                  {
+                    "name": "Saldo de la deuda pública en millones de dólares",
+                    "order": 0,
+                    "indicator_id": 1239
                   }
                 ]
               }
@@ -3652,7 +3662,7 @@
                     "area_id": 716,
                     "children": [
                       {
-                        "name": "Superficie del país",
+                        "name": "Superficie del país, por tipo de área",
                         "order": 10,
                         "indicator_id": 2035
                       },
@@ -3839,17 +3849,17 @@
                     "area_id": 2670,
                     "children": [
                       {
-                        "name": "Producción de energía",
+                        "name": "Producción de energía, por producto energético",
                         "order": 10,
                         "indicator_id": 5672
                       },
                       {
-                        "name": "Oferta de energía primaria y secundaria",
+                        "name": "Oferta total de energía, por producto energético",
                         "order": 20,
                         "indicator_id": 2487
                       },
                       {
-                        "name": "Consumo final de energía",
+                        "name": "Consumo final de energía, por producto energético",
                         "order": 30,
                         "indicator_id": 5730
                       }
@@ -3861,7 +3871,7 @@
                     "area_id": 2671,
                     "children": [
                       {
-                        "name": "Oferta de energía primaria renovable y no renovable, por tipo de energía",
+                        "name": "Oferta de energía primaria renovable y no renovable, por producto energético",
                         "order": 10,
                         "indicator_id": 2486
                       },
@@ -3871,7 +3881,7 @@
                         "indicator_id": 3154
                       },
                       {
-                        "name": "Composición de la oferta de energía primaria renovable, por tipo de energía",
+                        "name": "Composición de la oferta de energía primaria renovable, por producto energético",
                         "order": 30,
                         "indicator_id": 4236
                       },
@@ -3952,7 +3962,7 @@
                     "area_id": 2674,
                     "children": [
                       {
-                        "name": "Inversión pública en energías renovables",
+                        "name": "Inversión pública en energías renovables, por fuente de energía",
                         "order": 10,
                         "indicator_id": 4244
                       },
@@ -4015,12 +4025,12 @@
                     "area_id": 726,
                     "children": [
                       {
-                        "name": "Producción de pesca de captura",
+                        "name": "Producción de pesca de captura, por tipo de pesquería",
                         "order": 10,
                         "indicator_id": 2019
                       },
                       {
-                        "name": "Producción acuícola",
+                        "name": "Producción acuícola, por tipo de agua",
                         "order": 20,
                         "indicator_id": 2020
                       }
@@ -4032,7 +4042,7 @@
                     "area_id": 727,
                     "children": [
                       {
-                        "name": "Superficie cosechada de los principales cultivos",
+                        "name": "Superficie cosechada, por cultivo",
                         "order": 10,
                         "indicator_id": 1740
                       },
@@ -4047,7 +4057,7 @@
                         "indicator_id": 2022
                       },
                       {
-                        "name": "Consumo de plaguicidas",
+                        "name": "Consumo de plaguicidas, por tipo de plaguicida",
                         "order": 40,
                         "indicator_id": 2039
                       },
@@ -4134,7 +4144,7 @@
                         "indicator_id": 3351
                       },
                       {
-                        "name": "Emisiones de gases de efecto invernadero (GEI) del sector energético",
+                        "name": "Emisiones de gases de efecto invernadero (GEI), por subsector energético",
                         "order": 40,
                         "indicator_id": 4462
                       },
@@ -4149,7 +4159,7 @@
                         "indicator_id": 4461
                       },
                       {
-                        "name": "Emisiones de dióxido de carbono (CO2), excluyendo el cambio de uso de la tierra y la silvicultura",
+                        "name": "Emisiones de dióxido de carbono (CO2) excluyendo el cambio de uso de la tierra y la silvicultura",
                         "order": 70,
                         "indicator_id": 3158
                       },
@@ -4176,7 +4186,7 @@
                     "area_id": 733,
                     "children": [
                       {
-                        "name": "Consumo de todas las sustancias que agotan la capa de ozono (SAO)",
+                        "name": "Consumo de sustancias que agotan la capa de ozono (SAO), por SAO",
                         "order": 10,
                         "indicator_id": 2037
                       }
@@ -4336,7 +4346,7 @@
                     "area_id": 742,
                     "children": [
                       {
-                        "name": "Acuerdos ambientales multilaterales",
+                        "name": "Acuerdos ambientales multilaterales, por estado",
                         "order": 10,
                         "indicator_id": 2031
                       }
@@ -5118,7 +5128,7 @@
                         "area_id": 1860,
                         "children": [
                           {
-                            "name": "Consumo de plaguicidas",
+                            "name": "Consumo de plaguicidas, por tipo de plaguicida",
                             "order": 10,
                             "indicator_id": 2039
                           }
@@ -6930,6 +6940,11 @@
                             "indicator_id": 4296
                           },
                           {
+                            "name": "Estado trófico de la calidad del agua del lago (%) EN_LKW_QLTRST",
+                            "order": 0,
+                            "indicator_id": 4521
+                          },
+                          {
                             "name": "Cambio de área total de manglares (%) EN_WBE_MANGC",
                             "order": 0,
                             "indicator_id": 4519
@@ -6938,11 +6953,6 @@
                             "name": "Turbidez de la calidad del agua del lago (%) EN_LKW_QLTRB",
                             "order": 0,
                             "indicator_id": 4520
-                          },
-                          {
-                            "name": "Estado trófico de la calidad del agua del lago (%) EN_LKW_QLTRST",
-                            "order": 0,
-                            "indicator_id": 4521
                           },
                           {
                             "name": "Variación del caudal máximo del río (%) EN_RVR_MXRVFLC",
@@ -10130,6 +10140,16 @@
                         "area_id": 2219,
                         "children": [
                           {
+                            "name": "Proporción de la población satisfecha con su última experiencia en servicios públicos, servicios de salud (%) SP_PSR_SATIS_HLTH",
+                            "order": 0,
+                            "indicator_id": 5134
+                          },
+                          {
+                            "name": "Proporción de la población satisfecha con su última experiencia en servicios públicos, servicios de educación primaria (%) SP_PSR_SATIS_PRM",
+                            "order": 0,
+                            "indicator_id": 5135
+                          },
+                          {
                             "name": "Proporción de la población satisfecha con su última experiencia en servicios públicos, servicios gubernamentales (%) SP_PSR_SATIS_GOV",
                             "order": 0,
                             "indicator_id": 5136
@@ -10148,16 +10168,6 @@
                             "name": "Proporción de la población que dice que, en general, está satisfecha con la calidad de los servicios gubernamentales (%) SP_PSR_OSATIS_GOV",
                             "order": 0,
                             "indicator_id": 5139
-                          },
-                          {
-                            "name": "Proporción de la población satisfecha con su última experiencia en servicios públicos, servicios de salud (%) SP_PSR_SATIS_HLTH",
-                            "order": 0,
-                            "indicator_id": 5134
-                          },
-                          {
-                            "name": "Proporción de la población satisfecha con su última experiencia en servicios públicos, servicios de educación primaria (%) SP_PSR_SATIS_PRM",
-                            "order": 0,
-                            "indicator_id": 5135
                           },
                           {
                             "name": "Proporción de población satisfecha con su última experiencia con los servicios públicos, servicios de educación secundaria (%) SP_PSR_SATIS_SEC",
@@ -12134,11 +12144,6 @@
                         "indicator_id": 4445
                       },
                       {
-                        "name": "Porcentaje de personas que tiene disponibilidad de teléfono",
-                        "order": 0,
-                        "indicator_id": 4439
-                      },
-                      {
                         "name": "Uso de combustibles sólidos para cocinar",
                         "order": 0,
                         "indicator_id": 4433
@@ -12157,6 +12162,11 @@
                         "name": "Porcentaje de personas que tiene disponibilidad de celular",
                         "order": 0,
                         "indicator_id": 4440
+                      },
+                      {
+                        "name": "Porcentaje de personas que tiene disponibilidad de teléfono",
+                        "order": 0,
+                        "indicator_id": 4439
                       },
                       {
                         "name": "Porcentaje de hogares con disponibilidad de agua potable",
@@ -15319,9 +15329,9 @@
     ]
   },
   "footer": {
-    "records": 2861,
-    "elapsed_time": "8.77175",
-    "ip": "4.154.182.88",
+    "records": 2863,
+    "elapsed_time": "9.13509",
+    "ip": "20.29.29.25",
     "query": "http://api-cepalstat.cepal.org/cepalstat/api/v1/thematic-tree?lang=es&format=json"
   }
 }

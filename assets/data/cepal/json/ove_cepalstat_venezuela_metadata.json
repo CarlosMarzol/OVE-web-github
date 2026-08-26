@@ -1,14 +1,14 @@
 {
   "Organización": "Observatorio Venezolano de Economía",
   "Dataset": "CEPALSTAT - Venezuela",
-  "Fecha generación": "2026-08-16",
+  "Fecha generación": "2026-08-26",
   "Fuente": "CEPALSTAT - CEPAL",
   "URL fuente": "https://statistics.cepal.org/portal/cepalstat/open-data.html?lang=es",
   "API": "https://api-cepalstat.cepal.org/apispec_1.json",
   "País": "Venezuela (República Bolivariana de)",
   "Código país": "VEN",
   "ID país CEPALSTAT": 259,
-  "Número de indicadores catalogados": 2058,
-  "Número de indicadores con datos": 956,
-  "Número de registros": 150122
+  "Número de indicadores catalogados": 2060,
+  "Número de indicadores con datos": 688,
+  "Número de registros": 116379
 }
