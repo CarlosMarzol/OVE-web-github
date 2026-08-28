@@ -1,7 +1,7 @@
 {
   "Organización": "Observatorio Venezolano de Economía",
   "Dataset": "UNCTADstat - Venezuela",
-  "Fecha generación": "2026-08-18",
+  "Fecha generación": "2026-08-28",
   "Fuente": "UNCTADstat - UNCTAD",
   "URL fuente": "https://unctadstat.unctad.org/datacentre/",
   "API catálogo": "https://unctadstat-api.unctad.org/api/datacenter/en",
@@ -11,7 +11,7 @@
   "Número de reportes catalogados": 99,
   "Número de reportes con valores": 56,
   "Número de archivos bulk catalogados": 120,
-  "Número de valores extraídos": 85066,
+  "Número de valores extraídos": 85325,
   "Primer año": 1948,
   "Último año": 2050,
   "Límite automático de descarga por archivo MB": 20.0,

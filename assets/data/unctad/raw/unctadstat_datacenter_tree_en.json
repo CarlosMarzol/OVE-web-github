@@ -109,10 +109,10 @@
             "order": 10
           },
           {
-            "id": 1973,
-            "version": 10001,
+            "id": 2481,
+            "version": 10003,
             "reportTitle": "Merchandise: Revealed Comparative Advantage index - Annual (analytical)",
-            "lastUpdatedDate": "2025-11-04T13:38:00",
+            "lastUpdatedDate": "2026-08-25T13:15:00",
             "category": "Trade indicators",
             "keywords": "Revealed comparative advantage index",
             "reportName": "US.RCA",
@@ -441,10 +441,10 @@
         "title": "Inflation and exchange rates",
         "reports": [
           {
-            "id": 546,
-            "version": 10001,
+            "id": 2553,
+            "version": 10004,
             "reportTitle": "Consumer price indices, annual (analytical)",
-            "lastUpdatedDate": "2023-07-18T16:51:00",
+            "lastUpdatedDate": "2026-08-28T08:04:00",
             "category": "Economic trends",
             "keywords": "Consumer Price Indices, CPI",
             "reportName": "US.Cpi_A",
@@ -747,7 +747,7 @@
           {
             "id": 2282,
             "version": 10007,
-            "reportTitle": "Liner shipping: Port connectivity index - Quarterly (analytical)",
+            "reportTitle": "Port liner shipping connectivity index, quarterly (analytical)",
             "lastUpdatedDate": "2026-06-26T14:20:00",
             "category": "Maritime transport",
             "keywords": "maritime, transport, connectivity, ports, index",
@@ -839,7 +839,7 @@
           {
             "id": 2121,
             "version": 10002,
-            "reportTitle": "Biotrade: Revealed Comparative Advantage index - Annual (analytical)",
+            "reportTitle": "DISCONTINUED - Biotrade: Revealed Comparative Advantage index - Annual (analytical)",
             "lastUpdatedDate": "2025-11-28T16:02:00",
             "category": "Merchandise biotrade",
             "keywords": "Export, import, merchandise, trade, Revealed Comparative Advantage, RCA, biotrade, biodiversity",
@@ -849,7 +849,7 @@
           {
             "id": 2120,
             "version": 10002,
-            "reportTitle": "Biotrade: Product concentration index - Annual (analytical)",
+            "reportTitle": "DISCONTINUED - Biotrade: Product concentration index - Annual (analytical)",
             "lastUpdatedDate": "2025-11-28T16:02:00",
             "category": "International trade in goods and services",
             "keywords": "Export, import, merchandise, trade, product concentration, biotrade, biodiversity",
@@ -859,7 +859,7 @@
           {
             "id": 2124,
             "version": 10002,
-            "reportTitle": "Biotrade: Market concentration and structural change indices - Annual (analytical)",
+            "reportTitle": "DISCONTINUED - Biotrade: Market concentration and structural change indices - Annual (analytical)",
             "lastUpdatedDate": "2025-11-28T16:02:00",
             "category": "Environment and related trade",
             "keywords": "Export, import, merchandise, trade, market concentration, structural change, biotrade, biodiversity",
