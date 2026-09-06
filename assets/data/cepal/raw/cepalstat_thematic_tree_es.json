@@ -7,7 +7,7 @@
     "context": "public",
     "code": 200,
     "message": "",
-    "timestamp": 1787759735
+    "timestamp": 1788714520
   },
   "body": {
     "name": "Clasificación temática general",
@@ -153,6 +153,36 @@
                     "area_id": 809,
                     "children": [
                       {
+                        "name": "Cantidad de mujeres según condición de maternidad por grupos de edad",
+                        "order": 0,
+                        "indicator_id": 2499
+                      },
+                      {
+                        "name": "Cantidad de mujeres según maternidad por condición indígena y grupos de edad",
+                        "order": 0,
+                        "indicator_id": 4261
+                      },
+                      {
+                        "name": "Distribución relativa de mujeres según maternidad por condición indígena y grupos de edad",
+                        "order": 0,
+                        "indicator_id": 4262
+                      },
+                      {
+                        "name": "Porcentaje de madres según condición indígena y grupos de edad",
+                        "order": 0,
+                        "indicator_id": 4263
+                      },
+                      {
+                        "name": "Cantidad de mujeres según condición de maternidad por edad simple",
+                        "order": 0,
+                        "indicator_id": 2498
+                      },
+                      {
+                        "name": "Cantidad de mujeres según maternidad por grupos de edad",
+                        "order": 0,
+                        "indicator_id": 2514
+                      },
+                      {
                         "name": "Cantidad de mujeres según maternidad por condición indígena y edad simple",
                         "order": 0,
                         "indicator_id": 4258
@@ -211,36 +241,6 @@
                         "name": "Porcentaje de madres según edad simple",
                         "order": 0,
                         "indicator_id": 4331
-                      },
-                      {
-                        "name": "Cantidad de mujeres según condición de maternidad por grupos de edad",
-                        "order": 0,
-                        "indicator_id": 2499
-                      },
-                      {
-                        "name": "Cantidad de mujeres según maternidad por condición indígena y grupos de edad",
-                        "order": 0,
-                        "indicator_id": 4261
-                      },
-                      {
-                        "name": "Distribución relativa de mujeres según maternidad por condición indígena y grupos de edad",
-                        "order": 0,
-                        "indicator_id": 4262
-                      },
-                      {
-                        "name": "Porcentaje de madres según condición indígena y grupos de edad",
-                        "order": 0,
-                        "indicator_id": 4263
-                      },
-                      {
-                        "name": "Cantidad de mujeres según condición de maternidad por edad simple",
-                        "order": 0,
-                        "indicator_id": 2498
-                      },
-                      {
-                        "name": "Cantidad de mujeres según maternidad por grupos de edad",
-                        "order": 0,
-                        "indicator_id": 2514
                       },
                       {
                         "name": "Porcentaje de mujeres según condición de maternidad por grupos de edad",
@@ -2441,16 +2441,6 @@
                     "area_id": 865,
                     "children": [
                       {
-                        "name": "Tasa de crecimiento anual del índice de precios al consumidor subyacente: diciembre a diciembre",
-                        "order": 0,
-                        "indicator_id": 4145
-                      },
-                      {
-                        "name": "Tasa de crecimiento anual del índice de precios al consumidor No transable: diciembre a diciembre",
-                        "order": 0,
-                        "indicator_id": 4237
-                      },
-                      {
                         "name": "Tasa de crecimiento anual del índice de precios al consumidor transables: diciembre a diciembre\r\n",
                         "order": 0,
                         "indicator_id": 4238
@@ -2459,6 +2449,16 @@
                         "name": "Tasa de crecimiento anual del índice de precios al consumidor alimentos: diciembre a diciembre",
                         "order": 0,
                         "indicator_id": 2929
+                      },
+                      {
+                        "name": "Tasa de crecimiento anual del índice de precios al consumidor subyacente: diciembre a diciembre",
+                        "order": 0,
+                        "indicator_id": 4145
+                      },
+                      {
+                        "name": "Tasa de crecimiento anual del índice de precios al consumidor No transable: diciembre a diciembre",
+                        "order": 0,
+                        "indicator_id": 4237
                       },
                       {
                         "name": "Tasa de crecimiento anual del índice de precios al consumidor: diciembre a diciembre",
@@ -2612,14 +2612,14 @@
                     "area_id": 2648,
                     "children": [
                       {
-                        "name": "Productividad laboral por rama de actividad económica (Valor agregado a precios corrientes en dólares de Estados Unidos)",
-                        "order": 0,
-                        "indicator_id": 5674
-                      },
-                      {
                         "name": "Productividad laboral por rama de actividad económica (Valor Agregado a precios constantes de 2018 en dólares de Estados Unidos)\r\n",
                         "order": 0,
                         "indicator_id": 5668
+                      },
+                      {
+                        "name": "Productividad laboral por rama de actividad económica (Valor agregado a precios corrientes en dólares de Estados Unidos)",
+                        "order": 0,
+                        "indicator_id": 5674
                       },
                       {
                         "name": "Productividad laboral (PIB a precios constantes de 2018 en dólares de Estados Unidos)",
@@ -2670,19 +2670,14 @@
                     "area_id": 435,
                     "children": [
                       {
-                        "name": "Indices de producción industrial, Base 2010",
-                        "order": 0,
-                        "indicator_id": 3466
-                      },
-                      {
                         "name": "Agregados macroeconómicos de estadísticas industriales",
                         "order": 0,
                         "indicator_id": 4569
                       },
                       {
-                        "name": "Número de ocupados total de la industria manufacturera por país, actividad económica y sexo",
+                        "name": "Indices de producción industrial, Base 2010",
                         "order": 0,
-                        "indicator_id": 4967
+                        "indicator_id": 3466
                       },
                       {
                         "name": "Valor bruto de la producción por actividad económica",
@@ -2733,6 +2728,11 @@
                         "name": "Número de establecimientos por actividad económica",
                         "order": 0,
                         "indicator_id": 4632
+                      },
+                      {
+                        "name": "Número de ocupados total de la industria manufacturera por país, actividad económica y sexo",
+                        "order": 0,
+                        "indicator_id": 4967
                       },
                       {
                         "name": "Índices de producción industrial, Base 2005",
@@ -5840,14 +5840,14 @@
                         "area_id": 2294,
                         "children": [
                           {
-                            "name": "Porcentaje de infección del torrente sanguíneo debida a Escherichia coli resistente a la cefalosporina de 3a generación (por ejemplo, ESBL- E. coli) entre los pacientes que buscan atención y cuya muestra de sangre se toma y se analiza (%) SH_BLD_ECOLI",
-                            "order": 0,
-                            "indicator_id": 4282
-                          },
-                          {
                             "name": "Porcentaje de infección del torrente sanguíneo debida a Staphylococcus aureus resistente a la meticilina (MRSA) entre los pacientes que buscan atención y cuya muestra de sangre se toma y se analiza (%) SH_BLD_MRSA",
                             "order": 0,
                             "indicator_id": 4281
+                          },
+                          {
+                            "name": "Porcentaje de infección del torrente sanguíneo debida a Escherichia coli resistente a la cefalosporina de 3a generación (por ejemplo, ESBL- E. coli) entre los pacientes que buscan atención y cuya muestra de sangre se toma y se analiza (%) SH_BLD_ECOLI",
+                            "order": 0,
+                            "indicator_id": 4282
                           }
                         ]
                       }
@@ -6398,14 +6398,14 @@
                         "area_id": 1958,
                         "children": [
                           {
-                            "name": "Proporción de mujeres en puestos directivos - 19ª CIET (%) IC_GEN_MGTL_19ICLS",
-                            "order": 0,
-                            "indicator_id": 5089
-                          },
-                          {
                             "name": "Proporción de mujeres en puestos directivos superiores e intermedios - 19ª CIET (%) IC_GEN_MGTN_19ICLS",
                             "order": 0,
                             "indicator_id": 5091
+                          },
+                          {
+                            "name": "Proporción de mujeres en puestos directivos - 19ª CIET (%) IC_GEN_MGTL_19ICLS",
+                            "order": 0,
+                            "indicator_id": 5089
                           },
                           {
                             "name": "Proporción de mujeres en cargos directivos (en porcentajes) - 13th ICLS IC_GEN_MGTL",
@@ -6697,11 +6697,6 @@
                         "area_id": 1975,
                         "children": [
                           {
-                            "name": "Total de aguas residuales tratadas (millones de m3/ año) EN_WWT_TREAT",
-                            "order": 0,
-                            "indicator_id": 4344
-                          },
-                          {
                             "name": "Total de aguas residuales generadas (millones de m3 / año) EN_WWT_GEN",
                             "order": 0,
                             "indicator_id": 4345
@@ -6710,6 +6705,11 @@
                             "name": "Proporción de aguas residuales tratadas, por actividad y localización (%) EN_WWT_TREATR",
                             "order": 0,
                             "indicator_id": 4346
+                          },
+                          {
+                            "name": "Total de aguas residuales tratadas (millones de m3/ año) EN_WWT_TREAT",
+                            "order": 0,
+                            "indicator_id": 4344
                           },
                           {
                             "name": "Total de aguas residuales tratadas de forma segura (millones de m3/año) EN_WWT_TREAT_SF",
@@ -6865,6 +6865,26 @@
                         "area_id": 1984,
                         "children": [
                           {
+                            "name": "Extensión de los humedales interiores (kilómetros cuadrados) EN_WBE_INWTL",
+                            "order": 0,
+                            "indicator_id": 4296
+                          },
+                          {
+                            "name": "Estado trófico de la calidad del agua del lago (%) EN_LKW_QLTRST",
+                            "order": 0,
+                            "indicator_id": 4521
+                          },
+                          {
+                            "name": "Cambio de área total de manglares (%) EN_WBE_MANGC",
+                            "order": 0,
+                            "indicator_id": 4519
+                          },
+                          {
+                            "name": "Turbidez de la calidad del agua del lago (%) EN_LKW_QLTRB",
+                            "order": 0,
+                            "indicator_id": 4520
+                          },
+                          {
                             "name": "Área de agua permanente de lagos y ríos (kilómetros cuadrados) EN_LKRV_PWAN",
                             "order": 0,
                             "indicator_id": 4501
@@ -6935,24 +6955,9 @@
                             "indicator_id": 4513
                           },
                           {
-                            "name": "Extensión de los humedales interiores (kilómetros cuadrados) EN_WBE_INWTL",
+                            "name": "Variación mínima de la superficie de agua del embalse (%) EN_RSRV_MNWAC",
                             "order": 0,
-                            "indicator_id": 4296
-                          },
-                          {
-                            "name": "Estado trófico de la calidad del agua del lago (%) EN_LKW_QLTRST",
-                            "order": 0,
-                            "indicator_id": 4521
-                          },
-                          {
-                            "name": "Cambio de área total de manglares (%) EN_WBE_MANGC",
-                            "order": 0,
-                            "indicator_id": 4519
-                          },
-                          {
-                            "name": "Turbidez de la calidad del agua del lago (%) EN_LKW_QLTRB",
-                            "order": 0,
-                            "indicator_id": 4520
+                            "indicator_id": 5442
                           },
                           {
                             "name": "Variación del caudal máximo del río (%) EN_RVR_MXRVFLC",
@@ -6973,11 +6978,6 @@
                             "name": "Caudal mínimo (m3/s) EN_RVR_MNRVFLN",
                             "order": 0,
                             "indicator_id": 5570
-                          },
-                          {
-                            "name": "Variación mínima de la superficie de agua del embalse (%) EN_RSRV_MNWAC",
-                            "order": 0,
-                            "indicator_id": 5442
                           },
                           {
                             "name": "Cantidad de ríos a nivel nacional (en millones de metros cúbicos por año) EN_WBE_NDQTRVR",
@@ -7621,14 +7621,14 @@
                         "area_id": 2037,
                         "children": [
                           {
-                            "name": "Valor añadido del sector manufacturero per cápita (en dólares estadounidenses constantes de 2020) NV_IND_MANFPC",
-                            "order": 0,
-                            "indicator_id": 4211
-                          },
-                          {
                             "name": "Valor agregado manufacturero (dólares corrientes de los Estados Unidos) como proporción del PIB (%) NV_IND_MANF_CD",
                             "order": 0,
                             "indicator_id": 4353
+                          },
+                          {
+                            "name": "Valor añadido del sector manufacturero per cápita (en dólares estadounidenses constantes de 2020) NV_IND_MANFPC",
+                            "order": 0,
+                            "indicator_id": 4211
                           },
                           {
                             "name": "Valor añadido del sector manufacturero (en dólares estadounidenses constantes de 2020) como proporción del PIB (%) NV_IND_MANF",
@@ -8094,11 +8094,6 @@
                         "area_id": 2075,
                         "children": [
                           {
-                            "name": "Costo promedio de envío de remesas por enviar $200 a un país receptor como proporción del monto remitido (%) SI_RMT_COST_SND",
-                            "order": 0,
-                            "indicator_id": 4820
-                          },
-                          {
                             "name": "Costo promedio de envío de remesas por enviar $200 en un corredor como proporción del monto remitido (%)   SI_RMT_COST_BC",
                             "order": 0,
                             "indicator_id": 4359
@@ -8107,6 +8102,11 @@
                             "name": "SmaRT Costo promedio de envío de remesas por enviar $200 a un país receptor como proporción del monto remitido (%)  SI_RMT_COST_SC",
                             "order": 0,
                             "indicator_id": 4360
+                          },
+                          {
+                            "name": "Costo promedio de envío de remesas por enviar $200 a un país receptor como proporción del monto remitido (%) SI_RMT_COST_SND",
+                            "order": 0,
+                            "indicator_id": 4820
                           },
                           {
                             "name": "Costos promedio de envío de remesas por enviar $200 a un país receptor como proporción del monto remitido (%)  SI_RMT_COST",
@@ -8197,6 +8197,11 @@
                         "area_id": 2086,
                         "children": [
                           {
+                            "name": "Gasto total per cápita gastado en patrimonio cultural y natural, público (PPA, dólares estadounidenses constantes de 2017) GB_XPD_CULNAT_PB",
+                            "order": 0,
+                            "indicator_id": 4589
+                          },
+                          {
                             "name": "Gasto total per cápita gastado en patrimonio cultural, público y privado (PPA, dólares constantes de 2017) GB_XPD_CUL_PBPV",
                             "order": 0,
                             "indicator_id": 4905
@@ -8215,11 +8220,6 @@
                             "name": "Gasto total per cápita gastado en patrimonio cultural y natural, público y privado (PPA, dólares estadounidenses constantes de 2017) GB_XPD_CULNAT_PBPV",
                             "order": 0,
                             "indicator_id": 4591
-                          },
-                          {
-                            "name": "Gasto total per cápita gastado en patrimonio cultural y natural, público (PPA, dólares estadounidenses constantes de 2017) GB_XPD_CULNAT_PB",
-                            "order": 0,
-                            "indicator_id": 4589
                           }
                         ]
                       }
@@ -8674,6 +8674,11 @@
                         "area_id": 2113,
                         "children": [
                           {
+                            "name": "Generación total de residuos, por actividad (toneladas) EN_TWT_GENV",
+                            "order": 0,
+                            "indicator_id": 4525
+                          },
+                          {
                             "name": "Residuos municipales tratados por tipo de tratamiento (toneladas) EN_MWT_TREATV",
                             "order": 0,
                             "indicator_id": 5108
@@ -8727,11 +8732,6 @@
                             "name": "Residuos municipales generados (toneladas) EN_MWT_GENV",
                             "order": 0,
                             "indicator_id": 4369
-                          },
-                          {
-                            "name": "Generación total de residuos, por actividad (toneladas) EN_TWT_GENV",
-                            "order": 0,
-                            "indicator_id": 4525
                           },
                           {
                             "name": "Residuos electrónicos generados (toneladas) EN_EWT_GENV",
@@ -9190,6 +9190,11 @@
                         "area_id": 2147,
                         "children": [
                           {
+                            "name": "Desviaciones de clorofila-a, teledetección (%) EN_MAR_CHLDEV",
+                            "order": 0,
+                            "indicator_id": 4300
+                          },
+                          {
                             "name": "Anomalía de la clorofila-a, teledetección (%) EN_MAR_CHLANM",
                             "order": 0,
                             "indicator_id": 4377
@@ -9220,19 +9225,14 @@
                             "indicator_id": 4832
                           },
                           {
-                            "name": "Desviaciones de clorofila-a, teledetección (%) EN_MAR_CHLDEV",
+                            "name": "Eutrofización costera: Fósforo total (micromol por litro) EN_MAR_TP_MML",
                             "order": 0,
-                            "indicator_id": 4300
+                            "indicator_id": 5441
                           },
                           {
                             "name": "Artículos de basura de playa por unidad de superficie (Número de artículos por 100 metros cuadrados) EN_MAR_BEALIT_PUSA",
                             "order": 0,
                             "indicator_id": 5572
-                          },
-                          {
-                            "name": "Eutrofización costera: Fósforo total (micromol por litro) EN_MAR_TP_MML",
-                            "order": 0,
-                            "indicator_id": 5441
                           }
                         ]
                       }
@@ -9502,16 +9502,6 @@
                         "area_id": 2175,
                         "children": [
                           {
-                            "name": "Proporción de la superficie boscosa con un plan de gestión de largo plazo (en porcentajes) AG_LND_FRSTMGT",
-                            "order": 0,
-                            "indicator_id": 4219
-                          },
-                          {
-                            "name": "Existencias de biomasa aérea en el bosque (toneladas por hectárea) AG_LND_FRSTBIOPHA",
-                            "order": 0,
-                            "indicator_id": 4216
-                          },
-                          {
                             "name": "Superficie forestal certificada bajo un esquema de certificación verificado de forma independiente (miles de hectáreas) AG_LND_FRSTCERT",
                             "order": 0,
                             "indicator_id": 4217
@@ -9520,6 +9510,16 @@
                             "name": "Tasa de variación neta anual de la superficie boscosa (en porcentajes) AG_LND_FRSTCHG",
                             "order": 0,
                             "indicator_id": 4218
+                          },
+                          {
+                            "name": "Proporción de la superficie boscosa con un plan de gestión de largo plazo (en porcentajes) AG_LND_FRSTMGT",
+                            "order": 0,
+                            "indicator_id": 4219
+                          },
+                          {
+                            "name": "Existencias de biomasa aérea en el bosque (toneladas por hectárea) AG_LND_FRSTBIOPHA",
+                            "order": 0,
+                            "indicator_id": 4216
                           },
                           {
                             "name": "Proporción de la superficie boscosa incluida en zonas protegidas establecidas legalmente (en porcentajes) AG_LND_FRSTPRCT",
@@ -9688,6 +9688,16 @@
                         "area_id": 2188,
                         "children": [
                           {
+                            "name": "Legislación, regulación, actas relacionadas con la prevención de la introducción y gestión de especies exóticas invasoras (1=SI, 0=NO) ER_IAS_LEGIS",
+                            "order": 0,
+                            "indicator_id": 4071
+                          },
+                          {
+                            "name": "Metas de la Estrategia Nacional de Biodiversidad y del Plan de Acción (ENBPA) slineadas con la meta 9 de Aichi para la Diversidad Biológica establecidas en el Plan Estratégico para la Diversidad Biológica 2011-2020 (1=SI, 0=NO) ER_IAS_NBSAP",
+                            "order": 0,
+                            "indicator_id": 4072
+                          },
+                          {
                             "name": "Proporción de países con alineación de las metas de la Estrategia y Plan de Acción Nacional sobre Diversidad Biológica (EPANB) con la meta 9 de Aichi sobre Diversidad Biológica establecida en el Plan Estratégico para la Diversidad Biológica 2011-2020 (%) ER_IAS_NBSAPP",
                             "order": 0,
                             "indicator_id": 4532
@@ -9711,16 +9721,6 @@
                             "name": "Países receptores de financiación mundial con acceso a cualquier financiación de los mecanismos financieros mundiales para proyectos relacionados con la gestión de especies exóticas invasoras (1 = sí, 0 = no) ER_IAS_GLOFUN",
                             "order": 0,
                             "indicator_id": 4536
-                          },
-                          {
-                            "name": "Legislación, regulación, actas relacionadas con la prevención de la introducción y gestión de especies exóticas invasoras (1=SI, 0=NO) ER_IAS_LEGIS",
-                            "order": 0,
-                            "indicator_id": 4071
-                          },
-                          {
-                            "name": "Metas de la Estrategia Nacional de Biodiversidad y del Plan de Acción (ENBPA) slineadas con la meta 9 de Aichi para la Diversidad Biológica establecidas en el Plan Estratégico para la Diversidad Biológica 2011-2020 (1=SI, 0=NO) ER_IAS_NBSAP",
-                            "order": 0,
-                            "indicator_id": 4072
                           }
                         ]
                       }
@@ -10194,6 +10194,11 @@
                         "area_id": 2221,
                         "children": [
                           {
+                            "name": "Número de presidentes de comités permanentes, por edad, sexo y enfoque del comité, comités conjuntos SG_DMK_PARLCC_JC",
+                            "order": 0,
+                            "indicator_id": 4386
+                          },
+                          {
                             "name": "Proporción de mujeres parlamentarias (proporción de mujeres en el parlamento en relación con la proporción de mujeres en la población nacional con la edad de elegibilidad como límite inferior), Cámara Baja o Unicameral SG_DMK_PARLMP_LC",
                             "order": 0,
                             "indicator_id": 4223
@@ -10247,11 +10252,6 @@
                             "name": "Proporciones de puestos en el poder judicial en comparación con las distribuciones nacionales, Tribunal Constitucional (razón) SG_DMK_JDC_CNS",
                             "order": 0,
                             "indicator_id": 4845
-                          },
-                          {
-                            "name": "Número de presidentes de comités permanentes, por edad, sexo y enfoque del comité, comités conjuntos SG_DMK_PARLCC_JC",
-                            "order": 0,
-                            "indicator_id": 4386
                           }
                         ]
                       },
@@ -10343,14 +10343,14 @@
                             "indicator_id": 4230
                           },
                           {
-                            "name": "Países con al menos un caso verificado de desaparición forzada de defensores de derechos humanos, periodistas y sindicalistas (1 = SÍ, 0 = NO) VC_VOC_ENFDISN",
-                            "order": 0,
-                            "indicator_id": 5642
-                          },
-                          {
                             "name": "Los países con al menos un caso verificado de asesinatos de defensores de los derechos humanos, periodistas y sindicalistas (1 = SÍ, 0 = NO) VC_VAW_MTUHRAN",
                             "order": 0,
                             "indicator_id": 5448
+                          },
+                          {
+                            "name": "Países con al menos un caso verificado de desaparición forzada de defensores de derechos humanos, periodistas y sindicalistas (1 = SÍ, 0 = NO) VC_VOC_ENFDISN",
+                            "order": 0,
+                            "indicator_id": 5642
                           }
                         ]
                       },
@@ -10429,14 +10429,14 @@
                         "area_id": 2236,
                         "children": [
                           {
-                            "name": "Ingresos totales del gobierno, en moneda local GR_G14_XDC",
-                            "order": 0,
-                            "indicator_id": 4142
-                          },
-                          {
                             "name": "Total de ingresos del gobierno (gobierno central presupuestario) en proporción al PIB (en porcentajes) GR_G14_GDP",
                             "order": 0,
                             "indicator_id": 4014
+                          },
+                          {
+                            "name": "Ingresos totales del gobierno, en moneda local GR_G14_XDC",
+                            "order": 0,
+                            "indicator_id": 4142
                           }
                         ]
                       },
@@ -10909,14 +10909,14 @@
                         "area_id": 2269,
                         "children": [
                           {
-                            "name": "Número de países que informan avances en los marcos de seguimiento de la eficacia del desarrollo de múltiples partes interesadas que respaldan el logro de los objetivos de desarrollo sostenible, proveedor (1 = SÍ; 0 = NO) SG_PLN_MSTKSDG_P",
-                            "order": 0,
-                            "indicator_id": 4397
-                          },
-                          {
                             "name": "Número de países que informan avances en los marcos de seguimiento de la eficacia del desarrollo de múltiples partes interesadas que respaldan el logro de los objetivos de desarrollo sostenible, Receptor (1 = SÍ; 0 = NO) SG_PLN_MSTKSDG_R",
                             "order": 0,
                             "indicator_id": 4398
+                          },
+                          {
+                            "name": "Número de países que informan avances en los marcos de seguimiento de la eficacia del desarrollo de múltiples partes interesadas que respaldan el logro de los objetivos de desarrollo sostenible, proveedor (1 = SÍ; 0 = NO) SG_PLN_MSTKSDG_P",
+                            "order": 0,
+                            "indicator_id": 4397
                           }
                         ]
                       }
@@ -11632,14 +11632,14 @@
                     "indicator_id": 2653
                   },
                   {
-                    "name": "Índice de feminidad de la pobreza extrema y de la pobreza, por área",
-                    "order": 9100,
-                    "indicator_id": 3330
-                  },
-                  {
                     "name": "Población sin ingresos propios, por sexo, grupo de edad y área",
                     "order": 9100,
                     "indicator_id": 3343
+                  },
+                  {
+                    "name": "Índice de feminidad de la pobreza extrema y de la pobreza, por área",
+                    "order": 9100,
+                    "indicator_id": 3330
                   },
                   {
                     "name": "Población en situación de pobreza extrema y pobreza, por sexo, grupo de edad y área",
@@ -11703,14 +11703,14 @@
                 "area_id": 2581,
                 "children": [
                   {
-                    "name": "Población afrodescendiente y no afrodescendiente según área de residencia",
-                    "order": 0,
-                    "indicator_id": 4969
-                  },
-                  {
                     "name": "Población Indígena y no indígena según área de residencia",
                     "order": 0,
                     "indicator_id": 4968
+                  },
+                  {
+                    "name": "Población afrodescendiente y no afrodescendiente según área de residencia",
+                    "order": 0,
+                    "indicator_id": 4969
                   },
                   {
                     "name": "Porcentaje de población afrodescendiente por área de residencia\r\n\r\n",
@@ -11936,6 +11936,11 @@
                 "area_id": 2318,
                 "children": [
                   {
+                    "name": "Porcentaje de población migrante recientes de Latinoamérica y el Caribe",
+                    "order": 0,
+                    "indicator_id": 4421
+                  },
+                  {
                     "name": "Porcentaje de población migrante de nacimiento fronterizo",
                     "order": 0,
                     "indicator_id": 4416
@@ -11994,11 +11999,6 @@
                     "name": "Porcentaje de población migrante",
                     "order": 0,
                     "indicator_id": 4419
-                  },
-                  {
-                    "name": "Porcentaje de población migrante recientes de Latinoamérica y el Caribe",
-                    "order": 0,
-                    "indicator_id": 4421
                   }
                 ]
               },
@@ -12104,6 +12104,16 @@
                     "area_id": 2320,
                     "children": [
                       {
+                        "name": "Índice de tenencia segura de la vivienda",
+                        "order": 0,
+                        "indicator_id": 4438
+                      },
+                      {
+                        "name": "Porcentaje de Personas en viviendas de material convencional",
+                        "order": 0,
+                        "indicator_id": 4443
+                      },
+                      {
                         "name": "Proporción de la población propietaria o arrendataria de la vivienda que ocupa",
                         "order": 0,
                         "indicator_id": 4437
@@ -12172,16 +12182,6 @@
                         "name": "Porcentaje de hogares con disponibilidad de agua potable",
                         "order": 0,
                         "indicator_id": 4444
-                      },
-                      {
-                        "name": "Índice de tenencia segura de la vivienda",
-                        "order": 0,
-                        "indicator_id": 4438
-                      },
-                      {
-                        "name": "Porcentaje de Personas en viviendas de material convencional",
-                        "order": 0,
-                        "indicator_id": 4443
                       },
                       {
                         "name": "Proporción de la población que tiene acceso conveniente al transporte público (%) SP_TRN_PUBL",
@@ -13612,14 +13612,14 @@
                     "area_id": 2552,
                     "children": [
                       {
-                        "name": "Población que manifiesta su confianza en la policía, por sexo",
-                        "order": 0,
-                        "indicator_id": 3257
-                      },
-                      {
                         "name": "Población que manifiesta su desconfianza en los partidos políticos y el congreso, por sexo\r\n",
                         "order": 0,
                         "indicator_id": 995
+                      },
+                      {
+                        "name": "Población que manifiesta su confianza en la policía, por sexo",
+                        "order": 0,
+                        "indicator_id": 3257
                       }
                     ]
                   }
@@ -14939,6 +14939,11 @@
                     "area_id": 2329,
                     "children": [
                       {
+                        "name": "Temperatura mínima, climatologías históricas",
+                        "order": 0,
+                        "indicator_id": 4471
+                      },
+                      {
                         "name": "Temperatura mínima, escenario RCP4.5",
                         "order": 0,
                         "indicator_id": 4562
@@ -14947,11 +14952,6 @@
                         "name": "Temperatura mínima, escenario RCP8.5",
                         "order": 0,
                         "indicator_id": 4563
-                      },
-                      {
-                        "name": "Temperatura mínima, climatologías históricas",
-                        "order": 0,
-                        "indicator_id": 4471
                       }
                     ]
                   },
@@ -14961,6 +14961,11 @@
                     "area_id": 2330,
                     "children": [
                       {
+                        "name": "Precipitación, climatologías históricas",
+                        "order": 0,
+                        "indicator_id": 4468
+                      },
+                      {
                         "name": "Precipitación, escenario RCP4.5",
                         "order": 0,
                         "indicator_id": 4564
@@ -14969,11 +14974,6 @@
                         "name": "Precipitación, escenario RCP 8.5",
                         "order": 0,
                         "indicator_id": 4565
-                      },
-                      {
-                        "name": "Precipitación, climatologías históricas",
-                        "order": 0,
-                        "indicator_id": 4468
                       }
                     ]
                   },
@@ -14983,6 +14983,11 @@
                     "area_id": 2331,
                     "children": [
                       {
+                        "name": "Índice de Aridez, períodos históricos",
+                        "order": 0,
+                        "indicator_id": 4467
+                      },
+                      {
                         "name": "Índice de aridez, escenario RCP8.5",
                         "order": 0,
                         "indicator_id": 4567
@@ -14991,11 +14996,6 @@
                         "name": "Índice de aridez, escenario RCP4.5",
                         "order": 0,
                         "indicator_id": 4566
-                      },
-                      {
-                        "name": "Índice de Aridez, períodos históricos",
-                        "order": 0,
-                        "indicator_id": 4467
                       }
                     ]
                   }
@@ -15330,8 +15330,8 @@
   },
   "footer": {
     "records": 2863,
-    "elapsed_time": "9.13509",
-    "ip": "20.29.29.25",
+    "elapsed_time": "8.57236",
+    "ip": "52.186.174.176",
     "query": "http://api-cepalstat.cepal.org/cepalstat/api/v1/thematic-tree?lang=es&format=json"
   }
 }
