@@ -6,14 +6,14 @@
     "source_url": "https://www.bcv.org.ve/estadisticas/consumidor",
     "frequency": "monthly",
     "status": "catalogued_official_workbooks",
-    "last_fetched_at": "2026-09-02T17:09:41Z",
+    "last_fetched_at": "2026-09-07T18:14:50Z",
     "files": 7,
     "notes": "Catalogo de archivos oficiales BCV. La normalizacion de hojas se agregara por indicador."
   },
   "files": [
     {
       "file_name": "4_5_7.xls",
-      "url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_7_2.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_7.xls",
       "format": "xls"
     },
     {
@@ -38,7 +38,7 @@
     },
     {
       "file_name": "4_5_7.xls",
-      "url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_7.xls",
+      "url": "https://www.bcv.org.ve/sites/default/files/precios_consumidor/4_5_7_1.xls",
       "format": "xls"
     },
     {
