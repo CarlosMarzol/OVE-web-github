@@ -100,9 +100,8 @@ viviendas_hogares_y_personas_censo_2011;Viviendas, Hogares y Personas;Censo 2011
 discapacidad_voz_habla_censo_2011;Voz/Habla;Censo 2011;XLSX;https://ine.gob.ve/wp-content/uploads/2026/04/Discapacidad-Voz-Habla-Censo-2011.xlsx;Discapacidad Voz y Habla;1148;10;7910;OK;
 exportaciones_po_capitulo_1998_2018;Por Capítulo 1998-2018;Comercio exterior;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/Exportaciones-po-Capitulo-1998-2018.xls;Exportaciones Capítulo;107;23;2132;OK;
 importaciones_por_capitulo_1998_2018;Por Capítulo 1998-2018;Comercio exterior;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/Importaciones-por-Capitulo-1998-2018.xls;Importaciones Capítulo;107;23;2182;OK;
-trabajo_2001_2023;Tabulados Básicos;Encuesta de hogares;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/TRABAJO-2001-2023.xls;NACIONAL;776;49;29868;OK;
-por_tipo_1998_2023;Por Tipo;Encuesta de hogares;XLSX;https://ine.gob.ve/wp-content/uploads/2026/04/POR-TIPO-1998-2023.xlsx;NBI;30;12;300;OK;
-por_variable_1998_2023;Por Variable;Encuesta de hogares;XLSX;https://ine.gob.ve/wp-content/uploads/2026/04/POR-VARIABLE-1998-2023.xlsx;NBI;30;7;165;OK;
+por_tipo_1998_2025;Por Tipo;Encuesta de hogares;XLSX;https://ine.gob.ve/wp-content/uploads/2026/09/POR-TIPO-1998-2025.xlsx;NBI;32;12;322;OK;
+por_variable_1998_2025;Por Variable;Encuesta de hogares;XLSX;https://ine.gob.ve/wp-content/uploads/2026/09/POR-VARIABLE-1998-2025.xlsx;NBI;32;7;177;OK;
 divorcios;Divorcios;Estadísticas vitales;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/DIVORCIOS.xls;DIVORCIOS;30;24;602;OK;
 por_entidad_defunciones;Por Entidad;Estadísticas vitales;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/POR-ENTIDAD-Defunciones.xls;DEFUNCIONES;30;24;630;OK;
 por_entidad_matrimonios;Por Entidad;Estadísticas vitales;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/POR-ENTIDAD-Matrimonios.xls;MATRIMONIOS;30;23;602;OK;
@@ -212,6 +211,8 @@ estado_zulia_1;Zulia;Otros recursos INE;XLS;https://ine.gob.ve/wp-content/upload
 estado_zulia;Zulia;Otros recursos INE;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/Estado-Zulia.xls;Estado Zulia;78;13;807;OK;
 estado_zulia_6;Zulia;Otros recursos INE;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/Estado_Zulia-6.xls;Estado Zulia;78;53;3487;OK;
 zulia;Zulia;Otros recursos INE;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/Zulia.xls;n_CEN;4825;77;366769;OK;
+coeficiente_gini_2025_1;Coeficiente GINI;Otros recursos INE;XLSX;https://ine.gob.ve/wp-content/uploads/2026/09/Coeficiente-GINI-2025-1.xlsx;GINI 2026;30;48;57;OK;
+trabajo_1999_2025_1;Tabulados Básicos;Otros recursos INE;XLSX;https://ine.gob.ve/wp-content/uploads/2026/09/TRABAJO-1999-2025-1.xlsx;NACIONAL 1998-2025;523;43;12018;OK;
 edad_simple;Edad Simple;Proyección de población;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/EDAD-SIMPLE.xls;Edad Simple;318;13;3687;OK;
 esperanza_de_vida;Esperanza de Vida;Proyección de población;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/ESPERANZA-DE-VIDA.xls;Esperanza de Vida;34;10;217;OK;
 nacional_36;Nacional;Proyección de población;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/Nacional-36.xls;Resumen Entidad;93;53;4113;OK;
