@@ -8,23 +8,23 @@
     "frequency": "daily",
     "unit": "VES por USD",
     "status": "official_source",
-    "last_fetched_at": "2026-09-16T23:07:29Z",
+    "last_fetched_at": "2026-09-17T22:57:50Z",
     "first_date": "2016-01-04",
-    "last_date": "2026-09-17",
-    "records": 2584,
+    "last_date": "2026-09-18",
+    "records": 2585,
     "latest": {
-      "date": "2026-09-17",
+      "date": "2026-09-18",
       "currency": "USD",
-      "value": 847.4442,
+      "value": 848.5458,
       "unit": "VES por USD",
       "frequency": "daily",
       "indicator_id": "bcv_tipo_cambio_usd_usd",
       "indicator_name": "Tipo de Cambio BCV Bs/USD - USD",
       "source": "Banco Central de Venezuela",
       "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
-      "fetched_at": "2026-09-16T23:07:29Z",
+      "fetched_at": "2026-09-17T22:57:50Z",
       "value_buy": null,
-      "value_sell": 847.4442
+      "value_sell": 848.5458
     },
     "notes": "Serie diaria USD/BCV normalizada desde el Excel historico oficial 2_1_1_tdc.xlsx y la pagina diaria del BCV."
   },
@@ -36181,15 +36181,15 @@
       "date": "2026-09-16",
       "currency": "USD",
       "value": 846.5131,
+      "value_buy": 844.39681725,
+      "value_sell": 846.5131,
       "unit": "VES por USD",
       "frequency": "daily",
       "indicator_id": "bcv_tipo_cambio_usd_usd",
       "indicator_name": "Tipo de Cambio BCV Bs/USD - USD",
       "source": "Banco Central de Venezuela",
-      "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
-      "fetched_at": "2026-09-15T23:01:16Z",
-      "value_buy": null,
-      "value_sell": 846.5131
+      "source_url": "https://www.bcv.org.ve/sites/default/files/indicadores_sector_externo/2_1_1_tdc.xlsx",
+      "fetched_at": "2026-09-17T22:57:50Z"
     },
     {
       "date": "2026-09-17",
@@ -36204,6 +36204,20 @@
       "fetched_at": "2026-09-16T23:07:29Z",
       "value_buy": null,
       "value_sell": 847.4442
+    },
+    {
+      "date": "2026-09-18",
+      "currency": "USD",
+      "value": 848.5458,
+      "unit": "VES por USD",
+      "frequency": "daily",
+      "indicator_id": "bcv_tipo_cambio_usd_usd",
+      "indicator_name": "Tipo de Cambio BCV Bs/USD - USD",
+      "source": "Banco Central de Venezuela",
+      "source_url": "https://www.bcv.org.ve/estadisticas/tipo-cambio-de-referencia-smc",
+      "fetched_at": "2026-09-17T22:57:50Z",
+      "value_buy": null,
+      "value_sell": 848.5458
     }
   ]
 }
