@@ -11,7 +11,7 @@
           {
             "id": 2205,
             "version": 10003,
-            "reportTitle": "Merchandise: Total trade and share, annual",
+            "reportTitle": "Merchandise: Trade - Annual",
             "lastUpdatedDate": "2026-03-19T13:51:00",
             "category": "International trade in goods and services",
             "keywords": "Export,import,value,share,merchandise,trade",
@@ -31,7 +31,7 @@
           {
             "id": 2203,
             "version": 10003,
-            "reportTitle": "Merchandise: Trade balance, annual",
+            "reportTitle": "Merchandise: Trade balance - Annual",
             "lastUpdatedDate": "2026-03-19T13:51:00",
             "category": "International trade in goods and services",
             "keywords": "Export, import, value, share, balance, merchandise, trade",
@@ -469,20 +469,20 @@
         "title": "Commodity prices",
         "reports": [
           {
-            "id": 2274,
-            "version": 10013,
+            "id": 2596,
+            "version": 10021,
             "reportTitle": "Commodity prices: UNCTAD Commodity Price Index - Annual",
-            "lastUpdatedDate": "2026-02-10T12:49:00",
+            "lastUpdatedDate": "2026-02-10T13:02:00",
             "category": "Commodities",
             "keywords": "commodity, price, index",
             "reportName": "US.UCPI_A",
             "order": 0
           },
           {
-            "id": 2570,
-            "version": 10020,
+            "id": 2597,
+            "version": 10021,
             "reportTitle": "Commodity prices: UNCTAD Commodity Price Index - Monthly",
-            "lastUpdatedDate": "2026-08-17T07:42:00",
+            "lastUpdatedDate": "2026-09-11T12:02:00",
             "category": "Commodities prices",
             "keywords": "commodity, price, index",
             "reportName": "US.UCPI_M",
@@ -885,10 +885,10 @@
             "order": 7
           },
           {
-            "id": 2385,
-            "version": 10006,
+            "id": 2609,
+            "version": 10012,
             "reportTitle": "Ocean services: Trade - Annual (analytical)",
-            "lastUpdatedDate": "2026-06-08T11:50:00",
+            "lastUpdatedDate": "2026-09-18T14:15:00",
             "category": "International trade in goods and services",
             "keywords": "Ocean, oceans, services, international, trade, growth, sectors, maritime, sea",
             "reportName": "US.OceanServices",
@@ -1025,6 +1025,16 @@
             "order": 1
           },
           {
+            "id": 2347,
+            "version": 10009,
+            "reportTitle": "ICT use in business: Core indicators - Annual",
+            "lastUpdatedDate": "2026-09-14T09:05:00",
+            "category": "Digital economy",
+            "keywords": "ICT indicators",
+            "reportName": "US.IctUseTotal",
+            "order": 4
+          },
+          {
             "id": 2064,
             "version": 10006,
             "reportTitle": "ICT use in business: Core indicators by location type - Annual",
@@ -1032,7 +1042,7 @@
             "category": "Information Economy",
             "keywords": "ICT indicators, enterprises, location",
             "reportName": "US.IctUseLocation",
-            "order": 4
+            "order": 5
           },
           {
             "id": 2266,
@@ -1042,7 +1052,7 @@
             "category": "Information Economy",
             "keywords": "ICT indicators, enterprise size",
             "reportName": "US.IctUseEnterprSize",
-            "order": 5
+            "order": 6
           },
           {
             "id": 2250,
@@ -1052,7 +1062,7 @@
             "category": "Information economy",
             "keywords": "ICT indicators, industrial classification, economic activity, ISIC",
             "reportName": "US.IctUseEconActivity_Isic4",
-            "order": 6
+            "order": 7
           },
           {
             "id": 2114,
@@ -1062,7 +1072,7 @@
             "category": "Information Economy",
             "keywords": "ICT indicators, Industrial Classification, economic activity, ISIC",
             "reportName": "US.IctUseEconActivity",
-            "order": 6
+            "order": 7
           },
           {
             "id": 1948,
@@ -1072,7 +1082,7 @@
             "category": "Information economy",
             "keywords": "digital, digitally, deliverable, information, communication, technology, services, exports, imports, trade",
             "reportName": "US.DigitallyDeliverableServices",
-            "order": 8
+            "order": 9
           },
           {
             "id": 1922,
@@ -1082,7 +1092,7 @@
             "category": "Information economy",
             "keywords": "ICT, information, communication, technology, services, exports, imports, trade;",
             "reportName": "US.TradeServICT",
-            "order": 9
+            "order": 10
           }
         ],
         "subFolders": [],

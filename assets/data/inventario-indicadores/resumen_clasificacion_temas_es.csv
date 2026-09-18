@@ -1,6 +1,6 @@
 ﻿tema_ove,indicadores_o_recursos
 Agricultura y medio ambiente,254
-Ciencia y tecnología,95
+Ciencia y tecnología,96
 Demografía y población,769
 Economía,531
 "Industria, energía y construcción",189
@@ -17,7 +17,7 @@ Agricultura y medio ambiente,Residuos y protección ambiental,8
 Agricultura y medio ambiente,Cuentas ambientales,7
 Agricultura y medio ambiente,Otras operaciones medioambientales,118
 Ciencia y tecnología,Investigación y desarrollo,9
-Ciencia y tecnología,Innovación empresarial,33
+Ciencia y tecnología,Innovación empresarial,34
 Ciencia y tecnología,Conectividad y capacidades digitales,53
 Demografía y población,Población,691
 Demografía y población,Natalidad y mortalidad,67
@@ -49,7 +49,7 @@ CEPALSTAT - CEPAL,2060
 OIT - ILOSTAT,762
 FRED - Federal Reserve Bank of St. Louis,407
 INE Venezuela,335
-UNCTADstat - UNCTAD,99
+UNCTADstat - UNCTAD,100
 Banco Mundial - WDI,79
 FMI - World Economic Outlook,36
 Banco Central de Venezuela,15
@@ -57,5 +57,5 @@ OVE - Indicadores clave,6
 
 clasificaciones_baja_confianza,93
 subareas_baja_confianza,0
-indicadores_traducidos,511
-indicadores_pendientes_traduccion,31
+indicadores_traducidos,509
+indicadores_pendientes_traduccion,34
