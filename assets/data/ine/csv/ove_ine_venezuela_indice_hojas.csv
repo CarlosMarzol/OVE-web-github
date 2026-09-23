@@ -211,11 +211,13 @@ estado_zulia_1;Zulia;Otros recursos INE;XLS;https://ine.gob.ve/wp-content/upload
 estado_zulia;Zulia;Otros recursos INE;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/Estado-Zulia.xls;Estado Zulia;78;13;807;OK;
 estado_zulia_6;Zulia;Otros recursos INE;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/Estado_Zulia-6.xls;Estado Zulia;78;53;3487;OK;
 zulia;Zulia;Otros recursos INE;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/Zulia.xls;n_CEN;4825;77;366769;OK;
-coeficiente_gini_2025_1;Coeficiente GINI;Otros recursos INE;XLSX;https://ine.gob.ve/wp-content/uploads/2026/09/Coeficiente-GINI-2025-1.xlsx;GINI 2026;30;48;57;OK;
-trabajo_1999_2025_1;Tabulados Básicos;Otros recursos INE;XLSX;https://ine.gob.ve/wp-content/uploads/2026/09/TRABAJO-1999-2025-1.xlsx;NACIONAL 1998-2025;523;43;12018;OK;
+coeficiente_gini;Coeficiente GINI;Otros recursos INE;XLSX;https://ine.gob.ve/wp-content/uploads/2026/09/COEFICIENTE-GINI.xlsx;COEFICIENTE GINI;30;48;57;OK;
+trabajo;Tabulados Básicos;Otros recursos INE;XLSX;https://ine.gob.ve/wp-content/uploads/2026/09/TRABAJO.xlsx;NACIONAL 1999-2025;523;42;11611;OK;
+entidad_federal_y_sexo;Por Entidad y Sexo;Población;XLS;https://ine.gob.ve/wp-content/uploads/2026/09/Entidad-Federal-y-Sexo.xls;Resumen Entidad;86;53;4114;OK;
 edad_simple;Edad Simple;Proyección de población;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/EDAD-SIMPLE.xls;Edad Simple;318;13;3687;OK;
 esperanza_de_vida;Esperanza de Vida;Proyección de población;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/ESPERANZA-DE-VIDA.xls;Esperanza de Vida;34;10;217;OK;
 nacional_36;Nacional;Proyección de población;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/Nacional-36.xls;Resumen Entidad;93;53;4113;OK;
+proyeccion_poblacion_parroquias;Por Parroquias;Proyección de población;XLS;https://ine.gob.ve/wp-content/uploads/2026/09/PROYECCION-POBLACION-PARROQUIAS.xls;Parroquias;1476;12;17679;OK;
 aragua;Aragua;Vivienda y servicios;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/Aragua.xls;n_CEN;671;77;50997;OK;
 estado_aragua_1;Aragua;Vivienda y servicios;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/Estado-Aragua-1.xls;Estado Aragua;69;53;3019;OK;
 estado_aragua;Aragua;Vivienda y servicios;XLS;https://ine.gob.ve/wp-content/uploads/2026/04/Estado-Aragua.xls;Estado Aragua;78;13;807;OK;

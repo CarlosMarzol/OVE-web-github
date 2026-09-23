@@ -2,15 +2,15 @@
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
     "Dataset": "INE Venezuela - catálogo de recursos oficiales",
-    "Fecha generación": "2026-09-16",
+    "Fecha generación": "2026-09-23",
     "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
     "URL portal": "https://ine.gob.ve/",
     "País": "Venezuela",
-    "Número de recursos": 335,
-    "Recursos tabulares": 205,
-    "Documentos": 130,
-    "Hojas extraídas": 221,
-    "Celdas con valor extraídas": 2962561,
+    "Número de recursos": 341,
+    "Recursos tabulares": 207,
+    "Documentos": 134,
+    "Hojas extraídas": 223,
+    "Celdas con valor extraídas": 2983947,
     "Archivo valores CSV.GZ": "assets/data/ine/csv/ove_ine_venezuela_celdas_tabulares.csv.gz"
   },
   "catalogo": [
@@ -2831,8 +2831,8 @@
       "Formato": "XLSX",
       "Año publicación": "2026",
       "Mes publicación": "septiembre",
-      "Archivo original": "Coeficiente-GINI-2025-1.xlsx",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/Coeficiente-GINI-2025-1.xlsx",
+      "Archivo original": "COEFICIENTE-GINI.xlsx",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/COEFICIENTE-GINI.xlsx",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -2844,8 +2844,8 @@
       "Formato": "XLSX",
       "Año publicación": "2026",
       "Mes publicación": "septiembre",
-      "Archivo original": "TRABAJO-1999-2025-1.xlsx",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/TRABAJO-1999-2025-1.xlsx",
+      "Archivo original": "TRABAJO.xlsx",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/TRABAJO.xlsx",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -2859,6 +2859,19 @@
       "Mes publicación": "septiembre",
       "Archivo original": "Estructura-completa.pdf",
       "URL fuente": "https://ine.gob.ve/wp-content/uploads/2025/09/Estructura-completa.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
+      "Título": "Por Entidad y Sexo",
+      "Categoría": "Población",
+      "Tipo de recurso": "Dato tabular",
+      "Formato": "XLS",
+      "Año publicación": "2026",
+      "Mes publicación": "septiembre",
+      "Archivo original": "Entidad-Federal-y-Sexo.xls",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/Entidad-Federal-y-Sexo.xls",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -2911,6 +2924,19 @@
       "Mes publicación": "abril",
       "Archivo original": "Nacional-36.xls",
       "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/04/Nacional-36.xls",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
+      "Título": "Por Parroquias",
+      "Categoría": "Proyección de población",
+      "Tipo de recurso": "Dato tabular",
+      "Formato": "XLS",
+      "Año publicación": "2026",
+      "Mes publicación": "septiembre",
+      "Archivo original": "PROYECCION-POBLACION-PARROQUIAS.xls",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/PROYECCION-POBLACION-PARROQUIAS.xls",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -3479,10 +3505,10 @@
       "Categoría": "Publicaciones",
       "Tipo de recurso": "Documento",
       "Formato": "PDF",
-      "Año publicación": "2025",
-      "Mes publicación": "julio",
-      "Archivo original": "Folleto-Portuguesa-_20250629_131617_0000.pdf",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2025/07/Folleto-Portuguesa-_20250629_131617_0000.pdf",
+      "Año publicación": "2026",
+      "Mes publicación": "septiembre",
+      "Archivo original": "Folleto-Portuguesa-_20260922_184008_0000.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/Folleto-Portuguesa-_20260922_184008_0000.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -3891,6 +3917,19 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
+      "Título": "Metadatos de Personas",
+      "Categoría": "Publicaciones",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "septiembre",
+      "Archivo original": "METADATOS-DE-PERSONAS.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/METADATOS-DE-PERSONAS.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
       "Título": "Miranda",
       "Categoría": "Publicaciones",
       "Tipo de recurso": "Documento",
@@ -3943,14 +3982,14 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
-      "Título": "Noticias-Septiembre-1-1.pdf",
+      "Título": "Noticias-Septiembre-3-1.pdf",
       "Categoría": "Publicaciones",
       "Tipo de recurso": "Documento",
       "Formato": "PDF",
       "Año publicación": "2026",
       "Mes publicación": "septiembre",
-      "Archivo original": "Noticias-Septiembre-1-1.pdf",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/Noticias-Septiembre-1-1.pdf",
+      "Archivo original": "Noticias-Septiembre-3-1.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/Noticias-Septiembre-3-1.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -4107,6 +4146,19 @@
       "Mes publicación": "febrero",
       "Archivo original": "Resumen_SEPTIEMBRE_2025.pdf",
       "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/02/Resumen_SEPTIEMBRE_2025.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
+      "Título": "Septiembre",
+      "Categoría": "Publicaciones",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "septiembre",
+      "Archivo original": "Noticias-Septiembre-4-1.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/Noticias-Septiembre-4-1.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -4302,6 +4354,32 @@
       "Mes publicación": "julio",
       "Archivo original": "Estado-Aragua_compressed.pdf",
       "URL fuente": "https://ine.gob.ve/wp-content/uploads/2025/07/Estado-Aragua_compressed.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
+      "Título": "Metadatos de Hogares",
+      "Categoría": "Vivienda y servicios",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "septiembre",
+      "Archivo original": "METADATOS-DE-HOGARES.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/METADATOS-DE-HOGARES.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
+      "Título": "Metadatos de Viviendas",
+      "Categoría": "Vivienda y servicios",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "septiembre",
+      "Archivo original": "ETADATOS-DE-VIVIENDAS.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/ETADATOS-DE-VIVIENDAS.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -7128,12 +7206,12 @@
       "Error": ""
     },
     {
-      "ID recurso": "coeficiente_gini_2025_1",
+      "ID recurso": "coeficiente_gini",
       "Título": "Coeficiente GINI",
       "Categoría": "Otros recursos INE",
       "Formato": "XLSX",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/Coeficiente-GINI-2025-1.xlsx",
-      "Hoja": "GINI 2026",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/COEFICIENTE-GINI.xlsx",
+      "Hoja": "COEFICIENTE GINI",
       "Filas detectadas": 30,
       "Columnas detectadas": 48,
       "Celdas con valor": 57,
@@ -7141,15 +7219,28 @@
       "Error": ""
     },
     {
-      "ID recurso": "trabajo_1999_2025_1",
+      "ID recurso": "trabajo",
       "Título": "Tabulados Básicos",
       "Categoría": "Otros recursos INE",
       "Formato": "XLSX",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/TRABAJO-1999-2025-1.xlsx",
-      "Hoja": "NACIONAL 1998-2025",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/TRABAJO.xlsx",
+      "Hoja": "NACIONAL 1999-2025",
       "Filas detectadas": 523,
-      "Columnas detectadas": 43,
-      "Celdas con valor": 12018,
+      "Columnas detectadas": 42,
+      "Celdas con valor": 11611,
+      "Estado extracción": "OK",
+      "Error": ""
+    },
+    {
+      "ID recurso": "entidad_federal_y_sexo",
+      "Título": "Por Entidad y Sexo",
+      "Categoría": "Población",
+      "Formato": "XLS",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/Entidad-Federal-y-Sexo.xls",
+      "Hoja": "Resumen Entidad",
+      "Filas detectadas": 86,
+      "Columnas detectadas": 53,
+      "Celdas con valor": 4114,
       "Estado extracción": "OK",
       "Error": ""
     },
@@ -7189,6 +7280,19 @@
       "Filas detectadas": 93,
       "Columnas detectadas": 53,
       "Celdas con valor": 4113,
+      "Estado extracción": "OK",
+      "Error": ""
+    },
+    {
+      "ID recurso": "proyeccion_poblacion_parroquias",
+      "Título": "Por Parroquias",
+      "Categoría": "Proyección de población",
+      "Formato": "XLS",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/PROYECCION-POBLACION-PARROQUIAS.xls",
+      "Hoja": "Parroquias",
+      "Filas detectadas": 1476,
+      "Columnas detectadas": 12,
+      "Celdas con valor": 17679,
       "Estado extracción": "OK",
       "Error": ""
     },
