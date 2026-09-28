@@ -21,7 +21,7 @@
           {
             "id": 2204,
             "version": 10003,
-            "reportTitle": "Merchandise: Total trade growth rates, annual",
+            "reportTitle": "Merchandise: Trade - Growth rates - Annual",
             "lastUpdatedDate": "2026-03-19T13:51:00",
             "category": "International trade in goods and services",
             "keywords": "Growth rates, export, import, merchandise, trade",
@@ -61,7 +61,7 @@
           {
             "id": 2512,
             "version": 10015,
-            "reportTitle": "Merchandise: Trade - Core indices - Annual (analytical)",
+            "reportTitle": "Merchandise: Trade indicators - Annual (analytical)",
             "lastUpdatedDate": "2026-07-20T11:13:00",
             "category": "International trade in goods and services",
             "keywords": "Trade, indices, value, volume, unit value, terms of trade, purchasing power of exports",
@@ -71,7 +71,7 @@
           {
             "id": 2588,
             "version": 10006,
-            "reportTitle": "Merchandise: Intra-trade and extra-trade of country groups by product, annual (analytical)",
+            "reportTitle": "Merchandise: Intra- and extra-trade of country groups by product - Annual (analytical)",
             "lastUpdatedDate": "2026-06-30T07:17:00",
             "category": "International trade in goods and services",
             "keywords": "Intra-trade, extra-trade, value, share, group, region",
@@ -111,7 +111,7 @@
           {
             "id": 2003,
             "version": 10005,
-            "reportTitle": "Merchandise: Theil concentration indices - Annual (analytical)",
+            "reportTitle": "Merchandise: Theil indices of product and market concentration - Annual (analytical)",
             "lastUpdatedDate": "2025-12-03T09:00:00",
             "category": "International merchandise trade",
             "keywords": "Theil indices, concentration indices, product concentration, market concentration, LDCs",
@@ -121,7 +121,7 @@
           {
             "id": 2589,
             "version": 10006,
-            "reportTitle": "Merchandise: Revealed Comparative Advantage index - Annual (analytical)",
+            "reportTitle": "Merchandise: Revealed comparative advantage index - Annual (analytical)",
             "lastUpdatedDate": "2026-06-30T07:17:00",
             "category": "Trade indicators",
             "keywords": "Revealed comparative advantage index",
@@ -129,10 +129,10 @@
             "order": 12
           },
           {
-            "id": 1931,
-            "version": 10001,
+            "id": 2587,
+            "version": 10004,
             "reportTitle": "Merchandise: Import tariff rates - Annual",
-            "lastUpdatedDate": "2025-10-15T11:50:00",
+            "lastUpdatedDate": "2026-09-28T11:02:00",
             "category": "International trade in goods and services",
             "keywords": "Tariff, duty, rate",
             "reportName": "US.Tariff",
@@ -263,7 +263,7 @@
           {
             "id": 1676,
             "version": 10003,
-            "reportTitle": "Trade by food category, detailed by food processing (analytical)",
+            "reportTitle": "Food categories: Bilateral trade by processing level - Annual (analytical)",
             "lastUpdatedDate": "2025-03-20T12:39:00",
             "category": "International trade",
             "keywords": "Food processing, food category, trade",
@@ -273,7 +273,7 @@
           {
             "id": 1674,
             "version": 10003,
-            "reportTitle": "Trade by food category, detailed by food processing, RCA (analytical)",
+            "reportTitle": "Food categories: Revealed comparative advantage index by processing level - Annual (analytical)",
             "lastUpdatedDate": "2025-03-20T12:39:00",
             "category": "International trade in goods",
             "keywords": "Food processing, food category, trade, revealed comparative advantage",
@@ -283,7 +283,7 @@
           {
             "id": 1677,
             "version": 10003,
-            "reportTitle": "Trade by food processing, detailed by food category (analytical)",
+            "reportTitle": "Food processing: Bilateral trade by food category - Annual (analytical)",
             "lastUpdatedDate": "2025-03-20T12:39:00",
             "category": "International trade",
             "keywords": "Food processing, food category, trade",
@@ -293,7 +293,7 @@
           {
             "id": 1675,
             "version": 10003,
-            "reportTitle": "Trade by food processing, detailed by food category, RCA (analytical)",
+            "reportTitle": "Food processing: Revealed comparative advantage index by food category - Annual (analytical)",
             "lastUpdatedDate": "2025-03-20T12:39:00",
             "category": "International trade in goods",
             "keywords": "Food processing, food category, trade, revealed comparative advantage",
@@ -329,7 +329,7 @@
           {
             "id": 2174,
             "version": 10004,
-            "reportTitle": "Gross domestic product: GDP by type of expenditure, VA by kind of economic activity, total and shares, annual",
+            "reportTitle": "Gross domestic product: By expenditure and by sector - Annual",
             "lastUpdatedDate": "2026-03-06T15:28:00",
             "category": "Economic trends",
             "keywords": "GDP, breakdown, expenditure, economic activity",
@@ -385,33 +385,33 @@
             "order": 1
           },
           {
-            "id": 1951,
-            "version": 10001,
+            "id": 2620,
+            "version": 10005,
             "reportTitle": "Balance of payments: Current account balance - Annual",
-            "lastUpdatedDate": "2025-09-23T13:48:00",
+            "lastUpdatedDate": "2026-09-24T07:08:00",
             "category": "Economic trends",
             "keywords": "Balance of payments, current account balance",
             "reportName": "US.CurrAccBalance",
             "order": 2
           },
           {
-            "id": 2559,
-            "version": 10014,
-            "reportTitle": "Foreign direct investment: Inward and outward flows and stock, annual",
-            "lastUpdatedDate": "2026-08-17T12:15:00",
-            "category": "Foreign direct investment",
-            "keywords": "foreign, direct, investment, flow, stock, inward, outward, FDI",
-            "reportName": "US.FdiFlowsStock",
-            "order": 3
-          },
-          {
             "id": 1994,
             "version": 10003,
-            "reportTitle": "Personal remittances: receipts and payments, annual",
+            "reportTitle": "Balance of payments: Personal remittances - Annual ",
             "lastUpdatedDate": "2025-11-05T13:07:00",
             "category": "External financial resources",
             "keywords": "remittances, transfers, personal, compensation, employees, payments, receipts",
             "reportName": "US.Remittances",
+            "order": 3
+          },
+          {
+            "id": 2559,
+            "version": 10014,
+            "reportTitle": "Investment: Foreign direct investment - Annual",
+            "lastUpdatedDate": "2026-08-17T12:15:00",
+            "category": "Foreign direct investment",
+            "keywords": "foreign, direct, investment, flow, stock, inward, outward, FDI",
+            "reportName": "US.FdiFlowsStock",
             "order": 4
           }
         ],
@@ -425,7 +425,7 @@
           {
             "id": 2005,
             "version": 10007,
-            "reportTitle": "Productive capacities index, annual, 2000-2024 (analytical)",
+            "reportTitle": "Structural transformation: Productive Capacities Index - Annual (analytical)",
             "lastUpdatedDate": "2025-10-31T14:19:00",
             "category": "Multi theme statistics",
             "keywords": "Productive capacities index, PCI, structural transformation, natural capital, human capital, energy, transport, ICT, institutions, structural change, private sector",
@@ -539,7 +539,7 @@
           {
             "id": 590,
             "version": 10001,
-            "reportTitle": "Government expenditures",
+            "reportTitle": "Government expenditures: By function - Annual",
             "lastUpdatedDate": "2023-07-18T16:51:00",
             "category": "Public Finance",
             "keywords": "Government, expenditures, COFOG",
@@ -565,7 +565,7 @@
           {
             "id": 2353,
             "version": 10002,
-            "reportTitle": "Merchant fleet: World fleet by flag of registration and ship type - Core indicators - Annual (analytical)",
+            "reportTitle": "Merchant fleet: By flag of registration and ship type - Annual (analytical)",
             "lastUpdatedDate": "2026-06-18T13:50:00",
             "category": "Maritime transport",
             "keywords": "merchant, fleet, maritime, transport, container, tanker, bulk, cargo, ship",
@@ -575,7 +575,7 @@
           {
             "id": 2337,
             "version": 10002,
-            "reportTitle": "Merchant fleet: World fleet by beneficial ownership - Core indicators - Annual (analytical)",
+            "reportTitle": "Merchant fleet: By beneficial ownership - Annual (analytical)",
             "lastUpdatedDate": "2026-06-18T13:52:00",
             "category": "Maritime transport",
             "keywords": "beneficial, owner, flag, merchant, fleet, maritime, transport",
@@ -585,7 +585,7 @@
           {
             "id": 2339,
             "version": 10002,
-            "reportTitle": "Merchant fleet: World fleet by flag of registration - Annual (analytical)",
+            "reportTitle": "Merchant fleet: Share by flag of registration - Annual (analytical)",
             "lastUpdatedDate": "2026-06-18T13:52:00",
             "category": "Maritime transport",
             "keywords": "beneficial, owner, flag, merchant, fleet, maritime, transport",
@@ -595,7 +595,7 @@
           {
             "id": 2338,
             "version": 10002,
-            "reportTitle": "Merchant fleet: World fleet by beneficial ownership - Annual (analytical)",
+            "reportTitle": "Merchant fleet: Share by beneficial ownership - Annual (analytical)",
             "lastUpdatedDate": "2026-06-18T13:52:00",
             "category": "Maritime transport",
             "keywords": "beneficial, owner, flag, merchant, fleet, maritime, transport",
@@ -613,7 +613,7 @@
           {
             "id": 2439,
             "version": 10002,
-            "reportTitle": "Ship building: Merchant fleet built - Annual (analytical)",
+            "reportTitle": "Merchant fleet: Ship building - Annual",
             "lastUpdatedDate": "2026-06-18T13:48:00",
             "category": "Maritime transport",
             "keywords": "ship,building",
@@ -623,7 +623,7 @@
           {
             "id": 2440,
             "version": 10002,
-            "reportTitle": "Ship recycling: Merchant fleet recycled - Annual (analytical)",
+            "reportTitle": "Merchant fleet: Ship recycling - Annual",
             "lastUpdatedDate": "2026-06-18T13:48:00",
             "category": "Maritime transport",
             "keywords": "Merchant fleet, ship, scrapping, demolition",
@@ -641,7 +641,7 @@
           {
             "id": 2231,
             "version": 10002,
-            "reportTitle": "World seaborne trade by type of cargo, annual (analytical)",
+            "reportTitle": "Freight: Seaborne trade by cargo type - Annual (analytical)",
             "lastUpdatedDate": "2026-03-17T15:55:00",
             "category": "Maritime transport",
             "keywords": "seaborne, international, maritime, trade, cargo, volume",
@@ -651,7 +651,7 @@
           {
             "id": 2263,
             "version": 10003,
-            "reportTitle": "Container port throughput, annual (analytical)",
+            "reportTitle": "Freight: Container port throughput - Annual (analytical)",
             "lastUpdatedDate": "2026-04-15T15:06:00",
             "category": "Maritime transport",
             "keywords": "ship, maritime, transport, container, port, throughput, TEU",
@@ -669,7 +669,7 @@
           {
             "id": 1064,
             "version": 10002,
-            "reportTitle": "Port call and performance statistics: time spent in ports, vessel age and size, annual (analytical)",
+            "reportTitle": "Port calls: Performance indicators - Annual (analytical)",
             "lastUpdatedDate": "2024-03-28T16:47:00",
             "category": "Maritime transport",
             "keywords": "ships, port, maritime, transport, port calls, ports, time in port, vessels, services, container",
@@ -679,7 +679,7 @@
           {
             "id": 1066,
             "version": 10002,
-            "reportTitle": "Port call and performance statistics: time spent in ports, vessel age and size, semi-annual (analytical)",
+            "reportTitle": "Port calls: Performance indicators - Semi-annual (analytical)",
             "lastUpdatedDate": "2024-03-28T16:47:00",
             "category": "Maritime transport",
             "keywords": "ships, port, maritime, transport, port calls, ports, time in port, vessels, services, container",
@@ -689,7 +689,7 @@
           {
             "id": 1065,
             "version": 10002,
-            "reportTitle": "Port call and performance statistics: number of port calls, annual (analytical)",
+            "reportTitle": "Port calls: Calls by commercial market - Annual (analytical)",
             "lastUpdatedDate": "2024-03-28T16:25:00",
             "category": "Maritime transport",
             "keywords": "ships, port, maritime, transport, port calls, ports, time in port, vessels, services, container",
@@ -699,7 +699,7 @@
           {
             "id": 1067,
             "version": 10002,
-            "reportTitle": "Port call and performance statistics: number of port calls, semi-annual (analytical)",
+            "reportTitle": "Port calls: Calls by commercial market - Semi-annual (analytical)",
             "lastUpdatedDate": "2024-03-28T16:25:00",
             "category": "Maritime transport",
             "keywords": "ships, port, maritime, transport, port calls, ports, time in port, vessels, services, container",
@@ -715,20 +715,20 @@
         "title": "Maritime connectivity",
         "reports": [
           {
-            "id": 2458,
-            "version": 10012,
+            "id": 2595,
+            "version": 10013,
             "reportTitle": "Liner shipping: Connectivity index - Monthly (analytical)",
-            "lastUpdatedDate": "2026-06-23T14:11:00",
+            "lastUpdatedDate": "2026-09-28T11:09:00",
             "category": "Maritime transport",
             "keywords": "maritime, transport, connectivity, ports, index",
             "reportName": "US.LSCI_M",
             "order": 1
           },
           {
-            "id": 2457,
-            "version": 10012,
+            "id": 2594,
+            "version": 10013,
             "reportTitle": "Liner shipping: Connectivity index - Quarterly (analytical)",
-            "lastUpdatedDate": "2026-06-23T14:11:00",
+            "lastUpdatedDate": "2026-09-28T11:09:00",
             "category": "Maritime transport",
             "keywords": "maritime, transport, connectivity, ports, index",
             "reportName": "US.LSCI",
@@ -745,10 +745,10 @@
             "order": 3
           },
           {
-            "id": 2282,
-            "version": 10007,
+            "id": 2584,
+            "version": 10008,
             "reportTitle": "Liner shipping: Port connectivity index - Quarterly (analytical)",
-            "lastUpdatedDate": "2026-06-26T14:20:00",
+            "lastUpdatedDate": "2026-09-28T11:09:00",
             "category": "Maritime transport",
             "keywords": "maritime, transport, connectivity, ports, index",
             "reportName": "US.PLSCI",
@@ -765,7 +765,7 @@
           {
             "id": 981,
             "version": 10002,
-            "reportTitle": "Seafarer supply, quinquennial, 2015 and 2021 (analytical)",
+            "reportTitle": "Seafarer: Supply estimates by rank - Quinquennial (analytical)",
             "lastUpdatedDate": "2023-07-18T11:00:00",
             "category": "Maritime transport",
             "keywords": "Seafarer, officers, ratings, nationality",
@@ -783,7 +783,7 @@
           {
             "id": 1107,
             "version": 10001,
-            "reportTitle": "Trade-and-Transport Dataset, annual, 2016 onward (analytical)",
+            "reportTitle": "Trade and transport: By destination, mode and product group  - Annual (analytical)",
             "lastUpdatedDate": "2024-05-22T09:00:00",
             "category": "International trade",
             "keywords": "international, trade, transport, cost, merchandise, product, destination, origin",
@@ -905,7 +905,7 @@
           {
             "id": 1884,
             "version": 10004,
-            "reportTitle": "Trade in non-plastic substitutes, annual (analytical)",
+            "reportTitle": "Non-plastics: Bilateral trade of non-plastic substitutes - Annual (analytical)",
             "lastUpdatedDate": "2025-08-04T06:56:00",
             "category": "Environment and related trade",
             "keywords": "Plastics, trade, export, Non-plastic substitutes",
@@ -923,7 +923,7 @@
           {
             "id": 2581,
             "version": 10017,
-            "reportTitle": "Plastics trade by partner, annual (analytical)",
+            "reportTitle": "Plastics: Bilateral trade across plastics life-cycle stages - Annual (analytical)",
             "lastUpdatedDate": "2026-09-04T12:05:00",
             "category": "Plastics trade",
             "keywords": "Plastics, trade, export",
@@ -933,7 +933,7 @@
           {
             "id": 2582,
             "version": 10017,
-            "reportTitle": "Associated plastics trade by partner, annual (analytical)",
+            "reportTitle": "Plastics: Bilateral trade of plastics associated products - Annual (analytical)",
             "lastUpdatedDate": "2026-09-04T12:05:00",
             "category": "Plastics trade",
             "keywords": "Associated plastics, trade, partner",
@@ -943,7 +943,7 @@
           {
             "id": 2583,
             "version": 10017,
-            "reportTitle": "Spotlight on selected plastic trade trends, by partner (analytical)",
+            "reportTitle": "Plastics: Bilateral trade of plastic packaging, synthetic textiles and synthetic rubber - Annual (analytical)",
             "lastUpdatedDate": "2026-09-04T12:05:00",
             "category": "Plastics trade",
             "keywords": "Plastics, trade, partner, hs, product",
@@ -961,7 +961,7 @@
           {
             "id": 2446,
             "version": 10001,
-            "reportTitle": "Total trade in green industrial goods (analytical)",
+            "reportTitle": "Green industrial goods: Trade - Annual (Analytical)",
             "lastUpdatedDate": "2026-06-12T13:45:00",
             "category": "Environment and related trade",
             "keywords": "Trade, exports, imports, green goods, sector, HS, products, industrial",
@@ -971,7 +971,7 @@
           {
             "id": 2445,
             "version": 10001,
-            "reportTitle": "Green industrial goods trade, Revealed comparative advantage index, annual (analytical)",
+            "reportTitle": "Green industrial goods: Revealed comparative advantage index - Annual (analytical)",
             "lastUpdatedDate": "2026-06-12T13:45:00",
             "category": "Environment and related trade",
             "keywords": "Export, merchandise, goods, environment, green sector, trade, Revealed Comparative Advantage, RCA, environmental goods, green goods",
@@ -981,7 +981,7 @@
           {
             "id": 2447,
             "version": 10001,
-            "reportTitle": "Industrial wastewater treatment technologies (analytical)",
+            "reportTitle": "Industrial wastewater treatment: Trade of associated products - Annul (ananlytical)",
             "lastUpdatedDate": "2026-06-12T13:45:00",
             "category": "Environment and related trade",
             "keywords": "Trade, exports, imports, industrial wastewater, wastewater treatment, water treatment technologies, wastewater recovery, HS codes, products",
@@ -1077,7 +1077,7 @@
           {
             "id": 1948,
             "version": 10003,
-            "reportTitle": "Digitally deliverable services: Trade – Annual (analytical)",
+            "reportTitle": "Digitally deliverable services: Trade - Annual (analytical)",
             "lastUpdatedDate": "2025-09-26T12:02:00",
             "category": "Information economy",
             "keywords": "digital, digitally, deliverable, information, communication, technology, services, exports, imports, trade",
@@ -1087,7 +1087,7 @@
           {
             "id": 1922,
             "version": 10002,
-            "reportTitle": "ICT services: Trade – Annual",
+            "reportTitle": "ICT services: Trade - Annual",
             "lastUpdatedDate": "2025-09-26T12:05:00",
             "category": "Information economy",
             "keywords": "ICT, information, communication, technology, services, exports, imports, trade;",
@@ -1115,7 +1115,7 @@
           {
             "id": 2530,
             "version": 10006,
-            "reportTitle": "E-commerce: International digitally ordered trade, bilateral – Annual (analytical)",
+            "reportTitle": "E-commerce: International digitally ordered trade, bilateral - Annual (analytical)",
             "lastUpdatedDate": "2026-05-21T08:57:00",
             "category": "E-commerce",
             "keywords": "e-commerce, digital trade, digital ordering, sales, turnover, business statistics",
@@ -1133,7 +1133,7 @@
           {
             "id": 1861,
             "version": 10006,
-            "reportTitle": "Frontier technology readiness index, annual (analytical)",
+            "reportTitle": "Technology: Frontier technology readiness index - Annual (analytical)",
             "lastUpdatedDate": "2025-07-18T16:34:00",
             "category": "Technology and innovation",
             "keywords": "ICT, skills, information, communication, industry, technology",
@@ -1197,7 +1197,7 @@
           {
             "id": 1631,
             "version": 10006,
-            "reportTitle": "Inclusive Growth Index (IGI) (analytical)",
+            "reportTitle": "Inclusiveness: Inclusive growth index - Annual (analytical)",
             "lastUpdatedDate": "2025-03-10T14:55:00",
             "category": "Inclusive Growth",
             "keywords": "Inclusive Growth Index, IGI, economic development, living conditions, social inclusion, environmental sustainability, equity",
@@ -1215,7 +1215,7 @@
           {
             "id": 1315,
             "version": 10001,
-            "reportTitle": "Domestic value added content in gross exports by sex and broad sector (analytical)",
+            "reportTitle": "Gender: Domestic value added in gross exports by sex and broad sector - Annual (analytical)",
             "lastUpdatedDate": "2024-10-10T12:39:00",
             "category": "Gender",
             "keywords": "Trade, gender, gap, equality, employment, earnings, wages, domestic value added, export",
@@ -1225,7 +1225,7 @@
           {
             "id": 1312,
             "version": 10001,
-            "reportTitle": "Employment and average monthly earnings in tradable and non-tradable industries (analytical)",
+            "reportTitle": "Gender: Employment and earnings by sex - Annual (analytical)",
             "lastUpdatedDate": "2024-10-10T12:39:00",
             "category": "Gender",
             "keywords": "Trade, gender, employment, earnings, wages, inequality, female, male",
@@ -1251,7 +1251,7 @@
           {
             "id": 2254,
             "version": 10003,
-            "reportTitle": "Indicator 9.1.2: Freight loaded and unloaded, maritime transport (metric tons) [IS_RDP_LULFRG]",
+            "reportTitle": "Indicator 9.1.2: Freight loaded and unloaded - Annual",
             "lastUpdatedDate": "2026-04-16T07:41:00",
             "category": "SDG Indicators",
             "keywords": "seaborne, international, maritime, trade, cargo, volume, SDG Indicator, SDG Goal 9, Indicator 9.1.2",
@@ -1261,7 +1261,7 @@
           {
             "id": 2264,
             "version": 10003,
-            "reportTitle": "Indicator 9.1.2: Container port traffic, maritime transport (twenty-foot equivalent units – TEUs) [IS_RDP_PORFVOL]",
+            "reportTitle": "Indicator 9.1.2: Container port traffic - Annual",
             "lastUpdatedDate": "2026-04-15T15:06:00",
             "category": "SDG",
             "keywords": "ship, maritime, transport, container, port, throughput, TEU, SDG Indicator, SDG Goal 9, Indicator 9.1.2",
@@ -1279,7 +1279,7 @@
           {
             "id": 2493,
             "version": 10002,
-            "reportTitle": "Indicator 16.4.1: Trade misinvoicing illicit financial flows - Annual",
+            "reportTitle": "Indicator 16.4.1: Trade misinvoicing illicit financial flows, IFFs - Annual ",
             "lastUpdatedDate": "2026-06-09T09:17:00",
             "category": "SDG Indicators",
             "keywords": "IFF, IFFs, Trade, misinvoicing, SDG, Tax, SDG",
@@ -1289,7 +1289,7 @@
           {
             "id": 2492,
             "version": 10002,
-            "reportTitle": "Indicator 16.4.1: Crime-related illicit financial flows - Annual",
+            "reportTitle": "Indicator 16.4.1: Crime-related illicit financial flows, IFFs - Annual",
             "lastUpdatedDate": "2026-06-09T09:17:00",
             "category": "SDG Indicators",
             "keywords": "IFF, crime-related, Drug, smuggling, trafficking, SDG 16.4.1, financial, inwards",
