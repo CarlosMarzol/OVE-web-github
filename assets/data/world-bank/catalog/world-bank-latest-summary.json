@@ -2,7 +2,7 @@
   "metadata": {
     "source": "Banco Mundial - World Development Indicators",
     "country": "Venezuela, RB",
-    "last_fetched_at": "2026-09-21",
+    "last_fetched_at": "2026-09-28",
     "status": "official_source"
   },
   "indicators": {
@@ -20,32 +20,11 @@
       "year": 2025,
       "source": "Banco Mundial - World Development Indicators"
     },
-    "gdp_growth_real": {
-      "code": "NY.GDP.MKTP.KD.ZG",
-      "indicator": "Crecimiento real del PIB",
-      "value": 1.57068062827224,
-      "year": 2025,
-      "source": "Banco Mundial - World Development Indicators"
-    },
-    "gdp_per_capita_current_usd": {
-      "code": "NY.GDP.PCAP.CD",
-      "indicator": "PIB per cápita en dólares corrientes",
-      "value": 3494.8138870244,
-      "year": 2025,
-      "source": "Banco Mundial - World Development Indicators"
-    },
     "inflation_cpi": {
       "code": "FP.CPI.TOTL.ZG",
       "indicator": "Inflación anual de precios al consumidor",
       "value": 254.948534781816,
       "year": 2016,
-      "source": "Banco Mundial - World Development Indicators"
-    },
-    "unemployment_total": {
-      "code": "SL.UEM.TOTL.ZS",
-      "indicator": "Tasa de desempleo total",
-      "value": 5.307,
-      "year": 2025,
       "source": "Banco Mundial - World Development Indicators"
     },
     "labor_force_total": {
