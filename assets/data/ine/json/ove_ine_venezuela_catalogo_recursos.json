@@ -2,7 +2,7 @@
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
     "Dataset": "INE Venezuela - catálogo de recursos oficiales",
-    "Fecha generación": "2026-09-23",
+    "Fecha generación": "2026-09-30",
     "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
     "URL portal": "https://ine.gob.ve/",
     "País": "Venezuela",
@@ -3982,14 +3982,14 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
-      "Título": "Noticias-Septiembre-3-1.pdf",
+      "Título": "Noticias-Septiembre-3-2.pdf",
       "Categoría": "Publicaciones",
       "Tipo de recurso": "Documento",
       "Formato": "PDF",
       "Año publicación": "2026",
       "Mes publicación": "septiembre",
-      "Archivo original": "Noticias-Septiembre-3-1.pdf",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/Noticias-Septiembre-3-1.pdf",
+      "Archivo original": "Noticias-Septiembre-3-2.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/Noticias-Septiembre-3-2.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -4151,19 +4151,6 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
-      "Título": "Septiembre",
-      "Categoría": "Publicaciones",
-      "Tipo de recurso": "Documento",
-      "Formato": "PDF",
-      "Año publicación": "2026",
-      "Mes publicación": "septiembre",
-      "Archivo original": "Noticias-Septiembre-4-1.pdf",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/Noticias-Septiembre-4-1.pdf",
-      "URL portal": "https://ine.gob.ve/"
-    },
-    {
-      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
-      "País": "Venezuela",
       "Título": "Sistema de Registros",
       "Categoría": "Publicaciones",
       "Tipo de recurso": "Documento",
@@ -4211,6 +4198,19 @@
       "Mes publicación": "agosto",
       "Archivo original": "Resumen_de_estadisticas_1999-2023.pdf",
       "URL fuente": "https://ine.gob.ve/wp-content/uploads/2024/08/Resumen_de_estadisticas_1999-2023.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
+      "Título": "Tabulados PDF",
+      "Categoría": "Publicaciones",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "septiembre",
+      "Archivo original": "UNIFICADO.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/UNIFICADO.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -4333,7 +4333,7 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
-      "Título": "Encuesta Hogares 1967-1997",
+      "Título": "Encuesta Hogares por Muestreo",
       "Categoría": "Vivienda y servicios",
       "Tipo de recurso": "Documento",
       "Formato": "PDF",
