@@ -2,13 +2,13 @@
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
     "Dataset": "INE Venezuela - catálogo de recursos oficiales",
-    "Fecha generación": "2026-09-30",
+    "Fecha generación": "2026-10-07",
     "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
     "URL portal": "https://ine.gob.ve/",
     "País": "Venezuela",
-    "Número de recursos": 341,
+    "Número de recursos": 344,
     "Recursos tabulares": 207,
-    "Documentos": 134,
+    "Documentos": 137,
     "Hojas extraídas": 223,
     "Celdas con valor extraídas": 2983947,
     "Archivo valores CSV.GZ": "assets/data/ine/csv/ove_ine_venezuela_celdas_tabulares.csv.gz"
@@ -2864,6 +2864,19 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
+      "Título": "Estructura de la Población",
+      "Categoría": "Población",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "octubre",
+      "Archivo original": "ESTRUCTURA-DE-LA-POBLACION-1.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/10/ESTRUCTURA-DE-LA-POBLACION-1.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
       "Título": "Por Entidad y Sexo",
       "Categoría": "Población",
       "Tipo de recurso": "Dato tabular",
@@ -3982,14 +3995,14 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
-      "Título": "Noticias-Septiembre-3-2.pdf",
+      "Título": "Noticias-octubre-3.pdf",
       "Categoría": "Publicaciones",
       "Tipo de recurso": "Documento",
       "Formato": "PDF",
       "Año publicación": "2026",
-      "Mes publicación": "septiembre",
-      "Archivo original": "Noticias-Septiembre-3-2.pdf",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/Noticias-Septiembre-3-2.pdf",
+      "Mes publicación": "octubre",
+      "Archivo original": "Noticias-octubre-3.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/10/Noticias-octubre-3.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -4029,6 +4042,19 @@
       "Mes publicación": "febrero",
       "Archivo original": "Resumen_OCTUBRE_2025.pdf",
       "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/02/Resumen_OCTUBRE_2025.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
+      "Título": "Octubre",
+      "Categoría": "Publicaciones",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "octubre",
+      "Archivo original": "Noticias-octubre-2.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/10/Noticias-octubre-2.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -4146,6 +4172,19 @@
       "Mes publicación": "febrero",
       "Archivo original": "Resumen_SEPTIEMBRE_2025.pdf",
       "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/02/Resumen_SEPTIEMBRE_2025.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
+      "Título": "Septiembre",
+      "Categoría": "Publicaciones",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "septiembre",
+      "Archivo original": "Noticias-Septiembre-3-2.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/09/Noticias-Septiembre-3-2.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
