@@ -9,40 +9,30 @@
         "title": "Trade in merchandise",
         "reports": [
           {
-            "id": 2205,
-            "version": 10003,
+            "id": 2650,
+            "version": 10011,
             "reportTitle": "Merchandise: Trade - Annual",
-            "lastUpdatedDate": "2026-03-19T13:51:00",
+            "lastUpdatedDate": "2026-10-08T12:58:00",
             "category": "International trade in goods and services",
             "keywords": "Export,import,value,share,merchandise,trade",
             "reportName": "US.TradeMerchTotal",
             "order": 1
           },
           {
-            "id": 2204,
-            "version": 10003,
-            "reportTitle": "Merchandise: Trade - Growth rates - Annual",
-            "lastUpdatedDate": "2026-03-19T13:51:00",
-            "category": "International trade in goods and services",
-            "keywords": "Growth rates, export, import, merchandise, trade",
-            "reportName": "US.TradeMerchGR",
-            "order": 2
-          },
-          {
-            "id": 2203,
-            "version": 10003,
+            "id": 2649,
+            "version": 10011,
             "reportTitle": "Merchandise: Trade balance - Annual",
-            "lastUpdatedDate": "2026-03-19T13:51:00",
+            "lastUpdatedDate": "2026-10-08T12:58:00",
             "category": "International trade in goods and services",
             "keywords": "Export, import, value, share, balance, merchandise, trade",
             "reportName": "US.TradeMerchBalance",
             "order": 3
           },
           {
-            "id": 2473,
-            "version": 10018,
+            "id": 2612,
+            "version": 10019,
             "reportTitle": "Merchandise: Trade volume - Growth rates - Quarterly (analytical)",
-            "lastUpdatedDate": "2026-07-06T15:59:00",
+            "lastUpdatedDate": "2026-10-08T12:58:00",
             "category": "International trade in goods and services",
             "keywords": "International, merchandise, trade, trend, volume, growth, indices",
             "reportName": "US.MerchVolumeQuarterly",
@@ -81,7 +71,7 @@
           {
             "id": 2487,
             "version": 10003,
-            "reportTitle": "Merchandise: Trade price index - Quarterly (analytical)",
+            "reportTitle": "Merchandise: Trade price index – Quarterly (analytical)",
             "lastUpdatedDate": "2026-07-10T15:13:00",
             "category": "International trade in goods and services",
             "keywords": "Merchandises, Trade, Indices, Prices",
@@ -903,10 +893,10 @@
         "title": "Trade in non-plastic substitutes",
         "reports": [
           {
-            "id": 1884,
-            "version": 10004,
+            "id": 2610,
+            "version": 10009,
             "reportTitle": "Non-plastics: Bilateral trade of non-plastic substitutes - Annual (analytical)",
-            "lastUpdatedDate": "2025-08-04T06:56:00",
+            "lastUpdatedDate": "2026-10-02T12:38:00",
             "category": "Environment and related trade",
             "keywords": "Plastics, trade, export, Non-plastic substitutes",
             "reportName": "US.NonPlasticSubstsTradeByPartner",
@@ -1075,20 +1065,20 @@
             "order": 7
           },
           {
-            "id": 1948,
-            "version": 10003,
+            "id": 2631,
+            "version": 10007,
             "reportTitle": "Digitally deliverable services: Trade - Annual (analytical)",
-            "lastUpdatedDate": "2025-09-26T12:02:00",
+            "lastUpdatedDate": "2026-09-29T13:47:00",
             "category": "Information economy",
             "keywords": "digital, digitally, deliverable, information, communication, technology, services, exports, imports, trade",
             "reportName": "US.DigitallyDeliverableServices",
             "order": 9
           },
           {
-            "id": 1922,
-            "version": 10002,
+            "id": 2636,
+            "version": 10008,
             "reportTitle": "ICT services: Trade - Annual",
-            "lastUpdatedDate": "2025-09-26T12:05:00",
+            "lastUpdatedDate": "2026-09-29T13:43:00",
             "category": "Information economy",
             "keywords": "ICT, information, communication, technology, services, exports, imports, trade;",
             "reportName": "US.TradeServICT",
@@ -1115,7 +1105,7 @@
           {
             "id": 2530,
             "version": 10006,
-            "reportTitle": "E-commerce: International digitally ordered trade, bilateral - Annual (analytical)",
+            "reportTitle": "E-commerce: International digitally ordered trade, bilateral – Annual (analytical)",
             "lastUpdatedDate": "2026-05-21T08:57:00",
             "category": "E-commerce",
             "keywords": "e-commerce, digital trade, digital ordering, sales, turnover, business statistics",
