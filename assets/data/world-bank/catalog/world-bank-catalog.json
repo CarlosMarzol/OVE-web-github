@@ -2,10 +2,10 @@
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
     "Dataset": "Banco Mundial - Venezuela",
-    "Fecha generación": "2026-09-28",
+    "Fecha generación": "2026-10-12",
     "Número de áreas": 12,
     "Número de indicadores": 79,
-    "Número de registros": 5218
+    "Número de registros": 5215
   },
   "catalogo": [
     {
@@ -47,10 +47,10 @@
     {
       "Área temática": "Género",
       "ID área": "genero",
-      "Registros": 331,
+      "Registros": 330,
       "Indicadores": 5,
       "Primer año": 1960,
-      "Último año": 2026,
+      "Último año": 2025,
       "Último año con dato": 2025,
       "Archivo CSV": "assets/data/world-bank/csv/ove_banco_mundial_venezuela_genero.csv",
       "Archivo JSON": "assets/data/world-bank/json/ove_banco_mundial_venezuela_genero.json",
@@ -71,10 +71,10 @@
     {
       "Área temática": "Macroeconomía",
       "ID área": "macroeconomia",
-      "Registros": 662,
+      "Registros": 660,
       "Indicadores": 10,
       "Primer año": 1960,
-      "Último año": 2026,
+      "Último año": 2025,
       "Último año con dato": 2025,
       "Archivo CSV": "assets/data/world-bank/csv/ove_banco_mundial_venezuela_macroeconomia.csv",
       "Archivo JSON": "assets/data/world-bank/json/ove_banco_mundial_venezuela_macroeconomia.json",
@@ -83,10 +83,10 @@
     {
       "Área temática": "Mercado laboral",
       "ID área": "mercado_laboral",
-      "Registros": 661,
+      "Registros": 660,
       "Indicadores": 10,
       "Primer año": 1960,
-      "Último año": 2026,
+      "Último año": 2025,
       "Último año con dato": 2025,
       "Archivo CSV": "assets/data/world-bank/csv/ove_banco_mundial_venezuela_mercado_laboral.csv",
       "Archivo JSON": "assets/data/world-bank/json/ove_banco_mundial_venezuela_mercado_laboral.json",
@@ -131,10 +131,10 @@
     {
       "Área temática": "Sector externo",
       "ID área": "sector_externo",
-      "Registros": 594,
+      "Registros": 595,
       "Indicadores": 9,
       "Primer año": 1960,
-      "Último año": 2025,
+      "Último año": 2026,
       "Último año con dato": 2025,
       "Archivo CSV": "assets/data/world-bank/csv/ove_banco_mundial_venezuela_sector_externo.csv",
       "Archivo JSON": "assets/data/world-bank/json/ove_banco_mundial_venezuela_sector_externo.json",
