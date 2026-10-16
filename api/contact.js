@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import { buildAcknowledgement } from "./_acknowledgement.js";
 
 const RESEND_API_URL = "https://api.resend.com/emails";
 
@@ -247,6 +248,22 @@ export default async function handler(request, response) {
       });
     } else {
       await sendWithResend({ from, to, replyTo: payload.email, email });
+    }
+
+    // A receipt failure must not turn an already delivered inquiry into an
+    // error (which could encourage the visitor to submit duplicate inquiries).
+    // Newsletter subscriptions have their own semantics; only acknowledge contact.
+    if (payload.form_id === "contacto") {
+      try {
+        const acknowledgement = buildAcknowledgement();
+        if (transport) {
+          await transport.sendMail({ from, to: payload.email, replyTo: to, ...acknowledgement });
+        } else {
+          await sendWithResend({ from, to: payload.email, replyTo: to, email: acknowledgement });
+        }
+      } catch {
+        console.error("OVE_CONTACT_ACKNOWLEDGEMENT_FAILED");
+      }
     }
 
     return jsonResponse(response, 200, { ok: true });
