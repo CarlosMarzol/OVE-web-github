@@ -125,7 +125,7 @@ jobs:
 
       - name: Build and validate live home snapshot
         run: |
-          node --test tests/home-data.test.mjs
+          node --test tests/home-data.test.mjs tests/home-seo.test.mjs
           node scripts/build_home_data.mjs
 
       - name: Commit data changes
