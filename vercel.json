@@ -1,4 +1,5 @@
 {
+  "buildCommand": "node scripts/build_home_data.mjs",
   "cleanUrls": true,
   "trailingSlash": false,
   "functions": {

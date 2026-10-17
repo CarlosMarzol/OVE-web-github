@@ -492,16 +492,16 @@
         </div>
         <div class="live-body">
           <div class="live-metric">PIB real · variación anual</div>
-          <div class="live-value">8,94 <small>% · 2025</small></div>
+          <div class="live-value" data-home-featured-value>Cargando <small>datos BCV</small></div>
           <div class="live-sparkline" aria-hidden="true">
             <svg viewBox="0 0 360 100" preserveAspectRatio="none">
               <line class="spark-grid" x1="0" y1="20" x2="360" y2="20"/>
               <line class="spark-grid" x1="0" y1="80" x2="360" y2="80"/>
-              <polygon class="spark-area" points="0,74 52,82 103,90 154,62 206,30 257,42 309,35 360,36 360,100 0,100"/>
-              <polyline class="spark-line" pathLength="1" points="0,74 52,82 103,90 154,62 206,30 257,42 309,35 360,36"/>
+              <polygon class="spark-area" points=""/>
+              <polyline class="spark-line" pathLength="1" points=""/>
             </svg>
           </div>
-          <div class="live-foot"><span>2018</span><span>Fuente: BCV</span><span>2025</span></div>
+          <div class="live-foot"><span data-home-featured-start>—</span><span>Fuente: BCV</span><span data-home-featured-end>—</span></div>
         </div>
       </a>
     </div>
@@ -509,16 +509,16 @@
     <div class="ticker" aria-label="Resumen de indicadores">
       <div class="ticker-track">
         <div class="ticker-group">
-          <div class="ticker-item"><span>INPC nacional</span><strong>6,3%</strong><em>mayo 2026</em></div>
-          <div class="ticker-item"><span>Tipo de cambio</span><strong>721,35</strong><em>Bs/USD</em></div>
-          <div class="ticker-item"><span>Desempleo</span><strong>5,31%</strong><em>2025</em></div>
-          <div class="ticker-item"><span>PIB corriente</span><strong>99,7</strong><em>US$ mil M</em></div>
+          <div class="ticker-item" data-home-ticker="inpc"><span>INPC nacional</span><strong>Cargando</strong><em>—</em></div>
+          <div class="ticker-item" data-home-ticker="cambio"><span>Tipo de cambio</span><strong>Cargando</strong><em>—</em></div>
+          <div class="ticker-item" data-home-ticker="desempleo"><span>Desempleo</span><strong>Cargando</strong><em>—</em></div>
+          <div class="ticker-item" data-home-ticker="pib_corriente"><span>PIB corriente</span><strong>Cargando</strong><em>—</em></div>
         </div>
         <div class="ticker-group" aria-hidden="true">
-          <div class="ticker-item"><span>INPC nacional</span><strong>6,3%</strong><em>mayo 2026</em></div>
-          <div class="ticker-item"><span>Tipo de cambio</span><strong>721,35</strong><em>Bs/USD</em></div>
-          <div class="ticker-item"><span>Desempleo</span><strong>5,31%</strong><em>2025</em></div>
-          <div class="ticker-item"><span>PIB corriente</span><strong>99,7</strong><em>US$ mil M</em></div>
+          <div class="ticker-item" data-home-ticker="inpc"><span>INPC nacional</span><strong>Cargando</strong><em>—</em></div>
+          <div class="ticker-item" data-home-ticker="cambio"><span>Tipo de cambio</span><strong>Cargando</strong><em>—</em></div>
+          <div class="ticker-item" data-home-ticker="desempleo"><span>Desempleo</span><strong>Cargando</strong><em>—</em></div>
+          <div class="ticker-item" data-home-ticker="pib_corriente"><span>PIB corriente</span><strong>Cargando</strong><em>—</em></div>
         </div>
       </div>
       <button class="ticker-toggle" type="button" aria-label="Pausar la cinta de indicadores" aria-pressed="false" data-ticker-toggle>
@@ -539,6 +539,7 @@
           <p class="section-lead">Selecciona una serie para consultar su evolución reciente, unidad, frecuencia y fuente. Sin cifras descontextualizadas.</p>
         </header>
 
+        <p class="source-note" data-home-data-status role="status" aria-live="polite">Consultando las bases de datos del OVE…</p>
         <div class="studio" data-reveal>
           <div class="indicator-index" role="tablist" aria-label="Indicadores destacados">
             <button class="indicator-tab is-active" id="indicator-tab-pib" type="button" role="tab" aria-selected="true" aria-controls="indicator-panel" tabindex="0" data-indicator="pib"><strong>PIB real</strong><span>BCV · variación anual</span></button>
@@ -554,11 +555,11 @@
                 <h3 id="chart-title">PIB real</h3>
                 <p id="chart-description">Variación anual reciente publicada por el Banco Central de Venezuela.</p>
               </div>
-              <div class="chart-value" id="chart-value">8,94<span>% anual · 2025</span></div>
+              <div class="chart-value" id="chart-value">Cargando<span>Consultando base de datos</span></div>
             </div>
             <div class="chart-toolbar" data-od-id="chart-controls">
               <div class="range-control" role="group" aria-label="Rango temporal">
-                <button class="range-button is-active" type="button" data-range="all" aria-pressed="true">Serie completa</button>
+                <button class="range-button is-active" type="button" data-range="all" aria-pressed="true">Evolución reciente</button>
                 <button class="range-button" type="button" data-range="recent" aria-pressed="false">Últimos 5</button>
               </div>
               <button class="chart-download" type="button" title="Descargar la serie completa en formato CSV" data-download-series>
@@ -592,18 +593,18 @@
           <p class="eyebrow">Infraestructura abierta</p>
           <h2 data-od-id="data-heading">Fuentes que puedes rastrear.</h2>
           <p class="section-lead">Cada conjunto conserva organismo, cobertura, fecha de captura y formato. El dato no termina en una gráfica: queda listo para verificar y reutilizar.</p>
-          <div class="data-note"><strong>08</strong><span>familias de fuentes nacionales y multilaterales organizadas por tema y uso.</span></div>
+          <div class="data-note"><strong data-home-source-total>—</strong><span>familias de fuentes nacionales y multilaterales organizadas por tema y uso.</span></div>
         </div>
 
         <div class="source-list" data-reveal="stagger" data-od-id="source-list">
-          <a class="source-row" href="/datos/bcv" data-od-id="source-bcv" aria-label="Abrir fuentes del Banco Central de Venezuela"><span class="source-number">01</span><div><h3>Banco Central de Venezuela</h3><p>Tipo de cambio, INPC y cuentas nacionales.</p></div><div class="source-count"><strong>11 jul 2026</strong><span>última captura</span></div></a>
-          <a class="source-row" href="/datos/banco-mundial" data-od-id="source-world-bank" aria-label="Abrir datos del Banco Mundial"><span class="source-number">02</span><div><h3>Banco Mundial</h3><p>Indicadores económicos y sociales WDI.</p></div><div class="source-count"><strong>5.216</strong><span>registros</span></div></a>
-          <a class="source-row" href="/datos/fmi" data-od-id="source-imf" aria-label="Abrir datos del FMI WEO"><span class="source-number">03</span><div><h3>FMI · WEO</h3><p>PIB, inflación, deuda y cuentas externas.</p></div><div class="source-count"><strong>1980-2027</strong><span>cobertura variable</span></div></a>
-          <a class="source-row" href="/datos/oit" data-od-id="source-ilo" aria-label="Abrir datos de OIT ILOSTAT"><span class="source-number">04</span><div><h3>OIT · ILOSTAT</h3><p>Empleo, informalidad e ingresos laborales.</p></div><div class="source-count"><strong>1.088.839</strong><span>registros</span></div></a>
-          <a class="source-row" href="/datos/fred" data-od-id="source-fred" aria-label="Abrir datos de FRED"><span class="source-number">05</span><div><h3>FRED</h3><p>Series internacionales sobre Venezuela.</p></div><div class="source-count"><strong>407</strong><span>series</span></div></a>
-          <a class="source-row" href="/datos/ine" data-od-id="source-ine" aria-label="Abrir datos del INE Venezuela"><span class="source-number">06</span><div><h3>INE Venezuela</h3><p>Demografía, población, precios y documentos oficiales.</p></div><div class="source-count"><strong>INE</strong><span>repositorio</span></div></a>
-          <a class="source-row" href="/datos/cepal" data-od-id="source-cepal" aria-label="Abrir datos de CEPALSTAT"><span class="source-number">07</span><div><h3>CEPALSTAT</h3><p>Series regionales para comparar estructura económica y social.</p></div><div class="source-count"><strong>CEPAL</strong><span>repositorio</span></div></a>
-          <a class="source-row" href="/datos/unctad" data-od-id="source-unctad" aria-label="Abrir datos de UNCTADstat"><span class="source-number">08</span><div><h3>UNCTADstat</h3><p>Comercio exterior, inversión, transporte marítimo y economía digital.</p></div><div class="source-count"><strong>UNCTAD</strong><span>repositorio</span></div></a>
+          <a class="source-row" href="/datos/bcv" data-od-id="source-bcv" aria-label="Abrir fuentes del Banco Central de Venezuela"><span class="source-number">01</span><div><h3>Banco Central de Venezuela</h3><p>Tipo de cambio, INPC y cuentas nacionales.</p></div><div class="source-count"><strong data-home-source="bcv">Cargando</strong><span data-home-source-label="bcv">catálogo</span></div></a>
+          <a class="source-row" href="/datos/banco-mundial" data-od-id="source-world-bank" aria-label="Abrir datos del Banco Mundial"><span class="source-number">02</span><div><h3>Banco Mundial</h3><p>Indicadores económicos y sociales WDI.</p></div><div class="source-count"><strong data-home-source="world-bank">Cargando</strong><span data-home-source-label="world-bank">catálogo</span></div></a>
+          <a class="source-row" href="/datos/fmi" data-od-id="source-imf" aria-label="Abrir datos del FMI WEO"><span class="source-number">03</span><div><h3>FMI · WEO</h3><p>PIB, inflación, deuda y cuentas externas.</p></div><div class="source-count"><strong data-home-source="imf">Cargando</strong><span data-home-source-label="imf">catálogo</span></div></a>
+          <a class="source-row" href="/datos/oit" data-od-id="source-ilo" aria-label="Abrir datos de OIT ILOSTAT"><span class="source-number">04</span><div><h3>OIT · ILOSTAT</h3><p>Empleo, informalidad e ingresos laborales.</p></div><div class="source-count"><strong data-home-source="ilo">Cargando</strong><span data-home-source-label="ilo">catálogo</span></div></a>
+          <a class="source-row" href="/datos/fred" data-od-id="source-fred" aria-label="Abrir datos de FRED"><span class="source-number">05</span><div><h3>FRED</h3><p>Series internacionales sobre Venezuela.</p></div><div class="source-count"><strong data-home-source="fred">Cargando</strong><span data-home-source-label="fred">catálogo</span></div></a>
+          <a class="source-row" href="/datos/ine" data-od-id="source-ine" aria-label="Abrir datos del INE Venezuela"><span class="source-number">06</span><div><h3>INE Venezuela</h3><p>Demografía, población, precios y documentos oficiales.</p></div><div class="source-count"><strong data-home-source="ine">Cargando</strong><span data-home-source-label="ine">catálogo</span></div></a>
+          <a class="source-row" href="/datos/cepal" data-od-id="source-cepal" aria-label="Abrir datos de CEPALSTAT"><span class="source-number">07</span><div><h3>CEPALSTAT</h3><p>Series regionales para comparar estructura económica y social.</p></div><div class="source-count"><strong data-home-source="cepal">Cargando</strong><span data-home-source-label="cepal">catálogo</span></div></a>
+          <a class="source-row" href="/datos/unctad" data-od-id="source-unctad" aria-label="Abrir datos de UNCTADstat"><span class="source-number">08</span><div><h3>UNCTADstat</h3><p>Comercio exterior, inversión, transporte marítimo y economía digital.</p></div><div class="source-count"><strong data-home-source="unctad">Cargando</strong><span data-home-source-label="unctad">catálogo</span></div></a>
         </div>
       </div>
     </section>
@@ -763,11 +764,51 @@
     const reducedMotion=matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     const indicatorData={
-      pib:{kicker:"Actividad económica",title:"PIB real",description:"Variación anual reciente publicada por el Banco Central de Venezuela.",value:"8,94",unit:"% anual · 2025",unitLabel:"%",source:"Banco Central de Venezuela",frequency:"Anual",points:[[2018,-21.3959],[2019,-28.9915],[2020,-33.2038],[2021,1.111],[2022,14.9177],[2023,5.1436],[2024,9.0255],[2025,8.9445]]},
-      inpc:{kicker:"Precios",title:"INPC nacional",description:"Variación mensual del índice nacional de precios al consumidor publicado por el BCV.",value:"6,3",unit:"% mensual · mayo 2026",unitLabel:"%",source:"Banco Central de Venezuela",frequency:"Mensual",points:[["oct 25",25.9313],["nov",21.6],["dic",13.6],["ene 26",32.6],["feb",14.6],["mar",13.1],["abr",10.6],["may",6.3]]},
-      cambio:{kicker:"Mercado cambiario",title:"Tipo de cambio BCV",description:"Referencia oficial diaria en bolívares por dólar estadounidense.",value:"721,35",unit:"Bs/USD · 13 jul 2026",unitLabel:"Bs/USD",source:"Banco Central de Venezuela",frequency:"Diaria",points:[["30 jun",623.0223],["1 jul",633.3644],["2 jul",639.7029],["3 jul",652.9726],["6 jul",667.05],["7 jul",674.9305],["8 jul",685.9427],["9 jul",700.2249],["10 jul",709.6935],["13 jul",721.3456]]},
-      desempleo:{kicker:"Mercado laboral",title:"Desempleo total",description:"Estimación anual de desempleo total sobre la fuerza laboral.",value:"5,31",unit:"% · 2025",unitLabel:"%",source:"Banco Mundial WDI",frequency:"Anual",points:[[2018,5.468],[2019,5.89],[2020,7.53],[2021,7.027],[2022,5.646],[2023,5.407],[2024,5.321],[2025,5.307]]}
-    };
+  "pib": {
+    "kicker": "Actividad económica",
+    "title": "PIB real",
+    "description": "Variación anual publicada por el Banco Central de Venezuela.",
+    "value": "Cargando",
+    "unit": "Consultando base de datos",
+    "unitLabel": "%",
+    "source": "Banco Central de Venezuela",
+    "frequency": "Anual",
+    "points": []
+  },
+  "inpc": {
+    "kicker": "Precios",
+    "title": "INPC nacional",
+    "description": "Variación mensual del índice nacional de precios al consumidor publicado por el BCV.",
+    "value": "Cargando",
+    "unit": "Consultando base de datos",
+    "unitLabel": "%",
+    "source": "Banco Central de Venezuela",
+    "frequency": "Mensual",
+    "points": []
+  },
+  "cambio": {
+    "kicker": "Mercado cambiario",
+    "title": "Tipo de cambio BCV",
+    "description": "Referencia oficial diaria en bolívares por dólar estadounidense.",
+    "value": "Cargando",
+    "unit": "Consultando base de datos",
+    "unitLabel": "Bs/USD",
+    "source": "Banco Central de Venezuela",
+    "frequency": "Diaria",
+    "points": []
+  },
+  "desempleo": {
+    "kicker": "Mercado laboral",
+    "title": "Desempleo total",
+    "description": "Estimación anual de desempleo total sobre la fuerza laboral.",
+    "value": "Cargando",
+    "unit": "Consultando base de datos",
+    "unitLabel": "%",
+    "source": "Banco Mundial WDI",
+    "frequency": "Anual",
+    "points": []
+  }
+};
     let currentIndicator="pib";
     let currentRange="all";
     const numberFormatter=new Intl.NumberFormat("es-VE",{maximumFractionDigits:2});
@@ -995,7 +1036,7 @@
         next.focus();
       });
     });
-    document.querySelector("[data-chart-retry]").addEventListener("click",()=>setIndicator(currentIndicator));
+    document.querySelector("[data-chart-retry]").addEventListener("click",()=>refreshHomeData());
     document.querySelectorAll("[data-range]").forEach(button=>button.addEventListener("click",()=>{
       currentRange=button.dataset.range;
       document.querySelectorAll("[data-range]").forEach(item=>{
@@ -1010,7 +1051,8 @@
     const chartActionStatus=document.querySelector("[data-chart-action-status]");
     downloadButton.addEventListener("click",()=>{
       const item=indicatorData[currentIndicator];
-      const rows=[["Periodo","Valor","Unidad","Fuente"],...item.points.map(point=>[point[0],point[1],item.unitLabel,item.source])];
+      if(!item.points.length)return;
+      const rows=[["Periodo","Valor","Unidad","Fuente"],...(item.allPoints||item.points).map(point=>[point[0],point[1],item.unitLabel,item.source])];
       const csv=rows.map(row=>row.map(value=>`"${String(value).replaceAll('"','""')}"`).join(",")).join("\r\n");
       const blob=new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8"});
       const link=document.createElement("a");
@@ -1028,6 +1070,71 @@
       },1200);
     });
     setIndicator("pib");
+    // One validated snapshot drives EVERY home number, chart and CSV.
+    let homeSnapshot=null;
+    let refreshingHome=false;
+    async function refreshHomeData(){
+      if(refreshingHome || document.hidden)return;
+      refreshingHome=true;
+      const status=document.querySelector("[data-home-data-status]");
+      try{
+        const {fetchSnapshot,periodLabel,valueLabel}=await import("/assets/home-data.js");
+        const data=await fetchSnapshot();
+        if(data.version!==homeSnapshot?.version){
+          for(const [key,item] of Object.entries(indicatorData)){
+            const series=data.indicators[key];
+            const limit=series.frequency==="Anual"?8:series.frequency==="Mensual"?12:45;
+            Object.assign(item,{value:valueLabel(series),unit:`${series.unit} · ${periodLabel(series)}`,
+              source:series.source,frequency:series.frequency,
+              points:series.points.slice(-limit),allPoints:series.points});
+          }
+          const pib=data.indicators.pib;
+          const featured=document.querySelector("[data-home-featured-value]");
+          featured.replaceChildren(document.createTextNode(valueLabel(pib)+" "));
+          const small=document.createElement("small");small.textContent=`% · ${periodLabel(pib)}`;featured.append(small);
+          document.querySelector("[data-home-featured-start]").textContent=indicatorData.pib.points[0][0];
+          document.querySelector("[data-home-featured-end]").textContent=periodLabel(pib);
+          const points=indicatorData.pib.points;
+          const vals=points.map(p=>p[1]),lo=Math.min(...vals),span=Math.max(...vals)-lo||1;
+          const coords=points.map((p,i)=>`${i*360/Math.max(points.length-1,1)},${90-(p[1]-lo)*80/span}`).join(" ");
+          document.querySelector(".spark-line").setAttribute("points",coords);
+          document.querySelector(".spark-area").setAttribute("points",`${coords} 360,100 0,100`);
+          document.querySelectorAll("[data-home-ticker]").forEach(node=>{
+            const key=node.dataset.homeTicker, series=data.indicators[key];
+            node.querySelector("strong").textContent=valueLabel(series)+(series.unit.startsWith("%")?"%":"");
+            node.querySelector("em").textContent=`${series.unit} · ${periodLabel(series)}`;
+          });
+          for(const [id,source] of Object.entries(data.sources)){
+            const node=document.querySelector(`[data-home-source="${id}"]`);
+            node.textContent=id==="bcv"?new Intl.DateTimeFormat("es-VE",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}).format(new Date(source.value))
+              :typeof source.value==="number"?new Intl.NumberFormat("es-VE").format(source.value):source.value;
+            node.title=`Captura del catálogo: ${source.captured_at||"No disponible"}`;
+            document.querySelector(`[data-home-source-label="${id}"]`).textContent=source.label;
+          }
+          document.querySelector("[data-home-source-total]").textContent=String(Object.keys(data.sources).length).padStart(2,"0");
+          homeSnapshot=data;
+          setIndicator(currentIndicator);
+        }
+        status.textContent="Conectado a las bases OVE · Cada indicador muestra su último periodo disponible. Captura y periodo estadístico no son la misma fecha.";
+        document.querySelector("[data-download-series]").disabled=false;
+      }catch(error){
+        status.textContent=homeSnapshot?"No se pudo comprobar la actualización. Se conservan los últimos datos cargados; revisa sus periodos."
+          :"Datos temporalmente no disponibles. No se muestran cifras de ejemplo. Puedes reintentar la carga.";
+        if(!homeSnapshot){
+          document.querySelectorAll("[data-home-ticker] strong,[data-home-source],[data-home-featured-value]").forEach(n=>n.textContent="No disponible");
+          Object.values(indicatorData).forEach(item=>{item.value="No disponible";item.unit="Sin conexión con la base";});
+          document.querySelector("#chart-value").textContent="No disponible";
+          document.querySelector("[data-download-series]").disabled=true;
+          setChartState("error",{title:"No pudimos cargar los datos",copy:"Reintenta para consultar la base actualizada."});
+        }
+      }finally{refreshingHome=false;}
+    }
+    document.querySelector("[data-download-series]").disabled=true;
+    refreshHomeData();
+    setInterval(refreshHomeData,5*60*1000);
+    document.addEventListener("visibilitychange",()=>{if(!document.hidden)refreshHomeData();});
+    window.addEventListener("online",refreshHomeData);
+    window.addEventListener("focus",refreshHomeData);
 
     if(!reducedMotion){
       const revealObserver=new IntersectionObserver(entries=>{
