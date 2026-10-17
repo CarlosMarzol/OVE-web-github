@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "dataset_generated_at": "2026-10-15T23:09:58Z",
+  "dataset_generated_at": "2026-10-16T22:56:42Z",
   "indicators": {
     "pib": {
       "id": "pib_real_bcv",
@@ -1008,9 +1008,9 @@
       "frequency": "Diaria",
       "unit": "Bs/USD",
       "latest": {
-        "value": 880.1159,
-        "date": "2026-10-16",
-        "period": "2026-10-16"
+        "value": 881.0664,
+        "date": "2026-10-19",
+        "period": "2026-10-19"
       },
       "points": [
         [
@@ -11428,6 +11428,10 @@
         [
           "2026-10-16",
           880.1159
+        ],
+        [
+          "2026-10-19",
+          881.0664
         ]
       ]
     },
@@ -12147,9 +12151,9 @@
   },
   "sources": {
     "bcv": {
-      "value": "2026-10-15T23:09:48Z",
+      "value": "2026-10-16T22:56:26Z",
       "label": "última captura",
-      "captured_at": "2026-10-15T23:09:48Z",
+      "captured_at": "2026-10-16T22:56:26Z",
       "catalog": "/assets/data/bcv/catalog/bcv-catalog.json"
     },
     "world-bank": {
@@ -12183,9 +12187,9 @@
       "catalog": "/assets/data/ine/catalog/ine-catalog.json"
     },
     "cepal": {
-      "value": 127199,
+      "value": 140678,
       "label": "registros",
-      "captured_at": "2026-09-06",
+      "captured_at": "2026-10-16",
       "catalog": "/assets/data/cepal/catalog/cepal-catalog.json"
     },
     "unctad": {
@@ -12195,5 +12199,5 @@
       "catalog": "/assets/data/unctad/catalog/unctad-catalog.json"
     }
   },
-  "version": "dcb8d58f8972344c"
+  "version": "83bd008c6f15036b"
 }
