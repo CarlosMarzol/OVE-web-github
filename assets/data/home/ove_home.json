@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "dataset_generated_at": "2026-10-17T16:23:54Z",
+  "dataset_generated_at": "2026-10-17T16:37:48Z",
   "indicators": {
     "pib": {
       "id": "pib_real_bcv",
@@ -12171,7 +12171,7 @@
     "ilo": {
       "value": 1095554,
       "label": "registros",
-      "captured_at": "2026-10-10",
+      "captured_at": "2026-10-17",
       "catalog": "/assets/data/ilo/catalog/ilo-catalog.json"
     },
     "fred": {
@@ -12199,5 +12199,5 @@
       "catalog": "/assets/data/unctad/catalog/unctad-catalog.json"
     }
   },
-  "version": "ba80f58b1ee96a7b"
+  "version": "a67ee9e8b669f752"
 }
