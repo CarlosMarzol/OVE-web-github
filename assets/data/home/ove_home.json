@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "dataset_generated_at": "2026-10-17T22:30:37Z",
+  "dataset_generated_at": "2026-10-18T17:41:06Z",
   "indicators": {
     "pib": {
       "id": "pib_real_bcv",
@@ -12195,9 +12195,9 @@
     "unctad": {
       "value": 83901,
       "label": "valores extraídos",
-      "captured_at": "2026-10-08",
+      "captured_at": "2026-10-18",
       "catalog": "/assets/data/unctad/catalog/unctad-catalog.json"
     }
   },
-  "version": "21500e71e0d32d50"
+  "version": "9bccd1f01e89f0ba"
 }

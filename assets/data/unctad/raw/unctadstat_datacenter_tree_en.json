@@ -387,7 +387,7 @@
           {
             "id": 1994,
             "version": 10003,
-            "reportTitle": "Balance of payments: Personal remittances - Annual ",
+            "reportTitle": "Personal remittances: receipts and payments, annual",
             "lastUpdatedDate": "2025-11-05T13:07:00",
             "category": "External financial resources",
             "keywords": "remittances, transfers, personal, compensation, employees, payments, receipts",
@@ -469,10 +469,10 @@
             "order": 0
           },
           {
-            "id": 2597,
-            "version": 10021,
+            "id": 2642,
+            "version": 10022,
             "reportTitle": "Commodity prices: UNCTAD Commodity Price Index - Monthly",
-            "lastUpdatedDate": "2026-09-11T12:02:00",
+            "lastUpdatedDate": "2026-10-09T14:30:00",
             "category": "Commodities prices",
             "keywords": "commodity, price, index",
             "reportName": "US.UCPI_M",
@@ -1093,20 +1093,20 @@
         "title": "E-commerce",
         "reports": [
           {
-            "id": 2529,
-            "version": 10006,
+            "id": 2656,
+            "version": 10010,
             "reportTitle": "E-commerce: Domestic and international sales - Annual (analytical)",
-            "lastUpdatedDate": "2026-05-21T08:57:00",
+            "lastUpdatedDate": "2026-10-14T15:16:00",
             "category": "E-commerce",
             "keywords": "e-commerce, digital ordering, digital trade, sales, business statistics",
             "reportName": "US.ECommerceTotal",
             "order": 1
           },
           {
-            "id": 2530,
-            "version": 10006,
+            "id": 2657,
+            "version": 10010,
             "reportTitle": "E-commerce: International digitally ordered trade, bilateral – Annual (analytical)",
-            "lastUpdatedDate": "2026-05-21T08:57:00",
+            "lastUpdatedDate": "2026-10-14T15:16:00",
             "category": "E-commerce",
             "keywords": "e-commerce, digital trade, digital ordering, sales, turnover, business statistics",
             "reportName": "US.ECommerceInternational",
