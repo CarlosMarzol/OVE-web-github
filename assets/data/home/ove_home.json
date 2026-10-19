@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "dataset_generated_at": "2026-10-18T22:31:37Z",
+  "dataset_generated_at": "2026-10-19T18:47:50Z",
   "indicators": {
     "pib": {
       "id": "pib_real_bcv",
@@ -12157,9 +12157,9 @@
       "catalog": "/assets/data/bcv/catalog/bcv-catalog.json"
     },
     "world-bank": {
-      "value": 5215,
+      "value": 5217,
       "label": "registros",
-      "captured_at": "2026-10-12",
+      "captured_at": "2026-10-19",
       "catalog": "/assets/data/world-bank/catalog/world-bank-catalog.json"
     },
     "imf": {
@@ -12199,5 +12199,5 @@
       "catalog": "/assets/data/unctad/catalog/unctad-catalog.json"
     }
   },
-  "version": "6129c9506736198e"
+  "version": "f4cd72ecf36a3e6a"
 }
