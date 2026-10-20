@@ -93,6 +93,7 @@ jobs:
           elif [ "${{ steps.group.outputs.value }}" = "all" ]; then
             python scripts/bcv_ingest.py --group all
             python scripts/exchange_market_ingest.py
+            python scripts/inpc_announced_check.py
             python scripts/bcv_workbook_extract.py
             python scripts/build_bcv_pib_operation_excels.py
             python scripts/world_bank_refresh.py
@@ -106,6 +107,7 @@ jobs:
           elif [ "${{ steps.group.outputs.value }}" = "daily" ]; then
             python scripts/bcv_ingest.py --group daily
             python scripts/exchange_market_ingest.py
+            python scripts/inpc_announced_check.py
             python scripts/bcv_ingest.py --group bcv_producto_interno_bruto
             python scripts/bcv_workbook_extract.py
             python scripts/build_bcv_pib_operation_excels.py
