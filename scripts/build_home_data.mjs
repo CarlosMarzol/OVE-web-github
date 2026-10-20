@@ -71,8 +71,26 @@ export function main(root = resolve(dirname(fileURLToPath(import.meta.url)), '..
   const read = p => JSON.parse(readFileSync(resolve(root, p), 'utf8'));
   const keyData = read('assets/data/indicadores-clave/ove_indicadores_clave_venezuela.json');
   const catalogs = Object.fromEntries(['bcv','world-bank','imf','ilo','fred','ine','cepal','unctad'].map(id => [id, read(`assets/data/${id}/catalog/${id}-catalog.json`)]));
+  const indicators = buildIndicators(sourceObservations(read));
+  // Optional BCV announced-INPC note: present only while the homepage announcement
+  // is newer than the official statistical series. Absence changes nothing.
+  try {
+    const note = read('assets/data/bcv/json/ove_bcv_inpc_dato_anunciado.json');
+    if (note?.mostrar_nota && note?.anunciado && indicators.inpc) {
+      indicators.inpc = { ...indicators.inpc, anunciado: {
+        period: note.anunciado.period,
+        period_label: note.anunciado.period_label,
+        var_mensual_pct: note.anunciado.var_mensual_pct,
+        var_acumulada_pct: note.anunciado.var_acumulada_pct,
+        status: note.metadata?.status || null,
+        disclaimer: note.metadata?.disclaimer || null,
+        checked_at: note.metadata?.last_fetched_at || null,
+        source_url: note.metadata?.source_url || null
+      }};
+    }
+  } catch { /* no note available: home stays statistical-only */ }
   const payload = { schema_version: 1, dataset_generated_at: keyData.metadata.generated_at,
-    indicators: buildIndicators(sourceObservations(read)), sources: buildSources(catalogs) };
+    indicators, sources: buildSources(catalogs) };
   payload.version = createHash('sha256').update(JSON.stringify(payload)).digest('hex').slice(0,16);
   const target = resolve(root, 'assets/data/home/ove_home.json');
   const text = JSON.stringify(payload, null, 2) + '\n';
