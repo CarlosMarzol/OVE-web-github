@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "dataset_generated_at": "2026-10-19T23:50:49Z",
+  "dataset_generated_at": "2026-10-20T18:37:07Z",
   "indicators": {
     "pib": {
       "id": "pib_real_bcv",
@@ -998,7 +998,17 @@
           "2026-08",
           8.9
         ]
-      ]
+      ],
+      "anunciado": {
+        "period": "2026-09",
+        "period_label": "Septiembre 2026",
+        "var_mensual_pct": 8.4,
+        "var_acumulada_pct": 225.3,
+        "status": "anuncio_pendiente_de_confirmacion_estadistica",
+        "disclaimer": "Cifra anunciada por el BCV en su pagina principal, pendiente de confirmacion en la serie estadistica oficial descargable. No sustituye el dato oficial para facturacion, contabilidad o reportes legales.",
+        "checked_at": "2026-10-20T08:00:49Z",
+        "source_url": "https://www.bcv.org.ve/"
+      }
     },
     "cambio": {
       "id": "tipo_cambio_bcv_usd",
@@ -12181,7 +12191,7 @@
     "fred": {
       "value": 407,
       "label": "series catalogadas",
-      "captured_at": "2026-10-13",
+      "captured_at": "2026-10-20",
       "catalog": "/assets/data/fred/catalog/fred-catalog.json"
     },
     "ine": {
@@ -12203,5 +12213,5 @@
       "catalog": "/assets/data/unctad/catalog/unctad-catalog.json"
     }
   },
-  "version": "ab9beb225be2f757"
+  "version": "739b523a7832897b"
 }
