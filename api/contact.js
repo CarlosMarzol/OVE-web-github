@@ -1,7 +1,65 @@
 import nodemailer from "nodemailer";
 import { buildAcknowledgement } from "./_acknowledgement.js";
+import { buildBoletinWelcome } from "./_boletin_welcome.js";
 
 const RESEND_API_URL = "https://api.resend.com/emails";
+const RESEND_AUDIENCES_URL = "https://api.resend.com/audiences";
+const BOLETIN_AUDIENCE_NAME = "Boletín OVE";
+let cachedBoletinAudienceId = null;
+
+async function resendAudienceRequest(path, options = {}) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) return null;
+  return fetch(RESEND_AUDIENCES_URL + path, {
+    ...options,
+    headers: {
+      Authorization: "Bearer " + apiKey,
+      "Content-Type": "application/json",
+      ...(options.headers || {})
+    }
+  });
+}
+
+async function resolveBoletinAudienceId() {
+  if (process.env.RESEND_AUDIENCE_ID_BOLETIN) return process.env.RESEND_AUDIENCE_ID_BOLETIN;
+  if (cachedBoletinAudienceId) return cachedBoletinAudienceId;
+  const listResponse = await resendAudienceRequest("", { method: "GET" });
+  if (listResponse && listResponse.ok) {
+    const data = await listResponse.json().catch(() => null);
+    const found = (data && data.data ? data.data : []).find(
+      a => String((a && a.name) || "").toLowerCase() === BOLETIN_AUDIENCE_NAME.toLowerCase()
+    );
+    if (found && found.id) {
+      cachedBoletinAudienceId = found.id;
+      return found.id;
+    }
+  }
+  const createResponse = await resendAudienceRequest("", {
+    method: "POST",
+    body: JSON.stringify({ name: BOLETIN_AUDIENCE_NAME })
+  });
+  if (createResponse && createResponse.ok) {
+    const created = await createResponse.json().catch(() => null);
+    if (created && created.id) {
+      cachedBoletinAudienceId = created.id;
+      return created.id;
+    }
+  }
+  throw new Error("BOLETIN_AUDIENCE_UNAVAILABLE");
+}
+
+async function registerNewsletterContact(email) {
+  const audienceId = await resolveBoletinAudienceId();
+  if (!audienceId) return false; // despliegue sin Resend: no hay lista donde guardar
+  const response = await resendAudienceRequest("/" + audienceId + "/contacts", {
+    method: "POST",
+    body: JSON.stringify({ email, unsubscribed: false })
+  });
+  if (!response || (!response.ok && response.status !== 409 && response.status !== 422)) {
+    throw new Error("BOLETIN_AUDIENCE_REGISTRATION_FAILED");
+  }
+  return true;
+}
 
 const FORM_LABELS = {
   contacto: "Contacto general",
@@ -248,6 +306,26 @@ export default async function handler(request, response) {
       });
     } else {
       await sendWithResend({ from, to, replyTo: payload.email, email });
+    }
+
+    if (payload.form_id === "boletin") {
+      // Guardar la suscripción en la audiencia del boletín (Resend Audiences).
+      // Un fallo aquí nunca debe convertir una suscripción entregada en error.
+      try {
+        await registerNewsletterContact(payload.email);
+      } catch {
+        console.error("OVE_BOLETIN_AUDIENCE_FAILED");
+      }
+      try {
+        const welcome = buildBoletinWelcome();
+        if (transport) {
+          await transport.sendMail({ from, to: payload.email, replyTo: to, ...welcome });
+        } else {
+          await sendWithResend({ from, to: payload.email, replyTo: to, email: welcome });
+        }
+      } catch {
+        console.error("OVE_BOLETIN_WELCOME_FAILED");
+      }
     }
 
     // A receipt failure must not turn an already delivered inquiry into an
