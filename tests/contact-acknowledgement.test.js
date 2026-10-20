@@ -7,16 +7,20 @@ test('contact acknowledgement behavior', async t => {
   const originalFetch = globalThis.fetch;
   const saved = { ...process.env };
   process.env.RESEND_API_KEY = 'test-only';
+  process.env.RESEND_AUDIENCE_ID_BOLETIN = 'test-audience';
   delete process.env.OVE_SMTP_USER;
   delete process.env.OUTLOOK_SMTP_USER;
   let calls;
+  let urls;
   let failAt;
   globalThis.fetch = async (_url, options) => {
+    urls.push(String(_url));
     calls.push(JSON.parse(options.body));
     return { ok: calls.length !== failAt, status: 503, text: async () => 'test failure' };
   };
   const invoke = async (body) => {
     calls = [];
+    urls = [];
     const result = {};
     const res = { status(n) { result.status = n; return this; }, json(p) { result.body = p; }, end() {} };
     await handler({method: 'POST', headers: {}, body}, res);
@@ -52,9 +56,26 @@ test('contact acknowledgement behavior', async t => {
       assert.equal((await invoke({...contact, website:'bot'})).status, 204);
       assert.equal(calls.length, 0);
     });
-    await t.test('newsletter does not receive contact acknowledgement', async () => {
+    await t.test('boletin guarda el contacto en la audiencia y envia bienvenida', async () => {
+      failAt = 0;
+      const result = await invoke({form_id:'boletin',email:'visitor@example.com'});
+      assert.equal(result.status, 200);
+      assert.equal(calls.length, 3);
+      assert.equal(calls[0].to, process.env.OVE_CONTACT_TO || 'ove.venezuela@outlook.com');
+      assert.match(urls[1], /\/audiences\/test-audience\/contacts/);
+      assert.equal(calls[1].email, 'visitor@example.com');
+      assert.equal(calls[1].unsubscribed, false);
+      assert.equal(calls[2].to, 'visitor@example.com');
+      assert.match(calls[2].text, /suscripción/);
+      assert.match(calls[2].text, /Anya/);
+    });
+    await t.test('boletin: fallo de audiencia o de bienvenida nunca rompe la suscripcion', async () => {
+      failAt = 2;
       assert.equal((await invoke({form_id:'boletin',email:'visitor@example.com'})).status, 200);
-      assert.equal(calls.length, 1);
+      assert.equal(calls.length, 3);
+      failAt = 3;
+      assert.equal((await invoke({form_id:'boletin',email:'visitor@example.com'})).status, 200);
+      assert.equal(calls.length, 3);
     });
   } finally {
     globalThis.fetch = originalFetch;
