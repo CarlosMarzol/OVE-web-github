@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "dataset_generated_at": "2026-10-20T23:17:16Z",
+  "dataset_generated_at": "2026-10-21T19:03:01Z",
   "indicators": {
     "pib": {
       "id": "pib_real_bcv",
@@ -12201,7 +12201,7 @@
     "ine": {
       "value": 344,
       "label": "recursos catalogados",
-      "captured_at": "2026-10-14",
+      "captured_at": "2026-10-21",
       "catalog": "/assets/data/ine/catalog/ine-catalog.json"
     },
     "cepal": {
@@ -12217,5 +12217,5 @@
       "catalog": "/assets/data/unctad/catalog/unctad-catalog.json"
     }
   },
-  "version": "dd88f6e3f5e37124"
+  "version": "8a3fd1b1ecb242ad"
 }
