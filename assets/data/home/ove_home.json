@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "dataset_generated_at": "2026-10-22T23:29:44Z",
+  "dataset_generated_at": "2026-10-23T23:18:28Z",
   "indicators": {
     "pib": {
       "id": "pib_real_bcv",
@@ -1006,7 +1006,7 @@
         "var_acumulada_pct": 225.3,
         "status": "anuncio_pendiente_de_confirmacion_estadistica",
         "disclaimer": "Cifra anunciada por el BCV en su pagina principal, pendiente de confirmacion en la serie estadistica oficial descargable. No sustituye el dato oficial para facturacion, contabilidad o reportes legales.",
-        "checked_at": "2026-10-22T23:29:19Z",
+        "checked_at": "2026-10-23T23:18:03Z",
         "source_url": "https://www.bcv.org.ve/"
       }
     },
@@ -1018,9 +1018,9 @@
       "frequency": "Diaria",
       "unit": "Bs/USD",
       "latest": {
-        "value": 886.2271,
-        "date": "2026-10-23",
-        "period": "2026-10-23"
+        "value": 887.302,
+        "date": "2026-10-27",
+        "period": "2026-10-27"
       },
       "points": [
         [
@@ -11458,6 +11458,10 @@
         [
           "2026-10-23",
           886.2271
+        ],
+        [
+          "2026-10-27",
+          887.302
         ]
       ]
     },
@@ -12177,9 +12181,9 @@
   },
   "sources": {
     "bcv": {
-      "value": "2026-10-22T23:29:28Z",
+      "value": "2026-10-23T23:18:16Z",
       "label": "última captura",
-      "captured_at": "2026-10-22T23:29:28Z",
+      "captured_at": "2026-10-23T23:18:16Z",
       "catalog": "/assets/data/bcv/catalog/bcv-catalog.json"
     },
     "world-bank": {
@@ -12225,5 +12229,5 @@
       "catalog": "/assets/data/unctad/catalog/unctad-catalog.json"
     }
   },
-  "version": "c77970729498485e"
+  "version": "615b6005b845a48c"
 }
