@@ -2,7 +2,7 @@
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
     "Dataset": "INE Venezuela - catálogo de recursos oficiales",
-    "Fecha generación": "2026-10-21",
+    "Fecha generación": "2026-10-28",
     "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
     "URL portal": "https://ine.gob.ve/",
     "País": "Venezuela",
@@ -3995,14 +3995,14 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
-      "Título": "Noticias-octubre-5.pdf",
+      "Título": "Noticias-octubre-7.pdf",
       "Categoría": "Publicaciones",
       "Tipo de recurso": "Documento",
       "Formato": "PDF",
       "Año publicación": "2026",
       "Mes publicación": "octubre",
-      "Archivo original": "Noticias-octubre-5.pdf",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/10/Noticias-octubre-5.pdf",
+      "Archivo original": "Noticias-octubre-7.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/10/Noticias-octubre-7.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -4042,19 +4042,6 @@
       "Mes publicación": "febrero",
       "Archivo original": "Resumen_OCTUBRE_2025.pdf",
       "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/02/Resumen_OCTUBRE_2025.pdf",
-      "URL portal": "https://ine.gob.ve/"
-    },
-    {
-      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
-      "País": "Venezuela",
-      "Título": "Octubre",
-      "Categoría": "Publicaciones",
-      "Tipo de recurso": "Documento",
-      "Formato": "PDF",
-      "Año publicación": "2026",
-      "Mes publicación": "octubre",
-      "Archivo original": "Noticias-octubre-2-2.pdf",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/10/Noticias-octubre-2-2.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -4120,6 +4107,19 @@
       "Mes publicación": "noviembre",
       "Archivo original": "ESTADO-PORTUGUESA.pdf",
       "URL fuente": "https://ine.gob.ve/wp-content/uploads/2025/11/ESTADO-PORTUGUESA.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
+      "Título": "Presidente",
+      "Categoría": "Publicaciones",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "octubre",
+      "Archivo original": "HOJA-INE-CAMILO.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/10/HOJA-INE-CAMILO.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
