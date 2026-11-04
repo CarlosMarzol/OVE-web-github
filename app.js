@@ -4458,11 +4458,11 @@ const legalContent = {
     lead: "Política de privacidad del Observatorio Venezolano de Economía (OVE). Para consultas sobre privacidad, escribe a ove.venezuela@outlook.com. El sitio puede usar analítica agregada y sin cookies personales para medir audiencia y mejorar contenidos.",
     sections: [
       ["Responsable y contacto", "El responsable del tratamiento es el Observatorio Venezolano de Economía (OVE). Para consultas sobre privacidad, solicitudes de baja o ejercicio de derechos, contacta a ove.venezuela@outlook.com."],
-      ["Datos y canales", "Los formularios pueden solicitar nombre, correo electrónico, teléfono opcional, tipo de consulta, mensaje o propuesta. El formulario del boletín recoge el correo electrónico y la elección de suscribirse. Las consultas y propuestas se remiten al correo institucional; las suscripciones se registran en la audiencia «Boletín OVE» de Resend."],
+      ["Datos y canales", "Los formularios pueden solicitar nombre, correo electrónico, teléfono opcional, tipo de consulta, mensaje o propuesta. Las consultas y propuestas se guardan en la base de datos interna del OVE alojada en Neon y también se remiten al correo institucional. La suscripción al boletín registra el correo y el consentimiento en esa base y en la audiencia «Boletín OVE» de Resend."],
       ["Analítica web", "El OVE puede utilizar Vercel Web Analytics para obtener métricas agregadas de visitas, páginas, país aproximado, dispositivo, navegador, descargas y uso de secciones. Esta medición no usa cookies personales ni crea perfiles individuales de usuarios."],
       ["Finalidades y consentimiento", "Usamos los datos para responder consultas y gestionar propuestas que nos envíes. Solo enviaremos el boletín si marcas voluntariamente la casilla de suscripción. La base para enviar el boletín es tu consentimiento, que puedes retirar en cualquier momento."],
-      ["Conservación y baja del boletín", "Conservaremos tu dirección mientras mantengas la suscripción. Para darte de baja, responde al correo de bienvenida con el asunto «Baja» o escribe a ove.venezuela@outlook.com; eliminaremos tu dirección de la lista activa. Las consultas se conservan en el buzón durante el tiempo necesario para responder y gestionar la solicitud."],
-      ["Proveedores", "El sitio y sus funciones de formulario se alojan en Vercel. Resend procesa el envío de correos y mantiene la audiencia de suscriptores del boletín por cuenta del OVE. Estos proveedores reciben los datos necesarios para prestar esos servicios."],
+      ["Conservación y baja del boletín", "Las consultas y propuestas se conservarán mientras estén en gestión y durante diez años desde su cierre; al vencer ese plazo se eliminarán de la base activa. Conservaremos tu dirección de boletín mientras mantengas la suscripción. Para darte de baja, responde al correo de bienvenida con el asunto «Baja» o escribe a ove.venezuela@outlook.com; eliminaremos tu dirección de las listas activas."],
+      ["Proveedores", "El sitio y sus funciones de formulario se alojan en Vercel. Neon presta el servicio de base de datos y Resend procesa el envío de correos y mantiene la audiencia de suscriptores del boletín por cuenta del OVE. Estos proveedores reciben los datos necesarios para prestar esos servicios."],
       ["Derechos y cambios", "Puedes escribir a ove.venezuela@outlook.com para solicitar acceso, rectificación, eliminación o información sobre tus datos, así como retirar tu consentimiento. Esta política puede actualizarse si cambian los formularios o servicios utilizados."]
     ]
   },
@@ -4848,6 +4848,7 @@ function contactPage() {
             <input class="field" name="email" type="email" placeholder="Correo electrónico *" required>
             <select class="field" name="tipo_colaboracion"><option>Investigación</option><option>Datos</option><option>Alianzas</option></select>
             <textarea class="field full" name="propuesta" placeholder="Describe brevemente tu propuesta..." required></textarea>
+            <label class="check-line full"><input name="acepta_privacidad" type="checkbox" required> Acepto la <a href="#/privacidad">política de privacidad</a> y el tratamiento de mis datos personales.</label>
             <button class="button button-primary full" type="submit">Enviar propuesta ${arrow()}</button>
             <p class="form-status tiny full" data-form-status aria-live="polite"></p>
           </form>

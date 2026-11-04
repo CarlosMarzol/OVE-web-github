@@ -1,6 +1,7 @@
 import nodemailer from "nodemailer";
 import { buildAcknowledgement } from "./_acknowledgement.js";
 import { buildBoletinWelcome } from "./_boletin_welcome.js";
+import { setNewsletterRecordStatus, storeFormSubmission } from "./_database.js";
 
 const RESEND_API_URL = "https://api.resend.com/emails";
 const RESEND_AUDIENCES_URL = "https://api.resend.com/audiences";
@@ -74,9 +75,9 @@ const FORM_SUBJECTS = {
 };
 
 const REQUIRED_FIELDS = {
-  contacto: ["nombre", "email", "mensaje"],
+  contacto: ["nombre", "email", "mensaje", "acepta_privacidad"],
   boletin: ["email", "acepta_boletin"],
-  colaboracion: ["nombre", "email", "propuesta"]
+  colaboracion: ["nombre", "email", "propuesta", "acepta_privacidad"]
 };
 
 const FIELD_LABELS = {
@@ -151,6 +152,9 @@ function validatePayload(payload) {
   }
   if (payload.form_id === "boletin" && !["on", "true", "1"].includes(payload.acepta_boletin.toLowerCase())) {
     return { ok: false, status: 400, code: "NEWSLETTER_CONSENT_REQUIRED", fields: ["acepta_boletin"] };
+  }
+  if (["contacto", "colaboracion"].includes(payload.form_id) && !["on", "true", "1"].includes(payload.acepta_privacidad.toLowerCase())) {
+    return { ok: false, status: 400, code: "PRIVACY_CONSENT_REQUIRED", fields: ["acepta_privacidad"] };
   }
 
   if (!isValidEmail(payload.email)) {
@@ -297,6 +301,13 @@ export default async function handler(request, response) {
   }
 
   const email = buildEmail(payload, request);
+  let recordId;
+  try {
+    recordId = await storeFormSubmission(payload);
+  } catch {
+    console.error("OVE_DATABASE_PERSIST_FAILED");
+    return jsonResponse(response, 503, { ok: false, error: "DATABASE_UNAVAILABLE" });
+  }
 
   try {
     if (payload.form_id === "boletin") {
@@ -306,6 +317,12 @@ export default async function handler(request, response) {
       } catch {
         console.error("OVE_BOLETIN_AUDIENCE_FAILED");
         return jsonResponse(response, 503, { ok: false, error: "NEWSLETTER_STORAGE_FAILED" });
+      }
+      try {
+        await setNewsletterRecordStatus(recordId, "subscribed");
+      } catch {
+        console.error("OVE_DATABASE_STATUS_UPDATE_FAILED");
+        return jsonResponse(response, 503, { ok: false, error: "DATABASE_UNAVAILABLE" });
       }
 
       // La entrega de avisos no revierte una suscripción ya guardada.

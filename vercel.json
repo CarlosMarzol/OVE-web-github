@@ -8,6 +8,9 @@
       "includeFiles": "assets/data/**"
     }
   },
+  "crons": [
+    { "path": "/api/retention", "schedule": "20 3 * * *" }
+  ],
   "rewrites": [
     { "source": "/indicadores", "destination": "/index.html" },
     { "source": "/indicadores/dashboard", "destination": "/index.html" },
