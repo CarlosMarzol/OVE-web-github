@@ -75,7 +75,7 @@ const FORM_SUBJECTS = {
 
 const REQUIRED_FIELDS = {
   contacto: ["nombre", "email", "mensaje"],
-  boletin: ["email"],
+  boletin: ["email", "acepta_boletin"],
   colaboracion: ["nombre", "email", "propuesta"]
 };
 
@@ -88,6 +88,7 @@ const FIELD_LABELS = {
   mensaje: "Mensaje",
   propuesta: "Propuesta",
   acepta_privacidad: "Acepta privacidad",
+  acepta_boletin: "Consentimiento para recibir el boletin",
   form_id: "Formulario",
   page_url: "Pagina",
   submitted_at: "Fecha de envio"
@@ -147,6 +148,9 @@ function validatePayload(payload) {
   const missing = required.filter(field => !payload[field]);
   if (missing.length) {
     return { ok: false, status: 400, code: "MISSING_FIELDS", fields: missing };
+  }
+  if (payload.form_id === "boletin" && !["on", "true", "1"].includes(payload.acepta_boletin.toLowerCase())) {
+    return { ok: false, status: 400, code: "NEWSLETTER_CONSENT_REQUIRED", fields: ["acepta_boletin"] };
   }
 
   if (!isValidEmail(payload.email)) {
@@ -295,26 +299,24 @@ export default async function handler(request, response) {
   const email = buildEmail(payload, request);
 
   try {
-    if (transport) {
-      await transport.sendMail({
-        from,
-        to,
-        replyTo: payload.email,
-        subject: email.subject,
-        text: email.text,
-        html: email.html
-      });
-    } else {
-      await sendWithResend({ from, to, replyTo: payload.email, email });
-    }
-
     if (payload.form_id === "boletin") {
-      // Guardar la suscripción en la audiencia del boletín (Resend Audiences).
-      // Un fallo aquí nunca debe convertir una suscripción entregada en error.
+      // Confirmar primero el alta: nunca responder éxito si no quedó en la audiencia.
       try {
         await registerNewsletterContact(payload.email);
       } catch {
         console.error("OVE_BOLETIN_AUDIENCE_FAILED");
+        return jsonResponse(response, 503, { ok: false, error: "NEWSLETTER_STORAGE_FAILED" });
+      }
+
+      // La entrega de avisos no revierte una suscripción ya guardada.
+      try {
+        if (transport) {
+          await transport.sendMail({ from, to, replyTo: payload.email, subject: email.subject, text: email.text, html: email.html });
+        } else {
+          await sendWithResend({ from, to, replyTo: payload.email, email });
+        }
+      } catch {
+        console.error("OVE_BOLETIN_NOTIFICATION_FAILED");
       }
       try {
         const welcome = buildBoletinWelcome();
@@ -326,6 +328,20 @@ export default async function handler(request, response) {
       } catch {
         console.error("OVE_BOLETIN_WELCOME_FAILED");
       }
+      return jsonResponse(response, 200, { ok: true });
+    }
+
+    if (transport) {
+      await transport.sendMail({
+        from,
+        to,
+        replyTo: payload.email,
+        subject: email.subject,
+        text: email.text,
+        html: email.html
+      });
+    } else {
+      await sendWithResend({ from, to, replyTo: payload.email, email });
     }
 
     // A receipt failure must not turn an already delivered inquiry into an

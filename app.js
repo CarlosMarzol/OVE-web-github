@@ -2071,6 +2071,7 @@ function newsletter() {
       <form class="subscribe-form js-form" data-form-id="boletin">
         <input class="visually-hidden" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input class="field" name="email" type="email" placeholder="tu@email.com" aria-label="Correo electrónico" required>
+        <label class="check-line"><input name="acepta_boletin" type="checkbox" required> Acepto recibir el boletín del OVE y he leído la <a href="#/privacidad">política de privacidad</a>. Puedo darme de baja cuando quiera.</label>
         <button class="button button-yellow" type="submit">Suscribirme</button>
         <p class="form-status tiny" data-form-status aria-live="polite"></p>
       </form>
@@ -4454,15 +4455,15 @@ const legalContent = {
   privacidad: {
     title: "Política de privacidad",
     eyebrow: "Datos personales",
-    lead: "Política provisional sobre datos personales. Los formularios de contacto envían los mensajes al correo institucional del OVE mediante un servicio backend de envío de correo. El sitio puede usar analítica agregada y sin cookies personales para medir audiencia y mejorar contenidos.",
+    lead: "Política de privacidad del Observatorio Venezolano de Economía (OVE). Para consultas sobre privacidad, escribe a ove.venezuela@outlook.com. El sitio puede usar analítica agregada y sin cookies personales para medir audiencia y mejorar contenidos.",
     sections: [
-      ["Datos que podrían solicitarse", "Nombre, correo electrónico, teléfono opcional, tipo de consulta, mensaje, propuesta de colaboración y suscripción al boletín."],
-      ["Estado actual de los formularios", "Los formularios no guardan información en una base de datos del sitio. El envío se realiza mediante una función serverless en Vercel y Resend hacia ove.venezuela@outlook.com."],
+      ["Responsable y contacto", "El responsable del tratamiento es el Observatorio Venezolano de Economía (OVE). Para consultas sobre privacidad, solicitudes de baja o ejercicio de derechos, contacta a ove.venezuela@outlook.com."],
+      ["Datos y canales", "Los formularios pueden solicitar nombre, correo electrónico, teléfono opcional, tipo de consulta, mensaje o propuesta. El formulario del boletín recoge el correo electrónico y la elección de suscribirse. Las consultas y propuestas se remiten al correo institucional; las suscripciones se registran en la audiencia «Boletín OVE» de Resend."],
       ["Analítica web", "El OVE puede utilizar Vercel Web Analytics para obtener métricas agregadas de visitas, páginas, país aproximado, dispositivo, navegador, descargas y uso de secciones. Esta medición no usa cookies personales ni crea perfiles individuales de usuarios."],
-      ["Finalidades futuras", "Responder consultas, gestionar colaboraciones, atender solicitudes de prensa, enviar boletines si el usuario se suscribe y mantener trazabilidad administrativa."],
-      ["Base y consentimiento", "El usuario envía voluntariamente el formulario y acepta la política de privacidad antes de remitir el mensaje."],
-      ["Conservación y derechos", "Los mensajes se conservarán en el buzón de contacto durante el tiempo necesario para responder y gestionar la consulta. El procedimiento formal de derechos deberá completarse antes del lanzamiento público definitivo."],
-      ["Servicios de terceros", "El envío de formularios utiliza Vercel Functions y Resend. La analítica agregada se presta mediante la infraestructura de Vercel cuando esté activada en el proyecto."]
+      ["Finalidades y consentimiento", "Usamos los datos para responder consultas y gestionar propuestas que nos envíes. Solo enviaremos el boletín si marcas voluntariamente la casilla de suscripción. La base para enviar el boletín es tu consentimiento, que puedes retirar en cualquier momento."],
+      ["Conservación y baja del boletín", "Conservaremos tu dirección mientras mantengas la suscripción. Para darte de baja, responde al correo de bienvenida con el asunto «Baja» o escribe a ove.venezuela@outlook.com; eliminaremos tu dirección de la lista activa. Las consultas se conservan en el buzón durante el tiempo necesario para responder y gestionar la solicitud."],
+      ["Proveedores", "El sitio y sus funciones de formulario se alojan en Vercel. Resend procesa el envío de correos y mantiene la audiencia de suscriptores del boletín por cuenta del OVE. Estos proveedores reciben los datos necesarios para prestar esos servicios."],
+      ["Derechos y cambios", "Puedes escribir a ove.venezuela@outlook.com para solicitar acceso, rectificación, eliminación o información sobre tus datos, así como retirar tu consentimiento. Esta política puede actualizarse si cambian los formularios o servicios utilizados."]
     ]
   },
   cookies: {
@@ -4806,7 +4807,7 @@ function contactPage() {
         <article class="panel span-4" style="color:#fff;background:linear-gradient(135deg,var(--navy-950),var(--blue-700))">
           <h2 style="color:#fff">${icon("mail")} Suscríbete a nuestro boletín</h2>
           <p>Recibe análisis, indicadores y publicaciones directamente en tu correo.</p>
-          <form class="subscribe-form js-form" data-form-id="boletin"><input class="visually-hidden" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"><input class="field" name="email" type="email" placeholder="tu@email.com" required><button class="button button-yellow">Suscribirme ${arrow()}</button><p class="form-status tiny" data-form-status aria-live="polite"></p></form>
+          <form class="subscribe-form js-form" data-form-id="boletin"><input class="visually-hidden" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"><input class="field" name="email" type="email" placeholder="tu@email.com" required><label class="check-line"><input name="acepta_boletin" type="checkbox" required> Acepto recibir el boletín del OVE y he leído la <a href="#/privacidad">política de privacidad</a>. Puedo darme de baja cuando quiera.</label><button class="button button-yellow">Suscribirme ${arrow()}</button><p class="form-status tiny" data-form-status aria-live="polite"></p></form>
           <p class="tiny" style="color:#dce8ff">La suscripción se envía al correo institucional del OVE para su gestión inicial.</p>
         </article>
         <article class="panel span-3">
@@ -5033,7 +5034,7 @@ function wireForms() {
             body: JSON.stringify(payload)
           });
           if (!response.ok) throw new Error("FORM_ENDPOINT_ERROR");
-          setFormStatus(form, "Mensaje enviado correctamente. Gracias por escribir al OVE.", "success");
+          setFormStatus(form, formId === "boletin" ? "Suscripción registrada. Te enviaremos el boletín del OVE a este correo." : "Mensaje enviado correctamente. Gracias por escribir al OVE.", "success");
           trackAnalytics(analyticsEvents.form, { form: formId, state: "success" });
           form.reset();
         } else {
