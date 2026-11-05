@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "dataset_generated_at": "2026-11-05T13:42:49Z",
+  "dataset_generated_at": "2026-11-05T21:01:45Z",
   "indicators": {
     "pib": {
       "id": "pib_real_bcv",
@@ -12215,7 +12215,7 @@
     "imf": {
       "value": "1980–2027",
       "label": "cobertura variable",
-      "captured_at": "2026-10-25",
+      "captured_at": "2026-11-05",
       "catalog": "/assets/data/imf/catalog/imf-catalog.json"
     },
     "ilo": {
@@ -12249,5 +12249,5 @@
       "catalog": "/assets/data/unctad/catalog/unctad-catalog.json"
     }
   },
-  "version": "750ba22cea0abe8a"
+  "version": "544164796119abe8"
 }
