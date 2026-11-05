@@ -127,6 +127,21 @@ def write_note(anunciado, serie) -> None:
         "anunciado": anunciado,
         "serie_estadistica": serie,
     }
+    if OUT_PATH.exists():
+        try:
+            existing = json.loads(OUT_PATH.read_text(encoding="utf-8"))
+            unchanged = (
+                existing.get("mostrar_nota") == payload["mostrar_nota"]
+                and existing.get("anunciado") == payload["anunciado"]
+                and existing.get("serie_estadistica") == payload["serie_estadistica"]
+                and existing.get("metadata", {}).get("status") == status
+            )
+            if unchanged:
+                print(f"[inpc-anunciado] sin cambios: status={status} anunciado={anunciado['period'] if anunciado else 'n/a'} "
+                      f"serie={serie['latest_period'] if serie else 'n/a'}; se conserva la captura vigente")
+                return
+        except (OSError, json.JSONDecodeError):
+            pass
     OUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"[inpc-anunciado] nota escrita: status={status} mostrar_nota={mostrar} "
           f"anunciado={anunciado['period'] if anunciado else 'n/a'} "

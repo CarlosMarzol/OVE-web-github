@@ -34,6 +34,15 @@
   border: 0 !important;
 }
 
+[data-home-inpc-announced][hidden],
+[data-bcv-inpc-announced][hidden] {
+  display: none !important;
+}
+
+.bcv-inpc-announcement:not([hidden]) {
+  border-left: 4px solid var(--yellow);
+}
+
 * {
   box-sizing: border-box;
 }

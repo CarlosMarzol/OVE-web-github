@@ -546,6 +546,7 @@
         </header>
 
         <p class="source-note" data-home-data-status role="status" aria-live="polite">Consultando las bases de datos del OVE…</p>
+        <p class="source-note" data-home-inpc-announced role="status" aria-live="polite" hidden></p>
         <div class="studio" data-reveal>
           <div class="indicator-index" role="tablist" aria-label="Indicadores destacados">
             <button class="indicator-tab is-active" id="indicator-tab-pib" type="button" role="tab" aria-selected="true" aria-controls="indicator-panel" tabindex="0" data-indicator="pib"><strong>PIB real</strong><span>BCV · variación anual</span></button>
@@ -1111,6 +1112,19 @@
             node.querySelector("strong").textContent=valueLabel(series)+(series.unit.startsWith("%")?"%":"");
             node.querySelector("em").textContent=`${series.unit} · ${periodLabel(series)}`;
           });
+          const announcementNode=document.querySelector("[data-home-inpc-announced]");
+          const inpc=data.indicators.inpc;
+          const announcement=inpc?.anunciado;
+          if(announcementNode){
+            if(announcement?.status==="anuncio_pendiente_de_confirmacion_estadistica"){
+              const format=new Intl.NumberFormat("es-VE",{maximumFractionDigits:2});
+              announcementNode.textContent=`Anuncio de portada del BCV: ${announcement.period_label}, ${format.format(announcement.var_mensual_pct)}% mensual y ${format.format(announcement.var_acumulada_pct)}% acumulada. Pendiente de confirmación en el XLS estadístico; último dato descargable: ${valueLabel(inpc)}% (${periodLabel(inpc)}).`;
+              announcementNode.hidden=false;
+            }else{
+              announcementNode.textContent="";
+              announcementNode.hidden=true;
+            }
+          }
           for(const [id,source] of Object.entries(data.sources)){
             const node=document.querySelector(`[data-home-source="${id}"]`);
             node.textContent=id==="bcv"?new Intl.DateTimeFormat("es-VE",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}).format(new Date(source.value))
@@ -1129,6 +1143,8 @@
           :"Datos temporalmente no disponibles. No se muestran cifras de ejemplo. Puedes reintentar la carga.";
         if(!homeSnapshot){
           document.querySelectorAll("[data-home-ticker] strong,[data-home-source],[data-home-featured-value]").forEach(n=>n.textContent="No disponible");
+          const announcementNode=document.querySelector("[data-home-inpc-announced]");
+          if(announcementNode){announcementNode.textContent="";announcementNode.hidden=true;}
           Object.values(indicatorData).forEach(item=>{item.value="No disponible";item.unit="Sin conexión con la base";});
           document.querySelector("#chart-value").textContent="No disponible";
           document.querySelector("[data-download-series]").disabled=true;

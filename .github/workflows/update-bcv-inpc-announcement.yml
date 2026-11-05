@@ -1,0 +1,42 @@
+name: Update BCV INPC announcement
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Keep the homepage-announcement note independent from BCV exchange-rate parsing.
+    - cron: "15 1,13,19 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ove-data-refresh
+  cancel-in-progress: false
+
+jobs:
+  update-inpc-announcement:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check BCV homepage announcement
+        run: python scripts/inpc_announced_check.py
+      - name: Rebuild and validate homepage snapshot
+        run: |
+          python tests/test_inpc_announced_check.py
+          node scripts/build_home_data.mjs
+          node --test tests/home-data.test.mjs tests/home-seo.test.mjs
+      - name: Commit announcement changes only
+        run: |
+          if git diff --quiet -- assets/data/bcv/json/ove_bcv_inpc_dato_anunciado.json assets/data/home/ove_home.json; then
+            echo "No INPC announcement changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/bcv/json/ove_bcv_inpc_dato_anunciado.json assets/data/home/ove_home.json
+          git commit -m "Update BCV INPC homepage announcement"
+          git push

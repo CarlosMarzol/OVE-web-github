@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "dataset_generated_at": "2026-11-04T21:00:43Z",
+  "dataset_generated_at": "2026-11-05T13:42:49Z",
   "indicators": {
     "pib": {
       "id": "pib_real_bcv",
@@ -1000,13 +1000,13 @@
         ]
       ],
       "anunciado": {
-        "period": "2026-09",
-        "period_label": "Septiembre 2026",
-        "var_mensual_pct": 8.4,
-        "var_acumulada_pct": 225.3,
+        "period": "2026-10",
+        "period_label": "Octubre 2026",
+        "var_mensual_pct": 6.2,
+        "var_acumulada_pct": 245.5,
         "status": "anuncio_pendiente_de_confirmacion_estadistica",
         "disclaimer": "Cifra anunciada por el BCV en su pagina principal, pendiente de confirmacion en la serie estadistica oficial descargable. No sustituye el dato oficial para facturacion, contabilidad o reportes legales.",
-        "checked_at": "2026-11-03T02:31:22Z",
+        "checked_at": "2026-11-05T13:29:02Z",
         "source_url": "https://www.bcv.org.ve/"
       }
     },
@@ -12249,5 +12249,5 @@
       "catalog": "/assets/data/unctad/catalog/unctad-catalog.json"
     }
   },
-  "version": "452cf674f427a9d9"
+  "version": "750ba22cea0abe8a"
 }

@@ -75,3 +75,20 @@ test('a direct BCV update is reflected without needing a consolidated rebuild',(
  };
  assert.equal(buildIndicators(sourceObservations(read)).cambio.latest.value,999.99);
 });
+
+test('home keeps a BCV homepage announcement separate from the downloadable statistical series',()=>{
+ const note=json('../assets/data/bcv/json/ove_bcv_inpc_dato_anunciado.json');
+ const home=json('../assets/data/home/ove_home.json');
+ assert.equal(note.metadata.status,'anuncio_pendiente_de_confirmacion_estadistica');
+ assert.equal(home.indicators.inpc.latest.date,note.serie_estadistica.latest_date);
+ assert.equal(home.indicators.inpc.latest.value,note.serie_estadistica.latest_value);
+ assert.equal(home.indicators.inpc.anunciado.period,note.anunciado.period);
+ assert.notEqual(home.indicators.inpc.latest.value,note.anunciado.var_mensual_pct);
+ const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ assert.match(html,/data-home-inpc-announced/);
+ assert.match(html,/Pendiente de confirmación en el XLS estadístico/);
+ const app=readFileSync(new URL('../app.js',import.meta.url),'utf8');
+ assert.doesNotMatch(app,/05\/2026/);
+ assert.match(app,/async function hydrateBcvInflation\(\)/);
+ assert.match(app,/ove_bcv_inpc_nacional_mensual\.json/);
+});

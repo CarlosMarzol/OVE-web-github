@@ -430,9 +430,9 @@ const metricData = [
   {
     title: "INPC mensual",
     subtitle: "Variación mensual",
-    value: "6,3%",
-    period: "mayo 2026",
-    trend: "BCV oficial",
+    value: "8,9%",
+    period: "agosto 2026",
+    trend: "BCV · serie estadística",
     direction: "up",
     icon: "coin"
   },
@@ -572,8 +572,8 @@ const keyIndicatorSeries = [
     title: "INPC nacional",
     area: "Nivel y condiciones de vida",
     source: "BCV",
-    latest: "6,3",
-    period: "05/2026",
+    latest: "8,9",
+    period: "08/2026",
     unit: "% mensual",
     frequency: "Mensual",
     href: "assets/data/bcv/excel/ove_bcv_inpc_nacional_mensual.xlsx"
@@ -626,7 +626,7 @@ const dashboardSeries = {
     title: "INPC nacional",
     unit: "% mensual",
     source: "Banco Central de Venezuela",
-    points: [["2025-10", 25.9313], ["2025-11", 21.6], ["2025-12", 13.6], ["2026-01", 32.6], ["2026-02", 14.6], ["2026-03", 13.1], ["2026-04", 10.6], ["2026-05", 6.3]]
+    points: [["2025-10", 25.9313], ["2025-11", 21.6], ["2025-12", 13.6], ["2026-01", 32.6], ["2026-02", 14.6], ["2026-03", 13.1], ["2026-04", 10.6], ["2026-05", 6.3], ["2026-06", 13.8], ["2026-07", 19.9], ["2026-08", 8.9]]
   },
   desempleo_total_wdi: {
     title: "Desempleo total",
@@ -2297,7 +2297,7 @@ function indicatorTable() {
     ["PIB real", "2025", "8,94", "% anual", "Último BCV", "BCV"],
     ["PIB corriente", "2025", "99,7", "US$ mil millones", "Último WDI", "Banco Mundial"],
     ["PIB per cápita", "2025", "3.494,8", "US$", "Último WDI", "Banco Mundial"],
-    ["INPC nacional", "05/2026", "6,3", "% mensual", "Último BCV", "BCV"],
+    ["INPC nacional", '<span data-inpc-table-period>08/2026</span>', '<span data-inpc-table-value>8,9</span>', "% mensual", "Último BCV", "BCV"],
     ["Desempleo total", "2025", "5,31", "% fuerza laboral", "Último WDI", "Banco Mundial"],
     ["Tipo de cambio BCV", '<span data-bcv-table-date>13/07/2026</span>', '<span data-bcv-table-value>721,35</span>', "Bs/USD", "Último BCV", "BCV"]
   ];
@@ -3036,12 +3036,26 @@ function bcvPage() {
             <small data-bcv-usd-records>Serie histórica diaria</small>
           </div>
         </article>
+        <aside class="world-bank-summary bcv-inpc-announcement" data-bcv-inpc-announced hidden aria-live="polite">
+          <div>
+            <span class="eyebrow">Anuncio del BCV · pendiente de confirmación estadística</span>
+            <h2 data-bcv-inpc-announced-period>INPC anunciado</h2>
+            <p data-bcv-inpc-announced-copy>Consultando la portada del BCV…</p>
+            <a href="assets/data/bcv/json/ove_bcv_inpc_dato_anunciado.json" download>Descargar ficha del anuncio</a>
+          </div>
+          <div class="source-stats">
+            <span><strong data-bcv-inpc-announced-monthly>—</strong> variación mensual anunciada</span>
+            <span><strong data-bcv-inpc-announced-cumulative>—</strong> acumulada anunciada</span>
+            <span><strong data-bcv-inpc-series-latest>—</strong> último dato de la serie descargable</span>
+          </div>
+        </aside>
         <div class="world-bank-catalog-grid">
           ${[
             ["Serie histórica USD JSON", "Serie diaria organizada para consumo web y automatizaciones.", exchangeDownloads.usdJson, "JSON", "#/datos/tipo-cambio"],
             ["Excel formato OVE", "Archivo tabular con compra, venta, fecha, unidad y fuente con cabecera corporativa.", exchangeDownloads.usdExcel, "Excel", "#/datos/tipo-cambio"],
             ["PIB real anual", "Crecimiento anual del PIB real total organizado desde workbook oficial BCV.", "assets/data/bcv/json/ove_bcv_pib_real_anual.json", "JSON"],
             ["INPC nacional mensual", "Índice nacional de precios al consumidor y variación mensual desde workbook oficial BCV.", "assets/data/bcv/json/ove_bcv_inpc_nacional_mensual.json", "JSON"],
+            ["INPC anunciado por el BCV", "Cifra de portada identificada como anuncio y separada de la serie estadística descargable hasta que el BCV actualice el workbook.", "assets/data/bcv/json/ove_bcv_inpc_dato_anunciado.json", "JSON"],
             ["Referencia SMC multimoneda", "Dato diario publicado por el BCV para USD, EUR, CNY, TRY y RUB.", exchangeDownloads.smcJson, "JSON", "#/datos/tipo-cambio"],
             ["Catálogo BCV", "Inventario de datasets BCV activos y fuentes catalogadas para próximas ingestas.", "assets/data/bcv/catalog/bcv-catalog.json", "JSON"]
           ].map(([title, text, href, format, viewHref = "#/datos/bcv"]) => `<article class="world-bank-card">
@@ -3067,7 +3081,7 @@ function bcvPage() {
       <div class="container dashboard-grid">
         <article class="panel span-6">
           <h2>Automatización</h2>
-          <p>Existe automatización técnica para actualizar archivos, pero el calendario público de actualización todavía debe aprobarse y documentarse en la metodología.</p>
+          <p>La serie estadística se normaliza desde el workbook oficial del BCV. La cifra que el BCV anuncie primero en su portada se muestra aparte, con una advertencia, hasta que aparezca en ese workbook.</p>
         </article>
         <article class="panel span-6">
           <h2>Series BCV activas</h2>
@@ -4893,6 +4907,7 @@ function render() {
     updateActiveNav(route);
     wireForms();
     hydrateBcvWidgets();
+    hydrateBcvInflation();
     hydrateKeyDashboard();
     hydrateIndicatorExplorer();
     hydrateNativeDashboard();
@@ -5149,6 +5164,58 @@ async function hydrateBcvWidgets() {
       if (dateNode) dateNode.textContent = "No se pudo leer el JSON BCV";
       if (recordsNode) recordsNode.textContent = "Revisar actualización automática";
     });
+  }
+}
+
+async function hydrateBcvInflation() {
+  const announcementPanel = document.querySelector("[data-bcv-inpc-announced]");
+  const dashboardButtons = [...document.querySelectorAll('[data-series-id="inpc_nacional_bcv"]')];
+  const tableNodes = document.querySelectorAll("[data-inpc-table-period], [data-inpc-table-value]");
+  if (!announcementPanel && !dashboardButtons.length && !tableNodes.length) return;
+  try {
+    const [seriesResponse, announcementResponse] = await Promise.all([
+      fetch("assets/data/bcv/json/ove_bcv_inpc_nacional_mensual.json", { cache: "no-store" }),
+      fetch("assets/data/bcv/json/ove_bcv_inpc_dato_anunciado.json", { cache: "no-store" })
+    ]);
+    if (!seriesResponse.ok) throw new Error("BCV INPC series unavailable");
+    const seriesData = await seriesResponse.json();
+    const observations = (seriesData.observations || [])
+      .filter(row => typeof row.date === "string" && Number.isFinite(row.monthly_variation_pct))
+      .sort((a, b) => a.date.localeCompare(b.date));
+    const latest = observations.at(-1);
+    if (!latest) throw new Error("No valid BCV INPC observations");
+    const latestLabel = new Intl.NumberFormat("es-VE", { minimumFractionDigits: 1, maximumFractionDigits: 2 }).format(latest.monthly_variation_pct);
+    const latestPeriod = `${String(latest.month).padStart(2, "0")}/${latest.year}`;
+    const indicatorMeta = keyIndicatorSeries.find(series => series.id === "inpc_nacional_bcv");
+    if (indicatorMeta) { indicatorMeta.latest = latestLabel; indicatorMeta.period = latestPeriod; }
+    document.querySelectorAll("[data-inpc-table-period]").forEach(node => { node.textContent = latestPeriod; });
+    document.querySelectorAll("[data-inpc-table-value]").forEach(node => { node.textContent = latestLabel; });
+    dashboardSeries.inpc_nacional_bcv.points = observations.slice(-12).map(row => [row.date.slice(0, 7), row.monthly_variation_pct]);
+    dashboardButtons.forEach(button => {
+      const strong = button.querySelector("strong");
+      const small = button.querySelector("small");
+      if (strong) strong.textContent = latestLabel;
+      if (small) small.textContent = `${latestPeriod} · % mensual`;
+    });
+    const activeInflationChart = document.querySelector('[data-key-dashboard] [data-series-id="inpc_nacional_bcv"].is-active');
+    if (activeInflationChart) {
+      const chart = document.querySelector("[data-key-chart]");
+      if (chart) chart.innerHTML = sparklineSvg(dashboardSeries.inpc_nacional_bcv);
+    }
+
+    if (!announcementPanel) return;
+    if (!announcementResponse.ok) { announcementPanel.hidden = true; return; }
+    const note = await announcementResponse.json();
+    if (!note.mostrar_nota || !note.anunciado) { announcementPanel.hidden = true; return; }
+    const number = value => new Intl.NumberFormat("es-VE", { maximumFractionDigits: 2 }).format(value);
+    announcementPanel.querySelector("[data-bcv-inpc-announced-period]").textContent = note.anunciado.period_label;
+    announcementPanel.querySelector("[data-bcv-inpc-announced-copy]").textContent = `${note.metadata.disclaimer} Serie estadística descargable más reciente: ${latest.month_name} ${latest.year}, ${number(latest.monthly_variation_pct)}% mensual.`;
+    announcementPanel.querySelector("[data-bcv-inpc-announced-monthly]").textContent = `${number(note.anunciado.var_mensual_pct)}%`;
+    announcementPanel.querySelector("[data-bcv-inpc-announced-cumulative]").textContent = `${number(note.anunciado.var_acumulada_pct)}%`;
+    announcementPanel.querySelector("[data-bcv-inpc-series-latest]").textContent = `${number(latest.monthly_variation_pct)}% · ${latest.month_name} ${latest.year}`;
+    announcementPanel.hidden = false;
+  } catch {
+    if (announcementPanel) announcementPanel.hidden = true;
   }
 }
 
