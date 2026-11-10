@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "dataset_generated_at": "2026-11-10T20:34:51Z",
+  "dataset_generated_at": "2026-11-10T20:57:51Z",
   "indicators": {
     "pib": {
       "id": "pib_real_bcv",
@@ -12227,7 +12227,7 @@
     "fred": {
       "value": 407,
       "label": "series catalogadas",
-      "captured_at": "2026-11-03",
+      "captured_at": "2026-11-10",
       "catalog": "/assets/data/fred/catalog/fred-catalog.json"
     },
     "ine": {
@@ -12249,5 +12249,5 @@
       "catalog": "/assets/data/unctad/catalog/unctad-catalog.json"
     }
   },
-  "version": "2b8fa91514e9d837"
+  "version": "1a7f0525e79c85ca"
 }
