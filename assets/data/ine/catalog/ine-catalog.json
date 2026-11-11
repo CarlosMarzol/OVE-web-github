@@ -2,13 +2,13 @@
   "metadatos": {
     "Organización": "Observatorio Venezolano de Economía",
     "Dataset": "INE Venezuela - catálogo de recursos oficiales",
-    "Fecha generación": "2026-11-04",
+    "Fecha generación": "2026-11-11",
     "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
     "URL portal": "https://ine.gob.ve/",
     "País": "Venezuela",
-    "Número de recursos": 345,
+    "Número de recursos": 346,
     "Recursos tabulares": 207,
-    "Documentos": 138,
+    "Documentos": 139,
     "Hojas extraídas": 223,
     "Celdas con valor extraídas": 2983947,
     "Archivo valores CSV.GZ": "assets/data/ine/csv/ove_ine_venezuela_celdas_tabulares.csv.gz"
@@ -3995,14 +3995,14 @@
     {
       "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
       "País": "Venezuela",
-      "Título": "Noticias-03-11-2026.pdf",
+      "Título": "Noticias-11-11-2026.pdf",
       "Categoría": "Publicaciones",
       "Tipo de recurso": "Documento",
       "Formato": "PDF",
       "Año publicación": "2026",
       "Mes publicación": "noviembre",
-      "Archivo original": "Noticias-03-11-2026.pdf",
-      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/11/Noticias-03-11-2026.pdf",
+      "Archivo original": "Noticias-11-11-2026.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/11/Noticias-11-11-2026.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
@@ -4289,6 +4289,19 @@
       "Mes publicación": "julio",
       "Archivo original": "Estado-Trujillo.pdf",
       "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/07/Estado-Trujillo.pdf",
+      "URL portal": "https://ine.gob.ve/"
+    },
+    {
+      "Fuente": "INE Venezuela - Instituto Nacional de Estadística",
+      "País": "Venezuela",
+      "Título": "Trípticos",
+      "Categoría": "Publicaciones",
+      "Tipo de recurso": "Documento",
+      "Formato": "PDF",
+      "Año publicación": "2026",
+      "Mes publicación": "noviembre",
+      "Archivo original": "2-unificado.pdf",
+      "URL fuente": "https://ine.gob.ve/wp-content/uploads/2026/11/2-unificado.pdf",
       "URL portal": "https://ine.gob.ve/"
     },
     {
