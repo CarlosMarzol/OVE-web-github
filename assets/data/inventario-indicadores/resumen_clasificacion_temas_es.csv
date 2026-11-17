@@ -2,7 +2,7 @@
 Agricultura y medio ambiente,265
 Ciencia y tecnología,96
 Demografía y población,774
-Economía,527
+Economía,528
 "Industria, energía y construcción",189
 Mercado laboral,824
 Servicios,98
@@ -23,7 +23,7 @@ Demografía y población,Población,696
 Demografía y población,Natalidad y mortalidad,67
 Demografía y población,Migración y movilidad,11
 Economía,Actividad económica,98
-Economía,Precios e inflación,65
+Economía,Precios e inflación,66
 Economía,Sector externo y finanzas,364
 "Industria, energía y construcción",Industria manufacturera,15
 "Industria, energía y construcción",Energía e hidrocarburos,163
@@ -46,7 +46,7 @@ Estadísticas experimentales,Modelos y nowcasting,0
 
 fuente,indicadores_o_recursos
 CEPALSTAT - CEPAL,2070
-OIT - ILOSTAT,762
+OIT - ILOSTAT,763
 FRED - Federal Reserve Bank of St. Louis,407
 INE Venezuela,346
 UNCTADstat - UNCTAD,99
