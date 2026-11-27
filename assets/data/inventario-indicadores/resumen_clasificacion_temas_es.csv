@@ -1,10 +1,10 @@
 ﻿tema_ove,indicadores_o_recursos
-Agricultura y medio ambiente,261
+Agricultura y medio ambiente,262
 Ciencia y tecnología,95
-Demografía y población,760
-Economía,454
-"Industria, energía y construcción",178
-Mercado laboral,824
+Demografía y población,762
+Economía,455
+"Industria, energía y construcción",181
+Mercado laboral,823
 Servicios,98
 Nivel y condiciones de vida (IPC),633
 Sociedad,202
@@ -15,21 +15,21 @@ Agricultura y medio ambiente,Agricultura,34
 Agricultura y medio ambiente,Agua,87
 Agricultura y medio ambiente,Residuos y protección ambiental,8
 Agricultura y medio ambiente,Cuentas ambientales,7
-Agricultura y medio ambiente,Otras operaciones medioambientales,125
-Ciencia y tecnología,Investigación y desarrollo,6
+Agricultura y medio ambiente,Otras operaciones medioambientales,126
+Ciencia y tecnología,Investigación y desarrollo,4
 Ciencia y tecnología,Innovación empresarial,34
-Ciencia y tecnología,Conectividad y capacidades digitales,55
-Demografía y población,Población,682
+Ciencia y tecnología,Conectividad y capacidades digitales,57
+Demografía y población,Población,680
 Demografía y población,Natalidad y mortalidad,67
-Demografía y población,Migración y movilidad,11
+Demografía y población,Migración y movilidad,15
 Economía,Actividad económica,26
 Economía,Precios e inflación,66
-Economía,Sector externo y finanzas,362
+Economía,Sector externo y finanzas,363
 "Industria, energía y construcción",Industria manufacturera,14
-"Industria, energía y construcción",Energía e hidrocarburos,153
+"Industria, energía y construcción",Energía e hidrocarburos,156
 "Industria, energía y construcción",Construcción e infraestructura,11
 Mercado laboral,Empleo y desempleo,470
-Mercado laboral,Ingresos laborales,196
+Mercado laboral,Ingresos laborales,195
 Mercado laboral,Informalidad y movilidad laboral,158
 Servicios,Comercio y consumo,27
 Servicios,"Turismo, transporte y logística",22
@@ -45,7 +45,7 @@ Estadísticas experimentales,Datos geoespaciales,0
 Estadísticas experimentales,Modelos y nowcasting,0
 
 fuente,indicadores_o_recursos
-CEPALSTAT - CEPAL,2070
+CEPALSTAT - CEPAL,2076
 OIT - ILOSTAT,763
 FRED - Federal Reserve Bank of St. Louis,407
 UNCTADstat - UNCTAD,99
@@ -55,7 +55,7 @@ INE Venezuela,34
 Banco Central de Venezuela,15
 OVE - Indicadores clave,6
 
-clasificaciones_baja_confianza,21
+clasificaciones_baja_confianza,22
 subareas_baja_confianza,0
 indicadores_traducidos,471
 indicadores_pendientes_traduccion,69

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "dataset_generated_at": "2026-11-25T23:22:30Z",
+  "dataset_generated_at": "2026-11-27T00:15:37Z",
   "indicators": {
     "pib": {
       "id": "pib_real_bcv",
@@ -12237,9 +12237,9 @@
       "catalog": "/assets/data/ine/catalog/ine-catalog.json"
     },
     "cepal": {
-      "value": 140678,
+      "value": 140512,
       "label": "registros",
-      "captured_at": "2026-10-16",
+      "captured_at": "2026-11-26",
       "catalog": "/assets/data/cepal/catalog/cepal-catalog.json"
     },
     "unctad": {
@@ -12249,5 +12249,5 @@
       "catalog": "/assets/data/unctad/catalog/unctad-catalog.json"
     }
   },
-  "version": "8aa1ccafbba51eb1"
+  "version": "b184f9b6329b9a30"
 }
